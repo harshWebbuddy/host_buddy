@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.shadow-solid-orange {
+    box-shadow: 0px 10px 0px #2B2B2B;
+  }
+  .shadow-solid-orange:hover {
+    box-shadow: 0px 10px 0px #ff7500;
+  }

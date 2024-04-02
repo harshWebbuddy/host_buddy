@@ -5,18 +5,12 @@ const Support = () => {
   return (
      <div className="flex flex-col gap-10  bg-gradient-to-b from-gray-800 to-gray-900 p-6 sm:p-10">
       {/* <div className="border-b-2 border-gray-400 bg-gray-100">Top Boundary</div> */}
-      <div className="flex flex-col gap-5 justify-center item">
-        <div className="flex flex-row  justify-between mx-auto relative gap-x-96  mb-20 mt-20">
-          <div>
-          <h2 className="text-4xl sm:text-6xl text-white font-semibold mx-auto ">Why Choose HostBuddy</h2>
-          </div>
-          <div className="item-center justify-center"> 
-          <p className="text-white text-sm sm:text-base mt-2 sm:w-8/12 mx-auto ">
+      <div className="flex flex-col gap-5 justify-center">
+        <div className="text-center flex flex-row justify-center items-center mb-20">
+          <h2 className="text-2xl sm:text-5xl text-white font-bold mx-auto ">Why Choose HostBuddy</h2>
+          <p className="text-white text-sm sm:text-base mt-2 sm:w-3/2 mx-auto">
             Lorem ipsum dolor sit amet consectetur. Sit placerat pellentesque lacus elementum bibendum. Vitae tortor scelerisque maecenas amet sit.
           </p>
-          </div>
-          {/* Orange line below "Why Choose HostBuddy" */}
-          <div className="absolute w-1/12 h-1 bg-orange-500  top-11 sm:top-16 left-0"></div>
         </div>
         <div className="flex flex-col sm:flex-row gap-6">
           {[1, 2, 3].map((index) => (
