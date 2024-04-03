@@ -9,7 +9,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en'>
-      <body className='relative   w-9/12 justify-center items-center mx-auto'>
+      <body className='relative  justify-center items-center mx-auto'>
         <NavBar /> 
         {children}
         <Footer />
