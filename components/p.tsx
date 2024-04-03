@@ -1,36 +1,47 @@
-// import { FiHeadphones } from "react-icons/fi";
 import React from "react";
-import Image from "next/image";
-const Support = () => {
+
+const Hero = () => {
   return (
-     <div className="flex flex-col gap-10  bg-gradient-to-b from-gray-800 to-gray-900 p-6 sm:p-10">
-      {/* <div className="border-b-2 border-gray-400 bg-gray-100">Top Boundary</div> */}
-      <div className="flex flex-col gap-5 justify-center">
-        <div className="text-center flex flex-row justify-center items-center mb-20">
-          <h2 className="text-2xl sm:text-5xl text-white font-bold mx-auto ">Why Choose HostBuddy</h2>
-          <p className="text-white text-sm sm:text-base mt-2 sm:w-3/2 mx-auto">
-            Lorem ipsum dolor sit amet consectetur. Sit placerat pellentesque lacus elementum bibendum. Vitae tortor scelerisque maecenas amet sit.
-          </p>
+    <div className="relative w-full">
+      <video className="w-full" height="452" autoPlay loop muted>
+        <source src="/video.mp4" type="video/mp4" />
+        Your browser does not support the video tag...
+      </video>
+      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-80"></div>
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10">
+        <h4 className="text-orange-500 font-bold italic text-xl mb-8">
+          Domain Name Search
+        </h4>
+        <h2 className="font-extrabold text-7xl text-white mb-10">
+          Find Your Dream Domain Name
+        </h2>
+        <h4 className="font-bold mb-7 text-white">
+          Use our domain checker tool to find the perfect name for your online
+          project.
+        </h4>
+        <div className="flex justify-center mt-10 mb-7">
+          <div className="relative">
+            <input
+              type="text"
+              placeholder="Find your dream domain"
+              className="w-96 sm:w-96 p-3 rounded-full outline-none focus:ring focus:ring-white"
+            />
+            <button className="absolute top-0 right-0 h-full w-28 sm:w-32 bg-orange-500 text-white rounded-3xl flex justify-center items-center">
+              Search
+            </button>
+          </div>
         </div>
-        <div className="flex flex-col sm:flex-row gap-6">
-          {[1, 2, 3].map((index) => (
-            <div key={index} className="relative flex-1">
-              <div className="absolute -top-7 left-9 bg-white w-14 h-14 flex justify-center items-center rounded-xl transition-all duration-300">
-                <Image src="/headphones.svg" alt="logo" width={18} height={18} className="object-contain" />{" "}
-              </div>
-              <div className="bg-[#3C3C3C] shadow-solid-orange rounded-2xl group hover:bg-[#F9EFE4] text-[#FFFFFF] hover:text-[#16191C] p-6 sm:p-8 transition-all duration-300 cursor-pointer">
-                <h2 className="text-lg font-bold mt-4">Support 24x7x365</h2>
-                <p className="text-sm sm:text-base">
-                  Maximize your site loading speed, response times and core web vital score. We offer 100% SSD NVMe storage, HTTP/2 & Litespeed server as a
-                  standard.
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
+        <h2 className="text-white flex items-center">
+          <img src="/orange.png" alt="Dot Image" className="w-4 h-4 mr-2" />{" "}
+          <span className="text-white font-bold text-xl">.com </span>
+          <span className="italic text-xs text-gray-400 font-bold line-through">
+            $25.00
+          </span>
+          <span className="text-white font-bold"> $19.00 </span>
+        </h2>
       </div>
-      {/* <div className="border-t-2 border-gray-400 bg-gray-100 p-4">Bottom Boundary</div> */}
     </div>
   );
 };
-export default Support;
+
+export default Hero;
