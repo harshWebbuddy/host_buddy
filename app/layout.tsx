@@ -10,7 +10,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang='en'>
       <body className='relative   w-9/12 justify-center items-center mx-auto'>
-        <NavBar /> {/* Corrected import */}
+        <NavBar /> 
         {children}
         <Footer />
       </body>

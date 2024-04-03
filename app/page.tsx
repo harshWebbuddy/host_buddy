@@ -10,15 +10,12 @@ import FooterBox from "@/components/FooterBox";
 
 export default function Home() {
   return (
-    <div className="w-9/12 justify-center items-center mx-auto">
-      <div className="mb-40">
-      <Hero /> 
-      </div>
-      <PlanPage/>    
-    <Support/> 
-
-     <LocationPage/>
-      <ContactForm/>
+    <div className="w-full justify-center items-center overflow-x-hidden">
+    <Hero />
+    <PlanPage />
+    <Support />
+    <LocationPage />
+    <ContactForm />
   </div>
   );
 }

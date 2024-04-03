@@ -4,27 +4,27 @@ import { AiOutlineGlobal } from "react-icons/ai";
 
 const NavBar = () => (
   <header className='w-full absolute z-10'>
-    <nav className="w-full flex flex-col items-center gap-40 justify-center bg-transparent p-4 md:flex-row">
+    <nav className="w-full flex flex-col items-center gap-0 md:gap-40 justify-center bg-transparent p-4 md:flex-row">
       <div className="">
         <span className="font-semibold text-2xl text-white">H</span>
         <span className="font-semibold text-2xl text-orange-500">o</span>
         <span className="font-semibold text-2xl text-white">st</span>
         <span className="font-semibold text-2xl  text-white">Buddy</span>
       </div>
-      <div className="flex justify-between space-x-4">
-        <Link href="/" className="text-white font-bold text-xl">
+      <div className="flex justify-between space-x-1 md:space-x-4">
+        <Link href="/" className="text-white font-bold text-xs md:text-xl">
           Home
         </Link>
-        <Link href="/" className="text-white font-bold text-xl">
+        <Link href="/" className="text-white font-bold  text-xs md:text-xl">
           Hosting
         </Link>
-        <Link href="/" className="text-white font-bold text-xl">
+        <Link href="/" className="text-white font-bold text-xs md:text-xl">
           Pages
         </Link>
-        <Link href="/" className="text-white font-bold text-xl">
+        <Link href="/" className="text-white font-bold  text-xs md:text-xl">
           Features
         </Link>
-        <Link href="/" className="text-white font-bold text-xl">
+        <Link href="/" className="text-white font-bold  text-xs md:text-xl">
           Support
         </Link>
       </div>
