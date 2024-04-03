@@ -2,23 +2,17 @@
 import Image from "next/image";
 import { IoIosArrowForward } from "react-icons/io";
 
-const Plan1 = () => {
+const Plans = () => {
   return (
     <div className="w-full flex flex-col md:flex-col justify-center items-center bg-white h-full">
       {/* heading */}
-      <div className="flex flex-col md:flex-row w-full md:w-6/12 justify-between items-center mb-20">
-        <div className="flex flex-col w-full justify-between mx-auto relative gap-2">
+      <div className="flex flex-col md:flex-row w-full  md:w-8/12 justify-between gap-40 md:gap-96 items-center mb-20">
+        <div className="relative">
           <div className="justify-center items-center">
             <h2 className="text-2xl md:text-3xl font-semibold font-mona-sans">The Perfect - Web Hosting Plan</h2>
           </div>
-          <div className="absolute w-10 md:w-32 h-0.5 bg-orange-500 top-10"></div>
-        </div>
-
-
-
-
-
-        
+          <div className="absolute w-3 xl:w-14 sm:w-16 md:w-32 h-0.5 bg-orange-500  top-8 md:top-10"></div>
+        </div>        
         <div className="flex flex-row mx-auto gap-3">
           <h2
             className="text-base md:text-lg"
@@ -52,7 +46,7 @@ const Plan1 = () => {
               letterSpacing: "2px",
               color: "#FF7500",
               background: "#F9EFE4",
-              padding: "1px 2px", // Adjust the padding for left and right sides
+              padding: "1px 2px", 
               borderRadius: "1rem",
               marginLeft: "1px",
               height: "20px",
@@ -87,7 +81,30 @@ const Plan1 = () => {
                       <p className="text-center text-black-700 text-xs font-bold">8GB</p>
                     </div>
                   </div>
-                  {/* Repeat the above structure for other features */}
+                  <div className="flex w-full justify-between">
+                    <div>
+                      <p className="text-center text-black-700 text-xs">RAM:</p>
+                    </div>
+                    <div>
+                      <p className="text-center text-black-700 text-xs font-bold">8GB</p>
+                    </div>
+                  </div>
+                  <div className="flex w-full justify-between">
+                    <div>
+                      <p className="text-center text-black-700 text-xs">RAM:</p>
+                    </div>
+                    <div>
+                      <p className="text-center text-black-700 text-xs font-bold">8GB</p>
+                    </div>
+                  </div>
+                  <div className="flex w-full justify-between">
+                    <div>
+                      <p className="text-center text-black-700 text-xs">RAM:</p>
+                    </div>
+                    <div>
+                      <p className="text-center text-black-700 text-xs font-bold">8GB</p>
+                    </div>
+                  </div>
                 </div>
               </div>
               <button className="text-black text-xs px-4 py-2 rounded-md font-bold flex items-center justify-center w-full mt-4">
@@ -118,7 +135,30 @@ const Plan1 = () => {
                       <p className="text-center text-black-700 text-xs font-bold  text-white">8GB</p>
                     </div>
                   </div>
-                  {/* Repeat the above structure for other features */}
+                  <div className="flex w-full justify-between">
+                    <div>
+                      <p className="text-center text-black-700 text-xs  text-white">RAM:</p>
+                    </div>
+                    <div>
+                      <p className="text-center text-black-700 text-xs font-bold  text-white">8GB</p>
+                    </div>
+                  </div>
+                  <div className="flex w-full justify-between">
+                    <div>
+                      <p className="text-center text-black-700 text-xs  text-white">RAM:</p>
+                    </div>
+                    <div>
+                      <p className="text-center text-black-700 text-xs font-bold  text-white">8GB</p>
+                    </div>
+                  </div>
+                  <div className="flex w-full justify-between">
+                    <div>
+                      <p className="text-center text-black-700 text-xs  text-white">RAM:</p>
+                    </div>
+                    <div>
+                      <p className="text-center text-black-700 text-xs font-bold  text-white">8GB</p>
+                    </div>
+                  </div>  
                 </div>
               </div>
               <button className="text-orange-400 text-xs px-4 py-2 rounded-md font-bold flex items-center justify-center w-full mt-4">
@@ -150,7 +190,30 @@ const Plan1 = () => {
                       <p className="text-center text-black-700 text-xs font-bold">8GB</p>
                     </div>
                   </div>
-                  {/* Repeat the above structure for other features */}
+                  <div className="flex w-full justify-between">
+                    <div>
+                      <p className="text-center text-black-700 text-xs">RAM:</p>
+                    </div>
+                    <div>
+                      <p className="text-center text-black-700 text-xs font-bold">8GB</p>
+                    </div>
+                  </div>
+                  <div className="flex w-full justify-between">
+                    <div>
+                      <p className="text-center text-black-700 text-xs">RAM:</p>
+                    </div>
+                    <div>
+                      <p className="text-center text-black-700 text-xs font-bold">8GB</p>
+                    </div>
+                  </div>
+                  <div className="flex w-full justify-between">
+                    <div>
+                      <p className="text-center text-black-700 text-xs">RAM:</p>
+                    </div>
+                    <div>
+                      <p className="text-center text-black-700 text-xs font-bold">8GB</p>
+                    </div>
+                  </div>
                 </div>
               </div>
               <button className="text-black text-xs px-4 py-2 rounded-md font-bold flex items-center justify-center w-full mt-4">
@@ -194,4 +257,4 @@ const Plan1 = () => {
   );
 };
 
-export default Plan1;
+export default Plans  ;

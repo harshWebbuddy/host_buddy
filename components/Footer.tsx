@@ -7,10 +7,13 @@ import { RiLinkedinLine } from "react-icons/ri";
    
 import Image from "next/image";
 import Link from "next/link";
+import FooterBox from "./FooterBox";
 
 const Footer = () => (
+
   <footer className='w-full flex flex-col text-black-100  mt-5 border-t bg-gradient-to-b from-gray-800 to-gray-900 border-gray-100'>
-    <div className='flex max-md:flex-col flex-wrap justify-between gap-5 sm:px-16 px-6 py-10'>
+     <div className="w-11/12 md:w-7/12 mx-auto relative -top-80 md:-top-32 bg-white  h-14"><FooterBox/></div> 
+    <div className='flex max-md:flex-col flex-wrap justify-between gap-5 sm:px-16 px-6 py-10  mt-32 md:mt-40'>
       <div className='flex flex-col justify-center md:justify-start  items-center md:items-start gap-6'>
 <div className="justify-center mr-5 md:mr-0">
         <span className="font-semibold text-2xl text-white">H</span>
@@ -21,7 +24,7 @@ const Footer = () => (
         <p className='text-base text-white w-5/12 justify-center'>
         Lorem ipsum dolor sit amet consectetur. Viverra aenean tristique sit aliquam blandit. Luctus.
         </p>
-        <div className="flex flex-row justify-evenly gap-7">
+        <div className="flex flex-row justify-evenly gap-7 mr-8 md:mr-0">
   <span className="text-white text-2xl"><FaFacebookF /></span>
   <span className="text-white text-2xl"><IoLogoInstagram /></span>
   <span className="text-white text-2xl"><CiTwitter /></span>
@@ -30,11 +33,11 @@ const Footer = () => (
 
       </div>
 
-      <div className="footer__links flex flex-row justify-center items-center  gap-0 md:gap-20 text-white">
+      <div className="footer__links flex flex-row justify-center items-center gap-0  md:gap-20 text-white">
         {footerLinks.map((item) => (
-          <div key={item.title} className="footer__link text-white ">
+          <div key={item.title} className="footer__link text-white  mx-auto ">
             <h3 className="font-bold">{item.title}</h3>
-            <div className="flex flex-col gap-5 text-white">
+            <div className="flex flex-col gap-6">
               {item.links.map((link) => (
                 <Link
                   key={link.title}

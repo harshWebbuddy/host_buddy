@@ -76,8 +76,8 @@ export const footerLinks = [
     links: [
       { title: "Home", url: "/" },
       { title: "About Us", url: "/" },
-      { title: "Partnership", url: "/" },
-      { title: "Bussiness ", url: "/" },
+      { title: "Partners", url: "/" },
+      { title: "Attributes ", url: "/" },
     ],
   },
   {
@@ -90,12 +90,12 @@ export const footerLinks = [
     ],
   },
   {
-    title: "Help",
+    title: "Features",
     links: [
       { title: "Discord", url: "/" },
-      { title: "Instagram", url: "/" },
+      { title: "linkedin", url: "/" },
       { title: "Twitter", url: "/" },
-      { title: "Facebook", url: "/" },
+      { title: "Insta", url: "/" },
     ],
   },
   {

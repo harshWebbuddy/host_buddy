@@ -134,7 +134,7 @@ const ContactForm: React.FC = () => {
           </button>
         </div>
       </form>
-      <div className="flex  justify-center md:justify-around w-full mt-20 gap-12 mx-auto mb-20">
+      <div className="flex  justify-center md:justify-around w-full mt-20 gap-12 mx-auto mb-80 md:mb-40">
         <div className="w-1/4 bg-white-200 p-4 rounded-lg shadow-md flex items-center justify-center">
           <div className="mr-4">
             <img
