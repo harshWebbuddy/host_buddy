@@ -5,7 +5,7 @@ const Support = () => {
   return (
         <div className="w-full h-[900px] md:h-[517px] top-[2124px]  bg-gradient-to-b from-gray-800 to-gray-900">
           <div className="flex flex-col gap-5 justify-center item ">
-          <div className="mx-auto md:flex flex-row  md:gap-96 md:mt-12">
+          <div className="mx-auto   flex flex-col md:flex flex-row md:gap-96 md:mt-12">
             <h4 className="text-3xl sm:text-5xl text-white font-semibold font-mona-sans leading-[63px]">
               Why Choose HostBuddy
               <div className="w-40 h-1 bg-orange-500 mt-4 ml-3"></div>
@@ -17,7 +17,7 @@ const Support = () => {
             </p>
             {/* Orange line below "Why Choose HostBuddy" */}
           </div>
-        <div className="flex flex-col sm:flex-row gap-[85px]  md:gap-[20px] w-[1220px]  h-[216.18px]  md:border-b-[8px] border-[#000] md:rounded-t-[8.56px]  md:items-center justify-center mx-auto mt-60 md:mt-16 ">
+        <div className="flex flex-col sm:flex-row gap-[85px] md:gap-[20px] w-[1220px]  h-[216.18px]  md:left-385 md:border-b-[8px] border-[#000] md:rounded-t-[8.56px]  md:items-center justify-center mx-auto mt-60 md:mt-16 ">
           {[1, 2, 3].map((index) => (
             <div key={index} className="relative flex-1 w-[342px] h-[139.12px] gap-10">
              <div className="absolute -top-7 left-9 w-14 h-14 flex justify-center items-center rounded-xl transition-all duration-300 bg-white hover:bg-orange-500">

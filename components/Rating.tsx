@@ -46,7 +46,8 @@ const Ratingpanel = () => {
   };
 
   return (
-    <div className="w-full flex flex-col md:flex-row justify-center items-center bg-white h-full gap-40">
+    <div className=" flex flex-col md:flex-row justify-center items-center mx-auto bg-gray-200  w-[1220px] h-[169.27px] top-[817px] left-[350px]  py-40 gap-10 rounded-tl-[20px]">
+      <div className="max-w-[1120px] h-[89.27px] gap-x-28 flex flex-row">
       <div className="font-mona-sans font-semibold text-xl leading-63 text-left w-64 h-16 items-center justify-center ml-20 md:mt-16">
         <h3 className="font-bold">Customer Happiness</h3>
       </div>
@@ -92,6 +93,7 @@ const Ratingpanel = () => {
           </span>{" "}
           reviews
         </h2>
+      </div>
       </div>
     </div>
   );

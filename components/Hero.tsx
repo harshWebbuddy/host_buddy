@@ -1,67 +1,46 @@
+// import { FiHeadphones } from "react-icons/fi";
 import React from "react";
-
-const Hero = () => {
+import Image from "next/image";
+const Support = () => {
   return (
-    <section className="flex flex-col justify-center items-center gap-5 h-full min-h-[85vh] relative py-40 px-3">
-      <div className="absolute inset-0 w-full h-full">
-        {/* background video */}
-        <video height="452" width="768" autoPlay className="absolute inset-0 object-cover w-full h-full">
-          <source src="/video.mp4" />
-          Your browser does not support the video tag...
-        </video>
-
-        {/* video overlay */}
-        <div className="absolute z-[1] bg-[#16191C] bg-opacity-80 inset-0 w-full h-full" />
-      </div>
-
-      {/* main content in the hero section */}
-      <div className="relative z-[2] w-full h-full flex flex-col space-y-10 justify-center items-center text-white">
-        <h4 className="text-orange-500 font-bold italic">Domain Name Search</h4>
-        <h2 className="font-extrabold text-4xl sm:text-5xl md:text-7xl !mt-5 text-center">Find Your Dream Domain Name</h2>
-        <h4 className="text-lg text-center">Use our domain checker tool to find the perfect name for your online project.</h4>
-        <div className="bg-white rounded-full p-1 w-full max-w-5xl mx-auto focus-within:ring-[3px] ring-white/80 transition-all duration-500">
-          <form className="flex w-full">
-            <input
-              type="text"
-              alt=""
-              className="w-full flex-1 outline-none placeholder:text-[#B8B8B8] bg-transparent rounded-full px-5 text-black text-lg"
-              placeholder="Find your dream domain"
-            />
-            <button className="bg-[#FF7500] h-[62px] rounded-full w-full flex-1 max-w-[182px] hover:bg-opacity-80 transition-all duration-300 text-lg">
-              Search
-            </button>
-          </form>
-        </div>
-        <div className="w-full flex flex-wrap mx-auto max-w-5xl justify-center items-center gap-6">
-          <h2 className="font-bold text-base sm:text-xl space-x-1">
-            <span> .com </span>
-            <span className="text-white/40 font-bold text-lg line-through"> $25.00 </span>
-            <span> $19.00 </span>
-          </h2>
-          <div className="h-3 w-3 bg-[#FF7500] rounded-full mt-1" />
-          <h2 className="font-bold text-base sm:text-xl space-x-1">
-            <span> .co </span>
-            <span className="text-white/40 font-bold text-lg line-through"> $25.00 </span>
-            <span> $15.00</span>
-          </h2>
-          <div className="h-3 w-3 bg-[#FF7500] rounded-full mt-1" />
-
-          <h2 className="font-bold text-base sm:text-xl space-x-1">
-            <span> .net</span>
-            <span className="text-white/40 font-bold text-lg line-through"> $25.00 </span>
-            <span> $16.00 </span>
-          </h2>
-          <div className="h-3 w-3 bg-[#FF7500] rounded-full mt-1" />
-
-          <h2 className="font-bold text-base sm:text-xl space-x-1">
-            <span> .store </span>
-            <span className="text-white/40 font-bold text-lg line-through"> $25.00 </span>
-            <span> $18.00</span>
-          </h2>
+        <div className="w-full h-[900px] md:h-[517px] top-[2124px]  bg-gradient-to-b from-gray-800 to-gray-900">
+          <div className="flex flex-col gap-5 justify-center item ">
+          <div className="mx-auto md:flex flex-row  md:gap-96 md:mt-12">
+            <h4 className="text-3xl sm:text-5xl text-white font-semibold font-mona-sans leading-[63px]">
+              Why Choose HostBuddy
+              <div className="w-40 h-1 bg-orange-500 mt-4 ml-3"></div>
+            </h4>
+            <p className="text-white text-base sm:text-lg mt-2 opacity-80 font-light leading-7 w-80">
+              Lorem ipsum dolor sit amet consectetur. Sit placerat pellentesque
+              lacus elementum bibendum. Vitae tortor scelerisque maecenas amet sit.
+            </p>
+            {/* Orange line below "Why Choose HostBuddy" */}
+          </div>
+        <div className="flex flex-col sm:flex-row gap-[85px]  md:gap-[20px] w-[1220px]  h-[216.18px]  md:border-b-[8px] border-[#000] md:rounded-t-[8.56px]  md:items-center justify-center mx-auto mt-60 md:mt-16 ">
+          {[1, 2, 3].map((index) => (
+            <div key={index} className="relative flex-1 w-[342px] h-[139.12px] gap-10">
+             <div className="absolute -top-7 left-9 w-14 h-14 flex justify-center items-center rounded-xl transition-all duration-300 bg-white hover:bg-orange-500">
+  <Image
+    src="/headphones.svg"
+    alt="logo"
+    width={18}
+    height={18}
+    className="object-contain"
+  />
+</div>
+            
+              <div className="bg-[#3C3C3C] shadow-solid-orange rounded-2xl group hover:bg-[#F9EFE4]  text-[#FFFFFF] hover:text-[#16191C] p-6 sm:p-8 transition-all duration-300 cursor-pointer">
+                <h2 className="text-lg font-bold mt-4 w-[344px] h-[26px]  opacity-1 mb-4">Support 24x7x365</h2>
+                <p className="sm:text-base  w-[342px] h-[96px] opacity-70 font-mona-sans text-base font-normal leading-[24px] text-left">
+                  Maximize your site loading speed, response times and core web vital score. We offer 100% SSD NVMe storage, HTTP/2 & Litespeed server as a
+                  standard.
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
-
-export default Hero;
+export default Support;

@@ -6,9 +6,9 @@ const PlanPage = () => {
   return (
     <div className='flex flex-col gap-40'>
 <div>
-   <Ratingpanel/>
+   {/* <Ratingpanel/> */}
 </div>
-    <div className='w-8/12 items-center justify-center mx-auto mb-20'><Plans/></div>
+    <div className=' items-center justify-center mx-auto mb-20'><Plans/></div>
     </div>
   )
 }

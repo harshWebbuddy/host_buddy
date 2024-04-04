@@ -37,16 +37,22 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="w-8/12 mx-auto p-8 bg-white rounded-lg shadow-md">
-      <h2 className="text-3xl font-bold mb-4 text-center">
-        Fill out the Contact Form
+    <div className="w-full bg-gray-200 ">    
+    <div className="  w-full md:max-w-[1220px] h-[982px]  p-8 rounded-lg  items-center justify-center mx-auto">
+      <div className="c items-center justify-center mx-auto">
+      <h2 className=" h-[63px] font-mona-sans text-4xl font-semibold item text-center text-black">
+        Full out the Contact Form
       </h2>
-      <p className="text-xs mb-4 text-center">
+      </div >
+      <div className="w-[326px] h-[26px] top-[152px] left-[797px]  mt-5 md:mt-0   font-mona-sans text-sm font-light leading-26 text-center mx-auto">   
+         <p className="text-xs mb-4 md:mr-0 mr-6 text-center">
         We will help you to choose the best plan!
       </p>
+      </div>
+
       <form onSubmit={handleSubmit}>
-        <div className="flex flex-row gap-4">
-          <div className="w-6/12">
+        <div className="flex flex-col md:flex-row gap-4 mt-4 items-center justify-center mx-auto ">
+          <div className="w-[350px] md:w-[600px] h-[53px]  px-16 pt-17.61 pb-18.39 gap-0 border-t-0 border-r-0 border-b-0 rounded-tl-10 ">
             <input
               type="text"
               id="fullName"
@@ -58,7 +64,7 @@ const ContactForm: React.FC = () => {
               required
             />
           </div>
-          <div className="w-6/12">
+          <div className="w-[350px] md:w-[600px] h-[53px]  px-16 pt-17.61 pb-18.39 gap-0 border-t-0 border-r-0 border-b-0 rounded-tl-10 ">
             <input
               type="email"
               id="email"
@@ -71,9 +77,9 @@ const ContactForm: React.FC = () => {
             />
           </div>
         </div>
-        <div className="flex flex-row gap-4 mt-4">
-          <div className="w-6/12">
-            <input
+        <div className="flex flex-col md:flex-row gap-4 mt-4 items-center justify-center mx-auto ">
+          <div className="w-[350px] md:w-[600px] h-[53px]  px-16 pt-17.61 pb-18.39 gap-0 border-t-0 border-r-0 border-b-0 rounded-tl-10 ">
+              <input
               type="text"
               id="subject"
               name="subject"
@@ -84,7 +90,7 @@ const ContactForm: React.FC = () => {
               required
             />
           </div>
-          <div className="w-6/12">
+          <div className="w-[350px] md:w-[600px] h-[53px]  px-16 pt-17.61 pb-18.39 gap-0 border-t-0 border-r-0 border-b-0 rounded-tl-10 ">
             <select
               id="selectedDocument"
               name="selectedDocument"
@@ -100,19 +106,19 @@ const ContactForm: React.FC = () => {
             </select>
           </div>
         </div>
-        <div className="mt-4">
+        <div className="mt-4 items-center justify-center mx-auto">
           <textarea
             id="message"
             name="message"
             value={formData.message}
             onChange={handleChange}
-            className="border border-gray-300 rounded-md px-4 py-2 w-full h-32"
+            className="w-[220px]  md:w-[1019px] h-[133px] ml-9 md:ml-16   b-100.01 rounded-tl-10 "
             placeholder="Message"
             required
           ></textarea>
         </div>
-        <div className="flex flex-row justify-center md:justify-between mt-4">
-          <div className="flex flex-row items-center mb-4">
+        <div className="flex flex-col md:flex-row justify-center items-center   md:justify-between mt-4">
+          <div className="w-[230px] md:w-[511px] h-[24px] top-[545px] left-[374px]  font-mona-sans text-base font-normal leading-24 tracking-tighter md:ml-16 flex flex-row items-center mb-4">
             <input
               type="checkbox"
               id="agreeTerms"
@@ -128,7 +134,7 @@ const ContactForm: React.FC = () => {
           </div>
           <button
             type="submit"
-            className="bg-orange-500 text-white px-6 py-3 rounded-md hover:bg-orange-600"
+            className= "bg-orange-500 text-white text-xs px-6 py-3 rounded-md hover:bg-orange-600 md:w-[135.93px] md:mr-20 h-[48px] top-[533px] rounded-tl-10"
           >
             Submit Ticket
           </button>
@@ -176,6 +182,8 @@ const ContactForm: React.FC = () => {
         </div>
       </div>
     </div>
+    </div>
+
   );
 };
 
