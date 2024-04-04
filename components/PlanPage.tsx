@@ -1,5 +1,5 @@
 import React from 'react'
-import Plan1 from './Plans'
+import Plans from './Plans'
 import Ratingpanel from './Rating'
 
 const PlanPage = () => {
@@ -8,7 +8,7 @@ const PlanPage = () => {
 <div>
    <Ratingpanel/>
 </div>
-    <div className='w-8/12 items-center justify-center mx-auto'><Plan1/></div>
+    <div className='w-8/12 items-center justify-center mx-auto mb-20'><Plans/></div>
     </div>
   )
 }
