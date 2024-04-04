@@ -3,8 +3,45 @@
 @tailwind utilities;
 
 .shadow-solid-orange {
-    box-shadow: 0px 10px 0px #2B2B2B;
-  }
-  .shadow-solid-orange:hover {
-    box-shadow: 0px 10px 0px #ff7500;
-  }
+  box-shadow: 0px 10px 0px #2b2b2b;
+}
+.shadow-solid-orange:hover {
+  box-shadow: 0px 10px 0px #ff7500;
+}
+
+@font-face {
+  font-family: "Mona Sans";
+  src: url("../fonts/Mona-Sans/Mona-Sans-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mona Sans";
+  src: url("../fonts/Mona-Sans/Mona-Sans-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mona Sans";
+  src: url("../fonts/Mona-Sans/Mona-Sans-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Mona Sans";
+  src: url("../fonts/Mona-Sans/Mona-Sans-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mona Sans";
+  src: url("../fonts/Mona-Sans/Mona-Sans-ExtraBold.ttf");
+  font-weight: 800;
+  font-style: normal;
+}
+* {
+  font-family: "Mona Sans", sans-serif !important;
+}
