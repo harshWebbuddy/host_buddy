@@ -171,7 +171,7 @@ const Plans = () => {
           </div>
           <div className="w-393 h-545">
             <div className="w-full bg-customBackground  rounded-lg shadow-md p-6">
-            <h2 className="font-mona-sans font-bold text-lg leading-7 text-center w-84 h-30 gap-0 text-gray-900 ">IGNITE</h2>
+            <h2 className="font-mona-sans font-bold text-2xl leading-7 text-center w-84 h-30 gap-0 text-gray-900 ">IGNITE</h2>
               <p className=" font-mona-sans  leading-7  w-36  h-17 gap-0  text-xs text-center mx-auto  mb-3 opacity-45 text-gray-900">From</p>
               <div className="font-semibold text-6xl leading-9 text-center font-mono-sans -serif text-orange-500">$29</div>
               <p className="font-mona-sans text-base font-normal leading-21 text-center text-gray-900 mb-4  opacity-45">/Month</p>
