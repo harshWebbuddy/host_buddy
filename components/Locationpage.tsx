@@ -2,7 +2,7 @@ import React from 'react';
 
 const LocationPage = () => {
   return (
-    <div className="flex flex-col items-center justify-center mt-20 mb-20">
+    <div className="flex flex-col items-center justify-center mt-20 mb-24">
       {/* Headline */}
       <h1 className=" mb-4 text-center  font-mona-sans text-4xl font-semibold leading-16 ">Our Datacenters Are Located In <span className="text-orange-500">7 Regions</span></h1>
       {/* Text */}
