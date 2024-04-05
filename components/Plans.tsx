@@ -2,7 +2,7 @@ import { FaArrowRight } from "react-icons/fa";
 import { IoIosArrowForward } from "react-icons/io";
 const Plans = () => {
   return (
-    <div className="flex flex-col  max-w-[1520px] md:w-[1500px] mx-auto px-4">
+    <div className="flex flex-col  max-w-[1220px] md:w-[1500px] mx-auto px-4">
       {/* heading */}
       <div className="flex flex-col md:flex-row justify-between gap-y-6 gap-x-4 opacity-1 items-center mb-8">
         <div className="relative w-full">

@@ -5,7 +5,7 @@ import { FaHeadphones, FaHeadphonesAlt } from "react-icons/fa";
 const Support = () => {
   return (
     <div className="w-full bg-gradient-to-b from-[#292E34] to-[#16191C] py-20 px-3">
-      <div className="w-full max-w-[1520px] mx-auto">
+      <div className="w-full max-w-[1220px] mx-auto">
         <div className="mx-auto md:flex flex-row justify-between">
           <h4 className="text-3xl sm:text-5xl text-white font-semibold font-mona-sans leading-[63px]">
             Why Choose HostBuddy

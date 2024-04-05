@@ -46,8 +46,8 @@ const Ratingpanel = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center mx-auto bg-gray-200 w-full md:max-w-[1500px] p-10 gap-10 rounded-2xl mt-16 ">
-    <div className="md:flex items-center justify-center gap-x-10">
+    <div className="flex flex-col md:flex-row justify-center items-center mx-auto bg-gray-200 w-full md:max-w-[1200px] p-10  rounded-2xl mt-16 ">
+    <div className="md:flex items-center justify-center gap-x-5">
       <div className="font-mona-sans font-semibold text-xl leading-63 text-center md:text-left w-64 h-16 md:mt-12">
         <h3 className="font-bold">Customer Happiness</h3>
       </div>

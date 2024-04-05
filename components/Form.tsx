@@ -37,10 +37,10 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="w-full bg-gray-200 ">    
-    <div className="  w-full md:max-w-[1220px] h-[1300px]  md:h-[900px] p-8 rounded-lg  items-center justify-center mx-auto">
-      <div className="c items-center justify-center mx-auto">
-      <h2 className=" h-[63px] font-mona-sans text-4xl font-semibold item text-center text-black">
+    <div className="w-full bg-gray-200  ">    
+    <div className="  w-full md:max-w-[1220px] h-[1300px]   md:h-[900px] p-8 rounded-lg  items-center justify-center mx-auto mb-60 md:mb-0">
+      <div className="items-center justify-center mx-auto">
+      <h2 className=" h-[63px] font-mona-sans text-4xl font-semibold item text-center text-black mt-3">
         Full out the Contact Form
       </h2>
       </div >
@@ -120,7 +120,7 @@ const ContactForm: React.FC = () => {
   </div>
 </div>
   </div>
-  <div className="mt-4 items-center justify-center mx-auto">
+  <div className="mt-4 items-center justify-center ml-1">
     <textarea
       id="message"
       name="message"
@@ -155,21 +155,21 @@ const ContactForm: React.FC = () => {
   </div>
 </form>
 
-<div className="flex flex-col md:flex-row justify-center md:justify-around w-full mt-20 gap-12 mx-auto mb-80 md:mb-40">
-  <div className="w-full md:w-1/4 bg-white-200 p-4 rounded-lg shadow-md flex items-center justify-center mb-8 md:mb-0">
+<div className="flex flex-col md:flex-row justify-center md:justify-around w-full mt-20 gap-1 mx-auto mb-80 md:mb-40">
+  <div className="w-full md:w-1/4 bg-white-200 p-4 rounded-lg shadow-md flex items-center justify-center mb-8 md:mb-0 bg-white">
     <div className="mr-4">
       <img
         src="\phone-call-svgrepo-com.svg"
         alt="Call Icon"
         className="w-10 h-10"
       />
-    </div>
+    </div >
     <div>
       <h3 className="text-xl font-semibold mb-2">Sales Help</h3>
       <p className="text-gray-700">24/7/365 Through the Chat Widget</p>
     </div>
   </div>
-  <div className="w-full md:w-1/4 bg-white-200 p-4 rounded-lg shadow-md flex items-center justify-center mb-8 md:mb-0">
+  <div className="w-full md:w-1/4 bg-white-200 p-4 rounded-lg shadow-md flex items-center justify-center mb-8 md:mb-0 bg-white">
     <div className="mr-4">
       <img
         src="\phone-call-svgrepo-com.svg"
@@ -182,7 +182,7 @@ const ContactForm: React.FC = () => {
       <p className="text-gray-700">24/7/365 Through the Chat Widget.</p>
     </div>
   </div>
-  <div className="w-full md:w-1/4 bg-white-200 p-4 rounded-lg shadow-md flex items-center justify-center">
+  <div className="w-full md:w-1/4 bg-white-200 p-4 rounded-lg shadow-md flex items-center justify-center bg-white">
     <div className="mr-4">
       <img
         src="\phone-call-svgrepo-com.svg"

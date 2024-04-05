@@ -32,7 +32,7 @@ const Hero = () => {
             </button>
           </form>
         </div>
-        <div className="w-full flex flex-wrap mx-auto max-w-5xl justify-center items-center gap-6">
+        <div className="w-full flex flex-col md:flex-row mx-auto max-w-5xl justify-center items-center gap-6">
           <h2 className="font-bold text-base sm:text-xl space-x-1">
             <span> .com </span>
             <span className="text-white/40 font-bold text-lg line-through"> $25.00 </span>
