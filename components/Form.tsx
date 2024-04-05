@@ -38,7 +38,7 @@ const ContactForm: React.FC = () => {
 
   return (
     <div className="w-full bg-gray-200 ">    
-    <div className="  w-full md:max-w-[1220px] h-[982px]  p-8 rounded-lg  items-center justify-center mx-auto">
+    <div className="  w-full md:max-w-[1220px] h-[1300px]  md:h-[900px] p-8 rounded-lg  items-center justify-center mx-auto">
       <div className="c items-center justify-center mx-auto">
       <h2 className=" h-[63px] font-mona-sans text-4xl font-semibold item text-center text-black">
         Full out the Contact Form
@@ -90,21 +90,35 @@ const ContactForm: React.FC = () => {
         required
       />
     </div>
-    <div className="w-[350px] md:w-[600px] h-[53px] px-16 pt-17.61 pb-18.39 rounded-tl-10 ">
-      <select
-        id="selectedDocument"
-        name="selectedDocument"
-        value={formData.selectedDocument}
-        onChange={handleChange}
-        className="border border-gray-300 rounded-md px-0 md:px-4 py-1 md:py-2 w-full text-left"
-        required
-      >
-        <option value="Select Document">Select Document</option>
-        <option value="Document 1">Document 1</option>
-        <option value="Document 2">Document 2</option>
-        <option value="Document 3">Document 3</option>
-      </select>
-    </div>
+    <div className="w-[350px] md:w-[600px] h-[53px] px-16 pt-17.61 pb-18.39 rounded-tl-10 relative">
+  <select
+    id="selectedDocument"
+    name="selectedDocument"
+    value={formData.selectedDocument}
+    onChange={handleChange}
+    className="border border-gray-300 rounded-md px-1 md:px-4 py-1 md:py-2 w-full text-left appearance-none"
+    required
+  >
+    <option value="Select Document">Select Document</option>
+    <option value="Document 1">Document 1</option>
+    <option value="Document 2">Document 2</option>
+    <option value="Document 3">Document 3</option>
+  </select>
+  <div className="relative ml-48 flex items-center -top-7">
+    <svg
+      className="w-5 h-5 text-gray-400"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 20 20"
+      fill="currentColor"
+    >
+      <path
+        fillRule="evenodd"
+        d="M6.293 7.293a1 1 0 011.414 0L10 9.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+        clipRule="evenodd"
+      />
+    </svg>
+  </div>
+</div>
   </div>
   <div className="mt-4 items-center justify-center mx-auto">
     <textarea
@@ -141,47 +155,48 @@ const ContactForm: React.FC = () => {
   </div>
 </form>
 
-      <div className="flex  justify-center md:justify-around w-full mt-20 gap-12 mx-auto mb-80 md:mb-40">
-        <div className="w-1/4 bg-white-200 p-4 rounded-lg shadow-md flex items-center justify-center">
-          <div className="mr-4">
-            <img
-              src="\phone-call-svgrepo-com.svg"
-              alt="Call Icon"
-              className="w-10 h-10"
-            />
-          </div>
-          <div>
-            <h3 className="text-xl font-semibold mb-2">Sales Help</h3>
-            <p className="text-gray-700">24/7/365 Through the Chat Widget</p>
-          </div>
-        </div>
-        <div className="w-1/4 bg-white-200 p-4 rounded-lg shadow-md flex items-center justify-center">
-          <div className="mr-4">
-            <img
-              src="\phone-call-svgrepo-com.svg"
-              alt="Call Icon"
-              className="w-10 h-10"
-            />
-          </div>
-          <div>
-            <h3 className="text-xl font-semibold mb-2">Support Chat</h3>
-            <p className="text-gray-700">24/7/365 Through the Chat Widget.</p>
-          </div>
-        </div>
-        <div className="w-1/4 bg-white-200 p-4 rounded-lg shadow-md flex items-center justify-center">
-          <div className="mr-4">
-            <img
-              src="\phone-call-svgrepo-com.svg"
-              alt="Call Icon"
-              className="w-10 h-10"
-            />
-          </div>
-          <div>
-            <h3 className="text-xl font-semibold mb-2">Support Email</h3>
-            <p className="text-gray-700">24/7/365 Through the Chat Widget</p>
-          </div>
-        </div>
-      </div>
+<div className="flex flex-col md:flex-row justify-center md:justify-around w-full mt-20 gap-12 mx-auto mb-80 md:mb-40">
+  <div className="w-full md:w-1/4 bg-white-200 p-4 rounded-lg shadow-md flex items-center justify-center mb-8 md:mb-0">
+    <div className="mr-4">
+      <img
+        src="\phone-call-svgrepo-com.svg"
+        alt="Call Icon"
+        className="w-10 h-10"
+      />
+    </div>
+    <div>
+      <h3 className="text-xl font-semibold mb-2">Sales Help</h3>
+      <p className="text-gray-700">24/7/365 Through the Chat Widget</p>
+    </div>
+  </div>
+  <div className="w-full md:w-1/4 bg-white-200 p-4 rounded-lg shadow-md flex items-center justify-center mb-8 md:mb-0">
+    <div className="mr-4">
+      <img
+        src="\phone-call-svgrepo-com.svg"
+        alt="Call Icon"
+        className="w-10 h-10"
+      />
+    </div>
+    <div>
+      <h3 className="text-xl font-semibold mb-2">Support Chat</h3>
+      <p className="text-gray-700">24/7/365 Through the Chat Widget.</p>
+    </div>
+  </div>
+  <div className="w-full md:w-1/4 bg-white-200 p-4 rounded-lg shadow-md flex items-center justify-center">
+    <div className="mr-4">
+      <img
+        src="\phone-call-svgrepo-com.svg"
+        alt="Call Icon"
+        className="w-10 h-10"
+      />
+    </div>
+    <div>
+      <h3 className="text-xl font-semibold mb-2">Support Email</h3>
+      <p className="text-gray-700">24/7/365 Through the Chat Widget</p>
+    </div>
+  </div>
+</div>
+
     </div>
     </div>
 

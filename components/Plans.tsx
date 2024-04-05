@@ -2,7 +2,7 @@ import { FaArrowRight } from "react-icons/fa";
 import { IoIosArrowForward } from "react-icons/io";
 const Plans = () => {
   return (
-    <div className="flex flex-col max-w-[1520px] mx-auto px-4">
+    <div className="flex flex-col  max-w-[1520px] md:w-[1500px] mx-auto px-4">
       {/* heading */}
       <div className="flex flex-col md:flex-row justify-between gap-y-6 gap-x-4 opacity-1 items-center mb-8">
         <div className="relative w-full">
@@ -171,7 +171,7 @@ const Plans = () => {
         </div>
       </section>
       {/* {millions} */}
-      <div className=" flex flex-col md:flex-row gap-y-10 opacity-1 mx-auto items-center justify-center py-20 md:py-24">
+      <div className=" flex flex-col md:flex-row gap-y-10 opacity-1 mx-auto items-center justify-center gap-20  py-20 md:py-24">
         <div className="flex flex-col item-center justify-center mx-auto ">
           <div>
             <h2 className=" text-orange-500 font-mona-sans font-extrabold text-7xl text-center">1.2M+</h2>

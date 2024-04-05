@@ -46,56 +46,78 @@ const Ratingpanel = () => {
   };
 
   return (
-    <div className=" flex flex-col md:flex-row justify-center items-center mx-auto bg-gray-200  w-[1220px] h-[169.27px] top-[817px] left-[350px]  py-40 gap-10 rounded-tl-[20px]">
-      <div className="max-w-[1120px] h-[89.27px] gap-x-28 flex flex-row">
-      <div className="font-mona-sans font-semibold text-xl leading-63 text-left w-64 h-16 items-center justify-center ml-20 md:mt-16">
+    <div className="flex flex-col md:flex-row justify-center items-center mx-auto bg-gray-200 w-full md:max-w-[1500px] p-10 gap-10 rounded-2xl mt-16 ">
+    <div className="md:flex items-center justify-center gap-x-10">
+      <div className="font-mona-sans font-semibold text-xl leading-63 text-center md:text-left w-64 h-16 md:mt-12">
         <h3 className="font-bold">Customer Happiness</h3>
       </div>
-      <div>
-      <div className="text-xl font-bold text-blue-600 mb-4 mt-3 ">
-      G<span className="text-red-600">o</span>o<span className="text-yellow-500">g</span>l<span className="text-blue-600">e</span>
-    </div>
-        <StarRating initialRating={3.5} onChange={handleRatingChange} />
-        <h2 className="text-lg">
-        <span className="font-mona-sans font-extrabold text-xs leading-63 text-left w-64 h-16 ">
-            4.9/5 | 9010{" "}
-          </span>{" "}
-          reviews
-        </h2>
+  
+      <div className="hidden md:flex items-center">
+        <div className="w-[56px] border-t border-gray-600 transform rotate-90 opacity-1"></div>
       </div>
-      <div>
-      <h2 className="text-xl font-bold mb-4 mt-3">Trustpilot </h2>
+  
+      <div className="flex flex-col items-center">
+        <div className="text-xl font-bold text-blue-600 mb-4 mt-3">
+          G<span className="text-red-600">o</span>o
+          <span className="text-yellow-500">g</span>l
+          <span className="text-blue-600">e</span>
+        </div>
         <StarRating initialRating={3.5} onChange={handleRatingChange} />
-        <h2 className="text-lg">
+        <h2 className="text-[15px]">
           <span className="font-mona-sans font-extrabold text-xs leading-63 text-left w-64 h-16 ">
             4.9/5 | 9010{" "}
           </span>{" "}
           reviews
         </h2>
       </div>
-      <div>
-        <h2 className="text-xl font-bold mb-4 mt-3">Hostadvice</h2>
-        <StarRating initialRating={3.5} onChange={handleRatingChange} />
-        <h2 className="">
-        <span className="font-mona-sans font-extrabold text-xs leading-63 text-left w-64 h-16 ">
-            4.9/5 | 9010
-          </span>{" "}
-          reviews
-        </h2>
+      
+      <div className="hidden md:flex items-center">
+        <div className="w-[56px] border-t border-gray-600 transform rotate-90 opacity-1"></div>
       </div>
-      <div>
-      <h2 className="text-xl font-bold mb-4 mt-3">Serchen</h2>
-
+  
+      <div className="flex flex-col items-center">
+        <h2 className="text-xl font-bold mb-4 mt-3">Trustpilot</h2>
         <StarRating initialRating={3.5} onChange={handleRatingChange} />
-        <h2 className="text-lg">
-        <span className="font-mona-sans font-extrabold text-xs leading-63 text-left w-64 h-16 ">
+        <h2 className="text-[15px]">
+          <span className="font-mona-sans font-extrabold text-xs leading-63 text-left w-64 h-16 ">
             4.9/5 | 9010{" "}
           </span>{" "}
           reviews
         </h2>
       </div>
+  
+      <div className="hidden md:flex items-center">
+        <div className="w-[56px] border-t border-gray-600 transform rotate-90 opacity-1"></div>
+      </div>
+  
+      <div className="flex flex-col items-center">
+        <h2 className="text-xl font-bold mb-4 mt-3">Trustpilot</h2>
+        <StarRating initialRating={3.5} onChange={handleRatingChange} />
+        <h2 className="text-[15px]">
+          <span className="font-mona-sans font-extrabold text-xs leading-63 text-left w-64 h-16 ">
+            4.9/5 | 9010{" "}
+          </span>{" "}
+          reviews
+        </h2>
+      </div>
+  
+      <div className="hidden md:flex items-center">
+        <div className="w-[56px] border-t border-gray-600 transform rotate-90 opacity-1"></div>
+      </div>
+  
+      <div className="flex flex-col items-center">
+        <h2 className="text-xl font-bold mb-4 mt-3">Trustpilot</h2>
+        <StarRating initialRating={3.5} onChange={handleRatingChange} />
+        <h2 className="text-[15px]">
+          <span className="font-mona-sans font-extrabold text-xs leading-63 text-left w-64 h-16 ">
+            4.9/5 | 9010{" "}
+          </span>{" "}
+          reviews
+        </h2>
       </div>
     </div>
+  </div>
+  
   );
 };
 
