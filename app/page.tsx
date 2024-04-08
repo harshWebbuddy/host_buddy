@@ -13,7 +13,7 @@ export default function Home() {
     <div className="w-full justify-center items-center flex flex-col mx-auto ">
     <Hero /> 
         <PlanPage />
-     <Support /> 
+  <Support />  
     <LocationPage />
     <ContactForm /> 
   </div>

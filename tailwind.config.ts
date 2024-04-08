@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -19,9 +18,13 @@ const config: Config = {
       colors: {
         customBackground: '#F9EFE4',
       },
+       screens: {
+      'pa': '820px',
+      'ma':'1120px',
+      // => @media (min-width: 640px) { ... }
+    },
     },
   },
   plugins: [],
 };
-
 export default config;

@@ -2,7 +2,7 @@ import { FaArrowRight } from "react-icons/fa";
 import { IoIosArrowForward } from "react-icons/io";
 const Plans = () => {
   return (
-    <div className="flex flex-col  max-w-[1220px] md:w-[1500px] mx-auto px-4">
+    <div className="flex flex-col  max-w-[1220px] ma:w-[1500px] pa:w-[800px] mx-auto px-4">
       {/* heading */}
       <div className="flex flex-col md:flex-row justify-between gap-y-6 gap-x-4 opacity-1 items-center mb-8">
         <div className="relative w-full">
@@ -13,7 +13,7 @@ const Plans = () => {
         </div>
         <div className="flex flex-row gap-5 md:gap-15 items-center justify-center w-fu">
           <div>
-            <h2 className="font-mona-sans text-xs md:text-base font-normal leading-[24px] md:leading-[32px] tracking-[0.05em] md:tracking-[0.2px] text-right w-54 md:w-71 h-[32px] opacity-1">
+            <h2 className="font-mona-sans text-xs md:text-base font-normal leading-[24px] md:leading-[32px] tracking-[0.05em] md:tracking-[0.2px] text-right w-54 md:w-71  h-[32px] opacity-1">
               Monthly
             </h2>
           </div>
@@ -171,7 +171,7 @@ const Plans = () => {
         </div>
       </section>
       {/* {millions} */}
-      <div className=" flex flex-col md:flex-row gap-y-10 opacity-1 mx-auto items-center justify-center gap-20  py-20 md:py-24">
+      <div className=" flex flex-col md:flex-row  opacity-1 mx-auto items-center justify-center ma:gap-10 ma:w-[1016px] pa:w-[700px]  py-20 md:py-24">
         <div className="flex flex-col item-center justify-center mx-auto ">
           <div>
             <h2 className=" text-orange-500 font-mona-sans font-extrabold text-7xl text-center">1.2M+</h2>
