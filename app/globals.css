@@ -8,6 +8,11 @@
 .shadow-solid-orange:hover {
   box-shadow: 0px 10px 0px #ff7500;
 }
+.country:hover {
+  fill: #FF0000; /* Change the fill color on hover */
+  stroke: #000000; /* Change the stroke color on hover */
+  stroke-width: 2; /* Change the stroke width on hover */
+}
 
 @font-face {
   font-family: "Mona Sans";

@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata = {
   title: "webbuddy",
-  description: "Discover world's best car showcase application",
+  description: "WEBBUDDY",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -12,7 +12,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className='relative  justify-center items-center mx-auto'>
         <NavBar /> 
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

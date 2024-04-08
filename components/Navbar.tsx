@@ -4,9 +4,10 @@ import { FaArrowRight } from "react-icons/fa6";
 import { AiOutlineGlobal } from "react-icons/ai";
 import { useState } from "react";
 import MobileSidebar from "../components/MobileSidebar";
+
 const navLinks = [
   {
-    href: "#",
+    href: "/home",
     label: "Home",
   },
   {
@@ -26,8 +27,10 @@ const navLinks = [
     label: "Features",
   },
 ];
+
 const NavBar = () => {
   const [isExpanded, setIsExpanded] = useState(false);
+
   return (
     <header className="absolute top-0 w-full px-4 py-4 z-[5]">
       <div className="max-w-[1560px] mx-auto">
@@ -60,8 +63,10 @@ const NavBar = () => {
             <ul className="text-white flex gap-x-10">
               {navLinks.map((link, index) => (
                 <Link href={link.href} key={index}>
-                  <div className={`flex flex-col gap-[10px] items-center cursor-pointer`}>
+                  <div className={`flex flex-col gap-[10px] items-center cursor-pointer`} style={{ position: 'relative' }}>
                     <h1 className="whitespace-nowrap">{link.label}</h1>
+                    {/* Underline effect */}
+                    <div className="absolute w-full bg-red-500 bottom-0 h-0.5 opacity-0 transition-opacity duration-300"></div>
                   </div>
                 </Link>
               ))}
@@ -83,4 +88,5 @@ const NavBar = () => {
     </header>
   );
 };
+
 export default NavBar;
