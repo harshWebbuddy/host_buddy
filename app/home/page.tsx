@@ -82,7 +82,7 @@ const Home = () => {
         <LocationPage/>
 
     </div>
-    <div>
+    <div className="mt-40" >
         <Cards/>
     </div>
     </div>
