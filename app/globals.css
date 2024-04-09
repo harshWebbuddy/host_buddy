@@ -4,6 +4,7 @@
 .border-gradient {
   position: relative;
 }
+
 .border-gradient:hover::before {
   content: "";
   position: absolute;

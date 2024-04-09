@@ -5,6 +5,7 @@ import Cards from "./cards";
 import Unique from "./unique";
 import Awards from "./awards";
 import Clients from "./clients";
+import Question from "./question";
 
 const Home = () => {
   return (
@@ -97,6 +98,9 @@ const Home = () => {
     <div>
       <Clients/>
     </div>
+    <div>
+      <Question/>
+      </div>
     </div>
   );
 };

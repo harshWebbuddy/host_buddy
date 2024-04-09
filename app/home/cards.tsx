@@ -6,7 +6,7 @@ const Cards = () => {
      <div className="w-[900px] ma:w-[1286.05px] ma:h-[500px] gap-[0px] ma:gap-[178px] flex flex-col ma:flex-row pa:flex-row">
       <div className="flex flex-col w-[493px] h-[464px] gap-[5px] ma:gap-[40px] p-2">
         <div className="w-[420px] ma:w-[476px] h-[126px]">
-          <h2 className="text-[36px] ma:text-[42px] font-mono-sans wording  font-semibold">
+          <h2 className="text-[36px] ma:text-[42px] font-mono-sans leading-[53px] ma:leading-[63px] font-semibold">
             Lorem ipsum dolor sit amet consectetur.
           </h2>
         </div>

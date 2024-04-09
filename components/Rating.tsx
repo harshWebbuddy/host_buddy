@@ -40,16 +40,13 @@ const Ratingpanel = () => {
   };
   return (
     <div className="flex flex-col md:flex-row justify-center items-center mx-auto bg-gray-200 w-full ma:w-[1200px] pa:w-[800px]  p-10  rounded-2xl mt-16 ">
-    <div className="md:flex items-center justify-center pa:gap-x-1  ma:gap-x-10  ">
-      <div className="font-mona-sans font-semibold text-xl leading-63 text-center md:text-left w-64 pa:w-32 h-16 md:mt-12">
+    <div className="md:flex items-center justify-center pa:gap-x-1  ma:gap-x-40  ">
+      <div className="font-mona-sans font-semibold text-xl leading-63 text-center md:text-left w-[245px]  pa:w-32 h-16 ">
         <h3 className="font-bold">Customer Happiness</h3>
       </div>
+  <div className="flex flex-row gap-2 flex-wrap justify-between">
   
-      <div className="hidden md:flex items-center">
-        <div className="w-[56px] pa:w-[30px] border-t border-gray-600 transform rotate-90 opacity-1"></div>
-      </div>
-  
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center ">
         <div className="text-xl font-bold text-blue-600 mb-4 mt-3">
           G<span className="text-red-600">o</span>o
           <span className="text-yellow-500">g</span>l
@@ -98,7 +95,7 @@ const Ratingpanel = () => {
         <div className="w-[56px] pa:w-[30px] border-t border-gray-600 transform rotate-90 opacity-1"></div>
       </div>
   
-  
+     
       <div className="flex flex-col items-center">
         <h2 className="text-xl font-bold mb-4 mt-3">Trustpilot</h2>
         <StarRating initialRating={3.5} onChange={handleRatingChange} />
@@ -109,6 +106,8 @@ const Ratingpanel = () => {
           reviews
         </h2>
       </div>
+      </div>
+      
     </div>
   </div>
   
