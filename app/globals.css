@@ -1,13 +1,71 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+.border-gradient {
+  position: relative;
+}
+.border-gradient:hover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+  padding: 1px;
+  background: linear-gradient(95deg, #FE7602, rgba(254, 118, 2, 0));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
 .shadow-solid-orange {
   box-shadow: 0px 10px 0px #2b2b2b;
 }
 .shadow-solid-orange:hover {
   box-shadow: 0px 10px 0px #ff7500;
 }
+/* @media screen and (max-width: 768px) {
+  .margin {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .wording {
+    line-height: 30px;
+  }
+} */
+
+@media screen and (min-width: 360px) and (max-width:414px) {
+  .visible{
+    opacity: 0;
+  }
+  .heading{
+    font-size:31px;
+  }
+  .padding{
+    padding:25px 25px 25px 25px;
+  }
+  .margin {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .wording {
+    line-height: 40px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .visible{
+    opacity: 1;
+  }
+  .heading{
+    font-size: 41px;
+  }
+  .margin {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .wording {
+    line-height: 60px;
+  }
+}
+
 .country:hover {
   fill: #FF0000; /* Change the fill color on hover */
   stroke: #000000; /* Change the stroke color on hover */

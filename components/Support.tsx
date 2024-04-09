@@ -19,7 +19,7 @@ const Support = () => {
         <div className="flex flex-col sm:flex-row gap-x-8 gap-y-14 md:items-center justify-center mx-auto mt-20 md:mt-16 ">
           {[1, 2, 3].map((index) => (
             <div key={index} className="relative flex-1 w-full gap-10 group">
-              <div className="absolute -top-7 left-9 w-16 h-16 flex justify-center items-center rounded-xl transition-all duration-300 bg-white group-hover:bg-orange-500 text-[#FF7500] group-hover:text-white">
+              <div className="absolute -top-7 left-9 w-16 h-16 flex justify-center items-center rounded-xl transition-all duration-300 bg-white group-hover:bg-orange-500 ">
                 <FaHeadphonesAlt size={26} />
               </div>
 
