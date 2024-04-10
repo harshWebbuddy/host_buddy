@@ -32,7 +32,31 @@
   }
 } */
 
+@media screen and (min-width: 768px) and (max-width:1280px) {
+  .image{
+    width:46px;
+    height:46px
+  }
+
+  .heading{
+    font-size:31px;
+  }
+  .padding{
+    padding:25px 25px 25px 25px;
+  }
+  .margin {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .wording {
+    line-height: 40px;
+  }
+}
 @media screen and (min-width: 360px) and (max-width:414px) {
+  .image{
+    width:40px;
+    height:40px
+  }
   .visible{
     opacity: 0;
   }
@@ -52,6 +76,13 @@
 }
 
 @media screen and (min-width: 1120px) {
+  .image{
+    width:48px;
+    height:48px
+  }
+  .width{
+    width:1120px;
+  }
   .visible{
     opacity: 1;
   }
@@ -106,6 +137,7 @@
   font-weight: 800;
   font-style: normal;
 }
+
 * {
   font-family: "Mona Sans", sans-serif !important;
 }

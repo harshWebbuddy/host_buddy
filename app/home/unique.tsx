@@ -2,8 +2,8 @@ import React from "react";
 
 const Unique = () => {
   return (
-    <div className="w-full bg-[#F9EFE4]  flex flex-col ma:flex-row  ma:h-[829px]">
-        <img src="/dotted.svg" className="-ml-2 w-[50px] ma:w-[89.71px] ma:h-[113.2px] opacity-0 ma:opacity-1"/>
+    <div className="w-full bg-[#F9EFE4]  flex flex-col ma:flex-row h-[1170px] pa:h-[1200px] ma:h-[829px] ">
+        <img src="/dotted.svg" className="ml-1 w-[50px] ma:w-[89.71px] ma:h-[113.2px] opacity-0 ma:opacity-100 mt-20"/>
         <div className="ma:w-[1230.66px] ma:h-[668.18px] h-[1100px] flex flex-col ma:flex-row mx-auto gap-20">
       <div className="w-full max-w-[1220px] mx-auto ma:w-[699px] ma:h-[608px] margin padding">
       <div className="mx-auto md:flex flex-col justify-between ma:w-[699px] ma:h-[150px]">
@@ -11,11 +11,7 @@ const Unique = () => {
           What Makes Host<span className="text-orange-500">Buddy </span>
           Unique?
         </h4>
-        <p className="ma:text-[16px] mt-2 font-light leading-[24px] text-black ma:h-[72px] ma:w-[699px] ">
-          Lorem ipsum dolor sit amet consectetur. Ornare et amet lobortis
-          ornare. Ullamcorper accumsan donec eu condimentum diam a augue arcu.
-          Erat nibh nisl lacinia egestas mauris facilisi aliquam sit mauris.
-        </p>
+       
       </div>
       <div className="mt-10">
         <div className="relative flex ma:flex-row ma:w-[497px] ma:h-[150px] group hover:bg-white rounded-2xl shadow-solid transition-all duration-300 border-gradient">
@@ -72,12 +68,13 @@ const Unique = () => {
 
       </div>
     </div>
-    <div className="w-[250px] ma:w-[418.92px] ma:h-[668.18px] relative margin visible "> 
-    <img src="/manjumping.jpg" className="scale-x-[-1] opacity-100 z-10 relative  grayscale ml-10 ma:ml-0"/>
-    <img src="/manlowerjumping.svg" className="ma:-mt-60 ml-24 relative z-20 w-[200px] ma:w-[328.11px] "/>
-  <img src="/manupperjumping.svg" className="-mt-[150px] ma:-mt-[380px]  -ml-1 ma:-ml-24 relative z-20 w-[150px] ma:w-[271.4px]"/>
+    <div className="w-[270px] ma:w-[418.92px] ma:h-[668.18px] relative visible margin pa:-mt-10 ma:mt-20"> 
+    <img src="/manjumping.jpg" className="scale-x-[-1] opacity-100 z-10 relative  grayscale ml-10 ma:ml-0 pa:-mt-1 pa:ml-60"/>
+    {/* <img src="/manlowerjumping.svg" className="ma:-mt-60 pa:-mt-40 pa:ml-72 ml-0  relative z-20 w-[200px] ma:w-[328.11px]  "/> */}
+    <img src="/manlowerjumping.svg" className="ma:-mt-60 ml-24 pa:ml-80 ma:ml-28 relative z-20 w-[200px] ma:w-[328.11px] pa:-mt-40   "/>
+  <img src="/manupperjumping.svg" className="pa:-mt-[230px] ma:-mt-[380px]  pa:ml-52 ma:-ml-24 relative z-20 w-[150px] ma:w-[271.4px]"/>
     {/* // Circle image with eraser */}
-    <div className="absolute inset-0 z-0" style={{ width: "400px", height: "400px", transform: "translate(10%, 20%)" }}>
+    <div className="absolute inset-0 z-0 pa:ml-40 ma:ml-0 pa:-mt-12 ma:mt-0" style={{ width: "400px", height: "400px", transform: "translate(10%, 20%)" }}>
         <svg width="100%" height="100%" viewBox="0 0 400 400">
             <defs>
                 <mask id="mask" x="0" y="0" width="400" height="400">

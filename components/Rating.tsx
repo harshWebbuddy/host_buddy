@@ -43,10 +43,10 @@ const Ratingpanel = () => {
     <div className="md:flex items-center justify-center pa:gap-x-1  ma:gap-x-40  ">
       <div className="font-mona-sans font-semibold text-xl leading-63 text-center md:text-left w-[245px]  pa:w-32 h-16 ">
         <h3 className="font-bold">Customer Happiness</h3>
-      </div>
-  <div className="flex flex-row gap-2 flex-wrap justify-between">
+      </div> 
+  <div className="flex flex-col ma:flex-row pa:flex-row justify-between ma:gap-8 pa:flex-wrap ma:flex-nowrap">
   
-      <div className="flex flex-col items-center ">
+      <div className="flex flex-col items-center pa:w-[40%] mb-4">
         <div className="text-xl font-bold text-blue-600 mb-4 mt-3">
           G<span className="text-red-600">o</span>o
           <span className="text-yellow-500">g</span>l
@@ -61,42 +61,43 @@ const Ratingpanel = () => {
         </h2>
       </div>
       
-      <div className="hidden md:flex items-center">
+      <div className="hidden md:flex items-center ma:opacity-100 pa:opacity-0">
         <div className="w-[56px] pa:w-[30px] border-t border-gray-600 transform rotate-90 opacity-1"></div>
       </div>
-  
-      <div className="flex flex-col items-center">
-        <h2 className="text-xl font-bold mb-4 mt-3">Trustpilot</h2>
-        <StarRating initialRating={3.5} onChange={handleRatingChange} />
-        <h2 className="text-[15px]">
-          <span className="font-mona-sans font-extrabold text-xs leading-63 text-left w-64 h-16 ">
-            4.9/5 | 9010{" "}
-          </span>{" "}
-          reviews
-        </h2>
-      </div>
-  
-      <div className="hidden md:flex items-center">
-        <div className="w-[56px] pa:w-[30px] border-t border-gray-600 transform rotate-90 opacity-1"></div>
-      </div>
-  
-      <div className="flex flex-col items-center">
-        <h2 className="text-xl font-bold mb-4 mt-3">Trustpilot</h2>
-        <StarRating initialRating={3.5} onChange={handleRatingChange} />
-        <h2 className="text-[15px]">
-          <span className="font-mona-sans font-extrabold text-xs leading-63 text-left w-64 h-16 ">
-            4.9/5 | 9010{" "}
-          </span>{" "}
-          reviews
-        </h2>
-      </div>
-  
-      <div className="hidden md:flex items-center">
-        <div className="w-[56px] pa:w-[30px] border-t border-gray-600 transform rotate-90 opacity-1"></div>
-      </div>
-  
      
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center pa:w-[40%] mb-4">
+        <h2 className="text-xl font-bold mb-4 mt-3">Trustpilot</h2>
+        <StarRating initialRating={3.5} onChange={handleRatingChange} />
+        <h2 className="text-[15px]">
+          <span className="font-mona-sans font-extrabold text-xs leading-63 text-left w-64 h-16 ">
+            4.9/5 | 9010
+          </span>
+          reviews
+        </h2>
+      </div>
+  
+      
+      <div className="hidden md:flex items-center ma:opacity-100 pa:opacity-0">
+        <div className="w-[56px] pa:w-[30px] border-t border-gray-600 transform rotate-90 opacity-1"></div>
+      </div>
+     
+      <div className="flex flex-col items-center pa:w-[40%] mb-4">
+        <h2 className="text-xl font-bold mb-4 mt-3">Trustpilot</h2>
+        <StarRating initialRating={3.5} onChange={handleRatingChange} />
+        <h2 className="text-[15px]">
+          <span className="font-mona-sans font-extrabold text-xs leading-63 text-left w-64 h-16 ">
+            4.9/5 | 9010
+          </span>
+          reviews
+        </h2>
+      </div>
+  
+      
+      <div className="hidden md:flex items-center ma:opacity-100 pa:opacity-0">
+        <div className="w-[56px] pa:w-[30px] border-t border-gray-600 transform rotate-90 opacity-1"></div>
+      </div>
+     
+      <div className="flex flex-col items-center pa:w-[50%] mb-4 mr-4">
         <h2 className="text-xl font-bold mb-4 mt-3">Trustpilot</h2>
         <StarRating initialRating={3.5} onChange={handleRatingChange} />
         <h2 className="text-[15px]">
@@ -107,8 +108,8 @@ const Ratingpanel = () => {
         </h2>
       </div>
       </div>
-      
     </div>
+   
   </div>
   
   );

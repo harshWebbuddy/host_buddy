@@ -2,12 +2,12 @@ import React from "react";
 
 const Awards = () => {
   return (
-    <div className="ma:w-[1220px] ma:h-[406.92px] flex flex-col ma:gap-16 mx-auto margin">
-      <div className="ma:w-[1218px]  ma:h-[78px] flex  flex-col ma:flex-row mx-auto items-center justify-between">
+    <div className="ma:w-[1220px] ma:h-[406.92px] flex flex-col ma:gap-16 mx-auto mt-20 mb-20">
+      <div className="ma:w-[1218px]  ma:h-[78px] flex  flex-col ma:flex-row mx-auto items-center justify-between  ">
         <div className="w-full ma:w-[528px] ma:h-[63px] margin">
           <h4 className="heading text-center text-black font-semibold font-mona-sans wording">
             Our Awards & Recognition
-            <div className="w-[180px] ma:w-36 pa:w-56 h-1 bg-orange-500 ma:mt-2 ml-[105px] ma:ml-[90px] pa:ml-[120px] "></div>
+            <div className="w-[180px] ma:w-36 pa:w-28 h-1 bg-orange-500 ma:mt-2  ml-[105px] ma:ml-[90px] pa:ml-[62px] "></div>
           </h4>
         </div>
         <div className="ma:w-[244px] ma:h-[24px] flex flex-row mt-5 items-center justify-center visible">

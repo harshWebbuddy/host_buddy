@@ -6,6 +6,9 @@ import Unique from "./unique";
 import Awards from "./awards";
 import Clients from "./clients";
 import Question from "./question";
+import CaseStudy from "./casestudy";
+import Pro from "./pro";
+import Help from "./help";
 
 const Home = () => {
   return (
@@ -100,6 +103,15 @@ const Home = () => {
     </div>
     <div>
       <Question/>
+      </div>
+      <div>
+      <CaseStudy/>
+      </div>
+      <div>
+      <Pro/>
+      </div>
+      <div>
+      <Help/>
       </div>
     </div>
   );
