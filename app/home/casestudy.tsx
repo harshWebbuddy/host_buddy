@@ -44,7 +44,7 @@ const CaseStudy = () => {
   <div className="w-full bg-[#F5F5F5] mb-20">
     <div className="flex flex-row justify-between ">  {/* main div for all the items excluding bg color */}
     <div className="flex flex-col w-[1219px] items-center justify-center mx-auto gap-20 mt-20 mb-20"> {/* div for heading nad images */}
-      <div className="-ml-[670px]">
+      <div className="-ml-[1300px]">
 <div className="ml-[710px] ma:ml-[700px]">
   <h2 className="heading font-semibold">Our Featured CaseStudy</h2>
   <div className="w-[160px] ma:w-52 pa:w-[185px] h-1 bg-orange-500 ma:mt-2 ma:ml-[280px] pa:ml-[250px] "></div>
