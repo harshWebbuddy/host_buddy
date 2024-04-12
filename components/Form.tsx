@@ -1,5 +1,7 @@
 "use client";
+import { motion } from "framer-motion";
 import React, { useState } from "react";
+
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -147,7 +149,7 @@ const ContactForm: React.FC = () => {
           </div>
         </form>
         <div className="flex flex-col md:flex-row justify-center md:justify-around w-full my-20 ma:my-36 pa:my-40 gap-6">
-          <div className="w-full bg-white-200 px-6 py-8 rounded-xl shadow-md flex items-center justify-center bg-white">
+          <motion.div className="w-full bg-white-200 px-6 py-8 rounded-xl shadow-md flex items-center justify-center bg-white" whileHover={{scale:1.2}}>
             <div className="mr-6">
               <img
                 src="\phone-call-svgrepo-com.svg"
@@ -159,8 +161,8 @@ const ContactForm: React.FC = () => {
               <h3 className="text-xl font-semibold mb-2">Sales Help</h3>
               <p className="text-gray-700">24/7/365 Through the Chat Widget</p>
             </div>
-          </div>
-          <div className="w-full bg-white-200 px-6 py-8 rounded-xl shadow-md flex items-center justify-center bg-white">
+          </motion.div>
+          <motion.div className="w-full bg-white-200 px-6 py-8 rounded-xl shadow-md flex items-center justify-center bg-white"  whileHover={{scale:1.2}}>
             <div className="mr-6">
               <img
                 src="\phone-call-svgrepo-com.svg"
@@ -172,8 +174,8 @@ const ContactForm: React.FC = () => {
               <h3 className="text-xl font-semibold mb-2">Support Chat</h3>
               <p className="text-gray-700">24/7/365 Through the Chat Widget.</p>
             </div>
-          </div>
-          <div className="w-full bg-white-200 px-6 py-8 rounded-xl shadow-md flex items-center justify-center bg-white">
+          </motion.div>
+          <motion.div className="w-full bg-white-200 px-6 py-8 rounded-xl shadow-md flex items-center justify-center bg-white"  whileHover={{scale:1.2}}>
             <div className="mr-6">
               <img
                 src="\phone-call-svgrepo-com.svg"
@@ -185,8 +187,8 @@ const ContactForm: React.FC = () => {
               <h3 className="text-xl font-semibold mb-2">Support Email</h3>
               <p className="text-gray-700">24/7/365 Through the Chat Widget</p>
             </div>
-          </div>
-        </div>
+          </motion.div>
+      </div>
       </div>
     </section>
   );

@@ -26,7 +26,7 @@ const Plans = () => {
 </div>
         
           <div>
-            <h2 className="font-mona-sans text-base font-normal leading-[32px] tracking-[0.2px] text-right w-[52px] h-[32px] opacity-100">Yearly</h2>
+            <h2 className="font-mona-sans text-base font-normal leading-[32px] tracking-[0.2px] text-right w-[52px] h-[32px] opacity-1">Yearly</h2>
           </div>
           <div className="w-[85px] mt-1 h-[29px] bg-orange-100 rounded-3xl">
             <h4 className="text-orange-500 m-2 font-mona-sans font-bold text-xs leading-[15.6px] tracking-[1.625px] text-center w-[77px] h-[16px] top-[6px] left-[10px]">
@@ -39,6 +39,9 @@ const Plans = () => {
       <section className="mt-10">
         <div className="flex flex-col md:flex-row w-full justify-center gap-8 items-center">
         <div className="mb-5 w-full bg-[#F9EFE4] p-10 rounded-2xl transition-all duration-300 hover:bg-[#16191C] hover:text-white group">
+        <div className="flex justify-center">
+        <div className="bg-[#FF7500] px-6 py-1.5 font-semibold border-4 max-w-fit border-white  rounded-full absolute -top-[120px] mx-auto z-0 opacity-100 transition-opacity duration-300 hover:opacity-100">Most Popular</div>
+            </div>
       <div className="mb-5 w-full space-y-4">
         <h2 className="font-mona-sans font-bold text-2xl md:text-3xl text-center gap-0 text-gray-900 group-hover:text-white mx-auto">IGNITE</h2>
         <p className="font-mona-sans leading-7 w-full gap-0 text-sm text-center mx-auto text-[#FFFFFF]/40">From</p>
@@ -173,10 +176,12 @@ const Plans = () => {
         </div>
       </section>
       {/* {millions} */}
-      <div className=" flex flex-col md:flex-row  opacity-1 mx-auto items-center justify-center ma:gap-10 ma:w-[1016px] pa:w-[700px]  py-20 md:py-24">
-        <div className="flex flex-col item-center justify-center mx-auto ">
+      <div className=" flex flex-col md:flex-row  opacity-1 mx-auto items-center justify-center gap-10 ma:gap-10 ma:w-[1016px] pa:w-[700px]  py-20 md:py-24">
+        <div className="flex flex-col item-center justify-center mx-auto relative group ">
           <div>
-            <h2 className=" text-orange-500 font-mona-sans font-extrabold text-7xl text-center">1.2M+</h2>
+            <h2 className=" text-orange-500 font-mona-sans font-extrabold text-7xl text-center flex flex-row">1.2M
+            <span className="inline-block transition-transform rotate-0 group-hover:rotate-180">+</span>
+</h2>
           </div>
           <div className="item-center justify-center mt-6">
             <p className="justify-center font-mona-sans text-lg font-normal text-center leading-relaxed">
@@ -186,21 +191,26 @@ const Plans = () => {
           </div>
         </div>
         <div className="hidden md:block w-[172px]  border-t border-gray-200 transform rotate-90 opacity-1"></div>
-        <div className="flex flex-col item-center justify-center mx-auto ">
-          <div>
-            <h2 className=" text-orange-500 font-mona-sans font-extrabold text-7xl text-center">1.5M+</h2>
-          </div>
-          <div className="item-center justify-center mt-6">
-            <p className="justify-center font-mona-sans text-lg font-normal text-center leading-relaxed">
-              websites hosted in more <br />
-              than <strong>150 </strong>countries
-            </p>
-          </div>
-        </div>
+        <div className="flex flex-col item-center justify-center mx-auto relative group ">
+  <div>
+    <h2 className="text-orange-500 font-mona-sans font-extrabold text-7xl text-center flex flex-row">
+      1.5M
+      <span className="inline-block transition-transform rotate-0 group-hover:rotate-180">+</span>
+    </h2>
+  </div>
+  <div className="item-center justify-center mt-6">
+    <p className="justify-center font-mona-sans text-lg font-normal text-center leading-relaxed">
+      websites hosted in more <br />
+      than <strong>150</strong> countries
+    </p>
+  </div>
+</div>
         <div className="hidden md:block w-[172px]  border-t border-gray-200 transform rotate-90 opacity-1"></div>
-        <div className="flex flex-col item-center justify-center mx-auto ">
+        <div className="flex flex-col item-center justify-center mx-auto relative group ">
           <div>
-            <h2 className=" text-orange-500 font-mona-sans font-extrabold text-7xl text-center">96%</h2>
+            <h2 className=" text-orange-500 font-mona-sans font-extrabold text-7xl text-center flex flex-row">96
+            <span className="inline-block transition-transform rotate-0 group-hover:rotate-180">%</span>
+</h2>
           </div>
           <div className="item-center justify-center mt-6">
             <p className="justify-center font-mona-sans text-lg font-normal text-center leading-relaxed">
