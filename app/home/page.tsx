@@ -9,13 +9,13 @@ import Question from "./question";
 import CaseStudy from "./casestudy";
 import Pro from "./pro";
 import Help from "./help";
-import Hero_home from "./hero_home";
+import HostingHome from "./hero_home";
 
 const Home = () => {
   return (
     <div>
    <div>
-<Hero_home/>
+<HostingHome/>
    </div>
     <div>
         <PlanPage/>

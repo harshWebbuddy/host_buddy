@@ -11,7 +11,7 @@ const navLinks = [
     label: "Home",
   },
   {
-    href: "#Use Cases",
+    href: "/hosting",
     label: "Hosting",
   },
   {

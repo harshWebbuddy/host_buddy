@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Hero_home = () => {
+const HostingHome = () => {
   return (
     <div> <div className="bg-black relative w-full h-[1200px] ma:h-[757px] ma:overflow-hidden  ">
     <img
@@ -73,4 +73,4 @@ const Hero_home = () => {
   )
 }
 
-export default Hero_home
+export default HostingHome;
