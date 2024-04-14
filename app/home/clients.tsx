@@ -4,9 +4,9 @@ const Clients = () => {
   return (
     <div className="bg-black mx-auto flex flex-col ma:gap-36 ">
       <div className="ma:w-[1220px] ma:h-[141px] flex flex-col ma:flex-row items-center justify-center ma:gap-[205px] mx-auto ma:pt-32 pa:pt-20 padding ">
-        <div className="flex flex-row pa:ml-8 ">
+        <div className="flex flex-row pa:mr-[270px] ">
           <div>
-            <div className="ma:w-[312px] ma:h-[126px] mx-auto items-center justify-center   ">
+            <div className="ma:w-[312px] ma:h-[126px] mx-auto items-center justify-center    ">
               <h2 className="heading wording font-bold text-white ">
                 Featured Client Testimonials
               </h2>
