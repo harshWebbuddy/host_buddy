@@ -7,6 +7,8 @@ import Unique from "./unique";
 import Question from "../home/question";
 import CaseStudy from "../home/casestudy";
 import Clients from "../home/clients";
+import Features from "./features";
+import Steps from "./steps";
 
 HostingPage;
 const page = () => {
@@ -26,6 +28,12 @@ const page = () => {
       </div>
       <div>
         <Unique/>
+      </div>
+       <div>
+       <Features/>
+      </div>
+       <div>
+       <Steps/>
       </div>
       <div>
       <Clients/>

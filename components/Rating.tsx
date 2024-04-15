@@ -41,7 +41,7 @@ const Ratingpanel = () => {
   };
   return (
     <motion.div className="flex flex-col md:flex-row justify-center items-center mx-auto bg-gray-200 w-full ma:w-[1200px] pa:w-[800px] p-10 rounded-2xl mt-16" whileHover={{scale:1.1}}>
-    <div className="md:flex items-center justify-center pa:gap-x-1 ma:gap-x-40">
+    <div className="md:flex items-center justify-center pa:gap-x-1 ma:gap-x-20">
       <div className="font-mona-sans font-semibold text-xl leading-63 text-center md:text-left w-[245px] pa:w-32 h-16">
         <h3 className="font-bold">Customer Happiness</h3>
       </div>

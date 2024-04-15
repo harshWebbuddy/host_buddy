@@ -13,7 +13,7 @@ const HostingPage = () => {
           className="opacity-50 object-cover"
         />
         <div className="flex flex-col ma:flex-row   ">
-          <div className="padding mx-auto absolute w-full ma:w-[1920px] h-[757px] top-[100px] ma:top-[50px] left-[23px] ma:-left-[30px] gap-[400px] inset-0 items-center justify-center text-white  flex flex-col ma:flex-row   ">
+          <div className="padding mx-auto absolute w-full ma:w-[1920px] h-[757px] top-[100px] ma:top-[50px] left-[23px] ma:-left-[30px] pa:gap-[400px] gap-[400px] ma:gap-[400px] inset-0 items-center justify-center text-white  flex flex-col ma:flex-row   ">
             <div className="relative ma:w-[600px] ma:h-[429px] w-full  ">
               <div className="w-full ma:w-[175px] h-[30px] items-center justify-center mb-4">
                 <h2 className="font-mono-sans text-[15px] italic font-light leading-[30px] text-left">

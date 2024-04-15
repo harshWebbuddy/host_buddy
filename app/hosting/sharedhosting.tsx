@@ -11,7 +11,7 @@ const Box: React.FC<BoxProps> = ({ imageSrc, title, description, arrowIconSrc })
 
   return (
     <div
-      className="ma:w-[393px] ma:h-[358px] items-center justify-center mx-auto border rounded-xl flex flex-col gap-2 hover:bg-[#F9EFE4] "
+      className="ma:w-[393px] ma:h-[358px] pa:w-[230px] items-center justify-center mx-auto border rounded-xl flex flex-col gap-2 hover:bg-[#F9EFE4] "
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -60,10 +60,10 @@ const IndependentHoverBoxesVertical = () => {
 const SharedHosting = () => {
 
   return (
-    <div className='ma:w-[1220.08px] items-center justify-center mx-auto margin padding flex flex-col gap-20 ma:gap-10 pa:mt-10  '>
+    <div className='ma:w-[1220.08px] items-center justify-center mx-auto margin padding flex flex-col gap-20 ma:gap-20 pa:mt-10  '>
 <div className='justify-between flex flex-col pa:flex-col ma:flex-row  gap-[40px]  mr-24 ma:-mr-8 pa:-ml-28 ma:mt-32'>
     <div className='item-center justify-center mx-auto '>
-    <h2 className='heading w-96 ma:w-[471px] pa:w-full font-bold ma:h-[126px] items-center justify-center ml-32 ma:ml-0 pa:ml-12 '>The Premier Choice for
+    <h2 className='heading w-96 ma:w-[471px] pa:w-full font-semibold ma:h-[126px] items-center justify-center ml-32 ma:ml-0 pa:ml-12 '>The Premier Choice for
 Shared Hosting</h2>
     <div className="w-[110px] h-1 ma:w-36 pa:w-[110px]  bg-orange-500 ma:mt-2 ml-[130px] ma:ml-[0px] pa:ml-[400px] "></div>
     </div>
