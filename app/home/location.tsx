@@ -44,24 +44,24 @@ const SvgMap = () => {
 
 const LocationPage = () => {
   return (
-    <div className="flex flex-col pa:h-[650px] h-[500px] ma:h-[927px] items-center justify-center padding bg-black">
+    <div className="flex flex-col pa:h-[650px] h-[500px] md:h-[927px] items-center justify-center padding bg-black">
         <div className="margin">      {/* Headline */}
-      <div className="w-full ma:w-[1220px] h-[126px] flex flex-col ma:flex-row ma:gap-[129px] mb-28 ma:mb-20">
-      <div className="w-full ma:w-[594px] h-[126px] wording">
-      <h1 className="mb-4 text-center ma:text-left font-mona-sans heading font-semibold wording text-white  ">
+      <div className="w-full md:w-[1220px] h-[126px] flex flex-col md:flex-row md:gap-[129px] mb-28 md:mb-20">
+      <div className="w-full md:w-[594px] h-[126px] wording">
+      <h1 className="mb-4 text-center md:text-left font-mona-sans heading font-semibold wording text-white  ">
         Our Datacenters Are Located In <span className="text-orange-500">7 Regions</span>
       </h1>
       </div>
       {/* Text */}
-      <div className="w-full ma:w-[497px] h-[72px]  items-center justify-center ">
-      <p className="text-lg ma:mb-8 text-white opacity-75 text-[13px] ma:text-[16px] text-center ma:text-left ma:w-[497px]">
+      <div className="w-full md:w-[497px] h-[72px]  items-center justify-center ">
+      <p className="text-lg md:mb-8 text-white opacity-75 text-[13px] md:text-[16px] text-center md:text-left md:w-[497px]">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit sed, do eiusmod
         temporb incididunt lorem ipsu dolor sit amet
       </p>
       </div>
       </div>
       {/* Image */}
-      <div className="w-full ma:w-[1220px] ma:h-[581px]  items-center justify-center mx-auto">
+      <div className="w-full md:w-[1220px] md:h-[581px]  items-center justify-center mx-auto">
      <img src="/world.svg" />
      </div>
      

@@ -35,7 +35,7 @@ const ContactForm: React.FC = () => {
   };
   return (
     <section className="w-full bg-[#f5f5f5]">
-      <div className="w-full ma:max-w-[1219px] ma:h-[982px] pa:max-w-[1200px]  py-20 ma:py-20 pa:py-20  items-center justify-center mx-auto">
+      <div className="w-full md:max-w-[1219px] md:h-[982px] pa:max-w-[1200px]  py-20 md:py-20 pa:py-20  items-center justify-center mx-auto">
         <div className="items-center justify-center mx-auto">
           <h2 className="font-mona-sans text-5xl font-semibold item text-center text-black mt-3">
             Full out the Contact Form
@@ -84,13 +84,13 @@ const ContactForm: React.FC = () => {
                 required
               />
             </div>
-            <div className="w-[410px] ma:w-[600px] pa:w-[400px] h-[53px]">
+            <div className="w-[410px] md:w-[600px] pa:w-[400px] h-[53px]">
               <select
                 id="selectedDocument"
                 name="selectedDocument"
                 value={formData.selectedDocument}
                 onChange={handleChange}
-                className="border border-gray-300 rounded-xl w-[410px] ma:w-[600px] pa:w-[400px] h-[56px] px-4 text-left appearance-none"
+                className="border border-gray-300 rounded-xl w-[410px] md:w-[600px] pa:w-[400px] h-[56px] px-4 text-left appearance-none"
                 required
               >
                 <option value="Select Document">Select Document</option>
@@ -98,7 +98,7 @@ const ContactForm: React.FC = () => {
                 <option value="Document 2">Document 2</option>
                 <option value="Document 3">Document 3</option>
               </select>
-              <div className="relative ml-[380px] ma:ml-[570px] pa:ml-[370px]  flex items-center -top-9">
+              <div className="relative ml-[380px] md:ml-[570px] pa:ml-[370px]  flex items-center -top-9">
                 <svg
                   className="w-5 h-5 text-gray-400"
                   xmlns="http://www.w3.org/2000/svg"
@@ -148,7 +148,7 @@ const ContactForm: React.FC = () => {
             </button>
           </div>
         </form>
-        <div className="flex flex-col md:flex-row justify-center md:justify-around w-full my-20 ma:my-36 pa:my-40 gap-6">
+        <div className="flex flex-col md:flex-row justify-center md:justify-around w-full my-20 md:my-36 pa:my-40 gap-6">
           <motion.div className="w-full bg-white-200 px-6 py-8 rounded-xl shadow-md flex items-center justify-center bg-white" whileHover={{scale:1.2}}>
             <div className="mr-6">
               <img

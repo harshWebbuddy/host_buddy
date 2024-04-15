@@ -14,7 +14,7 @@ function AccordionItem({ title, children }: AccordionItemProps) {
   return (
     <div className="flex flex-col text-left">
       <button
-        className="text-left flex flex-row items-center justify-between p-6 text-[16px] ma:text-[18px] font-bold "
+        className="text-left flex flex-row items-center justify-between p-6 text-[16px] md:text-[18px] font-bold "
         onClick={toggleAccordion}
       >
         {title}
@@ -28,12 +28,12 @@ function AccordionItem({ title, children }: AccordionItemProps) {
 }
 const Question = () => {
   return (
-    <div className="ma:w-[1220px] ma:h-[603.68px] mx-auto margin ">
-      <div className="ma:w-[779px] ma:h-[63px] mt-20  mb-10">
+    <div className="md:w-[1220px] md:h-[603.68px] mx-auto margin ">
+      <div className="md:w-[779px] md:h-[63px] mt-20  mb-10">
         <h2 className="heading wording font-mono-sans text-black font-semibold wording padding">
           Your Web Hosting Questions Answered
         </h2>
-        <div className="w-[140px] ma:w-48 pa:w-36 h-1 bg-orange-500 ma:mt-2 pa:-mt-2 -mt-4 ml-[190px] ma:ml-[570px] pa:ml-[460px] "></div>
+        <div className="w-[140px] md:w-48 pa:w-36 h-1 bg-orange-500 md:mt-2 pa:-mt-2 -mt-4 ml-[190px] md:ml-[570px] pa:ml-[460px] "></div>
       </div>
       <div className="flex flex-col gap-5 padding   ">
       <div className="width bg-[#F5F5F5] rounded-2xl">

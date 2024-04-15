@@ -18,12 +18,22 @@ const config: Config = {
       colors: {
         customBackground: '#F9EFE4',
       },
-       screens: {
-      'pa': '820px',
-      'ip': '414px',
-      'ma':'1120px',
-      // => @media (min-width: 640px) { ... }
-    },
+      screens: {
+        'sm': '640px',
+        // => @media (min-width: 640px) { ... }
+  'pa':'820px',
+        'md': '768px',
+        // => @media (min-width: 768px) { ... }
+  
+        'lg': '1024px',
+        // => @media (min-width: 1024px) { ... }
+  
+        'xl': '1280px',
+        // => @media (min-width: 1280px) { ... }
+  
+        '2xl': '1536px',
+        // => @media (min-width: 1536px) { ... }
+      },
     keyframes: {
       "accordion-down": {
         from: { height: "0" },

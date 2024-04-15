@@ -45,12 +45,12 @@ const CaseStudy = () => {
     <div className="flex flex-row justify-between ">  {/* main div for all the items excluding bg color */}
     <div className="flex flex-col w-[1219px] items-center justify-center mx-auto gap-20 mt-20 mb-20"> {/* div for heading nad images */}
       <div className="-ml-[1300px]">
-<div className=" ml-[1340px] ma:ml-[700px]">
+<div className=" ml-[1340px] md:ml-[700px]">
   <h2 className="heading font-semibold">Our Featured CaseStudy</h2>
-  <div className="w-[160px] ma:w-52 pa:w-[165px] h-1 bg-orange-500 ma:mt-2 ma:ml-[280px] pa:ml-[208px] transition-transform duration-400 hover:scale-110"></div>
+  <div className="w-[160px] md:w-52 pa:w-[165px] h-1 bg-orange-500 md:mt-2 md:ml-[280px] pa:ml-[208px] transition-transform duration-400 hover:scale-110"></div>
 </div>
 </div>
-   <div className="ma:w-[1219px] flex flex-col ma:flex-row justify-around ml-10 gap-10">
+   <div className="md:w-[1219px] flex flex-col md:flex-row justify-around ml-10 gap-10">
           <ImgMediaCard 
             image="/casestudy1.png"
             title=""

@@ -6,7 +6,7 @@ const label = { inputProps: { 'aria-label': 'Switch demo' } };
  
 const Planhosting = () => {
   return (
-    <div className="flex flex-col  max-w-[1220px] ma:w-[1500px] pa:w-[800px] mx-auto px-4 ">
+    <div className="flex flex-col  max-w-[1220px] md:w-[1500px] pa:w-[800px] mx-auto px-4 ">
       {/* heading */}
       <div className="flex flex-col md:flex-row justify-between opacity-1 items-center mb-8 mt-20">
         <div className="relative w-full">
@@ -177,7 +177,7 @@ const Planhosting = () => {
         </div>
       </section>
       {/* {millions} */}
-      <div className=" flex flex-col md:flex-row  opacity-1 mx-auto items-center justify-center gap-10 ma:gap-10 ma:w-[1016px] pa:w-[700px]  py-20 md:py-24">
+      <div className=" flex flex-col md:flex-row  opacity-1 mx-auto items-center justify-center gap-10 md:gap-10 md:w-[1016px] pa:w-[700px]  py-20 md:py-24">
         <div className="flex flex-col item-center justify-center mx-auto relative group ">
           <div>
             <h2 className=" text-orange-500 font-mona-sans font-extrabold text-7xl text-center flex flex-row">1.2M

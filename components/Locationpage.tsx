@@ -967,17 +967,17 @@ const Locationpage = () => {
 
   return (
     
-    <div className="w-full ma:w-[1112px] flex flex-col items-center justify-center mt-20  ma:mt-40 pa:mt-32 ma:mb-0 pa:mb-32 ">
+    <div className="w-full md:w-[1112px] flex flex-col items-center justify-center mt-20  md:mt-40 pa:mt-32 md:mb-0 pa:mb-32 ">
     {/* Headline */}
     <h1 className="mb-4 text-center font-mona-sans text-4xl font-semibold leading-16">
       Our Datacenters Are Located In <span className="text-orange-500">7 Regions</span>
     </h1>
     {/* Text */}
-    <p className="text-lg text-center pa:mb-10 ma:mb-20">
+    <p className="text-lg text-center pa:mb-10 md:mb-20">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit sed, do eiusmod
       temporb incididunt lorem ipsu dolor sit amet
     </p>
-    <div className="mx-auto w-full ma:w-[1112px] ma:h-[527px] items-center justify-center ">
+    <div className="mx-auto w-full md:w-[1112px] md:h-[527px] items-center justify-center ">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 2000 857"
