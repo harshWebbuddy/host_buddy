@@ -35,7 +35,7 @@ const ContactForm: React.FC = () => {
   };
   return (
     <section className="w-full bg-[#f5f5f5]">
-      <div className="w-full ma:max-w-[1219px] pa:max-w-[1200px]  py-60 ma:py-10 pa:py-20  items-center justify-center mx-auto">
+      <div className="w-full ma:max-w-[1219px] ma:h-[982px] pa:max-w-[1200px]  py-20 ma:py-20 pa:py-20  items-center justify-center mx-auto">
         <div className="items-center justify-center mx-auto">
           <h2 className="font-mona-sans text-5xl font-semibold item text-center text-black mt-3">
             Full out the Contact Form

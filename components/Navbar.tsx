@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import { AiOutlineGlobal } from "react-icons/ai";
 import { useState } from "react";
 import MobileSidebar from "../components/MobileSidebar";
-
+import { motion } from "framer-motion";
 const navLinks = [
   {
     href: "/home",
@@ -36,10 +36,13 @@ const NavBar = () => {
       <div className="max-w-[1560px] mx-auto">
         <nav className="w-full flex items-center justify-between">
           <div className="w-full">
-            <span className="font-semibold text-2xl text-white">H</span>
-            <span className="font-semibold text-2xl text-orange-500">o</span>
-            <span className="font-semibold text-2xl text-white">st</span>
-            <span className="font-semibold text-2xl  text-white">Buddy</span>
+          <div className="justify-center ma:mr-0 group ">
+  <span className="font-semibold text-6xl ma:text-2xl text-white inline-block transition-transform transform rotate-0 group-hover:rotate-180">H</span>
+  <span className="font-semibold text-6xl ma:text-2xl text-orange-500  inline-block transition-transform transform rotate-0 group-hover:rotate-180">o</span>
+  <span className="font-semibold text-6xl ma:text-2xl text-white   inline-block transition-transform transform rotate-0 group-hover:rotate-180">s</span>
+  <span className="font-semibold text-6xl ma:text-2xl text-white   inline-block transition-transform transform rotate-0 group-hover:rotate-180">t</span>
+  <span className="font-semibold text-6xl ma:text-2xl text-white  inline-block transition-transform transform rotate-0 group-hover:rotate-180" >Buddy</span>
+</div>
           </div>{" "}
           <div className="w-10 grid place-content-center ml-6 lg:hidden">
             <div
@@ -63,24 +66,24 @@ const NavBar = () => {
             <ul className="text-white flex gap-x-10">
               {navLinks.map((link, index) => (
                 <Link href={link.href} key={index}>
-                  <div className={`flex flex-col gap-[10px] items-center cursor-pointer`} style={{ position: 'relative' }}>
-                    <h1 className="whitespace-nowrap">{link.label}</h1>
+                  <motion.div className={`flex flex-col gap-[10px] items-center cursor-pointer  group`} style={{ position: 'relative' }} whileHover={{scale:1.5}}>
+                    <h1 className="whitespace-nowrap hover:text-orange-500 " > {link.label}</h1>
                     {/* Underline effect */}
-                    <div className="absolute w-full bg-red-500 bottom-0 h-0.5 opacity-0 transition-opacity duration-300"></div>
-                  </div>
+                    < div className="absolute w-8 bg-red-500 -bottom-2 h-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300 mr-4 " ></div>
+                  </motion.div>
                 </Link>
               ))}
             </ul>
           </div>
           <div className="hidden lg:flex justify-end space-x-4 w-full">
-            <button className="text-white flex flex-row items-center justify-center bg-transparent border border-white rounded-lg px-4 py-2 outline-none cursor-pointer">
+            <motion.button className="text-white flex flex-row items-center justify-center bg-transparent border border-white rounded-lg px-4 py-2 outline-none cursor-pointer" whileHover={{scale:1.2}}>
               <AiOutlineGlobal className="mr-2 item-center" />
               English
-            </button>
-            <button className="text-white flex flex-row items-center justify-center bg-orange-500 hover:bg-orange-600 rounded-lg px-4 py-2">
+            </motion.button>
+            <motion.button className="text-white flex flex-row items-center justify-center bg-orange-500 hover:bg-orange-600 rounded-lg px-4 py-2" whileHover={{scale:1.2}}>
               Sign Up
               <FaArrowRight className="ml-2 item-center" />
-            </button>
+            </motion.button>
           </div>
         </nav>
       </div>

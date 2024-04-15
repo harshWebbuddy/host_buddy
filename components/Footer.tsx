@@ -15,12 +15,14 @@ const Footer = () => (
      <div className=" ma:w-[1220px]  h-[206px] mx-auto relative -top-60 ma:-top-24 pa:-top-40  "><FooterBox/></div> 
     <div className='flex max-ma:flex-col flex-wrap justify-center item-center mx-auto  ma:gap-[440px] sm:px-16 px-6 py-10  ma:w-[1620px] pa:w-[800px]'>
       <div className='flex flex-col justify-center ma:justify-start  items-center ma:items-start gap-6'>
-<div className="justify-center  ma:mr-0  ">
-        <span className="font-semibold  text-6xl ma:text-2xl text-white">H</span>
-        <span className="font-semibold  text-6xl  ma:text-2xl text-orange-500">o</span>
-        <span className="font-semibold  text-6xl  ma:text-2xl text-white">st</span>
-        <span className="font-semibold   text-6xl ma:text-2xl  text-white">Buddy</span>
-      </div>
+      <div className="justify-center ma:mr-0 group ">
+  <span className="font-semibold text-6xl ma:text-2xl text-white inline-block transition-transform transform rotate-0 group-hover:rotate-180">H</span>
+  <span className="font-semibold text-6xl ma:text-2xl text-orange-500  inline-block transition-transform transform rotate-0 group-hover:rotate-180">o</span>
+  <span className="font-semibold text-6xl ma:text-2xl text-white   inline-block transition-transform transform rotate-0 group-hover:rotate-180">s</span>
+  <span className="font-semibold text-6xl ma:text-2xl text-white   inline-block transition-transform transform rotate-0 group-hover:rotate-180">t</span>
+  <span className="font-semibold text-6xl ma:text-2xl text-white  inline-block transition-transform transform rotate-0 group-hover:rotate-180" >Buddy</span>
+</div>
+
         <p className='text-base text-white ma:w-[274px]  justify-center ml-4  ma:ml-0  item-center'>
         Lorem ipsum dolor sit amet consectetur. Viverra aenean tristique sit aliquam blandit. Luctus.
         </p>
