@@ -2,15 +2,15 @@ import React from "react";
 
 const Cards = () => {
   return (
-    <div className="w-full md:w-[1286.05px]  item-center justify-center mx-auto">   
-     <div className="w-[900px] md:w-[1286.05px] md:h-[500px]  pa:gap-0 md:gap-[178px] flex flex-col md:flex-row pa:flex-row">
+    <div className="w-full 2xl:w-[1920px]  item-center justify-center mx-auto">   
+     <div className="w-[900px]  md:w-[1286.05px] md:h-[500px] 2xl:gap-40 pa:gap-0 md:gap-[178px] flex flex-col md:flex-row pa:flex-row mx-auto  justify-between">
       <div className="flex flex-col w-[493px] h-[464px] gap-[5px] md:gap-[40px] p-2">
         <div className="w-[420px] md:w-[476px] h-[126px]">
           <h2 className="text-[36px] md:text-[42px] font-mono-sans leading-[53px] md:leading-[63px] font-semibold">
             Lorem ipsum dolor sit amet consectetur.
           </h2>
         </div>
-        <div className="w-[400px] md:w-[493px] h-[298px] gap-[30px] ">
+        <div className="w-[400px] 2xl:w-[493px] md:w-[493px] h-[298px] gap-[30px] ">
           <div className="w-[400px] md:w-[493px] flex flex-row gap-2">
             <div className="item-center justify-center mt-1">
               <img
@@ -24,7 +24,7 @@ const Cards = () => {
             <div className="w-[453px] h-[52px] item-center justify-center mx-auto">
               <h2 className="text-[12px] capitalize">
                 Lorem ipsum dolor sit amet consectetur. Volutpat ut et urna
-                gravida non justo nibh enim habitant sed ante.
+                gravida non <span className="font-bold"> justo nibh enim habitant sed ante. </span>
               </h2>
             </div>
           </div>
@@ -41,7 +41,7 @@ const Cards = () => {
             <div className="w-[453px] h-[52px] item-center justify-center mx-auto">
               <h2 className="text-[12px] capitalize">
                 Lorem ipsum dolor sit amet consectetur. Volutpat ut et urna
-                gravida non justo nibh enim habitant sed ante.
+                gravida non <span className="font-bold"> justo nibh enim habitant sed ante. </span>
               </h2>
             </div>
           </div>
@@ -58,7 +58,7 @@ const Cards = () => {
             <div className="w-[453px] h-[52px] item-center justify-center mx-auto">
               <h2 className="text-[12px] capitalize">
                 Lorem ipsum dolor sit amet consectetur. Volutpat ut et urna
-                gravida non justo nibh enim habitant sed ante.
+                gravida non <span className="font-bold"> justo nibh enim habitant sed ante. </span>
               </h2>
             </div>
           </div>
@@ -75,7 +75,7 @@ const Cards = () => {
             <div className="w-[453px] h-[52px] item-center justify-center mx-auto">
               <h2 className="text-[12px] capitalize">
                 Lorem ipsum dolor sit amet consectetur. Volutpat ut et urna
-                gravida non justo nibh enim habitant sed ante.
+                gravida non <span className="font-bold"> justo nibh enim habitant sed ante. </span>
               </h2>
             </div>
           </div>
@@ -92,7 +92,7 @@ const Cards = () => {
         <img src="/bigsquare.svg" className="ml-[270px] md:-ml-[70px] -mt-64 md:mt-24 z-0 relative w-[323px] h-[270px] md:opacity-100 opacity-0" />
       </div>
     </div>
-    <div className="w-[900px] md:w-[1286.05px] md:h-[500px] pa:gap-10 md:gap-[178px] flex flex-col md:flex-row pa:flex-row">
+    <div className="w-[900px] md:w-[1286.05px] md:h-[500px] pa:gap-10 md:gap-[178px] flex flex-col md:flex-row pa:flex-row mx-auto  justify-between">
      
      <div className="item-center ml-10 md:mt-10 w-[300px] md:w-[491px] h-[370px] items-center justify-center pa:mt-20 ">
        <img
@@ -183,7 +183,7 @@ const Cards = () => {
        </div>
      </div>
    </div>
-     <div className="w-[900px] md:w-[1286.05px] md:h-[500px]  md:gap-[178px] flex flex-col md:flex-row pa:flex-row">
+     <div className="w-[900px] md:w-[1286.05px] md:h-[500px] 2xl:gap-10  md:gap-[178px] flex flex-col md:flex-row pa:flex-row  mx-auto justify-between">
       <div className="flex flex-col w-[493px] h-[464px] gap-[5px] md:gap-[40px] p-2">
         <div className="w-[420px] md:w-[476px] h-[126px]">
           <h2 className="text-[36px] md:text-[42px] font-mono-sans leading-[53px] md:leading-[63px] font-semibold">
@@ -204,7 +204,7 @@ const Cards = () => {
             <div className="w-[453px] h-[52px] item-center justify-center mx-auto">
               <h2 className="text-[12px] capitalize">
                 Lorem ipsum dolor sit amet consectetur. Volutpat ut et urna
-                gravida non justo nibh enim habitant sed ante.
+                gravida non <span className="font-bold"> justo nibh enim habitant sed ante. </span>
               </h2>
             </div>
           </div>
@@ -221,7 +221,7 @@ const Cards = () => {
             <div className="w-[453px] h-[52px] item-center justify-center mx-auto">
               <h2 className="text-[12px] capitalize">
                 Lorem ipsum dolor sit amet consectetur. Volutpat ut et urna
-                gravida non justo nibh enim habitant sed ante.
+                gravida non <span className="font-bold"> justo nibh enim habitant sed ante. </span>
               </h2>
             </div>
           </div>
@@ -238,7 +238,7 @@ const Cards = () => {
             <div className="w-[453px] h-[52px] item-center justify-center mx-auto">
               <h2 className="text-[12px] capitalize">
                 Lorem ipsum dolor sit amet consectetur. Volutpat ut et urna
-                gravida non justo nibh enim habitant sed ante.
+                gravida non <span className="font-bold"> justo nibh enim habitant sed ante. </span>
               </h2>
             </div>
           </div>
@@ -255,24 +255,24 @@ const Cards = () => {
             <div className="w-[453px] h-[52px] item-center justify-center mx-auto">
               <h2 className="text-[12px] capitalize">
                 Lorem ipsum dolor sit amet consectetur. Volutpat ut et urna
-                gravida non justo nibh enim habitant sed ante.
+                gravida non <span className="font-bold"> justo nibh enim habitant sed ante. </span>
               </h2>
             </div>
           </div>
         </div>
       </div>
-      <div className="item-center ml-10 md:mt-10 w-[300px] md:w-[491px] h-[370px] items-center justify-center pa:mr-36 pa:mt-20 ">
+      <div className="item-center ml-10 2xl:ml-60 2xl:mr-0 md:mt-10 w-[300px] md:w-[491px] h-[370px] items-center justify-center pa:mr-36 pa:mt-20 ">
         <img
           src="/cards3.jpg"
-          width="488.74px"
-          height="368.29px"
+          width="491px"
+          height="370px"
           className="rounded-2xl  relative z-10"
         />
         <img src="/card3.svg" className="ml-[-32px] md:ml-[-60px] -mt-60 md:-mt-[350px] z-10 relative w-[100px] md:w-[150px]" />
         <img src="/bigsquare.svg" className="ml-[270px] md:-ml-[70px] -mt-64 md:-mt-2 z-0 relative w-[323px] h-[270px]  md:opacity-100 opacity-0" />
       </div>
     </div>
-    <div className="w-[900px] md:w-[1286.05px] md:h-[500px]  pa:gap-10 md:gap-[178px] flex flex-col md:flex-row pa:flex-row">
+    <div className="w-[900px] md:w-[1286.05px] md:h-[500px]  pa:gap-10 md:gap-[178px] flex flex-col md:flex-row pa:flex-row mx-auto   justify-between">
      
      <div className="item-center ml-10 md:mt-10 w-[300px] md:w-[491px] h-[370px] items-center justify-center pa:mt-20 pa:ml-10 ">
        <img

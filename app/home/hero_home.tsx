@@ -2,7 +2,8 @@ import React from 'react'
 
 const HostingHome = () => {
   return (
-    <div> <div className="bg-black relative w-full md:h-[1200px] h-[1200px] lg:h-[757px] md:overflow-hidden  ">
+    <div> 
+      <div className="bg-black relative w-full 2xl:w-[1920px] items-center justify-center mx-auto md:h-[1200px] pa:h-[1300px] h-[1300px] lg:h-[770px] md:overflow-hidden  ">
     <img
       src="/home.jpg"
       width="1920px"
@@ -11,8 +12,8 @@ const HostingHome = () => {
       className="w-full opacity-50 object-cover bg-blend-color-dodge"
     />
 <div className="flex flex-col md:flex-row   ">
-<div className="mx-auto absolute w-full md:w-[1220.25px] md:h-[757px]  top-[100px] md:top-[50px]   inset-0 items-center  text-white  flex flex-col lg:flex-row md:flex-col gap-[550px] md:gap-10 md:justify-between ">
-      <div className="relative md:w-[600px] md:h-[429px] w-full flex flex-col p-2 ">
+<div className="mx-auto absolute w-full md:w-[1220.25px] xl:w-[1280px] md:h-[757px]  top-[100px] md:top-[50px]   inset-0 items-center  text-white  flex flex-col lg:flex-row md:flex-col  gap-[600px] md:gap-10 md:justify-between ">
+      <div className="relative md:w-[600px] md:h-[429px] w-full flex flex-col p-2 xl:ml-60 pa:-ml-[600px] 2xl:ml-0 md:mt-0 2xl:mt-0 pa:mt-[150px] ">
         <div className="w-full md:w-[175px] h-[30px] items-center justify-center mb-4">  
           <h2 className="font-mono-sans text-[15px]  font-light md:w-[175px] italic  leading-[30px] text-left">
             <span className="text-white opacity-90 font-mono-sans font-light">Welcome to </span>
@@ -61,7 +62,7 @@ const HostingHome = () => {
           </div>
       </div>
       </div>
-    <div className="w-[350px] lg:w-full  md:w-[406px] h-[60px] md:h-[473px] item-center justify-center -mt-[500px]  md:mt-0  md:mr-0">
+    <div className="w-[350px] lg:w-full  md:w-[406px] h-[60px] md:h-[473px] item-center justify-center -mt-[500px] pa:-ml-[380px] pa:mt-[30px]  pa:w-full pa:h-full md:mt-0 xl: 2xl:ml-[150px] 2xl:mt-[250px]  md:mr-0">
           <img src="/homeimages.svg"  className="item-center justify-center mx-auto" />
       </div>
        

@@ -19,7 +19,7 @@ function AccordionItem({ title, children }: AccordionItemProps) {
       >
         {title}
         <span className="">
-          {isOpen ? <img src="/negative.png" className="w-[22px]" /> : <img src="/plus.png" />}
+          {isOpen ? <img src="/-minus.svg" className="w-[30px] h-[60px]" /> : <img src="/plus.png" />}
         </span>
       </button>
       {isOpen && <div className="text-left  flex flex-row items-center justify-start p-6 text-[16px] -mt-6  ">{children}</div>}

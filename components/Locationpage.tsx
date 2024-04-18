@@ -969,8 +969,10 @@ const Locationpage = () => {
     
     <div className="w-full md:w-[1112px] flex flex-col items-center justify-center mt-20  md:mt-40 pa:mt-32 md:mb-0 pa:mb-32 ">
     {/* Headline */}
-    <h1 className="mb-4 text-center font-mona-sans text-4xl font-semibold leading-16">
+    <h1 className="mb-4 text-center font-mona-sans text-[42px] text-white font-semibold leading-16">
       Our Datacenters Are Located In <span className="text-orange-500">7 Regions</span>
+      <div className="border-t-4 border-orange-500 opacity-1 w-[19%] transition-transform duration-400 hover:scale-110"></div>
+
     </h1>
     {/* Text */}
     <p className="text-lg text-center pa:mb-10 md:mb-20">

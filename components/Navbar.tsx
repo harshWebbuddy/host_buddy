@@ -100,8 +100,8 @@ const NavBar = () => {
   
   return (
     <header className="absolute top-0 w-full px-4 py-4 z-[5]">
-    <div className="w-full lg:w-[1220.25px] mx-auto">
-      <nav className="w-full flex items-center justify-between">
+    <div className="w-full item-center justify-center mx-auto">
+      <nav className="w-full 2xl:w-[1220.25px] flex items-center 2xl:justify-center mx-auto  justify-between">
         <div className="w-full">
           <div className="justify-center md:mr-0 group ">
             <span className="font-semibold text-[29.27px] text-white inline-block transition-transform transform rotate-0 group-hover:rotate-180">H</span>
@@ -167,7 +167,7 @@ const NavBar = () => {
           </motion.button>
           <motion.button className="text-white flex flex-row items-center justify-center bg-orange-500 hover:bg-orange-600 rounded-lg px-4 py-2" whileHover={{ scale: 1.2 }}>
             Sign Up
-            <FaArrowRight className="ml-2 item-center" />
+            <img src="/signuparrow.svg" className="ml-2"/>
           </motion.button>
         </div>
       </nav>

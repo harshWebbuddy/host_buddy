@@ -1,6 +1,5 @@
 import PlanPage from "@/components/PlanPage";
 import React from "react";
-import LocationPage from "./location";
 import Cards from "./cards";
 import Unique from "./unique";
 import Awards from "./awards";
@@ -10,18 +9,18 @@ import CaseStudy from "./casestudy";
 import Pro from "./pro";
 import Help from "./help";
 import HostingHome from "./hero_home";
-
+import LocationPage from "./location";
 const Home = () => {
   return (
     <div>
    <div>
 <HostingHome/>
    </div>
-    <div>
+    {/* <div className="">
         <PlanPage/>
 
-    </div>
-    <div>
+    </div> */}
+    <div className="mt-20">
         <LocationPage/>
 
     </div>
