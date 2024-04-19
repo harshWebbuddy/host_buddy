@@ -13,7 +13,7 @@ const Help = () => {
 </div>
 
 
-        <div className='flex flex-col md:flex-row justify-evenly gap-4 md:w-[1220px]'>
+        <div className='flex flex-col md:flex-row justify-evenly gap-4 md:w-[1220px] 2xl:mb-36'>
             <div className='flex flex-row gap-4 md:w-[393px] bg-[#F5F5F5] rounded-xl items-center justify-center p-8    '>
                 <div className='item-center justify-center'>
                 <img

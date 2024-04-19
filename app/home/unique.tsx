@@ -2,9 +2,9 @@ import React from "react";
 // pa:gap-44 gap-20 -mt-20 2xl:mt-0 items-center justify-center 2xl:ml-60
 const Unique = () => {
   return (
-    <div className="w-full 2xl:w-[1920px] bg-[#F9EFE4]  flex flex-col md:flex-row  2xl:h-[829px] h-[1170px] pa:h-[1650px] md:h-[829px] items-center justify-center mx-auto ">
-        <img src="/dotted.svg" className="ml-1 w-[50px] md:w-[89.71px] md:h-[113.2px] opacity-0 md:opacity-100 pa:opacity-0 mt-20"/>
-        <div className="md:w-[1230.66px] 2xl:w-[1230.66px] md:h-[668.18px] h-[1100px] flex flex-col pa:flex-col 2xl:flex-row md:flex-row mx-auto items-center justify-between 2xl:ml-32  pa:-mt-[800px] ">
+    <div className="static w-full 2xl:w-[1920px] bg-[#F9EFE4]  flex flex-col md:flex-row  2xl:h-[829px] h-[1170px] pa:h-[1650px] md:h-[829px] items-center justify-center mx-auto ">
+        <img src="/dotted.svg" className="ml-1 w-[50px] md:w-[89.71px] md:h-[113.2px] opacity-0 2xl:opacity-100 pa:opacity-0 -mt-[450px] "/>
+        <div className="static md:w-[1230.66px] 2xl:w-[1230.66px] md:h-[668.18px] h-[1100px] flex flex-col pa:flex-col 2xl:flex-row md:flex-row mx-auto items-center justify-between 2xl:ml-2 2xl:-mt-10 mp:mt-[430px] xl:-mt-[1000px] pa:-mt-[800px] ">
       <div className="w-full max-w-[1220px] mx-auto md:w-[699px] md:h-[608px] margin padding">
       <div className="mx-auto md:flex flex-col justify-between md:w-[699px] md:h-[150px]">
         <h4 className="heading text-black font-semibold font-mona-sans wording md:w-[663px] md:h-[63px]">
@@ -70,11 +70,11 @@ const Unique = () => {
 
       </div>
     </div>
-    <div className="w-[270px] md:w-[418.92px] md:h-[668.18px] relative visible margin  md:mt-20 2xl:mt-40 pa:-ml-[550px] pa:mt-40 "> 
+    <div className="w-[270px] md:w-[418.92px] md:h-[668.18px] relative visible margin  md:mt-20 2xl:mt-40 pa:-ml-[550px] pa:mt-40 xl:mt-10 "> 
     <img src="/manjumping.jpg" className="scale-x-[-1] opacity-100 z-10 relative  grayscale ml-10 md:ml-0 pa:-mt-1 pa:ml-60"/>
     {/* <img src="/manlowerjumping.svg" className="md:-mt-60 pa:-mt-40 pa:ml-72 ml-0  relative z-20 w-[200px] md:w-[328.11px]  "/> */}
     <img src="/manlowerjumping.svg" className="md:-mt-60 ml-24 pa:ml-80 md:ml-28 relative z-20 w-[200px] md:w-[328.11px] pa:-mt-40 2xl:-mt-60   "/>
-  <img src="/manupperjumping.svg" className="pa:-mt-[230px] md:-mt-[380px]  pa:ml-52 md:-ml-24 relative z-20 w-[150px] md:w-[271.4px] 2xl:-mt-96 2xl:ml-48"/>
+  <img src="/manupperjumping.svg" className="pa:-mt-[230px] md:-mt-[380px]  pa:ml-52 md:-ml-24 relative z-20 w-[150px] md:w-[271.4px] 2xl:-mt-96 2xl:ml-48 xl:-mt-[450px]"/>
     {/* // Circle image with eraser */}
     <div className="absolute inset-0 z-0 pa:ml-40 md:ml-0 pa:-mt-12 md:mt-0" style={{ width: "400px", height: "400px", transform: "translate(10%, 20%)" }}>
         <svg width="100%" height="100%" viewBox="0 0 400 400">

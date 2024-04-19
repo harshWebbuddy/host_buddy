@@ -28,14 +28,14 @@ function AccordionItem({ title, children }: AccordionItemProps) {
 }
 const Question = () => {
   return (
-    <div className="md:w-[1220px] md:h-[603.68px] mx-auto margin ">
-      <div className="md:w-[779px] md:h-[63px] mt-20  mb-10">
+    <div className="2xl:w-[1220px] md:h-[603.68px] pa:w-full mx-auto margin  ">
+      <div className="md:w-[779px] md:h-[63px] mt-20  mb-10 xl:mb-40 2xl:mb-20 ">
         <h2 className="heading wording font-mono-sans text-black font-semibold wording padding">
           Your Web Hosting Questions Answered
         </h2>
-        <div className="w-[140px] md:w-48 pa:w-36 h-1 bg-orange-500 md:mt-2 pa:-mt-2 -mt-4 ml-[190px] md:ml-[570px] pa:ml-[460px] "></div>
+        <div className="w-[140px] xl:w-[200px] md:w-48 pa:w-36 h-1 bg-orange-500 md:mt-2 pa:-mt-2 -mt-4 ml-[190px] md:ml-[570px] pa:ml-[460px] xl:ml-[22px] xl:-mt-6 2xl:ml-[570px] 2xl:mt-0 "></div>
       </div>
-      <div className="flex flex-col gap-5 padding   ">
+      <div className="flex flex-col gap-5 padding mp:mb-28   ">
       <div className="width bg-[#F5F5F5] rounded-2xl">
         <AccordionItem title="Where is HostBuddy based?">
           <h2>
