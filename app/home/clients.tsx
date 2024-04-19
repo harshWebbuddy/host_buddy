@@ -74,13 +74,13 @@ const Clients = () => {
             </div>
           
           </div>
-          <div className="mb-4 2xl:opacity-0 mp:opacity-100 pa:opacity-100 pa:-ml-[600px] xl:-ml-[230px]">
+          <div className="mb-4 2xl:opacity-0 mp:opacity-100 pa:opacity-100 pa:-ml-[200px] xl:-ml-[230px]">
               <img src="/clients2.svg" className="w-full" alt="Client 2" />
             </div>
         </div>
       </div>
       <div>
-      <img src="/fog.svg" className="2xl:-mt-[580px] pa:-mt-[400px] 2xl:ml-[0px] mp:-mt-[100px] xl:-mt-[500px]"/>
+      <img src="/fog.svg" className="2xl:-mt-[580px] pa:-mt-[300px] 2xl:ml-[0px] mp:-mt-[100px] xl:-mt-[500px]"/>
       <div className="2xl:w-[244px] 2xl:h-[24px] flex flex-row mt-5 2xl:ml-[900px] items-center justify-center visible">
           <h2 className="text-[16px] wording font-bold text-orange-500 mp:mt-2">
           See All Testimonials           </h2>
