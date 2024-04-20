@@ -10,34 +10,34 @@ import FooterBox from "./FooterBox";
 
 const Footer = () => (
   <footer className="md:mt-0 w-full 2xl:w-[1920px] 2xl:h-[603px] flex flex-col text-black-100  border-t bg-gradient-to-b from-gray-700 to-gray-900 border-gray-100 mx-auto items-center justify-center">
-    <div className=" 2xl:w-[1220px]  h-[206px] mx-auto relative -top-60 2xl:-top-28 pa:top-60  ">
+    <div className="w-full  xl:-top-20 2xl:w-[1220px]  h-[206px] mx-auto relative -top-60 2xl:-top-12 pa:-top-32 mp:-top-60   ">
       <FooterBox />
     </div>
-    <div className="2xl:w-[1220px] flex 2xl:flex-row justify-center 2xl:justify-between item-center mx-auto ">
-      <div className="flex flex-col justify-center md:justify-start  items-center md:items-start gap-6">
-        <div className="justify-center md:mr-0 group ">
-          <span className="font-semibold text-6xl md:text-2xl text-white inline-block transition-transform transform rotate-0 group-hover:rotate-180">
+    <div className="xl:w-[1000px] 2xl:w-[1220px] flex 2xl:flex-row xl:flex-row mp:flex-col justify-center xl:justify-between 2xl:justify-between item-center mx-auto 2xl:mt-10 2xl:mb-10  ">
+      <div className="flex flex-col  justify-center md:justify-start  items-center mp:items-start gap-6 mp:ml-2 mp:mt-20 ">
+        <div className="justify-center md:mr-0 group mp:ml-4 xl:-ml-2 xl:mt-10 2xl:-mt-20 pa:ml-0">
+          <span className="font-semibold text-6xl mp:text-3xl text-white inline-block transition-transform transform rotate-0 group-hover:rotate-180">
             H
           </span>
-          <span className="font-semibold text-6xl md:text-2xl text-orange-500  inline-block transition-transform transform rotate-0 group-hover:rotate-180">
+          <span className="font-semibold text-6xl mp:text-3xl text-orange-500  inline-block transition-transform transform rotate-0 group-hover:rotate-180">
             o
           </span>
-          <span className="font-semibold text-6xl md:text-2xl text-white   inline-block transition-transform transform rotate-0 group-hover:rotate-180">
+          <span className="font-semibold text-6xl mp:text-3xl text-white   inline-block transition-transform transform rotate-0 group-hover:rotate-180">
             s
           </span>
-          <span className="font-semibold text-6xl md:text-2xl text-white   inline-block transition-transform transform rotate-0 group-hover:rotate-180">
+          <span className="font-semibold text-6xl mp:text-3xl text-white   inline-block transition-transform transform rotate-0 group-hover:rotate-180">
             t
           </span>
-          <span className="font-semibold text-6xl md:text-2xl text-white  inline-block transition-transform transform rotate-0 group-hover:rotate-180">
+          <span className="font-semibold text-6xl mp:text-3xl text-white  inline-block transition-transform transform rotate-0 group-hover:rotate-180">
             Buddy
           </span>
         </div>
 
-        <p className="text-[16px] text-white 2xl:w-[274px] font-mono-sans justify-center ml-4  md:ml-0  item-center">
+        <p className="text-[16px] text-white pa:w-[300px] xl:w-[200px] 2xl:w-[274px] font-mono-sans justify-center ml-4  md:ml-0  item-center xl:-ml-2 ">
           Lorem ipsum dolor sit amet consectetur. Viverra aenean tristique sit
           aliquam blandit. Luctus.
         </p>
-        <div className="flex flex-row justify-evenly gap-16 md:gap-7 mr-8 md:mr-0 opacity-0 md:opacity-90 ">
+        <div className="xl:-ml-4 flex flex-row justify-evenly gap-16 md:gap-7 mr-8 md:mr-0 pa:opacity-0 xl:opacity-100 opacity-0 md:opacity-90 ">
           <span className="text-white text-2xl hover:text-orange-500">
             <FaFacebookF />
           </span>
@@ -53,10 +53,10 @@ const Footer = () => (
         </div>
       </div>
 
-      <div className=" flex flex-col md:flex-row justify-center items-center  text-white 2xl:gap-20">
+      <div className="xl:gap-20  xl:justify-center flex flex-col pa:flex-col md:flex-row justify-center items-center  text-white 2xl:gap-20 mp:gap-10">
         {/* Company Links */}
-        <div className="flex flex-row  items-center justify-center mx-auto 2xl:gap-20">
-          <div className="footer__link text-white mx-auto  items-center justify-center">
+        <div className="flex flex-row  items-center justify-center mx-auto 2xl:gap-20 mp:gap-10 xl:mt-28 2xl:mt-0 pa:gap-80">
+          <div className=" text-white mx-auto  items-center justify-center">
             <h3 className="font-light mb-5 text-white opacity-65">Company</h3>
             <div className="flex flex-col gap-6  items-left justify-start mx-auto text-left">
               <Link href="/" className="text-white">
@@ -97,7 +97,7 @@ const Footer = () => (
             </div>
           </div>
         </div>
-        <div className="flex flex-row   items-center justify-center mx-auto  2xl:gap-20 2xl:-mt-36">
+        <div className="xl:ml-0 flex flex-row   items-center justify-center mx-auto  2xl:gap-20 2xl:-mt-36 mp:mp:-10 mp:gap-10 xl:-mt-8 pa:gap-80">
           {/* Features Links */}
           <div className="footer__link text-white mx-auto  items-center justify-center ">
           <h3 className="font-light mb-5 text-white opacity-65">Help</h3>
@@ -128,7 +128,21 @@ const Footer = () => (
         </div>
       </div>
     </div>
-    {/* <div className="flex flex-row justify-evenly gap-16 md:gap-7 mr-8 md:mr-0   opacity-1 md:opacity-0">
+   
+
+    <div className="flex mp:flex-col mp:gap-10 justify-between items-center w-full 2xl:w-[1220px] mt-7 border-t border-dotted border-gray-100 sm:px-16 px-6 py-10">
+      <div className=" item-center justify-center mx-auto">
+        <Link href="/" className="text-white font-light">
+          Copyright© 2024
+        </Link>
+        <Link href="/" className="text-orange-500 mr-1 ml-1 font-bold  ">
+          HostBuddy
+        </Link>
+        <Link href="/" className="text-white font-light ml-1">
+          - All Rights Reserved.
+        </Link>
+      </div>
+       <div className="flex flex-row justify-evenly gap-16 md:gap-7 mr-8 md:mr-0 xl:opacity-0 pa:opacity-100   mp:opacity-100 md:opacity-0">
       <span className="text-white text-2xl hover:text-orange-500">
         <FaFacebookF />
       </span>
@@ -141,20 +155,7 @@ const Footer = () => (
       <span className="text-white text-2xl hover:text-orange-500">
         <RiLinkedinLine />
       </span>
-    </div> */}
-
-    <div className="flex justify-between items-center w-full 2xl:w-[1220px] mt-7 border-t border-dotted border-gray-100 sm:px-16 px-6 py-10">
-      <div className="footer__copyrights-link item-center justify-center mx-auto">
-        <Link href="/" className="text-white font-light">
-          Copyright© 2024
-        </Link>
-        <Link href="/" className="text-orange-500 mr-1 ml-1 font-bold  ">
-          HostBuddy
-        </Link>
-        <Link href="/" className="text-white font-light ml-1">
-          - All Rights Reserved.
-        </Link>
-      </div>
+    </div>
     </div>
   </footer>
 );
