@@ -15,16 +15,16 @@ const Plans = () => {
     />
   );
   return (
-    <div className="flex flex-col  w-[1220px]  h-[928.62px] mx-auto  items-center justify-center">
+    <div className="flex flex-col xl:ml-[260px] xl:-mt-[550px] 2xl:ml-0  mp:flex-col w-[1220px]  h-[928.62px] mx-auto  items-center justify-center">
       {/* heading */}
-      <div className="static flex flex-col sm:w-[300px] sm:gap-[20px]  2xl:w-[1220px] 2xl:ml-0 pa:w-[800px] pa:-ml-96 sm:-ml-[880px] -ml-[900px] gap-4 md:flex-row justify-between opacity-100 items-center mb-8">
+      <div className="relative 2xl:flex-row 2xl:mt-0 xl:-ml-[820px] pa:mb-[500px] xl:mt-0  xl:mb-10  2xl:-ml-20 2xl:mb-0 mp:-mt-[600px] pa:flex-col mp:mb-[900px] mp:-mr-20 flex flex-col sm:w-[300px] sm:gap-[20px]  2xl:w-[1220px]  pa:w-[800px] pa:-ml-96 sm:-ml-[880px] -ml-[900px] gap-4 md:flex-row justify-between opacity-100 items-center mb-8">
         <div className="relative w-full">
           <h2 className="font-mona-sans font-semibold text-lg md:text-4xl leading-[48px] md:leading-[63px] w-full  opacity-1">
             The Perfect - Web Hosting Plan
           </h2>
           <div className="border-t-4 border-orange-500 opacity-100 w-[19%] transition-transform duration-400 hover:scale-110"></div>
         </div>
-        <div className="flex flex-row gap-5 md:gap-15 items-center justify-center  ">
+        <div className="flex flex-row gap-5 md:gap-15 items-center justify-center pa:-ml-[500px]  ">
           <div>
             <h2 className="font-mona-sans text-xs md:text-base font-normal leading-[24px] md:leading-[32px] tracking-[0.05em] md:tracking-[0.2px] text-right w-[54px] md:w-[71px]  h-[32px] opacity-100">
               Monthly
@@ -53,8 +53,8 @@ const Plans = () => {
         </div>
       </div>
       {/* cards */}
-      <div className="static mt-8 w-[1291px] h-[810.62px] items-center justify-center mx-auto flex flex-col ">
-        <div className="flex flex-col md:flex-row w-full justify-start gap-8 items-start ml-10 pa:ml-10 2xl:-ml-20 pa:w-[850px] 2xl:w-[1219px] pa:flex-wrap 2xl:flex-nowrap">
+      <div className="2xl:mt-40 xl:-mt-[250px] 2xl:-ml-0 pa:-ml-48 relative mp:gap-20 mp:ml-6 mt-8 w-[1291px] h-[810.62px] items-center justify-center mx-auto flex flex-col ">
+        <div className="flex flex-col md:flex-row w-full  justify-start gap-8 items-start ml-10 pa:ml-10 2xl:-ml-20 pa:w-[850px] xl:w-full 2xl:w-[1219px] pa:flex-wrap 2xl:flex-nowrap">
           <div className="mb-5 pa:w-[350px]  2xl:w-[393px] h-[545px] bg-[#F9EFE4] p-10 rounded-2xl transition-all duration-300 hover:bg-[#16191C] hover:text-white group">
             <div className="mb-2 w-full p-2">
               <h2 className="font-mona-sans font-bold text-[24px] md:text-3xl text-center  text-gray-900 group-hover:text-white mx-auto">
@@ -199,7 +199,7 @@ const Plans = () => {
               </div>
             </div>
           </div>
-          <div className="mb-5 pa:w-[730px] 2xl:w-[393px] h-[545px] bg-[#F9EFE4] p-10 rounded-2xl transition-all duration-300 hover:bg-[#16191C] hover:text-white group">
+          <div className="mb-5 pa:w-[730px] xl:w-[350px] 2xl:w-[393px] h-[545px] bg-[#F9EFE4] p-10 rounded-2xl transition-all duration-300 hover:bg-[#16191C] hover:text-white group">
             <div className="mb-2 w-full p-2">
               <h2 className="font-mona-sans font-bold text-[24px] md:text-3xl text-center  text-gray-900 group-hover:text-white mx-auto">
                 IGNITE
@@ -273,7 +273,7 @@ const Plans = () => {
           </div>
         </div>
 
-        <div className=" flex flex-col md:flex-row   mx-auto items-center justify-center gap-10 md:gap-10 md:w-[1016px] pa:w-[700px] 2xl:ml-64 2xl:mt-20 ">
+        <div className="pa:ml-[500px] xl:gap-20 xl:ml-[470px]  xl:mb-20  flex flex-col mp:ml-16 mp:flex-col md:flex-row mp:mb-[100px] 2xl:mb-[100px] xl:-mb-[650px]   mx-auto items-center justify-center pa:mb-80 gap-10 md:gap-10 pa:gap-8 md:w-[1016px] pa:w-[200px] 2xl:ml-[500px] 2xl:mt-20 ">
           <div className="flex flex-col item-center justify-center mx-auto relative group ">
             <div>
               <h2 className=" text-orange-500 font-mona-sans font-extrabold text-7xl text-center flex flex-row">

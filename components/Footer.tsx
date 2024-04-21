@@ -9,11 +9,11 @@ import Link from "next/link";
 import FooterBox from "./FooterBox";
 
 const Footer = () => (
-  <footer className="md:mt-0 w-full 2xl:w-[1920px] 2xl:h-[603px] flex flex-col text-black-100  border-t bg-gradient-to-b from-gray-700 to-gray-900 border-gray-100 mx-auto items-center justify-center">
-    <div className="w-full  xl:-top-20 2xl:w-[1220px]  h-[206px] mx-auto relative -top-60 2xl:-top-12 pa:-top-32 mp:-top-60   ">
+  <footer className="md:mt-0 w-full  xl;mt-0 2xl:w-[1920px] 2xl:h-[603px] flex flex-col text-black-100  border-t bg-gradient-to-b from-gray-700 to-gray-900 border-gray-100 mx-auto items-center justify-center">
+    <div className="w-full  xl:-top-20 2xl:w-[1220px]  h-[206px] mx-auto relative -top-60 2xl:-top-2 pa:-top-32 mp:-top-60   ">
       <FooterBox />
     </div>
-    <div className="xl:w-[1000px] 2xl:w-[1220px] flex 2xl:flex-row xl:flex-row mp:flex-col justify-center xl:justify-between 2xl:justify-between item-center mx-auto 2xl:mt-10 2xl:mb-10  ">
+    <div className="xl:w-[1000px] 2xl:w-[1220px] flex 2xl:flex-row xl:flex-row mp:flex-col justify-center xl:justify-between 2xl:justify-between item-center mx-auto 2xl:mt-14 2xl:mb-10  ">
       <div className="flex flex-col  justify-center md:justify-start  items-center mp:items-start gap-6 mp:ml-2 mp:mt-20 ">
         <div className="justify-center md:mr-0 group mp:ml-4 xl:-ml-2 xl:mt-10 2xl:-mt-20 pa:ml-0">
           <span className="font-semibold text-6xl mp:text-3xl text-white inline-block transition-transform transform rotate-0 group-hover:rotate-180">
@@ -53,7 +53,7 @@ const Footer = () => (
         </div>
       </div>
 
-      <div className="xl:gap-20  xl:justify-center flex flex-col pa:flex-col md:flex-row justify-center items-center  text-white 2xl:gap-20 mp:gap-10">
+      <div className="xl:gap-20 pa:mb-4  xl:justify-center flex flex-col pa:flex-col md:flex-row justify-center items-center 2xl:flex-row  text-white 2xl:gap-20 mp:gap-10">
         {/* Company Links */}
         <div className="flex flex-row  items-center justify-center mx-auto 2xl:gap-20 mp:gap-10 xl:mt-28 2xl:mt-0 pa:gap-80">
           <div className=" text-white mx-auto  items-center justify-center">

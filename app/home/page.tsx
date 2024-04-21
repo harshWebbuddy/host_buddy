@@ -16,10 +16,10 @@ const Home = () => {
    <div>
 <HostingHome/>
    </div>
-    {/* <div className="">
+    <div className="">
         <PlanPage/>
 
-    </div> */}
+    </div>
     <div className="mt-20">
         <LocationPage/>
 
