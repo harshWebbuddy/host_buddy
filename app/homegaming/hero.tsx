@@ -15,7 +15,7 @@ const GamingPage = () => {
           className="opacity-50 object-cover"
         />
         <div className="flex flex-col 2xl:flex-row justify-start items-start  ">
-          <div className="mx-auto absolute w-full 2xl:w-[1220px] 2xl:ml-[300px] h-[757px] top-[100px] md:top-[50px] 2xl:gap-[200px] left-[23px] md:left-[50px] 2xl:justify-between inset-0 items-center justify-center text-white  flex flex-col 2xl:flex-row pa:flex-col pa:-ml-36 pa:mt-20 2xl:-mt-10 ">
+          <div className="mx-auto absolute w-full 2xl:w-[1220px] 2xl:ml-[300px] h-[757px] xl:flex-row top-[100px] md:top-[50px] 2xl:gap-[100px] left-[23px] md:left-[50px] 2xl:justify-between inset-0 items-center justify-center text-white  flex flex-col 2xl:flex-row pa:flex-col pa:-ml-36 pa:mt-20 2xl:-mt-10 xl:-ml-2 ">
             <div className="relative md:w-[600px] md:h-[429px] w-full pa:ml-0 ">
               <div className="w-full 2xl:w-[175px] h-[30px] items-center justify-center  mp:mt-10">
                 <h2 className="font-mono-sans text-[15px] italic font-light leading-[30px] text-left">
@@ -97,9 +97,9 @@ const GamingPage = () => {
         </div>
       </div>
       </div>
-      <div className="relative 2xl:-mt-28 mp:-mt-20 mp:-ml-2 ">
+      <div className="relative 2xl:-mt-28 mp:-mt-20 mp:-ml-2 xl:-mt-80">
       <div className="2xl:ml-[30px] mt-0  relative z-10 "><Ratingpanel /></div>  
-        <img src="/homegaming/rating.svg" className="ml-[0px] w-[12000px] 2xl:-mt-60 mp:-mt-[10px] z-0 relative " />
+        <img src="/homegaming/rating.svg" className="ml-[0px] w-[12000px] 2xl:-mt-60 mp:-mt-[10px] z-0 relative xl:-mt-20 " />
       </div>
     </div>  
   );

@@ -20,12 +20,12 @@
     };
 
     return (
-        <div className="relative w-full 2xl:w-[622px] h-full 2xl:h-[444px] border-solid border-orange-500 border rounded-3xl ">
+        <div className="relative w-full xl:w-[500px] 2xl:w-[622px] h-full mp:h-[333px] 2xl:h-[444px] border-solid border-orange-500 border rounded-3xl flex items-center justify-center mp:-ml-2">
         {/* Previous button */}
         <button
-            className="absolute top-1/2 left-0 transform -translate-y-1/2  p-2 rounded-full pa:mt-10 2xl:mt-0"
-            onClick={prevImage}
-        >
+        className="absolute top-1/2 left-0 transform -translate-y-1/2 p-2 rounded-full pa:mt-10 2xl:mt-0"
+        onClick={prevImage}
+      >
             <img src="./homegaming/leftarrow.svg" alt="Previous" className="w-[90.5px] h-[40px] -rotate-1" />
         </button>
         
@@ -33,23 +33,25 @@
         <img
             src={images[currentImageIndex]}
             alt={`Image ${currentImageIndex}`}
-            className="w-[590px]"
+            className="w-[600px] h-[418px] "
+            style={{ maxWidth: '100%', maxHeight: '100%' }}
+
         />
         
         {/* Next button */}
         <button
-            className="absolute top-1/2 right-0 transform -translate-y-1/2  p-2 rounded-full pa:mt-10 2xl:mt-0"
+            className="absolute top-1/2 right-0 transform -translate-y-1/2  p-2 rounded-full"
             onClick={nextImage}
         >
             <img src="./homegaming/rightarrow.svg" alt="Next"  className="w-[90.5px] h-[40px] "  />
         </button>
         
         {/* Orange rectangle bar */}
-        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2  ">
+        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
             {images.map((_, index) => (
             <div
                 key={index}
-                className={`h-2 w-2 rounded-full pa:mt-20  ${
+                className={`h-2 w-2 rounded-full ${
                 index === currentImageIndex ? 'bg-orange-500' : 'bg-gray-300'
                 }`}
             ></div>

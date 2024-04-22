@@ -10,10 +10,10 @@ const Panel = () => {
     // Add more image URLs as needed
   ];
   return (
-    <div className="mp:mb-80 xl:mb-0">
+    <div className="mp:mb-80 xl:mb-80 2xl:mb-80">
       <img src="./homegaming/panelupper1.svg" className="w-full relative z-0 mp:mt-10"/> 
  <div  className="w-full bg-[#01131B] -mt-10 relative z-10">
-   <section className="static w-full 2xl:w-[1920px] 2xl:h-[782px] flex flex-col 2xl:flex-row xl:h-[900px] mp:h-[1200px]   h-[1670px] pa:h-[1450px]  items-center justify-center mx-auto ">
+   <section className="static w-full 2xl:w-[1920px] 2xl:h-[782px] flex flex-col 2xl:flex-row xl:h-[900px] mp:h-[1300px]   h-[1670px] pa:h-[1450px]  items-center justify-center mx-auto ">
         <div className=" 2xl:w-[1230.66px] xl:flex-row md:h-[668.18px] h-[1100px]  flex flex-col mp:flex-col pa:gap-0 pa:flex-col 2xl:flex-row mx-auto items-center justify-between 2xl:ml-60 2xl:-mt-10 mp:mt-[650px] xl:mt-[50px] xl:p-10 pa:-mt-[800px] ">
       <div className="w-full 2xl:w-[1926px] mx-auto md:w-[699px] md:h-[608px] pa:mb-80 mp:mb-0 ">
       <div className="mx-auto flex 2xl:flex-row justify-between 2xl:w-[699px] 2xl:h-[126px] mp:p-4 mp:-mt-96 pa:mt-40">
@@ -78,10 +78,10 @@ const Panel = () => {
 
       </div>
     </div>
-  <div className="flex flex-col gap-12 2xl:-mt-80 mp:ml-6 relative  pa:ml-0 ">
-  <p className="text-[16px] leading-[24px] font-mono-sans text-white opacity-70 2xl:w-[600px] mp:w-[350px] xl:w-full pa:w-[600px]  "> By trusting us with your business and projects needs, we promise a99.9% uptimeon any services we provide, outside of any standard. </p>
+  <div className="flex flex-col xl:w-[500px] gap-12 xl:-mt-72 2xl:-mt-80 mp:ml-6 relative  pa:ml-0 ">
+  <p className="text-[16px]  leading-[24px] font-mono-sans text-white opacity-70 2xl:w-[600px] mp:w-[350px] xl:w-full pa:w-[600px]  "> By trusting us with your business and projects needs, we promise a99.9% uptimeon any services we provide, outside of any standard. </p>
   <ImageSlider images={images} />
-    <img src="./homegaming/panel1.svg" className="w-[100.74px] 2xl:-mt-[530px] -ml-10 z-10 relative pa:-mt-[340px] mp:opacity-0 mp:mt-40"/>  
+    <img src="./homegaming/panel1.svg" className="w-[100.74px] 2xl:-mt-[530px] -ml-10 z-10 relative pa:-mt-[340px] mp:opacity-0 mp:mt-40 xl:opacity-100 xl:-mt-[420px]" />  
   </div>
 </div>
 

@@ -24,9 +24,7 @@ const page = () => {
       </div>      <div>
         <GameForm/>
       </div>
-      <div>
-        <Panel/>  
-      </div>
+      
       <div>
         <Question />
       </div>

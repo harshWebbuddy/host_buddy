@@ -39,7 +39,7 @@ const GameForm: React.FC = () => {
     <section className="w-full bg-[#F9EFE4]">
       
       <div className="w-full 2xl:w-[1219px] md:h-[982px] pa:w-[1200px] pa:h-[700px] 2xl:h-[661px]  pa:py-20  items-start justify-start mx-auto mp:p-4   ">
-        <div className="items-start justify-start mx-auto gap-2 2xl:mb-10 mp:mt-10 xl:ml-[190px]  ">
+        <div className="items-start justify-start mx-auto gap-2 2xl:mb-10 mp:mt-10 xl:ml-[190px] 2xl:ml-0  ">
           <h2 className="font-mona-sans text-[42px] font-semibold item-start  text-black ">
             Full out the Contact Form
           </h2>

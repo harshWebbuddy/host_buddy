@@ -45,7 +45,7 @@ const Ratingpanel = () => {
       <div className="font-mona-sans font-semibold   text-center md:text-left h-[63px] pa:-mt-40 2xl:-mt-8">
         <h3 className="font-bold text-[20px] leading-[63px]">Customer Happiness</h3>
       </div>
-      <div className="flex flex-col md:flex-row pa:flex-row justify-between 2xl:mt-8 md:gap-2 2xl:gap-x-2 pa:flex-wrap md:flex-nowrap 2xl:flex-nowrap">
+      <div className="flex flex-col md:flex-row pa:flex-row justify-between 2xl:mt-8 md:gap-2 2xl:gap-x-2 pa:flex-wrap md:flex-nowrap 2xl:flex-nowrap xl:flex-nowrap">
         <div className="flex flex-col items-center pa:w-[40%] mb-20 hover:scale-105 transition-transform">
           <div className="text-xl font-bold text-blue-600 mb-4 mt-3">
             G<span className="text-red-600">o</span>o
@@ -91,7 +91,7 @@ const Ratingpanel = () => {
       </div>
   
       
-      <div className="hidden md:flex items-center md:opacity-100 pa:opacity-0 2xl:opacity-100">
+      <div className="hidden md:flex items-center 2xl:-mt-20 md:opacity-100 pa:opacity-0 2xl:opacity-100">
           <div className="2xl:w-[50px] pa:w-[30px] border-t  border-gray-600 transform rotate-90 opacity-1" style={{ borderStyle: 'dotted' }}></div>
         </div>
      

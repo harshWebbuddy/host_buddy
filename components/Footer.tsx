@@ -9,7 +9,8 @@ import Link from "next/link";
 import FooterBox from "./FooterBox";
 
 const Footer = () => (
-  <footer className="md:mt-0 w-full  xl;mt-0 2xl:w-[1920px] 2xl:h-[603px] flex flex-col text-black-100  border-t bg-gradient-to-b from-gray-700 to-gray-900 border-gray-100 mx-auto items-center justify-center">
+  <div className="w-full bg-gradient-to-b from-gray-700 to-gray-900 border-gray-100">
+  <footer className="md:mt-0 w-full  xl:mt-0 2xl:w-[1920px] 2xl:h-[603px] flex flex-col text-black-100  border-t   mx-auto items-center justify-center">
     <div className="w-full  xl:-top-20 2xl:w-[1220px]  h-[206px] mx-auto relative -top-60 2xl:-top-2 pa:-top-32 mp:-top-60   ">
       <FooterBox />
     </div>
@@ -53,9 +54,9 @@ const Footer = () => (
         </div>
       </div>
 
-      <div className="xl:gap-20 pa:mb-4  xl:justify-center flex flex-col pa:flex-col md:flex-row justify-center items-center 2xl:flex-row  text-white 2xl:gap-20 mp:gap-10">
+      <div className="xl:gap-10 pa:mb-4  xl:justify-center flex flex-col xl:flex-row pa:flex-col md:flex-row justify-center items-center 2xl:flex-row  text-white 2xl:gap-20 mp:gap-10 ">
         {/* Company Links */}
-        <div className="flex flex-row  items-center justify-center mx-auto 2xl:gap-20 mp:gap-10 xl:mt-28 2xl:mt-0 pa:gap-80">
+        <div className="flex flex-row  items-center xl:flex-row justify-center mx-auto 2xl:gap-20 mp:gap-10 xl:mt-28 2xl:mt-0 pa:gap-80 xl:gap-10">
           <div className=" text-white mx-auto  items-center justify-center">
             <h3 className="font-light mb-5 text-white opacity-65">Company</h3>
             <div className="flex flex-col gap-6  items-left justify-start mx-auto text-left">
@@ -97,7 +98,7 @@ const Footer = () => (
             </div>
           </div>
         </div>
-        <div className="xl:ml-0 flex flex-row   items-center justify-center mx-auto  2xl:gap-20 2xl:-mt-36 mp:mp:-10 mp:gap-10 xl:-mt-8 pa:gap-80">
+        <div className="xl:ml-0 flex flex-row xl:flex-row   items-center justify-center mx-auto  2xl:gap-20 2xl:-mt-36 mp:mp:-10 mp:gap-10 xl:-mt-8 pa:gap-80 xl:gap-10">
           {/* Features Links */}
           <div className="footer__link text-white mx-auto  items-center justify-center ">
           <h3 className="font-light mb-5 text-white opacity-65">Help</h3>
@@ -158,6 +159,7 @@ const Footer = () => (
     </div>
     </div>
   </footer>
+  </div>
 );
 
 export default Footer;
