@@ -10,7 +10,7 @@ const Panel = () => {
     // Add more image URLs as needed
   ];
   return (
-    <div className="mp:mb-80">
+    <div className="mp:mb-80 xl:mb-0">
       <img src="./homegaming/panelupper1.svg" className="w-full relative z-0 mp:mt-10"/> 
  <div  className="w-full bg-[#01131B] -mt-10 relative z-10">
    <section className="static w-full 2xl:w-[1920px] 2xl:h-[782px] flex flex-col 2xl:flex-row xl:h-[900px] mp:h-[1200px]   h-[1670px] pa:h-[1450px]  items-center justify-center mx-auto ">

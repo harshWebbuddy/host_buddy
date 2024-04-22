@@ -42,7 +42,7 @@ const Ratingpanel = () => {
   return (
     <motion.div className="flex flex-col md:flex-row mp:bg-black justify-center items-center mx-auto xl:w-full   w-full md:w-[1220px] 2xl:w-[1220px] 2xl:h-[169.27px] pa:w-full p-10 rounded-2xl mt-16" whileHover={{scale:1.1}}>
     <div className="md:flex items-center justify-center pa:gap-x-2 2xl:gap-x-36 xl:gap-x-40 mt-16 mb-6 pa:ml-8 ">
-      <div className="font-mona-sans font-semibold  2xl:w-[245px] text-center md:text-left h-[63px] pa:-mt-40 2xl:-mt-8 mp:mb-8 xl:-mt-8">
+      <div className="font-mona-sans font-semibold  2xl:w-[245px] text-center md:text-left h-[63px] pa:-mt-32 2xl:-mt-8 mp:mb-8 xl:-mt-8">
         <h3 className="font-bold text-[23px]  leading-[63px] text-white">Customer Happiness</h3>
       </div>
       <div className="flex flex-col md:flex-row pa:flex-row justify-between 2xl:mt-8  2xl:gap-x-4  pa:flex-wrap md:flex-nowrap 2xl:flex-nowrap">

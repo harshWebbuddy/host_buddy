@@ -41,7 +41,7 @@ interface ImgMediaCardProps {
   };
 const CaseStudy = () => {
   return (
-  <div className="w-full 2xl:w-[1920px] bg-[#F5F5F5] mb-60 mx-auto ">
+  <div className="w-full 2xl:w-[1920px] bg-[#F5F5F5] mb-60 mp:mb-80 mx-auto ">
     <div className="flex flex-row justify-between ">  {/* main div for all the items excluding bg color */}
     <div className="flex flex-col w-[1219px] items-center justify-center mx-auto gap-20 mt-20 mb-20 "> {/* div for heading nad images */}
       <div className="-ml-[1300px]">

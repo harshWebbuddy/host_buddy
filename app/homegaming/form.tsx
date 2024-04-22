@@ -48,7 +48,7 @@ const GameForm: React.FC = () => {
         </p>
         </div>
      
-        <form onSubmit={handleSubmit} className="w-full md:w-[800px] mp:w-full pa:w-[800px] 2xl:w-full 2xl:pa:w-[800px] 2xl:mx-auto pa:mx-auto mp:mx-auto 2xl:mb-10">
+        <form onSubmit={handleSubmit} className="xl:ml-[180px] pa:ml-0 w-full md:w-[800px] mp:w-full pa:w-[800px] 2xl:w-full 2xl:pa:w-[800px] 2xl:mx-auto pa:mx-auto mp:mx-auto 2xl:mb-10">
   <div className="flex flex-col 2xl:flex-row xl:flex-row mp:flex-col pa:flex-row  mt-4 items-center justify-center w-full gap-6">
     <div className="flex-1  mp:w-full">
       <input
