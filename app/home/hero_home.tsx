@@ -13,14 +13,14 @@ const HostingHome = () => {
     />
 <div className="flex flex-col md:flex-row   ">
 <div className="mx-auto static 2xl:absolute w-full 2xl:w-[1220.25px] h-full   mp:p-4   2xl:h-[757px] 2xl:mt-10 2xl:gap-20 2xl:p-0 pa:-mt-[350px] mp:gap-10 mp:-mt-10 sm:p-2 sm:-mt-24 sm:gap-10 pa:gap-14 md:-mt-80 md:gap-40  sd:h-[600px] sd:p-20  sd:flex-row sd:-mt-[720px] inset-0 items-center  text-white  flex flex-col 2xl:flex-row justify-between    ">
-      <div className="relative md:w-[600px] md:h-[429px] w-full flex flex-col ">
+      <div className="relative md:w-[600px] md:h-[429px] w-full flex flex-col pa:mb-20 ">
         <div className="w-full md:w-[175px] h-[30px] items-center justify-center mb-4">  
           <h2 className="font-mono-sans text-[15px]  font-light md:w-[175px] italic  leading-[30px] text-left">
             <span className="text-white opacity-90 font-mono-sans font-light">Welcome to </span>
             <span className="text-orange-500 font-bold">HostBuddy</span>
           </h2>
         </div>
-        <div className="w-full md:w-[537px] h-[168px] 2xl:mb-2  pa:mb-2 mp:mb-16">
+        <div className="w-full md:w-[537px] h-[168px] 2xl:mb-2  pa:mb-2 mp:mb-20">
           <h2 className="font-mono-sans font-medium  text-left text-white text-[61px] sm:text-[51px] mp:text-[41px] leading-[84px] ">
             Dedicated Servers High Performance
           </h2>
