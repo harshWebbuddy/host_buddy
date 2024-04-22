@@ -967,19 +967,18 @@ const Locationpage = () => {
 
   return (
     
-    <div className="w-full md:w-[1112px] flex flex-col items-center justify-center mt-20  md:mt-40 pa:mt-32 md:mb-0 pa:mb-32 ">
+    <div className="w-full 2xl:w-[1112px] flex flex-col  mx-auto items-center justify-center pa:-mt-40  pa:mb-32 mp:-mt-52 xl:-mt-48 ">
     {/* Headline */}
-    <h1 className="mb-4 text-center font-mona-sans text-[42px] text-white font-semibold leading-16">
+    <h1 className="mb-4 w-full pa:w-full mp:w-[300px] 2xl:w-full text-center font-mona-sans text-[32px] 2xl:text-[42px] text-black font-bold leading-[43px] 2xl:leading-[63px]">
       Our Datacenters Are Located In <span className="text-orange-500">7 Regions</span>
-      <div className="border-t-4 border-orange-500 opacity-1 w-[19%] transition-transform duration-400 hover:scale-110"></div>
+      <div className="border-t-4 border-orange-500 opacity-1 w-[23%] ml-[660px] transition-transform duration-400 hover:scale-110 mp:opacity-0"></div>
 
     </h1>
     {/* Text */}
-    <p className="text-lg text-center pa:mb-10 md:mb-20">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit sed, do eiusmod
-      temporb incididunt lorem ipsu dolor sit amet
+    <p className="textp-[16px] text-center pa:mb-10 md:mb-20 leading-[24px]">
+    Lorem ipsum dolorsit amet, consectetur adipiscing elit sed, do eiusmod temporincididunt lorem ipsumdolor sit amet
     </p>
-    <div className="mx-auto w-full md:w-[1112px] md:h-[527px] items-center justify-center ">
+    <div className="mx-auto w-full 2xl:w-[1112px] md:h-[527px] items-center justify-center ">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 2000 857"

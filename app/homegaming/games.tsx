@@ -37,23 +37,24 @@ const Box: React.FC<BoxProps> = ({ imageSrc }) => {
 };
 const IndependentHoverBoxesVertical = () => {
   return (
-    <div className="flex flex-col pa:flex-row md:flex-row gap-8 items-center justify-center md:ml-6">
+    <div className="flex flex-col pa:flex-row 2xl:flex-row 2xl:flex-nowrap gap-8 items-center justify-center md:ml-6 pa:w-[1200px] pa:flex-wrap  2xl:ml-[500px] pa:-ml-[400px] xl:flex-row xl:flex-nowrap" >
       <Box imageSrc="./homegaming/games1.png" />
       <Box imageSrc="./homegaming/games3.png" />
       <Box imageSrc="./homegaming/games2.png" />
+  <div className="2xl:opacity-0  pa:opacity-100">         <Box imageSrc="./homegaming/games1.png" />
+</div>
     </div>
   );
 };
 const Games = () => {
   return (
-    <div className="md:w-[1220.08px] items-center justify-center mx-auto margin padding flex flex-col gap-20 md:gap-10 md:mt-60 pa:mt-10  ">
-      <div className="justify-between flex flex-col   gap-[20px]  mr-24 md:-mr-8 pa:-ml-28 md:mt-32">
-        <h2 className="heading w-96 md:w-full pa:w-full font-semibold md:h-[126px] items-center justify-center ml-32  pa:ml-12 ">
+    <div className="md:w-[1220.08px] items-center mp:mt-20 justify-center mx-auto margin padding flex flex-col gap-20 md:gap-10 md:mt-60 pa:mt-10 mp:mb-28 ">
+      <div className="justify-between flex flex-col   gap-[20px] 2xl:ml-20  mr-24 md:-mr-8 pa:-ml-[350px] md:mt-32 mp:-ml-6 xl:ml-[100px]">
+        <h2 className=" font-mono-sans 2xl:text-[42px] mp:text-[32px] leading-[63px] 2xl:w-[849px] w-full mp:ml-24  pa:w-full font-bold md:h-[126px] items-center justify-center ml-32  pa:-ml-2 ">
           Choose From Over 3 Different Games
         </h2>
-        <p className="w-[400px] ml-32 md:ml-48 md:-mt-20  pa:w-full  md:w-[600px] h-[48px] text-[16px] items-center justify-center ">
-          Our mission is to accelerate business growth with unparalleled.
-        </p>
+        <p className="font-mono-sans w-[400px]  mp:w-[300px] mp:ml-24 2xl:-mt-16 2xl:ml-10 mp:mt-2 pa:-mt-16 pa:-ml-14 pa:w-[700px]  2xl:w-[689px] h-[48px] text-[16px] leading-[24px] items-center justify-center ">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.        </p>
       </div>
       <div>
         <IndependentHoverBoxesVertical />
