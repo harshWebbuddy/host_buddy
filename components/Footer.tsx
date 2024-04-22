@@ -9,7 +9,7 @@ import Link from "next/link";
 import FooterBox from "./FooterBox";
 
 const Footer = () => (
-  <div className="w-full bg-gradient-to-b from-gray-700 to-gray-900 border-gray-100">
+  <div className="w-full h-full bg-gradient-to-b from-gray-700 to-gray-900 border-gray-100">
   <footer className="md:mt-0 w-full  xl:mt-0 2xl:w-[1920px] 2xl:h-[603px] flex flex-col text-black-100  border-t   mx-auto items-center justify-center">
     <div className="w-full  xl:-top-20 2xl:w-[1220px]  h-[206px] mx-auto relative -top-60 2xl:-top-2 pa:-top-32 mp:-top-60   ">
       <FooterBox />
@@ -131,7 +131,7 @@ const Footer = () => (
     </div>
    
 
-    <div className="flex mp:flex-col mp:gap-10 justify-between items-center w-full 2xl:w-[1220px] mt-7 border-t border-dotted border-gray-100 sm:px-16 px-6 py-10">
+    <div className="flex mp:flex-col mp:gap-10 justify-between items-center w-full 2xl:w-[1220px] -mt-2 border-t border-dotted border-gray-100 sm:px-16 px-6 py-10">
       <div className=" item-center justify-center mx-auto">
         <Link href="/" className="text-white font-light">
           Copyright© 2024
