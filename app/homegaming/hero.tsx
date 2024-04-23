@@ -3,35 +3,35 @@ import Ratingpanel from "./rating";
 
 const GamingPage = () => {
   return (
-    <div>
+    <div className="w-full">
      <div className="bg-black">
     
-      <div className=" relative w-full 2xl:w-[1920px] h-[950px] 2xl:h-[757px] md:overflow-hidden items-center justify-center mx-auto  ">
+      <div className=" relative mp:w-auto xl:w-full gf:w-full sp:w-full ss:w-full w-full 2xl:w-[1920px]  xl:h-[800px] h-[950px] 2xl:h-[757px]  items-center justify-center mx-auto  ">
       <img
           src="/home.jpg"
           width="1920px"
           height="57px"
           alt="dsdff"
-          className="opacity-50 object-cover"
+          className="opacity-50 object-cover sp:w-full mp:w-full h-full"
         />
         <div className="flex flex-col 2xl:flex-row justify-start items-start  ">
-          <div className="mx-auto absolute w-full 2xl:w-[1220px] 2xl:ml-[300px] h-[757px] xl:flex-row top-[100px] md:top-[50px] 2xl:gap-[100px] left-[23px] md:left-[50px] 2xl:justify-between inset-0 items-center justify-center text-white  flex flex-col 2xl:flex-row pa:flex-col pa:-ml-36 pa:mt-20 2xl:-mt-10 xl:-ml-2 ">
-            <div className="relative md:w-[600px] md:h-[429px] w-full pa:ml-0 ">
+          <div className="mx-auto absolute w-full mp:w-full sp:w-full gf:gap-y-20 ss:gap-y-20 sd:flex-col xl:w-full xl:mt-0 xl:gap-2 2xl:w-[1220px] 2xl:ml-[300px] h-[757px] xl:flex-row top-[100px] md:top-[50px] 2xl:gap-[100px] left-[23px] md:left-[50px] 2xl:justify-between inset-0 items-center justify-center text-white  flex flex-col 2xl:flex-row pa:flex-col pa:-ml-36 pa:mt-20 2xl:-mt-10 xl:-ml-2 ">
+            <div className="relative md:w-[600px] xl:w-full sp:full sp:-ml-16 md:h-[429px] w-full pa:ml-0  ss:mt-0">
               <div className="w-full 2xl:w-[175px] h-[30px] items-center justify-center  mp:mt-10">
                 <h2 className="font-mono-sans text-[15px] italic font-light leading-[30px] text-left">
                   <span className="text-white opacity-75">Welcome to </span>
                   <span className="text-orange-500 font-bold">HostBuddy</span>
                 </h2>
               </div>
-              <div className="w-full 2xl:w-[570px] h-[168px]  2xl:mb-28">
+              <div className="w-full 2xl:w-[570px] xl: h-[168px]  2xl:mb-28 lg:mb-20 ">
                 <h2
                   className="font-mono  font-medium 
-                2xl:leading-[84px] text-left text-white 2xl:text-[62px] text-[32px] leading-[64px] "
+                2xl:leading-[84px] text-left text-white 2xl:text-[62px] gf:text-[32px] text-[52px] leading-[64px] "
                 >
                   Lorem ipsum dolor sit amet{" "}
                 </h2>
               </div>
-              <div className="w-[365px] 2xl:w-[600px] pa:w-[800px] h-[78px]  pa:-mt-24 2xl:mb-10 mb-20 pa:mb-2">
+              <div className="w-[365px] 2xl:w-[600px] sp:w-[650px]  pa:w-[800px] h-[78px] ss:-mt-20 ss:w-[500px] sp:mb-10 gf:w-[250px] pa:-mt-24 2xl:mb-10 mb-20 pa:mb-2 gf:mb-32 ss:mb-10">
                 <p className="font-mono text-[18px] font-light leading-[26px] text-left ">
                   <span className="opacity-75">
                     By trusting us with your business and projects needs, we
@@ -46,8 +46,8 @@ const GamingPage = () => {
                   </span>
                 </p>
               </div>
-              <div className="flex flex-row w-[350px] gap-2">
-                <div className="mp:w-[140px] 2xl:w-[184.95px] h-[52px] bg-orange-500 text-white  rounded-xl">
+              <div className="flex flex-row w-[350px] gap-2 gf:flex-col gf:w-[200px] gf:gap-y-10 ss:flex-row">
+                <div className="mp:w-[140px] 2xl:w-[184.95px] h-[52px] bg-orange-500 text-white  rounded-xl ">
                   <div className="w-[184.95px] 2xl:w-[120px] gap-2 h-[52px]  flex flex-row item-center justify-center mx-auto py-3.5">
                     <div className="item-center justify-center mx-auto w-[24px] h-[24px] ">
                       <img src="/shoppingcart.svg" width="24px" height="24px" />
@@ -59,7 +59,7 @@ const GamingPage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="w-[160px] h-[20px] gap-[6px] flex flex-row item-center justify-center ml-8 mp:ml-2 2xl:ml-8 py-3.5">
+                <div className="w-[160px] gf:ml-6 h-[20px] gap-[6px] flex flex-row item-center justify-center ml-8 mp:ml-2 2xl:ml-8 py-3.5">
                   <div className="w-[134px] h-[12px] item-center justify-center mx-auto">
                     <h2 className="font-mona-sans text-[16px] font-medium leading-[19.2px] text-left">
                     Configure Server
@@ -87,19 +87,19 @@ const GamingPage = () => {
                 </div>
               </div>
             </div>
-            <div className="2xl:w-[448px] pa:w-[300px] 2xl:h-[448px] item-center justify-center mr-10 pa:ml-56 mp:mt-20  pa:mt-0 mp:w-[200px]">
+            <div className="2xl:w-[448px] sp:ml-0 pa:w-[300px] 2xl:h-[448px] item-center ss:mt-0 justify-center mr-10 pa:ml-56 mp:mt-20 xl:-ml-[400px] xl:-mt-20  pa:mt-0 mp:w-[200px]">
               <img
                 src="/homegaming/herologo.svg"
-                className="item-center justify-center mx-auto w-[350px]  mp:h-[250px] 2xl:w-[256px] pa:w-[300px] h-[60px] 2xl:h-[473px]"
+                className="item-center justify-center mx-auto w-[350px]   mp:h-[250px] 2xl:w-[256px] pa:w-[300px] h-[60px] 2xl:h-[473px]"
               />
             </div>
           </div>
         </div>
       </div>
       </div>
-      <div className="relative 2xl:-mt-28 mp:-mt-20 mp:-ml-2 xl:-mt-80">
+      <div className="relative xl:-ml-10 2xl:-mt-28 mp:-mt-20 mp:-ml-2 xl:-mt-[300px] gf:-mt-20 ss:-mt-44 sp:-mt-20">
       <div className="2xl:ml-[30px] mt-0  relative z-10 "><Ratingpanel /></div>  
-        <img src="/homegaming/rating.svg" className="ml-[0px] w-[12000px] 2xl:-mt-60 mp:-mt-[10px] z-0 relative xl:-mt-20 " />
+        <img src="/homegaming/rating.svg" className="ml-[0px] w-[12000px] 2xl:-mt-60 mp:-mt-[10px] gf:-mt-4 z-0 relative xl:-mt-60 opacity-100 " />
       </div>
     </div>  
   );

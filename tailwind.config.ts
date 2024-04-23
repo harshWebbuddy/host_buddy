@@ -19,6 +19,9 @@ const config: Config = {
         customBackground: '#F9EFE4',
       },
       screens: {
+        'sp':'912px',
+        'ss':'540px',
+        'gf':'280px',
         'mp':'300px',
         'mm':'350px',
         'sm': '414px',   
@@ -29,7 +32,7 @@ const config: Config = {
         // => @media (min-width: 768px) { ... }
   'pa':'820px',
   'sd':'1114px',
-        // 'lg': '1024px',
+        'lg': '1024px',
         // => @media (min-width: 1024px) { ... }
   
         'xl': '1280px',

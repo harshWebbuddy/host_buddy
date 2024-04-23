@@ -23,8 +23,7 @@ const navLinks: NavLink[] = [
     options: [
       { label: "Home Dedicated Server", href: "/home" },
     { label: "Home Gaming", href: "/homegaming" },
-      // { label: "Pages", href: "#" },
-      // { label: "Features", href: "#" },
+    { label: "Home 3D", href: "/home3d" },      // { label: "Features", href: "#" },
     ],
   },
   {
@@ -85,7 +84,7 @@ const NavBar = () => {
       // Show options for 3 seconds
       timer = setTimeout(() => {
         setShowOptionsIndex(null);
-      }, 2000);
+      }, 10000);
     }
   
     return () => {
@@ -94,14 +93,17 @@ const NavBar = () => {
   }, [showOptionsIndex]);
   const handleMouseLeave = () => {
     if (showOptionsIndex !== null) {
-      setShowOptionsIndex(null);
+      // Add a delay before hiding the options box
+      setTimeout(() => {
+        setShowOptionsIndex(null);
+      }, 400); // Adjust the delay time as needed
     }
   };
   
   return (
-    <header className="absolute top-0 w-full px-4 py-4 z-[5]">
+    <header className="absolute top-0 sp:w-full w-full px-4 py-4 z-[5]">
     <div className="w-full item-center justify-center mx-auto">
-      <nav className="w-full 2xl:w-[1220.25px] flex items-center 2xl:justify-center mx-auto  justify-between">
+      <nav className="w-full xl:w-full sp:w-full 2xl:w-[1220.25px] flex items-center 2xl:justify-center mx-auto  justify-between">
         <div className="w-full">
           <div className="justify-center md:mr-0 group ">
             <span className="font-semibold text-[29.27px] text-white inline-block transition-transform transform rotate-0 group-hover:rotate-180">H</span>
@@ -145,11 +147,11 @@ const NavBar = () => {
                     </div>
                   </Link>
                   {showOptionsIndex === index && (
-                    <div className="absolute left-0 top-full bg-white shadow-md rounded-xl py-4 px-6 mt-4 w-60 mr-12">
+                    <div className="absolute left-0 top-full bg-white shadow-md rounded-xl py-4 px-6 mt-2 w-60 mr-12">
                       {optionsData.map((option, optionIndex) => (
                         <Link key={optionIndex} href={option.href}>
                           <div className="flex flex-col">
-                            <h2 className="block text-gray-800 hover:text-orange-500  font-2xl mt-2">{option.label}</h2>
+                            <h2 className="block font-bold text-gray-800 hover:text-orange-500  font-2xl mt-2">{option.label}</h2>
                             <div className="border-t-2 border-gray-500 opacity-1 w-[100%] transition-transform duration-400 hover:scale-110 mt-2"></div>
                           </div>
                         </Link>

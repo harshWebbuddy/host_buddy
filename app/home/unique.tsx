@@ -15,7 +15,7 @@ const Unique = () => {
       </div>
       <div className="mt-10 ">
      <div className="group"> 
-        <div className="shadow-2xl relative flex md:flex-row md:w-[497px] md:h-[150px] group hover:bg-white rounded-2xl shadow-solid transition-all duration-300 border-gradient">
+        <div className="group-hover:shadow-2xl relative flex md:flex-row md:w-[497px] md:h-[150px] group hover:bg-white rounded-2xl shadow-solid transition-all duration-300 border-gradient">
           <div className="ml-8 flex md:flex-row">
             <div className="w-[48px] h-[54px] flex justify-center items-center mt-6 md:mt-8 rounded-xl transition-all duration-300">
               <img src="/sherazsir2.svg" alt="unique" width="36px" height="48px" className="hover:bg-orange-500" />
@@ -34,7 +34,7 @@ const Unique = () => {
         <div className="2xl:w-[490px] pa:w-[490px] border-t border-gray-600 transform rotate-180 opacity-1 transition-opacity duration-300 group-hover:opacity-0" style={{ borderStyle: "dotted" }}></div>
         </div>
 <div className="group ">
-        <div className="shadow-2xl relative flex md:flex-row md:w-[497px] md:h-[150px] group hover:bg-white rounded-2xl shadow-solid transition-all duration-300 border-gradient">
+        <div className="group-hover:shadow-2xl relative flex md:flex-row md:w-[497px] md:h-[150px] group hover:bg-white rounded-2xl shadow-solid transition-all duration-300 border-gradient">
           <div className="ml-8 flex md:flex-row">
           <div className="w-[48px] h-[54px] flex justify-center items-center mt-6 md:mt-8 rounded-xl transition-all duration-300">
               <img src="/uniquecar2.svg" alt="unique" width="36px" height="48px" className="hover:bg-orange-500" />
@@ -52,7 +52,7 @@ const Unique = () => {
         {/* Dotted line */}
         <div className="2xl:w-[490px] pa:w-[490px] border-t border-gray-600 transform rotate-180 opacity-1 transition-opacity duration-300 group-hover:opacity-0" style={{ borderStyle: "dotted" }}></div>
         </div> {/* End of dotted line */}
-        <div className="shadow-2xl relative flex md:flex-row md:w-[497px] md:h-[150px] group hover:bg-white rounded-2xl shadow-solid transition-all duration-300 border-gradient">
+        <div className="group-hover:shadow-2xl relative flex md:flex-row md:w-[497px] md:h-[150px] group hover:bg-white rounded-2xl shadow-solid transition-all duration-300 border-gradient">
   <div className="ml-8 flex md:flex-row">
     <div className="w-[48px] h-[54px] flex justify-center items-center mt-6 md:mt-8 rounded-xl transition-all duration-300">
       <img src="/sherazsir1.svg" alt="unique" width="36px" height="48px" className="hover:filter hover:brightness-125" />

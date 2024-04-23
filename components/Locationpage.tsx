@@ -967,7 +967,7 @@ const Locationpage = () => {
 
   return (
     
-    <div className="w-full 2xl:w-[1112px] flex flex-col  mx-auto items-center justify-center pa:-mt-40  pa:mb-32 mp:-mt-52 xl:-mt-48 ">
+    <div className="w-full mp:w-full 2xl:w-[1112px] flex flex-col  mx-auto items-center justify-center pa:-mt-40  pa:mb-32 mp:-mt-52 xl:-mt-48 ">
     {/* Headline */}
     <h1 className="mb-4 w-full pa:w-full mp:w-[300px] 2xl:w-full text-center font-mona-sans text-[32px] 2xl:text-[42px] text-black font-bold leading-[43px] 2xl:leading-[63px]">
       Our Datacenters Are Located In <span className="text-orange-500">7 Regions</span>

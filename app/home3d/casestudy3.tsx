@@ -39,21 +39,21 @@ interface ImgMediaCardProps {
         </Card>
     );
   };
-const CaseStudy = () => {
+const CaseStudy3D = () => {
   return (
-    <div className="w-full  bg-[#F5F5F5]">
+    <div className="w-full  bg-[#F5F5F5] xl:-mt-[260px]">
   <img src="./homegaming/grayzig.svg" className="w-full"/>
 
   <div className=" 2xl:w-[1920px] 2xl:h-[683px] mb-60 mp:mb-80 mx-auto items-center justify-center ">
     <div className="flex flex-row justify-between   ">  {/* main div for all the items excluding bg color */}
-    <div className="flex flex-col w-[1219px] lg:ml-24 items-center justify-center mx-auto gap-20 mt-20 mb-20 xl:ml-20   "> {/* div for heading nad images */}
+    <div className="flex flex-col w-[1219px] items-center justify-center mx-auto gap-20 mt-20 mb-20 xl:ml-20   "> {/* div for heading nad images */}
       <div className="-ml-[1300px]">
 <div className=" ml-[1340px] md:ml-[700px] pa:ml-[1300px]">
   <h2 className="heading font-semibold">Our Featured CaseStudy</h2>
-  <div className="w-[160px] md:w-52 pa:w-[165px] h-1 bg-orange-500 md:mt-2  xl:w-[200px] xl:ml-[280px] 2xl:ml-[280px] 2xl:w-52 md:ml-[280px] pa:ml-[208px] transition-transform duration-400 hover:scale-110"></div>
+  <div className="w-[160px] md:w-52 pa:w-[165px] h-1 bg-orange-500 md:mt-2 2xl:ml-[280px] 2xl:w-52 md:ml-[280px] pa:ml-[208px] transition-transform duration-400 hover:scale-110"></div>
 </div>
 </div>
-   <div className="2xl:w-[1219px] xl:w-[1000px] xl:ml-28 flex flex-col md:flex-row justify-around ml-10 pa:ml-2 gap-10 pa:flex-wrap 2xl:flex-nowrap pa:w-[800px] xl:flex-row xl:flex-nowrap 2xl:ml-[720px]">
+   <div className="md:w-[1219px] flex flex-col md:flex-row justify-around ml-10 pa:ml-2 gap-10 pa:flex-wrap 2xl:flex-nowrap pa:w-[800px] xl:flex-row xl:flex-nowrap 2xl:ml-80">
           <ImgMediaCard 
             image="/casestudy1.png"
             title=""
@@ -75,7 +75,6 @@ const CaseStudy = () => {
             450% with HostBuddy's Managed 
             WordPress Hosting"
           />
-          <div className="flex 2xl:opacity-0 xl:opacity-0">
           <ImgMediaCard 
             image="/casestudy2.png"
             title=""
@@ -83,7 +82,6 @@ const CaseStudy = () => {
             450% with HostBuddy's Managed 
             WordPress Hosting"
           />
-          </div>
         </div>
 
 </div>
@@ -96,7 +94,7 @@ const CaseStudy = () => {
   </div>
   );
 };
-export default CaseStudy;
+export default CaseStudy3D;
 
 
 

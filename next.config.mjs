@@ -1,4 +1,25 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
 
-export default nextConfig;
+// function defineNextConfig(config){
+//     return config
+// }
+// export default defineNextConfig({
+//     reactStrictMode:true,
+//     swcMinify:true,
+//     webpack(config){
+//         config.module.rules.push({
+        
+//                 test: /\.svg$/,
+//                 use: [
+//                   {
+//                     loader: '@svgr/webpack',
+//                     options: {
+//                       native: true,
+//                     },
+//                   },
+//                 ],
+           
+//         })
+//         return config
+//     },
+// })

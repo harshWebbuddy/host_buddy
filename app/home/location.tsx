@@ -44,7 +44,8 @@ const SvgMap = () => {
 
 const LocationPage = () => {
   return (
-    <div className="flex flex-col h-[500px] xl:mt-[200px] md:h-[827px] w-full 2xl:w-[1920px] mp:mt-[900px] 2xl:mt-0 pa:mt-0 items-center justify-center mx-auto bg-gradient-to-b from-gray-900 to-gray-700 ">
+    <div className="w-full bg-gradient-to-b from-gray-900 to-gray-700 ">
+    <div className="flex flex-col h-[500px] xl:mt-[200px] md:h-[827px] w-full 2xl:w-[1920px] mp:mt-[900px] 2xl:mt-0 pa:mt-0 items-center justify-center mx-auto ">
     <div className="w-full md:w-[1920px] flex flex-col items-center justify-center 2xl:ml-0 pa:-ml-[530px] mx-auto gap-32  pa:gap-32 pa:mt-40 mt-24 md:mt-44 2xl:mt-20 md:gap-20 2xl:gap-20">
       {/* Headline */}
       <div className="w-full 2xl:justify-between 2xl:w-[1220px]  h-[126px] flex flex-col 2xl:flex-row  md:flex-col pa:flex-col pa:gap-4 md:gap-4  items-center justify-center xl:ml-60 2xl:ml-0 ">
@@ -69,6 +70,7 @@ const LocationPage = () => {
         <img src="/worldmap1.svg" alt="World Map" />
       </div>
     </div>
+  </div>
   </div>
   );
 };

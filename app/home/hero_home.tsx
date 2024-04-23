@@ -2,8 +2,8 @@ import React from 'react'
 
 const HostingHome = () => {
   return (
-    <div> 
-      <div className="bg-black relative w-full 2xl:w-[1920px] items-center justify-center mx-auto md:h-[1200px] pa:h-[1300px] h-[1300px] lg:h-[770px] md:overflow-hidden  ">
+    <div className='w-full bg-black'> 
+      <div className=" relative w-full 2xl:w-[1920px] items-center justify-center mx-auto md:h-[1200px] pa:h-[1300px] h-[1300px] lg:h-[770px] md:overflow-hidden  ">
     <img
       src="/home.jpg"
       width="1920px"

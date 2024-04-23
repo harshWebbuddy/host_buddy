@@ -15,7 +15,7 @@ const Plans = () => {
     />
   );
   return (
-    <div className="flex flex-col xl:ml-[260px] xl:-mt-[550px] 2xl:ml-0  mp:flex-col w-[1220px]  h-[928.62px] mx-auto  items-center justify-center">
+    <div className="flex flex-col xl:ml-[260px] 2xl:gap-0 xl:gap-80 xl:-mt-[550px] 2xl:ml-0  mp:flex-col w-[1220px]  h-[928.62px] mx-auto  items-center justify-center">
       {/* heading */}
       <div className="relative 2xl:flex-row 2xl:mt-0 xl:-ml-[820px] pa:mb-[500px] xl:mt-0  xl:mb-10  2xl:-ml-20 2xl:mb-0 mp:-mt-[600px] pa:flex-col mp:mb-[900px] mp:-mr-20 flex flex-col sm:w-[300px] sm:gap-[20px]  2xl:w-[1220px]  pa:w-[800px] pa:-ml-96 sm:-ml-[880px] -ml-[900px] gap-4 md:flex-row justify-between opacity-100 items-center mb-8">
         <div className="relative w-full">

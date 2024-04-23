@@ -21,7 +21,8 @@ const page = () => {
       </div> 
       <div>
        <Locationpage/>
-      </div>      <div>
+      </div>     
+       <div>
         <GameForm/>
       </div>
       
