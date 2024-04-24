@@ -1,33 +1,30 @@
-  import React from "react";
-  import Ratingpanel from "./rating";
+import React from 'react'
 
-  const GamingPage = () => {
-    return (
-      <div className="w-full sp:w-full">
-        <div className="bg-black">
-          <div className="relative  h-[950px]  items-center justify-center mx-auto ">
+const Hero = () => {
+  return (
+    <div className=''>
+<div className="bg-black relative  h-[950px]  items-center justify-center mx-auto ">
             <img
               src="/home.jpg"
-              width="1920px"
-              height="57px"
+            
               alt="Background"
-              className="opacity-50 object-cover w-full h-full"
+              className="opacity-20 w-full h-full"
             />
-            <div className="absolute top-[100px]   md:top-[50px] left-[23px] md:left-[50px] xl:left-[80px] 2xl:left-[350px] w-full h-[757px] xl:w-[1220px] 2xl:w-[1220px] flex flex-col 2xl:flex-row justify-between items-center text-white">
-              <div className="w-full md:w-[600px] xl:w-[500px] 2xl:w-[600px] h-[429px] mb-[20px]">
-                <div className="w-full h-[30px] mb-4">
+   <div className="absolute whole_hero  text-white">
+              <div className="w-full md:w-full lg:w-full bl:w-[700px] xl:w-[790px] 2xl:w-[600px] h-[429px] mb-[20px]">
+                <div className="w-full buddy1">
                   <h2 className="font-mono-sans text-[15px] italic font-light leading-[30px]">
                     <span className="opacity-75">Welcome to </span>
                     <span className="text-orange-500 font-bold">HostBuddy</span>
                   </h2>
                 </div>
-                <div className="w-full h-[168px] mb-[20px]">
-                  <h2 className="font-mono font-medium text-[62px] leading-[84px]">
+                <div className="w-full buddy2">
+                  <h2 className="font-mono font-medium">
                     Lorem ipsum dolor sit amet
                   </h2>
                 </div>
-                <div className="w- h-[78px] mb-8">
-                  <p className="font-mono text-[18px] font-light leading-[26px]">
+                <div className="buddy3">
+                  <p className="font-mono font-light]">
                     <span className="opacity-75">
                       By trusting us with your business and projects needs, we
                       promise a
@@ -41,13 +38,13 @@
                     </span>
                   </p>
                 </div>
-                <div className="w-[350px] flex gap-8 mb-4">
+                <div className="buddy4 flex  ">
                   <div className="w-[140px] h-[52px] bg-orange-500 text-white rounded-xl">
-                    <div className="w-[120px] h-[52px] flex items-center justify-center gap-2 mx-auto">
+                    <div className="buddy_button1 flex items-center justify-center gap-2 mx-auto">
                       <div className="w-[24px] h-[24px]">
                         <img src="/shoppingcart.svg" alt="cart" />
                       </div>
-                      <div className="w-[92px] h-[13px]">
+                      <div className="w-[92px] h-[13px] -mt-2">
                         <h2 className="font-mona-sans font-semibold text-[16px] leading-[21.6px]">
                           Order Now
                         </h2>
@@ -65,8 +62,8 @@
                     </div>
                   </div>
                 </div>
-                <div className="w-[216.41px] h-[26px] mt-[8px] flex items-center gap-1">
-                  <div className="w-[11.41px] h-[8.27px]">
+                <div className="w-[216.41px] h-[26px] mt-[8px] flex items-center gap-2">
+                  <div className="w-[11.41px] h-[8.27px]  -mt-2">
                     <img src="/tick2.svg" alt="tick" />
                   </div>
                   <div className="w-[195px] h-[26px]">
@@ -76,26 +73,16 @@
                   </div>
                 </div>
               </div>
-              <div className="w-[448px] h-[448px] xl:w-[300px] xl:h-[300px] 2xl:w-[256px] 2xl:h-[450px] mb-[20px] 2xl:mb-0">
+              <div className=" lg:w-[300px] 2xl:w-[448px] 2xl:h-[448px] ">
                 <img
                   src="/homegaming/herologo.svg"
                   alt="Hero Logo"
-                  className="w-[350px] xl:w-[300px] 2xl:w-[400px] mx-auto"
+                  className="  mx-auto mt-20"
                 />
               </div>
             </div>
-          </div>
-          <div className=" top-10 left-0 z-10 w-full h-full">
-            <Ratingpanel />
-          </div>
-          <img
-            src="/homegaming/rating.svg"
-            alt="Rating"
-            className="absolute bottom  left-0 z-10 w-full xl:-mt-60 2xl:mb-0"
-          />
-        </div>
-      </div>
-    );
-  };
+    </div></div>
+  )
+}
 
-  export default GamingPage;
+export default Hero

@@ -9,11 +9,11 @@ import Locationpage from "@/components/Locationpage";
 
 const page = () => {
   return (
-    <div className="sp:w-full">
+    <div className="">
       <div>
         <GamingPage />
       </div>
-      <div>
+      {/* <div>
         <Games />
       </div>
       <div>
@@ -31,7 +31,7 @@ const page = () => {
       </div>
       <div>
         <CaseStudy />
-      </div>
+      </div> */}
     </div>
   );
 };

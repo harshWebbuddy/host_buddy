@@ -22,7 +22,7 @@ const navLinks: NavLink[] = [
     label: "Home",
     options: [
       { label: "Home Dedicated Server", href: "/home" },
-    { label: "Home Gaming", href: "/homegaming" },
+    { label: "Home Gaming", href: "/gaming" },
     { label: "Home 3D", href: "/home3d" },      // { label: "Features", href: "#" },
     ],
   },
@@ -103,7 +103,7 @@ const NavBar = () => {
   return (
     <header className="absolute top-0 sp:w-full w-full px-4 py-4 z-[5]">
     <div className="w-full item-center justify-center mx-auto">
-      <nav className="w-full xl:w-full sp:w-full 2xl:w-[1220.25px] flex items-center 2xl:justify-center mx-auto  justify-between">
+      <nav className="w-full sm:w-full 2xl:w-[1220.25px] xl:w-[1220.25px] bl:w-full flex items-center 2xl:justify-center mx-auto  justify-between">
         <div className="w-full">
           <div className="justify-center md:mr-0 group ">
             <span className="font-semibold text-[29.27px] text-white inline-block transition-transform transform rotate-0 group-hover:rotate-180">H</span>
@@ -162,8 +162,8 @@ const NavBar = () => {
               ))}
             </ul>
           </div>
-        <div className="hidden lg:flex justify-end space-x-4 w-full">
-          <motion.button className="text-white flex flex-row items-center justify-center bg-transparent border border-white rounded-lg px-4 py-2 outline-none cursor-pointer" whileHover={{ scale: 1.2 }}>
+          <div className="hidden lg:flex justify-end space-x-4 w-full  ">
+            <motion.button className="text-white flex flex-row items-center justify-center bg-transparent border border-white rounded-lg px-4 py-2 outline-none cursor-pointer" whileHover={{ scale: 1.2 }}>
             <AiOutlineGlobal className="mr-2 item-center" />
             English
           </motion.button>

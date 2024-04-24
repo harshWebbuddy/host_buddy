@@ -19,11 +19,12 @@ const config: Config = {
         customBackground: '#F9EFE4',
       },
       screens: {
-        "sm": "576px",
-        "md": "768px",
-        "lg": "992px",
+        "sm": "380px",
+        "md": "767px",
+        "lg": "600px",
+        "bl":"1000px",
         "xl": "1200px",
-        "2xl": "1440px"
+        "2xl": "1600px"
        
         // => @media (min-width: 1536px) { ... }
       },
