@@ -19,26 +19,11 @@ const config: Config = {
         customBackground: '#F9EFE4',
       },
       screens: {
-        'sp':'912px',
-        'ss':'540px',
-        'gf':'280px',
-        'mp':'300px',
-        'mm':'350px',
-        'sm': '414px',   
-      
-        // => @media (min-width: 640px) { ... }
-        'md': '768px',
-        
-        // => @media (min-width: 768px) { ... }
-  'pa':'820px',
-  'sd':'1114px',
-        'lg': '1024px',
-        // => @media (min-width: 1024px) { ... }
-  
-        'xl': '1280px',
-        // => @media (min-width: 1280px) { ... }
- 
-        '2xl': '1536px',
+        "sm": "576px",
+        "md": "768px",
+        "lg": "992px",
+        "xl": "1200px",
+        "2xl": "1440px"
        
         // => @media (min-width: 1536px) { ... }
       },

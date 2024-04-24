@@ -37,7 +37,7 @@ const Box: React.FC<BoxProps> = ({ imageSrc }) => {
 };
 const IndependentHoverBoxesVertical = () => {
   return (
-    <div className="flex flex-col  pa:flex-row 2xl:flex-row xl:ml-[420px] 2xl:flex-nowrap gap-8 items-center justify-center md:ml-6 pa:w-[1200px] pa:flex-wrap  2xl:ml-[500px] pa:-ml-[400px] xl:flex-row xl:flex-nowrap" >
+    <div className="flex flex-col sp:w-full pa:flex-row 2xl:flex-row xl:ml-[0px] 2xl:flex-nowrap gap-8 items-center justify-center md:ml-6 pa:w-[1200px] pa:flex-wrap  2xl:ml-[500px] pa:-ml-[400px] xl:flex-row xl:flex-nowrap" >
       <Box imageSrc="./homegaming/games1.png" />
       <Box imageSrc="./homegaming/games3.png" />
       <Box imageSrc="./homegaming/games2.png" />
@@ -48,19 +48,21 @@ const IndependentHoverBoxesVertical = () => {
 };
 const Games = () => {
   return (
-    <div className="gf:p-4 md:w-[1220.08px] lg:ml-[100px] gf:mb-40 lg:-mt-10 items-center mp:mt-20 justify-center mx-auto margin padding flex flex-col gap-20 md:gap-10 md:mt-60 pa:mt-10 mp:mb-28 xl:-mt-10 ">
-      <div className="justify-between flex flex-col gf:w-full  gap-[20px] 2xl:ml-20  mr-24 md:-mr-8 pa:-ml-[350px] md:mt-32 mp:-ml-6 xl:ml-[100px]">
-        <h2 className=" font-mono-sans 2xl:text-[42px] mp:text-[32px] gf:text-[26px] leading-[63px] 2xl:w-[849px] w-full mp:ml-24 gf:ml-14  pa:w-full font-bold md:h-[126px] items-center justify-center ml-32  pa:-ml-2 ">
+    <div className="gf:p-4 max-w-screen-2xl 2xl:ml-[500px] lg:ml-[100px] lg:mt-20 lg:mb-40 items-center justify-center mx-auto margin padding flex flex-col gap-20 md:gap-10 md:mt-60">
+      <div className="justify-between flex flex-col mx-auto w-full max-w-[849px] md:max-w-full gap-20 md:gap-10 md:mt-32">
+        <h2 className="font-mono-sans text-[32px] md:text-[26px] lg:text-[42px] font-bold leading-[63px] mx-auto">
           Choose From Over 3 Different Games
         </h2>
-        <p className="font-mono-sans w-[400px] gf:ml-16 gf:w-[230px] mp:w-[300px] mp:ml-24 2xl:-mt-20 font-medium 2xl:ml-10 mp:mt-2 pa:-mt-16 pa:-ml-14 pa:w-[700px]  2xl:w-[689px] h-[48px] text-[16px] leading-[24px] items-center justify-center ">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.        </p>
+        <p className="font-mono-sans text-[16px] md:text-[14px] leading-[24px] mx-auto w-full max-w-[400px]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+        </p>
       </div>
-      <div>
+      <div className="mx-auto mt-20">
         <IndependentHoverBoxesVertical />
       </div>
     </div>
   );
 };
+
 
 export default Games;

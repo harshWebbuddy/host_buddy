@@ -3,105 +3,99 @@ import Ratingpanel from "./rating";
 
 const GamingPage = () => {
   return (
-    <div className="w-full">
-     <div className="bg-black">
-    
-      <div className=" relative mp:w-auto xl:w-full gf:w-full sp:w-full ss:w-full w-full 2xl:w-[1920px]  xl:h-[800px] h-[950px] 2xl:h-[757px]  items-center justify-center mx-auto  ">
-      <img
-          src="/home.jpg"
-          width="1920px"
-          height="57px"
-          alt="dsdff"
-          className="opacity-50 object-cover sp:w-full mp:w-full h-full"
-        />
-        <div className="flex flex-col 2xl:flex-row justify-start items-start  ">
-          <div className="mx-auto absolute w-full mp:w-full sp:w-full gf:gap-y-20 ss:gap-y-20 sd:flex-col xl:w-full xl:mt-0 xl:gap-2 2xl:w-[1220px] 2xl:ml-[300px] h-[757px] xl:flex-row top-[100px] md:top-[50px] 2xl:gap-[100px] left-[23px] md:left-[50px] 2xl:justify-between inset-0 items-center justify-center text-white  flex flex-col 2xl:flex-row pa:flex-col pa:-ml-36 pa:mt-20 2xl:-mt-10 xl:-ml-2 ">
-            <div className="relative md:w-[600px] xl:w-full sp:full sp:-ml-16 md:h-[429px] w-full pa:ml-0  ss:mt-0">
-              <div className="w-full 2xl:w-[175px] h-[30px] items-center justify-center  mp:mt-10">
-                <h2 className="font-mono-sans text-[15px] italic font-light leading-[30px] text-left">
-                  <span className="text-white opacity-75">Welcome to </span>
+    <div className="w-full  md:w-full">
+      <div className="bg-black">
+        <div className="relative w-full md:w-full h-[950px] xl:h-[800px] 2xl:h-[757px] 2xl:w-[1920px] items-center justify-center mx-auto overflow-hidden">
+          <img
+            src="/home.jpg"
+            width="1920px"
+            height="57px"
+            alt="Background"
+            className="opacity-50 object-cover w-full h-full"
+          />
+          <div className="absolute top-[100px]   md:top-[50px] left-[23px] md:left-[50px] xl:left-[80px] 2xl:left-[350px] w-full h-[757px] xl:w-[1220px] 2xl:w-[1220px] flex flex-col 2xl:flex-row justify-between items-center text-white">
+            <div className="w-full md:w-[600px] xl:w-[500px] 2xl:w-[600px] h-[429px] mb-[20px]">
+              <div className="w-full h-[30px] mb-4">
+                <h2 className="font-mono-sans text-[15px] italic font-light leading-[30px]">
+                  <span className="opacity-75">Welcome to </span>
                   <span className="text-orange-500 font-bold">HostBuddy</span>
                 </h2>
               </div>
-              <div className="w-full 2xl:w-[570px] xl: h-[168px]  2xl:mb-28 lg:mb-20 ">
-                <h2
-                  className="font-mono  font-medium 
-                2xl:leading-[84px] text-left text-white 2xl:text-[62px] gf:text-[32px] text-[52px] leading-[64px] "
-                >
-                  Lorem ipsum dolor sit amet{" "}
+              <div className="w-full h-[168px] mb-[20px]">
+                <h2 className="font-mono font-medium text-[62px] leading-[84px]">
+                  Lorem ipsum dolor sit amet
                 </h2>
               </div>
-              <div className="w-[365px] 2xl:w-[600px] sp:w-[650px]  pa:w-[800px] h-[78px] ss:-mt-20 ss:w-[500px] sp:mb-10 gf:w-[250px] pa:-mt-24 2xl:mb-10 mb-20 pa:mb-2 gf:mb-32 ss:mb-10">
-                <p className="font-mono text-[18px] font-light leading-[26px] text-left ">
+              <div className="w-[500px] h-[78px] mb-8">
+                <p className="font-mono text-[18px] font-light leading-[26px]">
                   <span className="opacity-75">
                     By trusting us with your business and projects needs, we
                     promise a
                   </span>
-                  <span className="text-orange-500 opacity-100 font-bold ml-1 mr-1">
+                  <span className="text-orange-500 font-bold ml-1 mr-1">
                     99.9%
-                  </span>{" "}
+                  </span>
                   <span className="opacity-75">
                     uptime on any services we provide, outside of any standard
                     maintenance we may provide.{" "}
                   </span>
                 </p>
               </div>
-              <div className="flex flex-row w-[350px] gap-2 gf:flex-col gf:w-[200px] gf:gap-y-10 ss:flex-row">
-                <div className="mp:w-[140px] 2xl:w-[184.95px] h-[52px] bg-orange-500 text-white  rounded-xl ">
-                  <div className="w-[184.95px] 2xl:w-[120px] gap-2 h-[52px]  flex flex-row item-center justify-center mx-auto py-3.5">
-                    <div className="item-center justify-center mx-auto w-[24px] h-[24px] ">
-                      <img src="/shoppingcart.svg" width="24px" height="24px" />
+              <div className="w-[350px] flex gap-8 mb-4">
+                <div className="w-[140px] h-[52px] bg-orange-500 text-white rounded-xl">
+                  <div className="w-[120px] h-[52px] flex items-center justify-center gap-2 mx-auto">
+                    <div className="w-[24px] h-[24px]">
+                      <img src="/shoppingcart.svg" alt="cart" />
                     </div>
-                    <div className="w-[92px] h-[13px] item-center justify-center mx-auto mp:mr-8 2xl:mr-0 ">
-                      <h2 className="font-mona-sans 2xl:text-[16px] mp:text-[12px] font-semibold leading-[21.6px] text-left">
+                    <div className="w-[92px] h-[13px]">
+                      <h2 className="font-mona-sans font-semibold text-[16px] leading-[21.6px]">
                         Order Now
                       </h2>
                     </div>
                   </div>
                 </div>
-                <div className="w-[160px] gf:ml-6 h-[20px] gap-[6px] flex flex-row item-center justify-center ml-8 mp:ml-2 2xl:ml-8 py-3.5">
-                  <div className="w-[134px] h-[12px] item-center justify-center mx-auto">
-                    <h2 className="font-mona-sans text-[16px] font-medium leading-[19.2px] text-left">
-                    Configure Server
+                <div className="w-[160px] h-[52px] flex items-center justify-center gap-[6px]">
+                  <div className="w-[134px] h-[12px]">
+                    <h2 className="font-mona-sans font-medium text-[16px] leading-[19.2px]">
+                      Configure Server
                     </h2>
                   </div>
-                  <div className="item-center justify-center mx-auto w-[16px] h-[20px] mt-0.5">
-                    <img src="/arrow.svg" width="16px" height="20px" />
+                  <div className="w-[16px] h-[20px] mt-2">
+                    <img src="/arrow.svg" alt="arrow" />
                   </div>
                 </div>
               </div>
-              <div className="w-[216.41px] h-[26px] mt-8 md:mt-6 flex flex-row gap-1  ">
-                <div className="item-center justify-center mt-1">
-                  <img
-                    src="/tick2.svg"
-                    alt="tick"
-                    width="11.41px"
-                    height="8.27px"
-                    className="opacity-100"
-                  />
+              <div className="w-[216.41px] h-[26px] mt-[8px] flex items-center gap-1">
+                <div className="w-[11.41px] h-[8.27px]">
+                  <img src="/tick2.svg" alt="tick" />
                 </div>
-                <div className="w-[195px] h-[26px] item-center justify-center mx-auto">
-                  <h2 className="text-[14px] underline opacity-75 capitalize">
-                    30 day money back garantee
+                <div className="w-[195px] h-[26px]">
+                  <h2 className="text-[13px] underline opacity-75 capitalize">
+                    30 day money back guarantee
                   </h2>
                 </div>
               </div>
             </div>
-            <div className="2xl:w-[448px] sp:ml-0 pa:w-[300px] 2xl:h-[448px] item-center ss:mt-0 justify-center mr-10 pa:ml-56 mp:mt-20 xl:-ml-[400px] xl:-mt-20  pa:mt-0 mp:w-[200px]">
+            <div className="w-[448px] h-[448px] xl:w-[300px] xl:h-[300px] 2xl:w-[256px] 2xl:h-[450px] mb-[20px] 2xl:mb-0">
               <img
                 src="/homegaming/herologo.svg"
-                className="item-center justify-center mx-auto w-[350px]   mp:h-[250px] 2xl:w-[256px] pa:w-[300px] h-[60px] 2xl:h-[473px]"
+                alt="Hero Logo"
+                className="w-[350px] xl:w-[300px] 2xl:w-[400px] mx-auto"
               />
             </div>
           </div>
         </div>
+        <div className=" top-10 left-0 z-10 w-full h-full mb-60">
+          <Ratingpanel />
+         
+        </div>
+        <img
+          src="/homegaming/rating.svg"
+          alt="Rating"
+          className="absolute inset-0 z-0 w-full xl:-mt-60"
+          />
       </div>
-      </div>
-      <div className="relative xl:-ml-10 2xl:-mt-28 mp:-mt-20 mp:-ml-2 xl:-mt-[300px] gf:-mt-20 ss:-mt-44 sp:-mt-20">
-      <div className="2xl:ml-[30px] mt-0  relative z-10 "><Ratingpanel /></div>  
-        <img src="/homegaming/rating.svg" className="ml-[0px] w-[12000px] 2xl:-mt-60 mp:-mt-[10px] gf:-mt-4 z-0 relative xl:-mt-60 opacity-100 " />
-      </div>
-    </div>  
+    </div>
   );
 };
 

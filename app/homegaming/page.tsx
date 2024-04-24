@@ -9,7 +9,7 @@ import Locationpage from "@/components/Locationpage";
 
 const page = () => {
   return (
-    <div>
+    <div className="sp:w-full">
       <div>
         <GamingPage />
       </div>
@@ -19,9 +19,9 @@ const page = () => {
       <div>
       <Panel/>
       </div> 
-      <div>
-       <Locationpage/>
-      </div>     
+        <div>
+        <Locationpage/>
+        </div>     
        <div>
         <GameForm/>
       </div>
