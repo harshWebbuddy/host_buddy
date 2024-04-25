@@ -5,15 +5,25 @@
   position: relative;
 }
 .fill-red:hover {
-  fill: #FF0000; /* Change to your desired hover color */
+  fill: #ff0000; /* Change to your desired hover color */
 }
 
 @keyframes shakeRotate {
-  0% { transform: rotate(0); }
-  25% { transform: rotate(-15deg) ; }
-  50% { transform: rotate(15deg); }
-  75% { transform: rotate(-15deg) ; }
-  100% { transform: rotate(0) ; }
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
 .border-gradient:hover::before {
   content: "";
@@ -21,7 +31,7 @@
   inset: 0;
   border-radius: 8px;
   padding: 1px;
-  background: linear-gradient(95deg, #FE7602, rgba(254, 118, 2, 0));
+  background: linear-gradient(95deg, #fe7602, rgba(254, 118, 2, 0));
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
@@ -43,544 +53,1612 @@
   }
 } */
 .bg-opacity-50 {
-  background-color: rgba(22, 25, 28, 0.5); /* Adjust the alpha value (0.5) to your desired opacity */
+  background-color: rgba(
+    22,
+    25,
+    28,
+    0.5
+  ); /* Adjust the alpha value (0.5) to your desired opacity */
 }
 
 .custom-cursor {
-  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='161' viewBox='0 0 128 161' fill='none'%3E%3Cg filter='url(%23filter0_dd_1699_20777)'%3E%3Cpath d='M28 44C28 37.3726 33.3726 32 40 32H70C76.6274 32 82 37.3726 82 44V89.9522C82 96.5797 76.6274 101.952 70 101.952H63.977C63.0457 101.952 62.1672 102.385 61.5993 103.123L55.5851 110.94C54.7845 111.98 53.2155 111.98 52.4149 110.94L46.4007 103.123C45.8328 102.385 44.9543 101.952 44.023 101.952H40C33.3726 101.952 28 96.5797 28 89.9522V44Z' fill='%23FF7500'/%3E%3Cpath d='M28.5 44C28.5 37.6487 33.6487 32.5 40 32.5H70C76.3513 32.5 81.5 37.6487 81.5 44V89.9522C81.5 96.3035 76.3513 101.452 70 101.452H63.977C62.8905 101.452 61.8656 101.957 61.203 102.818L55.1888 110.635C54.5884 111.415 53.4116 111.415 52.8112 110.635L46.797 102.818C46.1344 101.957 45.1095 101.452 44.023 101.452H40C33.6487 101.452 28.5 96.3035 28.5 89.9522V44Z' stroke='%23F0EFEF'/%3E%3C/g%3E%3C/defs%3E%3C/svg%3E"), auto;
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='161' viewBox='0 0 128 161' fill='none'%3E%3Cg filter='url(%23filter0_dd_1699_20777)'%3E%3Cpath d='M28 44C28 37.3726 33.3726 32 40 32H70C76.6274 32 82 37.3726 82 44V89.9522C82 96.5797 76.6274 101.952 70 101.952H63.977C63.0457 101.952 62.1672 102.385 61.5993 103.123L55.5851 110.94C54.7845 111.98 53.2155 111.98 52.4149 110.94L46.4007 103.123C45.8328 102.385 44.9543 101.952 44.023 101.952H40C33.3726 101.952 28 96.5797 28 89.9522V44Z' fill='%23FF7500'/%3E%3Cpath d='M28.5 44C28.5 37.6487 33.6487 32.5 40 32.5H70C76.3513 32.5 81.5 37.6487 81.5 44V89.9522C81.5 96.3035 76.3513 101.452 70 101.452H63.977C62.8905 101.452 61.8656 101.957 61.203 102.818L55.1888 110.635C54.5884 111.415 53.4116 111.415 52.8112 110.635L46.797 102.818C46.1344 101.957 45.1095 101.452 44.023 101.452H40C33.6487 101.452 28.5 96.3035 28.5 89.9522V44Z' stroke='%23F0EFEF'/%3E%3C/g%3E%3C/defs%3E%3C/svg%3E"),
+    auto;
 }
+/* styles.module.css or styled-components */
+
+
+
 /* top-[100px]   md:top-[50px] left-[23px] md:left-[50px] xl:left-[80px] 2xl:left-[350px] w-full h-[757px] xl:w-[1220px] 2xl:w-[1220px] flex flex-col 2xl:flex-row justify-between items-center@media screen and (max-width: 1920px) { */
-  .welcome{
-    width:fit-content
-  }
-  @media screen and (min-width: 1920px) and (max-width:9999px){
-    
-    .image{
-      width:fit-content;
-
-      height:fit-content;
-    }
-    .whole_hero{
-     
-  position: relative;
-
-  display: flex;
-  gap:170px;
-  align-items:center;
-  justify-content: center;
-  
-  margin-top:-800px;
-  
-    }
-    .buddy1{
-      margin-bottom: 4px;
-    }
-    .buddy2{
-      margin-bottom: 20px;
-      font-size: 62px;
-      line-height: 84px;
-    }
-    .buddy3{
-      width:500px;
-      margin-bottom: 30px;
-    }
-    .buddy3 p{
-      font-size: 18px;
-      line-height: 26px;
-    }
-    .buddy4{
-      width:375px;
-      gap:30px;
-       margin-bottom: 20px;
-    }
-   .buddy_button1{
-    margin-top: 13px;
-    width:120px;
-    height:24px;
-   }
-   .buddy_button2{
-    width:160px;
-    height: 20px;
-   }
-  }
-  @media screen and (max-width:1920px){
-    .image{
-      width:fit-content;
-
-      height:fit-content;
-    }
-    .whole_hero{
-     
-  position: relative;
-
-  display: flex;
-  gap:170px;
-  align-items:center;
-  justify-content: center;
-  
-  margin-top:-800px;
-  
-    }
-    .buddy1{
-      margin-bottom: 4px;
-    }
-    .buddy2{
-      margin-bottom: 20px;
-      font-size: 62px;
-      line-height: 84px;
-    }
-    .buddy3{
-      width:500px;
-      margin-bottom: 30px;
-    }
-    .buddy3 p{
-      font-size: 18px;
-      line-height: 26px;
-    }
-    .buddy4{
-      width:375px;
-      gap:30px;
-       margin-bottom: 20px;
-    }
-   .buddy_button1{
-    margin-top: 13px;
-    width:120px;
-    height:24px;
-   }
-   .buddy_button2{
-    width:160px;
-    height: 20px;
-   }
-  
-    .image{
-      width:256px;
-      height: 255px;
-    }
-    .navbar1{
-width:1220px;
-    }
-  }
-  @media screen and (max-width:1200px){
-    .image{
-      width:fit-content;
-
-      height:fit-content;
-    }
-    .whole_hero{
-    
-  position: relative;
-
-  display: flex;
-  gap:0px;
-  align-items:center;
-  justify-content: space-between;
-  
-  margin-top:-800px;
-  
-    }
-    .buddy1{
-      margin-bottom: 4px;
-    }
-    .buddy2{
-      margin-bottom: 20px;
-      font-size: 62px;
-      line-height: 84px;
-    }
-    .buddy3{
-      width:500px;
-      margin-bottom: 30px;
-    }
-    .buddy3 p{
-      font-size: 18px;
-      line-height: 26px;
-    }
-    .buddy4{
-      width:375px;
-      gap:30px;
-       margin-bottom: 20px;
-    }
-   .buddy_button1{
-    margin-top: 13px;
-    width:120px;
-    height:24px;
-   }
-   .buddy_button2{
-    width:160px;
-    height: 20px;
-   }
-    .image{
-      width:256px;
-      height: 255px;
-    }
-    
-  }
-  @media screen and (max-width:1000px){
-   .width{
-    width:200px;
-   }
-    .image{
-      width:fit-content;
-
-      height:fit-content;
-    }
-    .whole_hero{
-     
-  position: relative;
-
-  display: flex;
-  gap:0px;
-  align-items:center;
-  justify-content: space-between;
-  
-  margin-top:-800px;
-  
-    }
-    .buddy1{
-      margin-bottom: 4px;
-    }
-    .buddy2{
-      margin-bottom: 20px;
-      font-size: 62px;
-      line-height: 84px;
-    }
-    .buddy3{
-      width:500px;
-      margin-bottom: 30px;
-    }
-    .buddy3 p{
-      font-size: 18px;
-      line-height: 26px;
-    }
-    .buddy4{
-      width:375px;
-      gap:30px;
-       margin-bottom: 20px;
-    }
-   .buddy_button1{
-    margin-top: 13px;
-    width:120px;
-    height:24px;
-   }
-   .buddy_button2{
-    width:160px;
-    height: 20px;
-   }
-    .image{
-      width:256px;
-      height: 255px;
-    }
-    
-  }
-@media screen and (max-width:1600px){
-  .image{
-    width:fit-content;
-
-    height:fit-content;
-  }
-  .whole_hero{
-   
-position: relative;
-
-display: flex;
-gap:70px;
-align-items:center;
-justify-content: center;
-
-margin-top:-800px;
-
-  }
-  .buddy1{
-    margin-bottom: 4px;
-  }
-  .buddy2{
-    width:600px;
-    margin-bottom: 20px;
-    font-size: 62px;
-    line-height: 84px;
-  }
-  .buddy3{
-    width:500px;
-    margin-bottom: 30px;
-  }
-  .buddy3 p{
-    font-size: 18px;
-    line-height: 26px;
-  }
-  .buddy4{
-    width:375px;
-    gap:30px;
-     margin-bottom: 20px;
-  }
- .buddy_button1{
-  margin-top: 13px;
-  width:120px;
-  height:24px;
- }
- .buddy_button2{
-  width:160px;
-  height: 20px;
- }
-
-  .image{
-    width:256px;
-    height: 255px;
-  }
-  .navbar1{
-width:1220px;
-  }
+.welcome {
+  width: fit-content;
 }
-@media screen and (max-width:767px){
-  .image{
-    width:fit-content;
-
-    height:fit-content;
-  }
-  .whole_hero{
-   
-position: relative;
-
-display: flex;
-flex-direction: column;
-gap:0px;
-align-items:center;
-justify-content: center;
-
-margin-top:-800px;
-
-  }
-  .buddy1{
-    margin-bottom: 4px;
-  }
-  .buddy2{
-    width:600px;
-    margin-bottom: 20px;
-    font-size: 62px;
-    line-height: 84px;
-  }
-  .buddy3{
-    width:500px;
-    margin-bottom: 30px;
-  }
-  .buddy3 p{
-    font-size: 18px;
-    line-height: 26px;
-  }
-  .buddy4{
-    width:375px;
-    gap:30px;
-     margin-bottom: 20px;
-  }
- .buddy_button1{
-  margin-top: 13px;
-  width:120px;
-  height:24px;
+/* flex flex-col   2xl:flex-row xl:ml-[0px] 2xl:flex-nowrap gap-8 items-center justify-center md:ml-6 pa:w-[1200px] pa:flex-wrap  2xl:ml-[500px] pa:-ml-[400px] xl:flex-row xl:flex-nowrap */
+@media screen and (min-width: 1920px) and (max-width: 9999px) {
+ .column{
+  display: flex;
+  flex-direction: row;
+  gap:40px;
  }
- .buddy_button2{
-  width:160px;
-  height: 20px;
- }
-
-  .image{
-    width:256px;
-    height: 255px;
-  }
-  .navbar1{
-width:1220px;
-  }
+ .ratingopacity{
+  margin-top: 20px;
+  opacity: 1;
 }
-@media screen and (max-width:380px){
-  .image{
-    width:fit-content;
-
-    height:fit-content;
+  .rating_whole{
+    padding:100px 0px;
   }
-  .whole_hero{
-   
-position: relative;
-
-display: flex;
-flex-direction: column;
-gap:0px;
-align-items:center;
-justify-content: center;
-
-margin-top:-800px;
-
+  .rating{
+    display: flex;
+    flex-direction: row;
+width:1220.25px;
+height:169.27px;
+padding:40px 55px 40px 45px;
+gap:10px;
   }
-  .buddy1{
-    margin-bottom: 4px;
-  }
-  .buddy2{
-    width:600px;
-    margin-bottom: 20px;
-    font-size: 62px;
-    line-height: 84px;
-  }
-  .buddy3{
-    width:500px;
-    margin-bottom: 30px;
-  }
-  .buddy3 p{
-    font-size: 18px;
-    line-height: 26px;
-  }
-  .buddy4{
-    width:375px;
-    gap:30px;
-     margin-bottom: 20px;
-  }
- .buddy_button1{
-  margin-top: 13px;
-  width:120px;
-  height:24px;
- }
- .buddy_button2{
-  width:160px;
-  height: 20px;
- }
-
-  .image{
-    width:256px;
-    height: 255px;
-  }
-  .navbar1{
-width:1220px;
-  }
+.rating_flex{
+  gap:40px;
+  display: flex;
+  flex-direction: row;
 }
-/* @media screen and (min-width: 768px) and (max-width:1280px) {
-  .image{
-    width:46px;
-    height:46px
-  }
 
-  .hostingheading{
-    font-size:16px;
+  .customer_happiness{
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    width:300px;
+    height:63px;
   }
-  .padding{
-    padding:25px 25px 25px 25px;
+  .customer_happiness h1{
+    align-items: center;
+    justify-content: center;
+   font-size:24px;
+   font-weight: 600;
   }
-  .margin {
-    margin-top: 0px;
-    margin-bottom: 0px;
+  .content_img{
+    background-image: url('/phone/1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1495px;
   }
-  .wording {
-    line-height: 40px;
+.buddy_img{
+  position: relative;
+  width:1495px; 
+  margin-top: 30px;
+  
+  height: 755px;
+  margin-left: -90px;
+}
+.buddy_img2{
+  position: absolute;
+ 
+  z-index: 10;
+  width:auto;
+
+}
+
+  .content {
+   
+    width: 1220.25px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: white;
+}
+
+  .games_images {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
   }
-} */
-/* @media screen and (min-width: 360px) and (max-width:414px) {
-  .image{
-    width:40px;
-    height:40px
-  }
-  .visible{
+  .games_opacity {
     opacity: 0;
   }
-  .headinghosting{
-    font-size:16px;
+  .games {
+    width: 1220px;
+    height: 588px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
   }
-  .padding{
-    padding:25px 25px 25px 25px;
+  .games_heading {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 780px;
+    gap: 10px;
+    height: 97px;
   }
-  .margin {
-    margin-top: 15px;
-    margin-bottom: 15px;
+  .games_heading h2 {
+    line-height: 63px;
+    font-size: 42px;
   }
-  .wording {
-    line-height:26px;
+  .games_heading p {
+    line-height: 24px;
+    font-size: 16px;
   }
-} */
+  .button_width1 {
+    width: 140px;
+  }
+  .button_width2 {
+    width: 160px;
+  }
 
-/* @media screen and (min-width: 1120px) {
-  .image{
-    width:48px;
-    height:48px
+  .image {
+    width: fit-content;
+
+    height: fit-content;
   }
-  .width{
-    width:1120px;
+  .whole_hero {
+    position: relative;
+
+    display: flex;
+    gap: 170px;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: -800px;
   }
-  .visible{
-    opacity: 1;
+  .buddy {
+    margin-top:150px;
+    width: 600px;
+    height: 296px;
+    gap: 20px;
   }
-  .headinghosting{
+  .buddy1 {
+    margin-bottom: 4px;
+    width: 175px;
+    height: 30px;
+  }
+  .buddy1 h2 span {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .buddy2 {
+    width: 400px;
+    height: 168px;
+    margin-bottom: 20px;
+  }
+  .buddy h2 {
+    text-align: start;
+
+    font-weight: 500;
+    font-size: 62px;
+    line-height: 84px;
+  }
+  .buddy3 {
+    width: 600px;
+    margin-bottom: 30px;
+  }
+  .buddy3 p {
+    text-align: start;
     font-size: 18px;
+    line-height: 26px;
   }
-  .margin {
-    margin-top: 100px;
-    margin-bottom: 100px;
+  .buddy4 {
+    width: 375px;
+    gap: 30px;
+    margin-bottom: 20px;
   }
-  .wording {
-    line-height: 60px;
+  .buddybutton {
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
   }
-} */
-/* 
-@media screen and (min-width: 768px) and (max-width:1280px) {
-  .image{
-    width:46px;
-    height:46px
+  .buddy_button1 {
+    margin-top: 13px;
+    width: 184.95px;
+    height: 52px;
+  }
+  .buddy_button1 h2 {
+    padding: 15px 45px;
+    font-size: 18px;
+    line-height: 21.6px;
   }
 
-  .heading{
-    font-size:31px;
+  .buddy_button2 {
+    width: 133px;
+    height: 20px;
   }
-  .padding{
-    padding:25px 25px 25px 25px;
-  }
-  .margin {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-  .wording {
-    line-height: 40px;
+  .buddy_button2 h2 {
+    font-size: 16px;
+    line-height: 19.2px;
   }
 }
-@media screen and (min-width: 360px) and (max-width:414px) {
-  .image{
-    width:40px;
-    height:40px
+
+@media screen and (max-width: 1920px) {
+  .column{
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+   }
+   .ratingopacity{
+    margin-top: 20px;
+    opacity: 1;
+  } .rating_whole{
+ 
+    padding:100px 0px;
   }
-  .visible{
+  .rating{
+    display: flex;
+    flex-direction: row;
+width:1220.25px;
+height:169.27px;
+padding:40px 55px 40px 45px;
+gap:10px;
+  }
+.rating_flex{
+  gap:40px;
+  display: flex;
+  flex-direction: row;
+}
+
+  .customer_happiness{
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    width:300px;
+    height:63px;
+  }
+  .customer_happiness h1{
+    align-items: center;
+    justify-content: center;
+   font-size:24px;
+   font-weight: 600;
+  }.content_img {
+    background-image: url('/phone/1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: auto; /* Adjust width as needed */
+}
+.buddy_img{
+  position: relative;
+  width:1495px; 
+  margin-top: 30px;
+  
+  height: 755px;
+  margin-left: -90px;
+}
+.buddy_img2{
+  overflow: hidden;
+  position: absolute;
+ 
+  z-index: 10;
+  width:580px;
+
+}
+
+  .content {
+   padding:0px 30px;
+    width:1220.25px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap:0px;
+    color: white;
+}
+
+  .games_images {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .games_opacity {
     opacity: 0;
   }
-  .heading{
-    font-size:31px;
+  .games {
+    width: 1220px;
+    height: 588px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
   }
-  .padding{
-    padding:25px 25px 25px 25px;
+  .games_heading {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 780px;
+    gap: 10px;
+    height: 97px;
   }
-  .margin {
-    margin-top: 15px;
-    margin-bottom: 15px;
+  .games_heading h2 {
+    line-height: 63px;
+    font-size: 42px;
   }
-  .wording {
-    line-height: 40px;
+  .games_heading p {
+    line-height: 24px;
+    font-size: 16px;
+  }
+  .button_width1 {
+    width: 140px;
+  }
+  .button_width2 {
+    width: 160px;
+  }
+
+  .image {
+    width: fit-content;
+
+    height: fit-content;
+  }
+  .whole_hero {
+    position: relative;
+
+    display: flex;
+    gap: 170px;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: -800px;
+  }
+  .buddy {
+ 
+    margin-top:150px;
+    width: 600px;
+    height: 296px;
+    gap: 20px;
+    margin-left: 0px;
+  }
+  .buddy1 {
+    margin-bottom: 4px;
+    width: 175px;
+    height: 30px;
+  }
+  .buddy1 h2 span {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .buddy2 {
+    width: 400px;
+    height: 168px;
+    margin-bottom: 20px;
+  }
+  .buddy h2 {
+    text-align: start;
+
+    font-weight: 500;
+    font-size: 62px;
+    line-height: 84px;
+  }
+  .buddy3 {
+    width: 600px;
+    margin-bottom: 30px;
+  }
+  .buddy3 p {
+    text-align: start;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .buddy4 {
+    width: 375px;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  .buddybutton {
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+  }
+  .buddy_button1 {
+    margin-top: 13px;
+    width: 184.95px;
+    height: 52px;
+  }
+  .buddy_button1 h2 {
+    padding: 15px 45px;
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+
+  .buddy_button2 {
+    width: 133px;
+    height: 20px;
+  }
+  .buddy_button2 h2 {
+    font-size: 16px;
+    line-height: 19.2px;
   }
 }
+@media screen and (max-width: 1600px) {
+  .rating_whole{
+ 
+    padding:100px 0px;
+  }
+  .rating{
+    display: flex;
+    flex-direction: row;
+width:1220.25px;
+height:169.27px;
+padding:40px 55px 40px 45px;
+gap:10px;
+  }
+.rating_flex{
+  gap:40px;
+  display: flex;
+  flex-direction: row;
+}
 
-@media screen and (min-width: 1120px) {
-  .image{
-    width:48px;
-    height:48px
+  .customer_happiness{
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    width:300px;
+    height:63px;
   }
-  .width{
-    width:1120px;
+  .customer_happiness h1{
+    align-items: center;
+    justify-content: center;
+   font-size:24px;
+   font-weight: 600;
+  } .content_img{
+    background-image: url('/phone/1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1495px;
   }
-  .visible{
-    opacity: 1;
+.buddy_img{
+  position: relative;
+  width:1495px; 
+  margin-top: 30px;
+  
+  height: 755px;
+  margin-left: -90px;
+}
+.buddy_img2{
+  overflow: hidden;
+  position: absolute;
+ 
+  z-index: 10;
+  width:580px;
+
+}
+
+  .content {
+   padding:0px 30px;
+    width:1220.25px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap:0px;
+    color: white;
+}
+
+  .games_images {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
   }
-  .heading{
-    font-size: 41px;
+  .games_opacity {
+    opacity: 0;
   }
-  .margin {
-    margin-top: 100px;
-    margin-bottom: 100px;
+  .games {
+    width: 1220px;
+    height: 588px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
   }
-  .wording {
-    line-height: 60px;
+  .games_heading {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 780px;
+    gap: 10px;
+    height: 97px;
   }
-} */
+  .games_heading h2 {
+    line-height: 63px;
+    font-size: 42px;
+  }
+  .games_heading p {
+    line-height: 24px;
+    font-size: 16px;
+  }
+  .button_width1 {
+    width: 140px;
+  }
+  .button_width2 {
+    width: 160px;
+  }
+
+  .image {
+    width: fit-content;
+
+    height: fit-content;
+  }
+  .whole_hero {
+    position: relative;
+
+    display: flex;
+    gap: 170px;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: -800px;
+  }
+  .buddy {
+ 
+    margin-top:150px;
+    width: 600px;
+    height: 296px;
+    gap: 20px;
+    margin-left: 0px;
+  }
+  .buddy1 {
+    margin-bottom: 4px;
+    width: 175px;
+    height: 30px;
+  }
+  .buddy1 h2 span {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .buddy2 {
+    width: 400px;
+    height: 168px;
+    margin-bottom: 20px;
+  }
+  .buddy h2 {
+    text-align: start;
+
+    font-weight: 500;
+    font-size: 62px;
+    line-height: 84px;
+  }
+  .buddy3 {
+    width: 600px;
+    margin-bottom: 30px;
+  }
+  .buddy3 p {
+    text-align: start;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .buddy4 {
+    width: 375px;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  .buddybutton {
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+  }
+  .buddy_button1 {
+    margin-top: 13px;
+    width: 184.95px;
+    height: 52px;
+  }
+  .buddy_button1 h2 {
+    padding: 15px 45px;
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+
+  .buddy_button2 {
+    width: 133px;
+    height: 20px;
+  }
+  .buddy_button2 h2 {
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .ratingopacity{
+    opacity: 0;
+  }
+  .column{
+    gap:70px;
+    display: flex;
+    flex-direction: column;
+  } .rating_whole{
+ 
+    padding:100px 0px;
+  }
+  .rating{
+    padding:100px 0;
+    margin-top:0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+width:auto;
+height:auto;
+
+gap:10px;
+  }
+  .rating_flex{
+    margin-left: -350px;
+    height:400px;
+    justify-content:space-between;
+    gap:400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .customer_happiness{
+    margin-top: 0px;
+    align-items: center;
+    justify-content: center;
+    width:auto;
+    height:63px;
+  }
+  .customer_happiness h1{
+    align-items: center;
+    justify-content: center;
+   font-size:24px;
+   font-weight: 600;
+  } .content_img{
+    background-image: url('/phone/1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1495px;
+  }
+.buddy_img{
+  position: relative;
+  width:1495px; 
+  margin-top: 30px;
+  
+  height: 755px;
+  margin-left: -90px;
+}
+.buddy_img2{
+  overflow: hidden;
+  position: absolute;
+ 
+  z-index: 10;
+  width:480px;
+
+}
+
+  .content {
+gap:100px;
+padding:0px 20px;
+    width:auto;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: white;
+}
+
+  .games_images {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .games_opacity {
+    opacity: 0;
+  }
+  .games {
+    width: 1220px;
+    height: 588px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  .games_heading {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 780px;
+    gap: 10px;
+    height: 97px;
+  }
+  .games_heading h2 {
+    line-height: 63px;
+    font-size: 42px;
+  }
+  .games_heading p {
+    line-height: 24px;
+    font-size: 16px;
+  }
+  .button_width1 {
+    width: 140px;
+  }
+  .button_width2 {
+    width: 160px;
+  }
+
+  .image {
+    width: fit-content;
+
+    height: fit-content;
+  }
+  .whole_hero {
+    position: relative;
+
+    display: flex;
+    gap: 170px;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: -800px;
+  }
+  .buddy {
+ 
+    margin-top:150px;
+    width: 600px;
+    height: 296px;
+    gap: 20px;
+  }
+  .buddy1 {
+    margin-bottom: 4px;
+    width: 105px;
+    height: 30px;
+  }
+  .buddy1 h2 span {
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 30px;
+  }
+  .buddy2 {
+    width: 398px;
+    height: 168px;
+    margin-bottom: 20px;
+  }
+  .buddy h2 {
+    text-align: start;
+
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 84px;
+  }
+  .buddy3 {
+    width: 500px;
+    margin-bottom: 30px;
+  }
+  .buddy3 p {
+    text-align: start;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .buddy4 {
+    width: 375px;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  .buddybutton {
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+  }
+  .buddy_button1 {
+    margin-top: 13px;
+    width: 184.95px;
+    height: 52px;
+  }
+  .buddy_button1 h2 {
+    padding: 15px 45px;
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+
+  .buddy_button2 {
+    margin-top: 20px;
+    width: 133px;
+    height: 20px;
+  }
+  .buddy_button2 h2 {
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .rating_whole{
+ 
+    padding:100px 0px;
+  }
+  .rating{
+    gap:200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+width:auto;
+height:auto;
+
+gap:10px;
+  }
+  .ratingopacity{
+    opacity: 0;
+  }
+  .column{
+    gap:70px;
+    display: flex;
+    flex-direction: column;
+  }
+.rating_flex{
+  margin-left: -350px;
+  height:400px;
+  justify-content:space-between;
+  gap:400px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+  .customer_happiness{
+    margin-top: 0px;
+    align-items: center;
+    justify-content: center;
+    width:auto;
+    height:63px;
+  }
+  .customer_happiness h1{
+    align-items: center;
+    justify-content: center;
+   font-size:24px;
+   font-weight: 600;
+  } .content_img{
+    background-image: url('/phone/1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1495px;
+  }
+.buddy_img{
+  position: relative;
+  width:1495px; 
+  margin-top: 30px;
+  
+  height: 755px;
+  margin-left: -90px;
+}
+.buddy_img2{
+  overflow: hidden;
+  position: absolute;
+ 
+  z-index: 10;
+  width:480px;
+
+}
+
+  .content {
+gap:100px;
+padding:0px 20px;
+    width:auto;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: white;
+}
+
+  .games_images {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .games_opacity {
+    opacity: 0;
+  }
+  .games {
+    width: 1220px;
+    height: 588px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  .games_heading {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 780px;
+    gap: 10px;
+    height: 97px;
+  }
+  .games_heading h2 {
+    line-height: 63px;
+    font-size: 42px;
+  }
+  .games_heading p {
+    line-height: 24px;
+    font-size: 16px;
+  }
+  .button_width1 {
+    width: 140px;
+  }
+  .button_width2 {
+    width: 160px;
+  }
+
+  .image {
+    width: fit-content;
+
+    height: fit-content;
+  }
+  .whole_hero {
+    position: relative;
+
+    display: flex;
+    gap: 170px;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: -800px;
+  }
+  .buddy {
+ 
+    margin-top:150px;
+    width: 600px;
+    height: 296px;
+    gap: 20px;
+  }
+  .buddy1 {
+    margin-bottom: 4px;
+    width: 105px;
+    height: 30px;
+  }
+  .buddy1 h2 span {
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 30px;
+  }
+  .buddy2 {
+    width: 398px;
+    height: 168px;
+    margin-bottom: 20px;
+  }
+  .buddy h2 {
+    text-align: start;
+
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 84px;
+  }
+  .buddy3 {
+    width: 500px;
+    margin-bottom: 30px;
+  }
+  .buddy3 p {
+    text-align: start;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .buddy4 {
+    width: 375px;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  .buddybutton {
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+  }
+  .buddy_button1 {
+    margin-top: 13px;
+    width: 184.95px;
+    height: 52px;
+  }
+  .buddy_button1 h2 {
+    padding: 15px 45px;
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+
+  .buddy_button2 {
+    margin-top: 20px;
+    width: 133px;
+    height: 20px;
+  }
+  .buddy_button2 h2 {
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+}
+@media screen and (max-width:767px) {
+  .ratingopacity{
+    opacity: 0;
+  }
+  .column{
+    gap:70px;
+    display: flex;
+    flex-direction: column;
+  } .rating_whole{
+ 
+    padding:100px 0px;
+  }
+  .rating{
+    padding:100px 0;
+  
+    display: flex;
+  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+width:auto;
+height:auto;
+
+gap:10px;
+  }
+  .rating_flex{
+    margin-left: -250px;
+    height:400px;
+    justify-content:space-between;
+    gap:250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .customer_happiness{
+    margin-bottom: 50px;
+    margin-top: 0px;
+    align-items: center;
+    justify-content: center;
+    width:auto;
+    height:63px;
+  }
+  .customer_happiness h1{
+    align-items: center;
+    justify-content: center;
+   font-size:24px;
+   font-weight: 600;
+  }
+  .content_img{
+    background-image: url('/phone/1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1495px;
+  }
+.buddy_img{
+  position: relative;
+  width:1495px; 
+  margin-top: 30px;
+  
+  height: 755px;
+  margin-left: 20px;
+}
+.buddy_img2{
+  overflow: hidden;
+  position: absolute;
+ 
+  z-index: 10;
+  width:500px;
+
+}
+
+  .content {
+gap:0px;
+padding:0px 20px;
+    width:auto;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    color: white;
+}
+
+  .games_images {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .games_opacity {
+    opacity: 0;
+  }
+  .games {
+    width: 1220px;
+    height: 588px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  .games_heading {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 780px;
+    gap: 10px;
+    height: 97px;
+  }
+  .games_heading h2 {
+    line-height: 63px;
+    font-size: 42px;
+  }
+  .games_heading p {
+    line-height: 24px;
+    font-size: 16px;
+  }
+  .button_width1 {
+    width: 140px;
+  }
+  .button_width2 {
+    width: 160px;
+  }
+
+  .image {
+    width: fit-content;
+
+    height: fit-content;
+  }
+  .whole_hero {
+    position: relative;
+
+    display: flex;
+    gap: 170px;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: -800px;
+  }
+  .buddy {
+ 
+    margin-top:150px;
+    width: 600px;
+    height: 296px;
+    gap: 20px;
+  }
+  .buddy1 {
+    margin-bottom: 4px;
+    width: 205px;
+    height: 30px;
+  }
+  .buddy1 h2 span {
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 30px;
+  }
+  .buddy2 {
+    width: 398px;
+    height: 168px;
+    margin-bottom: 0px;
+  }
+  .buddy h2 {
+    text-align: start;
+
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 54px;
+  }
+  .buddy3 {
+    width: 500px;
+    margin-top:-40px;
+    margin-bottom: 30px;
+  }
+  .buddy3 p {
+    text-align: start;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .buddy4 {
+    width: 375px;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  .buddybutton {
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+  }
+  .buddy_button1 {
+    margin-top: 13px;
+    width: 184.95px;
+    height: 52px;
+  }
+  .buddy_button1 h2 {
+    padding: 15px 45px;
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+
+  .buddy_button2 {
+    margin-top: 20px;
+    width: 133px;
+    height: 20px;
+  }
+  .buddy_button2 h2 {
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .ratingopacity{
+    opacity: 0;
+  }
+  .column{
+    gap:40px;
+    display: flex;
+    flex-direction: column;
+  } .rating_whole{
+ 
+    padding:100px 0px;
+  }
+  .rating{
+    padding:100px 0;
+    margin-top:0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+width:auto;
+height:auto;
+
+gap:10px;
+  }
+  .rating_flex{
+    margin-left: 0px;
+    height:auto;
+    justify-content:center;
+    align-items: center;
+    gap:40px;
+    display: flex;
+    flex-direction: column;
+  
+  }
+
+  .customer_happiness{
+    gap:40px;
+    display: flex;
+    margin-top: 0px;
+    align-items: center;
+    justify-content: center;
+    width:auto;
+    height:auto;
+  }
+  .customer_happiness h1{
+    align-items: center;
+    justify-content: center;
+   font-size:24px;
+   font-weight: 600;
+  }.content_img{
+    background-image: url('/phone/1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1495px;
+  }
+.buddy_img{
+  position: relative;
+  width:1495px; 
+  margin-top: 30px;
+  
+  height: 755px;
+  margin-left: 20px;
+}
+.buddy_img2{
+  overflow: hidden;
+  position: absolute;
+ 
+  z-index: 10;
+  width:300px;
+
+}
+
+  .content {
+gap:0px;
+padding:0px 20px;
+    width:auto;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    color: white;
+}
+
+  .games_images {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .games_opacity {
+    opacity: 0;
+  }
+  .games {
+    width: 1220px;
+    height: 588px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  .games_heading {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 780px;
+    gap: 10px;
+    height: 97px;
+  }
+  .games_heading h2 {
+    line-height: 63px;
+    font-size: 42px;
+  }
+  .games_heading p {
+    line-height: 24px;
+    font-size: 16px;
+  }
+  .button_width1 {
+    width: 140px;
+  }
+  .button_width2 {
+    width: 160px;
+  }
+
+  .image {
+    width: fit-content;
+
+    height: fit-content;
+  }
+  .whole_hero {
+    position: relative;
+
+    display: flex;
+    gap: 170px;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: -800px;
+  }
+  .buddy {
+ 
+    margin-top:150px;
+    width: 600px;
+    height: 296px;
+    gap: 20px;
+  }
+  .buddy1 {
+    margin-bottom: 4px;
+    width: 105px;
+    height: 30px;
+  }
+  .buddy1 h2 span {
+    font-weight: 300;
+    font-size: 5px;
+    line-height: 30px;
+  }
+  .buddy2 {
+    width: 398px;
+    height: 168px;
+    margin-bottom: 0px;
+  }
+  .buddy h2 {
+    text-align: start;
+
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 54px;
+  }
+  .buddy3 {
+    width: 300px;
+    margin-top:-40px;
+    margin-bottom: 30px;
+  }
+  .buddy3 p {
+    text-align: start;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .buddy4 {
+    width: 375px;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  .buddybutton {
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+  }
+  .buddy_button1 {
+    margin-top: 13px;
+    width: 184.95px;
+    height: 52px;
+  }
+  .buddy_button1 h2 {
+    padding: 15px 45px;
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+
+  .buddy_button2 {
+    margin-top: 20px;
+    width: 133px;
+    height: 20px;
+  }
+  .buddy_button2 h2 {
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .content_img{
+    background-image: url('/phone/1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1495px;
+  }
+.buddy_img{
+  position: relative;
+  width:1495px; 
+  margin-top: 30px;
+  
+  height: 755px;
+  margin-left: 0px;
+}
+.buddy_img2{
+  overflow: hidden;
+  position: absolute;
+ 
+  z-index: 10;
+  width:300px;
+
+}
+
+  .content {
+gap:80px;
+padding:0px 20px;
+    width:auto;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    color: white;
+}
+
+  .games_images {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .games_opacity {
+    opacity: 0;
+  }
+  .games {
+    width: 1220px;
+    height: 588px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  .games_heading {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 780px;
+    gap: 10px;
+    height: 97px;
+  }
+  .games_heading h2 {
+    line-height: 63px;
+    font-size: 42px;
+  }
+  .games_heading p {
+    line-height: 24px;
+    font-size: 16px;
+  }
+  .button_width1 {
+    width: 140px;
+  }
+  .button_width2 {
+    width: 160px;
+  }
+
+  .image {
+    width: fit-content;
+
+    height: fit-content;
+  }
+  .whole_hero {
+    position: relative;
+
+    display: flex;
+    gap: 170px;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: -800px;
+  }
+  .buddy {
+ 
+    margin-top:150px;
+    width: 600px;
+    height: 296px;
+    gap: 20px;
+  }
+  .buddy1 {
+    margin-bottom: 4px;
+    width: 105px;
+    height: 30px;
+  }
+  .buddy1 h2 span {
+    font-weight: 300;
+    font-size: 5px;
+    line-height: 30px;
+  }
+  .buddy2 {
+    width: 300px;
+    height: 168px;
+    margin-bottom:0px;
+  }
+  .buddy h2 {
+    text-align: start;
+
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 54px;
+  }
+  .buddy3 {
+    width: 300px;
+   margin-top: 0px;
+    margin-bottom: 30px;
+  }
+  .buddy3 p {
+    text-align: start;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .buddy4 {
+    width: 375px;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  .buddybutton {
+    align-items: start;
+    justify-content: start;
+    width: 350px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .buddy_button1 {
+    margin-top: 13px;
+    width: 184.95px;
+    height: 52px;
+  }
+  .buddy_button1 h2 {
+    padding: 15px 45px;
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+
+  .buddy_button2 {
+    margin-top: 20px;
+    width: 133px;
+    height: 20px;
+  }
+  .buddy_button2 h2 {
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+}
 
 .country:hover {
-  fill: #FF0000; /* Change the fill color on hover */
+  fill: #ff0000; /* Change the fill color on hover */
   stroke: #000000; /* Change the stroke color on hover */
   stroke-width: 2; /* Change the stroke width on hover */
 }

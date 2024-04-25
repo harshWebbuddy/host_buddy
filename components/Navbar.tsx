@@ -23,7 +23,8 @@ const navLinks: NavLink[] = [
     options: [
       { label: "Home Dedicated Server", href: "/home" },
     { label: "Home Gaming", href: "/gaming" },
-    { label: "Home 3D", href: "/home3d" },      // { label: "Features", href: "#" },
+    { label: "Home 3D", href: "/home3d" }, 
+    { label: "Home Phone", href: "/phone" },      // { label: "Features", href: "#" },
     ],
   },
   {
@@ -103,6 +104,8 @@ const NavBar = () => {
   return (
     <header className="absolute top-0 sp:w-full w-full px-4 py-4 z-[5]">
     <div className="w-full item-center justify-center mx-auto">
+          <MobileSidebar onClose={() => setIsExpanded(false)} isOpen={isExpanded} />
+
       <nav className="w-full sm:w-full 2xl:w-[1220.25px] xl:w-[1220.25px] bl:w-full flex items-center 2xl:justify-center mx-auto  justify-between">
         <div className="w-full">
           <div className="justify-center md:mr-0 group ">
@@ -174,7 +177,6 @@ const NavBar = () => {
         </div>
       </nav>
     </div>
-    <MobileSidebar onClose={() => setIsExpanded(false)} isOpen={isExpanded} />
   </header>
   );
 };
