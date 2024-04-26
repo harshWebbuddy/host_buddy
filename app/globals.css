@@ -80,14 +80,19 @@
     height:165px;
     display: flex;
     flex-direction: column;
+    gap:20px;
     text-align: left;
 
   }
   .subfeatures{
     display: flex;
     justify-content: space-between  ;
-    flex-direction: column;
+    flex-direction: row;
     text-align: left;
+  }
+  .subfeatures h2{
+    font-size:16px;
+    line-height: 24px;
   }
   .planbutton{
     
@@ -124,6 +129,16 @@
 opacity: 45%;
 line-height: 16.8px;
 font-weight: 400; }
+ .plan2boxinner{
+  margin-top: 20px;
+ align-items: center;
+ justify-content: center; 
+ display: flex;
+ flex-direction: column;
+  width: 349.03px; 
+  height:476px;
+  /* gap:5px; */
+ }
   .plan2boxinner1{
     align-content: center;
     justify-content: center;
@@ -132,27 +147,47 @@ font-weight: 400; }
 width:286px;
 height:138px;
 gap:16px;
+margin-bottom:26px;
  }
-  .plan2boxinner{
- align-items: center;
- justify-content: center; 
- display: flex;
- flex-direction: column;
-  width: 349px; 
-  height:476px;
-  gap:26px;
+  .plan2boxinner2{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+width:349.03px;
+height:312px;
+gap:26px;
  }
+ .plan2boxinner22{
+  align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+width:349.03px;
+height:262px;
+gap:45px;
+ }
+ 
   .plan2box{
+
     align-items: center;
     justify-content: center; 
     border-radius: 10px;
     width:393px;
     height:545px;
-    background-color:#F9EFE4;
+    /* background-color:#F9EFE4; */
+    display: flex;
+    flex-direction: column;
+  }
+  /* .plan2box:hover{
+    background-color:#16191C;
+   
+  } */
+  
+  .plan2{
     display: flex;
     flex-direction: row;
-  }
-  .plan2{
+    gap:20px;
     width:1219px;
     height: 558.62px;
   }
@@ -211,11 +246,12 @@ transition-duration: 400ms; /* Transition duration */
   .orangeline:hover{
     transform: scale(1.1); /* Scale on hover */
    
-
   }
   .plan{
     width:1220px;
     height:928.62px;
+    display: flex;
+    flex-direction: column;
     gap:40px;
   }
   .plan1{
