@@ -115,7 +115,7 @@ const Plan = () => {
 
 </div>
     </div></div>
-    <div className='group special'>
+    <div className='group '>
       <div className='plan2box special bg-[#F9EFE4] group-hover:bg-[#16191C]'>
 <div className='.plan2boxinner mt-8'>
     <div className='plan2boxinner1 mx-auto'>
@@ -325,6 +325,53 @@ const Plan = () => {
     </div>
     </div> */}
     
+</div>
+<div className='millions mx-auto'>
+  <div className='flex flex-col plannumber'>
+    <h2>
+1.2M<span>
++
+</span>
+    </h2>
+    <p className='mx-auto'>
+      trusted by 1.2
+millions users
+    </p>
+  </div>
+  <div className='millionline'>
+    <svg width="2" height="173" viewBox="0 0 2 173" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="1" y1="0.621094" x2="1.00001" y2="172.621" stroke="#C8C8C8" stroke-dasharray="2 2"/>
+</svg>
+
+  </div>
+   <div className='flex flex-col plannumber'>
+    <h2>
+1.2M<span>
++
+</span>
+    </h2>
+    <p className='mx-auto'>
+      trusted by 1.2
+millions users
+    </p>
+  </div>
+   <div className='millionline'>
+    <svg width="2" height="173" viewBox="0 0 2 173" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="1" y1="0.621094" x2="1.00001" y2="172.621" stroke="#C8C8C8" stroke-dasharray="2 2"/>
+</svg>
+
+  </div>
+   <div className='flex flex-col plannumber'>
+    <h2>
+1.2M<span>
++
+</span>
+    </h2>
+    <p className='mx-auto'>
+      trusted by 1.2
+millions users
+    </p>
+  </div>
 </div>
     </div>
   )

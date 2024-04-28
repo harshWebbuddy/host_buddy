@@ -116,7 +116,7 @@ const NavBar = () => {
             <span className="font-semibold text-[29.27px] text-white  inline-block transition-transform transform rotate-0 group-hover:rotate-180" >Buddy</span>
           </div>
         </div>
-        <div className="w-10 grid place-content-center ml-6 lg:hidden">
+        <div className="w-10 grid place-content-center ml-6 bl:hidden">
           <div
             className="flex flex-col items-end justify-center rounded-md transition duration-100 p-2 space-y-[7px] cursor-pointer group"
             onClick={() => setIsExpanded(true)}>
@@ -134,7 +134,7 @@ const NavBar = () => {
               }`}></span>
           </div>
         </div>
-        <div className="hidden lg:flex justify-center w-full">
+        <div className="hidden bl:flex justify-center w-full">
             <ul className="text-white flex gap-x-10">
               {navLinks.map((link, index) => (
                 <div
@@ -165,12 +165,12 @@ const NavBar = () => {
               ))}
             </ul>
           </div>
-          <div className="hidden lg:flex justify-end space-x-4 w-full  ">
-            <motion.button className="text-white flex flex-row items-center justify-center bg-transparent border border-white rounded-lg px-4 py-2 outline-none cursor-pointer" whileHover={{ scale: 1.2 }}>
+          <div className="hidden bl:flex justify-end space-x-4 w-full  ">
+            <motion.button className="text-white flex flex-row items-center justify-center bg-transparent border border-white rounded-bl px-4 py-2 outline-none cursor-pointer" whileHover={{ scale: 1.2 }}>
             <AiOutlineGlobal className="mr-2 item-center" />
             English
           </motion.button>
-          <motion.button className="text-white flex flex-row items-center justify-center bg-orange-500 hover:bg-orange-600 rounded-lg px-4 py-2" whileHover={{ scale: 1.2 }}>
+          <motion.button className="text-white flex flex-row items-center justify-center bg-orange-500 hover:bg-orange-600 rounded-bl px-4 py-2" whileHover={{ scale: 1.2 }}>
             Sign Up
             <img src="/signuparrow.svg" className="ml-2"/>
           </motion.button>
