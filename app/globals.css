@@ -204,11 +204,12 @@ gap:45px;
 
 
 
- .group:hover svg path {
+ .group:hover  svg path {
   fill: white;
 }
 .group:hover .featuresvg svg path{
   stroke:#FF7500;
+  fill: black;
 }
   .plan2box{
 
@@ -1093,13 +1094,14 @@ gap:45px;
  }
 
 
-
- .group:hover svg path {
+/* 
+ .group:hover .svghover svg path {
   fill: white;
-}
-.group:hover .featuresvg svg path{
-  stroke:#FF7500;
-}
+} */
+/* .group:hover .featuresvg svg path{ */
+  /* fill:#FF7500; */
+  /* stroke:#FF7500; */
+/* } */
   .plan2box{
 
     align-items: center;
