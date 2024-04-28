@@ -75,7 +75,10 @@
 }
 /* flex flex-col   2xl:flex-row xl:ml-[0px] 2xl:flex-nowrap gap-8 items-center justify-center md:ml-6 pa:w-[1200px] pa:flex-wrap  2xl:ml-[500px] pa:-ml-[400px] xl:flex-row xl:flex-nowrap */
 @media screen and (min-width: 1920px) and (max-width: 9999px) {
-  .features{
+ 
+ .special{
+  opacity:1;
+ } .features{
     width:349px;
     height:165px;
     display: flex;
@@ -167,7 +170,15 @@ width:349.03px;
 height:262px;
 gap:45px;
  }
- 
+
+
+
+ .group:hover svg path {
+  fill: white;
+}
+.group:hover .featuresvg svg path{
+  stroke:#FF7500;
+}
   .plan2box{
 
     align-items: center;
@@ -234,13 +245,7 @@ gap:45px;
   }
   
   .orangeline{
-    border-top-width: 4px;
-border-top-color: #ff9900; /* Orange color */
-border-top-style: solid; /* Assuming solid border style */
-opacity: 1; /* Full opacity */
-width: 240px; /* 19% width */
-transition-property: transform; /* Transition property */
-transition-duration: 400ms; /* Transition duration */
+   display: flex;/* Transition duration */
 
   }
   .orangeline:hover{
@@ -255,6 +260,8 @@ transition-duration: 400ms; /* Transition duration */
     gap:40px;
   }
   .plan1{
+    justify-content: space-between;
+    align-items: center;
     display: flex;
     flex-direction: row;
     gap:263px;
@@ -482,7 +489,134 @@ gap:10px;
 }
 
 @media screen and (max-width: 1920px) {
-  .toggle-container {
+  
+  .special{
+    opacity: 1;
+  }
+  .features{
+    width:349px;
+    height:165px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    text-align: left;
+
+  }
+  .subfeatures{
+    display: flex;
+    justify-content: space-between  ;
+    flex-direction: row;
+    text-align: left;
+  }
+  .subfeatures h2{
+    font-size:16px;
+    line-height: 24px;
+  }
+  .planbutton{
+    
+    width:349.03px;
+    height:52px;
+    border:2 solid ;
+    border-radius: 10px;
+    border-color: #16191C;
+   
+  }
+ .number {
+    font-size: 48px;
+    line-height: 57.6px;
+    font-weight: 700;
+    color:#FF7500;
+    text-align: center;
+  align-items: center;
+  justify-content: center
+  }
+ .ignite {
+  text-align: center;
+  align-items: center;
+  justify-content: center; 
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+ }
+ .from{
+  text-align: center;
+  align-items: center;
+  justify-content: center; 
+  font-size: 14px;
+opacity: 45%;
+line-height: 16.8px;
+font-weight: 400; }
+ .plan2boxinner{
+  margin-top: 20px;
+ align-items: center;
+ justify-content: center; 
+ display: flex;
+ flex-direction: column;
+  width: 349.03px; 
+  height:476px;
+  /* gap:5px; */
+ }
+  .plan2boxinner1{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+width:286px;
+height:138px;
+gap:16px;
+margin-bottom:26px;
+ }
+  .plan2boxinner2{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+width:349.03px;
+height:312px;
+gap:26px;
+ }
+ .plan2boxinner22{
+  align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+width:349.03px;
+height:262px;
+gap:45px;
+ }
+
+
+
+ .group:hover svg path {
+  fill: white;
+}
+.group:hover .featuresvg svg path{
+  stroke:#FF7500;
+}
+  .plan2box{
+
+    align-items: center;
+    justify-content: center; 
+    border-radius: 10px;
+    width:393px;
+    height:545px;
+    /* background-color:#F9EFE4; */
+    display: flex;
+    flex-direction: column;
+  }
+  /* .plan2box:hover{
+    background-color:#16191C;
+   
+  } */
+  
+  .plan2{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    width:1219px;
+    height: 558.62px;
+  } .toggle-container {
     position: relative;
     display: inline-block;
   }
@@ -525,13 +659,7 @@ gap:10px;
   }
   
   .orangeline{
-    border-top-width: 4px;
-border-top-color: #ff9900; /* Orange color */
-border-top-style: solid; /* Assuming solid border style */
-opacity: 1; /* Full opacity */
-width: 240px; /* 19% width */
-transition-property: transform; /* Transition property */
-transition-duration: 400ms; /* Transition duration */
+    display: flex; /* Transition duration */
 
   }
   .orangeline:hover{
@@ -539,12 +667,16 @@ transition-duration: 400ms; /* Transition duration */
    
 
   }
-  .plan{
+ .plan{
     width:1220px;
     height:928.62px;
+    display: flex;
+    flex-direction: column;
     gap:40px;
   }
   .plan1{
+    justify-content: space-between;
+    align-items: center;
     display: flex;
     flex-direction: row;
     gap:263px;
@@ -775,7 +907,132 @@ gap:10px;
   }
 }
 @media screen and (max-width: 1600px) {
-  .toggle-container {
+ .special{
+  opacity: 1;
+ } .features{
+    width:349px;
+    height:165px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    text-align: left;
+
+  }
+  .subfeatures{
+    display: flex;
+    justify-content: space-between  ;
+    flex-direction: row;
+    text-align: left;
+  }
+  .subfeatures h2{
+    font-size:16px;
+    line-height: 24px;
+  }
+  .planbutton{
+    
+    width:349.03px;
+    height:52px;
+    border:2 solid ;
+    border-radius: 10px;
+    border-color: #16191C;
+   
+  }
+ .number {
+    font-size: 48px;
+    line-height: 57.6px;
+    font-weight: 700;
+    color:#FF7500;
+    text-align: center;
+  align-items: center;
+  justify-content: center
+  }
+ .ignite {
+  text-align: center;
+  align-items: center;
+  justify-content: center; 
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+ }
+ .from{
+  text-align: center;
+  align-items: center;
+  justify-content: center; 
+  font-size: 14px;
+opacity: 45%;
+line-height: 16.8px;
+font-weight: 400; }
+ .plan2boxinner{
+  margin-top: 20px;
+ align-items: center;
+ justify-content: center; 
+ display: flex;
+ flex-direction: column;
+  width: 349.03px; 
+  height:476px;
+  /* gap:5px; */
+ }
+  .plan2boxinner1{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+width:286px;
+height:138px;
+gap:16px;
+margin-bottom:26px;
+ }
+  .plan2boxinner2{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+width:349.03px;
+height:312px;
+gap:26px;
+ }
+ .plan2boxinner22{
+  align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+width:349.03px;
+height:262px;
+gap:45px;
+ }
+
+
+
+ .group:hover svg path {
+  fill: white;
+}
+.group:hover .featuresvg svg path{
+  stroke:#FF7500;
+}
+  .plan2box{
+
+    align-items: center;
+    justify-content: center; 
+    border-radius: 10px;
+    width:393px;
+    height:545px;
+    /* background-color:#F9EFE4; */
+    display: flex;
+    flex-direction: column;
+  }
+  /* .plan2box:hover{
+    background-color:#16191C;
+   
+  } */
+  
+  .plan2{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    width:1219px;
+    height: 558.62px;
+  } .toggle-container {
     position: relative;
     display: inline-block;
   }
@@ -832,12 +1089,16 @@ border-top-color: #ff9900; /* Orange color */
    
 
   }
-  .plan{
+ .plan{
     width:1220px;
     height:928.62px;
+    display: flex;
+    flex-direction: column;
     gap:40px;
   }
   .plan1{
+    justify-content: space-between;
+    align-items: center;
     display: flex;
     flex-direction: row;
     gap:263px;
@@ -1058,7 +1319,142 @@ gap:10px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .toggle-container {
+ .special{
+  opacity: 0;
+ } 
+ .features{
+    width:349px;
+    height:165px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    text-align: left;
+
+  }
+  .special{
+    opacity: 0;
+  }
+  .subfeatures{
+    display: flex;
+    justify-content: space-between  ;
+    flex-direction: row;
+    text-align: left;
+  }
+  .subfeatures h2{
+    font-size:16px;
+    line-height: 24px;
+  }
+  .planbutton{
+    
+    width:349.03px;
+    height:52px;
+    border:2 solid ;
+    border-radius: 10px;
+    border-color: #16191C;
+   
+  }
+ .number {
+    font-size: 48px;
+    line-height: 57.6px;
+    font-weight: 700;
+    color:#FF7500;
+    text-align: center;
+  align-items: center;
+  justify-content: center
+  }
+ .ignite {
+  text-align: center;
+  align-items: center;
+  justify-content: center; 
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+ }
+ .from{
+  text-align: center;
+  align-items: center;
+  justify-content: center; 
+  font-size: 14px;
+opacity: 45%;
+line-height: 16.8px;
+font-weight: 400; }
+ .plan2boxinner{
+  margin-top: 20px;
+ align-items: center;
+ justify-content: center; 
+ display: flex;
+ flex-direction: column;
+  width: 349.03px; 
+  height:476px;
+  /* gap:5px; */
+ }
+  .plan2boxinner1{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+width:286px;
+height:138px;
+gap:16px;
+margin-bottom:26px;
+ }
+  .plan2boxinner2{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+width:349.03px;
+height:312px;
+gap:26px;
+ }
+ .plan2boxinner22{
+  align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+width:349.03px;
+height:262px;
+gap:45px;
+ }
+
+
+
+ .group:hover svg path {
+  fill: white;
+}
+.group:hover .featuresvg svg path{
+  stroke:#FF7500;
+}
+  .plan2box{
+
+    align-items: center;
+    justify-content: center; 
+    border-radius: 10px;
+    width:500px;
+    height:545px;
+    /* background-color:#F9EFE4; */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  /* .plan2box:hover{
+    background-color:#16191C;
+   
+  } */
+ 
+  .plan2{
+    display: flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    gap:auto;
+    width:auto;
+    height:1200px;
+  } .toggle-container {
+    position: relative;
+    display: inline-block;
+  } .toggle-container {
     position: relative;
     display: inline-block;
   }
@@ -1114,31 +1510,33 @@ width: 194px; /* 19% width */
 
   /* } */ 
   .plan{
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width:auto;
     height:928.62px;
-    gap:40px;
+    gap:100px;
+    display: flex;
+    flex-direction: column;
   }
   .plan1{
-    justify-content: center;
+    justify-content:space-between;
     align-items: center;
     display: flex;
     flex-direction: row;
     /* gap:10px; */
-    width:auto;
-    height:78px;
+    width:900px;
+    /* height:78px; */
   }
   .plan1perfect{
     justify-content: center;
     align-items: center;
-    width:630px;
+    width:700px;
     gap:10px;
     display: flex;
     flex-direction: column;
   }
   .plan1perfect h2{
-font-size: 42px;
+font-size: 20px;
 font-weight: 600;
 line-height: 63px;
   }
@@ -1363,7 +1761,151 @@ padding:0px 20px;
   }
 }
 @media screen and (max-width: 1000px) {
-  .toggle-container {
+ .orangeline{
+  opacity: 0;
+ }
+ .features{
+    width:349px;
+    height:165px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    text-align: left;
+
+  }
+  .subfeatures{
+    display: flex;
+    justify-content: space-between  ;
+    flex-direction: row;
+    text-align: left;
+  }
+  .subfeatures h2{
+    font-size:16px;
+    line-height: 24px;
+  }
+  .planbutton{
+    
+    width:349.03px;
+    height:52px;
+    border:2 solid ;
+    border-radius: 10px;
+    border-color: #16191C;
+   
+  }
+ .number {
+    font-size: 48px;
+    line-height: 57.6px;
+    font-weight: 700;
+    color:#FF7500;
+    text-align: center;
+  align-items: center;
+  justify-content: center
+  }
+ .ignite {
+  text-align: center;
+  align-items: center;
+  justify-content: center; 
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+ }
+ .from{
+  text-align: center;
+  align-items: center;
+  justify-content: center; 
+  font-size: 14px;
+opacity: 45%;
+line-height: 16.8px;
+font-weight: 400; }
+ .plan2boxinner{
+  margin-top: 20px;
+ align-items: center;
+ justify-content: center; 
+ display: flex;
+ flex-direction: column;
+  width: 349.03px; 
+  height:476px;
+  /* gap:5px; */
+ }
+  .plan2boxinner1{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+width:286px;
+height:138px;
+gap:16px;
+margin-bottom:26px;
+ }
+  .plan2boxinner2{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+width:349.03px;
+height:312px;
+gap:26px;
+ }
+ .plan2boxinner22{
+  align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+width:349.03px;
+height:262px;
+gap:45px;
+ }
+
+
+
+ .group:hover svg path {
+  fill: white;
+}
+.group:hover .featuresvg svg path{
+  stroke:#FF7500;
+}
+  .plan2box{
+
+    align-items: center;
+    justify-content: center; 
+    border-radius: 10px;
+    width:400px;
+    height:545px;
+    /* background-color:#F9EFE4; */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* .plan2box:hover{
+    background-color:#16191C;
+   
+  } */
+  .special{
+    opacity: 100;
+  }
+  
+  .plan2{
+    display: flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    gap:auto;
+    width:auto;
+    height:1200px;
+  } 
+  .special{
+    opacity: 0;
+  }
+  .orangeline{
+    /* display: block; */
+    opacity: 0;
+}
+   .orangeline:hover{ 
+    transform: scale(1.1);
+    opacity: 0;
+    } /* Scale on hover */
+   
+ .toggle-container {
     position: relative;
     display: inline-block;
   }
@@ -1419,21 +1961,24 @@ width: 194px; /* 19% width */
 
   }
   .plan{
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width:auto;
     height:928.62px;
     gap:40px;
+    display: flex;
+    flex-direction: column;
   }
   .plan1{
-    justify-content: center;
+    justify-content:space-between;
     align-items: center;
     display: flex;
     flex-direction: row;
     /* gap:10px; */
-    width:auto;
-    height:78px;
+    width:800px;
+    /* height:78px; */
   }
+
   .plan1perfect{
     justify-content: center;
     align-items: center;
@@ -1443,7 +1988,7 @@ width: 194px; /* 19% width */
     flex-direction: column;
   }
   .plan1perfect h2{
-font-size: 22px;
+font-size: 12px;
 font-weight: 600;
 line-height: 63px;
   }
@@ -1504,7 +2049,7 @@ gap:10px;
   .customer_happiness h1{
     align-items: center;
     justify-content: center;
-   font-size:24px;
+   font-size:34px;
    font-weight: 600;
   } .content_img{
     background-image: url('/phone/1.png');
@@ -1667,7 +2212,139 @@ padding:0px 20px;
   }
 }
 @media screen and (max-width:767px) {
-  .toggle-container {
+  .features{
+    width:349px;
+    height:165px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    text-align: left;
+
+  }
+  .subfeatures{
+    display: flex;
+    justify-content: space-between  ;
+    flex-direction: row;
+    text-align: left;
+  }
+  .subfeatures h2{
+    font-size:16px;
+    line-height: 24px;
+  }
+  .planbutton{
+    
+    width:349.03px;
+    height:52px;
+    border:2 solid ;
+    border-radius: 10px;
+    border-color: #16191C;
+   
+  }
+ .number {
+    font-size: 48px;
+    line-height: 57.6px;
+    font-weight: 700;
+    color:#FF7500;
+    text-align: center;
+  align-items: center;
+  justify-content: center
+  }
+ .ignite {
+  text-align: center;
+  align-items: center;
+  justify-content: center; 
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+ }
+ .from{
+  text-align: center;
+  align-items: center;
+  justify-content: center; 
+  font-size: 14px;
+opacity: 45%;
+line-height: 16.8px;
+font-weight: 400; }
+ .plan2boxinner{
+  margin-top: 20px;
+ align-items: center;
+ justify-content: center; 
+ display: flex;
+ flex-direction: column;
+  width: 349.03px; 
+  height:476px;
+  /* gap:5px; */
+ }
+  .plan2boxinner1{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+width:286px;
+height:138px;
+gap:16px;
+margin-bottom:26px;
+ }
+  .plan2boxinner2{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+width:349.03px;
+height:312px;
+gap:26px;
+ }
+ .plan2boxinner22{
+  align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+width:349.03px;
+height:262px;
+gap:45px;
+ }
+
+
+
+ .group:hover svg path {
+  fill: white;
+}
+.group:hover .featuresvg svg path{
+  stroke:#FF7500;
+}
+  .plan2box{
+
+    align-items: center;
+    justify-content: center; 
+    border-radius: 10px;
+    width:400px;
+    height:545px;
+    /* background-color:#F9EFE4; */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* .plan2box:hover{
+    background-color:#16191C;
+   
+  } */
+  .special{
+    opacity: 100;
+  }
+  
+  .plan2{
+    display: flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    gap:auto;
+    width:fit-content;
+    height:1200px;
+  } 
+ .orangeline{
+  opacity: 0;
+ }
+   .toggle-container {
     position: relative;
     display: inline-block;
   }
@@ -1722,12 +2399,17 @@ width: 194px; /* 19% width */
    
 
   }
+
+ 
+
   .plan{
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width:auto;
-    /* height:928.62px; */
-    gap:40px;
+    width:600px;
+    height:928.62px;
+    gap:160px;
+    display: flex;
+    flex-direction: column;
   }
   .plan1{
  
@@ -1976,7 +2658,62 @@ padding:0px 20px;
   }
 }
 @media screen and (max-width: 600px) {
-  .toggle-container {
+    .features{
+    width:249px;
+    height:165px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    text-align: left;
+
+  }.plan2boxinner1{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+width:186px;
+height:138px;
+gap:16px;
+margin-bottom:26px;
+ }
+ .planbutton{
+    
+    width:249.03px;
+    height:52px;
+    border:2 solid ;
+    border-radius: 10px;
+    border-color: #16191C;
+   
+  }
+  .plan2boxinner2{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+width:249.03px;
+height:312px;
+gap:26px;
+ }
+  .plan2boxinner22{
+  align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+width:249.03px;
+height:262px;
+gap:45px;
+ }
+  .plan2box{
+padding:0px 0px;
+    align-items: center;
+    justify-content: center; 
+    border-radius: 10px;
+    width:300px;
+    height:545px;
+    /* background-color:#F9EFE4; */
+    display: flex;
+    flex-direction: column;
+  }.toggle-container {
     position: relative;
     display: inline-block;
   }
@@ -2032,26 +2769,42 @@ width: 194px; /* 19% width */
 
   }
   .plan{
+    margin-top:450px;
     justify-content: center;
     align-items: center;
-    /* width:auto; */
+    display: flex;
+    flex-direction: column;
+    gap:500px;
+    width:300px;
     /* height:928.62px; */
     /* gap:40px; */
   }
+   .plan2{
+   
+   justify-content: center;
+   align-items: center;
+    display: flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    gap:auto;
+    width:150px;
+    height:1200px;
+  } 
   .plan1{
- 
+align-items: start;
+justify-content: start;
     /* justify-content: space-between; */
     align-items: center;
     display: flex;
     flex-direction: column;
     gap:50px;
-    /* width:auto; */
+    width:300px;
     /* height:78px; */
   }
   .plan1perfect{
-    justify-content: center;
-    align-items: center;
-    width:auto;
+   align-items: start;
+justify-content: start;
+    width:300px;
     /* gap:10px; */
     display: flex;
     flex-direction: column;
@@ -2062,11 +2815,11 @@ font-weight: 600;
 line-height: 63px;
   }
   .plan1month{
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     display: flex;
     flex-direction: row;
-    /* gap:15px; */
+    gap:2px;
     width:auto;
     /* height:33px; */
   }
@@ -2285,14 +3038,92 @@ padding:0px 20px;
   }
 }
 @media screen and (max-width: 380px) {
-  .plan1{
+    .plan2boxinner1{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+width:186px;
+height:138px;
+gap:16px;
+margin-bottom:126px;
+ }
+
+ .planbutton{
+    
+    width:249.03px;
+    height:52px;
+    border:2 solid ;
+    border-radius: 10px;
+    border-color: #16191C;
+   
+  }
+  .plan2boxinner{
+ align-items: center;
+ justify-content: center; 
+ display: flex;
+ flex-direction: column;
+  width: 349.03px; 
+  height:976px;
+  gap:90px;
+ }
+  .plan2boxinner2{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+width:249.03px;
+height:312px;
+gap:106px;
+ }
+  .plan2boxinner22{
+  align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+width:249.03px;
+height:962px;
+gap:145px;
+ }
+  .features{
+    align-items: center;
+    justify-content: center;
+    width:249px;
+    height:165px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    text-align: left;
+
+  }
+   .subfeatures{
+    gap:10px;
+    display: flex;
+    justify-content: space-between  ;
+    flex-direction: column;
+    text-align: left;
+  }
+  .orangeline{
+    opacity: 0;
+  }
+  .plan{
+    /* padding:0px 20px; */
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+    width:200px;
+    height:1528.62px;
+    gap:1000px;
+    display: flex;
+    flex-direction: column;
+  }.plan1{
  
-    /* justify-content: space-between; */
+    /* justify-content: ; */
     align-items: center;
     display: flex;
     flex-direction: column;
     gap:150px;
-    /* width:auto; */
+    width:100px;
     /* height:78px; */
   }.plan1perfect{
     justify-content: center;
@@ -2312,9 +3143,28 @@ line-height: 63px;
     align-items: center;
     display: flex;
     flex-direction: column;
-    /* gap:15px; */
+    gap:15px;
     /* width:335px; */
     /* height:33px; */
+  }
+   .plan2box{
+
+    align-items: center;
+    justify-content: center; 
+    border-radius: 10px;
+    width:300px;
+    height:800px;
+    /* background-color:#F9EFE4; */
+    display: flex;
+    flex-direction: column;
+  }
+  .planbutton{
+    
+    width:29.03px;
+    height:52px;
+    border-radius: 10px;
+    border-color: #16191C;
+   
   }
   .plan1month h2{
     color:#16191C;
@@ -2418,12 +3268,12 @@ padding:0px 20px;
   }
   .buddy1 {
     margin-bottom: 4px;
-    width: 105px;
+    width: 80px;
     height: 30px;
   }
   .buddy1 h2 span {
     font-weight: 300;
-    font-size: 5px;
+    font-size: 2px;
     line-height: 30px;
   }
   .buddy2 {
@@ -2435,17 +3285,17 @@ padding:0px 20px;
     text-align: start;
 
     font-weight: 500;
-    font-size: 42px;
+    font-size: 32px;
     line-height: 54px;
   }
   .buddy3 {
-    width:auto;
+    width:250px;
    margin-top: -30px;
     margin-bottom: 30px;
   }
   .buddy3 p {
     text-align: start;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 26px;
   }
   .buddy4 {
@@ -2480,6 +3330,9 @@ padding:0px 20px;
   .buddy_button2 h2 {
     font-size: 16px;
     line-height: 19.2px;
+  }
+  .buddy_img{
+    width:200px;
   }
 }
 
