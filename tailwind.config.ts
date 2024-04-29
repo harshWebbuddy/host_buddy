@@ -21,16 +21,16 @@ const config: Config = {
 
       //I preferred to use the default tailwindcss preconfigured screen sizes but you can change at any time @harsh
 
-      // screens: {
-      //   "sm": "380px",
-      //   "md": "767px",
-      //   "lg": "600px",
-      //   "bl":"1000px",
-      //   "xl": "1200px",
-      //   "2xl": "1600px"
+      screens: {
+        "sm": "380px",
+        "md": "767px",
+        "lg": "600px",
+        "bl":"1000px",
+        "xl": "1200px",
+        "2xl": "1600px"
        
       //   // => @media (min-width: 1536px) { ... }
-      // },
+      },
     keyframes: {
       "accordion-down": {
         from: { height: "0" },

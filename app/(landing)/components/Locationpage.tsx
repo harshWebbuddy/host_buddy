@@ -966,12 +966,12 @@ const Locationpage = () => {
   return (
     <div className="w-full flex flex-col max-w-[1420px] mx-auto space-y-10 p-4">
       {/* Headline */}
-      <div className="w-full flex flex-col lg:flex-row justify-between items-center gap-10">
-        <h1 className="mb-4 w-full lg:max-w-[640px] font-mona-sans text-[42px] font-bold leading-relaxed text-center lg:text-left">
+      <div className="w-full flex flex-col xl:flex-row justify-between items-center gap-10">
+        <h1 className="mb-4 w-full xl:max-w-[640px] font-mona-sans text-[42px] font-bold leading-relaxed text-center xl:text-left">
           Our Datacenters Are Located In <span className="text-orange-500 border-b-4 pb-4 border-orange-500">7 Regions</span>
         </h1>
         {/* Text */}
-        <p className="text-[16px] text-[#EBEBEB] leading-loose text-center lg:text-left lg:max-w-xl">
+        <p className="text-[16px] text-[#EBEBEB] leading-loose text-center xl:text-left xl:max-w-xl">
           Lorem ipsum dolor sit amet consectetur. Vitae quis aliquet tincidunt suspendisse. Augue in malesuada amet dui sed felis nisl non interdum Placerat
           enim tincidunt.{" "}
         </p>

@@ -44,10 +44,10 @@ export default function Testimonials() {
   }, []);
 
   return (
-    <div className="p-4 relative bg-gradient-to-b from-[#292E34] to-[#16191C] mx-auto flex flex-col  w-full items-center justify-center pt-10 xl:pt-20 mt-20">
+    <div className="p-4 relative bg-gradient-to-b from-[#292E34] to-[#16191C] mx-auto flex flex-col  w-full items-center justify-center pt-10 2xl:pt-20 mt-20">
       <div className="max-w-[1360px] mx-auto">
-        <div className="flex flex-col xl:flex-row gap-y-10 xl:items-center justify-between">
-          <h2 className="text-[42px] leading-normal font-bold text-white w-full xl:max-w-xl ">
+        <div className="flex flex-col 2xl:flex-row gap-y-10 2xl:items-center justify-between">
+          <h2 className="text-[42px] leading-normal font-bold text-white w-full 2xl:max-w-xl ">
             Featured Client <span className="pb-4 border-b-4 border-orange-500">Testimonials </span> 👏
           </h2>
           <p className="w-full text-white text-[16px] leading-loose max-w-3xl">

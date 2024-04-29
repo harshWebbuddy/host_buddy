@@ -17,14 +17,14 @@ const Plans = () => {
   return (
     <div className="flex flex-col max-w-[1360px] mx-auto">
       {/* heading */}
-      <div className="flex flex-col md:flex-row justify-between gap-y-6 gap-x-4 items-center mb-8">
+      <div className="flex flex-col bl:flex-row justify-between gap-y-6 gap-x-4 items-center mb-8">
         <div className="relative w-full">
-          <h2 className="font-mona-sans font-semibold text-[42px] leading-relaxed w-full text-center md:text-left">
+          <h2 className="font-mona-sans font-semibold text-[42px] leading-relaxed w-full text-center bl:text-left">
             <span className="pb-4 border-b-4 border-orange-500">The Perfect </span>- Web Hosting Plan
           </h2>
         </div>
-        <div className="flex flex-wrap md:flex-nowrap items-center gap-2 sm:gap-5">
-          <h2 className="font-mona-sans text-xs md:text-base font-normal leading-[24px] md:leading-[32px] tracking-[0.05em] md:tracking-[0.2px] text-right w-54 md:w-71 h-[32px]">
+        <div className="flex flex-wrap bl:flex-nowrap items-center gap-2 sm:gap-5">
+          <h2 className="font-mona-sans text-xs bl:text-base font-normal leading-[24px] bl:leading-[32px] tracking-[0.05em] bl:tracking-[0.2px] text-right w-54 bl:w-71 h-[32px]">
             Monthly
           </h2>
           <Switch checkedIcon={CustomSwitchIcon} {...label} color="default" defaultChecked className="w-[60px] h-[40px]" />
@@ -40,10 +40,10 @@ const Plans = () => {
       </div>
       {/* cards */}
       <section className="mt-10">
-        <div className="flex flex-col md:flex-row w-full justify-center gap-8 items-center">
+        <div className="flex flex-col bl:flex-row w-full justify-center gap-8 items-center">
           <div className="mb-5 w-full bg-[#F9EFE4] p-10 rounded-2xl">
             <div className="mb-5 w-full space-y-4">
-              <h2 className="font-mona-sans font-bold text-2xl md:text-3xl text-center gap-0 text-gray-900 mx-auto ">IGNITE</h2>
+              <h2 className="font-mona-sans font-bold text-2xl bl:text-3xl text-center gap-0 text-gray-900 mx-auto ">IGNITE</h2>
               <p className="font-mona-sans leading-7 w-full gap-0 text-sm text-center mx-auto text-[#16191C]/40">From</p>
               <div className="font-bold text-6xl leading-9 text-center font-mono-sans-serif text-orange-500 mb-2">$29</div>
               <p className="font-mona-sans text-base font-normal leading-21 text-center w-50 h-[17px] gap-0 opacity-45">/Month</p>
@@ -93,7 +93,7 @@ const Plans = () => {
               <div className="bg-[#FF7500] px-6 py-1.5 font-semibold border-4 max-w-fit border-white rounded-full absolute -top-6 mx-auto">Most Popular</div>
             </div>
             <div className="mb-5 w-full space-y-4">
-              <h2 className="font-mona-sans font-bold text-2xl md:text-3xl text-center mx-auto ">ELITE</h2>
+              <h2 className="font-mona-sans font-bold text-2xl bl:text-3xl text-center mx-auto ">ELITE</h2>
               <p className="font-mona-sans leading-7 w-full gap-0 text-sm text-center mx-auto text-[#FFFFFF]/40">From</p>
               <div className="font-bold text-6xl leading-9 text-center font-mono-sans-serif text-orange-500 mb-2">$29</div>
               <p className="font-mona-sans text-base font-normal leading-21 text-center w-50 h-[17px] gap-0 opacity-45">/Month</p>
@@ -136,9 +136,9 @@ const Plans = () => {
               </div>
             </div>
           </div>
-          <div className="hidden lg:block mb-5 w-full bg-[#F9EFE4] p-10 rounded-2xl">
+          <div className="hidden xl:block mb-5 w-full bg-[#F9EFE4] p-10 rounded-2xl">
             <div className="mb-5 w-full space-y-4">
-              <h2 className="font-mona-sans font-bold text-2xl md:text-3xl text-center gap-0 text-gray-900 mx-auto ">STELLER</h2>
+              <h2 className="font-mona-sans font-bold text-2xl bl:text-3xl text-center gap-0 text-gray-900 mx-auto ">STELLER</h2>
               <p className="font-mona-sans leading-7 w-full gap-0 text-sm text-center mx-auto text-[#16191C]/40">From</p>
               <div className="font-bold text-6xl leading-9 text-center font-mono-sans-serif text-orange-500 mb-2">$29</div>
               <p className="font-mona-sans text-base font-normal leading-21 text-center w-50 h-[17px] gap-0 opacity-45">/Month</p>
@@ -184,9 +184,9 @@ const Plans = () => {
             </div>
           </div>
         </div>
-        <div className="block lg:hidden mb-5 w-full bg-[#F9EFE4] p-10 rounded-2xl md:max-w-[500px] mx-auto">
+        <div className="block xl:hidden mb-5 w-full bg-[#F9EFE4] p-10 rounded-2xl bl:max-w-[500px] mx-auto">
           <div className="mb-5 w-full space-y-4">
-            <h2 className="font-mona-sans font-bold text-2xl md:text-3xl text-center gap-0 text-gray-900 mx-auto ">IGNITE</h2>
+            <h2 className="font-mona-sans font-bold text-2xl bl:text-3xl text-center gap-0 text-gray-900 mx-auto ">IGNITE</h2>
             <p className="font-mona-sans leading-7 w-full gap-0 text-sm text-center mx-auto text-[#16191C]/40">From</p>
             <div className="font-bold text-6xl leading-9 text-center font-mono-sans-serif text-orange-500 mb-2">$29</div>
             <p className="font-mona-sans text-base font-normal leading-21 text-center w-50 h-[17px] gap-0 opacity-45">/Month</p>
@@ -233,7 +233,7 @@ const Plans = () => {
         </div>
       </section>
 
-      <div className=" flex flex-col md:flex-row gap-y-10 mx-auto items-center justify-center py-20 md:py-24">
+      <div className=" flex flex-col bl:flex-row gap-y-10 mx-auto items-center justify-center py-20 bl:py-24">
         <div className="flex flex-col item-center justify-center mx-auto ">
           <div>
             <h2 className=" text-orange-500 font-mona-sans font-extrabold text-7xl text-center">1.2M+</h2>
@@ -245,7 +245,7 @@ const Plans = () => {
             </p>
           </div>
         </div>
-        <div className="hidden md:block w-[172px]  border-t border-gray-200 transform rotate-90"></div>
+        <div className="hidden bl:block w-[172px]  border-t border-gray-200 transform rotate-90"></div>
         <div className="flex flex-col item-center justify-center mx-auto ">
           <div>
             <h2 className=" text-orange-500 font-mona-sans font-extrabold text-7xl text-center">1.5M+</h2>
@@ -257,7 +257,7 @@ const Plans = () => {
             </p>
           </div>
         </div>
-        <div className="hidden md:block w-[172px]  border-t border-gray-200 transform rotate-90"></div>
+        <div className="hidden bl:block w-[172px]  border-t border-gray-200 transform rotate-90"></div>
         <div className="flex flex-col item-center justify-center mx-auto ">
           <div>
             <h2 className=" text-orange-500 font-mona-sans font-extrabold text-7xl text-center">96%</h2>

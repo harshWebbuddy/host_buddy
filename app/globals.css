@@ -75,7 +75,132 @@
 }
 /* flex flex-col   2xl:flex-row xl:ml-[0px] 2xl:flex-nowrap gap-8 items-center justify-center md:ml-6 pa:w-[1200px] pa:flex-wrap  2xl:ml-[500px] pa:-ml-[400px] xl:flex-row xl:flex-nowrap */
 @media screen and (min-width: 1920px) and (max-width: 9999px) {
-.millions{
+ button{
+  background-color: #FF7500;
+  width: 135.76px;
+height: 48px;
+top: 533px;
+left: 1434px;
+gap: 0px;
+border-radius: 10px;
+opacity: 0px;
+/* angle: -0 deg; */
+
+ }.submith2{
+  color:#fff;
+  font-family: Mona Sans;
+font-size: 16px;
+font-weight: 600;
+line-height: 19.2px;
+text-align:center;
+
+ }.submit{
+  display: flex;
+  flex-direction: row;
+
+width:1219px;
+  justify-content: space-between;
+ }  
+ .overallcards{
+   width:1219px;
+ }
+ .message{
+  width: 1219px;
+height: 133px;
+top: 370px;
+left: 351px;
+padding: 9.99px 1132px 100.01px 15px;
+gap: 0px;
+border-radius: 10px 0px 0px 0px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+
+ }.inputcontainer{
+display: flex;
+flex-direction: row;
+gap:20px;
+ }
+  .input1{
+  width: 600px;
+height: 53px;
+border-color: #CED4DA;
+padding-left:17px;
+gap: 0px;
+border-radius: 10px;
+border: 1px ;
+opacity: 0px;
+
+ }
+  .overallform{
+  width: 1920px;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+ }.form{
+  display: flex;
+  flex-direction: column;
+height: 1050px;
+gap: 50px;
+position: relative;
+top:240px;
+opacity: 0px;
+  background: #F5F5F5;
+
+ }
+ .headingform{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+ }.headingform h2{
+
+  font-family: Mona Sans;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 63px;
+  text-align: center;
+  
+ } .headingform p{
+  font-family: Mona Sans;
+font-size: 18px;
+font-weight: 300;
+line-height: 26px;
+text-align: center;
+
+ }.overalllocation{
+    width: 1112px;
+height: 527px;
+
+display: flex;
+flex-direction: column;
+gap: 40px;
+opacity: 0px;
+justify-content: center;
+ align-items: center;
+  }.location span{
+color:#FF7500;
+    font-family: Mona Sans;
+font-size: 42px;
+font-weight: 600;
+line-height: 63px;
+text-align: left;
+
+  }
+  .location p{
+    font-family: Mona Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: center;
+
+  }
+.location h2{
+  font-family: Mona Sans;
+font-size: 42px;
+font-weight: 600;
+line-height: 63px;
+text-align: center;
+
+}.millions{
   display: flex;
   flex-direction: row;
   gap:131px;
@@ -204,9 +329,9 @@ gap:45px;
 
 
 
- /* .group:hover  svg path {
+ .group:hover  svg path {
   fill: white;
-} */
+}
 .group:hover .featuresvg svg path{
   stroke:#FF7500;
   fill: black;
@@ -518,10 +643,142 @@ gap:10px;
     font-size: 16px;
     line-height: 19.2px;
   }
+  .hostbuddy{
+    background: linear-gradient(180deg, #292E34 0%, #16191C 100%);
+
+  }
+  
 }
 
 @media screen and (max-width: 1920px) {
-  .millions{
+  .hostbuddy{
+    background: linear-gradient(180deg, #292E34 0%, #16191C 100%);
+
+  } button{
+    background-color: #FF7500;
+    width: 135.76px;
+  height: 48px;
+  top: 533px;
+  left: 1434px;
+  gap: 0px;
+  border-radius: 10px;
+  opacity: 0px;
+  /* angle: -0 deg; */
+  
+   }.submith2{
+    color:#fff;
+    font-family: Mona Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.2px;
+  text-align:center;
+  
+   }.submit{
+    display: flex;
+    flex-direction: row;
+  
+  width:1219px;
+    justify-content: space-between;
+   }  
+   .overallcards{
+     width:1219px;
+   }
+   .message{
+    width: 1219px;
+  height: 133px;
+ 
+  padding: 9.99px 1132px 100.01px 15px;
+  gap: 0px;
+  border-radius: 10px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  
+   }.inputcontainer{
+  display: flex;
+  flex-direction: row;
+  gap:20px;
+   }
+    .input1{
+    width: 600px;
+  height: 53px;
+  border-color: #CED4DA;
+  padding-left:17px;
+  gap: 0px;
+  border-radius: 10px;
+  border: 1px ;
+  opacity: 0px;
+  
+   }
+    .overallform{
+    width:auto;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+   }.form{
+    display: flex;
+    flex-direction: column;
+  height: 982px;
+  position: relative;
+  top:240px;
+  gap: 50px;
+  opacity: 0px;
+    background: #F5F5F5;
+  
+   }
+   .headingform{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+   }.headingform h2{
+  
+    font-family: Mona Sans;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 63px;
+    text-align: center;
+    
+   } .headingform p{
+    font-family: Mona Sans;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+  text-align: center;
+  
+   }.overalllocation{
+    width: 1112px;
+height: 527px;
+
+display: flex;
+flex-direction: column;
+gap: 40px;
+opacity: 0px;
+justify-content: center;
+ align-items: center;
+  }.location span{
+color:#FF7500;
+    font-family: Mona Sans;
+font-size: 42px;
+font-weight: 600;
+line-height: 63px;
+text-align: left;
+
+  }
+  .location p{
+    font-family: Mona Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: center;
+
+  }
+.location h2{
+  font-family: Mona Sans;
+font-size: 42px;
+font-weight: 600;
+line-height: 63px;
+text-align: center;
+
+} .millions{
   display: flex;
   flex-direction: row;
   gap:131px;
@@ -968,7 +1225,133 @@ gap:10px;
   }
 }
 @media screen and (max-width: 1600px) {
- .millions{
+  .hostbuddy{
+    background: linear-gradient(180deg, #292E34 0%, #16191C 100%);
+
+  } button{
+    background-color: #FF7500;
+    width: 135.76px;
+  height: 48px;
+  top: 533px;
+  left: 1434px;
+  gap: 0px;
+  border-radius: 10px;
+  opacity: 0px;
+  /* angle: -0 deg; */
+  
+   }.submith2{
+    color:#fff;
+    font-family: Mona Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.2px;
+  text-align:center;
+  
+   }.submit{
+    display: flex;
+    flex-direction: row;
+  
+  width:1219px;
+    justify-content: space-between;
+   }  
+   .overallcards{
+     width:1219px;
+   }
+   .message{
+    width: 1219px;
+  height: 133px;
+ 
+  padding: 9.99px 1132px 100.01px 15px;
+  gap: 0px;
+  border-radius: 10px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  
+   }.inputcontainer{
+  display: flex;
+  flex-direction: row;
+  gap:20px;
+   }
+    .input1{
+    width: 600px;
+  height: 53px;
+  border-color: #CED4DA;
+  padding-left:17px;
+  gap: 0px;
+  border-radius: 10px;
+  border: 1px ;
+  opacity: 0px;
+  
+   }
+    .overallform{
+      margin-left:-200px;
+    width:1000px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+   }.form{
+    display: flex;
+    flex-direction: column;
+  height: 982px;
+  gap: 50px;
+  opacity: 0px;
+    background: #F5F5F5;
+  
+   }
+   .headingform{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+   }.headingform h2{
+  
+    font-family: Mona Sans;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 63px;
+    text-align: center;
+    
+   } .headingform p{
+    font-family: Mona Sans;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+  text-align: center;
+  
+   }.overalllocation{
+    width: 1112px;
+height: 527px;
+
+display: flex;
+flex-direction: column;
+gap: 40px;
+opacity: 0px;
+justify-content: center;
+ align-items: center;
+  }.location span{
+color:#FF7500;
+    font-family: Mona Sans;
+font-size: 42px;
+font-weight: 600;
+line-height: 63px;
+text-align: left;
+
+  }
+  .location p{
+    font-family: Mona Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: center;
+
+  }
+.location h2{
+  font-family: Mona Sans;
+font-size: 42px;
+font-weight: 600;
+line-height: 63px;
+text-align: center;
+
+}.millions{
   display: flex;
   flex-direction: row;
   gap:131px;
@@ -1411,7 +1794,136 @@ gap:10px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .millions{
+  .hostbuddy{
+    background: linear-gradient(180deg, #292E34 0%, #16191C 100%);
+
+  } button{
+    background-color: #FF7500;
+    width: 135.76px;
+  height: 48px;
+  top: 533px;
+  left: 1434px;
+  gap: 0px;
+  border-radius: 10px;
+  opacity: 0px;
+  /* angle: -0 deg; */
+  
+   }.submith2{
+    color:#fff;
+    font-family: Mona Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.2px;
+  text-align:center;
+  
+   }.submit{
+    display: flex;
+    flex-direction: row;
+  
+  width:1219px;
+    justify-content: space-between;
+   }  
+   .overallcards{
+     width:1219px;
+   }
+   .message{
+    width: 1219px;
+  height: 133px;
+ 
+  padding: 9.99px 1132px 100.01px 15px;
+  gap: 0px;
+  border-radius: 10px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  
+   }.inputcontainer{
+    align-items: center;
+    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+   }
+    .input1{
+    width: 800px;
+  height: 53px;
+  border-color: #CED4DA;
+  /* padding-left:17px; */
+  gap: 0px;
+  border-radius: 10px;
+  border: 1px ;
+  opacity: 0px;
+  
+   }
+    .overallform{
+      margin-left: -500px;
+    width:700px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+   }.form{
+    display: flex;
+    flex-direction: column;
+  height: 1200px;
+  gap: 50px;
+  opacity: 0px;
+    background: #F5F5F5;
+  
+   }
+   .headingform{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+   }.headingform h2{
+  
+    font-family: Mona Sans;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 63px;
+    text-align: center;
+    
+   } .headingform p{
+    font-family: Mona Sans;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+  text-align: center;
+  
+   }.overalllocation{
+    width: 900px;
+height: 527px;
+
+
+display: flex;
+flex-direction: column;
+gap: 40px;
+opacity: 0px;
+justify-content: center;
+ align-items: center;
+  }.location span{
+color:#FF7500;
+    font-family: Mona Sans;
+font-size: 42px;
+font-weight: 600;
+line-height: 63px;
+text-align: left;
+
+  }
+  .location p{
+    font-family: Mona Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: center;
+
+  }
+.location h2{
+  font-family: Mona Sans;
+font-size: 42px;
+font-weight: 600;
+line-height: 63px;
+text-align: center;
+
+} .millions{
     margin-top: -600px;
   display: flex;
   flex-direction: row;
@@ -1883,7 +2395,54 @@ padding:0px 20px;
   }
 }
 @media screen and (max-width: 1000px) {
- .millions{
+  .form{
+    display: flex;
+    flex-direction: column;
+  height: 1500px;
+  gap: 50px;
+  opacity: 0px;
+    background: #F5F5F5;
+  
+   }
+  .hostbuddy{
+    background: linear-gradient(180deg, #292E34 0%, #16191C 100%);
+
+  } .overalllocation{
+    width: fit-content;
+height: 527px;
+
+
+display: flex;
+flex-direction: column;
+gap: 40px;
+opacity: 0px;
+justify-content: center;
+ align-items: center;
+  }.location span{
+color:#FF7500;
+    font-family: Mona Sans;
+font-size: 42px;
+font-weight: 600;
+line-height: 63px;
+text-align: left;
+
+  }
+  .location p{
+    font-family: Mona Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: center;
+
+  }
+.location h2{
+  font-family: Mona Sans;
+font-size: 42px;
+font-weight: 600;
+line-height: 63px;
+text-align: center;
+
+}.millions{
     margin-top: -650px;
   display: flex;
   flex-direction: row;
@@ -2346,7 +2905,43 @@ padding:0px 20px;
   }
 }
 @media screen and (max-width:767px) {
-  .millionline{
+  .hostbuddy{
+    background: linear-gradient(180deg, #292E34 0%, #16191C 100%);
+
+  } .overalllocation{
+    width: 500px;
+height: 527px;
+display: flex;
+flex-direction: column;
+gap: 40px;
+opacity: 0px;
+justify-content: center;
+ align-items: center;
+  }.location span{
+color:#FF7500;
+    font-family: Mona Sans;
+font-size: 42px;
+font-weight: 600;
+line-height: 63px;
+text-align: left;
+
+  }
+  .location p{
+    font-family: Mona Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: center;
+
+  }
+.location h2{
+  font-family: Mona Sans;
+font-size: 42px;
+font-weight: 600;
+line-height: 63px;
+text-align: center;
+
+} .millionline{
   visibility: hidden;
   }
  .millions{
@@ -2578,6 +3173,7 @@ width: 194px; /* 19% width */
     gap:160px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 1850px;
   }
   .plan1{
  
@@ -2826,7 +3422,51 @@ padding:0px 20px;
   }
 }
 @media screen and (max-width: 600px) {
-   .millionline{
+  .form{
+    display: flex;
+    flex-direction: column;
+  height: 1600px;
+  gap: 50px;
+  opacity: 0px;
+    background: #F5F5F5;
+  
+   } .hostbuddy{
+    background: linear-gradient(180deg, #292E34 0%, #16191C 100%);
+
+  }  .overalllocation{
+    width: 300px;
+height: 527px;
+display: flex;
+flex-direction: column;
+gap: 0px;
+opacity: 0px;
+justify-content: center;
+ align-items: center;
+  }.location span{
+color:#FF7500;
+    font-family: Mona Sans;
+font-size: 42px;
+font-weight: 600;
+line-height: 63px;
+text-align: left;
+
+  }
+  .location p{
+    font-family: Mona Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: center;
+
+  }
+.location h2{
+  font-family: Mona Sans;
+font-size: 42px;
+font-weight: 600;
+line-height: 63px;
+text-align: center;
+
+} .millionline{
   visibility: hidden;
   }
  .millions{
@@ -2980,6 +3620,7 @@ width: 194px; /* 19% width */
     flex-direction: column;
     gap:500px;
     width:300px;
+    margin-bottom: 1250px;
     /* height:928.62px; */
     /* gap:40px; */
   }
@@ -3242,7 +3883,52 @@ padding:0px 20px;
   }
 }
 @media screen and (max-width: 380px) {
-   .millionline{
+  .form{
+    display: flex;
+    flex-direction: column;
+  height: 2000px;
+  gap: 50px;
+  opacity: 0px;
+    background: #F5F5F5;
+  
+   } .hostbuddy{
+    background: linear-gradient(180deg, #292E34 0%, #16191C 100%);
+
+  } .overalllocation{
+    width: 200px;
+height: 527px;
+display: flex;
+flex-direction: column;
+gap: 0px;
+opacity: 0px;
+justify-content: center;
+ align-items: center;
+  }
+  .location span{
+color:#FF7500;
+    font-family: Mona Sans;
+font-size: 22px;
+font-weight: 600;
+line-height: 63px;
+text-align: left;
+
+  }
+  .location p{
+    font-family: Mona Sans;
+font-size: 10px;
+font-weight: 400;
+line-height: 24px;
+text-align:left;
+
+  }
+.location h2{
+  font-family: Mona Sans;
+font-size: 22px;
+font-weight: 600;
+line-height: 63px;
+text-align: left;
+
+}.millionline{
   visibility: hidden;
   }
  .millions{
@@ -3353,6 +4039,7 @@ gap:145px;
     gap:1000px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 2250px;
   }.plan1{
  
     /* justify-content: ; */

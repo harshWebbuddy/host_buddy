@@ -303,6 +303,7 @@ millions users
 millions users
     </p>
   </div>
+  <img src="/background.svg" className="absolute -mt-80 -ml-96 " />
 </div>
     </div>
   )

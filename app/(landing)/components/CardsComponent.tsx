@@ -4,7 +4,7 @@ import React from "react";
 const CardsComponent = () => {
   return (
     <div className="space-y-20 p-4">
-      <div className="w-full flex flex-col lg:flex-row gap-16 items-center">
+      <div className="w-full flex flex-col xl:flex-row gap-16 items-center">
         <div className="w-full space-y-4">
           <div className="">
             <h2 className="text-3xl leading-relaxed font-semibold">Lorem ipsum dolor sit amet consectetur.</h2>
@@ -44,7 +44,7 @@ const CardsComponent = () => {
           </div>
         </div>
       </div>
-      <div className="w-full flex flex-col lg:flex-row-reverse gap-16 items-center">
+      <div className="w-full flex flex-col xl:flex-row-reverse gap-16 items-center">
         <div className="w-full space-y-4">
           <div className="">
             <h2 className="text-3xl leading-relaxed font-semibold">Lorem ipsum dolor sit amet consectetur.</h2>
@@ -84,7 +84,7 @@ const CardsComponent = () => {
           </div>
         </div>
       </div>
-      <div className="w-full flex flex-col lg:flex-row gap-14 items-center">
+      <div className="w-full flex flex-col xl:flex-row gap-14 items-center">
         <div className="w-full space-y-4">
           <div className="">
             <h2 className="text-3xl leading-relaxed font-semibold">Lorem ipsum dolor sit amet consectetur.</h2>
@@ -124,7 +124,7 @@ const CardsComponent = () => {
           </div>
         </div>
       </div>
-      <div className="w-full flex flex-col lg:flex-row-reverse gap-16 items-center">
+      <div className="w-full flex flex-col xl:flex-row-reverse gap-16 items-center">
         <div className="w-full space-y-4">
           <div className="">
             <h2 className="text-3xl leading-relaxed font-semibold">Lorem ipsum dolor sit amet consectetur.</h2>
