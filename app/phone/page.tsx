@@ -8,7 +8,7 @@ const page = () => {
     <div>
         <div><CustomPage/></div>
         <div><Rating/></div>   
-        <div><Plan/></div>
+        {/* <div><Plan/></div> */}
          </div>
   )
 }

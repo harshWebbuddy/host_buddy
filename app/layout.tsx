@@ -1,5 +1,6 @@
 import { Footer, NavBar } from "@/components";
 import "./globals.css";
+import Footerall from "@/components/Footerall";
 
 export const metadata = {
   title: "webbuddy",
@@ -12,7 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className='relative  justify-center items-center mx-auto'>
         <NavBar /> 
         {children}
-        {/* <Footer /> */}
+        <Footerall/>
       </body>
     </html>
   );
