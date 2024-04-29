@@ -25,6 +25,7 @@ const navLinks: NavLink[] = [
       { label: "Home Dedicated Server", href: "/home" },
       { label: "Home Gaming", href: "/homegaming" },
       { label: "Home Phones", href: "/phone" },
+      { label: "Home Cloud Reseller", href: "/cloud" },
       // { label: "Pages", href: "#" },
       // { label: "Features", href: "#" },
     ],

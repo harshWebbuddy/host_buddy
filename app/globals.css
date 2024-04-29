@@ -494,9 +494,46 @@ gap:10px;
     background-repeat: no-repeat;
     width: 1495px;
   }
+  .hostingcontent_img{
+    position: relative;
+    right:-300px;
+    background-image: url('/cloudhosting/hero.jpeg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 1116px;
+    height:757px;
+  }
 .buddy_img{
   position: relative;
-  width:1495px; 
+  width:1115px; 
+  margin-top: 30px;
+  
+  height: 755px;
+  margin-left: -90px;
+}
+.hostingbuddy_img2{
+  position: absolute;
+  z-index: 10;
+  width:auto;
+}
+.cloudbuddy{
+
+    position: relative;    margin-top:150px;
+        width: 600px;
+        height: 296px;
+        gap: 20px;
+    left:-350px;
+      }
+      .cloudbuddy h2 {
+        text-align: start;
+    
+        font-weight: 500;
+        font-size: 62px;
+        line-height: 84px;
+      }
+.hostbuddy_img{
+  position: relative;
+  width:1115px; 
   margin-top: 30px;
   
   height: 755px;
@@ -504,12 +541,9 @@ gap:10px;
 }
 .buddy_img2{
   position: absolute;
- 
   z-index: 10;
   width:auto;
-
 }
-
   .content {
    
     width: 1220.25px;
@@ -517,6 +551,14 @@ gap:10px;
     flex-direction: row;
     text-align: center;
     color: white;
+}
+.hostingcontent {
+   
+  width: 1220.25px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  color: white;
 }
 
   .games_images {
@@ -579,6 +621,7 @@ gap:10px;
     width: 600px;
     height: 296px;
     gap: 20px;
+left:400px;
   }
   .buddy1 {
     margin-bottom: 4px;
@@ -594,6 +637,10 @@ gap:10px;
     width: 400px;
     height: 168px;
     margin-bottom: 20px;
+  } .cloudbuddy2 {
+    width: 430px;
+    height: 168px;
+    margin-bottom: 20px;
   }
   .buddy h2 {
     text-align: start;
@@ -607,6 +654,16 @@ gap:10px;
     margin-bottom: 30px;
   }
   .buddy3 p {
+    text-align: start;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .cloudbuddy3 {
+    margin-top: 20px;
+    width: 600px;
+    margin-bottom: 30px;
+  }
+  .cloudbuddy3 p {
     text-align: start;
     font-size: 18px;
     line-height: 26px;
@@ -639,6 +696,15 @@ gap:10px;
     width: 133px;
     height: 20px;
   }
+  .cloudbuddy_button2 {
+    margin-top: 10px;
+    width: 170.91px;
+    height: 20px;
+  }
+  .cloudbuddy_button2 h2 {
+    font-size: 16px;
+    line-height: 19.2px;
+  }
   .buddy_button2 h2 {
     font-size: 16px;
     line-height: 19.2px;
@@ -647,13 +713,88 @@ gap:10px;
     background: linear-gradient(180deg, #292E34 0%, #16191C 100%);
 
   }
+  .cloudbuddybackground{
+    position: relative;
+     background: linear-gradient(180deg, #292E34 0%, #16191C 100%);
+    /* right:-300px; */
+    background-image: url('/cloudhosting/2.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: auto;
+
+  
+  }
   
 }
 
 @media screen and (max-width: 1920px) {
-  .hostbuddy{
+  .cloudbuddy3 {
+    margin-top: 20px;
+    width: 600px;
+    margin-bottom: 30px;
+  }
+  .cloudbuddy3 p {
+    text-align: start;
+    font-size: 18px;
+    line-height: 26px;
+  } .cloudbuddy2 {
+    width: 430px;
+    height: 168px;
+    margin-bottom: 20px;
+  } .hostingcontent {
+   
+    width: 1220.25px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: white;
+  }.hostingcontent_img{
+    position: relative;
+    right:-300px;
+    background-image: url('/cloudhosting/hero.jpeg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 1116px;
+    height:757px;
+  } .hostbuddy{
     background: linear-gradient(180deg, #292E34 0%, #16191C 100%);
 
+  }.hostingbuddy_img2{
+    position: absolute;
+    z-index: 10;
+    width:auto;
+  }
+  .cloudbuddy{
+  
+      position: relative;    margin-top:150px;
+          width: 600px;
+          height: 296px;
+          gap: 20px;
+      left:-350px;
+        }
+        .cloudbuddy h2 {
+          text-align: start;
+      
+          font-weight: 500;
+          font-size: 62px;
+          line-height: 84px;
+        }
+  .hostbuddy_img{
+    position: relative;
+    width:1115px; 
+    margin-top: 30px;
+    
+    height: 755px;
+    margin-left: -90px;
+  } 
+  .cloudbuddy_button2 {
+    margin-top: 10px;
+    width: 170.91px;
+    height: 20px;
+  }
+  .cloudbuddy_button2 h2 {
+    font-size: 16px;
+    line-height: 19.2px;
   } button{
     background-color: #FF7500;
     width: 135.76px;
@@ -1225,7 +1366,74 @@ gap:10px;
   }
 }
 @media screen and (max-width: 1600px) {
-  .hostbuddy{
+  .cloudbuddy3 {
+    margin-top: 20px;
+    width: 600px;
+    margin-bottom: 30px;
+  }
+  .cloudbuddy3 p {
+    text-align: start;
+    font-size: 18px;
+    line-height: 26px;
+  } .cloudbuddy2 {
+    width: 430px;
+    height: 168px;
+    margin-bottom: 20px;
+  } .hostingcontent {
+   
+    width: 1220.25px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: white;
+  }.hostingcontent_img{
+    position: relative;
+    right:-300px;
+    background-image: url('/cloudhosting/hero.jpeg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 1116px;
+    height:757px;
+  } .hostbuddy{
+    background: linear-gradient(180deg, #292E34 0%, #16191C 100%);
+
+  }.hostingbuddy_img2{
+    position: absolute;
+    z-index: 10;
+    width:auto;
+  }
+  .cloudbuddy{
+  
+      position: relative;    margin-top:150px;
+          width: 600px;
+          height: 296px;
+          gap: 20px;
+      left:-350px;
+        }
+        .cloudbuddy h2 {
+          text-align: start;
+      
+          font-weight: 500;
+          font-size: 62px;
+          line-height: 84px;
+        }
+  .hostbuddy_img{
+    position: relative;
+    width:1115px; 
+    margin-top: 30px;
+    
+    height: 755px;
+    margin-left: -90px;
+  } 
+  .cloudbuddy_button2 {
+    margin-top: 10px;
+    width: 170.91px;
+    height: 20px;
+  }
+  .cloudbuddy_button2 h2 {
+    font-size: 16px;
+    line-height: 19.2px;
+  } .hostbuddy{
     background: linear-gradient(180deg, #292E34 0%, #16191C 100%);
 
   } button{
@@ -1794,7 +2002,73 @@ gap:10px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .hostbuddy{
+  .cloudbuddy3 {
+    margin-top: 20px;
+    width: 600px;
+    margin-bottom: 30px;
+  }
+  .cloudbuddy3 p {
+    text-align: start;
+    font-size: 18px;
+    line-height: 26px;
+  } .cloudbuddy2 {
+    width: 430px;
+    height: 168px;
+    margin-bottom: 20px;
+  } .hostingcontent {
+   
+    width: 1220.25px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: white;
+  }.hostingcontent_img{
+    position: relative;
+    right:-140px;
+    background-image: url('/cloudhosting/hero.jpeg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 900px;
+  } .hostbuddy{
+    background: linear-gradient(180deg, #292E34 0%, #16191C 100%);
+
+  }.hostingbuddy_img2{
+    position: absolute;
+    z-index: 10;
+    width:auto;
+  }
+  .cloudbuddy{
+  
+      position: relative;    margin-top:150px;
+          width: 600px;
+          height: 296px;
+          gap: 20px;
+      left:-200px;
+        }
+        .cloudbuddy h2 {
+          text-align: start;
+      
+          font-weight: 500;
+          font-size: 62px;
+          line-height: 84px;
+        }
+  .hostbuddy_img{
+    position: relative;
+    width:1115px; 
+    margin-top: 30px;
+    
+    height: 755px;
+    margin-left: -90px;
+  } 
+  .cloudbuddy_button2 {
+    margin-top: 10px;
+    width: 170.91px;
+    height: 20px;
+  }
+  .cloudbuddy_button2 h2 {
+    font-size: 16px;
+    line-height: 19.2px;
+  }  .hostbuddy{
     background: linear-gradient(180deg, #292E34 0%, #16191C 100%);
 
   } button{
@@ -2395,7 +2669,73 @@ padding:0px 20px;
   }
 }
 @media screen and (max-width: 1000px) {
-  .form{
+  .cloudbuddy3 {
+    margin-top: 20px;
+    width: 600px;
+    margin-bottom: 30px;
+  }
+  .cloudbuddy3 p {
+    text-align: start;
+    font-size: 18px;
+    line-height: 26px;
+  } .cloudbuddy2 {
+    width: 430px;
+    height: 168px;
+    margin-bottom: 20px;
+  } .hostingcontent {
+   
+    width: 1220.25px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: white;
+  }.hostingcontent_img{
+    position: relative;
+    right:70px;
+    background-image: url('/cloudhosting/hero.jpeg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 800px;
+  } .hostbuddy{
+    background: linear-gradient(180deg, #292E34 0%, #16191C 100%);
+
+  }.hostingbuddy_img2{
+    position: absolute;
+    z-index: 10;
+    width:auto;
+  }
+  .cloudbuddy{
+  
+      position: relative;    margin-top:150px;
+          width: 600px;
+          height: 296px;
+          gap: 20px;
+      left:70px;
+        }
+        .cloudbuddy h2 {
+          text-align: start;
+      
+          font-weight: 500;
+          font-size: 62px;
+          line-height: 84px;
+        }
+  .hostbuddy_img{
+    position: relative;
+    width:1115px; 
+    margin-top: 30px;
+    
+    height: 755px;
+    margin-left: -90px;
+  } 
+  .cloudbuddy_button2 {
+    margin-top: 10px;
+    width: 170.91px;
+    height: 20px;
+  }
+  .cloudbuddy_button2 h2 {
+    font-size: 16px;
+    line-height: 19.2px;
+  }  .form{
     display: flex;
     flex-direction: column;
   height: 1500px;
@@ -2905,7 +3245,73 @@ padding:0px 20px;
   }
 }
 @media screen and (max-width:767px) {
-  .hostbuddy{
+  .cloudbuddy3 {
+    margin-top: -20px;
+    width: 300px;
+    margin-bottom: 30px;
+  }
+  .cloudbuddy3 p {
+    text-align: start;
+    font-size: 18px;
+    line-height: 26px;
+  } .cloudbuddy2 {
+    width: 430px;
+    height: 168px;
+    margin-bottom: 0px;
+  } .hostingcontent {
+   
+    width: 1220.25px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: white;
+  }.hostingcontent_img{
+    position: relative;
+    right:250px;
+    background-image: url('/cloudhosting/hero.jpeg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 900px;
+  } .hostbuddy{
+    background: linear-gradient(180deg, #292E34 0%, #16191C 100%);
+
+  }.hostingbuddy_img2{
+    position: absolute;
+    z-index: 10;
+    width:auto;
+  }
+  .cloudbuddy{
+  
+      position: relative;    margin-top:150px;
+          width: 600px;
+          height: 296px;
+          gap: 20px;
+      left:250px;
+        }
+        .cloudbuddy h2 {
+          text-align: start;
+      
+          font-weight: 500;
+          font-size: 42px;
+          line-height: 54px;
+        }
+  .hostbuddy_img{
+    position: relative;
+    width:1115px; 
+    margin-top: 30px;
+    
+    height: 755px;
+    margin-left: -90px;
+  } 
+  .cloudbuddy_button2 {
+    margin-top: 10px;
+    width: 170.91px;
+    height: 20px;
+  }
+  .cloudbuddy_button2 h2 {
+    font-size: 16px;
+    line-height: 19.2px;
+  }  .hostbuddy{
     background: linear-gradient(180deg, #292E34 0%, #16191C 100%);
 
   } .overalllocation{
@@ -3422,7 +3828,73 @@ padding:0px 20px;
   }
 }
 @media screen and (max-width: 600px) {
-  .form{
+  .cloudbuddy3 {
+    margin-top: -40px;
+    width: 200px;
+    margin-bottom: 30px;
+  }
+  .cloudbuddy3 p {
+    text-align: start;
+    font-size: 12px;
+    line-height: 26px;
+  } .cloudbuddy2 {
+    width: 430px;
+    height: 168px;
+    margin-bottom: 0px;
+  } .hostingcontent {
+   
+    width: 1220.25px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: white;
+  }.hostingcontent_img{
+    position: relative;
+    right:450px;
+    background-image: url('/cloudhosting/hero.jpeg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 900px;
+  } .hostbuddy{
+    background: linear-gradient(180deg, #292E34 0%, #16191C 100%);
+
+  }.hostingbuddy_img2{
+    position: absolute;
+    z-index: 10;
+    width:auto;
+  }
+  .cloudbuddy{
+  
+      position: relative;    margin-top:150px;
+          width: 10px;
+          height: 296px;
+          gap: 20px;
+      left:450px;
+        }
+        .cloudbuddy h2 {
+          text-align: start;
+      
+          font-weight: 500;
+          font-size: 40px;
+          line-height: 54px;
+        }
+  .hostbuddy_img{
+    position: relative;
+    width:1115px; 
+    margin-top: 30px;
+    
+    height: 755px;
+    margin-left: -90px;
+  } 
+  .cloudbuddy_button2 {
+    margin-top: 10px;
+    width: 170.91px;
+    height: 20px;
+  }
+  .cloudbuddy_button2 h2 {
+    font-size: 16px;
+    line-height: 19.2px;
+  }.form{
     display: flex;
     flex-direction: column;
   height: 1600px;
@@ -3883,7 +4355,84 @@ padding:0px 20px;
   }
 }
 @media screen and (max-width: 380px) {
-  .form{
+  .cloudbuddy3 {
+    margin-top: -110px;
+    width: 200px;
+    margin-bottom: 30px;
+  }
+  .cloudbuddy3 p {
+    text-align: start;
+    font-size: 8px;
+    line-height: 26px;
+  } .cloudbuddy2 {
+    margin-top: -30px;
+    width: 430px;
+    height: 168px;
+    margin-bottom: 0px;
+  } .hostingcontent {
+   
+    width: 1220.25px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: white;
+  }.hostingcontent_img{
+    position: relative;
+    right:550px;
+    background-image: url('/cloudhosting/hero.jpeg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 900px;
+  } .hostbuddy{
+    background: linear-gradient(180deg, #292E34 0%, #16191C 100%);
+
+  }.hostingbuddy_img2{
+    position: absolute;
+    z-index: 10;
+    width:auto;
+  }
+  .cloudbuddy{
+  
+      position: relative;   
+       margin-top:190px;
+          width: 2px;
+          height: 296px;
+          gap: 0px;
+      left:550px;
+        }
+        .cloudbuddy h2 {
+
+          text-align: start;
+      
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 54px;
+        }
+  .hostbuddy_img{
+    position: relative;
+    width:1115px; 
+    margin-top: 30px;
+    
+    height: 755px;
+    margin-left: -90px;
+  } 
+  .cloudbuddy_button2 {
+    margin-top: 10px;
+    width: 170.91px;
+    height: 20px;
+  }
+  .cloudbuddy_button2 h2 {
+    font-size: 16px;
+    line-height: 19.2px;
+  }.form{
+    display: flex;
+    flex-direction: column;
+  height: 1600px;
+  gap: 50px;
+  opacity: 0px;
+    background: #F5F5F5;
+  
+   } .form{
     display: flex;
     flex-direction: column;
   height: 2000px;
