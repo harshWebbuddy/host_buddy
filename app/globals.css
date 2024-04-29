@@ -204,9 +204,9 @@ gap:45px;
 
 
 
- .group:hover  svg path {
+ /* .group:hover  svg path {
   fill: white;
-}
+} */
 .group:hover .featuresvg svg path{
   stroke:#FF7500;
   fill: black;
@@ -649,9 +649,9 @@ gap:45px;
 
 
 
- .group:hover svg path {
+ /* .group:hover svg path {
   fill: white;
-}
+} */
 .group:hover .featuresvg svg path{
   stroke:#FF7500;
 }
@@ -2477,9 +2477,7 @@ gap:45px;
 
 
 
- .group:hover svg path {
-  fill: white;
-}
+
 .group:hover .featuresvg svg path{
   stroke:#FF7500;
 }
@@ -3617,4 +3615,8 @@ padding:0px 20px;
 
 * {
   font-family: "Mona Sans", sans-serif !important;
+}
+
+.ReactCollapse--collapse {
+  transition: height 150ms;
 }
