@@ -3757,6 +3757,22 @@ padding:0px 20px;
   position: relative;
   top:50px;
    }
+   .specs4inner1{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    left:-20px;
+  }
+  .specs4inner2{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+  }
+   .specs4inner{
+  gap:10px;
+  position: relative;
+  left:30px;
+   }
    .specs2 p{
     font-family: Mona Sans;
   font-size: 16px;
@@ -3801,7 +3817,7 @@ padding:0px 20px;
     width: auto;
   height: 620px;
   display: flex;
-  gap:50px;
+  gap:150px;
   flex-direction: column;
   background-color: #F9EFE4;
   } .option{
@@ -4562,7 +4578,98 @@ padding:0px 20px;
   }
 }
 @media screen and (max-width:767px) {
-  .option{
+  .specs4inner1{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+  }
+  .specs4inner2{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+  }.specs34{
+    position: relative;
+    display: flex;
+    position: relative;
+    left:210px;
+    flex-direction: row;
+    gap:100px;
+  }.specs4inner{
+    position: relative;
+    left:250px;
+    top:50px;
+    display:flex;
+    flex-direction: row;
+    position: absolute;
+    gap:100px;
+  }.specs4{
+    overflow: hidden;
+    width: 1363px;
+  height: 274px;
+  border-radius: 20px 0px 0px 20px;
+  background-color: #16191C;
+  
+  } .specs12{
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+   }.specs2{
+    width: 600px;
+  height: 72px;
+  
+  gap: 0px;
+  opacity: 0px;
+  position: relative;
+  top:50px;
+   }
+   .specs2 p{
+    font-family: Mona Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  
+   }.specs1{
+    align-items: center;
+    justify-content: center;
+   
+    width: 497px;
+  height: 126px;
+  
+  gap: 0px;
+  opacity: 0px;
+  
+   } .specs1 h2{
+      font-family: Mona Sans;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 63px;
+  text-align: left;
+  text-transform:capitalize;}
+    .specs1 span{
+      font-family: Mona Sans;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 63px;
+  text-align: left;
+  color:#FF7500;
+  text-transform: capitalize;
+  
+    } .wholespecs{
+      width:auto;
+    height:auto;
+    background-color: #F9EFE4;
+    }
+    .specs{
+      overflow: hidden;
+      padding:100px 0px;
+    width: auto;
+  height: 620px;
+  display: flex;
+  gap:50px;
+  flex-direction: column;
+  background-color: #F9EFE4;
+  } .option{
     width:auto;
    }.image{
     width:auto;
