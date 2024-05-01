@@ -2,9 +2,9 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <div className='bg-[#16191C] overflow-hidden'>
+    <div className='bg-[#16191C] overflow-hidden mx-auto'>
    <div className=' pcontent_img opacity-90 mx-auto'>
-      <div className="content  mx-auto">
+      <div className="pcontent  mx-auto">
         <div className='pbuddy'>
            {/* 1//  */}
            <div className="w-[175px] h-[30px] mb-10">
@@ -48,6 +48,7 @@ Services
                   </div>
                 </div>
         </div>
+      
         {/* <div className='hostingbuddy_img  '>
       <img src="./cloudhosting/1.svg" className='hostingbuddy_img2 w-full h-full' />
     </div> */}

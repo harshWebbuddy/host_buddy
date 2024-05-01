@@ -120,7 +120,7 @@ const Plan = () => {
 <div className='.plan2boxinner mt-8'>
     <div className='plan2boxinner1 mx-auto'>
       <div className=''>  <div>
-            <h2 className='ignite font-mono-sans mx-auto text-black group-hover:text-white'>Ignite</h2>
+            <h2 className='ignite font-mono-sans mx-auto text-black group-hover:text-white'>ELITE</h2>
         </div>
         <div>
 <h2 className='from font-mono-sans mx-auto text-black group-hover:text-white '>From</h2>
@@ -189,7 +189,7 @@ const Plan = () => {
 <div className='.plan2boxinner mt-8'>
     <div className='plan2boxinner1 mx-auto'>
       <div className=''>  <div>
-            <h2 className='ignite font-mono-sans mx-auto text-black group-hover:text-white'>Ignite</h2>
+            <h2 className='ignite font-mono-sans mx-auto text-black group-hover:text-white'>STELLER</h2>
         </div>
         <div>
 <h2 className='from font-mono-sans mx-auto text-black group-hover:text-white '>From</h2>
