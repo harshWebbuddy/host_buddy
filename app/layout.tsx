@@ -12,7 +12,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className='relative  justify-center items-center mx-auto'>
         <NavBar /> 
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

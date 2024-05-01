@@ -75,7 +75,35 @@
 }
 /* flex flex-col   2xl:flex-row xl:ml-[0px] 2xl:flex-nowrap gap-8 items-center justify-center md:ml-6 pa:w-[1200px] pa:flex-wrap  2xl:ml-[500px] pa:-ml-[400px] xl:flex-row xl:flex-nowrap */
 @media screen and (min-width: 1920px) and (max-width: 9999px) {
-  .helpwidth{
+  .pbuddy{
+
+    position: relative;  
+      margin-top:150px;
+        width: 600px;
+        height: 296px;
+        gap: 20px;
+    left:-250px;
+      }
+      .pbuddy h2 {
+        text-align: start;
+    
+        font-weight: 500;
+        font-size: 62px;
+        line-height: 84px;
+      } .pcontent_img{
+    position: relative;
+    right:-220px;
+    background-image: url('/ps/hero.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 1491px;
+    height:1030px;
+  } .buddy_button1 h1 {
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+ .helpwidth{
     width: 1219px;
   }
 .specs4inner1{
@@ -943,6 +971,7 @@ left:400px;
     font-size: 18px;
     line-height: 21.6px;
   }
+ 
 
   .buddy_button2 {
     width: 133px;
@@ -6608,7 +6637,7 @@ opacity: 0px;
     margin-left: -90px;
   } 
   .cloudbuddy_button2 {
-    margin-top: 10px;
+    margin-top: 12  px;
     width: 170.91px;
     height: 20px;
   }
