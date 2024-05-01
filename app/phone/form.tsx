@@ -30,7 +30,7 @@ const ContactForm: React.FC = () => {
     });
   };
   return (
-    <section className="w-full bg-[#f5f5f5] px-4 py-5 2xl:pt-10 bl:pt-20 pb-60">
+    <section className="w-full bg-[#f5f5f5] px-4 py-5 ">
       <div className="w-full max-w-[1360px] items-center justify-center mx-auto">
         <div className="items-center justify-center mx-auto">
           <h2 className="font-mona-sans text-5xl font-semibold item text-center text-black mt-3">Full out the Contact Form</h2>
@@ -119,7 +119,7 @@ const ContactForm: React.FC = () => {
             </button>
           </div>
         </form>
-        <div className="mt-10">
+        <div className=" pt-[80px] pb-[260px]">
           <div className="space-y-5">
             <div className="flex flex-col bl:flex-row items-center gap-5">
               <div className="w-full px-10 py-7 bg-white flex items-center rounded-2xl cursor-pointer gap-6 hover:shadow-lg transition-all duration-500">

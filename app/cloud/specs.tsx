@@ -20,16 +20,16 @@ const Specs = () => {
         <div className='specs4'>
             <div className='specs4inner mx-auto'>
                 <div className='specs4inner1'>
-                    <img src="/cloudhosting/specs1.svg" className='w-[222px] h-[57px]'/>
-                    <img src="/cloudhosting/specs2.svg"  className='w-[105px] h-[30px]'/>
-                    <img src="/cloudhosting/specs3.svg"className='w-[190px] h-[30px]'/>
+                    <img src="/cloudhosting/specs1.svg" className='w-[222px] lg:w-[100px] sm:w-[100px] h-[57px]'/>
+                    <img src="/cloudhosting/specs2.svg"  className='w-[105px]  lg:w-[100px]  sm:w-[100px] h-[30px]'/>
+                    <img src="/cloudhosting/specs3.svg"className='w-[190px] lg:w-[100px]  sm:w-[100px] lg:w-[100px]  h-[30px]'/>
 
                 </div>
                 <div className='specs4inner2'>
-                    <img src="/cloudhosting/specs4.svg" className='w-[178px] h-[26px]'/>
-                    <img src="/cloudhosting/specs5.svg"  className='w-[191px] h-[26px]'/>
-                    <img src="/cloudhosting/specs6.svg" className='w-[203px] h-[26px]'/>
-                    <img src="/cloudhosting/specs7.svg" className='w-[165px] h-[26px]'/>
+                    <img src="/cloudhosting/specs4.svg" className='w-[178px] lg:w-[100px]  sm:w-[100px] h-[26px]'/>
+                    <img src="/cloudhosting/specs5.svg"  className='w-[191px] lg:w-[100px]  sm:w-[100px] h-[26px]'/>
+                    <img src="/cloudhosting/specs6.svg" className='w-[203px] lg:w-[100px]  sm:w-[100px] h-[26px]'/>
+                    <img src="/cloudhosting/specs7.svg" className='w-[165px] lg:w-[100px]  sm:w-[100px] h-[26px]'/>
 
                 </div>
             </div>

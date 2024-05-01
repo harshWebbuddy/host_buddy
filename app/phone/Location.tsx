@@ -963,7 +963,7 @@ const Location = () => {
         setPaths(extractedPaths.filter((path) => path !== null) as string[]);
       }, []);
   return (
-    <div className='mx-auto pt-10 2xl:pb-60 lg:pb-12 sm:pb-10 sm:pt-20 md:pb-32 xl:pt-20 xl:pb-56 '>
+    <div className='mx-auto'>
     <div className='overalllocation mx-auto'>
         <div className='location mx-auto'>
 <h2>Our Datacenters Are Located In <span>7 Regions</span></h2>
