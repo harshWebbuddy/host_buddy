@@ -257,7 +257,7 @@ const Plan = () => {
     
     
 </div>
-<div className='millions mx-auto'>
+<div className='mt-16 millions mx-auto'>
   <div className='flex flex-col plannumber'>
     <h2>
 1.2M<span>

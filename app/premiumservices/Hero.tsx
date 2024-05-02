@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className='bg-[#16191C] overflow-hidden mx-auto'>
    <div className=' pcontent_img opacity-90 mx-auto'>
-      <div className="pcontent  mx-auto">
+      <div className=" pcontent mx-auto max-w-[1200px] flex ">
         <div className='pbuddy'>
            {/* 1//  */}
            <div className="w-[175px] h-[30px] mb-10">
@@ -14,14 +14,14 @@ const Hero = () => {
                   </h2>
                 </div>
                 {/* 2 */}
-                <div className="w-full h-[168px] ">
-                  <h2 className="font-mono font-medium cloudbuddy2">
+                <div className="w-full h-[168px] pbuddy2">
+                  <h2 className="font-mono font-medium ">
                   IPTV Premium
 Services
                   </h2>
                 </div>
                 {/* 3 */}
-                <div className="cloudbuddy3">
+                <div className="pbuddy3">
                   <p className="font-mono font-light ">
                     <span className="text-white">
                     By trusting us with your business and projects needs, we promise a 99.9% uptime on any services we provide, outside of any standard maintenance we may provide.

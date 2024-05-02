@@ -75,7 +75,129 @@
 }
 /* flex flex-col   2xl:flex-row xl:ml-[0px] 2xl:flex-nowrap gap-8 items-center justify-center md:ml-6 pa:w-[1200px] pa:flex-wrap  2xl:ml-[500px] pa:-ml-[400px] xl:flex-row xl:flex-nowrap */
 @media screen and (min-width: 1920px) and (max-width: 9999px) {
- .cardiv{
+ .gapping{
+  display: flex;
+  flex-direction: column;
+  gap:100px;
+ } .cardimage2{    width: 600px;
+height: 687px;
+position: relative;
+bottom:30px;
+right:4px;
+border-radius: 20px;
+
+
+  }
+  .cardimage1{
+    width: 531px;
+height: 378px;
+position: relative;
+bottom:30px;
+right:4px;
+border-radius: 20px;
+
+
+  }
+  .cardiv2{
+    
+    position: relative;
+    bottom: 500px;
+    align-items: center;
+    justify-content: center;
+   }.dottedcard2{
+    rotate: -3deg;
+    width: 510.84px;
+height: 520.4px;
+top:70px;
+position: relative;
+right: 420.5px; z-index: -1;
+
+
+
+  
+   }.cardbuttonallspecs2{
+    background-color: white;
+    color: var(--Secondary, #16191C);
+  font-family: "Mona Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+    display: flex;
+    flex-direction: row;
+    width: 147px;
+  height: 51px;
+  padding: 16px 30px 16px 30px;
+  gap: 10px;
+  border-radius: 10px ;
+  border: 1px solid #FF7500;
+  
+   }.wholecard1{
+    position: relative;
+    bottom:131px;
+    width:1219px;
+    height: 378px;
+    gap: 191px;
+   } .watchcard{
+      width: 62px;
+  height: 64px;
+  top: 1518px;
+  left: 1257px;
+  gap: 0px;
+  opacity: 0px;
+  
+    }.card{
+      width: 497px;
+      display: flex;
+      flex-direction: column;
+  height: 313px;
+  gap: 20px;
+  
+    }
+  .cardinside2{
+      align-items: start;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      height: 242px;
+      gap:20px;
+    
+     } .devices{
+      display: flex;
+      flex-direction: column;
+      gap:0px;
+     }.cardinside2 h2{
+        font-family: Mona Sans;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 63px;
+    text-align: left;
+    text-transform:capitalize;}
+  
+    .cardinside2 p {
+      font-family: Mona Sans;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: left;
+      
+    }
+      .cardinside2 span{
+        font-family: Mona Sans;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 63px;
+    text-align: left;
+    color:#FF7500;
+    text-transform: capitalize;
+    
+      }.wholecard1{
+      display: flex;
+      flex-direction: row;
+    }
+    
+  /* 2nd card above */
+    .cardiv{
   position: relative;
   bottom: 72.5px;
   align-items: center;
@@ -84,15 +206,26 @@
   width: 25.01px;
 height: 87px;
 
- }.cardbutton{
+ }.cardbuttonallspecs{
+  background-color: white;
+  color: var(--Secondary, #16191C);
+font-family: "Mona Sans";
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  display: flex;
+  flex-direction: row;
   width: 147px;
 height: 51px;
 padding: 16px 30px 16px 30px;
 gap: 10px;
 border-radius: 10px ;
-border: 1px;
+border: 1px solid #FF7500;
 
  }.wholecard1{
+  position: relative;
+  bottom:131px;
   width:1219px;
   height: 378px;
   gap: 191px;
@@ -106,17 +239,19 @@ opacity: 0px;
 
   }.card{
     width: 497px;
+    display: flex;
+    flex-direction: column;
 height: 313px;
 gap: 20px;
 
   }
 .cardinside{
-    align-items: center;
+    align-items: start;
     justify-content: center;
-    width: 497px;
-    height: 126px;
-    gap: 0px;
-    opacity: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 242px;
+    gap:20px;
   
    } .cardinside h2{
       font-family: Mona Sans;
@@ -125,6 +260,11 @@ gap: 20px;
   line-height: 63px;
   text-align: left;
   text-transform:capitalize;}
+  .cardinside a{
+    display: flex;
+    flex-direction: row;
+     gap:10px;
+  }
   .cardinside p {
     font-family: Mona Sans;
     font-size: 16px;
@@ -146,16 +286,8 @@ gap: 20px;
     display: flex;
     flex-direction: row;
   }
-  .cardimage1{
-    width: 531px;
-height: 378px;
-position: relative;
-bottom:30px;
-right:4px;
-border-radius: 20px;
-
-
-  }.uniqueseparateline{
+ .uniqueseparateline{
+  width:497px;
     padding:10px 0px;
     opacity: 100%;
     position: relative;
@@ -165,6 +297,8 @@ border-radius: 20px;
   padding-top:57px;
   width:1220px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   /* justify-content: space-between; */
   gap:29.85px;
   flex-direction: row;
@@ -230,7 +364,7 @@ opacity: 0px;
     padding: 32px;
     display: flex;
     flex-direction: row;
-    gap: 16px;
+    gap: 40px;
     border-radius: 10px; /* Adjust the border-radius value to match the curvature */
   border: 1px solid transparent; /* Set border to transparent */
   border-image-source: linear-gradient(95.27deg, #fe7602 1.2%, rgba(254, 118, 2, 0) 100%);
@@ -288,16 +422,15 @@ opacity: 0px;
     position: relative;
     left:-30px;
   }.wholeunique{
-    align-items: center;
-    justify-content: center;
-    width:1920px;
-    height:678px;
+
+
+    height:auto;
     display: flex;
     flex-direction:row;
   }
   .unique{
     width: 699px;
-height: 608px;
+height: 708px;
     display: flex;
     flex-direction: column;
     gap:40px;
@@ -316,8 +449,10 @@ height: 608px;
     gap:200px;
     flex-direction: column;
     /* text-align: left; */
-    justify-content: start;
+    justify-content: center;
     align-items: start;
+    margin-left: auto;
+    margin-right: auto;
     color: white;
 }.pbuddy{
 
@@ -332,7 +467,7 @@ height: 608px;
         text-align: start;
     
         font-weight: 500;
-        font-size: 62px;
+        font-size: 72px;
         line-height: 84px;
       } .pcontent_img{
     position: relative;
@@ -1178,11 +1313,23 @@ left:400px;
     font-size: 18px;
     line-height: 26px;
   }
+  .pbuddy3 {
+    margin-top: 20px;
+    width: 700px;
+    margin-bottom: 30px;
+  }
+  
+  .pbuddy3 p {
+    text-align: start;
+    font-size: 22px;
+    line-height: 26px;
+  }
   .cloudbuddy3 {
     margin-top: 20px;
     width: 600px;
     margin-bottom: 30px;
   }
+  
   .cloudbuddy3 p {
     text-align: start;
     font-size: 18px;
@@ -1252,7 +1399,336 @@ left:400px;
 }
 
 @media screen and (max-width: 1920px) {
-  .cardiv{
+  .gapping{
+    display: flex;
+    flex-direction: column;
+    gap:100px;
+   } .cardimage2{    width: 600px;
+  height: 687px;
+  position: relative;
+  bottom:30px;
+  right:4px;
+  border-radius: 20px;
+  
+  
+    }
+    .cardimage1{
+      width: 531px;
+  height: 378px;
+  position: relative;
+  bottom:30px;
+  right:4px;
+  border-radius: 20px;
+  
+  
+    }
+
+    .cardiv2{
+      
+      position: relative;
+      bottom: 500px;
+      align-items: center;
+      justify-content: center;
+     }.dottedcard2{
+      rotate: -3deg;
+      width: 510.84px;
+  height: 520.4px;
+  top:70px;
+  position: relative;
+  right: 420.5px; z-index: -1;
+  
+  
+  
+    
+     }.cardbuttonallspecs2{
+        background-color: white;
+        color: var(--Secondary, #16191C);
+      font-family: "Mona Sans";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+        display: flex;
+        flex-direction: row;
+        width: 147px;
+      height: 51px;
+      padding: 16px 30px 16px 30px;
+      gap: 10px;
+      border-radius: 10px ;
+      border: 1px solid #FF7500;
+      
+       }.wholecard1{
+        position: relative;
+        bottom:131px;
+        width:1219px;
+        height: 378px;
+        gap: 191px;
+       } .watchcard{
+          width: 62px;
+      height: 64px;
+      top: 1518px;
+      left: 1257px;
+      gap: 0px;
+      opacity: 0px;
+      
+        }.card{
+          width: 497px;
+          display: flex;
+          flex-direction: column;
+      height: 313px;
+      gap: 20px;
+      
+        }
+      .cardinside2{
+          align-items: start;
+          justify-content: center;
+          display: flex;
+          flex-direction: column;
+          height: 242px;
+          gap:20px;
+        
+         } .devices{
+          display: flex;
+          flex-direction: column;
+          gap:0px;
+         }.cardinside2 h2{
+            font-family: Mona Sans;
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 63px;
+        text-align: left;
+        text-transform:capitalize;}
+      
+        .cardinside2 p {
+          font-family: Mona Sans;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: left;
+          
+        }
+          .cardinside2 span{
+            font-family: Mona Sans;
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 63px;
+        text-align: left;
+        color:#FF7500;
+        text-transform: capitalize;
+        
+          }.cardiv{
+    position: relative;
+    bottom: 72.5px;
+    align-items: center;
+    justify-content: center;
+   }.dottedcard{
+    width: 25.01px;
+  height: 87px;
+  
+   }.cardbuttonallspecs{
+    background-color: white;
+    color: var(--Secondary, #16191C);
+  font-family: "Mona Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+    display: flex;
+    flex-direction: row;
+    width: 147px;
+  height: 51px;
+  padding: 16px 30px 16px 30px;
+  gap: 10px;
+  border-radius: 10px ;
+  border: 1px solid #FF7500;
+  
+   }.wholecard1{
+    bottom:131px;
+position: relative;
+    width:1219px;
+    height: 378px;
+    gap: 191px;
+   } .watchcard{
+      width: 62px;
+  height: 64px;
+  top: 1518px;
+  left: 1257px;
+  gap: 0px;
+  opacity: 0px;
+  
+    }.card{
+      width: 497px;
+      display: flex;
+      flex-direction: column;
+  height: 413px;
+  gap: 20px;
+  
+    }
+  .cardinside{
+      align-items: start;
+      justify-content: start;
+      display: flex;
+      flex-direction: column;
+      height: 342px;
+      gap:20px;
+    
+     } .cardinside h2{
+        font-family: Mona Sans;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 63px;
+    text-align: left;
+    text-transform:capitalize;}
+    .cardinside a{
+      display: flex;
+      flex-direction: row;
+       gap:10px;
+    }
+    .cardinside p {
+      font-family: Mona Sans;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: left;
+      
+    }
+      .cardinside span{
+        font-family: Mona Sans;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 63px;
+    text-align: left;
+    color:#FF7500;
+    text-transform: capitalize;
+    
+      }.wholecard1{
+        width:1219px;
+        height: 378px;
+        gap: 191px;
+       }
+    .cardimage1{
+      width: 531px;
+  height: 378px;
+  position: relative;
+  bottom:30px;
+  right:4px;
+  border-radius: 20px;
+  
+  
+    } .uniquebox:hover .boxinside h2 {
+    color: #ff7500;
+  }
+  
+  .uniquebox:hover .boxinside p {
+    opacity: 100%;
+  }
+  .uniquebox:hover .boxinside h2 {
+    color: #ff7500;
+  }.wholeunique{
+    align-items: center;
+    justify-content: center;
+    width:1920px;
+    height:678px;
+    display: flex;
+    flex-direction:row;
+  }
+  .unique{
+    width: 699px;
+height: 608px;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+  }.uniqueseparateline{
+
+    padding:10px 0px;
+    opacity: 100%;
+    position: relative;
+    left:-0px;
+  }
+ .imagencontent{
+  height: 740px;
+  padding:57px auto;
+  width:1220px;
+  display: flex;
+  /* justify-content: space-between; */
+  gap:29.85px;
+  flex-direction: row;
+ } .uniqueimage{
+  width: 518px;
+  height: 611px; 
+  }.uniquespecs2{
+    width: 699px;
+    height: 72px;   
+   }
+   .uniquespecs2 p{
+    font-family: Mona Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  
+   }.uniquespecs1{
+    align-items: center;
+    justify-content: center;
+width: 670px;
+height: 63px;
+gap: 0px;
+opacity: 0px;
+
+  
+   } .uniquespecs1 h2{
+      font-family: Mona Sans;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 63px;
+  text-align: left;
+  text-transform:capitalize;}
+    .uniquespecs1 span{
+      font-family: Mona Sans;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 63px;
+  text-align: left;
+  color:#FF7500;
+  text-transform: capitalize;
+  
+    } .uniqueheadings{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+  }.uniquebox {
+
+    width: 433px;
+    height: 86px;
+    gap: 40px;
+    display: flex;
+    flex-direction: row;
+    /* background-color: #ffffff; */
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .uniquebox:hover {
+
+    width: 497px;
+    height: 150px;
+    padding: 32px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    border-radius: 10px 10px 10px 10px; /* Adjust the border-radius value to match the curvature */
+  border: 1px solid transparent; /* Set border to transparent */
+  border-image-source: linear-gradient(95.27deg, #fe7602 1.2%, rgba(254, 118, 2, 0) 100%);
+  border-image-slice: 1;
+  border-style: solid;
+    box-shadow: 
+      0px 2.31px 7.51px 0px rgba(0, 0, 0, 0.03),
+      0px 5.73px 14.32px 0px rgba(0, 0, 0, 0.04),
+      0px 11.09px 20.91px 0px rgba(0, 0, 0, 0.05),
+      0px 20.16px 28.5px 0px rgba(0, 0, 0, 0.06),
+      0px 37.89px 40.85px 0px rgba(0, 0, 0, 0.07),
+      0px 89px 80px 0px rgba(0, 0, 0, 0.1);
+  } .cardiv{
     position: relative;
     bottom: 72.5px;
     align-items: center;
@@ -1287,15 +1763,7 @@ left:400px;
   gap: 20px;
   
     }
-  .cardinside{
-      align-items: center;
-      justify-content: center;
-      width: 497px;
-      height: 126px;
-      gap: 0px;
-      opacity: 0px;
-    
-     } .cardinside h2{
+ .cardinside h2{
         font-family: Mona Sans;
     font-size: 42px;
     font-weight: 600;
@@ -1493,8 +1961,10 @@ left:400px;
       gap:200px;
       flex-direction: column;
       /* text-align: left; */
-      justify-content: start;
+      justify-content: center;
       align-items: start;
+      margin-left: auto;
+      margin-right: auto;
       color: white;
   }.pbuddy{
   
@@ -1785,7 +2255,17 @@ border-radius: 10px;
 opacity: 0px;
 /* angle: -0 deg; */
 
- }.cloudbuddy3 {
+ }
+ .pbuddy3 {
+  margin-top: 20px;
+  width: 600px;
+  margin-bottom: 30px;
+}
+.pbuddy3 p {
+  text-align: start;
+  font-size: 18px;
+  line-height: 26px;
+}.cloudbuddy3 {
     margin-top: 20px;
     width: 600px;
     margin-bottom: 30px;
@@ -2423,7 +2903,217 @@ gap:10px;
   }
 }
 @media screen and (max-width: 1600px) {
-  .cardiv{
+  .cardimage2{    width: 600px;
+    height: 687px;
+    position: relative;
+    bottom:30px;
+    right:4px;
+    border-radius: 20px;
+    
+    
+      }
+      .cardimage1{
+        width: 531px;
+    height: 378px;
+    position: relative;
+    bottom:30px;
+    right:4px;
+    border-radius: 20px;
+    
+    
+      }
+      .cardiv2{
+        
+        position: relative;
+        bottom: 410px;
+        align-items: center;
+        justify-content: center;
+       }.dottedcard2{
+        width: 502.84px;
+    height: 426.4px;
+    top:70px;
+    position: relative;
+    right: 400.5px; z-index: -1;
+    
+    
+    
+      
+       }.cardbuttonallspecs2{
+        background-color: white;
+        color: var(--Secondary, #16191C);
+      font-family: "Mona Sans";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+        display: flex;
+        flex-direction: row;
+        width: 147px;
+      height: 51px;
+      padding: 16px 30px 16px 30px;
+      gap: 10px;
+      border-radius: 10px ;
+      border: 1px solid #FF7500;
+      
+       }.wholecard1{
+        position: relative;
+        bottom:131px;
+        width:1219px;
+        height: 378px;
+        gap: 191px;
+       } .watchcard{
+          width: 62px;
+      height: 64px;
+      top: 1518px;
+      left: 1257px;
+      gap: 0px;
+      opacity: 0px;
+      
+        }.card{
+          width: 497px;
+          display: flex;
+          flex-direction: column;
+      height: 313px;
+      gap: 20px;
+      
+        }
+      .cardinside2{
+          align-items: start;
+          justify-content: center;
+          display: flex;
+          flex-direction: column;
+          height: 242px;
+          gap:20px;
+        
+         } .devices{
+          display: flex;
+          flex-direction: column;
+          gap:0px;
+         }.cardinside2 h2{
+            font-family: Mona Sans;
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 63px;
+        text-align: left;
+        text-transform:capitalize;}
+      
+        .cardinside2 p {
+          font-family: Mona Sans;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: left;
+          
+        }
+          .cardinside2 span{
+            font-family: Mona Sans;
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 63px;
+        text-align: left;
+        color:#FF7500;
+        text-transform: capitalize;
+        
+          }.cardiv{
+    position: relative;
+    bottom: 72.5px;
+    align-items: center;
+    justify-content: center;
+   }.dottedcard{
+    width: 25.01px;
+  height: 87px;
+  
+   }.cardbuttonallspecs{
+    background-color: white;
+    color: var(--Secondary, #16191C);
+  font-family: "Mona Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+    display: flex;
+    flex-direction: row;
+    width: 147px;
+  height: 51px;
+  padding: 16px 30px 16px 30px;
+  gap: 10px;
+  border-radius: 10px ;
+  border: 1px solid #FF7500;
+  
+   }.wholecard1{
+    bottom:131px;
+    position: relative;
+    width:1219px;
+    height: 378px;
+    gap: 191px;
+   } .watchcard{
+      width: 62px;
+  height: 64px;
+  top: 1518px;
+  left: 1257px;
+  gap: 0px;
+  opacity: 0px;
+  
+    }.card{
+      width: 497px;
+      display: flex;
+      flex-direction: column;
+  height: 413px;
+  gap: 20px;
+  
+    }
+  .cardinside{
+      align-items: start;
+      justify-content: start;
+      display: flex;
+      flex-direction: column;
+      height: 342px;
+      gap:20px;
+    
+     } .cardinside h2{
+        font-family: Mona Sans;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 63px;
+    text-align: left;
+    text-transform:capitalize;}
+    .cardinside a{
+      display: flex;
+      flex-direction: row;
+       gap:10px;
+    }
+    .cardinside p {
+      font-family: Mona Sans;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: left;
+      
+    }
+      .cardinside span{
+        font-family: Mona Sans;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 63px;
+    text-align: left;
+    color:#FF7500;
+    text-transform: capitalize;
+    
+      }.wholecard1{
+        width:1219px;
+        height: 378px;
+        gap: 191px;
+       }
+    .cardimage1{
+      width: 531px;
+  height: 378px;
+  position: relative;
+  bottom:30px;
+  right:4px;
+  border-radius: 20px;
+  
+  
+    }   .cardiv{
     position: relative;
     bottom: 72.5px;
     align-items: center;
@@ -2458,15 +3148,7 @@ gap:10px;
   gap: 20px;
   
     }
-  .cardinside{
-      align-items: center;
-      justify-content: center;
-      width: 497px;
-      height: 126px;
-      gap: 0px;
-      opacity: 0px;
-    
-     } .cardinside h2{
+  .cardinside h2{
         font-family: Mona Sans;
     font-size: 42px;
     font-weight: 600;
@@ -2573,7 +3255,7 @@ gap:10px;
     
     .uniquebox:hover {
   
-      width: 497px;
+      width: fit-content;
       height: 150px;
       padding: 32px;
       display: flex;
@@ -2652,33 +3334,26 @@ gap:10px;
     }.p_plan2{
       position: relative;
       bottom:325px;
-      right:0px;
+      right:-5px;
       display: flex;
       flex-direction: row;
-      gap:20px;
+      gap:10px;
       width:1219px;
       height: 558.62px;
-    }.pcontent-prev{
-      width: 1220.25px;
+    }.pcontent {
       display: flex;
-  justify-content: flex-start;
-      /* gap:200px; */
+      justify-content: flex-start; /* Align content to the left */
+      max-width: 1200px; /* Limit the maximum width */
+      margin: 0 auto; /* Center the content horizontally */
+      gap:200px;
       flex-direction: column;
-
-
-      align-items: start;
       color: white;
   }.pbuddy{
-
-    position:absolute;
-    margin-top:-200px;
-      position: relative;  
+    flex-shrink: 0; /* Ensures that pbuddy does not shrink */
         margin-top:172.5px;
           width: 600px;
           height: 296px;
           gap: 20px;
-          left:0px;
-          right:0px;
         }
         .pbuddy h2 {
           text-align: start;
@@ -2687,18 +3362,18 @@ gap:10px;
           font-size: 62px;
           line-height: 84px;
         } .pcontent_img{
-      position: relative;
-      right:-220px;
-      background-image: url('/ps/hero.png');
-      background-size:cover;
-      background-repeat: no-repeat;
-      width: 1491px;
-      height:1030px;
+          position: relative;
+          background-image: url('/ps/hero.png');
+          background-size: cover;
+          background-repeat: no-repeat;
+          width: 100%; /* Adjust width as needed */
+          max-width: 1491px; /* Limit the maximum width */
+          height: 1030px; /* Adjust height as needed */
     } .buddy_button1 h1 {
       padding: 15px 15px;
       font-size: 18px;
       line-height: 21.6px;
-    } .helpwidth{
+    }.helpwidth{
     width: 1219px;
   } .specs4inner1{
     display: flex;
@@ -2965,7 +3640,16 @@ border-radius: 10px;
 opacity: 0px;
 /* angle: -0 deg; */
 
- } .cloudbuddy3 {
+ } .pbuddy3 {
+  margin-top: 20px;
+  width: 600px;
+  margin-bottom: 30px;
+}
+.pbuddy3 p {
+  text-align: start;
+  font-size: 18px;
+  line-height: 26px;
+}.cloudbuddy3 {
     margin-top: 20px;
     width: 600px;
     margin-bottom: 30px;
@@ -3601,6 +4285,306 @@ gap:10px;
   }
 }
 @media screen and (max-width: 1200px) {
+  .uniqueposition{
+    position: relative;
+    bottom:550px;
+  } .position{
+    position: relative;
+    bottom:560px;
+  }.uniqueimage{
+    margin: auto;
+    width: fit-content;
+    height: fit-content; 
+    } .imagencontent{
+      
+    padding-top:57px;
+    width:1000px;
+    display: flex;
+    /* justify-content: space-between; */
+    gap:29.85px;
+    flex-direction: row;
+   } .unique{
+    width: 699px;
+height: 608px;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+  }.gapping{
+    display: flex;
+    flex-direction: column;
+    gap:100px;
+   } .cardimage2{    width: 600px;
+  height: 687px;
+  position: relative;
+  bottom:30px;
+  right:4px;
+  border-radius: 20px;
+  
+  
+    }
+    .cardimage1{
+      width: 531px;
+  height: 378px;
+  position: relative;
+  bottom:30px;
+  right:4px;
+  border-radius: 20px;
+  
+  
+    }
+    .cardiv2{
+      
+      position: relative;
+      bottom: 130px;
+      align-items: center;
+      justify-content: center;
+     }.dottedcard2{
+      rotate: -3deg;
+      width: 510.84px;
+      opacity: 0;
+  height: 520.4px;
+  top:70px;
+  position: relative;
+  right: 420.5px; z-index: -1;
+  
+  
+  
+    
+     }.cardbuttonallspecs2{
+        background-color: white;
+        color: var(--Secondary, #16191C);
+      font-family: "Mona Sans";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+        display: flex;
+        flex-direction: row;
+        width: 147px;
+      height: 51px;
+      padding: 16px 30px 16px 30px;
+      gap: 10px;
+      border-radius: 10px ;
+      border: 1px solid #FF7500;
+      
+       }.wholecard1{
+        position: relative;
+        bottom:131px;
+        width:1219px;
+        height: 378px;
+        gap: 191px;
+       } .watchcard{
+          width: 62px;
+      height: 64px;
+      top: 1518px;
+      left: 1257px;
+      gap: 0px;
+      opacity: 0px;
+      
+        }.card{
+          width: 497px;
+          display: flex;
+          flex-direction: column;
+      height: 313px;
+      gap: 20px;
+      
+        }
+      .cardinside2{
+          align-items: start;
+          justify-content: center;
+          display: flex;
+          flex-direction: column;
+          height: 242px;
+          gap:20px;
+        
+         } .devices{
+          display: flex;
+          flex-direction: column;
+          gap:0px;
+         }.cardinside2 h2{
+            font-family: Mona Sans;
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 63px;
+        text-align: left;
+        text-transform:capitalize;}
+      
+        .cardinside2 p {
+          font-family: Mona Sans;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: left;
+          
+        }
+          .cardinside2 span{
+            font-family: Mona Sans;
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 63px;
+        text-align: left;
+        color:#FF7500;
+        text-transform: capitalize;
+        
+          } 
+          .cardbuttonallspecs2{
+            margin-top:60px;
+            background-color: white;
+            color: var(--Secondary, #16191C);
+          font-family: "Mona Sans";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+            display: flex;
+            flex-direction: row;
+            width: 147px;
+          height: 51px;
+          padding: 16px 30px 16px 30px;
+          gap: 10px;
+          border-radius: 10px ;
+          border: 1px solid #FF7500;
+          
+           }  
+           .cardiv{
+    position: relative;
+    bottom: 72.5px;
+    align-items: center;
+    justify-content: center;
+   }.dottedcard{
+    width: 25.01px;
+  height: 87px;
+  
+   }.cardbuttonallspecs{
+    background-color: white;
+    color: var(--Secondary, #16191C);
+  font-family: "Mona Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+    display: flex;
+    flex-direction: row;
+    width: 147px;
+  height: 51px;
+  padding: 16px 30px 16px 30px;
+  gap: 10px;
+  border-radius: 10px ;
+  border: 1px solid #FF7500;
+  
+   }.wholecard1{
+    padding:0px 40px;
+    align-items: center;
+    justify-content: space-between;
+    width:auto;
+    height: 378px;
+   } .watchcard{
+      width: 62px;
+  height: 64px;
+  top: 1518px;
+  left: 1257px;
+  gap: 0px;
+  opacity: 0px;
+  
+    }.card{
+      position: relative;
+      bottom:80px;
+      width: 497px;
+      display: flex;
+      flex-direction: column;
+  height: 350px;
+  gap: 0px;
+  
+    }
+  .cardinside{
+      align-items: start;
+      justify-content: start;
+      display: flex;
+      flex-direction: column;
+      height: 342px;
+      gap:20px;
+    
+     } .cardinside h2{
+        font-family: Mona Sans;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 63px;
+    text-align: left;
+    text-transform:capitalize;}
+    .cardinside a{
+      display: flex;
+      flex-direction: row;
+       gap:10px;
+    }
+    .cardinside p {
+      font-family: Mona Sans;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: left;
+      
+    }
+      .cardinside span{
+        font-family: Mona Sans;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 63px;
+    text-align: left;
+    color:#FF7500;
+    text-transform: capitalize;
+    
+      }.wholecard1{
+      display: flex;
+      flex-direction: row;
+      gap:10px;
+      position: relative;
+      bottom:800px;
+    }
+    .cardimage1{
+      width: 531px;
+  height: 378px;
+  position: relative;
+  bottom:30px;
+  right:4px;
+  border-radius: 20px;
+  
+  
+    }   .cardiv{
+    position: relative;
+    bottom: 72.5px;
+    align-items: center;
+    justify-content: center;
+   }.p_plan2{
+    left:-10px;
+margin:0 auto;
+    display: flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    gap:20px;
+    width:fit-content;
+    height:1200px;
+  }.pbuddy {
+    margin-top:172.5px;
+    flex-shrink: 0; /* Ensures that pbuddy does not shrink */
+    width:600px; /* Adjust width as needed */
+  }
+  
+  .pcontent {
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    max-width: 1200px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the content horizontally */
+  }
+  
+  .pcontent_img {
+    position: relative;
+    background-image: url('/ps/hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%; /* Adjust width as needed */
+    max-width: 970px; /* Limit the maximum width */
+    height: 1030px; /* Adjust height as needed */
+  }
   .helpwidth{
     width:auto  ;
   }.specs4inner1{
@@ -3876,7 +4860,16 @@ border-radius: 10px;
 opacity: 0px;
 /* angle: -0 deg; */
 
- } .cloudbuddy3 {
+ }  .pbuddy3 {
+  margin-top: 20px;
+  width: 600px;
+  margin-bottom: 30px;
+}
+.pbuddy3 p {
+  text-align: start;
+  font-size: 18px;
+  line-height: 26px;
+}.cloudbuddy3 {
     margin-top: 20px;
     width: 600px;
     margin-bottom: 30px;
@@ -4543,7 +5536,305 @@ padding:0px 20px;
   }
 }
   @media screen and (max-width: 1000px) {
-  .specs4inner1{
+    .uniqueposition{
+      position: relative;
+      bottom:630px;
+    }   .position{
+      position: relative;
+      bottom:600px;
+    } .uniqueimage{
+    margin: auto;
+    width: fit-content;
+    height: fit-content; 
+    } .imagencontent{
+      padding:0 50px;
+    padding-top:57px;
+    width:700px;
+    display: flex;
+    /* justify-content: space-between; */
+    gap:29.85px;
+    height: auto;
+    flex-direction:column;
+   } .unique{
+    width: 699px;
+height: 608px;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+  }  .gapping{
+      display: flex;
+      flex-direction: column;
+      gap:100px;
+     } .cardimage2{    width: 700px;
+    height: 687px;
+    position: relative;
+    bottom:30px;
+    right:4px;
+    border-radius: 20px;
+    
+    
+      }
+      .cardimage1{
+        width: 531px;
+    height: 378px;
+    position: relative;
+    bottom:30px;
+    right:4px;
+    border-radius: 20px;
+    
+    
+      }
+      .cardiv2{
+        
+        position: relative;
+        bottom: 130px;
+        align-items: center;
+        justify-content: center;
+       }.dottedcard2{
+        rotate: -3deg;
+        width: 510.84px;
+        opacity: 0;
+    height: 520.4px;
+    top:70px;
+    position: relative;
+    right: 420.5px; z-index: -1;
+    
+    
+    
+      
+       }.cardbuttonallspecs2{
+          background-color: white;
+          color: var(--Secondary, #16191C);
+        font-family: "Mona Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+          display: flex;
+          flex-direction: row;
+          width: 147px;
+        height: 51px;
+        padding: 16px 30px 16px 30px;
+        gap: 10px;
+        border-radius: 10px ;
+        border: 1px solid #FF7500;
+        
+         }.wholecard1{
+          position: relative;
+          bottom:131px;
+          width:1219px;
+          height: 378px;
+          gap: 191px;
+         } .watchcard{
+            width: 62px;
+        height: 64px;
+        top: 1518px;
+        left: 1257px;
+        gap: 0px;
+        opacity: 0px;
+        
+          }.card2{
+            width: 497px;
+            display: flex;
+            flex-direction: column;
+        height: 313px;
+        gap: 20px;
+        
+          }
+        .cardinside2{
+          align-items: start;
+          justify-content: start;
+          display: flex;
+          flex-direction: column;
+          height: 242px;
+          gap:20px;
+          
+           } .devices{
+            display: flex;
+            flex-direction: column;
+            gap:0px;
+           }.cardinside2 h2{
+            font-family: Mona Sans;
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 43px;
+            text-align: left;
+            text-transform:capitalize;}
+        
+          .cardinside2 p {
+            font-family: Mona Sans;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            
+          }
+            .cardinside2 span{
+              font-family: Mona Sans;
+              font-size: 32px;
+              font-weight: 600;
+              line-height: 43px;
+              text-align: left;
+              color:#FF7500;
+              text-transform: capitalize;
+          
+            }   
+             .cardiv{
+      position: relative;
+      bottom: 72.5px;
+      align-items: center;
+      justify-content: center;
+     }.dottedcard{
+      width: 25.01px;
+    height: 87px;
+    
+     }.cardbuttonallspecs{
+      background-color: white;
+      color: var(--Secondary, #16191C);
+    font-family: "Mona Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+      display: flex;
+      flex-direction: row;
+      width: 147px;
+    height: 51px;
+    padding: 16px 30px 16px 30px;
+    gap: 10px;
+    border-radius: 10px ;
+    border: 1px solid #FF7500;
+    
+     } .cardiv{
+      position: relative;
+      bottom: 72.5px;
+      align-items: center;
+      justify-content: center;
+     }.dottedcard{
+      width: 25.01px;
+    height: 87px;
+    
+     }.cardbuttonallspecs{
+      background-color: white;
+      color: var(--Secondary, #16191C);
+    font-family: "Mona Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+      display: flex;
+      flex-direction: row;
+      width: 147px;
+    height: 51px;
+    padding: 16px 30px 16px 30px;
+    gap: 10px;
+    border-radius: 10px ;
+    border: 1px solid #FF7500;
+    
+     }.wholecard1{
+      padding:0px 40px;
+      align-items: center;
+      justify-content: space-between;
+      width:auto;
+      height: 378px;
+     } .watchcard{
+        width: 62px;
+    height: 64px;
+    top: 1518px;
+    left: 1257px;
+    gap: 0px;
+    opacity: 0px;
+    
+      }.card{
+        position: relative;
+        bottom:60px;
+        width: 497px;
+        display: flex;
+        flex-direction: column;
+    height: 300px;
+    gap: 10px;
+    
+      }
+    .cardinside{
+        align-items: start;
+        justify-content: start;
+        display: flex;
+        flex-direction: column;
+        height: 242px;
+        gap:0px;
+      
+       } .cardinside h2{
+          font-family: Mona Sans;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 43px;
+      text-align: left;
+      text-transform:capitalize;}
+      .cardinside a{
+        display: flex;
+        flex-direction: row;
+         gap:10px;
+      }
+      .cardinside p {
+        font-family: Mona Sans;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        
+      }
+        .cardinside span{
+          font-family: Mona Sans;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 43px;
+      text-align: left;
+      color:#FF7500;
+      text-transform: capitalize;
+      
+        }.wholecard1{
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+        position: relative;
+        bottom:800px;
+      }
+      .cardimage1{
+        width: 631px;
+    height: 378px;
+    position: relative;
+    bottom:30px;
+    right:4px;
+    border-radius: 20px;
+    
+    
+      }   .cardiv{
+      position: relative;
+      bottom: 72.5px;
+      align-items: center;
+      justify-content: center;
+     }  .pbuddy {
+      margin-top:172.5px;
+      flex-shrink: 0; /* Ensures that pbuddy does not shrink */
+      width:600px; /* Adjust width as needed */
+    }
+    
+    .pcontent {
+      display: flex;
+      justify-content: flex-start; /* Align content to the left */
+      max-width: 1200px; /* Limit the maximum width */
+      margin: 0 auto; /* Center the content horizontally */
+    }
+    
+    .pcontent_img {
+      position: relative;
+      background-image: url('/ps/hero.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%; /* Adjust width as needed */
+      max-width: 730px; /* Limit the maximum width */
+      height: 1030px; /* Adjust height as needed */
+    }.specs4inner1{
     display: flex;
     flex-direction: column;
     gap:20px;
@@ -4834,7 +6125,16 @@ border-radius: 10px;
 opacity: 0px;
 /* angle: -0 deg; */
 
- }  .cloudbuddy3 {
+ }.pbuddy3 {
+  margin-top: 20px;
+  width: 600px;
+  margin-bottom: 30px;
+}
+.pbuddy3 p {
+  text-align: start;
+  font-size: 18px;
+  line-height: 26px;
+}  .cloudbuddy3 {
     margin-top: 20px;
     width: 600px;
     margin-bottom: 30px;
@@ -5411,7 +6711,216 @@ padding:0px 20px;
   }
 }
 @media screen and (max-width:767px) {
-  .specs4inner1{
+ .uniqueposition{
+    position: relative;
+    top:1200px;
+  } .uniquespecs2{
+    width: 600px;
+    height: 72px;   
+   } .uniquespecs2 p{
+    width: 550px;
+    font-family: Mona Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  
+   }.uniquespecs1{
+    align-items: center;
+    justify-content: center;
+width: 600px;
+height: 63px;
+gap: 0px;
+opacity: 0px;
+
+  
+   } .uniquespecs1 h2{
+      font-family: Mona Sans;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 63px;
+  text-align: left;
+  text-transform:capitalize;}
+    .uniquespecs1 span{
+      font-family: Mona Sans;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 63px;
+  text-align: left;
+  color:#FF7500;
+  text-transform: capitalize;
+  
+    } .unique{
+    width: 600px;
+height: 608px;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+  } .imagencontent{
+      
+    padding-top:57px;
+    width:600px;
+    display: flex;
+    /* justify-content: space-between; */
+    gap:29.85px;
+    flex-direction: column;
+   }.position{
+    position: relative;
+    top:1200px;
+  }.gapping{
+    display: flex;
+    flex-direction: column;
+    gap:380px;
+   } .cardiv{
+    position: relative;
+    bottom: 72.5px;
+    align-items: center;
+    justify-content: center;
+   }.dottedcard{
+    width: 25.01px;
+  height: 87px;
+  opacity: 0;
+  
+   }.cardbuttonallspecs{
+    background-color: white;
+    color: var(--Secondary, #16191C);
+  font-family: "Mona Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+    display: flex;
+    flex-direction: row;
+    width: 147px;
+  height: 51px;
+  padding: 16px 30px 16px 30px;
+  gap: 10px;
+  border-radius: 10px ;
+  border: 1px solid #FF7500;
+  
+   }.wholecard1{
+    padding:0px 40px;
+    align-items: center;
+    justify-content: space-between;
+    width:fit-content;
+    height: 378px;
+   } .watchcard{
+      width: 62px;
+  height: 64px;
+  top: 1518px;
+  left: 1257px;
+  gap: 0px;
+  opacity: 0px;
+  
+    }.card{
+      position: relative;
+      bottom:60px;
+      width: 497px;
+      display: flex;
+      flex-direction: column;
+  height: 250px;
+  gap: 10px;
+  
+    }
+  .cardinside{
+      align-items: start;
+      justify-content: start;
+      display: flex;
+      flex-direction: column;
+      height: 242px;
+      gap:0px;
+    
+     } .cardinside h2{
+        font-family: Mona Sans;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 43px;
+    text-align: left;
+    text-transform:capitalize;}
+    .cardinside a{
+      display: flex;
+      flex-direction: row;
+       gap:10px;
+    }
+    .cardinside p {
+      font-family: Mona Sans;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: left;
+      
+    }
+      .cardinside span{
+        font-family: Mona Sans;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 43px;
+    text-align: left;
+    color:#FF7500;
+    text-transform: capitalize;
+    
+      }.wholecard1{
+      display: flex;
+      flex-direction: column;
+      gap:10px;
+      position: relative;
+      top:250px;
+    }
+    .cardimage1{
+      width: 631px;
+  height: 378px;
+  position: relative;
+  bottom:30px;
+  right:4px;
+  border-radius: 20px;
+  
+  
+    }   .cardiv{
+    position: relative;
+    bottom: 72.5px;
+    align-items: center;
+    justify-content: center;
+   }  .p_plan2{
+    left:0px;
+    margin:0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction:row;
+        flex-wrap:wrap;
+        gap:20px;
+        width:fit-content;
+        height:1200px;
+      } .pbuddy3 {
+    margin-top: 20px;
+    width: 500px;
+    margin-bottom: 30px;
+  }
+  .pbuddy3 p {
+    text-align: start;
+    font-size: 18px;
+    line-height: 26px;
+  }.pbuddy {
+    margin-top:172.5px;
+    flex-shrink: 0; /* Ensures that pbuddy does not shrink */
+    width:600px; /* Adjust width as needed */
+  }
+  
+  .pcontent {
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    max-width: 1200px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the content horizontally */
+  }
+  
+  .pcontent_img {
+    position: relative;
+    background-image: url('/ps/hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%; /* Adjust width as needed */
+    max-width: 570px; /* Limit the maximum width */
+    height: 1030px; /* Adjust height as needed */
+  }.specs4inner1{
     display: flex;
     flex-direction: column;
     gap:20px;
@@ -6273,7 +7782,298 @@ padding:0px 20px;
   }
 }
 @media screen and (max-width: 600px) {
-  .specs4inner1{
+  .uniqueposition{
+    position: relative;
+    top:850px;
+  }.uniqueseparateline{
+    padding:10px 0px;
+    width:fit-content;
+    opacity: 100%;
+    position: relative;
+    left:0px;
+  } .imagencontent{
+    width: fit-content;
+  }
+  .boxinside{width: fit-content;}
+  .uniquebox{
+    width: fit-content;
+  }
+  .unique{
+   width:fit-content;
+    gap:60px;
+  }  .uniquespecs1 span{
+    font-family: Mona Sans;
+font-size: 26px;
+font-weight: 600;
+line-height: 63px;
+text-align: left;
+color:#FF7500;
+text-transform: capitalize;
+
+  } .uniquespecs2{
+    width: fit-content;
+    height: 72px;   
+   } .uniquespecs2 p{
+    width: fit-content;
+    font-family: Mona Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  
+   }.uniquespecs1{
+    align-items: center;
+    justify-content: center;
+width: fit-content;
+height: 63px;
+gap: 0px;
+opacity: 0px;
+
+  
+   }.uniqueheadings{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+  } .uniquespecs1 h2{
+    font-family: Mona Sans;
+font-size: 26px;
+font-weight: 600;
+line-height: 33px;
+text-align: left;
+text-transform:capitalize;}.cardiv2{
+        
+    position: relative;
+    bottom: 350px;
+    align-items: center;
+    justify-content: center;
+   } .gapping{
+  gap:570px;
+ } .cardiv{
+    position: relative;
+    bottom: 72.5px;
+    align-items: center;
+    justify-content: center;
+   }.dottedcard{
+    width: 25.01px;
+  height: 87px;
+  opacity: 0;
+  
+   }.cardbuttonallspecs2{
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: var(--Secondary, #16191C);
+  font-family: "Mona Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+    display: flex;
+    flex-direction: row;
+    width: 147px;
+  height: 51px;
+  padding: 16px 30px 16px 30px;
+  gap: 10px;
+  border-radius: 10px ;
+  border: 1px solid #FF7500;
+  
+   }.wholecard1{
+    padding:0px 40px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width:fit-content;
+    gap:0px;
+    height: 378px;
+   } .watchcard{
+      width: 62px;
+  height: 64px;
+  top: 1518px;
+  left: 1257px;
+  gap: 0px;
+  opacity: 0px;
+  
+    }.card{
+      position: relative;
+      bottom:60px;
+      justify-content: center;
+      align-items: center;
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+  height: 150px;
+  gap: 15px;
+  
+    }
+    .card2{
+      position: relative;
+      bottom:60px;
+      justify-content: center;
+      align-items: center;
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+  height: 150px;
+  gap: 15px;
+  
+    }
+  .cardinside{
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      height: 242px;
+      gap:0px;
+    
+     } .cardinside2{
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      height: 242px;
+      gap:20px;
+    
+     } .cardinside h2{
+        font-family: Mona Sans;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+    text-align: center;
+    text-transform:capitalize;}
+    .cardinside2 h2{
+      font-family: Mona Sans;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  text-align: center;
+  text-transform:capitalize;}
+    .cardinside a{
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+      flex-direction: row;
+       gap:10px;
+    }
+    .cardinside p {
+width: fit-content;
+      font-family: Mona Sans;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: center;
+      
+    } .cardinside2 p {
+      width: fit-content;
+            font-family: Mona Sans;
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+            
+          }
+      .cardinside span{
+        font-family: Mona Sans;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+    text-align: left;
+    color:#FF7500;
+    text-transform: capitalize;
+    
+      }
+      .cardinside2 span{
+        font-family: Mona Sans;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+    text-align: left;
+    color:#FF7500;
+    text-transform: capitalize;
+    
+      }.wholecard1{
+      display: flex;
+      flex-direction: column;
+      gap:20px;
+      position: relative;
+      top:250px;
+    }
+    .wholecard2{
+      display: flex;
+      flex-direction: column;
+      gap:10px;
+      position: relative;
+      top:250px;
+    }
+    .cardimage1{
+      width: 631px;
+  height: 378px;
+  position: relative;
+  bottom:30px;
+  right:4px;
+  border-radius: 20px;
+  
+  
+    }   .cardiv{
+    position: relative;
+    bottom: 72.5px;
+    align-items: center;
+    justify-content: center;
+   }  .p_plan2{
+    left:0px;
+    margin:0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction:row;
+        flex-wrap:wrap;
+        gap:20px;
+        width:fit-content;
+        height:1200px;
+      }  .pbuddy2 {
+        width: 360px;
+    height:100px;
+    margin-bottom: 0px;
+  }
+  .pbuddy2  h2{
+    margin-top: 20px;
+
+    text-align: start;
+    font-size: 50px;
+    line-height: 56px;
+  }
+  .pbuddy3 {
+    margin-top: 40px;
+    width: 300px;
+    margin-bottom: 30px;
+  }
+ 
+  .pbuddy3 p {
+    text-align: start;
+    font-size: 16px;
+    line-height: 26px;
+  }.pbuddy {  
+    padding:0px 20px;
+    margin-top:172.5px;
+    flex-shrink: 0; /* Ensures that pbuddy does not shrink */
+    width:600px; /* Adjust width as needed */
+  }
+  
+  .pcontent {
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    max-width: 1200px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the content horizontally */
+  }
+  
+  .pcontent_img {
+    position: relative;
+    background-image: url('/ps/hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%; /* Adjust width as needed */
+    max-width: 570px; /* Limit the maximum width */
+    height: 1030px; /* Adjust height as needed */
+  }.specs4inner1{
     display: flex;
     flex-direction: column;
     gap:20px;
@@ -6374,7 +8174,8 @@ justify-content: space-between;
     width:200px;
    position: relative;}
   .box-container {
-  width:200px;
+    overflow:hidden;
+  width:fit-content;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -6432,7 +8233,7 @@ position: relative;
   .boxinside p {
     font-family: Mona Sans;
     opacity: 70%;
-    width:300px;
+    width:fit-content;
     font-size: 10px;
     font-weight: 300;
     line-height: 14px;
@@ -7085,7 +8886,201 @@ padding:0px 20px;
   }
 }
 @media screen and (max-width: 380px) {
-  .specs4inner1{
+  .uniqueposition{
+    position: relative;
+    top:1050px;
+  } .cardiv2{
+        
+    position: relative;
+    bottom: 350px;
+    align-items: center;
+    justify-content: center;
+   }.card2{
+  width:200px;
+ } .cardiv2{
+        
+    position: relative;
+    bottom: 500px;
+    align-items: center;
+    justify-content: center;
+   }.cardiv{
+    position: relative;
+    bottom: 72.5px;
+    align-items: center;
+    justify-content: center;
+   }.dottedcard{
+    width: 25.01px;
+  height: 87px;
+  opacity: 0;
+  
+   }.cardbuttonallspecs{
+    background-color: white;
+    color: var(--Secondary, #16191C);
+  font-family: "Mona Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+    display: flex;
+    flex-direction: row;
+    width: 147px;
+  height: 51px;
+  padding: 16px 30px 16px 30px;
+  gap: 10px;
+  border-radius: 10px ;
+  border: 1px solid #FF7500;
+  
+   }.wholecard1{
+    padding:0px 40px;
+    align-items: center;
+    justify-content: space-between;
+    width:auto;
+    height: 378px;
+   } .watchcard{
+      width: 62px;
+  height: 64px;
+  top: 1518px;
+  left: 1257px;
+  gap: 0px;
+  opacity: 0px;
+  
+    }.card{
+      position: relative;
+      bottom:60px;
+      justify-content: center;
+      align-items: center;
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+  height: 150px;
+  gap: 15px;
+  
+    }
+  .cardinside{
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      height: 242px;
+      gap:0px;
+    
+     } .cardinside h2{
+        font-family: Mona Sans;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+    text-align: center;
+    text-transform:capitalize;}
+    .cardinside a{
+  text-align: left;
+  justify-content:start;
+  align-items: start;
+      flex-direction: row;
+       gap:10px;
+    }
+    .cardinside p {
+width:fit-content;
+      font-family: Mona Sans;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: left;
+      
+    }
+    .cardinside2 p {
+      width:fit-content;
+            font-family: Mona Sans;
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: left;
+                  
+          }
+      .cardinside span{
+        font-family: Mona Sans;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+    text-align: left;
+    color:#FF7500;
+    text-transform: capitalize;
+    
+      }.wholecard1{
+      display: flex;
+      flex-direction: column;
+      gap:10px;
+      position: relative;
+      top:750px;
+    }
+    .cardimage1{
+      width:auto;
+  height: 378px;
+  position: relative;
+  bottom:30px;
+  right:4px;
+  border-radius: 20px;
+  
+  
+    }   .cardiv{
+    position: relative;
+    bottom: 72.5px;
+    align-items: center;
+    justify-content: center;
+   } .p_plan2{
+  left:0px;
+    margin:200px auto;
+        display: flex;
+        justify-content: center;
+        flex-direction:row;
+        flex-wrap:wrap;
+        gap:20px;
+        width:fit-content;
+        height:1200px;
+      } .pbuddy2 {
+    width: 200px;
+height:100px;
+margin-bottom: 0px;
+}
+.pbuddy2  h2{
+margin-top: 20px;
+
+text-align: start;
+font-size: 50px;
+line-height: 56px;
+}
+.pbuddy3 {
+margin-top: 100px;
+width: 200px;
+margin-bottom: 30px;
+}
+
+.pbuddy3 p {
+text-align: start;
+font-size: 16px;
+line-height: 26px;
+}.pbuddy {  
+padding:0px 20px;
+margin-top:172.5px;
+flex-shrink: 0; /* Ensures that pbuddy does not shrink */
+width:600px; /* Adjust width as needed */
+}
+
+.pcontent {
+display: flex;
+justify-content: flex-start; /* Align content to the left */
+max-width: 1200px; /* Limit the maximum width */
+margin: 0 auto; /* Center the content horizontally */
+}
+
+.pcontent_img {
+position: relative;
+background-image: url('/ps/hero.png');
+background-size: cover;
+background-repeat: no-repeat;
+width: 100%; /* Adjust width as needed */
+max-width: 570px; /* Limit the maximum width */
+height: 1030px; /* Adjust height as needed */
+}.specs4inner1{
     display: flex;
     flex-direction: column;
     gap:20px;
@@ -7229,7 +9224,7 @@ position: relative;
     display: flex;
     flex-direction: column;
     gap:2px;
-    width:200px;
+    width:fit-content;
   }
   
   .boxinside h2 {
@@ -7238,13 +9233,13 @@ position: relative;
     font-weight: 700;
     line-height: 20px;
     text-align: left;
-    width:100px;
+    width:fit-content;
   }
   
   .boxinside p {
     font-family: Mona Sans;
     opacity: 70%;
-    width:100px;
+    width:fit-content;
     font-size: 6px;
     font-weight: 300;
     line-height: 14px;

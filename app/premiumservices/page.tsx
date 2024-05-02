@@ -223,11 +223,12 @@ const page = () => {
     
     
 </div>
-{/* <div>
+<div>
   <Card/>
-</div> */}
-{/* <div><Unique/></div> */}
-      {/* <div><ContactForm/></div> */}
+</div>
+<div className='uniqueposition pt-[40px] pb-[40px] 2xl:pt-[280px] xl:pt-[270px] xl:pb-[130px] 2xl:pb-[130px]  bl:pt-[70px] bl:pb-[70px]  md:pt-[70px] md:pb-[70px]  lg:pt-[40px] lg:pb-[40px]  sm:pt-[40px] sm:pb-[40px]'><Unique/></div>
+
+      <div><ContactForm/></div>
     </div>
   )
 }
