@@ -22,18 +22,19 @@ const Unique = () => {
             </p>
           </div>
           <div className="space-y-2 2xl:max-w-xl">
-            <div className="relative group space-y-3">
-              <div className="cursor-pointer flex w-full group hover:bg-white transition-all duration-300 border-gradient hover:shadow-2xl rounded-xl">
+            <div className="relative group1  space-y-3">
+              <div className="cursor-pointer flex w-full group1  hover:bg-white transition-all duration-300 border-gradient hover:shadow-2xl rounded-xl">
                 <div className="ml-8 flex bl:flex-row items-center">
 
                 <svg
+                className="group"
           width="58"
           height="58"
           viewBox="0 0 48 48"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g opacity="0.3">
+          <g opacity="0.3" className="group">
             {" "}
             <path
               d="M15 12C14.6022 12 14.2206 12.158 13.9393 12.4393C13.658 12.7206 13.5 13.1022 13.5 13.5C13.5 13.8978 13.658 14.2794 13.9393 14.5607C14.2206 14.842 14.6022 15 15 15H33C33.3978 15 33.7794 14.842 34.0607 14.5607C34.342 14.2794 34.5 13.8978 34.5 13.5C34.5 13.1022 34.342 12.7206 34.0607 12.4393C33.7794 12.158 33.3978 12 33 12H15ZM13.5 19.5C13.5 19.1022 13.658 18.7206 13.9393 18.4393C14.2206 18.158 14.6022 18 15 18H33C33.3978 18 33.7794 18.158 34.0607 18.4393C34.342 18.7206 34.5 19.1022 34.5 19.5C34.5 19.8978 34.342 20.2794 34.0607 20.5607C33.7794 20.842 33.3978 21 33 21H15C14.6022 21 14.2206 20.842 13.9393 20.5607C13.658 20.2794 13.5 19.8978 13.5 19.5ZM15 24C14.6022 24 14.2206 24.158 13.9393 24.4393C13.658 24.7206 13.5 25.1022 13.5 25.5C13.5 25.8978 13.658 26.2794 13.9393 26.5607C14.2206 26.842 14.6022 27 15 27H33C33.3978 27 33.7794 26.842 34.0607 26.5607C34.342 26.2794 34.5 25.8978 34.5 25.5C34.5 25.1022 34.342 24.7206 34.0607 24.4393C33.7794 24.158 33.3978 24 33 24H15ZM15 30C14.6022 30 14.2206 30.158 13.9393 30.4393C13.658 30.7206 13.5 31.1022 13.5 31.5C13.5 31.8978 13.658 32.2794 13.9393 32.5607C14.2206 32.842 14.6022 33 15 33H24C24.3978 33 24.7794 32.842 25.0607 32.5607C25.342 32.2794 25.5 31.8978 25.5 31.5C25.5 31.1022 25.342 30.7206 25.0607 30.4393C24.7794 30.158 24.3978 30 24 30H15Z"
@@ -48,7 +49,7 @@ const Unique = () => {
       
  
                   <div className="transition-all duration-300 cursor-pointer m-8 bl:gap-6 text-[#16191C]">
-                    <h2 className="text-[24px] font-bold opacity-1 mb-4 group-hover:text-orange-500">24/7 & 365 Days Support </h2>
+                    <h2 className="text-[24px] font-bold opacity-1 mb-4 group-hover:text-orange-500 ">24/7 & 365 Days Support </h2>
                     <p className="font-mona-sans text-[16px] font-normal leading-normal text-left">
                     Euismod egestas suspendisse aliquet amet ultrices faucibus mauris sit odio.                    </p>
                   </div>

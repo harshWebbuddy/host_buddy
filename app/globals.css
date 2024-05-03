@@ -73,6 +73,20 @@
   content: url('/ps/orangeunique1.svg');
 
 }
+.group1:hover svg g{
+  opacity: 1;
+}
+ .group1:hover  svg path {
+  opacity: 1;
+  fill: #FF7500;
+}
+.group:hover  svg path {
+  fill: white;
+}
+.group:hover .featuresvg svg path{
+  stroke:#FF7500;
+  fill: black;
+}
 
 /* top-[100px]   md:top-[50px] left-[23px] md:left-[50px] xl:left-[80px] 2xl:left-[350px] w-full h-[757px] xl:w-[1220px] 2xl:w-[1220px] flex flex-col 2xl:flex-row justify-between items-center@media screen and (max-width: 1920px) { */
 .welcome {
@@ -1000,8 +1014,6 @@ width:349.03px;
 height:262px;
 gap:45px;
  }
-
-
 
  .group:hover  svg path {
   fill: white;
