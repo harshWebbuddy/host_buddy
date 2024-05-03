@@ -6,6 +6,7 @@ import { SetStateAction, useEffect, useState } from "react";
 import MobileSidebar from "../components/MobileSidebar";
 import { motion } from "framer-motion";
 import Logo from "./shared/Logo";
+import Image from "next/image";
 
 interface NavLink {
   href: string;
@@ -173,7 +174,8 @@ const NavBar = () => {
           </motion.button>
           <motion.button className="text-white flex flex-row items-center justify-center bg-orange-500 hover:bg-orange-600 rounded-bl px-4 py-2" whileHover={{ scale: 1.2 }}>
             Sign Up
-            <img src="/signuparrow.svg" className="ml-2"/>
+            {/* <img src="/signuparrow.svg" className="ml-2"/> */}
+            <Image src="/signuparrow.svg" className="ml-2" alt="" width={28} height={1}/>
           </motion.button>
         </div>
       </nav>
