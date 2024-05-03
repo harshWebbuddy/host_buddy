@@ -152,7 +152,7 @@ const page = () => {
     </div></div>
     <div className='group'>
       <div className='plan2box bg-[#F9EFE4] group-hover:bg-[#16191C]'>
-<div className='.plan2boxinner mt-8'>
+<div className='.plan2boxinner '>
     <div className='plan2boxinner1 mx-auto'>
       <div className=''>  <div>
             <h2 className='ignite font-mono-sans mx-auto text-black group-hover:text-white'>STELLER</h2>
