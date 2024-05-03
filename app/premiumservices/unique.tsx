@@ -119,7 +119,7 @@ const Unique = () => {
             />
           </g>
         </svg>                <div className="transition-all duration-300 cursor-pointer m-8 bl:gap-6 text-[#16191C]">
-                  <h2 className="text-[24px] font-bold opacity-1 mb-4 group-hover:text-orange-500">Perfomance Optimized </h2>
+                  <h2 className="text-[24px] font-bold opacity-1 mb-4 !group-hover:text-orange-500">Perfomance Optimized </h2>
                   <p className="font-mona-sans text-[16px] font-normal leading-normal text-left">
                     Euismod egestas suspendisse aliquet amet ultrices faucibus mauris sit odio.
                   </p>

@@ -59,7 +59,7 @@ export default function HomeMainPage() {
 
       {/* rating and web hosting plans page */}
       <section>
-        <div className="space-y-20 px-4">
+        <div className="  ">
           <Ratingpanel />
           <Plans />
         </div>
