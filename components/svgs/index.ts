@@ -3,3 +3,4 @@ export { default as Panelb } from "@/public/homegaming/panelb.svg";
 export { default as Panelc } from "@/public/homegaming/panelc.svg";
 
 export { default as Star } from "@/public/star-yellow.svg";
+export { default as ArrowIcon } from "@/public/hosting/ArrowIcon.svg";
