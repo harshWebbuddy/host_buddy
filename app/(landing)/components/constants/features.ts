@@ -91,46 +91,5 @@ export const testimonials = [
     number: '09',
 
   },
-
-    {
-    author: {
-      image_url: "/hosting/feature6.svg",
-      names: "1-Click Installer",
-    },
-    testimonial:
-      "Guided by the project manager, we start to identify, shape and validate your product idea, in order to have a perfect alignment from the requirements perspective.",
-    number: '07',
-
-  },
-   {
-    author: {
-      image_url: "/hosting/feature7.svg",
-      names: "Instant Account Setup",
-    },
-    testimonial:
-      "Guided by the project manager, we start to identify, shape and validate your product idea, in order to have a perfect alignment from the requirements perspective.",
-    number: '08',
-
-  },
-   {
-    author: {
-      image_url: "/hosting/feature8.svg",
-      names: "Latest PHP & MySQL",
-    },
-    testimonial:
-      "Thank you for the extremely valuable knowledge you shared with us during your presentation of a clinical trial protocol at Fastrack! Your honesty was refreshing and much needed. You truly brought a perspective to the table that hadn’t been considered yet in the course.",
-    number: '08',
-
-  },
- {
-    author: {
-      image_url: "/hosting/feature9.svg",
-      names: "Malware Scan & Removal",
-    },
-    testimonial:
-      "Thank you for the extremely valuable knowledge you shared with us during your presentation of a clinical trial protocol at Fastrack! Your honesty was refreshing and much needed. You truly brought a perspective to the table that hadn’t been considered yet in the course.",
-    number: '09',
-
-  },
  
 ];
