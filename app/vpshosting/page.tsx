@@ -30,9 +30,9 @@ const page = () => {
         </section>
 
         {/* plan page */}
-        {/* <div className='pt-32 pb-32'>
+        <div className='pt-32 pb-32'>
           <Plan2/>
-        </div> */}
+        </div>
         {/* what make hostbuddy unique section */}
         <section>
           <Unique/>
