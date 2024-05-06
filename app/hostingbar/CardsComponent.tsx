@@ -4,7 +4,7 @@ import React from "react";
 
 const CardsComponent = () => {
   return (
-    <div className="space-y-28 p-4 max-w-[1300px] mx-auto">
+    <div className="space-y-28 p-4 max-w-[1300px] mx-auto pt-36 pb-20">
       <div className="w-full flex flex-col xl:flex-row gap-16 items-center">
         <div className="w-full space-y-4 items-start">
           <div className="item-start pr-20">
@@ -93,8 +93,7 @@ Outbound e-Mail Security
 Enhance Your Hosting Experience! Boost website load times to maximize server response, SEO rankings, and sales. Opt for a server closer to your audience, especially in India, for enhanced reliability and lightning-fast page loads.              </p>
             </li>
            <button className="bg-white border-orange-500 border flex flex-row  items-center justify-center">
-              <h2 className="font-medium text-[16px]  leading-normal ">Get Started </h2> <img src="/hosting/ArrowIcon.svg" className="pl-4 items-center justify-center "/>
-
+              <h2 className="font-medium text-[16px]  leading-normal ">Get Started </h2> <img src="/hosting/ArrowIcon.svg" className="pl-4 -mt-0.5 "/>
           </button>
           </ul>
          
@@ -118,7 +117,7 @@ Enhance Your Hosting Experience! Boost website load times to maximize server res
 Enhance Your Hosting Experience! Boost website load times to maximize server response, SEO rankings, and sales. Opt for a server closer to your audience, especially in India, for enhanced reliability and lightning-fast page loads.              </p>
             </li>
              <button className="bg-white border-orange-500 border flex flex-row  items-center justify-center">
-              <h2 className="font-medium text-[16px]  leading-normal ">Get Started </h2> <img src="/hosting/ArrowIcon.svg" className="pl-4 items-center justify-center "/>
+              <h2 className="font-medium text-[16px]  leading-normal ">Get Started </h2> <img src="/hosting/ArrowIcon.svg" className="pl-4 -mt-0.5 items-center justify-center "/>
 
           </button>
           </ul>
@@ -144,7 +143,7 @@ Enhance Your Hosting Experience! Boost website load times to maximize server res
 Switching web hosts can be daunting, especially considering the importance of your website's data. At HostBuddy, we understand this concern, which is why we offer a hassle-free migration service at no extra cost. Our expert support team will guide you through the process, ensuring a seamless transition to our servers. Rest assured, we prioritize the safety and integrity of your data, ensuring your website remains intact but with improved hosting services.              </p>
             </li>
               <button className="bg-white border-orange-500 border flex flex-row  items-center justify-center">
-              <h2 className="font-medium text-[16px]  leading-normal ">Get Started </h2> <img src="/hosting/ArrowIcon.svg" className="pl-4 items-center justify-center "/>
+              <h2 className="font-medium text-[16px]  leading-normal ">Get Started </h2> <img src="/hosting/ArrowIcon.svg" className="pl-4 -mt-0.5  items-center justify-center "/>
 
           </button>
           </ul>

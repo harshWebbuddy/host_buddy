@@ -33,8 +33,10 @@
     "@types/react-collapse": "^5.0.4",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
+    "css-loader": "^7.1.1",
     "postcss": "^8",
     "tailwindcss": "^3.4.3",
+    "ts-loader": "^9.5.1",
     "typescript": "^5"
   }
 }

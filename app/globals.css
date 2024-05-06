@@ -4,10 +4,63 @@
 .border-gradient {
   position: relative;
 }
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.cropped-ofp {
+  width: 500px; 
+  height: 650px; 
+  object-fit: cover;
+  object-position: 75% 45%; 
+  }
+.group:hover .featuresvg2 svg path{
+  stroke:#FF7500;
+  fill: #FF7500;
+}
+.group:hover svg g{
+  opacity: 100;
+}
+.group:hover .featuresvg1 svg path{
+  stroke:#FF7500;
+  fill: #FF7500;
+}
+.shadow-solid-mycolor {
+  box-shadow: 0px 10px 0px #994CFD;
+}
+.shadow-solid-mycolor2 {
+  box-shadow: 0px 10px 0px #4DBFFF;
+}
+.shadow-solid-mycolor3 {
+  box-shadow: 0px 10px 0px #14B441;
+}
 .fill-red:hover {
   fill: #ff0000; /* Change to your desired hover color */
 }
-
+.background-design{
+  background-image: url('/vpshosting/design.svg');
+  background-repeat: no-repeat;
+  background-position: cover;
+  width:auto; 
+  opacity: 100;
+  position: relative;
+}
 @keyframes shakeRotate {
   0% {
     transform: rotate(0);
@@ -80,9 +133,9 @@
   opacity: 1;
   fill: #FF7500;
 }
-.group:hover  svg path {
+/* .group:hover  svg path {
   fill: white;
-}
+} */
 .group:hover .featuresvg svg path{
   stroke:#FF7500;
   fill: black;
@@ -920,14 +973,15 @@ line-height: 63px;
 text-align: center;
 
 }.millions{
+  padding-top: 40px;
   display: flex;
   flex-direction: row;
   gap:131px;
-  width:1,016px;
+  width:1016px;
   height: 172px;
 }
   .plannumber{
-  width:155px;
+  width:200px;
   height:117px;
   gap:10px;
   align-items: center;
@@ -1055,9 +1109,9 @@ height:262px;
 gap:45px;
  }
 
- .group:hover  svg path {
+ /* .group:hover  svg path {
   fill: white;
-}
+} */
 .group:hover .featuresvg svg path{
   stroke:#FF7500;
   fill: black;
@@ -2535,6 +2589,8 @@ line-height: 63px;
 text-align: center;
 
 } .millions{
+  padding-top: 40px;
+
   display: flex;
   flex-direction: row;
   gap:131px;
@@ -5289,9 +5345,9 @@ gap:45px;
 
 
 
- .group:hover svg path {
+ /* .group:hover svg path {
   fill: white;
-}
+} */
 .group:hover .featuresvg svg path{
   stroke:#FF7500;
 }
@@ -6354,7 +6410,7 @@ line-height: 63px;
 text-align: center;
 
 }.millions{
-    margin-top: -650px;
+    margin-top: -340px;
   display: flex;
   flex-direction: row;
   gap:50px;
@@ -6463,12 +6519,12 @@ gap:45px;
 
 
 
- .group:hover svg path {
+ /* .group:hover svg path {
   fill: white;
-}
-.group:hover .featuresvg svg path{
-  stroke:#FF7500;
-}
+} */
+  .group:hover .featuresvg svg path{
+    stroke:#FF7500;
+  }
   .plan2box{
 padding:0px 20px;
     align-items: center;

@@ -7,6 +7,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
+  
       fontFamily: {
         'mono-sans': ['Mona Sans', 'sans-serif'],
       },
@@ -17,6 +18,7 @@ const config: Config = {
       },
       colors: {
         customBackground: '#F9EFE4',
+   'sefty-orange': 'var(--Template-Colors-Sefty-Orange-Template-Primary-Safety-Orange, #FF7500)',
       },
 
       //I preferred to use the default tailwindcss preconfigured screen sizes but you can change at any time @harsh

@@ -7,7 +7,7 @@ const Plan = () => {
 
    
   return (
-    <div className='plan mx-auto'>
+    <div className=' plan mx-auto'>
 <div className='plan1 mx-auto'>
 <div className='plan1perfect'>
 <h2 className='font-mono-sans'>The Perfect - Web Hosting Plan</h2>          
