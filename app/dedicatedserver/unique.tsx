@@ -8,16 +8,14 @@ const Adds = () => {
     <div className="pt-8 pb-12 w-full max-w-[1300px] mx-auto flex flex-col xl:flex-row items-center justify-center">
       <Image src="/dotted.svg" alt="" width={100} height={100} className="ml-1 absolute left-0 top-20 opacity-50 2xl:visible sm:invisible" />
       <div className="flex flex-col 2xl:flex-row mx-auto items-center justify-between ">
-      <div className="w-full flex flex-col space-y-8">
-          <div className="space-y-3.5">
-            <h4 className="text-[39px] text-black font-semibold font-mona-sans leading-normal">
-              What Makes Host<span className="text-orange-500">Buddy </span>  Unique?
+      <div className="w-full flex flex-col space-y-8 item-start">
+          <div className="space-y-3.5 pr-40">
+            <h4 className="text-[42px] text-black font-semibold font-mona-sans leading-normal">
+            Customize With 
+Premium<span className="text-orange-500"> Add-Ons </span>  
              
             </h4>
-            <p className="text-[16px] leading-loose font-mono-sans">
-              Lorem ipsum dolor sit amet conscatetur. Ornare et amet lobortis ornare. Ullamcorper accumsan donec eu condimentum diam a augue arcu. Erat nibh
-              nisl lacinia egestas mauris facilisi aliquam sit mauris.{" "}
-            </p>
+           
           </div>
           <div className="space-y-2 2xl:max-w-xl">
             <div className="relative group space-y-3">
@@ -122,7 +120,7 @@ const Adds = () => {
           </div>
         </div>
         <div className="w-full flex justify-center">
-          <Image src="/wordpress/unique.svg" alt="" width={550} height={550} className="" />
+          <Image src="/dedicated/unique.svg" alt="" width={550} height={550} className="" />
         </div>
       </div>
     </div>
