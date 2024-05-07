@@ -149,7 +149,7 @@ const Plans = () => {
       </div>
       {/* cards */}
       <section className="pt-10">
-        <div className="w-full    px-3">
+        <div className="w-full    px-0">
           <div className="w-full max-w-[1300px] mx-auto">
             <div className="flex flex-col md:flex-row gap-x-8 gap-y-14 bl:items-center justify-center mx-auto mt-20 bl:mt-16">
               <div className="relative flex-1 w-full gap-10 group">

@@ -11,8 +11,6 @@ import Faqs from './Faqs';
 import CaseStudy from './CaseStudy'
 import { caseStudies } from '../(landing)/components/constants/casestudies';
 import Features from './Features'
-import Adds from './adds'
-import Table from './Table'
 
 const page = () => {
   return (
@@ -30,7 +28,7 @@ const page = () => {
         </section>
 
         {/* plan page */}
-        <div className='pt-32 pb-0'>
+        <div className='pt-32 pb-32'>
           <Plan2/>
         </div>
         {/* what make hostbuddy unique section */}
@@ -41,15 +39,10 @@ const page = () => {
         <section>
           <Features/>
         </section>
-        <section>
-          <Adds/>
-        </section>
+
         <section>
           <CardsComponent/>
-        </section>
-<Table/>
-        {/* testimonials */}
-        <section>
+       
           <Testimonials/>
         </section>
 

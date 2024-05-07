@@ -41,14 +41,18 @@ const Table = () => {
               onMouseLeave={() => setHoveredRow(null)}
             >
               {[...Array(7)].map((_, colIndex) => (
-                <td
-                  key={colIndex}
-                  className={colIndex === hoveredColumn ? 'bg-orange-500' : ''}
-                  onMouseEnter={() => setHoveredColumn(colIndex)}
-                  onMouseLeave={() => setHoveredColumn(null)}
-                >
-                  {(data as any)[`column${colIndex + 1}`][rowIndex]} {/* Type assertion */}
-                </td>
+             <td
+             key={colIndex}
+             className={
+               colIndex === hoveredColumn
+                 ? 'bg-orange-500 font-semibold text-[16px] leading-[26px] group-hover:text-white hover:bg-orange-500'
+                 : 'hover:bg-white'
+             }
+             onMouseEnter={() => setHoveredColumn(colIndex)}
+             onMouseLeave={() => setHoveredColumn(null)}
+           >
+             {(data as any)[`column${colIndex + 1}`][rowIndex]} {/* Type assertion */}
+           </td>
               ))}
             </tr>
           ))}

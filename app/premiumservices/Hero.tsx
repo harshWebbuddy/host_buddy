@@ -4,8 +4,8 @@ const Hero = () => {
   return (
     <div className='bg-[#16191C] overflow-hidden mx-auto'>
    <div className=' pcontent_img opacity-90 mx-auto'>
-      <div className=" pcontent mx-auto max-w-[1200px] flex ">
-        <div className='pbuddy'>
+      <div className=" pcontent mx-auto max-w-[1200px] flex z-[1] ">
+        <div className='pbuddy z-[2]'>
            {/* 1//  */}
            <div className="w-[175px] h-[30px] mb-10">
                   <h2 className="font-mono-sans italic">

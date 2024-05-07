@@ -90,7 +90,7 @@ const Support = () => {
         <div className="flex flex-col md:flex-row gap-x-8 gap-y-14 bl:items-center justify-center mx-auto mt-20 bl:mt-16">
   {items.map((item, index) => (
     <div key={index} className="relative flex-1 w-full gap-10 group">
-      <div className="absolute -top-7 left-9 w-16 h-16 flex justify-center items-center rounded-xl transition-all duration-300 bg-white group-hover:bg-orange-500">
+      <div className="absolute -top-7 featuresvg3 left-9 w-16 h-16 flex justify-center items-center rounded-xl transition-all duration-300 bg-white group-hover:bg-orange-500">
         {item.icon}
       </div>
       <div className="bg-[#3C3C3C] shadow-solid-orange rounded-2xl group hover:bg-[#F9EFE4] text-[#FFFFFF] hover:text-[#16191C] p-6 md:p-8 transition-all duration-300 cursor-pointer">

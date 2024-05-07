@@ -33,7 +33,7 @@ const Ratingpanel = () => {
     // Handle the rating change logic here
   };
   return (
-      <div className="w-full max-w-[1250px] mx-auto bg-[#F5F5F5] rounded-3xl mt-20">
+      <div className="w-full max-w-[1300px] mx-auto bg-[#F5F5F5] rounded-3xl mt-20">
         <div className="flex flex-col 2xl:flex-row items-center p-10 gap-14">
           <div className="w-full max-w-fit font-mona-sans font-semibold text-center bl:text-left">
             <h3 className="font-bold text-3xl leading-relaxed">Customer Happiness</h3>

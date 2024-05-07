@@ -38,7 +38,8 @@ const navLinks: NavLink[] = [
     options: [
       { label: "Shared Hosting", href: "/hostingbar" },
       { label: "VPS Hosting", href: "/vpshosting" },
-
+      { label: "WordPress Hosting", href: "/wordpresshosting" },
+      { label: "India Dedicated Server", href: "/dedicatedserver" },
       // { label: "Pricing", href: "#" },
       // { label: "Pages", href: "#" },
       // { label: "Features", href: "#" },

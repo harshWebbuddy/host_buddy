@@ -970,7 +970,7 @@ const Location = () => {
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed, do eiusmod tempor incididunt lorem ipsum dolor sit amet</p>
         </div>
        
-        <div className="w-full flex flex-col max-w-[1420px] mx-auto space-y-10 p-4">
+        <div className="w-full flex flex-col max-w-[1350px] mx-auto space-y-10 p-4">
       {/* Headline */}
      
       <div className="mx-auto w-full items-center justify-center ">

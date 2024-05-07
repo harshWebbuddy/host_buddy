@@ -1,17 +1,14 @@
-"use client";
-import Image from "next/image";
-import React, { useState } from "react";
+import { Panela, Panelb, Panelc } from '@/components/svgs'
+import Image from 'next/image'
+import React from 'react'
 
 const Unique = () => {
   return (
-    <section className="bg-[#F9EFE4] relative">
-    <div className="p-4 w-full max-w-[1420px] mx-auto flex flex-col 2xl:flex-row bl:flex-row items-center justify-center py-20">
-      {/* <Image src="/dotted.svg" alt="" width={100} height={100} className="ml-1 absolute left-0 top-20 opacity-50" /> */}
-      <div className="flex flex-col 2xl:flex-row mx-auto items-center gap-x-2  ">
-      <div className="w-full flex justify-center">
-          <Image src="/ps/unique.svg" alt="" width={550} height={550} className="uniqueimage" />
-        </div> 
-        <div className="w-full flex flex-col space-y-8">
+    <section className=" relative">
+    <div className="pt-8 pb-12 w-full max-w-[1300px] mx-auto flex flex-col xl:flex-row items-center justify-center">
+      <Image src="/dotted.svg" alt="" width={100} height={100} className="ml-1 absolute left-0 top-20 opacity-50 2xl:visible sm:invisible" />
+      <div className="flex flex-col 2xl:flex-row mx-auto items-center justify-between ">
+      <div className="w-full flex flex-col space-y-8">
           <div className="space-y-3.5">
             <h4 className="text-[39px] text-black font-semibold font-mona-sans leading-normal">
               What Makes Host<span className="text-orange-500">Buddy </span>  Unique?
@@ -124,12 +121,14 @@ const Unique = () => {
             </div>
           </div>
         </div>
-     
+        <div className="w-full flex justify-center">
+          <Image src="/wordpress/unique.svg" alt="" width={550} height={550} className="" />
+        </div>
       </div>
     </div>
   </section>
 
-  );
-};
+  )
+}
 
-export default Unique;
+export default Unique

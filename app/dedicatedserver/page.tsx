@@ -1,18 +1,12 @@
 import React from 'react'
 import HeroHosting from './Hero'
 import Ratingpanel from './Rating'
-import Plans from './Plans'
 import Plan2 from './plan2'
-import Unique from './unique'
-import CardsComponent from './CardsComponent'
+import Unique from './stands'
 import Testimonials from './Testimonials'
-import { testimonials } from '../(landing)/components/constants/testimonials';
 import Faqs from './Faqs';
 import CaseStudy from './CaseStudy'
-import { caseStudies } from '../(landing)/components/constants/casestudies';
 import Features from './Features'
-import Adds from './adds'
-import Table from './Table'
 
 const page = () => {
   return (
@@ -25,12 +19,11 @@ const page = () => {
         <section>
         <div className="space-y-32 ">
           <Ratingpanel/>
-          <Plans/>
         </div>
         </section>
 
         {/* plan page */}
-        <div className='pt-32 pb-0'>
+        <div className='pt-32 '>
           <Plan2/>
         </div>
         {/* what make hostbuddy unique section */}
@@ -41,15 +34,10 @@ const page = () => {
         <section>
           <Features/>
         </section>
+
         <section>
-          <Adds/>
-        </section>
-        <section>
-          <CardsComponent/>
-        </section>
-<Table/>
-        {/* testimonials */}
-        <section>
+  <Unique/>
+       
           <Testimonials/>
         </section>
 

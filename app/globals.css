@@ -4,9 +4,17 @@
 .border-gradient {
   position: relative;
 }
+
 .table-container {
   width: 100%;
   overflow-x: auto;
+}
+.image {
+  background-image: url("/dedicated/design.svg");
+  background-size: contain;
+  width: auto;
+  background-repeat: no-repeat;
+  height: 500px; /* set the height of the div */
 }
 
 table {
@@ -31,6 +39,23 @@ th {
   object-position: 75% 45%; 
   }
 .group:hover .featuresvg2 svg path{
+  stroke:#FF7500;
+  fill: #FF7500;
+}
+
+.group:hover .featuresvg4 svg path{
+  stroke:#FF7500;
+  fill: #FF7500;
+}
+.group:hover .featuresvg3 svg path{
+  stroke:#FFFFFF;
+  fill: #FFFFFF;
+}
+.group:hover .featuresvgrect{
+  stroke: #FF7500;
+  fill:#ff7500;
+}
+.group:hover .featuresvg3 .svg-rect path{
   stroke:#FF7500;
   fill: #FF7500;
 }
@@ -555,6 +580,7 @@ height: 708px;
     position: relative;
     bottom:325px;
     right:0px;
+    left:6px;
     display: flex;
     flex-direction: row;
     gap:20px;
@@ -587,13 +613,13 @@ height: 708px;
         font-size: 72px;
         line-height: 84px;
       } .pcontent_img{
+        background-blend-mode: difference;
     position: relative;
-    right:-220px;
-    
+    right:-210px;   
     background-image: url('/ps/hero.png');
     background-size:cover;
     background-repeat: no-repeat;
-    width: 1491px;
+    width:auto;
     height:1030px;
   } .buddy_button1 h1 {
     padding: 15px 15px;
@@ -2115,11 +2141,11 @@ opacity: 0px;
           line-height: 84px;
         } .pcontent_img{
       position: relative;
-      right:-220px;
+      right:-210px;
       background-image: url('/ps/hero.png');
       background-size:cover;
       background-repeat: no-repeat;
-      width: 1491px;
+      width:auto;
       height:1030px;
     } .buddy_button1 h1 {
       padding: 15px 15px;
@@ -3506,8 +3532,8 @@ gap:10px;
           background-image: url('/ps/hero.png');
           background-size: cover;
           background-repeat: no-repeat;
-          width: 100%; /* Adjust width as needed */
-          max-width: 1491px; /* Limit the maximum width */
+          width: auto; /* Adjust width as needed */
+       
           height: 1030px; /* Adjust height as needed */
     } .buddy_button1 h1 {
       padding: 15px 15px;
@@ -4720,6 +4746,8 @@ margin:0 auto;
   }
   
   .pcontent {
+    position: relative;
+    left:30px;
     display: flex;
     justify-content: flex-start; /* Align content to the left */
     max-width: 1200px; /* Limit the maximum width */
@@ -4731,8 +4759,7 @@ margin:0 auto;
     background-image: url('/ps/hero.png');
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%; /* Adjust width as needed */
-    max-width: 970px; /* Limit the maximum width */
+    width:auto; /* Adjust width as needed */
     height: 1030px; /* Adjust height as needed */
   }
   .helpwidth{
@@ -5993,8 +6020,7 @@ height: 608px;
       background-image: url('/ps/hero.png');
       background-size: cover;
       background-repeat: no-repeat;
-      width: 100%; /* Adjust width as needed */
-      max-width: 730px; /* Limit the maximum width */
+      width: auto; /* Adjust width as needed */
       height: 1030px; /* Adjust height as needed */
     }.specs4inner1{
     display: flex;
@@ -7086,8 +7112,7 @@ height: 608px;
     background-image: url('/ps/hero.png');
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%; /* Adjust width as needed */
-    max-width: 570px; /* Limit the maximum width */
+    width: auto; /* Adjust width as needed */
     height: 1030px; /* Adjust height as needed */
   }.specs4inner1{
     display: flex;
@@ -8235,6 +8260,7 @@ width: fit-content;
   }
   
   .pcontent {
+    left:10px;
     display: flex;
     justify-content: flex-start; /* Align content to the left */
     max-width: 1200px; /* Limit the maximum width */
@@ -8246,8 +8272,7 @@ width: fit-content;
     background-image: url('/ps/hero.png');
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%; /* Adjust width as needed */
-    max-width: 570px; /* Limit the maximum width */
+    width:auto; /* Adjust width as needed */
     height: 1030px; /* Adjust height as needed */
   }.specs4inner1{
     display: flex;
@@ -9258,10 +9283,10 @@ margin: 0 auto; /* Center the content horizontally */
 .pcontent_img {
 position: relative;
 background-image: url('/ps/hero.png');
+
 background-size: cover;
 background-repeat: no-repeat;
-width: 100%; /* Adjust width as needed */
-max-width: 570px; /* Limit the maximum width */
+width: auto; /* Adjust width as needed */
 height: 1030px; /* Adjust height as needed */
 }.specs4inner1{
     display: flex;

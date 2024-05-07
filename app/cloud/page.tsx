@@ -11,14 +11,14 @@ const page = () => {
   return (
     <div>
     <div><Hero/></div>
-    <div className=''><Rating/></div>
-    <div><Plan/></div>
-    <div className='pt-[40px] pb-[40px] 2xl:pt-[100px] xl:pt-[100px] xl:pb-[100px] 2xl:pb-[130px]  bl:pt-[70px] bl:pb-[70px]  md:pt-[70px] md:pb-[70px]  lg:pt-[40px] lg:pb-[40px]  sm:pt-[40px] sm:pb-[40px]'><Support/></div>
-<div className='xl:pb-[100px] 2xl:pb-[130px]  bl:pb-[70px]  md:pb-[70px]   lg:pb-[40px]   sm:pb-[40px] pb-[40px] '><Features/></div>
-<div className='2xl:pb-[130px] xl:pb-[100px]  bl:pb-[70px]  md:pb-[70px]   lg:pb-[40px]  sm:pb-[40px]  pb-[40px]'>
+    <div className='pt-12 pb-32'><Rating/></div>   
+        <div><Plan/></div>
+    <div className='pt-10 '><Support/></div>
+<div className='pt-40'><Features/></div>
+<div className='pt-28'>
   <Specs/>
 </div>
-<div className='pb-[260px]'>
+<div className='pt-36 pb-[300px]'>
   <Help/>
 </div>
     </div>

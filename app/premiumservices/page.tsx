@@ -34,7 +34,7 @@ const page = () => {
   
     <div className='plan2boxinner2 mx-auto'> 
     <div className='plan2boxinner22'>
-     <div className='.planbutton border-2 border-black group-hover:bg-[#FF7500]	 rounded-xl p-3 items-center justify-center flex flex-row'>
+     <div className='.planbutton border-2 border-black group-hover:bg-[#FF7500] featuresvg3	 rounded-xl p-3 items-center justify-center flex flex-row'>
         <h2 className='text-[16px] font-bold leading-[19.2px] text-black group-hover:text-white '>Choose Plan </h2>
          <svg className='item-center justify-center mt-0.5 ml-2' width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M5.13672 0.947266L5.69531 0.388672C5.94922 0.160156
@@ -103,9 +103,9 @@ const page = () => {
   
     <div className='plan2boxinner2 mx-auto'> 
     <div className='plan2boxinner22'>
-     <div className='.planbutton border-2 border-black group-hover:bg-[#FF7500]  rounded-xl p-3 items-center justify-center flex flex-row '>
+     <div className='.planbutton border-2 border-black group-hover:bg-[#FF7500]  featuresvg3 rounded-xl p-3 items-center justify-center flex flex-row '>
         <h2 className='text-[16px] font-bold leading-[19.2px] text-black group-hover:text-white '>Choose Plan </h2>
-         <svg className='item-center justify-center mt-0.5 ml-2 svghover	' width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <svg className='item-center justify-center mt-0.5 ml-2 svghover featuresvg3	' width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M5.13672 0.947266L5.69531 0.388672C5.94922 0.160156
  6.33008 0.160156 6.55859 0.388672L11.5098 5.31445C11.7383 
  5.56836 11.7383 5.94922 11.5098 6.17773L6.55859 11.1289C6.33008
@@ -172,9 +172,9 @@ const page = () => {
   
     <div className='plan2boxinner2 mx-auto'> 
     <div className='plan2boxinner22'>
-     <div className='.planbutton border-2 border-black group-hover:bg-[#FF7500]	 rounded-xl p-3 items-center justify-center flex flex-row'>
+     <div className='.planbutton border-2 border-black group-hover:bg-[#FF7500] featuresvg3	 rounded-xl p-3 items-center justify-center flex flex-row'>
         <h2 className='text-[16px] font-bold leading-[19.2px] text-black group-hover:text-white '>Choose Plan </h2>
-         <svg className='item-center justify-center mt-0.5 ml-2' width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <svg className='item-center justify-center mt-0.5 ml-2 featuresvg3' width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M5.13672 0.947266L5.69531 0.388672C5.94922 0.160156
  6.33008 0.160156 6.55859 0.388672L11.5098 5.31445C11.7383 
  5.56836 11.7383 5.94922 11.5098 6.17773L6.55859 11.1289C6.33008
