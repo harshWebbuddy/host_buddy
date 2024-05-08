@@ -39,6 +39,18 @@ const navLinks: NavLink[] = [
       { label: "Shared Hosting", href: "/hostingbar" },
       { label: "VPS Hosting", href: "/vpshosting" },
       { label: "WordPress Hosting", href: "/wordpresshosting" },
+      { label: "cPanel Hosting", href: "/cpanel" },
+      { label: "Plenk Hosting", href: "/Plenk" },
+      // { label: "Pricing", href: "#" },
+      // { label: "Pages", href: "#" },
+      // { label: "Features", href: "#" },
+    ],
+  },
+  
+  {
+    href: "#",
+    label: "Pages",
+    options: [
       { label: "India Dedicated Server", href: "/dedicatedserver" },
       // { label: "Pricing", href: "#" },
       // { label: "Pages", href: "#" },
@@ -48,16 +60,6 @@ const navLinks: NavLink[] = [
   {
     href: "#",
     label: "Pricing",
-    options: [
-      { label: "Hosting", href: "/hosting" },
-      // { label: "Pricing", href: "#" },
-      // { label: "Pages", href: "#" },
-      // { label: "Features", href: "#" },
-    ],
-  },
-  {
-    href: "#",
-    label: "Pages",
     options: [
       { label: "Hosting", href: "/hosting" },
       // { label: "Pricing", href: "#" },

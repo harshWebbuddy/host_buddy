@@ -1,0 +1,3 @@
+   <div className="w-full h-full absolute right-0">
+                      <Image src={testimonial.author.image_url} alt="download" width={79} height={79} className="select-none" draggable={false} />
+                    </div>
