@@ -43,11 +43,11 @@ export default function Features() {
 
   return (
     
-    <div className="p-4 relative bg-gradient-to-b from-[#FFFFFF] to-[#FF7500] mx-auto flex flex-col w-full items-center justify-center pt-10 2xl:pt-20 mt-20 opacity-70">
+    <div className="p-4 relative bg-gradient-to-b from-[#FFFFFF] to-[#FF7500] mx-auto flex flex-col w-full items-center justify-center pt-10 2xl:pt-20 mt-20 opacity-80">
       <div className="max-w-[1360px] mx-auto">
         <div className="flex flex-col 2xl:flex-row gap-y-10 2xl:items-center justify-between">
           <h2 className="text-[42px] leading-[63px] font-semibold text-black w-full 2xl:max-w-full">
-            Experience Exceptional Shared Hosting <span className="pb-4 border-b-4 border-orange-500">Features </span>
+            Experience Exceptional Shared Host<span className="pb-4 border-b-4 border-orange-500">ing Featu</span>res
           </h2>
         </div>
         <div className="flex flex-row gap-4 mt-16 overflow-hidden transition-all duration-500 h-full pb-32">

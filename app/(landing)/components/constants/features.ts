@@ -23,7 +23,7 @@ export const testimonials = [
      {
     author: {
       image_url: "/hosting/feature3.svg",
-      names: "Free SSL Certificate",
+      names: "SSD NVMe Storage",
     },
     testimonial:
       "Guided by the project manager, we start to identify, shape and validate your product idea, in order to have a perfect alignment from the requirements perspective we start to identifywe start to identify.",
@@ -34,7 +34,7 @@ export const testimonials = [
     {
     author: {
       image_url: "/hosting/feature4.svg",
-      names: "Free SSL Certificate",
+      names: "Secure Email Accounts",
     },
     testimonial:
       "Guided by the project manager, we start to identify, shape and validate your product idea, in order to have a perfect alignment from the requirements perspective.",
@@ -44,7 +44,7 @@ export const testimonials = [
    {
     author: {
       image_url: "/hosting/feature1.svg",
-      names: "Free SSL Certificate",
+      names: "Control Panel",
     },
     testimonial:
       "Guided by the project manager, we start to identify, shape and validate your product idea, in order to have a perfect alignment from the requirements perspective.",
@@ -74,7 +74,7 @@ export const testimonials = [
    {
     author: {
       image_url: "/hosting/feature8.svg",
-      names: "Free SSL Certificate",
+      names: "Latest PHP & MySQL",
     },
     testimonial:
       "Guided by the project manager, we start to identify, shape and validate your product idea, in order to have a perfect alignment from the requirements perspective.",

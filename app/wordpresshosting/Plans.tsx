@@ -7,126 +7,8 @@ import Image from "next/image";
 const label = { inputProps: { "aria-label": "Switch demo" } };
 
 const Plans = () => {
-  const items = [
-    {
-      icon: (
-        <svg
-          width="63"
-          height="63"
-          viewBox="0 0 63 63"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect
-            x="0.6875"
-            y="0.894653"
-            width="62.0702"
-            height="62.0702"
-            rx="8.80136"
-            fill="#994CFD"
-          />
-          <path
-            d="M46.4375 32H32.3593C34.5474 30.0743 35.9375 27.262 35.9375 24.125C35.9375 18.3354 31.2271 13.625 25.4375 13.625C19.6479 13.625 14.9375 18.3354 14.9375 24.125C14.9375 27.262 16.3276 30.0743 18.5157 32H17.5625C15.3912 32 13.625 33.7662 13.625 35.9375V46.4375C13.625 48.6088 15.3912 50.375 17.5625 50.375H46.4375C48.6088 50.375 50.375 48.6088 50.375 46.4375V35.9375C50.375 33.7662 48.6088 32 46.4375 32ZM17.6811 25.4375H18.875C19.5998 25.4375 20.1875 24.8498 20.1875 24.125C20.1875 23.4002 19.5998 22.8125 18.875 22.8125H17.6811C18.238 19.5141 20.8466 16.9122 24.1482 16.365C24.2094 17.0331 24.7535 17.5625 25.4375 17.5625C26.1215 17.5625 26.6656 17.0331 26.7268 16.365C30.0361 16.9135 32.649 19.5264 33.1975 22.8357C32.5294 22.8969 32 23.441 32 24.125C32 24.809 32.5294 25.3531 33.1975 25.4143C32.649 28.7236 30.0361 31.3365 26.7268 31.885C26.6656 31.2169 26.1215 30.6875 25.4375 30.6875C24.7535 30.6875 24.2094 31.2169 24.1482 31.885C20.8466 31.3378 18.238 28.7359 17.6811 25.4375ZM16.25 35.9375C16.25 35.214 16.839 34.625 17.5625 34.625H46.4375C47.161 34.625 47.75 35.214 47.75 35.9375V39.875H16.25V35.9375ZM47.75 46.4375C47.75 47.161 47.161 47.75 46.4375 47.75H17.5625C16.839 47.75 16.25 47.161 16.25 46.4375V42.5H47.75V46.4375Z"
-            fill="white"
-          />
-          <path
-            d="M45.1282 35.9375H45.1154C44.3923 35.9375 43.8125 36.5252 43.8125 37.25C43.8125 37.9748 44.4051 38.5625 45.1282 38.5625C45.8519 38.5625 46.4375 37.9748 46.4375 37.25C46.4375 36.5252 45.8519 35.9375 45.1282 35.9375ZM41.1907 35.9375H41.1779C40.4548 35.9375 39.875 36.5252 39.875 37.25C39.875 37.9748 40.4676 38.5625 41.1907 38.5625C41.9144 38.5625 42.5 37.9748 42.5 37.25C42.5 36.5252 41.9144 35.9375 41.1907 35.9375ZM37.2532 35.9375H37.2405C36.5174 35.9375 35.9375 36.5252 35.9375 37.25C35.9375 37.9748 36.5301 38.5625 37.2532 38.5625C37.9769 38.5625 38.5625 37.9748 38.5625 37.25C38.5625 36.5252 37.9769 35.9375 37.2532 35.9375ZM45.1282 46.4375C45.8519 46.4375 46.4375 45.8498 46.4375 45.125C46.4375 44.4002 45.8519 43.8125 45.1282 43.8125H45.1154C44.3923 43.8125 43.8125 44.4002 43.8125 45.125C43.8125 45.8498 44.4051 46.4375 45.1282 46.4375ZM41.1907 46.4375C41.9144 46.4375 42.5 45.8498 42.5 45.125C42.5 44.4002 41.9144 43.8125 41.1907 43.8125H41.1779C40.4548 43.8125 39.875 44.4002 39.875 45.125C39.875 45.8498 40.4676 46.4375 41.1907 46.4375ZM37.2532 46.4375C37.9769 46.4375 38.5625 45.8498 38.5625 45.125C38.5625 44.4002 37.9769 43.8125 37.2532 43.8125H37.2405C36.5174 43.8125 35.9375 44.4002 35.9375 45.125C35.9375 45.8498 36.5301 46.4375 37.2532 46.4375ZM22.8125 25.4375H25.4375C25.7855 25.4375 26.1194 25.2991 26.3655 25.053L28.9905 22.428C29.5032 21.9153 29.5032 21.0847 28.9905 20.572C28.4778 20.0593 27.6472 20.0593 27.1345 20.572L24.894 22.8125H22.8125C22.0877 22.8125 21.5 23.4002 21.5 24.125C21.5 24.8498 22.0877 25.4375 22.8125 25.4375ZM40.803 19.803L43.8125 16.7935L46.822 19.803C47.0784 20.0593 47.4142 20.1875 47.75 20.1875C48.0858 20.1875 48.4216 20.0593 48.678 19.803C49.1907 19.2903 49.1907 18.4597 48.678 17.947L44.7405 14.0095C44.2278 13.4968 43.3972 13.4968 42.8845 14.0095L38.947 17.947C38.4343 18.4597 38.4343 19.2903 38.947 19.803C39.4597 20.3157 40.2903 20.3157 40.803 19.803Z"
-            fill="white"
-          />
-          <path
-            d="M40.803 25.053L43.8125 22.0435L46.822 25.053C47.0784 25.3093 47.4142 25.4375 47.75 25.4375C48.0858 25.4375 48.4216 25.3093 48.678 25.053C49.1907 24.5403 49.1907 23.7097 48.678 23.197L44.7405 19.2595C44.2278 18.7468 43.3972 18.7468 42.8845 19.2595L38.947 23.197C38.4343 23.7097 38.4343 24.5403 38.947 25.053C39.4597 25.5657 40.2903 25.5657 40.803 25.053Z"
-            fill="white"
-          />
-          <path
-            d="M40.803 30.303L43.8125 27.2935L46.822 30.303C47.0784 30.5593 47.4142 30.6875 47.75 30.6875C48.0858 30.6875 48.4216 30.5593 48.678 30.303C49.1907 29.7903 49.1907 28.9597 48.678 28.447L44.7405 24.5095C44.2278 23.9968 43.3972 23.9968 42.8845 24.5095L38.947 28.447C38.4343 28.9597 38.4343 29.7903 38.947 30.303C39.4597 30.8157 40.2903 30.8157 40.803 30.303Z"
-            fill="white"
-          />
-        </svg>
-      ),
+ 
 
-      title: "Guaranteed Uptime",
-      description:
-        "With us, you receive 99.95% guaranteed uptime that covers the server’s availability and all network components in our Tier 4 data centers. With the robust infrastructure and high-speed connectivity, your websites and applications.",
-    },
-    {
-      icon: (
-        <svg
-          width="63"
-          height="63"
-          viewBox="0 0 63 63"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect
-            x="0.683594"
-            y="0.894714"
-            width="62.0702"
-            height="62.0702"
-            rx="8.80136"
-            fill="#4DBFFF"
-          />
-          <path
-            d="M44.3952 22.1068C44.4958 22.0091 44.5757 21.8923 44.6303 21.7631C44.6848 21.634 44.713 21.4953 44.713 21.3551C44.713 21.2149 44.6848 21.0761 44.6303 20.947C44.5757 20.8179 44.4958 20.701 44.3952 20.6033C44.0035 20.2115 43.2941 20.2115 42.9023 20.6033C42.4788 21.0268 42.5073 21.7108 42.9023 22.1068C43.3152 22.4986 43.9463 22.5314 44.3952 22.1068ZM40.1599 22.1068C40.2605 22.0091 40.3404 21.8923 40.395 21.7631C40.4495 21.634 40.4777 21.4953 40.4777 21.3551C40.4777 21.2149 40.4495 21.0761 40.395 20.947C40.3404 20.8179 40.2605 20.701 40.1599 20.6033C39.7682 20.2115 39.0588 20.2115 38.667 20.6033C38.2435 21.0268 38.2721 21.7108 38.667 22.1068C39.0799 22.4986 39.711 22.5314 40.1599 22.1068ZM20.3557 22.4118H29.8851C30.1659 22.4118 30.4352 22.3002 30.6338 22.1017C30.8324 21.9031 30.9439 21.6338 30.9439 21.353C30.9439 21.0721 30.8324 20.8028 30.6338 20.6043C30.4352 20.4057 30.1659 20.2941 29.8851 20.2941H20.3557C20.0749 20.2941 19.8056 20.4057 19.607 20.6043C19.4084 20.8028 19.2969 21.0721 19.2969 21.353C19.2969 21.6338 19.4084 21.9031 19.607 22.1017C19.8056 22.3002 20.0749 22.4118 20.3557 22.4118ZM42.9012 33.3092C42.7046 33.51 42.5945 33.7799 42.5945 34.061C42.5945 34.342 42.7046 34.6119 42.9012 34.8127C43.0005 34.911 43.1182 34.9887 43.2476 35.0414C43.377 35.0941 43.5155 35.1207 43.6552 35.1197C43.7949 35.1188 43.933 35.0902 44.0617 35.0357C44.1903 34.9812 44.3069 34.9018 44.4048 34.8021C44.5027 34.7038 44.5802 34.5869 44.6328 34.4584C44.6853 34.3299 44.7119 34.1923 44.7109 34.0534C44.7099 33.9146 44.6814 33.7774 44.627 33.6496C44.5727 33.5219 44.4935 33.4062 44.3942 33.3092C44.0024 32.9174 43.3046 32.9174 42.9012 33.3092Z"
-            fill="white"
-          />
-          <path
-            d="M43.6468 28.7647H20.3538C18.95 28.7661 17.6041 29.3243 16.6114 30.3168C15.6187 31.3093 15.0603 32.6551 15.0586 34.0588C15.0586 36.978 17.4335 39.353 20.3538 39.353H30.942V47.8235H22.4704C22.1895 47.8235 21.9202 47.9351 21.7217 48.1337C21.5231 48.3322 21.4115 48.6016 21.4115 48.8824C21.4115 49.1632 21.5231 49.4325 21.7217 49.6311C21.9202 49.8296 22.1895 49.9412 22.4704 49.9412H41.5292C41.81 49.9412 42.0793 49.8296 42.2779 49.6311C42.4765 49.4325 42.588 49.1632 42.588 48.8824C42.588 48.6016 42.4765 48.3322 42.2779 48.1337C42.0793 47.9351 41.81 47.8235 41.5292 47.8235H33.0586V39.353H43.6468C46.566 39.353 48.9409 36.978 48.9409 34.0588C48.9409 31.1397 46.566 28.7647 43.6468 28.7647ZM43.6468 37.2353H20.3538C18.6014 37.2353 17.1762 35.8101 17.1762 34.0588C17.1762 32.3075 18.6014 30.8824 20.3538 30.8824H43.6468C45.3981 30.8824 46.8233 32.3075 46.8233 34.0588C46.8233 35.8101 45.3981 37.2353 43.6468 37.2353ZM20.3538 26.6471H43.6468C46.566 26.6471 48.9409 24.2721 48.9409 21.353C48.9409 18.4338 46.566 16.0588 43.6468 16.0588H20.3538C18.9498 16.0602 17.6038 16.6186 16.6111 17.6113C15.6183 18.604 15.06 19.9501 15.0586 21.354C15.0606 22.7576 15.6191 24.1031 16.6118 25.0954C17.6045 26.0876 18.9502 26.6457 20.3538 26.6471ZM20.3538 18.1765H43.6468C45.3981 18.1765 46.8233 19.6017 46.8233 21.354C46.8233 23.1064 45.3981 24.5305 43.6468 24.5305H20.3538C18.6014 24.5294 17.1762 23.1042 17.1762 21.353C17.1762 19.6017 18.6014 18.1765 20.3538 18.1765Z"
-            fill="white"
-          />
-          <path
-            d="M38.6659 33.3092C38.4693 33.51 38.3592 33.7799 38.3592 34.0609C38.3592 34.342 38.4693 34.6119 38.6659 34.8127C39.1053 35.2299 39.7565 35.2151 40.1589 34.8127C40.2594 34.715 40.3393 34.5981 40.3939 34.469C40.4485 34.3399 40.4766 34.2011 40.4766 34.0609C40.4766 33.9208 40.4485 33.782 40.3939 33.6529C40.3393 33.5237 40.2594 33.4069 40.1589 33.3092C39.7671 32.9174 39.0693 32.9174 38.6659 33.3092ZM29.8851 33H20.3557C20.0749 33 19.8056 33.1116 19.607 33.3101C19.4084 33.5087 19.2969 33.778 19.2969 34.0588C19.2969 34.3396 19.4084 34.609 19.607 34.8075C19.8056 35.0061 20.0749 35.1176 20.3557 35.1176H29.8851C30.1659 35.1176 30.4352 35.0061 30.6338 34.8075C30.8324 34.609 30.9439 34.3396 30.9439 34.0588C30.9439 33.778 30.8324 33.5087 30.6338 33.3101C30.4352 33.1116 30.1659 33 29.8851 33Z"
-            fill="white"
-          />
-        </svg>
-      ),
-      title: "KVM Virtualization",
-      description:
-        "HostBuddy leverages Kernel-based Virtual Machine (KVM) virtualization technology. It allows a single physical server to run multiple isolated virtual machines (VMs) where each VM acts like a dedicated server with its own resources like CPU.",
-    },
-    // {
-    {
-      icon: (
-        <svg
-          width="38"
-          height="38"
-          viewBox="0 0 38 38"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g clip-path="url(#clip0_1025_7928)">
-            <path
-              d="M36.8125 9.50078C36.1594 9.50078 35.625 10.0352 35.625 10.6883V27.3133C35.625 27.9664 35.0906 28.5008 34.4375 28.5008H3.5625C2.90937 28.5008 2.375 27.9664 2.375 27.3133V7.71953C2.375 7.06641 2.90937 6.53203 3.5625 6.53203H27.2531L22.8594 10.9258C22.6812 11.0445 22.5625 11.282 22.5625 11.4602L21.85 14.2508H7.125C6.47188 14.2508 5.9375 14.7852 5.9375 15.4383C5.9375 16.0914 6.47188 16.6258 7.125 16.6258H22.5625C22.9188 16.6258 23.2156 16.4477 23.4531 16.2102L26.5406 15.4383C26.7781 15.3789 26.9562 15.2602 27.075 15.1414L37.05 5.04766C37.6437 4.51328 38 3.80078 38 2.96953C38 2.13828 37.7031 1.36641 37.1688 0.832031C36.6344 0.238281 35.9219 -0.0585938 35.15 -0.0585938C34.3781 -0.0585938 33.5469 0.238281 32.9531 0.832031L29.6281 4.15703H3.5625C1.60312 4.15703 0 5.76016 0 7.71953V27.3133C0 29.2727 1.60312 30.8758 3.5625 30.8758H14.25V33.2508C14.25 33.4883 14.1906 35.6258 11.2812 35.6258C10.6281 35.6258 10.0938 36.1602 10.0938 36.8133C10.0938 37.4664 10.6281 38.0008 11.2812 38.0008H26.7188C27.3719 38.0008 27.9062 37.4664 27.9062 36.8133C27.9062 36.1602 27.3719 35.6258 26.7188 35.6258C23.9875 35.6258 23.75 33.7852 23.75 33.2508V30.8758H34.4375C36.3969 30.8758 38 29.2727 38 27.3133V10.6883C38 10.0352 37.4656 9.50078 36.8125 9.50078ZM34.6156 2.49453C34.7938 2.31641 34.9719 2.31641 35.0312 2.31641C35.15 2.31641 35.2687 2.31641 35.3875 2.49453C35.625 2.67266 35.625 2.85078 35.625 2.96953C35.625 3.08828 35.625 3.20703 35.4469 3.32578L25.65 13.2414L24.5219 13.5383L24.8188 12.3508L34.6156 2.49453ZM22.0875 35.6258H15.9125C16.4469 34.7352 16.625 33.7852 16.625 33.2508V30.8758H21.375V33.2508C21.375 33.7852 21.5531 34.7352 22.0875 35.6258Z"
-              fill="#FF7500"
-            />
-            <path
-              d="M7.125 12.4688H13.0625C13.7156 12.4688 14.25 11.9344 14.25 11.2812C14.25 10.6281 13.7156 10.0938 13.0625 10.0938H7.125C6.47188 10.0938 5.9375 10.6281 5.9375 11.2812C5.9375 11.9344 6.47188 12.4688 7.125 12.4688ZM7.125 18.4062C6.47188 18.4062 5.9375 18.9406 5.9375 19.5938C5.9375 20.2469 6.47188 20.7812 7.125 20.7812H21.375C22.0281 20.7812 22.5625 20.2469 22.5625 19.5938C22.5625 18.9406 22.0281 18.4062 21.375 18.4062H7.125ZM26.125 23.1562C25.4719 23.1562 24.9375 23.6906 24.9375 24.3438C24.9375 24.9969 25.4719 25.5312 26.125 25.5312H30.875C31.5281 25.5312 32.0625 24.9969 32.0625 24.3438C32.0625 23.6906 31.5281 23.1562 30.875 23.1562H26.125Z"
-              fill="#FF7500"
-            />
-          </g>
-          <defs>
-            <clipPath id="clip0_1025_7928">
-              <rect width="38" height="38" fill="white" />
-            </clipPath>
-          </defs>
-        </svg>
-      ),
-      title: "Unbeatable Pricing",
-      description:
-        "Leveraging our extensive customer network, we negotiate advantageous terms with vendors, leading to significant cost efficiencies for clients through competitively priced VPS hosting. Experience enhanced value and performance with our tailored solutions.",
-    },
-  ];
-  const [isHovered, setIsHovered] = useState(false);
-
-  const CustomSwitchIcon = (
-    <div
-      style={{
-        width: 24,
-        height: 24,
-        borderRadius: "50%",
-        backgroundColor: "#FF7500",
-      }}
-    />
-  );
   return (
     <div className="flex flex-col max-w-[1300px] mx-auto">
       <div className="flex flex-col 2xl:flex-row justify-betweenitems-center ">
@@ -139,16 +21,15 @@ const Plans = () => {
        
       </div>
       {/* cards */}
-      <section className="pt-0">
+      <section className="pt-14">
       
        <div className="flex flex-col gap-0">
-        <div className="flex flex-col bl:flex-row w-full justify-center gap-8 items-center">
- <div className="relative top-0 bottom-0 group !z-[1]  w-full">     
-   <img src="/wordpress/rectbox.svg" className="relative -left-2 -bottom-[600px] !z-[2] opacity-0 group-hover:opacity-100"/>
-   <img src="/wordpress/rectbox.svg" className="relative left-72 top-32 !z-[2] opacity-0 group-hover:opacity-100"/>
+        <div className="flex flex-col bl:flex-row w-full justify-center gap-0 items-center">
+ <div className="relative top-0 bottom-0 group !z-[1]  w-full p-4">     
+   <img src="/wordpress/rectbox.svg" className="absolute right-0 top-0  !z-[2] opacity-0 group-hover:opacity-100"/>
 
-        <div className=" w-full bg-white pl-16 pr-16 py-16 items-center justify-center rounded-2xl border group relative  !z-[3] group-hover:shadow-2xl ">
-  <div className=" w-full space-y-6 items-start justify-start mx-auto ">
+        <div className=" w-full bg-white pl-16 pr-10 py-10 items-center justify-center rounded-2xl border group relative  !z-[3] group-hover:shadow-2xl ">
+  <div className=" w-full space-y-4 items-start justify-start mx-auto ">
     <span className="items-start featuresvg3 justify-start bg-orange-500 mx-auto w-auto">
     <svg width="94" height="90" viewBox="0 0 94 90" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect  className="featuresvgrect" x="0.5" y="0.5" width="92.6667" height="88.6667" rx="15.5" stroke="#DBDBDB" fill="white"/>
@@ -157,19 +38,19 @@ const Plans = () => {
 
 
     </span>
-    <h2 className="font-bold text-[18px] leading-[26px] text-left font-mono-sans-serif text-[#16191C] mb-2 ">Faster Page Loads</h2>
+    <h2 className="font-bold text-[18px] leading-[26px] text-left font-mono-sans-serif text-[#16191C] pt-4 ">Faster Page Loads</h2>
     <p className="font-mona-sans text-base font-normal leading-21  opacity-70 text-left">Drastically improve your core web vitals with faster page loads. SSD NVMes, server-level caching, CDN & GZIP/Brotli included with our WordPress hosting. Further, making Google and site visitors happy.</p>
   </div>
  
 </div>
+<img src="/wordpress/rectbox.svg" className="absolute bottom-0 left-0 !z-[2] opacity-0 group-hover:opacity-100"/>
 
 </div>
-<div className="relative top-0 bottom-0 group !z-[1]  w-full ">     
-   <img src="/wordpress/rectbox.svg" className="relative -left-2 -bottom-[600px] !z-[2] opacity-0 group-hover:opacity-100"/>
-   <img src="/wordpress/rectbox.svg" className="relative left-72 top-32 !z-[2] opacity-0 group-hover:opacity-100"/>
+<div className="relative top-0 bottom-0 group !z-[1]  w-full p-4">     
+   <img src="/wordpress/rectbox.svg" className="absolute right-0 top-0  !z-[2] opacity-0 group-hover:opacity-100"/>
 
-        <div className=" w-full bg-white pl-16 pr-16 py-16 items-center justify-center rounded-2xl border group relative  !z-[3] group-hover:shadow-2xl ">
-  <div className=" w-full space-y-6 items-start justify-start mx-auto ">
+        <div className=" w-full bg-white pl-16 pr-10 py-10 items-center justify-center rounded-2xl border group relative  !z-[3] group-hover:shadow-2xl ">
+  <div className=" w-full space-y-4 items-start justify-start mx-auto ">
     <span className="items-start featuresvg3 justify-start bg-orange-500 mx-auto w-auto">
     <svg width="95" height="90" viewBox="0 0 95 90" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect   className="featuresvgrect" x="0.0195312" width="94" height="90" rx="16" fill="black"/>
@@ -179,48 +60,47 @@ const Plans = () => {
 </svg>
 
 
-
     </span>
-    <h2 className="font-bold text-[18px] leading-[26px] text-left font-mono-sans-serif text-[#16191C] mb-2 ">Faster Page Loads</h2>
-    <p className="font-mona-sans text-base font-normal leading-21  opacity-70 text-left">Drastically improve your core web vitals with faster page loads. SSD NVMes, server-level caching, CDN & GZIP/Brotli included with our WordPress hosting. Further, making Google and site visitors happy.</p>
+    <h2 className="font-bold text-[18px] leading-[26px] text-left font-mono-sans-serif text-[#16191C] pt-4 ">Free Domain, SSL & Email</h2>
+    <p className="font-mona-sans text-base font-normal leading-21  opacity-70 text-left">Everything you need for the best WordPress hosting experience! We offer a free Let's Encrypt SSL certificate, a domain name, and a professional email to make you look more trustworthy and boost credibility.</p>
   </div>
  
 </div>
+<img src="/wordpress/rectbox.svg" className="absolute bottom-0 left-0 !z-[2] opacity-0 group-hover:opacity-100"/>
 
 </div>
-<div className="relative top-0 bottom-0 group !z-[1] w-full  ">     
-   <img src="/wordpress/rectbox.svg" className="relative -left-2 -bottom-[600px] !z-[2] opacity-0 group-hover:opacity-100"/>
-   <img src="/wordpress/rectbox.svg" className="relative left-72 top-32 !z-[2] opacity-0 group-hover:opacity-100"/>
+<div className="relative top-0 bottom-0 group !z-[1]  w-full p-4">     
+   <img src="/wordpress/rectbox.svg" className="absolute right-0 top-0  !z-[2] opacity-0 group-hover:opacity-100"/>
 
-        <div className=" w-full bg-white pl-16 pr-16 py-16 items-center justify-center rounded-2xl border group relative  !z-[3] group-hover:shadow-2xl ">
-  <div className=" w-full space-y-6 items-start justify-start mx-auto ">
+        <div className=" w-full bg-white pl-16 pr-10 py-10 items-center justify-center rounded-2xl border group relative  !z-[3] group-hover:shadow-2xl ">
+  <div className=" w-full space-y-4 items-start justify-start mx-auto ">
     <span className="items-start featuresvg3 justify-start bg-orange-500 mx-auto w-auto">
     <svg width="95" height="90" viewBox="0 0 95 90" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect className="featuresvgrect" x="1.13672" y="0.5" width="93" height="89" rx="15.5" stroke="black"/>
 <path d="M47.9977 67.2768C35.6966 67.2768 25.7188 57.3046 25.7188 45.0021C25.7188 32.6968 35.6966 22.7232 47.9977 22.7232C60.3023 22.7232 70.278 32.6968 70.278 45.0021C70.278 57.3046 60.3023 67.2768 47.9977 67.2768Z" fill="white"/>
-<path d="M70.278 45.0021C70.278 57.3046 60.3023 67.2768 47.9977 67.2768C35.6966 67.2768 25.7188 57.3046 25.7188 45.0021" fill="#EAF4F9"/>
+<path  d="M70.278 45.0021C70.278 57.3046 60.3023 67.2768 47.9977 67.2768C35.6966 67.2768 25.7188 57.3046 25.7188 45.0021" fill="#EAF4F9"/>
 <path d="M47.9977 67.2768C35.6966 67.2768 25.7188 57.3046 25.7188 45.0021C25.7188 32.6968 35.6966 22.7232 47.9977 22.7232C60.3023 22.7232 70.278 32.6968 70.278 45.0021C70.278 57.3046 60.3023 67.2768 47.9977 67.2768Z" stroke="#16191C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M31.793 44.9993C31.793 51.4154 35.5212 56.96 40.928 59.5864L33.1958 38.4036C32.2698 40.4791 31.7918 42.7265 31.793 44.9993ZM48.2865 46.4175L43.4233 60.5489C44.91 60.9871 46.452 61.2094 48.0019 61.2089C49.8887 61.2089 51.6998 60.8832 53.384 60.2911C53.3423 60.2207 53.3019 60.1482 53.269 60.0671L48.2865 46.4175Z" fill="#16191C"/>
-<path d="M58.9424 44.1818C58.9424 42.1786 58.2217 40.7911 57.606 39.7118C56.7835 38.3754 56.0127 37.2454 56.0127 35.91C56.0127 34.42 57.1427 33.0332 58.7345 33.0332C58.807 33.0332 58.8749 33.0421 58.9431 33.0457C56.0613 30.4046 52.2185 28.7911 47.9992 28.7911C42.336 28.7911 37.3545 31.6971 34.457 36.0964C34.8045 36.1082 35.1522 36.1147 35.4999 36.1161C37.1942 36.1161 39.8206 35.9104 39.8206 35.9104C40.6938 35.8586 40.7956 37.1429 39.9231 37.2454C39.9231 37.2454 39.0449 37.3486 38.0685 37.3996L43.9702 54.9561L47.5181 44.3186L44.9945 37.3996C44.1206 37.3486 43.2931 37.2454 43.2931 37.2454C42.4192 37.1936 42.5217 35.8586 43.3963 35.9104C43.3963 35.9104 46.072 36.1161 47.6652 36.1161C49.3602 36.1161 51.9852 35.9104 51.9852 35.9104C52.8592 35.8586 52.961 37.1429 52.0877 37.2454C52.0877 37.2454 51.2088 37.3486 50.2338 37.3996L56.091 54.8229L57.7092 49.4218C58.4074 47.1793 58.9424 45.5693 58.9424 44.1818ZM62.3324 38.8904C62.3324 40.5346 62.0242 42.3836 61.0992 44.6961L56.1488 59.0096C60.9674 56.2007 64.2081 50.9789 64.2081 45C64.2121 42.2819 63.5292 39.6068 62.2227 37.2232C62.2924 37.74 62.3324 38.2925 62.3324 38.8904Z" fill="#16191C"/>
+<path className="svgpath" d="M31.793 44.9993C31.793 51.4154 35.5212 56.96 40.928 59.5864L33.1958 38.4036C32.2698 40.4791 31.7918 42.7265 31.793 44.9993ZM48.2865 46.4175L43.4233 60.5489C44.91 60.9871 46.452 61.2094 48.0019 61.2089C49.8887 61.2089 51.6998 60.8832 53.384 60.2911C53.3423 60.2207 53.3019 60.1482 53.269 60.0671L48.2865 46.4175Z" fill="#16191C"/>
+<path className="svgpath" d="M58.9424 44.1818C58.9424 42.1786 58.2217 40.7911 57.606 39.7118C56.7835 38.3754 56.0127 37.2454 56.0127 35.91C56.0127 34.42 57.1427 33.0332 58.7345 33.0332C58.807 33.0332 58.8749 33.0421 58.9431 33.0457C56.0613 30.4046 52.2185 28.7911 47.9992 28.7911C42.336 28.7911 37.3545 31.6971 34.457 36.0964C34.8045 36.1082 35.1522 36.1147 35.4999 36.1161C37.1942 36.1161 39.8206 35.9104 39.8206 35.9104C40.6938 35.8586 40.7956 37.1429 39.9231 37.2454C39.9231 37.2454 39.0449 37.3486 38.0685 37.3996L43.9702 54.9561L47.5181 44.3186L44.9945 37.3996C44.1206 37.3486 43.2931 37.2454 43.2931 37.2454C42.4192 37.1936 42.5217 35.8586 43.3963 35.9104C43.3963 35.9104 46.072 36.1161 47.6652 36.1161C49.3602 36.1161 51.9852 35.9104 51.9852 35.9104C52.8592 35.8586 52.961 37.1429 52.0877 37.2454C52.0877 37.2454 51.2088 37.3486 50.2338 37.3996L56.091 54.8229L57.7092 49.4218C58.4074 47.1793 58.9424 45.5693 58.9424 44.1818ZM62.3324 38.8904C62.3324 40.5346 62.0242 42.3836 61.0992 44.6961L56.1488 59.0096C60.9674 56.2007 64.2081 50.9789 64.2081 45C64.2121 42.2819 63.5292 39.6068 62.2227 37.2232C62.2924 37.74 62.3324 38.2925 62.3324 38.8904Z" fill="#16191C"/>
 </svg>
 
 
     </span>
-    <h2 className="font-bold text-[18px] leading-[26px] text-left font-mono-sans-serif text-[#16191C] mb-2 ">Faster Page Loads</h2>
-    <p className="font-mona-sans text-base font-normal leading-21  opacity-70 text-left">Drastically improve your core web vitals with faster page loads. SSD NVMes, server-level caching, CDN & GZIP/Brotli included with our WordPress hosting. Further, making Google and site visitors happy.</p>
+    <h2 className="font-bold text-[18px] leading-[26px] text-left font-mono-sans-serif text-[#16191C] pt-4 ">Expert WordPress Support</h2>
+    <p className="font-mona-sans text-base font-normal leading-21  opacity-70 text-left">Get assistance through 24/7 phone and chat access to our in-house experts, ready to address your technical issues. Acting as an extension to your business, were here for you from start to beyond.</p>
   </div>
  
 </div>
+<img src="/wordpress/rectbox.svg" className="absolute bottom-0 left-0 !z-[2] opacity-0 group-hover:opacity-100"/>
 
 </div>
         </div>
-        <div className="flex flex-col 2xl:flex-row w-full justify-center gap-8 items-center">
- <div className="relative top-0 bottom-0 group !z-[1] ">     
-   <img src="/wordpress/rectbox.svg" className="relative -left-2 -bottom-[600px] !z-[2] opacity-0 group-hover:opacity-100"/>
-   <img src="/wordpress/rectbox.svg" className="relative left-72 top-32 !z-[2] opacity-0 group-hover:opacity-100"/>
+        <div className="flex flex-col bl:flex-row w-full justify-center gap-0 items-center">
+ <div className="relative top-0 bottom-0 group !z-[1]  w-full p-4">     
+   <img src="/wordpress/rectbox.svg" className="absolute right-0 top-0  !z-[2] opacity-0 group-hover:opacity-100"/>
 
-        <div className=" w-full bg-white pl-16 pr-16 py-16 items-center justify-center rounded-2xl border group relative  !z-[3] group-hover:shadow-2xl ">
-  <div className=" w-full space-y-6 items-start justify-start mx-auto ">
+        <div className=" w-full bg-white pl-16 pr-10 py-10 items-center justify-center rounded-2xl border group relative  !z-[3] group-hover:shadow-2xl ">
+  <div className=" w-full space-y-4 items-start justify-start mx-auto ">
     <span className="items-start featuresvg3 justify-start bg-orange-500 mx-auto w-auto">
     <svg width="94" height="89" viewBox="0 0 94 89" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect className="featuresvgrect" x="0.5" y="0.5" width="93" height="87.7778" rx="15.5" stroke="white"/>
@@ -230,19 +110,19 @@ const Plans = () => {
 
 
     </span>
-    <h2 className="font-bold text-[18px] leading-[26px] text-left font-mono-sans-serif text-[#16191C] mb-2 ">Faster Page Loads</h2>
-    <p className="font-mona-sans text-base font-normal leading-21  opacity-70 text-left">Drastically improve your core web vitals with faster page loads. SSD NVMes, server-level caching, CDN & GZIP/Brotli included with our WordPress hosting. Further, making Google and site visitors happy.</p>
+    <h2 className="font-bold text-[18px] leading-[26px] text-left font-mono-sans-serif text-[#16191C] pt-4 ">Enhanced Security</h2>
+    <p className="font-mona-sans text-base font-normal leading-21  opacity-70 text-left">Enjoy complete platform-level protection! Free SSL certificate, backups, SSH & SFTP access, Bit Ninja Security & more. Focus on your business rather than worrying about your WordPress sites security.</p>
   </div>
  
 </div>
+<img src="/wordpress/rectbox.svg" className="absolute bottom-0 left-0 !z-[2] opacity-0 group-hover:opacity-100"/>
 
 </div>
-<div className="relative top-0 bottom-0 group !z-[1] ">     
-   <img src="/wordpress/rectbox.svg" className="relative -left-2 -bottom-[600px] !z-[2] opacity-0 group-hover:opacity-100"/>
-   <img src="/wordpress/rectbox.svg" className="relative left-72 top-32 !z-[2] opacity-0 group-hover:opacity-100"/>
+<div className="relative top-0 bottom-0 group !z-[1]  w-full p-4">     
+   <img src="/wordpress/rectbox.svg" className="absolute right-0 top-0  !z-[2] opacity-0 group-hover:opacity-100"/>
 
-        <div className=" w-full bg-white pl-16 pr-16 py-16 items-center justify-center rounded-2xl border group relative  !z-[3] group-hover:shadow-2xl ">
-  <div className=" w-full space-y-6 items-start justify-start mx-auto ">
+        <div className=" w-full bg-white pl-16 pr-10 py-10 items-center justify-center rounded-2xl border group relative  !z-[3] group-hover:shadow-2xl ">
+  <div className=" w-full space-y-4 items-start justify-start mx-auto ">
     <span className="items-start featuresvg3 justify-start bg-orange-500 mx-auto w-auto">
     <svg className="featuresvgrect" width="95" height="82" viewBox="0 0 95 82" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect x="1.01953" y="0.5" width="93" height="81" rx="15.5" stroke="#DBDBDB"/>
@@ -256,23 +136,20 @@ const Plans = () => {
 </defs>
 </svg>
 
-
-
-
     </span>
-    <h2 className="font-bold text-[18px] leading-[26px] text-left font-mono-sans-serif text-[#16191C] mb-2 ">Faster Page Loads</h2>
+    <h2 className="font-bold text-[18px] leading-[26px] text-left font-mono-sans-serif text-[#16191C] pt-4 ">Indian Server Location</h2>
     <p className="font-mona-sans text-base font-normal leading-21  opacity-70 text-left">Drastically improve your core web vitals with faster page loads. SSD NVMes, server-level caching, CDN & GZIP/Brotli included with our WordPress hosting. Further, making Google and site visitors happy.</p>
   </div>
  
 </div>
+<img src="/wordpress/rectbox.svg" className="absolute bottom-0 left-0 !z-[2] opacity-0 group-hover:opacity-100"/>
 
 </div>
-<div className="relative top-0 bottom-0 group !z-[1] ">     
-   <img src="/wordpress/rectbox.svg" className="relative -left-2 -bottom-[600px] !z-[2] opacity-0 group-hover:opacity-100"/>
-   <img src="/wordpress/rectbox.svg" className="relative left-72 top-32 !z-[2] opacity-0 group-hover:opacity-100"/>
+<div className="relative top-0 bottom-0 group !z-[1]  w-full p-4">     
+   <img src="/wordpress/rectbox.svg" className="absolute right-0 top-0  !z-[2] opacity-0 group-hover:opacity-100"/>
 
-        <div className=" w-full bg-white pl-16 pr-16 py-16 items-center justify-center rounded-2xl border group relative  !z-[3] group-hover:shadow-2xl ">
-  <div className=" w-full space-y-6 items-start justify-start mx-auto ">
+        <div className=" w-full bg-white pl-16 pr-10 py-10 items-center justify-center rounded-2xl border group relative  !z-[3] group-hover:shadow-2xl ">
+  <div className=" w-full space-y-4 items-start justify-start mx-auto ">
     <span className="items-start featuresvg3 justify-start bg-orange-500 mx-auto w-auto">
     <svg width="95" height="86" viewBox="0 0 95 86" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect className="featuresvgrect" x="0.539062" y="0.5" width="93" height="85" rx="15.5" stroke="#DBDBDB"/>
@@ -290,16 +167,15 @@ const Plans = () => {
 </svg>
 
 
-
     </span>
-    <h2 className="font-bold text-[18px] leading-[26px] text-left font-mono-sans-serif text-[#16191C] mb-2 ">Faster Page Loads</h2>
+    <h2 className="font-bold text-[18px] leading-[26px] text-left font-mono-sans-serif text-[#16191C] pt-4 ">Faster Page Loads</h2>
     <p className="font-mona-sans text-base font-normal leading-21  opacity-70 text-left">Drastically improve your core web vitals with faster page loads. SSD NVMes, server-level caching, CDN & GZIP/Brotli included with our WordPress hosting. Further, making Google and site visitors happy.</p>
   </div>
  
 </div>
+<img src="/wordpress/rectbox.svg" className="absolute bottom-0 left-0 !z-[2] opacity-0 group-hover:opacity-100"/>
 
 </div>
-
         </div>
         </div>
       </section>
