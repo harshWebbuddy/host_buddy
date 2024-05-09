@@ -4,6 +4,11 @@
 .border-gradient {
   position: relative;
 }
+.backgroundunique{
+  background-image: url("/sitelock/black.png");
+  height: 400px;
+  width: 100%;
+}
 /* styles.css */
 .scrollbar {
   overflow-y: auto; /* Enable vertical scrolling */

@@ -42,7 +42,7 @@ with Plesk</h1>
         </div>
 
         <div className="w-full item-center justify-center">
-          <Image src="/vpshosting/hero.svg" alt="" width={500} height={500} className="item-center justify-center mx-auto" />
+          <Image src="/plenk/hero.svg" alt="" width={500} height={500} className="item-center justify-center mx-auto" />
         </div>
       </div>
     </div>
