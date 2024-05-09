@@ -1,6 +1,13 @@
 import { Panela, Panelb, Panelc } from '@/components/svgs'
 import Image from 'next/image'
 import React from 'react'
+const ScrollBar = () => {
+  return (
+    <div className="scrollbar h-full">
+    <div className="scrollbar-thumb h-16 bg-gray-500"></div>
+</div>
+  );
+};
 const Adds = () => {
   return (
     <section className="bg-[#F9EFE4] relative">
@@ -15,6 +22,16 @@ const Adds = () => {
             Running a business can be challenging, so to help we offer a FREE website builderwith FREE stock images and FREE email with every domain name.
             </p>
           </div>
+          <div className="container mx-auto text-center">
+            <h1 className="text-7xl font-bold mb-8 text-green">
+                GeeksforGeeks
+            </h1>
+            <h2 className="text-4xl ">
+                Reveal on Scroll in React using Tailwind CSS
+            </h2>
+            <ScrollBar />
+            {/* Your content goes here */}
+        </div>
           {/* <div className="space-y-2 2xl:max-w-xl pr-10">
           <div className="relative group space-y-3">
   <div className="cursor-pointer flex w-full group hover:bg-white transition-all duration-300 border-gradient hover:shadow-2xl rounded-xl">

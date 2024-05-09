@@ -52,6 +52,9 @@ const navLinks: NavLink[] = [
     label: "Pages",
     options: [
       { label: "India Dedicated Server", href: "/dedicatedserver" },
+      { label: "Website Builder", href: "/pages/websitebuilder" },
+      //  { label: "Game Server", href: "/pages/gameserver" },
+
       // { label: "Pricing", href: "#" },
       // { label: "Pages", href: "#" },
       // { label: "Features", href: "#" },

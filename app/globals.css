@@ -4,6 +4,34 @@
 .border-gradient {
   position: relative;
 }
+/* styles.css */
+.scrollbar {
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 8px; /* Set width of scrollbar */
+}
+
+.scrollbar-thumb {
+  width: 100%; /* Set width of thumb to fill the scrollbar track */
+  border-radius: 8px; /* Set border radius of thumb */
+}
+.scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #4f4f4f #ccc; /* thumb color and track color */
+  height: 500px; /* adjust height as needed */
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 6px; /* adjust width as needed */
+}
+
+.scrollbar-thumb {
+  background-color: #4f4f4f; /* thumb color */
+  border-radius: 10px; /* adjust border radius as needed */
+  height: 50px; /* adjust height as needed */
+}
 
 .table-container {
   width: 100%;

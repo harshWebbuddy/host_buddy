@@ -21,7 +21,7 @@ const Adds = () => {
   <div className="cursor-pointer flex w-full group hover:bg-white transition-all duration-300 border-gradient hover:shadow-2xl rounded-xl">
     <div className="ml-8 flex md:flex-row items-center  featuresvg2">
       <svg
-        className="group transition-all -mt-24 duration-300"
+        className="group transition-all duration-300"
         width="208"
         height="108"
         viewBox="0 0 48 48"
@@ -54,7 +54,7 @@ const Adds = () => {
               <div className="cursor-pointer flex w-full group hover:bg-white transition-all duration-300 border-gradient hover:shadow-2xl rounded-xl">
                 <div className="ml-8 flex md:flex-row items-center  featuresvg2">
                 <svg
-                className='-mt-24'
+                className=''
           width="158"
           height="108"
           viewBox="0 0 48 54"
@@ -83,7 +83,7 @@ const Adds = () => {
             </div>
             <div className="cursor-pointer flex w-full group hover:bg-white transition-all duration-300 border-gradient hover:shadow-2xl rounded-xl">
               <div className="ml-8 flex md:flex-row items-center featuresvg2">
- <svg      className='-mt-32'
+ <svg      className=''
           width="208"
           height="108"
           viewBox="0 0 48 48"
@@ -122,7 +122,7 @@ const Adds = () => {
         <div className="w-full flex justify-center">
           <div className="relative items-center justify-center mt-40 ">
             <Image src="/vpshosting/3.jpeg" width={500} height={1529} alt="" className="rounded-2xl relative z-10  cropped-ofp" />
-            <Image src="/vpshosting/triangle.svg" width={70} height={70} alt="" className="absolute -rotate-15 top-2 -right-10" />
+            <Image src="/vpshosting/triangle.svg" width={70} height={70} alt="" className="absolute -rotate-15 top-0 -right-10" />
             <Image src="/vpshosting/box.svg" alt="" width={300} height={302} className="absolute -left-20 -bottom-10" />
           </div>
         </div>   
