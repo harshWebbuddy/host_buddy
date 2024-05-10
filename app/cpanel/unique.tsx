@@ -1,6 +1,8 @@
 import { Panela, Panelb, Panelc } from '@/components/svgs'
 import Image from 'next/image'
 import React from 'react'
+import Timeline from './timeline';
+
 
 const Unique = () => {
   return (
@@ -43,6 +45,7 @@ const Unique = () => {
               <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-1" />
               <p className="capitalize leading-7 text-lg ">
               Secured Infrastructure          </p>
+              
             </li>
           </ul>
           </div>

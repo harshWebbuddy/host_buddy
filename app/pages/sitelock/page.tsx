@@ -30,7 +30,7 @@ const page = () => {
           <Plan2/>
         </div> */}
         {/* what make hostbuddy unique section */}
-        <section>
+        <section className='pt-40'>
           <Unique/>
         </section>
         {/* cardsection */}

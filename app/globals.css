@@ -1,47 +1,69 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.border-gradient {
-  position: relative;
-}
-.backgroundunique{
-  background-image: url("/sitelock/black.png");
-  height: 400px;
-  width: 100%;
-}
 /* styles.css */
-.scrollbar {
-  overflow-y: auto; /* Enable vertical scrolling */
-}
-
-.scrollbar::-webkit-scrollbar {
-  width: 8px; /* Set width of scrollbar */
-}
-
-.scrollbar-thumb {
-  width: 100%; /* Set width of thumb to fill the scrollbar track */
-  border-radius: 8px; /* Set border radius of thumb */
-}
-.scrollbar {
-  scrollbar-width: thin;
-  scrollbar-color: #4f4f4f #ccc; /* thumb color and track color */
-  height: 500px; /* adjust height as needed */
-}
-
-.scrollbar::-webkit-scrollbar {
-  width: 6px; /* adjust width as needed */
-}
-
-.scrollbar-thumb {
-  background-color: #4f4f4f; /* thumb color */
-  border-radius: 10px; /* adjust border radius as needed */
-  height: 50px; /* adjust height as needed */
-}
-
 .table-container {
   width: 100%;
   overflow-x: auto;
 }
+.container {
+  display: flex;
+  width: auto;
+  position: relative;
+}
+
+.sidebar {
+  position: relative; /* Set position to relative */
+  rotate: 90deg;
+  left: -10px;
+  top: 0;
+  height: 10%;
+  width: 10px;
+  background-color: #FF7500;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+  z-index: 2;
+}
+
+/* Add white border to the sidebar */
+.sidebar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -5px;
+  height: 100%;
+  width: 12px;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  z-index: 1;
+}
+
+/* Adjust the hover effect */
+.sidebar:hover {
+  width: 20px; /* Increase the width on hover */
+}
+
+
+.content {
+  flex-grow: 1; /* Allow content to fill remaining space */
+}
+
+.paragraph {
+  display: none; /* Initially hide paragraph */
+}
+
+/* Hover effect for the container */
+.container:hover .sidebar {
+  position:absolute;
+  left:0px;
+  width: 100px; /* Increase width of the sidebar on hover */
+}
+
+/* Hover effect for the container */
+.container:hover .paragraph {
+  display: block; /* Display paragraph on container hover */
+}
+
 .image {
   background-image: url("/dedicated/design.svg");
   background-size: contain;
