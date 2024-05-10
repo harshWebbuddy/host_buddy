@@ -9,6 +9,7 @@ import Testimonials from './Testimonials'
 import Faqs from './Faqs';
 import CaseStudy from './CaseStudy'
 import Features from './Features'
+import Unique2 from './unique2'
 
 const page = () => {
   return (
@@ -30,19 +31,15 @@ const page = () => {
           <Plan2/>
         </div> */}
         {/* what make hostbuddy unique section */}
-        <section className='pt-40'>
+        <section className='pt-40 space-y-16'>
           <Unique/>
+          <Unique2/>
         </section>
         {/* cardsection */}
-        <section>
-          <Features/>
-        </section>
-        <section>
-          <CardsComponent/>
-        </section>
-
+    
+       
         {/* testimonials */}
-        <section>
+        <section className='pt-20'>
           <Testimonials/>
         </section>
 
