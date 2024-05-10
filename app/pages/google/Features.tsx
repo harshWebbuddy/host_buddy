@@ -1,9 +1,7 @@
-"use client";
-import { Star } from "@/components/svgs";
-import Image from "next/image";
-import { useEffect, useState } from "react";
-import { BiChevronRight } from "react-icons/bi";
-import { testimonials } from "../(landing)/components/constants/features";
+"use client"
+import Image from 'next/image'
+import React, { useEffect, useState } from 'react'
+import { testimonials } from "@/app/(landing)/components/constants/features";
 export default function Features() {
   const initializeColumns = () => {
     if (typeof window !== "undefined") {
@@ -43,7 +41,7 @@ export default function Features() {
 
   return (
     
-    <div className="p-4 relative bg-gradient-to-b from-[#FFFFFF] to-[#FF7500] mx-auto flex flex-col w-full items-center justify-center opacity-70">
+    <div className="p-4 relative bg-gradient-to-b from-[#FFFFFF] to-[#FF7500] mx-auto flex flex-col w-full items-center justify-center pt-10 2xl:pt-20 mt-20 opacity-70">
       <div className="max-w-[1360px] mx-auto">
         <div className="flex flex-col 2xl:flex-row gap-y-10 2xl:items-center justify-between">
           <h2 className="text-[42px] leading-[63px] font-semibold text-black w-full 2xl:max-w-full">

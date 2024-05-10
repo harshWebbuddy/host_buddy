@@ -6,10 +6,8 @@ import Plan2 from './plan2'
 import Unique from './unique'
 import CardsComponent from './CardsComponent'
 import Testimonials from './Testimonials'
-import { testimonials } from '../(landing)/components/constants/testimonials';
 import Faqs from './Faqs';
 import CaseStudy from './CaseStudy'
-import { caseStudies } from '../(landing)/components/constants/casestudies';
 import Features from './Features'
 
 const page = () => {
@@ -32,7 +30,7 @@ const page = () => {
           <Plan2/>
         </div> */}
         {/* what make hostbuddy unique section */}
-        <section>
+        <section className='pt-40 pb-40'>
           <Unique/>
         </section>
         {/* cardsection */}

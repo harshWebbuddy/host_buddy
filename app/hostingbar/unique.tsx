@@ -1,11 +1,10 @@
-import { Panela, Panelb, Panelc } from '@/components/svgs'
 import Image from 'next/image'
 import React from 'react'
 
 const Unique = () => {
   return (
     <section className=" relative">
-    <div className="p-4 w-full max-w-[1300px] mx-auto flex flex-col xl:flex-row items-center justify-center py-24">
+    <div className="p-4 w-full max-w-[1300px] mx-auto flex flex-col xl:flex-row items-center justify-center ">
       <Image src="/dotted.svg" alt="" width={100} height={100} className="ml-1 absolute left-0 top-20 opacity-50 2xl:visible sm:invisible" />
       <div className="flex flex-col 2xl:flex-row mx-auto items-center justify-between ">
         <div className="w-full flex flex-col space-y-8">

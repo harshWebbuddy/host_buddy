@@ -55,7 +55,7 @@ const navLinks: NavLink[] = [
       { label: "Website Builder", href: "/pages/websitebuilder" },
       { label: "Microsoft 365", href: "/pages/microsoft" },
       { label: "Sitelock", href: "/pages/sitelock" },
-
+      { label: "Google Workspace", href: "/pages/google" },
       //  { label: "Game Server", href: "/pages/gameserver" },
 
       // { label: "Pricing", href: "#" },
