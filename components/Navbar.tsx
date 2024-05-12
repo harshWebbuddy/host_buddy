@@ -20,7 +20,7 @@ interface Option {
 }
 const navLinks: NavLink[] = [
   {
-    href: "/",
+    href: "/phone",
     label: "Home",
     options: [
       // { label: "Home Dedicated Server", href: "/home" },
@@ -33,7 +33,7 @@ const navLinks: NavLink[] = [
     ],
   },
   {
-    href: "/hosting",
+    href: "/hostingbar",
     label: "Hosting",
     options: [
       { label: "Shared Hosting", href: "/hostingbar" },
