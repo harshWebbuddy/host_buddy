@@ -23,7 +23,7 @@ const navLinks: NavLink[] = [
     href: "/hosting",
     label: "Home",
     options: [
-      { label: "Home Dedicated Server", href: "/home" },
+      // { label: "Home Dedicated Server", href: "/home" },
       // { label: "Home Gaming", href: "/home3d" },
       { label: "Home Phones", href: "/phone" },
       { label: "Home Cloud Reseller", href: "/cloud" }, 
