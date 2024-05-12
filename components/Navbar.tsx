@@ -179,17 +179,23 @@ const NavBar = () => {
               ))}
             </ul>
           </div>
-          <div className="hidden bl:flex justify-end space-x-4 w-full  ">
-            <motion.button className="text-white flex flex-row items-center justify-center bg-transparent border border-white rounded-bl px-4 py-2 outline-none cursor-pointer" whileHover={{ scale: 1.2 }}>
-            <AiOutlineGlobal className="mr-2 item-center" />
-            English
-          </motion.button>
-          <motion.button className="text-white flex flex-row items-center justify-center bg-orange-500 hover:bg-orange-600 rounded-bl px-4 py-2" whileHover={{ scale: 1.2 }}>
-            Sign Up
-            {/* <img src="/signuparrow.svg" className="ml-2"/> */}
-            <Image src="/signuparrow.svg" className="ml-2" alt="" width={28} height={1}/>
-          </motion.button>
-        </div>
+       <div className=" hidden 2xl:flex xl:flex  justify-end space-x-4 w-full">
+  <motion.button 
+    className="text-white flex flex-row items-center justify-center bg-transparent border border-white rounded-bl px-4 py-2 outline-none cursor-pointer hover:scale-120"
+    whileHover={{ scale: 1.2 }}
+  >
+    <AiOutlineGlobal className="mr-2" />
+    English
+  </motion.button>
+  <motion.button 
+    className="text-white flex flex-row items-center justify-center bg-orange-500 hover:bg-orange-600 rounded-bl px-4 py-2 hover:scale-120"
+    whileHover={{ scale: 1.2 }}
+  >
+    Sign Up
+    <Image src="/signuparrow.svg" className="ml-2" alt="" width={28} height={1} />
+  </motion.button>
+</div>
+
       </nav>
     </div>
   </header>

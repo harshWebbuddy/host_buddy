@@ -5,7 +5,58 @@
 .table-container {
   width: 100%;
   overflow-x: auto;
+}.container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  padding-right: 20px; /* Add some padding to the right side */
 }
+
+.line-container {
+  position: relative;
+  height: calc(100% - 40px); /* Height of the vertical line (total container height - total vertical spacing) */
+}
+
+.line {
+  position: absolute;
+  width: 200px; /* Width of the horizontal line */
+  height: 2px; /* Height of the horizontal line */
+  background-color: transparent;
+  border-top: 3px dashed #FF7500; /* Dotted border for horizontal line */
+  border-spacing: 40px; 
+}
+
+.line::before {
+  content: ''; /* Add content */
+  position: absolute;
+  width: 6px; /* Width of the dot */
+  height: 6px; /* Height of the dot */
+  background-color: #FF7500; /* Orange color */
+  border-radius: 50%; /* Make it a circle */
+  top: -4px; /* Adjust vertical position */
+  right: -3px; /* Adjust horizontal position */
+}
+
+.line:nth-child(1) {
+  top: calc(25% - 1px); /* Adjust top position for first line */
+}
+
+.line:nth-child(2) {
+  top: calc(50% - 1px); /* Adjust top position for second line */
+}
+
+.line:nth-child(3) {
+  top: calc(75% - 1px); /* Adjust top position for third line */
+}
+
+.vertical-line {
+  width: 2px; /* Width of the vertical line */
+  height: 50%; /* Height of the vertical line */
+  background-color: transparent;
+  border-left: 3px dashed #FF7500; /* Dotted border for vertical line */
+}
+
+
 .container {
   display: flex;
   width: auto;
