@@ -32,7 +32,7 @@ const Unique = () => {
         
         ,
         title: "Works with email app",
-        description: "Compatible with the email app of your choice."
+        description: "Compatible with the email app of your choice security."
       },
       {
         icon:<svg width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -47,7 +47,7 @@ const Unique = () => {
         
         ,
         title: "Mobile webmail",
-        description: "Easily access your email from anywhere."
+        description: "Easily access your email from anywhere security and."
       },
       // {
     // {
@@ -87,12 +87,17 @@ const Unique = () => {
       <div className="absolute -top-4 left-6 w-16 h-16 flex justify-center items-center  ">
         {item.icon}
       </div>
-      <div className="rounded-2xl group  text-[#FFFFFF] p-6 md:p-8 cursor-pointer">
-        <h2 className="text-xl font-bold mt-4 opacity-1 mb-4">{item.title}</h2>
-        <p className="w-full opacity-70 font-mona-sans text-[16px ] font-normal leading-normal text-left">
+      
+      <div className="rounded-2xl group flex flex-row items-center justify-center  text-[#FFFFFF] cursor-pointer">
+      <svg className='mt-2' width="4" height="104" viewBox="0 0 2 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="1" y1="3.03065e-08" x2="0.999993" y2="104" stroke="#FF7500" stroke-width="2"/>
+</svg>
+<div className='p-6 md:p-8'>
+  <h2 className="text-xl font-bold mt-4 opacity-1 mb-2">{item.title}</h2>
+        <p className="w-full opacity-70 font-mona-sans text-[16px] font-normal leading-[24px] text-left">
           {item.description}
         </p>
-
+</div>
       </div>
     </div>
   ))}

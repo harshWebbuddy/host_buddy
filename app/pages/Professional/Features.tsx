@@ -1,79 +1,89 @@
-"use client";
-import { Star } from "@/components/svgs";
-import Image from "next/image";
-import { useEffect, useState } from "react";
-import { BiChevronRight } from "react-icons/bi";
-import { testimonials } from "../../(landing)/components/constants/vpsfeatures";
-export default function Features() {
-  const initializeColumns = () => {
-    if (typeof window !== "undefined") {
-      if (window.innerWidth > 1024) {
-        return 3;
-      } else if (window.innerWidth > 640 && window.innerWidth < 1024) {
-        return 2;
-      } else {
-        return 1;
-      }
-    }
-    return 3; // Default value for server-side rendering
-  };
+import { Panela, Panelb, Panelc } from '@/components/svgs'
+import Image from 'next/image'
+import React from 'react'
 
-  const [columns, setColumns] = useState(initializeColumns() || 3);
-  const [viewAll, setViewAll] = useState(false);
-  const visibleTestimonials = viewAll ? testimonials : testimonials.slice(0, 9);
-
-  useEffect(() => {
-    const resizeListener = () => {
-      if (typeof window !== "undefined") {
-        if (window.innerWidth > 1024) {
-          setColumns(3);
-        } else if (window.innerWidth > 640 && window.innerWidth < 1024) {
-          setColumns(2);
-        } else {
-          setColumns(1);
-        }
-      }
-    };
-
-    window.addEventListener("resize", resizeListener);
-    return () => {
-      window.removeEventListener("resize", resizeListener);
-    };
-  }, []);
-
+const Adds = () => {
   return (
-    
-    <div className="p-4 relative bg-[#F9EFE4] mx-auto flex flex-col w-full items-center justify-center pt-10 2xl:pt-20 mt-20 `">
-      <div className="max-w-[1360px] mx-auto space-y-10">
-        <div className="flex flex-col 2xl:flex-col gap-y-0 2xl:items-center">
-        <h4 className="text-[42px] text-black font-semibold font-mona-sans leading-normal">
-        Build More Than a Website
-             </h4>
-             <h4 className="text-[42px] text-black font-semibold font-mona-sans leading-normal">
-       
-<span className="text-orange-500 capitalize"> Build Your Brand </span> 
-             </h4>
-    
+    <section className="bg-[#F9EFE4] relative">
+    <div className="p-4 w-full max-w-[1420px] mx-auto flex flex-col md:flex-row items-center justify-center py-20">
+      <div className="flex flex-col 2xl:flex-row mx-auto items-center justify-between ">
+        <div className="w-full space-y-10 ">
+          <div className="space-y-3.5">
+            <h4 className="text-[42px]  font-semibold font-mona-sans leading-normal">
+            Why Choose Us?
+            </h4>
+            <p className="text-[16px]  pr-10 leading-loose font-mono-sans">
+            Running a business can be challenging, so to help we offer a FREE website builderwith FREE stock images and FREE email with every domain name.
+            </p>
+          </div>
+          <div className="space-y-2 2xl:max-w-xl flex flex-col ">
+          <div className="relative group space-x-6 flex flex-row container">
+              <div className='sidebar'></div>
+              <div className="cursor-pointer flex w-full group  transition-all duration-300  rounded-xl">
+                <div className="flex xl:flex-row items-center ">
+                
+                  <div className="transition-all duration-300 cursor-pointer   text-[#16191C]">
+                    <h2 className="text-[24px] font-bold opacity-1 mb-4 text-[#16191C]/50  group-hover:text-[#16191C]">Infrastructure & Technology Used</h2>
+                    <p className="font-mona-sans text-[16px] font-normal leading-normal text-left paragraph">
+                    Euismod egestas suspendisse aliquet amet ultrices faucibus mauris sit odio.                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="relative group space-x-2 flex flex-row  container">
+              <div className='sidebar'></div>
+              <div className="cursor-pointer flex w-full group  transition-all duration-300  rounded-xl">
+                <div className="flex xl:flex-row items-center ">
+                
+                  <div className="transition-all duration-300 cursor-pointer  xl:gap-6 text-[#16191C]">
+                    <h2 className="text-[24px] font-bold opacity-1 mb-4 text-[#16191C]/50  group-hover:text-[#16191C]">70+ free one-click installs</h2>
+                    <p className="font-mona-sans text-[16px] font-normal leading-normal text-left paragraph">
+                    Euismod egestas suspendisse aliquet amet ultrices faucibus mauris sit odio.                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="relative group space-x-2 flex flex-row  container">
+              <div className='sidebar'></div>
+              <div className="cursor-pointer flex w-full group  transition-all duration-300  rounded-xl">
+                <div className="flex xl:flex-row items-center ">
+                
+                  <div className="transition-all duration-300 cursor-pointer  xl:gap-6 text-[#16191C]">
+                    <h2 className="text-[24px] font-bold opacity-1 mb-4 text-[#16191C]/50  group-hover:text-[#16191C]"> SSl Certificate</h2>
+                    <p className="font-mona-sans text-[16px] font-normal leading-normal text-left paragraph">
+                    Euismod egestas suspendisse aliquet amet ultrices faucibus mauris sit odio.                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="relative group space-x-2 flex flex-row container ">
+              <div className='sidebar'></div>
+              <div className="cursor-pointer flex w-full group  transition-all duration-300  rounded-xl">
+                <div className="flex xl:flex-row items-center ">
+                
+                  <div className="transition-all duration-300 cursor-pointer  xl:gap-6 text-[#16191C]">
+                    <h2 className="text-[24px] font-bold opacity-1 mb-4 text-[#16191C]/50  group-hover:text-[#16191C]">Support</h2>
+                    <p className="font-mona-sans text-[16px] font-normal leading-normal text-left paragraph">
+                    Euismod egestas suspendisse aliquet amet ultrices faucibus mauris sit odio.                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+          </div>
+        
         </div>
-   <div className="space-y-8">
-        <div className="bg-white rounded-2xl  w-full flex flex-col 2xl:flex-row space-x-12 p-2 max-w-[833px] mx-auto  ">
-<div  className="bg-orange-500 rounded-xl px-4 text-white  py-4">Free Domain Name</div>
-<div  className="py-4 px-4 text-[18px] font-normal leading-[26px]">Online Store</div>
-
-<div className="py-4 px-4 text-[18px] font-normal leading-[26px]">Portfolio</div>
-
-<div className="py-4 px-4 text-[18px] font-normal leading-[26px]">Blog</div>
-<div className="py-4 px-4 text-[18px] font-normal leading-[26px] ">Other</div>
-       </div>
-        <div className="flex flex-col 2xl:flex-row gap-4  transition-all duration-500 pb-20 ">
-    <img src="/websitebuilder/brand1.svg"/>
-    <img src="/websitebuilder/brand2.svg"/>
-    <img src="/websitebuilder/brand3.svg"/>
-    <img src="/websitebuilder/brand4.svg"/>
-
-        </div></div> 
+        <div className="w-full flex justify-center">
+          <div className="relative items-center justify-center mt-40 ">
+            <Image src="/plenk/choose.jpeg" width={497} height={301} alt="" className="rounded-2xl relative z-10 " />
+          </div>
+          
+        </div>   
+        </div>
       </div>
-     
-    </div>
-  );
+
+  </section>
+  )
 }
+
+export default Adds;

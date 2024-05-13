@@ -57,6 +57,8 @@ const navLinks: NavLink[] = [
       { label: "Sitelock", href: "/pages/sitelock" },
       { label: "Google Workspace", href: "/pages/google" },
       { label: "Professional Email", href: "/pages/Professional" },
+      { label: "CodeGuard", href: "/pages/CodeGuard" },
+
       //  { label: "Game Server", href: "/pages/gameserver" },
 
       // { label: "Pricing", href: "#" },

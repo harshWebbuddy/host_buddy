@@ -1,16 +1,12 @@
 "use client";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import React, { useState } from "react";
-import { Rating } from "react-simple-star-rating";
 interface StarRatingProps {
   initialRating?: number;
   onChange?: (rating: number) => void;
+  color?: string;
 }
-const StarRating: React.FC<StarRatingProps> = ({
-  initialRating = 0,
-  onChange,
-}) => {
+const StarRating: React.FC<StarRatingProps> = ({ initialRating = 0, onChange, color }) => {
   const [rating, setRating] = useState(initialRating);
   const handleStarClick = (newRating: number) => {
     setRating(newRating);
@@ -23,11 +19,8 @@ const StarRating: React.FC<StarRatingProps> = ({
       {[1, 2, 3, 4, 5].map((index) => (
         <button
           key={index}
-          className={`text-3xl ${
-            index <= rating ? "text-yellow-500" : "text-gray-300"
-          } focus:outline-none`}
-          onClick={() => handleStarClick(index)}
-        >
+          className={`text-4xl ${index <= rating ? `${color ?? "text-yellow-500"}` : "text-gray-300"} focus:outline-none`}
+          onClick={() => handleStarClick(index)}>
           ★
         </button>
       ))}
@@ -40,33 +33,67 @@ const Ratingpanel = () => {
     // Handle the rating change logic here
   };
   return (
-    <motion.div className="flex flex-col md:flex-row justify-center items-center mx-auto w-full md:w-[1220px] xl:w-full p-10 rounded-2xl mt-16" whileHover={{ scale: 1.1 }}>
-      <div className="flex flex-col items-center md:flex-row gap-10 xl:gap-20">
-        <div className="flex flex-col items-center gap-4">
-          <h3 className="font-bold text-white text-lg md:text-xl xl:text-2xl">Customer Happiness</h3>
-          <div className="flex items-center gap-2">
-            <span className="text-white text-lg md:text-xl xl:text-2xl">Google</span>
-            <StarRating initialRating={3.5} onChange={handleRatingChange} />
+      <div className="w-full max-w-[1300px] mx-auto bg-[#F5F5F5] rounded-3xl mt-20">
+        <div className="flex flex-col 2xl:flex-row items-center p-10 gap-[85px]">
+          <div className="w-full max-w-fit font-mona-sans font-semibold text-center bl:text-left">
+            <h3 className="font-bold text-[24px] leading-[63px]">Customer Happiness</h3>
           </div>
-          <h2 className="text-white text-xs md:text-sm xl:text-base">
-            <span className="text-white font-semibold">4.9/5 | 9010</span> reviews
-          </h2>
-        </div>
-        <div className="hidden md:flex items-center h-[2px] xl:h-[60px] w-[30px] xl:w-[60px] border-t border-gray-300"></div>
-        <div className="flex flex-col items-center gap-4">
-          <h3 className="font-bold text-white text-lg md:text-xl xl:text-2xl">Trustpilot</h3>
-          <div className="flex items-center gap-2">
-            <span className="text-white text-lg md:text-xl xl:text-2xl">Trustpilot</span>
-            <StarRating initialRating={3.5} onChange={handleRatingChange} />
+          <div className="w-full grid grid-cols-7 xl:grid-cols-7 2xl:grid-cols-7 gap-x-0 gap-y-10 items-center justify-center">
+            <div className="flex flex-col items-center">
+              <div className="space-y-2">
+                <Image src="/trustpilot.svg" alt="" width={150} height={40} />
+                <Image src="/trustpilot-reviews.svg" alt="" width={180} height={40} />
+                <h2 className="px-0  text-[11px] ">
+                  <span className="font-mona-sans font-extrabold leading-normal text-left">4.9/5 | 9010</span> reviews
+                </h2>
+              </div>
           </div>
-          <h2 className="text-white text-xs md:text-sm xl:text-base">
-            <span className="text-white font-semibold">4.9/5 | 9010</span> reviews
-          </h2>
+          <svg className="w-full h-16 pt-2 " width="1" height="57" viewBox="0 0 1 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="0.5" y1="0.63501" x2="0.499998" y2="56.635" stroke="#C8C8C8" stroke-dasharray="2 2"/>
+</svg>
+
+          <div className="flex flex-col items-center">
+            <div className="space-y-1">
+              <Image src="/google1.svg" alt="" width={100} height={40} className="-mb-3" />
+             <img src="/hosting/rating1.svg" className="w-auto h-[28px]"/> 
+            {/* <StarRating initialRating={3.5} onChange={handleRatingChange} /> */}
+            <h2 className="px-0  text-[11px] ">
+                <span className="font-mona-sans font-extrabold leading-relaxed text-left">4.9/5 | 9010</span> reviews
+              </h2>
+            </div>
+          </div>
+          <svg className="w-full h-16 pt-2 " width="1" height="57" viewBox="0 0 1 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="0.5" y1="0.63501" x2="0.499998" y2="56.635" stroke="#C8C8C8" stroke-dasharray="2 2"/>
+</svg>
+          <div className="flex flex-col items-center">
+          <div className="space-y-2">
+              <Image src="/hostadvice.svg" alt="" width={120} height={40} className="mt-2"/>
+              <img src="/hosting/rating1.svg" className="w-auto h-[28px]"/> 
+
+              {/* <StarRating initialRating={3.5} onChange={handleRatingChange} /> */}
+              <h2 className="px-0  text-[11px] ">
+                <span className="font-mona-sans font-extrabold leading-relaxed text-left">4.9/5 | 9010</span> reviews
+              </h2>
+            </div>
+          </div>  
+          {/* <div className="border-t-[3px] border-dashed border-[#dedede] w-14 h-1 relative  group-hover:opacity-0 transition rotate-90 duration-200" /> */}
+          <svg className="w-full h-16 pt-2 " width="1" height="57" viewBox="0 0 1 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="0.5" y1="0.63501" x2="0.499998" y2="56.635" stroke="#C8C8C8" stroke-dasharray="2 2"/>
+</svg>
+          <div className="flex flex-col items-center">
+          <div className="space-y-2.5">
+              <Image src="/serchen.svg" alt="" width={100} height={40} />
+              <img src="/hosting/rating2.svg" className="w-auto h-[28px]"/> 
+
+              {/* <StarRating initialRating={4} onChange={handleRatingChange} color="!text-[#73CF11]" /> */}
+              <h2 className="px-0  text-[11px] ">
+                <span className="font-mona-sans font-extrabold leading-relaxed text-left">4.9/5 | 9010 </span> reviews
+              </h2>
+            </div>
+          </div>
         </div>
-        {/* Add more rating panels here if needed */}
       </div>
-    </motion.div>
+    </div>
   );
 };
-
 export default Ratingpanel;

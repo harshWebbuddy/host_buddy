@@ -31,9 +31,9 @@ const page = () => {
         <section className='pt-40 pb-28'>
           <CardsComponent/>
         </section>
-        <section>
+        {/* <section>
           <Features/>
-        </section>
+        </section> */}
         <section>
           <Testimonials/>
         </section>

@@ -10,13 +10,13 @@ const HeroHosting = () => {
         <div className="relative w-full flex flex-col justify-center 2xl:justify-start space-y-5">
           <div className='relative w-full flex flex-col justify-center 2xl:justify-start space-y-0'><h2 className="font-mono-sans text-sm font-light italic leading-relaxed text-center 2xl:text-left">
             {/* <span className="text-white opacity-90 font-light">Welcome to </span> */}
-            <span className="text-orange-500 font-bold">Up to 75% off Website Builder</span>
+            <span className="text-orange-500 font-bold">Professional Email</span>
           </h2>
-          <h1 className="font-mono-sans font-semibold text-[60px] leading-[84px] text-center 2xl:text-left">AI Website Builder – 
-Go Live in 4 Clicks</h1>
+          <h1 className="font-mono-sans font-semibold text-[60px] leading-[84px] text-center 2xl:text-left">Your business will
+better than ever.</h1>
 </div>
           <p className="font-mono-sans text-[18px] font-light leading-loose text-center 2xl:text-left text-[#EBEBEB]">
-          Leverage VPS Power for Ultimate Control, Enhanced Security, and Lightning-Fast Speed. Elevate Your Hosting Experience Now!
+          Earn your customers' trust with a professional email address that matches your business name.
           </p>
           <div className="flex flex-row justify-center 2xl:justify-start !mt-10 ">
             <button className="h-[56px]  flex item-center justify-center bg-orange-500 rounded-xl py-4 w-auto px-6  gap-x-3">
@@ -42,7 +42,7 @@ Go Live in 4 Clicks</h1>
         </div>
 
         <div className="w-full item-center justify-center">
-          <Image src="/websitebuilder/hero.svg" alt="" width={500} height={500} className="item-center justify-center mx-auto" />
+          <Image src="/professional/hero.svg" alt="" width={500} height={500} className="item-center justify-center mx-auto" />
         </div>
       </div>
     </div>

@@ -1,16 +1,12 @@
 "use client";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import React, { useState } from "react";
-import { Rating } from "react-simple-star-rating";
 interface StarRatingProps {
   initialRating?: number;
   onChange?: (rating: number) => void;
+  color?: string;
 }
-const StarRating: React.FC<StarRatingProps> = ({
-  initialRating = 0,
-  onChange,
-}) => {
+const StarRating: React.FC<StarRatingProps> = ({ initialRating = 0, onChange, color }) => {
   const [rating, setRating] = useState(initialRating);
   const handleStarClick = (newRating: number) => {
     setRating(newRating);
@@ -23,11 +19,8 @@ const StarRating: React.FC<StarRatingProps> = ({
       {[1, 2, 3, 4, 5].map((index) => (
         <button
           key={index}
-          className={`text-3xl ${
-            index <= rating ? "text-yellow-500" : "text-gray-300"
-          } focus:outline-none`}
-          onClick={() => handleStarClick(index)}
-        >
+          className={`text-4xl ${index <= rating ? `${color ?? "text-yellow-500"}` : "text-gray-300"} focus:outline-none`}
+          onClick={() => handleStarClick(index)}>
           ★
         </button>
       ))}
@@ -40,78 +33,67 @@ const Ratingpanel = () => {
     // Handle the rating change logic here
   };
   return (
-    <motion.div className="flex flex-col md:flex-row  xl:bg-transparent 2xl:bg-transparent gf:bg-black mp:bg-black justify-center items-center mx-auto xl:w-full sp:w-full  w-full md:w-[1220px] 2xl:w-[1220px] 2xl:h-[169.27px] pa:w-full p-10 rounded-2xl mt-16" whileHover={{scale:1.1}}>
-    <div className="md:flex items-center justify-center pa:gap-x-2 sp:gap-x-0 sp:-ml-52 2xl:gap-x-36 sp:flex-col xl:gap-x-40 mt-16 mb-6 pa:ml-8  ">
-      <div className="font-mona-sans font-semibold  2xl:w-[245px] text-center 2xl:p-0 lg:-mt-20 p-4 md:text-left h-[63px] pa:-mt-32 2xl:-mt-2 mp:mb-8 xl:-mt-16 gf:mb-32">
-        <h3 className="font-bold text-[23px]  leading-[63px] text-white ">Customer Happiness</h3>
-      </div>
-      <div className="flex flex-col md:flex-row pa:flex-row justify-between 2xl:mt-8 sp:ml-24 2xl:gap-x-4 xl:flex-nowrap pa:flex-wrap md:flex-nowrap 2xl:flex-nowrap sp:flex-nowrap sp:flex-col">
-        <div className="flex flex-col items-center pa:w-[40%] mb-20 hover:scale-105 transition-transform">
-          <div className="text-xl font-bold text-blue-600 mb-4 mt-3">
-            G<span className="text-red-600">o</span>o
-            <span className="text-yellow-500">g</span>l
-            <span className="text-blue-600">e</span>
+      <div className="w-full max-w-[1300px] mx-auto bg-[#F5F5F5] rounded-3xl mt-20">
+        <div className="flex flex-col 2xl:flex-row items-center p-10 gap-[85px]">
+          <div className="w-full max-w-fit font-mona-sans font-semibold text-center bl:text-left">
+            <h3 className="font-bold text-[24px] leading-[63px]">Customer Happiness</h3>
           </div>
-          <StarRating initialRating={3.5} onChange={handleRatingChange} />
-          <h2 className="text-white text-[15px]">
-            <span className="text-white font-mona-sans font-extrabold text-xs leading-63 text-left w-64 h-16 ">
-              4.9/5 | 9010
-            </span>{" "}
-            reviews
-          </h2>
+          <div className="w-full grid grid-cols-7 xl:grid-cols-7 2xl:grid-cols-7 gap-x-0 gap-y-10 items-center justify-center">
+            <div className="flex flex-col items-center">
+              <div className="space-y-2">
+                <Image src="/trustpilot.svg" alt="" width={150} height={40} />
+                <Image src="/trustpilot-reviews.svg" alt="" width={180} height={40} />
+                <h2 className="px-0  text-[11px] ">
+                  <span className="font-mona-sans font-extrabold leading-normal text-left">4.9/5 | 9010</span> reviews
+                </h2>
+              </div>
+          </div>
+          <svg className="w-full h-16 pt-2 " width="1" height="57" viewBox="0 0 1 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="0.5" y1="0.63501" x2="0.499998" y2="56.635" stroke="#C8C8C8" stroke-dasharray="2 2"/>
+</svg>
+
+          <div className="flex flex-col items-center">
+            <div className="space-y-1">
+              <Image src="/google1.svg" alt="" width={100} height={40} className="-mb-3" />
+             <img src="/hosting/rating1.svg" className="w-auto h-[28px]"/> 
+            {/* <StarRating initialRating={3.5} onChange={handleRatingChange} /> */}
+            <h2 className="px-0  text-[11px] ">
+                <span className="font-mona-sans font-extrabold leading-relaxed text-left">4.9/5 | 9010</span> reviews
+              </h2>
+            </div>
+          </div>
+          <svg className="w-full h-16 pt-2 " width="1" height="57" viewBox="0 0 1 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="0.5" y1="0.63501" x2="0.499998" y2="56.635" stroke="#C8C8C8" stroke-dasharray="2 2"/>
+</svg>
+          <div className="flex flex-col items-center">
+          <div className="space-y-2">
+              <Image src="/hostadvice.svg" alt="" width={120} height={40} className="mt-2"/>
+              <img src="/hosting/rating1.svg" className="w-auto h-[28px]"/> 
+
+              {/* <StarRating initialRating={3.5} onChange={handleRatingChange} /> */}
+              <h2 className="px-0  text-[11px] ">
+                <span className="font-mona-sans font-extrabold leading-relaxed text-left">4.9/5 | 9010</span> reviews
+              </h2>
+            </div>
+          </div>  
+          {/* <div className="border-t-[3px] border-dashed border-[#dedede] w-14 h-1 relative  group-hover:opacity-0 transition rotate-90 duration-200" /> */}
+          <svg className="w-full h-16 pt-2 " width="1" height="57" viewBox="0 0 1 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="0.5" y1="0.63501" x2="0.499998" y2="56.635" stroke="#C8C8C8" stroke-dasharray="2 2"/>
+</svg>
+          <div className="flex flex-col items-center">
+          <div className="space-y-2.5">
+              <Image src="/serchen.svg" alt="" width={100} height={40} />
+              <img src="/hosting/rating2.svg" className="w-auto h-[28px]"/> 
+
+              {/* <StarRating initialRating={4} onChange={handleRatingChange} color="!text-[#73CF11]" /> */}
+              <h2 className="px-0  text-[11px] ">
+                <span className="font-mona-sans font-extrabold leading-relaxed text-left">4.9/5 | 9010 </span> reviews
+              </h2>
+            </div>
+          </div>
         </div>
-        <div className="hidden md:flex items-center xl:opacity-100 pa:opacity-0 2xl:opacity-100 2xl:-mt-16 xl:-mt-16">
-          <div className="2xl:w-[70px] pa:w-[30px] xl:w-[60px] border-t-2  border-[#C8C8C8] transform rotate-90 opacity-1" style={{ borderStyle: 'dotted' }}></div>
-        </div>
-      
-        <div className="flex flex-col items-center pa:w-[40%] mb-20 hover:scale-105 transition-transform">
-        <h2 className="text-xl font-bold mb-4 mt-3 text-white">Trustpilot</h2>
-        <StarRating initialRating={3.5} onChange={handleRatingChange} />
-      <h2 className="text-white text-[15px]">
-            <span className="text-white font-mona-sans font-extrabold text-xs leading-63 text-left w-64 h-16 ">
-              4.9/5 | 9010
-            </span>{" "}
-            reviews
-          </h2>
-      </div>
-  
-      
-      <div className="hidden md:flex items-center xl:opacity-100 pa:opacity-0 2xl:opacity-100 2xl:-mt-16 xl:-mt-16">
-          <div className="2xl:w-[70px] pa:w-[30px] xl:w-[60px] border-t-2  border-[#C8C8C8] transform rotate-90 opacity-1" style={{ borderStyle: 'dotted' }}></div>
-        </div>
-      
-     
-        <div className="flex flex-col items-center pa:w-[40%] mb-20 hover:scale-105 transition-transform">
-        <h2 className="text-xl font-bold mb-4 mt-3 text-white">Trustpilot</h2>
-        <StarRating initialRating={3.5} onChange={handleRatingChange} />
-        <h2 className="text-white text-[15px]">
-            <span className="text-white font-mona-sans font-extrabold text-xs leading-63 text-left w-64 h-16 ">
-              4.9/5 | 9010
-            </span>{" "}
-            reviews
-          </h2>
-      </div>
-  
-      
-      <div className="hidden md:flex items-center xl:opacity-100 pa:opacity-0 2xl:opacity-100 2xl:-mt-16 xl:-mt-16">
-          <div className="2xl:w-[70px] pa:w-[30px] xl:w-[60px] border-t-2  border-[#C8C8C8] transform rotate-90 opacity-1" style={{ borderStyle: 'dotted' }}></div>
-        </div>
-      
-      <div className="flex flex-col items-center pa:w-[40%]  pa:mr-12 mb-4 hover:scale-105 transition-transform">
-        <h2 className="text-white text-xl font-bold mb-4 mt-3">Trustpilot</h2>
-        <StarRating initialRating={3.5} onChange={handleRatingChange} />
-        <h2 className="text-white text-[15px]">
-            <span className="text-white font-mona-sans font-extrabold text-xs leading-63 text-left w-64 h-16 ">
-              4.9/5 | 9010
-            </span>{" "}
-            reviews
-          </h2>
-      </div>
       </div>
     </div>
-   
-  </motion.div>
-  
   );
 };
 export default Ratingpanel;
