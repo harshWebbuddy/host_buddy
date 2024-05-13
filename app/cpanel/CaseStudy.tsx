@@ -11,7 +11,6 @@ const Unique = () => {
       <div>   <h1 className="text-[42px] font-semibold">
             Our Featured <span className="pb-4 border-b-4 border-orange-500">CaseStudy</span>
           </h1>
-          
           <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-y-6 gap-x-4 mt-10">
             {caseStudies.map((caseStudy, index) => (
               <div key={index} className="space-y-6">
