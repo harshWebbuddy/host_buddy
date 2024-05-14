@@ -42,16 +42,13 @@ const Unique = () => {
       backgroundPosition: "center center"
     }} className="background w-full relative pt-20 pb-20">
     <div className="p-4 w-full max-w-[1350px] mx-auto flex flex-col xl:flex-row items-center justify-center ">
-      <div className="flex flex-col 2xl:flex-row mx-auto items-center gap-y-10  ">
+      <div className="flex flex-col 2xl:flex-row mx-auto items-center space-y-10 ">
      
-        <div className="w-full flex flex-col space-y-8 items-center justify-center 2xl:mb-40">
+        <div className="w-full flex flex-col space-y-10 items-center justify-center 2xl:mb-32">
         <div className="space-y-3.5 flex-col items-center justify-center">
-  <div className='pr-96'>
-  <div className='bg-orange-500 h-full rounded-[10px] w-auto relative'>
-    <div className='border-4 border-white rounded-[10px] p-2'>
-   
-      <h2 className='text-white mx-auto items-center px-2 justify-center text-[12px] font-semibold'>Plus</h2>
-    </div>
+  <div className=''>
+  <div className='h-full rounded-[10px] w-auto relative'>
+   <img src='/ssl/plus.png'/>
   </div></div>
   <h4 className="text-[24px] text-white pr-20 font-semibold font-mona-sans leading-[36px]">
     Every SSL Certificate plan includes:<span className="text-orange-500"></span>
