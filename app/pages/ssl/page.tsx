@@ -34,7 +34,7 @@ const page = () => {
         </section>
        
         
-        <section className='pt-40 pb-96'>
+        <section className='pt-40 pb-[350px]'>
           <CardsComponent/>
         </section>
       
