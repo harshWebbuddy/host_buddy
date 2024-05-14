@@ -26,7 +26,7 @@ const page = () => {
     
           <Unique/>
         </section>
-    <section>
+    <section className='pt-40'>
       <Uniquecpanel/>
     </section>
         <section>
