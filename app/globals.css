@@ -148,6 +148,29 @@ th {
   stroke:#FF7500;
   fill: #FF7500;
 }
+.group:hover .svg-container svg path {
+  fill: white;
+}
+
+.group:hover .svg-container svg rect {
+  fill: #FF7500;
+}
+.group:hover .featuresvg6 svg{
+  fill:#ff7500;
+}
+.group:hover .featuresvg6  svg path{
+  fill: white;
+  stroke: white;
+}
+.group:hover .path1{
+  fill:#ff7500;
+}
+.group:hover .featuresvg5  svg path{
+  fill: white;
+}
+.group:hover .featuresvg5 svg{
+  fill: #FF7500;
+}
 .group:hover .featuresvg3  .svgpath{
   stroke:#FF7500;
   fill: #FF7500;
@@ -271,7 +294,7 @@ box-shadow: 0px 100px 80px 0px rgba(255, 117, 0, 0.14), 0px 41.778px 33.422px 0p
   opacity: 1;
   fill: #FF7500;
 }
-/* .group:hover  svg path {
+svg/* .group:hover   path {
   fill: white;
 } */
 .group:hover .featuresvg svg path{

@@ -69,6 +69,16 @@ const navLinks: NavLink[] = [
     ],
   },
   {
+    href: "/features/payment",
+    label: "Features",
+    options: [
+      { label: "Payment Methods", href: "/features/payment" },
+      // { label: "Pricing", href: "#" },
+      // { label: "Pages", href: "#" },
+      // { label: "Features", href: "#" },
+    ],
+  },
+  {
     href: "#",
     label: "Pricing",
     options: [
@@ -78,16 +88,7 @@ const navLinks: NavLink[] = [
       // { label: "Features", href: "#" },
     ],
   },
-  {
-    href: "#",
-    label: "Features",
-    options: [
-      { label: "Hosting", href: "/hosting" },
-      // { label: "Pricing", href: "#" },
-      // { label: "Pages", href: "#" },
-      // { label: "Features", href: "#" },
-    ],
-  },
+ 
 ];
 
 const NavBar = () => {
