@@ -982,7 +982,7 @@ const Locationpage = () => {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 2000 857"
-          width="2200px"
+          width="1600px"
           height="670px"
           className="w-full"
           style={{ cursor: `url('/cursormid.svg'), auto` }}>
