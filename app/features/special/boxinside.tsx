@@ -11,12 +11,13 @@ const FooterBoxinside = () => {
       <div className="space-y-5 max-w-2xl">
 
       
-          <div className=" rounded-xl flex items-center w-full bg-orange-500">
-            <button className="flex text-center gap-x-3 items-center text-[#FFFFFF] px-4 font-semibold h-[46px] rounded-xl">
-            Go Coupons
-            </button>
-          </div>
-      </div>
+      <div className="pr-0 w-full">  
+      <div className="bg-orange-500 rounded-lg p-2 w-44 ">
+                    <h2 className="text-white font-semibold text-[16px] leading-normal  mx-auto text-center w-full">Go Coupons</h2>
+                    </div>
+                    </div>
+                </div>
+   
     </div>
   );
 };

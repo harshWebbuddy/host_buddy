@@ -74,9 +74,11 @@ const Support = () => {
 
                   </div>
                   <p className="leading-6 text-[18px] opacity-50 pr-2 group-hover:text-black">{testimonial.testimonial}</p>
-                  <button className="bg-orange-500">
-                    <h2 className="text-white font-semibold text-[16px] leading-normal">Show Code</h2>
-                    </button>
+                  <div className="pr-32">  <div className="bg-orange-500 rounded-lg p-2 ">
+                    <h2 className="text-white font-semibold text-[16px] leading-normal capitalize  mx-auto text-center">show Code</h2>
+                    </div>
+                    </div>
+               
                 </div>
                 
                   )
