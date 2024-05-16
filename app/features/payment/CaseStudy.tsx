@@ -1,12 +1,14 @@
-import { caseStudies } from '@/app/(landing)/components/constants/casestudies';
+import { caseStudies } from '@/app/(landing)/components/constants/casestudies'
 import Image from 'next/image'
 import React from 'react'
 
-const CaseStudy = () => {
+const Unique = () => {
   return (
-      <section className="bg-[#F5F5F5]  py-20 mb-72">
-        <div className="max-w-[1360px] mx-auto p-4">
-          <h1 className="text-[42px] font-semibold">
+    <section className='pt-40 pb-80'>  
+    <div className="bg-[#F5F5F5] relative  pt-20 pb-20">
+       <div className="max-w-[1360px] flex flex-row mx-auto items-center justify-center p-4">
+      <Image src="/microsoft/dotted.svg" alt="" width={100} height={100} className="ml-1 absolute right-0 top-20 opacity-50 2xl:visible sm:invisible" />
+      <div>   <h1 className="text-[42px] font-semibold">
             Our Featured <span className="pb-4 border-b-4 border-orange-500">CaseStudy</span>
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-y-6 gap-x-4 mt-10">
@@ -24,9 +26,11 @@ const CaseStudy = () => {
               </div>
             ))}
           </div>
-        </div>
-      </section>
+          </div>
+    </div>
+  </div>
+  </section>
   )
 }
 
-export default CaseStudy
+export default Unique

@@ -965,7 +965,7 @@ const Locationpage = () => {
 
   return (
     <section className="bg-gradient-to-b from-[#292E34] to-[#16191C] w-full ">
-    <div className="w-full flex flex-col max-w-[1420px] mx-auto space-y-10 py-20 p-4">
+    <div className="w-full flex flex-col max-w-[1350px] mx-auto space-y-10 py-20 p-4">
 
       {/* Headline */}
       <div className="w-full flex flex-col xl:flex-row justify-between items-center gap-10">
@@ -983,7 +983,7 @@ const Locationpage = () => {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 2000 857"
           width="1600px"
-          height="370px"
+          height="670px"
           className="w-full"
           style={{ cursor: `url('/cursormid.svg'), auto` }}>
           {paths.map((path, index) => (

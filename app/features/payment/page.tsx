@@ -28,7 +28,7 @@ const page = () => {
       <section>
         <Faqs/>
       </section>
-        <section className='pt-40'>
+        <section >
           <CaseStudy/>
         </section>
      </main>
