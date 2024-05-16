@@ -6,10 +6,8 @@ import Plan2 from './plan2'
 import Unique from './unique'
 import CardsComponent from './CardsComponent'
 import Testimonials from './Testimonials'
-import { testimonials } from '../(landing)/components/constants/testimonials';
 import Faqs from './Faqs';
 import CaseStudy from './CaseStudy'
-import { caseStudies } from '../(landing)/components/constants/casestudies';
 import Features from './Features'
 import Adds from './adds'
 import Table from './Table'

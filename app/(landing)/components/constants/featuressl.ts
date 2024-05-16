@@ -1,88 +1,62 @@
 export const testimonials = [
-    {
-      author: {
-        names: "Stronger brand identity",
-      },
-      testimonial:
-        "Lorem ipsum dolor sit amet consectetur. Interdum malesuada pharetra ut etiam scelerisque nisl id. Sit nunc est id habitant. Consequat eu augue consequat at nulla neque facilisis. Proin in blandit aliquet id euismod vel ac lorem luctus. Viverra.",
-      number: '01',
-  
+  {
+    author: {
+      
+      image_url: "/features/promo1.svg",
+      names: "50% off Shared Hosting",
     },
+    testimonial:
+      "Good news! Enjoy 50% off any of our Shared Hosting Plans, available only to first-year purchases",
+  },
+ 
+     {
+    author: {
+      image_url: "/features/promo2.svg",
+      names: "TLDs For $0.77",
+    },
+    testimonial:
+      "TLDs available for just $0.77 with 10 email accounts with 5GB each and Premium Support 24/7/365.",
+
+  },
+     {
+    author: {
+      image_url: "/features/promo3.svg",
+      names: "Wilcard SSL for 35% Off",
+    },
+    testimonial:
+      "Wildcard SSL only $57.2/yr instead of $88/yr! Suitable for small & medium-sized businesses.",
+    number: '03',
+
+  },
+
+  {
+    author: {
+      image_url: "/features/promo2.svg",
+      names: "TLDs For $0.77",
+    },
+    testimonial:
+    "TLDs available for just $0.77 with 10 email accounts with 5GB each and Premium Support 24/7/365.",
+
+  },
+  {
+    author: {
+      image_url: "/features/promo3.svg",
+      names: "This Month's Coupons",
+    },
+    testimonial:
+      "Wildcard SSL only $57.2/yr instead of $88/yr! Suitable for small & medium-sized businesses.",
+    
+  },  {
+    author: {
+      image_url: "/features/promo3.svg",
+      names: "Wilcard SSL for 35% Off",
+    },
+    testimonial:
+      "Wildcard SSL only $57.2/yr instead of $88/yr! Suitable for small & medium-sized businesses.",
+    number: '03',
+
+  },
+
    
-    {
-        author: {
-          names: "“Not Secure.” Not good",
-        },
-        testimonial:
-          "Lorem ipsum dolor sit amet consectetur. Interdum malesuada pharetra ut etiam scelerisque nisl id. Sit nunc est id habitant. Consequat eu augue consequat at nulla neque facilisis. Proin in blandit aliquet id euismod vel ac lorem luctus. Viverra.",
-        number: '01',
-    
-      },
-      {
-        author: {
-          names: "Increased SEO ranking",
-        },
-        testimonial:
-          "Lorem ipsum dolor sit amet consectetur. Interdum malesuada pharetra ut etiam scelerisque nisl id. Sit nunc est id habitant. Consequat eu augue consequat at nulla neque facilisis. Proin in blandit aliquet id euismod vel ac lorem luctus. Viverra.",
-        number: '01',
-    
-      },
-  
-      {
-        author: {
-          names: "Compliance with regulation standards",
-        },
-        testimonial:
-          "Lorem ipsum dolor sit amet consectetur. Interdum malesuada pharetra ut etiam scelerisque nisl id. Sit nunc est id habitant. Consequat eu augue consequat at nulla neque facilisis. Proin in blandit aliquet id euismod vel ac lorem luctus. Viverra.",
-        number: '01',
-    
-      },
-      {
-        author: {
-          names: "Customers will trust you",
-        },
-        testimonial:
-          "Lorem ipsum dolor sit amet consectetur. Interdum malesuada pharetra ut etiam scelerisque nisl id. Sit nunc est id habitant. Consequat eu augue consequat at nulla neque facilisis. Proin in blandit aliquet id euismod vel ac lorem luctus. Viverra.",
-        number: '01',
-    
-      },
-      {
-        author: {
-          names: "Safe mobile & online payment systems",
-        },
-        testimonial:
-          "Lorem ipsum dolor sit amet consectetur. Interdum malesuada pharetra ut etiam scelerisque nisl id. Sit nunc est id habitant. Consequat eu augue consequat at nulla neque facilisis. Proin in blandit aliquet id euismod vel ac lorem luctus. Viverra.",
-        number: '01',
-    
-      },
-  
-      {
-        author: {
-          names: "We empower entrepreneurs & their communities",
-        },
-        testimonial:
-          "Lorem ipsum dolor sit amet consectetur. Interdum malesuada pharetra ut etiam scelerisque nisl id. Sit nunc est id habitant. Consequat eu augue consequat at nulla neque facilisis. Proin in blandit aliquet id euismod vel ac lorem luctus. Viverra.",
-        number: '01',
-    
-      },
-      {
-        author: {
-          names: "You'll get exceptional customer service.",
-        },
-        testimonial:
-          "Lorem ipsum dolor sit amet consectetur. sit amet consectetur.sit amet consectetur.Interdum malesuada pharetra ut etiam scelerisque nisl id. Sit nunc est id habitant. Consequat eu augue consequat at nulla neque facilisis. Proin in blandit aliquet id euismod vel ac lorem luctus. Viverra.",
-        number: '01',
-    
-      },
-      {
-        author: {
-          names: "We’re your Certificate Authority, literally",
-        },
-        testimonial:
-          "Lorem ipsum dolor sit amet consectetur. Interdum malesuada  sit amet consectetur.sit amet consectetur.pharetra ut etiam scelerisque nisl id. Sit nunc est id habitant. Consequat eu augue consequat at nulla neque facilisis. Proin in blandit aliquet id euismod vel ac lorem luctus. Viverra.",
-        number: '01',
-    
-      },
-   
-  ];
-  
+ 
+];

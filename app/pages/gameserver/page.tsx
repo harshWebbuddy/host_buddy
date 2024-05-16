@@ -1,7 +1,6 @@
 import React from 'react'
 import HeroHosting from './Hero'
 import Ratingpanel from './Rating'
-import Plans from './Plans'
 import Plan2 from './plan2'
 import Unique from './unique'
 import CardsComponent from './CardsComponent'
@@ -10,7 +9,6 @@ import Faqs from './Faqs';
 import CaseStudy from './CaseStudy'
 import Features from './Features'
 import Adds from './adds'
-import Table from './Table'
 
 const page = () => {
   return (

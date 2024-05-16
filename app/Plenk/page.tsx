@@ -6,7 +6,7 @@ import Testimonials from './Testimonials'
 import Faqs from './Faqs';
 import CaseStudy from './CaseStudy'
 import Features from './Features'
-import Adds from './Adds'
+// import Adds from './Adds'
 import Bandwidth from './Bandwidth'
 
 const page = () => {
@@ -29,9 +29,9 @@ const page = () => {
         <section>
           <Features/>
         </section>
-        <section>
+        {/* <section>
           <Adds/>
-        </section>
+        </section> */}
        
    
         <section>
