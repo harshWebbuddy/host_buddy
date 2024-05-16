@@ -17,14 +17,21 @@ const HeroHosting = () => {
 <path d="M61 20L67 14L61 8" stroke="#FF7500" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 
-            <h2 className="font-mono-sans text-sm 2xl:text-xl font-light italic leading-relaxed text-center 2xl:text-left">
+            <h2 className="font-mono-sans text-sm 2xl:text-xl pb-2 font-light italic leading-relaxed text-center 2xl:text-left">
             <span className="text-orange-500 font-bold">Methods for the Payments</span>
           </h2>
-          <h1 className="font-mono-sans font-medium text-[61px] 2xl:font-bold 2xl:text-[63px] leading-[84px] text-left 2xl:text-left ">Payment Methods</h1>
+          <h1 className="font-mono-sans font-medium text-[60px] 2xl:font-bold leading-[84px] text-left 2xl:text-left ">HostBuddy Affiliate 
+Program</h1>
 
 </div>
           <p className="font-mono-sans text-[18px] 2xl:text-[22px] font-light leading-loose text-left 2xl:text-left text-[#EBEBEB]">
-          As your business expands into local regions where alternative payments are popular, you don’t want to risk losing sales by saying no. Antler gives you the ability to accept more payment types without hesitation, so you can keep on growing.</p>
+          Earn at least <span className='text-orange-500 font-semibold'>60%</span> from every sale. Promote a trusted service loved by millions. Join an affiliate program that values your partnership..</p>
+          <div className="flex flex-row justify-center 2xl:justify-start !mt-12 ">
+            <button className="h-[56px]  flex item-center justify-center bg-orange-500 rounded-xl py-4 w-auto px-6  gap-x-3">
+
+              <h2 className="font-mona-sans text-[18px] font-semibold leading-[21.6px] text-left">Access Affiliate platform</h2>
+            </button>
+          </div>
           <div className="flex flex-row justify-start 2xl:justify-start !mt-10 ">
          
           </div>
@@ -32,7 +39,7 @@ const HeroHosting = () => {
         </div>
 
         <div className="w-full  item-center justify-center">
-          <Image src="/features/hero1.svg" alt="" width={500} height={500} className="item-center justify-center mx-auto 2xl:w-[600px]" />
+          <Image src="/features/hero2.svg" alt="" width={500} height={500} className="item-center justify-center mx-auto 2xl:w-[600px]" />
         </div>
       </div>
     </div>

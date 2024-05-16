@@ -5,6 +5,8 @@ import Plans from './Plans'
 import CaseStudy from './CaseStudy'
 import Locationpage from './Locationpage'
 import Faqs from './Faqs'
+import Support from './plan2'
+import CardsComponent from './CardsComponent'
 
 const page = () => {
   return (
@@ -15,16 +17,19 @@ const page = () => {
         </section>
         {/* rating panel  */}
         <section>
-        <div className="space-y-32 ">
+        <div className="space-y-20 2xl:space-y-32 ">
           <Ratingpanel/>
           <Plans/>
         </div>
         </section>
 
         {/* plan page */}
-        <div className='pt-32 '>
-          <Locationpage/>
+        <div className='pt-20 2xl:pt-40'>  
+      <Support/>
         </div>
+        <section className='pt-20 2xl:pt-40'>
+  <CardsComponent/>
+</section>
       <section>
         <Faqs/>
       </section>

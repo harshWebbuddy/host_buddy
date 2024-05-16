@@ -4,7 +4,7 @@ import React from 'react'
 
 const Unique = () => {
   return (
-    <section className='pt-40 pb-80'>  
+    <section className='pt-20 2xl:pt-40 pb-60 2xl:pb-80'>  
     <div className="bg-[#F5F5F5] relative  pt-20 pb-20">
        <div className="max-w-[1360px] flex flex-row mx-auto items-center justify-center p-4">
       <Image src="/microsoft/dotted.svg" alt="" width={100} height={100} className="ml-1 absolute right-0 top-20 opacity-50 2xl:visible sm:invisible" />

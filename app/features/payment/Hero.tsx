@@ -17,7 +17,7 @@ const HeroHosting = () => {
 <path d="M61 20L67 14L61 8" stroke="#FF7500" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 
-            <h2 className="font-mono-sans text-sm 2xl:text-xl font-light italic leading-relaxed text-center 2xl:text-left">
+            <h2 className="font-mono-sans text-sm 2xl:text-xl pb-2 font-light italic leading-relaxed text-center 2xl:text-left">
             <span className="text-orange-500 font-bold">Methods for the Payments</span>
           </h2>
           <h1 className="font-mono-sans font-medium text-[61px] leading-[84px] text-left 2xl:text-left ">Payment Methods</h1>
