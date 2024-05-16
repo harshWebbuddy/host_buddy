@@ -6,7 +6,7 @@ import Testimonials from './Testimonials'
 import Faqs from './Faqs';
 import CaseStudy from './CaseStudy'
 import Features from './Features'
-// import Adds from './Adds'
+// import Adds from './adds'
 import Bandwidth from './Bandwidth'
 
 const page = () => {
