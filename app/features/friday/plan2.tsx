@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useState } from "react";
-import { testimonials } from "@/app/(landing)/components/constants/friday";
+import { testimonials } from "@/app/(landing)/components/constants/featuresection";
 import Image from "next/image";
 import FooterBoxinside from "./boxinside";
 const Support = () => {
@@ -62,7 +62,7 @@ const Support = () => {
                 (testimonial, index) =>
                   index % columns === columnIndex && (
                     <div key={index} className="group relative border bg-[#FFFFFF]  px-16 py-10 rounded-2xl space-y-5">
-                     <Image src={testimonial.author.image_url2} alt="download1" width={70} height={50} className="select-none" draggable={false} />
+                     {/* <img src={testimonial.author.image_url} alt="download" width={70} height={50} className="select-none" draggable={false} /> */}
                   <div className="flex flex-col w-full">
                
 
