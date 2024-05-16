@@ -5,7 +5,44 @@
 .table-container {
   width: 100%;
   overflow-x: auto;
-}.container {
+}
+
+/* Styling for the scrollable container */
+.scroll-container {
+  height: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  /* Invert the scrollbar and position it on the left side */
+  direction: rtl;
+}
+.scroll-container .ReactCollapse--collapse {
+  transition: height 400ms !important;
+}
+.ltr{
+  direction: ltr;
+}
+
+/* Styling for the scrollbar */
+.scroll-container::-webkit-scrollbar {
+  width: 8px;
+  height: 10px;
+}
+
+/* Styling for the scrollbar track */
+.scroll-container::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 18px;
+  /* Set a background color for the scrollbar track */
+}
+
+/* Styling for the scrollbar thumb (the draggable part) */
+.scroll-container::-webkit-scrollbar-thumb {
+  background: #FF7500;
+  /* Set a background color for the scrollbar thumb */
+  border-radius: 18px;
+  /* Add rounded corners to the scrollbar thumb */
+}
+.container {
   display: flex;
   align-items: center;
   height: 100vh;

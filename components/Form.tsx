@@ -34,8 +34,8 @@ const ContactForm: React.FC = () => {
     });
   };
   return (
-    <section className="w-full bg-[#f5f5f5]">
-      <div className="w-full bl:max-w-[1219px] bl:h-[982px] pa:max-w-[1200px]  py-20 bl:py-20 pa:py-20  items-center justify-center mx-auto">
+    <section className="w-full pt-32">
+      <div className="w-full bl:max-w-[1219px] bl:h-[882px] pa:max-w-[1200px]  py-20 bl:py-20 pa:py-20  items-center justify-center mx-auto">
         <div className="items-center justify-center mx-auto">
           <h2 className="font-mona-sans text-5xl font-semibold item text-center text-black mt-3">
             Full out the Contact Form
@@ -137,58 +137,18 @@ const ContactForm: React.FC = () => {
                 required
               />
               <label htmlFor="agreeTerms">
-                I have read and agree to the terms and conditions
-              </label>
+              <h2 className="text-[16px] leading-[24px]">I have read and accept the terms of the privacy policy - <span className="font-extrabold">HostBuddy</span>
+              </h2></label>
             </div>
             <button
               type="submit"
-              className="bg-orange-500 text-white px-6 py-3 mt-7 bl:mt-0 rounded-md hover:bg-orange-600 h-[48px] "
+              className="bg-orange-500 text-white px-2 py-3 mt-7 bl:mt-0 rounded-md hover:bg-orange-600 h-[48px] font-semibold"
             >
               Submit Ticket
             </button>
           </div>
         </form>
-        <div className="flex flex-col bl:flex-row justify-center bl:justify-around w-full my-20 bl:my-36 pa:my-40 gap-6">
-          <motion.div className="w-full bg-white-200 px-6 py-8 rounded-xl shadow-md flex items-center justify-center bg-white" whileHover={{scale:1.2}}>
-            <div className="mr-6">
-              <img
-                src="\phone-call-svgrepo-com.svg"
-                alt="Call Icon"
-                className="w-10 h-10"
-              />
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-2">Sales Help</h3>
-              <p className="text-gray-700">24/7/365 Through the Chat Widget</p>
-            </div>
-          </motion.div>
-          <motion.div className="w-full bg-white-200 px-6 py-8 rounded-xl shadow-md flex items-center justify-center bg-white"  whileHover={{scale:1.2}}>
-            <div className="mr-6">
-              <img
-                src="\phone-call-svgrepo-com.svg"
-                alt="Call Icon"
-                className="w-10 h-10"
-              />
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-2">Support Chat</h3>
-              <p className="text-gray-700">24/7/365 Through the Chat Widget.</p>
-            </div>
-          </motion.div>
-          <motion.div className="w-full bg-white-200 px-6 py-8 rounded-xl shadow-md flex items-center justify-center bg-white"  whileHover={{scale:1.2}}>
-            <div className="mr-6">
-              <img
-                src="\phone-call-svgrepo-com.svg"
-                alt="Call Icon"
-                className="w-10 h-10"
-              />
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-2">Support Email</h3>
-              <p className="text-gray-700">24/7/365 Through the Chat Widget</p>
-            </div>
-          </motion.div>
-      </div>
+    
       </div>
     </section>
   );

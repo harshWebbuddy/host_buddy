@@ -32,18 +32,7 @@ const Plans = () => {
           </h2>
         </div>
         <div className="flex flex-wrap bl:flex-nowrap items-center gap-2 sm:gap-5">
-          {/* <h2 className="font-mona-sans text-xs bl:text-base font-normal leading-[24px] bl:leading-[32px] tracking-[0.05em] bl:tracking-[0.2px] text-right w-54 bl:w-71 h-[32px]">
-            Monthly
-          </h2>
-          <Switch checkedIcon={CustomSwitchIcon} {...label} color="default" defaultChecked className="w-[60px] h-[40px]" />
-          <div>
-            <h2 className="font-mona-sans text-base font-normal leading-[32px] tracking-[0.2px] text-right w-[52px] h-[32px]">Yearly</h2>
-          </div>
-          <div className="px-3 py-0.5 bg-orange-100 rounded-3xl">
-            <h4 className="text-orange-500 m-2 font-mona-sans font-bold text-xs leading-[15.6px] tracking-[1.625px] text-center w-[77px] h-[16px] top-[6px] left-[10px]">
-              Save 25%
-            </h4>
-          </div> */}
+        
           <p className="font-mono-sans text-[16px] font-light leading-[24px] text-center 2xl:text-left text-[#16191C]">
           Our mission is to accelerate business growth with unparalleled performance, support, and security, surpassing industry-leading hosting providers.
           </p>

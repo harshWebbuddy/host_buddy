@@ -6,7 +6,8 @@ const label = { inputProps: { "aria-label": "Switch demo" } };
 const Plan2 = () => {
   return (
  <div> 
-   <div className='bg-gradient-to-b from-[#292E34]  to-[#16191C] pt-20 '>    <div className="flex flex-col max-w-[1300px] mx-auto">
+   <div className='bg-gradient-to-b from-[#292E34]  to-[#16191C] pt-20 '> 
+      <div className="flex flex-col max-w-[1300px] mx-auto">
     {/* heading */}
     <div className="flex flex-col bl:flex-row justify-between gap-y-6 gap-x-4 items-center mb-8">
       <div className="relative w-full">

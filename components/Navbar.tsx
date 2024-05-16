@@ -74,7 +74,8 @@ const navLinks: NavLink[] = [
     options: [
       { label: "Payment Methods", href: "/features/payment" },
       { label: "  Affiliate Program", href: "/features/affiliate" },
-      { label: "Payment Methods", href: "/features/payment" },
+      { label: "Empty Page", href: "/features/empty" },
+      { label: "Special Promos", href: "/features/special" },
 
       // { label: "Pricing", href: "#" },
       // { label: "Pages", href: "#" },
