@@ -1,13 +1,8 @@
 import React from "react";
 import HeroHosting from "./Hero";
-import Ratingpanel from "./Rating";
 import Plans from "./Plans";
-import CaseStudy from "./CaseStudy";
-import Locationpage from "./Locationpage";
 import Faqs from "./Faqs";
-import ContactForm from "@/components/Form";
 import Features from "./box";
-import Support from "./plan2";
 import Black from "./black";
 
 const page = () => {

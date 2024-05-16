@@ -61,9 +61,10 @@ export default function Features() {
                   </div>
                   <p className="leading-6 text-[18px] opacity-50 pr-2 group-hover:text-black">{testimonial.testimonial}</p>
                   <h2 className="text-[16px] font-medium leading-[22px]">/1st year purchases only</h2>
-                  <button className="bg-orange-500">
-                    <h2 className="text-white font-semibold text-[16px] leading-normal">Buy Now</h2>
-                    </button>
+                  <div className="pr-48">  <div className="bg-orange-500 rounded-lg p-2 ">
+                    <h2 className="text-white font-semibold text-[16px] leading-normal capitalize  mx-auto text-center">Buy Now</h2>
+                    </div>
+                    </div>
                 </div>
                 </div>
                   )
