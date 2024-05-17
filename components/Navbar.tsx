@@ -23,7 +23,7 @@ const navLinks: NavLink[] = [
     href: "/phone",
     label: "Home",
     options: [
-      { label: "Home Dedicated Server", href: "/" },
+      { label: "Home Dedicated Server", href: "/dedicated" },
       { label: "Home Video", href: "/homevideo" },
       { label: "Home 3D", href: "/3d" },
       { label: "Home Phones", href: "/phone" },
