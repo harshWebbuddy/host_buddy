@@ -5,7 +5,6 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { BiChevronRight } from "react-icons/bi";
 import { testimonials } from "./constants/testimonials";
-
 export default function Testimonials() {
   const initializeColumns = () => {
     if (typeof window !== "undefined") {
@@ -44,6 +43,7 @@ export default function Testimonials() {
   }, []);
 
   return (
+    
     <div className="p-4 relative bg-gradient-to-b from-[#292E34] to-[#16191C] mx-auto flex flex-col  w-full items-center justify-center pt-10 2xl:pt-20 mt-20">
       <div className="max-w-[1360px] mx-auto">
         <div className="flex flex-col 2xl:flex-row gap-y-10 2xl:items-center justify-between">
@@ -80,13 +80,13 @@ export default function Testimonials() {
         </div>
       </div>
       <div className="w-full h-40 bg-gradient-to-b from-[#171B1E00] via-[#181B1E]/80 to-[#181B1E] absolute bottom-0 left-0 right-0 flex justify-center items-center">
-        <button className="relative z-[5] max-w-fit flex flex-row group mt-5" onClick={() => setViewAll(!viewAll)}>
+        <div className="relative z-[5] max-w-fit flex flex-row group mt-5" onClick={() => setViewAll(!viewAll)}>
           <div className="flex items-center gap-x-3 pb-2">
             <p className="text-[16px] font-bold text-orange-500">{viewAll ? "View Less" : "View All Testimonials"}</p>
             <BiChevronRight className="text-orange-500" size={20} />
           </div>
           <div className="bg-orange-500 h-0.5 absolute -bottom-1 left-0 w-0 group-hover:w-full transition-all duration-500" />
-        </button>
+        </div>
         <img src="/fog.svg" className="absolute bottom-0 select-none" draggable={false} />
       </div>
     </div>

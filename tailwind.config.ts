@@ -1,4 +1,43 @@
 
+// <section className="h-full min-h-[80vh] overflow-hidden relative bg-black flex items-center justify-center">
+// <img src="/home.jpg" width={1920} height={1080} alt="" className="w-full absolute inset-0 h-full opacity-30 object-cover bg-blend-color-dodge !z-[1]" />
+// <div className="max-w-[1250px] mx-auto text-white ">
+//   <div className="h-full flex items-center relative !z-[2] flex-col 2xl:flex-row justify-center gap-20">
+//     <div className="relative w-full flex flex-col justify-center 2xl:justify-start space-y-7">
+//       <h2 className="font-mono-sans text-sm font-light italic leading-relaxed text-center 2xl:text-left">
+//         <span className="text-white opacity-90 font-light">Welcome to </span>
+//         <span className="text-orange-500 font-bold">HostBuddy</span>
+//       </h2>
+//       <h1 className="font-mono-sans font-semibold text-[54px] leading-relaxed text-center 2xl:text-left">Dedicated Servers High Performance</h1>
+//       <p className="font-mono-sans text-[18px] font-light leading-loose text-center 2xl:text-left text-[#EBEBEB]">
+//         By trusting us with your business and projects needs, we promise a<span className="text-orange-500 opacity-100 font-bold mx-2">99.9%</span>
+//         uptime on any services we provide, outside of any standard maintenance we may provide.
+//       </p>
+//       <div className="flex flex-row justify-center 2xl:justify-start !mt-10 gap-6">
+//         <button className="h-[56px] px-6 flex item-center justify-center bg-orange-500 rounded-xl py-4 gap-x-3">
+//           <Image src="/shoppingcart.svg" alt="" width={24} height={24} />
+//           <h2 className="font-mona-sans text-[17px] font-semibold leading-[21.6px] text-left">Order Now</h2>
+//         </button>
+//         <button className="relative max-w-fit flex group items-center justify-center !mt-0 px-4">
+//           <div className="flex items-center gap-x-3">
+//             <p className="text-[16px] font-bold text-white">Read more</p>
+//             <Image src="/arrow.svg" alt="" width={20} height={20} />
+//           </div>
+//           <div className="bg-white h-0.5 absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-500" />
+//         </button>
+//       </div>
+//       <p className="flex max-w-fit mx-auto 2xl:mx-0 gap-2 underline text-[#EBEBEB]">
+//         <Image src="/tick2.svg" alt="tick" width={20} height={20} />
+//         30 day money back garantee
+//       </p>
+//     </div>
+
+//     <div className="w-full item-center justify-center">
+//       <Image src="/homeimages.svg" alt="" width={500} height={500} className="item-center justify-center mx-auto" />
+//     </div>
+//   </div>
+// </div>
+// </section>
 
 
 import type { Config } from "tailwindcss";

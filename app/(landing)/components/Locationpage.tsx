@@ -964,7 +964,7 @@ const Locationpage = () => {
   }, []);
 
   return (
-    <div className="w-full flex flex-col max-w-[1420px] mx-auto space-y-10 p-4">
+    <div className="w-full flex flex-col max-w-[1350px] mx-auto space-y-10 p-4">
       {/* Headline */}
       <div className="w-full flex flex-col xl:flex-row justify-between items-center gap-10">
         <h1 className="mb-4 w-full xl:max-w-[640px] font-mona-sans text-[42px] font-bold leading-relaxed text-center xl:text-left">

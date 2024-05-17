@@ -3,13 +3,13 @@ import React from "react";
 
 const CardsComponent = () => {
   return (
-    <div className="space-y-20 p-4">
-      <div className="w-full flex flex-col xl:flex-row gap-16 items-center">
-        <div className="w-full space-y-4">
-          <div className="">
-            <h2 className="text-3xl leading-relaxed font-semibold">Lorem ipsum dolor sit amet consectetur.</h2>
+    <div className="space-y-32 2xl:space-y-10 p-4">
+      <div className="w-full flex flex-col xl:flex-row space-y-10 space-x-10 items-center">
+        <div className="w-full space-y-7">
+          <div className="pr-0 2xl:pr-4">
+            <h2 className="text-5xl leading-[63px] font-semibold capitalize">Lorem ipsum dolor sit amet consectetur.</h2>
           </div>
-          <ul className="w-full space-y-4">
+          <ul className="w-full space-y-7 2xl:pr-36 text-[17px]">
             <li className="flex gap-4 items-start">
               <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
               <p className="capitalize leading-loose">
@@ -44,12 +44,19 @@ const CardsComponent = () => {
           </div>
         </div>
       </div>
-      <div className="w-full flex flex-col xl:flex-row-reverse gap-16 items-center">
-        <div className="w-full space-y-4">
-          <div className="">
-            <h2 className="text-3xl leading-relaxed font-semibold">Lorem ipsum dolor sit amet consectetur.</h2>
+      <div className="w-full flex flex-col xl:flex-row space-y-10 space-x-16 items-center">
+      <div className="w-full flex justify-center">
+          <div className="relative">
+            <Image src="/cards2.jpg" width={500} height={500} alt="" className="rounded-2xl relative z-10" />
+            <Image src="/cards2triangle.svg" width={100} height={100} alt="" className="absolute -top-10 -left-10" />
+            <Image src="/bigsquare.svg" alt="" width={300} height={302} className="absolute -right-10 -bottom-10" />
           </div>
-          <ul className="w-full space-y-4">
+        </div>
+         <div className="w-full space-y-7">
+          <div className="2xl:pr-4">
+            <h2 className="text-5xl leading-[63px] font-semibold capitalize">Lorem ipsum dolor sit amet consectetur.</h2>
+          </div>
+          <ul className="w-full space-y-7 2xl:pr-36 text-[17px]">
             <li className="flex gap-4 items-start">
               <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
               <p className="capitalize leading-loose">
@@ -76,20 +83,14 @@ const CardsComponent = () => {
             </li>
           </ul>
         </div>
-        <div className="w-full flex justify-center">
-          <div className="relative">
-            <Image src="/cards2.jpg" width={500} height={500} alt="" className="rounded-2xl relative z-10" />
-            <Image src="/cards2triangle.svg" width={100} height={100} alt="" className="absolute -top-10 -left-10" />
-            <Image src="/bigsquare.svg" alt="" width={300} height={302} className="absolute -right-10 -bottom-10" />
-          </div>
-        </div>
+    
       </div>
-      <div className="w-full flex flex-col xl:flex-row gap-14 items-center">
-        <div className="w-full space-y-4">
-          <div className="">
-            <h2 className="text-3xl leading-relaxed font-semibold">Lorem ipsum dolor sit amet consectetur.</h2>
+      <div className="w-full flex flex-col xl:flex-row space-x-0 items-center">
+      <div className="w-full space-y-7">
+          <div className="2xl:pr-4">
+            <h2 className="text-5xl leading-[63px] font-semibold capitalize">Lorem ipsum dolor sit amet consectetur.</h2>
           </div>
-          <ul className="w-full space-y-4">
+          <ul className="w-full space-y-7 2xl:pr-36 text-[17px]">
             <li className="flex gap-4 items-start">
               <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
               <p className="capitalize leading-loose">
@@ -124,12 +125,19 @@ const CardsComponent = () => {
           </div>
         </div>
       </div>
-      <div className="w-full flex flex-col xl:flex-row-reverse gap-16 items-center">
-        <div className="w-full space-y-4">
-          <div className="">
-            <h2 className="text-3xl leading-relaxed font-semibold">Lorem ipsum dolor sit amet consectetur.</h2>
+      <div className="w-full flex flex-col xl:flex-row space-x-16 items-center">
+      <div className="w-full flex justify-center">
+          <div className="relative">
+            <Image src="/cards-4.png" width={500} height={500} alt="" className="rounded-2xl relative z-10" />
+            <Image src="/cards4.svg" width={200} height={200} alt="" className="absolute -top-10 -left-20" />
+            <Image src="/bigsquare.svg" alt="" width={300} height={302} className="absolute -right-10 -bottom-10" />
           </div>
-          <ul className="w-full space-y-4">
+        </div>
+      <div className="w-full space-y-7">
+          <div className="2xl:pr-4">
+            <h2 className="text-5xl leading-[63px] font-semibold capitalize">Lorem ipsum dolor sit amet consectetur.</h2>
+          </div>
+          <ul className="w-full space-y-7 2xl:pr-36 text-[17px]">
             <li className="flex gap-4 items-start">
               <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
               <p className="capitalize leading-loose">
@@ -156,13 +164,7 @@ const CardsComponent = () => {
             </li>
           </ul>
         </div>
-        <div className="w-full flex justify-center">
-          <div className="relative">
-            <Image src="/cards-4.png" width={500} height={500} alt="" className="rounded-2xl relative z-10" />
-            <Image src="/cards4.svg" width={200} height={200} alt="" className="absolute -top-10 -left-20" />
-            <Image src="/bigsquare.svg" alt="" width={300} height={302} className="absolute -right-10 -bottom-10" />
-          </div>
-        </div>
+      
       </div>
     </div>
   );

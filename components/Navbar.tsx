@@ -23,7 +23,7 @@ const navLinks: NavLink[] = [
     href: "/phone",
     label: "Home",
     options: [
-      // { label: "Home Dedicated Server", href: "/home" },
+      { label: "Home Dedicated Server", href: "/" },
       // { label: "Home Gaming", href: "/home3d" },
       { label: "Home Phones", href: "/phone" },
       { label: "Home Cloud Reseller", href: "/cloud" }, 
@@ -173,11 +173,11 @@ const NavBar = () => {
                     </div>
                   </Link>
                   {showOptionsIndex === index && (
-                    <div className="absolute left-0 top-full bg-white shadow-md rounded-xl py-4 px-6 mt-2 w-60 mr-12">
+                    <div className="absolute left-0 top-8 bg-white shadow-md rounded-xl py-4 px-6  w-60 mr-12">
                       {optionsData.map((option, optionIndex) => (
                         <Link key={optionIndex} href={option.href}>
                           <div className="flex flex-col">
-                            <h2 className="block font-bold text-gray-800 hover:text-orange-500  font-2xl mt-2">{option.label}</h2>
+                            <h2 className="block font-bold text-gray-800 hover:text-orange-500  font-2xl ">{option.label}</h2>
                             <div className="border-t-2 border-gray-500 opacity-1 w-[100%] transition-transform duration-400 hover:scale-110 mt-2"></div>
                           </div>
                         </Link>
