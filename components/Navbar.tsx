@@ -25,7 +25,7 @@ const navLinks: NavLink[] = [
     options: [
       { label: "Home Dedicated Server", href: "/" },
       { label: "Home Video", href: "/homevideo" },
-      // { label: "Home Gaming", href: "/home3d" },
+      { label: "Home 3D", href: "/3d" },
       { label: "Home Phones", href: "/phone" },
       { label: "Home Cloud Reseller", href: "/cloud" }, 
       { label: "Home IPTV Premium Services", href: "/premiumservices" },  

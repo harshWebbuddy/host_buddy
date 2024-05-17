@@ -108,7 +108,7 @@ const Plans = () => {
             <p className="font-mona-sans text-base font-normal leading-21 text-center w-50 h-[17px] gap-0 opacity-45  group-hover:text-white text-[#16191C]/100">/Month</p>
           </div>
           <div className="mt-12 group">
-            <button className="group w-full h-[52px] text-white  text-xl rounded-xl bg-[#F9EFE4] group-hover:bg-[#FF7500] ring-1 ring-[black] group-hover:ring-[#16191C] 
+            <div className="group w-full h-[52px] text-white  text-xl rounded-xl bg-[#F9EFE4] group-hover:bg-[#FF7500] ring-1 ring-[black] group-hover:ring-[#16191C] 
             transition-all duration-300 hover:shadow-2xl ring-inset hover:ring-0 font-bold flex items-center justify-center ">
               <h4 className="w-99 h-19 top-16 left-115 font-monasans font-bold text-base leading-[19.2px] text-black">Choose Plan</h4>{" "}
               <span className="ml-4 -mt-0.5 featuresvg3">
@@ -117,7 +117,7 @@ const Plans = () => {
 </svg>
 
               </span>
-            </button>
+            </div>
             <div className="flex flex-col justify-center w-full mt-12 group">
               <h3 className="text-xl font-bold mb-7 text-left text-black  group-hover:text-white">Major Features</h3>
               <div className="flex flex-col gap-5">
@@ -158,7 +158,7 @@ const Plans = () => {
             <p className="font-mona-sans text-base font-normal leading-21 text-center w-50 h-[17px] gap-0 opacity-45  group-hover:text-white text-[#16191C]/100">/Month</p>
           </div>
           <div className="mt-12 group">
-            <button className="group w-full h-[52px] text-white  text-xl rounded-xl bg-[#F9EFE4] group-hover:bg-[#FF7500] ring-1 ring-[black] group-hover:ring-[#16191C] 
+            <div className="group w-full h-[52px] text-white  text-xl rounded-xl bg-[#F9EFE4] group-hover:bg-[#FF7500] ring-1 ring-[black] group-hover:ring-[#16191C] 
             transition-all duration-300 hover:shadow-2xl ring-inset hover:ring-0 font-bold flex items-center justify-center ">
               <h4 className="w-99 h-19 top-16 left-115 font-monasans font-bold text-base leading-[19.2px] text-black">Choose Plan</h4>{" "}
               <span className="ml-4 -mt-0.5 featuresvg3">
@@ -167,7 +167,7 @@ const Plans = () => {
 </svg>
 
               </span>
-            </button>
+            </div>
             <div className="flex flex-col justify-center w-full mt-12 group">
               <h3 className="text-xl font-bold mb-7 text-left text-black  group-hover:text-white">Major Features</h3>
               <div className="flex flex-col gap-5">
@@ -209,7 +209,7 @@ const Plans = () => {
           <p className="font-mona-sans text-base font-normal leading-21 text-center w-50 h-[17px] gap-0 opacity-45">/Month</p>
         </div>
         <div className="mt-12 group">
-            <button className="group w-full h-[52px] text-white  text-xl rounded-xl bg-[#F9EFE4] group-hover:bg-[#FF7500] ring-1 ring-[black] group-hover:ring-[#16191C] 
+            <div className="group w-full h-[52px] text-white  text-xl rounded-xl bg-[#F9EFE4] group-hover:bg-[#FF7500] ring-1 ring-[black] group-hover:ring-[#16191C] 
             transition-all duration-300 hover:shadow-2xl ring-inset hover:ring-0 font-bold flex items-center justify-center ">
               <h4 className="w-99 h-19 top-16 left-115 font-monasans font-bold text-base leading-[19.2px] text-black">Choose Plan</h4>{" "}
               <span className="ml-4 -mt-0.5 featuresvg3">
@@ -218,7 +218,7 @@ const Plans = () => {
 </svg>
 
               </span>
-            </button>
+            </div>
             <div className="flex flex-col justify-center w-full mt-12 group">
               <h3 className="text-xl font-bold mb-7 text-left text-black  group-hover:text-white">Major Features</h3>
               <div className="flex flex-col gap-5">

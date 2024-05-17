@@ -1,16 +1,16 @@
 "use client";
 
-import Locationpage from "./components/Locationpage";
-import CardsComponent from "./components/CardsComponent";
+import Locationpage from "../(landing)/components/Locationpage";
+import CardsComponent from "../(landing)/components/CardsComponent";
 import Image from "next/image";
 import { Panela, Panelb, Panelc } from "@/components/svgs";
 import { BiChevronRight } from "react-icons/bi";
-import Testimonials from "./components/Testimonials";
-import Faqs from "./components/Faqs";
-import { caseStudies } from "./components/constants/casestudies";
+import Testimonials from "../(landing)/components/Testimonials";
+import Faqs from "../(landing)/components/Faqs";
+import { caseStudies } from "../(landing)/components/constants/casestudies";
 import { BsArrowRight } from "react-icons/bs";
-import Ratingpanel from "./components/Rating";
-import Plans from "./components/Plans";
+import Ratingpanel from "../(landing)/components/Rating";
+import Plans from "../(landing)/components/Plans";
 
 export default function HomeMainPage() {
   return (
