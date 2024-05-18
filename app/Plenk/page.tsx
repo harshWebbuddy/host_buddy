@@ -7,7 +7,7 @@ import Faqs from './Faqs';
 import CaseStudy from './CaseStudy'
 import Features from './Features'
 import Bandwidth from './Bandwidth'
-import Addsbar from './Adds'
+import Addsbar from './adds'
 
 const page = () => {
   return (
