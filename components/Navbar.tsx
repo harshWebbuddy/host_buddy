@@ -26,6 +26,7 @@ const navLinks: NavLink[] = [
       { label: "Home Dedicated Server", href: "/dedicated" },
       { label: "Home Video", href: "/homevideo" },
       { label: "Home 3D", href: "/3d" },
+      { label: "Home Gaming", href: "/gamingpage" },
       { label: "Home Phones", href: "/phone" },
       { label: "Home Cloud Reseller", href: "/cloud" }, 
       { label: "Home IPTV Premium Services", href: "/premiumservices" },  
