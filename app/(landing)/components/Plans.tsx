@@ -4,18 +4,9 @@ import Switch from "@mui/material/Switch";
 const label = { inputProps: { "aria-label": "Switch demo" } };
 
 const Plans = () => {
-  const CustomSwitchIcon = (
-    <div
-      style={{
-        width: 24,
-        height: 24,
-        borderRadius: "50%",
-        backgroundColor: "#FF7500",
-      }}
-    />
-  );
+ 
   return (
-    <div className="flex flex-col max-w-[1300px] mx-auto">
+    <div className="flex flex-col max-w-[1300px] mx-auto overflow-hidden">
     {/* heading */}
     <div className="flex flex-col 2xl:flex-row bl:flex-row justify-between gap-y-16 gap-x-4 items-center mb-8">
       <div className="relative w-full ">
@@ -289,7 +280,7 @@ const Plans = () => {
         </div>
       </div>
     </div>
-  <img src="/designhome2.svg" className='right-72 absolute opacity-100 translate-y-[670px]'/>
+  <img src="/designhome2.svg" className='right-72 absolute opacity-50 translate-y-[640px] overflow-hidden'/>
 
    
   </div>
