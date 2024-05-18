@@ -3,7 +3,7 @@ import { Star } from "@/components/svgs";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { BiChevronRight } from "react-icons/bi";
-import { testimonials } from "../(landing)/components/constants/hosting";
+import { testimonials } from "../(landing)/components/constants/reseller";
 export default function Features() {
   const initializeColumns = () => {
     if (typeof window !== "undefined") {
@@ -58,19 +58,19 @@ export default function Features() {
               {visibleTestimonials.map(
                 (testimonial, index) =>
                   index % columns === columnIndex && (
-                    <div key={index} className="group relative bg-[#FFFFFF] hover:bg-[#F5F5F5] border px-6 py-6 rounded-2xl space-y-5">
-                 <div className="right-5 absolute -top-5">
-                      <Image src={testimonial.author.image_url} alt="download" width={51} height={51} className="opacity-100" draggable={false} />
+                    <div key={index} className="group relative bg-[#F5F5F5]  hover:bg-[#F9EFE4] border py-10 px-16 rounded-2xl space-y-5">
+                 <div className="left-5 absolute -top-10 featuresvg2">
+                      <Image src={testimonial.author.image_url} alt="download" width={91} height={91} className="opacity-100" draggable={false} />
                     </div>
-                  <div className="flex flex-row gap-x-0 ">
+                 
                     
-               <div>  
-                   <h1 className="font-semibold text-[18px] leading-8">{testimonial.author.names}</h1>
-                       <p className="leading-6 text-[16px] opacity-50">{testimonial.testimonial}</p>
+               <div className="space-y-4 flex flex-col">  
+                   <h1 className="font-semibold text-[24px] leading-8">{testimonial.author.names}</h1>
+                       <p className="leading-6 text-[15px] opacity-50">{testimonial.testimonial}</p>
                        </div>
                   </div>
               
-                </div>
+              
                   )
               )}
             </div>
