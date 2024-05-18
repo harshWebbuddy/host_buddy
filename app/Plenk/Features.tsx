@@ -43,7 +43,7 @@ export default function Features() {
 
   return (
     
-    <div className="p-4 relative  mx-auto flex flex-col w-full items-center justify-center 2xl:pt-32">
+    <div className="p-4 relative  mx-auto flex flex-col w-full items-center justify-center 2xl:pt-40">
       <div className="max-w-[1360px] mx-auto">
         <div className="flex flex-col 2xl:flex-col gap-y-6 2xl:items-start ">
           <h2 className="text-[42px] leading-[63px] font-semibold capitalize text-black w-full 2xl:max-w-full">

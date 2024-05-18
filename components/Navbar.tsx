@@ -39,6 +39,8 @@ const navLinks: NavLink[] = [
     label: "Hosting",
     options: [
       { label: "Shared Hosting", href: "/hostingbar" },
+      { label: "Reseller Hosting", href: "/reseller" },
+      { label: "Window Hosting", href: "/window" },
       { label: "VPS Hosting", href: "/vpshosting" },
       { label: "WordPress Hosting", href: "/wordpresshosting" },
       { label: "cPanel Hosting", href: "/cpanel" },
