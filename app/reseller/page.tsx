@@ -12,6 +12,8 @@ import CaseStudy from './CaseStudy'
 import { caseStudies } from '../(landing)/components/constants/casestudies';
 import Features from './Features'
 import Uniquecpanel from './Uniquecpanel'
+import Adds from './Adds'
+import OptionSelector from './optionbox'
 
 const page = () => {
   return (
@@ -43,9 +45,15 @@ const page = () => {
         <section>
           <Features/>
         </section>
-
         <section>
-          <CardsComponent/>
+        <CardsComponent/>
+       
+  <Adds/>
+</section>
+{/* <section>
+  <OptionSelector/>
+</section> */}
+        <section className='py-40'>
        
           <Testimonials/>
         </section>

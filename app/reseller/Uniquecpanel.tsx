@@ -1,61 +1,83 @@
+"use client";
+import { Star } from "@/components/svgs";
 import Image from "next/image";
+import { useEffect, useState } from "react";
+import { BiChevronRight } from "react-icons/bi";
+import { testimonials } from "../(landing)/components/constants/hosting";
+export default function Features() {
+  const initializeColumns = () => {
+    if (typeof window !== "undefined") {
+      if (window.innerWidth > 1024) {
+        return 3;
+      } else if (window.innerWidth > 640 && window.innerWidth < 1024) {
+        return 2;
+      } else {
+        return 1;
+      }
+    }
+    return 3; // Default value for server-side rendering
+  };
 
-const Uniquecpanel = () => {
+  const [columns, setColumns] = useState(initializeColumns() || 3);
+  const [viewAll, setViewAll] = useState(false);
+  const visibleTestimonials = viewAll ? testimonials : testimonials.slice(0, 9);
+
+  useEffect(() => {
+    const resizeListener = () => {
+      if (typeof window !== "undefined") {
+        if (window.innerWidth > 1024) {
+          setColumns(3);
+        } else if (window.innerWidth > 640 && window.innerWidth < 1024) {
+          setColumns(2);
+        } else {
+          setColumns(1);
+        }
+      }
+    };
+
+    window.addEventListener("resize", resizeListener);
+    return () => {
+      window.removeEventListener("resize", resizeListener);
+    };
+  }, []);
+
   return (
-    <section className="relative bg-gradient-to-b from-[#FFFFFF]/100 to-[#FF7500]/70">
-      <div className="p-4 w-full max-w-[1300px] mx-auto py-24">
-        <div className="flex flex-col 2xl:flex-row mx-auto items-center ">
-          <div className="w-full flex flex-col space-y-20">
-            <div>
-              <h2 className="text-[42px] leading-[63px] font-semibold text-black w-full 2xl:max-w-full">
-                What Makes HostBuddy<span className="pb-4 border-b-4 border-orange-500"> Unique?</span>
-              </h2>
-            </div>
-            <div className="w-full flex flex-col xl:flex-row justify-start gap-20 xl:gap-10 2xl:gap-20">
-              <Image src="/cpanel/unique.jpeg" alt="" width={600} height={582} className="rounded-3xl object-cover" />
-              <div className="w-full">
-                <div className="flex">
-                  <Image draggable={false} src="/line-svg.svg" alt="" width={7} height={404} className="object-cover select-none" />
-                  <div className="space-y-4 flex flex-col justify-between">
-                    <div className="flex items-start mt-10 gap-1 min-[400px]:gap-4">
-                      <Image draggable={false} src="/mini-line-svg.svg" alt="" width={50} height={40} className="-translate-x-[6px] select-none" />
-                      <div className="space-y-5 -translate-y-4">
-                        <h1 className="text-3xl font-semibold">24/7 & 365 Days Support</h1>
-                        <p className="leading-loose">
-                          Lorem ipsum dolor sit amet consectetur. Lobortis ultrices nec tincidunt eget tempor tempus risus enim. Fames rhoncus sed mattis elit
-                          consectetur. Elit congue convallis quisque amet sit.
-                        </p>
-                      </div>
+    
+    <div className="p-4 relative  mx-auto flex flex-col w-full items-center justify-center 2xl:pt-40">
+      <div className="max-w-[1360px] mx-auto">
+        <div className="flex flex-col 2xl:flex-col gap-y-6 2xl:items-start ">
+          <h2 className="text-[42px] leading-[63px] font-semibold capitalize text-black w-full 2xl:max-w-full">
+          Our hosting give you more <span className="pb-4 border-b-4 border-orange-500">Feature</span>
+          </h2>
+          <p className="text-[16px] font-light leading-[24px]">
+          Lorem ipsum dolor sit amet consectetur. Condimentum turpis eleifend justo odio. Magna sagittis elementum maecenas.          </p>
+        </div>
+        <div className="flex flex-row gap-4 mt-16  transition-all duration-500 h-full pb-32">
+          {Array.from({ length: columns }, (_, columnIndex) => (
+            <div key={columnIndex} className="flex flex-col w-full gap-8">
+              {visibleTestimonials.map(
+                (testimonial, index) =>
+                  index % columns === columnIndex && (
+                    <div key={index} className="group relative bg-[#FFFFFF] hover:bg-[#F5F5F5] border px-6 py-6 rounded-2xl space-y-5">
+                 <div className="right-5 absolute -top-5">
+                      <Image src={testimonial.author.image_url} alt="download" width={51} height={51} className="opacity-100" draggable={false} />
                     </div>
-                    <div className="flex items-start mt-10 gap-1 min-[400px]:gap-4">
-                      <Image draggable={false} src="/mini-line-svg.svg" alt="" width={50} height={40} className="-translate-x-[6px] select-none" />
-                      <div className="space-y-5 -translate-y-4">
-                        <h1 className="text-3xl font-semibold">24/7 & 365 Days Support</h1>
-                        <p className="leading-loose">
-                          Lorem ipsum dolor sit amet consectetur. Lobortis ultrices nec tincidunt eget tempor tempus risus enim. Fames rhoncus sed mattis elit
-                          consectetur. Elit congue convallis quisque amet sit.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex items-start mt-10 gap-1 min-[400px]:gap-4">
-                      <Image draggable={false} src="/mini-line-svg.svg" alt="" width={50} height={40} className="-translate-x-[6px] select-none" />
-                      <div className="space-y-5 -translate-y-4">
-                        <h1 className="text-3xl font-semibold">24/7 & 365 Days Support</h1>
-                        <p className="leading-loose">
-                          Lorem ipsum dolor sit amet consectetur. Lobortis ultrices nec tincidunt eget tempor tempus risus enim. Fames rhoncus sed mattis elit
-                          consectetur. Elit congue convallis quisque amet sit.
-                        </p>
-                      </div>
-                    </div>
+                  <div className="flex flex-row gap-x-0 ">
+                    
+               <div>  
+                   <h1 className="font-semibold text-[18px] leading-8">{testimonial.author.names}</h1>
+                       <p className="leading-6 text-[16px] opacity-50">{testimonial.testimonial}</p>
+                       </div>
                   </div>
+              
                 </div>
-              </div>
+                  )
+              )}
             </div>
-          </div>
+          ))}
         </div>
       </div>
-    </section>
+     
+    </div>
   );
-};
-
-export default Uniquecpanel;
+}

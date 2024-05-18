@@ -6,8 +6,8 @@ import Testimonials from './Testimonials'
 import Faqs from './Faqs';
 import CaseStudy from './CaseStudy'
 import Features from './Features'
-import Adds from './Adds'
 import Bandwidth from './Bandwidth'
+import Addsbar from './Adds'
 
 const page = () => {
   return (
@@ -30,7 +30,7 @@ const page = () => {
           <Features/>
         </section>
         <section className='pt-8'>
-          <Adds/>
+          <Addsbar/>
         </section>
        
    

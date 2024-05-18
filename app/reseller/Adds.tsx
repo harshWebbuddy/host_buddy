@@ -2,74 +2,13 @@
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { Collapse } from "react-collapse";
-export const features: Feature[] = [
-    {
-      title: "Infrastructure & Technology Used",
-      description:
-        "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
-    },
-    {
-      title: "70+ free one-click installs",
-      description:
-        "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
-    },
-    {
-      title: " SSl Certificate",
-      description:
-        "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
-    },
-    {
-      title: "Support",
-      description:
-        "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
-    },
-    {
-      title: "Infrastructure & Technology Used",
-      description:
-        "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
-    },
-    {
-      title: "70+ free one-click installs",
-      description:
-        "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
-    },
-    {
-      title: " SSl Certificate",
-      description:
-        "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
-    },
-    {
-      title: "Support",
-      description:
-        "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
-    },
-    {
-      title: "Infrastructure & Technology Used",
-      description:
-        "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
-    },
-    {
-      title: "70+ free one-click installs",
-      description:
-        "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
-    },
-    {
-      title: " SSl Certificate",
-      description:
-        "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
-    },
-    {
-      title: "Support",
-      description:
-        "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
-    },
-  ];
+
 interface Feature {
   title: string;
   description: string;
 }
 
-const Addsbar: React.FC = () => {
+const Adds: React.FC = () => {
   const [currentItem, setCurrentItem] = useState<number>(0);
 
   const parentRef = useRef<HTMLDivElement>(null);
@@ -164,6 +103,67 @@ const Addsbar: React.FC = () => {
   );
 };
 
-export default Addsbar;
+export default Adds;
 
-
+export const features: Feature[] = [
+  {
+    title: "Infrastructure & Technology Used",
+    description:
+      "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
+  },
+  {
+    title: "70+ free one-click installs",
+    description:
+      "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
+  },
+  {
+    title: " SSl Certificate",
+    description:
+      "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
+  },
+  {
+    title: "Support",
+    description:
+      "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
+  },
+  {
+    title: "Infrastructure & Technology Used",
+    description:
+      "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
+  },
+  {
+    title: "70+ free one-click installs",
+    description:
+      "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
+  },
+  {
+    title: " SSl Certificate",
+    description:
+      "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
+  },
+  {
+    title: "Support",
+    description:
+      "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
+  },
+  {
+    title: "Infrastructure & Technology Used",
+    description:
+      "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
+  },
+  {
+    title: "70+ free one-click installs",
+    description:
+      "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
+  },
+  {
+    title: " SSl Certificate",
+    description:
+      "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
+  },
+  {
+    title: "Support",
+    description:
+      "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
+  },
+];
