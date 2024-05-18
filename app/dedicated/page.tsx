@@ -27,7 +27,8 @@ export default function HomeMainPage() {
         <span className="text-white opacity-90 font-light">Welcome to </span>
         <span className="text-orange-500 font-bold">HostBuddy</span>
       </h2>
-          <h1 className="font-mono-sans font-medium 2xl:font-semibold text-[50px] 2xl:text-[60px] leading-[60px] 2xl:leading-[84px] text-left 2xl:text-left ">Dedicated with
+          <h1 className="font-mono-sans font-medium 2xl:font-semibold text-[50px] 2xl:text-[60px]
+           leading-[60px] 2xl:leading-[84px] text-left 2xl:text-left ">Dedicated with
 Premium Hardware</h1>
 
 </div>

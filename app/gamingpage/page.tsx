@@ -1,34 +1,126 @@
 "use client";
 
 import Locationpage from "../(landing)/components/Locationpage";
-import CardsComponent from "../(landing)/components/CardsComponent";
 import Image from "next/image";
-import { Panela, Panelb, Panelc } from "@/components/svgs";
-import { BiChevronRight } from "react-icons/bi";
-import Testimonials from "../(landing)/components/Testimonials";
 import Faqs from "../(landing)/components/Faqs";
 import { caseStudies } from "../(landing)/components/constants/casestudies";
-import { BsArrowRight } from "react-icons/bs";
-import Ratingpanel from "../(landing)/components/Rating";
-import Plans from "../(landing)/components/Plans";
+import { useState } from "react";
+import ContactForm from "./Form";
+import Games from "./games";
 
+interface StarRatingProps {
+  initialRating?: number;
+  onChange?: (rating: number) => void;
+  color?: string;
+}
+const StarRating: React.FC<StarRatingProps> = ({ initialRating = 0, onChange, color }) => {
+  const [rating, setRating] = useState(initialRating);
+  const handleStarClick = (newRating: number) => {
+    setRating(newRating);
+    if (onChange) {
+      onChange(newRating);
+    }
+  };
+  return (
+    <div className="flex items-center">
+      {[1, 2, 3, 4, 5].map((index) => (
+        <button
+          key={index}
+          className={`text-4xl ${index <= rating ? `${color ?? "text-yellow-500"}` : "text-gray-300"} focus:outline-none`}
+          onClick={() => handleStarClick(index)}>
+          ★
+        </button>
+      ))}
+    </div>
+  );
+};
+const Ratingpanel = () => {
+  const handleRatingChange = (newRating: number) => {
+    console.log("New rating:", newRating);
+    // Handle the rating change logic here
+  };
+  return (
+      <div className="w-full max-w-[1300px] mx-auto bg-transparent rounded-3xl mt-20">
+        <div className="flex flex-col 2xl:flex-row items-center p-10  2xl:space-x-12">
+          <div className="w-full max-w-fit font-mona-sans font-semibold text-center bl:text-left">
+            <h3 className="font-bold text-[20px] 2xl:text-[24px] leading-[63px] text-white">Customer Happiness</h3>
+          </div>
+          <div className="w-full grid grid-cols-7 xl:grid-cols-7 2xl:grid-cols-7 gap-x-0 gap-y-10 items-center justify-center">
+            <div className="flex flex-col items-center">
+              <div className="space-y-2">
+                <Image src="/trustpilotwhite.svg" alt="" width={150} height={40} />
+                <Image src="/trustpilot-reviews.svg" alt="" width={180} height={40} />
+                <h2 className="px-0  text-[11px]  text-white">
+                  <span className="font-mona-sans font-extrabold leading-normal text-left">4.9/5 | 9010</span> reviews
+                </h2>
+              </div>
+          </div>
+          <svg className="w-full h-16 pt-2 " width="1" height="57" viewBox="0 0 1 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="0.5" y1="0.63501" x2="0.499998" y2="56.635" stroke="#C8C8C8" stroke-dasharray="2 2"/>
+</svg>
+
+          <div className="flex flex-col items-center">
+            <div className="space-y-1">
+              <Image src="/google1.svg" alt="" width={100} height={40} className="-mb-3" />
+             <img src="/hosting/rating1.svg" className="w-auto h-[28px]"/> 
+            {/* <StarRating initialRating={3.5} onChange={handleRatingChange} /> */}
+            <h2 className="px-0  text-[11px]  text-white">
+                <span className="font-mona-sans font-extrabold leading-relaxed text-left">4.9/5 | 9010</span> reviews
+              </h2>
+            </div>
+          </div>
+          <svg className="w-full h-16 pt-2 " width="1" height="57" viewBox="0 0 1 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="0.5" y1="0.63501" x2="0.499998" y2="56.635" stroke="#C8C8C8" stroke-dasharray="2 2"/>
+</svg>
+          <div className="flex flex-col items-center">
+          <div className="space-y-2">
+              <Image src="/hostwhite.svg" alt="" width={120} height={40} className="mt-2"/>
+              <img src="/hosting/rating1.svg" className="w-auto h-[28px]"/> 
+
+              {/* <StarRating initialRating={3.5} onChange={handleRatingChange} /> */}
+              <h2 className="px-0  text-[11px]  text-white">
+                <span className="font-mona-sans font-extrabold leading-relaxed text-left">4.9/5 | 9010</span> reviews
+              </h2>
+            </div>
+          </div>  
+          {/* <div className="border-t-[3px] border-dashed border-[#dedede] w-14 h-1 relative  group-hover:opacity-0 transition rotate-90 duration-200" /> */}
+          <svg className="w-full h-16 pt-2 " width="1" height="57" viewBox="0 0 1 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="0.5" y1="0.63501" x2="0.499998" y2="56.635" stroke="#C8C8C8" stroke-dasharray="2 2"/>
+</svg>
+          <div className="flex flex-col items-center">
+          <div className="space-y-2.5">
+              <Image src="/serchenwhite.svg" alt="" width={100} height={40} />
+              <img src="/hosting/rating2.svg" className="w-auto h-[28px]"/> 
+
+              {/* <StarRating initialRating={4} onChange={handleRatingChange} color="!text-[#73CF11]" /> */}
+              <h2 className="px-0  text-[11px]  text-white">
+                <span className="font-mona-sans font-extrabold leading-relaxed text-left">4.9/5 | 9010 </span> reviews
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 export default function HomeMainPage() {
   return (
     <main className="overflow-hidden">
       {/* hero section */}
 
-      <section className="h-full min-h-[80vh] overflow-hidden relative bg-black flex items-center justify-center">
+      <section className="h-full 2xl:min-h-[80vh] overflow-hidden relative bg-black flex items-center justify-center">
     <img src="/home.jpg" width={1920} height={1080} alt="" className="w-full absolute inset-0 h-full opacity-30 object-cover bg-blend-color-dodge !z-[1]" />
     <div className="max-w-[1300px] mx-auto text-white  px-10 pt-40 pb-10 2xl:py-40">
-      <div className="h-full flex items-center relative !z-[2] flex-col 2xl:flex-row justify-center gap-20">
+      <div className="h-full flex items-center relative !z-[2] flex-col 2xl:flex-row justify-center space-y-10 ">
         <div className="relative w-full flex flex-col justify-start items-start 2xl:justify-start space-y-5">
           <div className='relative w-full flex flex-col justify-start items-start 2xl:justify-start space-y-0'>
           <h2 className="font-mono-sans text-[16px] font-light italic leading-relaxed text-center 2xl:text-left">
         <span className="text-white opacity-90 font-light">Welcome to </span>
         <span className="text-orange-500 font-bold">HostBuddy</span>
       </h2>
-          <h1 className="font-mono-sans font-medium text-[50px] 2xl:text-[62px] leading-[60px] 2xl:leading-[84px] text-left 2xl:text-left ">Dedicated with
-Premium Hardware</h1>
+          <h1 className="font-mono-sans font-medium 2xl:font-semibold text-[50px] 2xl:text-[60px]
+           leading-[60px] 2xl:leading-[84px] text-left 2xl:text-left ">Lorem ipsum dolor
+           sit amet</h1>
 
 </div>
           <p className="font-mono-sans text-[16px] font-light leading-loose text-left  text-[#EBEBEB]">
@@ -66,193 +158,132 @@ Premium Hardware</h1>
         </div>
 
         <div className="w-full item-center justify-center">
-          <Image src="/homeimages.svg" alt="" width={500} height={500} className="item-center justify-center mx-auto" />
+          <img src="/gaming2.png" alt="" width={256} height={500} className="item-center justify-center mx-auto" />
         </div>
       </div>
-    </div>
-  </section>
+    </div>  
+    <div className="-bottom-10 2xl:-bottom-10 absolute z-[20]"><Ratingpanel/></div>
 
-      {/* rating and web hosting plans page */}
-      <section>
-        <div className="space-y-40">
-          <Ratingpanel />
-          <Plans />
-        </div>
-      </section>
+</section>
+  <img src="/fringe.svg" className="w-full absolute z-[10] -translate-y-2 2xl:-translate-y-4"/>    
 
-
-      <section className="text-white bg-gradient-to-b from-[#292E34] to-[#16191C] pt-14 pb-20">
-        <Locationpage />
-      </section>
-      <section className="max-w-[1350px] mx-auto my-20">
-        <CardsComponent />
-      </section>
+<section>
+  <Games/>
+</section>
 
       {/* What Makes HostBuddy Unique? */}
-      <section className="bg-[#F9EFE4] relative">
+     <section className="pt-40 pb-40"><svg className="w-full h-full bottom-0 translate-y-2 "  height="165" viewBox="0 0 1920 165" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M373.511 45.5L-1.88672 108.5V164.5L1921.89 161.5V106.5L1540.36 45.5L1597.73 89L1272.46 27.5L1335.95 72.5L957.215 0L578.476 74L642.527 27L316.143 89.5L373.511 45.5Z" fill="#FF7500"/>
+<path d="M354.574 53.5L-1.88672 110V162.5H1921.89V107L1562.64 54L1598.29 89.5L1300.87 38L1337.07 73L958.329 18L577.919 74.5L614.679 38.5L316.143 90L354.574 53.5Z" fill="#01131B"/>
+</svg>
+      <section className="bg-[#01131B] relative ">
         <div className="p-4 w-full max-w-[1300px] mx-auto flex flex-col md:flex-row items-center justify-center py-20">
           <Image src="/dotted.svg" alt="" width={100} height={100} className="ml-1 absolute left-0 top-20 hidden 2xl:flex opacity-50" />
-          <div className="flex flex-col 2xl:flex-row mx-auto items-center justify-between ">
-          <div className="w-full flex flex-col space-y-8">
-          <div className="space-y-3.5">
-            <h4 className="text-[39px] text-black font-semibold font-mona-sans leading-normal">
-              What Makes Host<span className="text-orange-500">Buddy </span>  Unique?
-             
+          <div className="flex flex-col space-y-10 mx-auto items-center justify-center ">
+          <div className="w-full flex flex-col 2xl:flex-row 2xl:space-x-8 space-y-4 mx-auto items-start justify-start 2xl:px-20">
+          <div className="w-full">
+            <h4 className="text-[42px]  text-white font-semibold font-mona-sans leading-normal">
+            Amazing Games 
             </h4>
-            <p className="text-[16px] leading-loose font-mono-sans">
-              Lorem ipsum dolor sit amet conscatetur. Ornare et amet lobortis ornare. Ullamcorper accumsan donec eu condimentum diam a augue arcu. Erat nibh
-              nisl lacinia egestas mauris facilisi aliquam sit mauris.{" "}
+<span className="text-orange-500 text-[42px]   font-semibold font-mona-sans leading-normal">Control Panel </span>
+          </div>
+          <p className="text-[16px] text-white leading-loose font-mono-sans">
+          By trusting us with your business and projects needs, we promise a 99.9% uptime on any services we provide, outside of any standard.
             </p>
-          </div>
-          <div className="space-y-2 2xl:max-w-xl">
-            <div className="relative group space-y-3">
-              <div className="cursor-pointer flex w-full group hover:bg-white transition-all duration-300 border-gradient hover:shadow-2xl rounded-xl">
-                <div className="ml-8 flex xl:flex-row items-center featuresvg4">
-                <svg
-                className="group"
-          width="58"
-          height="58"
-          viewBox="0 0 48 48"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g opacity="0.3" className="group">
-            {" "}
-            <path
-              d="M15 12C14.6022 12 14.2206 12.158 13.9393 12.4393C13.658 12.7206 13.5 13.1022 13.5 13.5C13.5 13.8978 13.658 14.2794 13.9393 14.5607C14.2206 14.842 14.6022 15 15 15H33C33.3978 15 33.7794 14.842 34.0607 14.5607C34.342 14.2794 34.5 13.8978 34.5 13.5C34.5 13.1022 34.342 12.7206 34.0607 12.4393C33.7794 12.158 33.3978 12 33 12H15ZM13.5 19.5C13.5 19.1022 13.658 18.7206 13.9393 18.4393C14.2206 18.158 14.6022 18 15 18H33C33.3978 18 33.7794 18.158 34.0607 18.4393C34.342 18.7206 34.5 19.1022 34.5 19.5C34.5 19.8978 34.342 20.2794 34.0607 20.5607C33.7794 20.842 33.3978 21 33 21H15C14.6022 21 14.2206 20.842 13.9393 20.5607C13.658 20.2794 13.5 19.8978 13.5 19.5ZM15 24C14.6022 24 14.2206 24.158 13.9393 24.4393C13.658 24.7206 13.5 25.1022 13.5 25.5C13.5 25.8978 13.658 26.2794 13.9393 26.5607C14.2206 26.842 14.6022 27 15 27H33C33.3978 27 33.7794 26.842 34.0607 26.5607C34.342 26.2794 34.5 25.8978 34.5 25.5C34.5 25.1022 34.342 24.7206 34.0607 24.4393C33.7794 24.158 33.3978 24 33 24H15ZM15 30C14.6022 30 14.2206 30.158 13.9393 30.4393C13.658 30.7206 13.5 31.1022 13.5 31.5C13.5 31.8978 13.658 32.2794 13.9393 32.5607C14.2206 32.842 14.6022 33 15 33H24C24.3978 33 24.7794 32.842 25.0607 32.5607C25.342 32.2794 25.5 31.8978 25.5 31.5C25.5 31.1022 25.342 30.7206 25.0607 30.4393C24.7794 30.158 24.3978 30 24 30H15Z"
-              fill="#16191C"
-            />
-            <path 
-              d="M6 6C6 4.4087 6.63214 2.88258 7.75736 1.75736C8.88258 0.632141 10.4087 0 12 0L36 0C37.5913 0 39.1174 0.632141 40.2426 1.75736C41.3679 2.88258 42 4.4087 42 6V42C42 43.5913 41.3679 45.1174 40.2426 46.2426C39.1174 47.3679 37.5913 48 36 48H12C10.4087 48 8.88258 47.3679 7.75736 46.2426C6.63214 45.1174 6 43.5913 6 42V6ZM36 3H12C11.2044 3 10.4413 3.31607 9.87868 3.87868C9.31607 4.44129 9 5.20435 9 6V42C9 42.7957 9.31607 43.5587 9.87868 44.1213C10.4413 44.6839 11.2044 45 12 45H36C36.7956 45 37.5587 44.6839 38.1213 44.1213C38.6839 43.5587 39 42.7957 39 42V6C39 5.20435 38.6839 4.44129 38.1213 3.87868C37.5587 3.31607 36.7956 3 36 3Z"
-              fill="#16191C"
-            />
-          </g>
-        </svg>         
-                 <div className="transition-all duration-300 cursor-pointer m-8 xl:gap-6 text-[#16191C]">
-                    <h2 className="text-[24px] font-bold opacity-1 mb-4 group-hover:text-orange-500">24/7 & 365 Days Support </h2>
-                    <p className="font-mona-sans text-[16px] font-normal leading-normal text-left">
-                    Euismod egestas suspendisse aliquet amet ultrices faucibus mauris sit odio.                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="border-t-[3px] border-dashed border-[#dedede] w-full h-1 absolute -bottom-1 left-0 right-0 group-hover:opacity-0 transition duration-200" />
-            </div>
-            <div className="relative group space-y-3">
-              <div className="cursor-pointer flex w-full group hover:bg-white transition-all duration-300 border-gradient hover:shadow-2xl rounded-xl">
-                <div className="ml-8 flex xl:flex-row items-center featuresvg4">
-                <svg
-          width="58"
-          height="54"
-          viewBox="0 0 48 54"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g opacity="0.3">
-            <path
-              d="M5.76 7.52068C5.99478 7.48244 6.23528 7.50058 6.46167 7.5736C6.68805 7.64663 6.89383 7.77245 7.062 7.94068L9 9.88168L10.938 7.94068C11.0773 7.80099 11.2429 7.69016 11.4251 7.61454C11.6073 7.53892 11.8027 7.5 12 7.5C12.1973 7.5 12.3927 7.53892 12.5749 7.61454C12.7571 7.69016 12.9227 7.80099 13.062 7.94068L15 9.88168L16.938 7.94068C17.0773 7.80099 17.2429 7.69016 17.4251 7.61454C17.6073 7.53892 17.8027 7.5 18 7.5C18.1973 7.5 18.3927 7.53892 18.5749 7.61454C18.7571 7.69016 18.9227 7.80099 19.062 7.94068L21 9.88168L22.938 7.94068C23.0773 7.80099 23.2429 7.69016 23.4251 7.61454C23.6073 7.53892 23.8027 7.5 24 7.5C24.1973 7.5 24.3927 7.53892 24.5749 7.61454C24.7571 7.69016 24.9227 7.80099 25.062 7.94068L27 9.88168L28.938 7.94068C29.0773 7.80099 29.2429 7.69016 29.4251 7.61454C29.6073 7.53892 29.8027 7.5 30 7.5C30.1973 7.5 30.3927 7.53892 30.5749 7.61454C30.7571 7.69016 30.9227 7.80099 31.062 7.94068L33 9.88168L34.938 7.94068C35.0773 7.80099 35.2429 7.69016 35.4251 7.61454C35.6073 7.53892 35.8027 7.5 36 7.5C36.1973 7.5 36.3927 7.53892 36.5749 7.61454C36.7571 7.69016 36.9227 7.80099 37.062 7.94068L39 9.88168L40.938 7.94068C41.1061 7.77248 41.3117 7.64664 41.538 7.57355C41.7643 7.50046 42.0047 7.48221 42.2394 7.5203C42.4741 7.55839 42.6964 7.65174 42.8879 7.79264C43.0795 7.93354 43.2347 8.11796 43.341 8.33068L44.841 11.3307C44.9455 11.5393 45 11.7694 45 12.0027V48.0027C45 48.236 44.9455 48.4661 44.841 48.6747L43.341 51.6747C43.2346 51.8869 43.0794 52.0708 42.8881 52.2113C42.6968 52.3518 42.4749 52.4449 42.2407 52.483C42.0064 52.5211 41.7664 52.503 41.5405 52.4303C41.3145 52.3576 41.1091 52.2323 40.941 52.0647L39 50.1237L37.062 52.0647C36.9227 52.2044 36.7571 52.3152 36.5749 52.3908C36.3927 52.4664 36.1973 52.5054 36 52.5054C35.8027 52.5054 35.6073 52.4664 35.4251 52.3908C35.2429 52.3152 35.0773 52.2044 34.938 52.0647L33 50.1237L31.062 52.0647C30.9227 52.2044 30.7571 52.3152 30.5749 52.3908C30.3927 52.4664 30.1973 52.5054 30 52.5054C29.8027 52.5054 29.6073 52.4664 29.4251 52.3908C29.2429 52.3152 29.0773 52.2044 28.938 52.0647L27 50.1237L25.062 52.0647C24.9227 52.2044 24.7571 52.3152 24.5749 52.3908C24.3927 52.4664 24.1973 52.5054 24 52.5054C23.8027 52.5054 23.6073 52.4664 23.4251 52.3908C23.2429 52.3152 23.0773 52.2044 22.938 52.0647L21 50.1237L19.062 52.0647C18.9227 52.2044 18.7571 52.3152 18.5749 52.3908C18.3927 52.4664 18.1973 52.5054 18 52.5054C17.8027 52.5054 17.6073 52.4664 17.4251 52.3908C17.2429 52.3152 17.0773 52.2044 16.938 52.0647L15 50.1237L13.062 52.0647C12.9227 52.2044 12.7571 52.3152 12.5749 52.3908C12.3927 52.4664 12.1973 52.5054 12 52.5054C11.8027 52.5054 11.6073 52.4664 11.4251 52.3908C11.2429 52.3152 11.0773 52.2044 10.938 52.0647L9 50.1237L7.062 52.0647C6.89393 52.2329 6.68828 52.3587 6.46201 52.4318C6.23574 52.5049 5.99534 52.5232 5.76063 52.4851C5.52592 52.447 5.30362 52.3536 5.11209 52.2127C4.92055 52.0718 4.76525 51.8874 4.659 51.6747L3.159 48.6747C3.05446 48.4661 3.00002 48.236 3 48.0027V12.0027C3.00002 11.7694 3.05446 11.5393 3.159 11.3307L4.659 8.33068C4.76523 8.11811 4.92046 7.93381 5.11188 7.79299C5.3033 7.65216 5.52544 7.55883 5.76 7.52068ZM6.411 11.5347L6 12.3567V47.6487L6.411 48.4707L7.941 46.9407C8.22229 46.6595 8.60375 46.5015 9.0015 46.5015C9.39925 46.5015 9.78071 46.6595 10.062 46.9407L12 48.8817L13.938 46.9437C14.0773 46.804 14.2429 46.6932 14.4251 46.6175C14.6073 46.5419 14.8027 46.503 15 46.503C15.1973 46.503 15.3927 46.5419 15.5749 46.6175C15.7571 46.6932 15.9227 46.804 16.062 46.9437L18 48.8817L19.938 46.9437C20.0773 46.804 20.2429 46.6932 20.4251 46.6175C20.6073 46.5419 20.8027 46.503 21 46.503C21.1973 46.503 21.3927 46.5419 21.5749 46.6175C21.7571 46.6932 21.9227 46.804 22.062 46.9437L24 48.8817L25.938 46.9437C26.0773 46.804 26.2429 46.6932 26.4251 46.6175C26.6073 46.5419 26.8027 46.503 27 46.503C27.1973 46.503 27.3927 46.5419 27.5749 46.6175C27.7571 46.6932 27.9227 46.804 28.062 46.9437L30 48.8817L31.938 46.9437C32.0773 46.804 32.2429 46.6932 32.4251 46.6175C32.6073 46.5419 32.8027 46.503 33 46.503C33.1973 46.503 33.3927 46.5419 33.5749 46.6175C33.7571 46.6932 33.9227 46.804 34.062 46.9437L36 48.8817L37.938 46.9437C38.0773 46.804 38.2429 46.6932 38.4251 46.6175C38.6073 46.5419 38.8027 46.503 39 46.503C39.1973 46.503 39.3927 46.5419 39.5749 46.6175C39.7571 46.6932 39.9227 46.804 40.062 46.9437L41.589 48.4707L42 47.6487V12.3567L41.589 11.5347L40.059 13.0647C39.7777 13.3459 39.3962 13.5039 38.9985 13.5039C38.6008 13.5039 38.2193 13.3459 37.938 13.0647L36 11.1237L34.062 13.0647C33.9227 13.2044 33.7571 13.3152 33.5749 13.3908C33.3927 13.4664 33.1973 13.5054 33 13.5054C32.8027 13.5054 32.6073 13.4664 32.4251 13.3908C32.2429 13.3152 32.0773 13.2044 31.938 13.0647L30 11.1237L28.062 13.0647C27.9227 13.2044 27.7571 13.3152 27.5749 13.3908C27.3927 13.4664 27.1973 13.5054 27 13.5054C26.8027 13.5054 26.6073 13.4664 26.4251 13.3908C26.2429 13.3152 26.0773 13.2044 25.938 13.0647L24 11.1237L22.062 13.0647C21.9227 13.2044 21.7571 13.3152 21.5749 13.3908C21.3927 13.4664 21.1973 13.5054 21 13.5054C20.8027 13.5054 20.6073 13.4664 20.4251 13.3908C20.2429 13.3152 20.0773 13.2044 19.938 13.0647L18 11.1237L16.062 13.0647C15.9227 13.2044 15.7571 13.3152 15.5749 13.3908C15.3927 13.4664 15.1973 13.5054 15 13.5054C14.8027 13.5054 14.6073 13.4664 14.4251 13.3908C14.2429 13.3152 14.0773 13.2044 13.938 13.0647L12 11.1237L10.062 13.0647C9.92266 13.2044 9.75714 13.3152 9.5749 13.3908C9.39267 13.4664 9.1973 13.5054 9 13.5054C8.8027 13.5054 8.60733 13.4664 8.4251 13.3908C8.24286 13.3152 8.07734 13.2044 7.938 13.0647L6.411 11.5347Z"
-              fill="#16191C"
-            />
-            <path
-              d="M9 19.5C9 19.1022 9.15804 18.7206 9.43934 18.4393C9.72064 18.158 10.1022 18 10.5 18H28.5C28.8978 18 29.2794 18.158 29.5607 18.4393C29.842 18.7206 30 19.1022 30 19.5C30 19.8978 29.842 20.2794 29.5607 20.5607C29.2794 20.842 28.8978 21 28.5 21H10.5C10.1022 21 9.72064 20.842 9.43934 20.5607C9.15804 20.2794 9 19.8978 9 19.5ZM9 25.5C9 25.1022 9.15804 24.7206 9.43934 24.4393C9.72064 24.158 10.1022 24 10.5 24H28.5C28.8978 24 29.2794 24.158 29.5607 24.4393C29.842 24.7206 30 25.1022 30 25.5C30 25.8978 29.842 26.2794 29.5607 26.5607C29.2794 26.842 28.8978 27 28.5 27H10.5C10.1022 27 9.72064 26.842 9.43934 26.5607C9.15804 26.2794 9 25.8978 9 25.5ZM9 31.5C9 31.1022 9.15804 30.7206 9.43934 30.4393C9.72064 30.158 10.1022 30 10.5 30H28.5C28.8978 30 29.2794 30.158 29.5607 30.4393C29.842 30.7206 30 31.1022 30 31.5C30 31.8978 29.842 32.2794 29.5607 32.5607C29.2794 32.842 28.8978 33 28.5 33H10.5C10.1022 33 9.72064 32.842 9.43934 32.5607C9.15804 32.2794 9 31.8978 9 31.5ZM9 37.5C9 37.1022 9.15804 36.7206 9.43934 36.4393C9.72064 36.158 10.1022 36 10.5 36H28.5C28.8978 36 29.2794 36.158 29.5607 36.4393C29.842 36.7206 30 37.1022 30 37.5C30 37.8978 29.842 38.2794 29.5607 38.5607C29.2794 38.842 28.8978 39 28.5 39H10.5C10.1022 39 9.72064 38.842 9.43934 38.5607C9.15804 38.2794 9 37.8978 9 37.5ZM33 19.5C33 19.1022 33.158 18.7206 33.4393 18.4393C33.7206 18.158 34.1022 18 34.5 18H37.5C37.8978 18 38.2794 18.158 38.5607 18.4393C38.842 18.7206 39 19.1022 39 19.5C39 19.8978 38.842 20.2794 38.5607 20.5607C38.2794 20.842 37.8978 21 37.5 21H34.5C34.1022 21 33.7206 20.842 33.4393 20.5607C33.158 20.2794 33 19.8978 33 19.5ZM33 25.5C33 25.1022 33.158 24.7206 33.4393 24.4393C33.7206 24.158 34.1022 24 34.5 24H37.5C37.8978 24 38.2794 24.158 38.5607 24.4393C38.842 24.7206 39 25.1022 39 25.5C39 25.8978 38.842 26.2794 38.5607 26.5607C38.2794 26.842 37.8978 27 37.5 27H34.5C34.1022 27 33.7206 26.842 33.4393 26.5607C33.158 26.2794 33 25.8978 33 25.5ZM33 31.5C33 31.1022 33.158 30.7206 33.4393 30.4393C33.7206 30.158 34.1022 30 34.5 30H37.5C37.8978 30 38.2794 30.158 38.5607 30.4393C38.842 30.7206 39 31.1022 39 31.5C39 31.8978 38.842 32.2794 38.5607 32.5607C38.2794 32.842 37.8978 33 37.5 33H34.5C34.1022 33 33.7206 32.842 33.4393 32.5607C33.158 32.2794 33 31.8978 33 31.5ZM33 37.5C33 37.1022 33.158 36.7206 33.4393 36.4393C33.7206 36.158 34.1022 36 34.5 36H37.5C37.8978 36 38.2794 36.158 38.5607 36.4393C38.842 36.7206 39 37.1022 39 37.5C39 37.8978 38.842 38.2794 38.5607 38.5607C38.2794 38.842 37.8978 39 37.5 39H34.5C34.1022 39 33.7206 38.842 33.4393 38.5607C33.158 38.2794 33 37.8978 33 37.5Z"
-              fill="#16191C"
-            />
-          </g>
-        </svg>
-                  <div className="transition-all duration-300 cursor-pointer m-8 xl:gap-6 text-[#16191C]">
-                    <h2 className="text-[24px] font-bold opacity-1 mb-4 group-hover:text-orange-500">30-Day Money Back</h2>
-                    <p className="font-mona-sans text-[16px] font-normal leading-normal text-left">
-                    Euismod egestas suspendisse aliquet amet ultrices faucibus mauris sit odio.                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="border-t-[3px] border-dashed border-[#dedede] w-full h-1 absolute -bottom-1 left-0 right-0 group-hover:opacity-0 transition duration-200" />
-            </div>
-            <div className="cursor-pointer flex w-full group hover:bg-white transition-all duration-300 border-gradient hover:shadow-2xl rounded-xl">
-              <div className="ml-8 flex xl:flex-row items-center featuresvg4">
-              <svg
-          width="58"
-          height="58"
-          viewBox="0 0 48 48"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g opacity="0.3">
-            <path
-              d="M18 3H3V45H18V3ZM45 3H30V18H45V3ZM45
-             30V45H30V30H45ZM0 3C0 2.20435 0.316071 
-             1.44129 0.87868 0.87868C1.44129 0.316071
-              2.20435 0 3 0L18 0C18.7956 0 19.5587 0.316071 
-              20.1213 0.87868C20.6839 1.44129 21 2.20435 21 
-              3V45C21 45.7957 20.6839 46.5587 20.1213 47.1213C19.5587 47.6839
-              18.7956 48 18 48H3C2.20435 48 1.44129 47.6839 0.87868 47.1213C0.316071
-               46.5587 0 45.7957 0 45V3ZM27 3C27 2.20435 27.3161 1.44129 27.8787 
-               0.87868C28.4413 0.316071 29.2044 0 30 0L45 0C45.7957 0 46.5587 0.316071 47.1213 0.87868C47.6839 1.44129 48 2.20435 
-               48 3V18C48 18.7956 47.6839 19.5587 47.1213 20.1213C46.5587 20.6839 45.7957 21 45 21H30C29.2044 21 28.4413 20.6839
-                27.8787 20.1213C27.3161 19.5587 27 18.7956 27 18V3ZM30 27C29.2044 27 28.4413 27.3161 27.8787 27.8787C27.3161
-                 28.4413 27 29.2044 27 30V45C27 45.7957 27.3161 46.5587 27.8787 47.1213C28.4413 47.6839 29.2044 48 30 48H45C45.7957
-                  48 46.5587 47.6839 47.1213 47.1213C47.6839 46.5587 48 45.7957 48 45V30C48 29.2044 47.6839 28.4413 
-                  47.1213 27.8787C46.5587 27.3161 
-              45.7957 27 45 27H30Z"
-              fill="#16191C"
-            />
-          </g>
-        </svg>                 <div className="transition-all duration-300 cursor-pointer m-8 xl:gap-6 text-[#16191C]">
-                  <h2 className="text-[24px] font-bold opacity-1 mb-4 group-hover:text-orange-500">99.95% Uptime </h2>
-                  <p className="font-mona-sans text-[16px] font-normal leading-normal text-left">
-                    Euismod egestas suspendisse aliquet amet ultrices faucibus mauris sit odio.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-            <div className="w-full flex justify-center">
-              <Image src="/manjump.svg" alt="" width={550} height={550} className="" />
+            <div className="w-full flex flex-col 2xl:flex-row justify-center">
+            <div className="space-y-2 2xl:max-w-xl 2xl:pr-10">
+          <div className="relative group space-y-3">
+  <div className="cursor-pointer flex w-full group hover:bg-white transition-all duration-300 border-gradient hover:shadow-2xl rounded-xl">
+    <div className="ml-8 flex md:flex-row items-center  featuresvg2">
+      <svg
+        className="group transition-all duration-300"
+    width="46" height="49" viewBox="0 0 36 49" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.3">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.2558 0C20.0996 0 20.7837 0.679035 20.7837 1.51667V3.7791C20.7837 4.6167 20.0996 5.29576 19.2558 5.29576C18.412 5.29576 17.728 4.6167 17.728 3.7791V1.51667C17.728 0.679035 18.412 0 19.2558 0ZM8.2567 2.92498C8.98748 2.50616 9.92187 2.7547 10.3438 3.48014L11.4833 5.43944C11.9052 6.16481 11.6548 7.09243 10.9241 7.5112C10.1934 7.93004 9.2589 7.68148 8.83705 6.9561L7.69752 4.9968C7.2756 4.27137 7.52599 3.34381 8.2567 2.92498ZM2.29203 10.3631C1.56126 9.94423 0.626871 10.1928 0.204954 10.9182C-0.216964 11.6436 0.0334252 12.5712 0.7642 12.99L2.73793 14.1212C3.46864 14.54 4.40309 14.2915 4.82495 13.566C5.24687 12.8407 4.99648 11.9131 4.26576 11.4943L2.29203 10.3631ZM21.2272 10.8757C22.6579 8.16891 25.108 7.54276 27.4451 8.76006C29.2235 9.68634 30.4485 12.6519 29.5155 14.4173L25.2526 22.4824C26.3181 22.2859 27.4464 22.7253 28.1511 23.5273C28.5173 23.9439 28.7691 24.4586 28.8385 25.0328C28.8629 25.2354 28.8647 25.4455 28.8406 25.6613C29.1639 25.6602 29.4796 25.6957 29.7813 25.7645C31.3358 26.1189 32.5187 27.3582 32.4491 29.0435C32.4448 29.1468 32.4359 29.2517 32.4219 29.3583C32.4968 29.3647 32.5711 29.3742 32.6449 29.3869C34.7522 29.7492 36.3841 32.6302 35.4242 34.4464L31.6348 41.616C28.463 47.6169 20.4305 50.1068 13.9757 46.7448C8.8773 44.0893 6.32111 40.4828 4.84857 36.3573C3.89926 33.6977 3.12747 31.3018 2.25478 28.5925C1.82458 27.257 1.36987 25.8454 0.857281 24.2886C-0.150562 21.2275 1.31399 18.8538 3.71968 17.9331C6.0196 17.0529 8.68156 18.6154 9.67395 21.0344L11.9066 25.5375C12.2204 26.3251 12.7011 27.007 13.1385 26.1792L21.2272 10.8757ZM9.11652 26.7792L6.93231 22.3739C6.90057 22.3098 6.87107 22.2446 6.84393 22.1785C6.6124 21.614 6.18038 21.1566 5.72432 20.9097C5.28101 20.6698 4.9805 20.7015 4.8189 20.7634C4.24314 20.9838 3.9116 21.3218 3.75012 21.6475C3.60186 21.9466 3.47558 22.477 3.76175 23.3462C4.28915 24.948 4.75032 26.3798 5.18282 27.7227C6.04604 30.4027 6.79509 32.7284 7.72878 35.3442C8.97731 38.842 11.0617 41.8015 15.3955 44.0587C20.4169 46.6742 26.5729 44.6641 28.9289 40.2066L32.6423 33.181C32.6258 33.0954 32.5822 32.9592 32.4889 32.8012C32.3799 32.6164 32.2502 32.4824 32.1502 32.4092C32.1274 32.3925 32.1099 32.3814 32.0977 32.3745C31.292 32.2892 30.5525 31.8895 30.0429 31.2619C29.5199 30.6178 29.2846 29.7896 29.3915 28.9692C29.3991 28.9113 29.3961 28.8795 29.3939 28.8671C29.3939 28.8671 29.3879 28.8599 29.3815 28.8536C29.335 28.8082 29.1638 28.6936 28.8511 28.6947C27.9805 28.6976 27.1499 28.3318 26.5679 27.6889C26.0205 27.0843 25.7419 26.2885 25.7904 25.4812C25.7821 25.4773 25.7746 25.4743 25.7683 25.4723C24.6314 25.6656 23.48 25.2066 22.7937 24.2833C22.0989 23.3484 22.003 22.1018 22.5468 21.0731L26.7782 13.0674C26.7799 13.0495 26.7815 13.0215 26.7806 12.9825C26.7776 12.8351 26.7404 12.6124 26.6401 12.35C26.5407 12.0899 26.4038 11.8554 26.2616 11.6784C26.1286 11.513 26.0367 11.4535 26.026 11.4466C25.4434 11.1432 25.0925 11.1832 24.9239 11.2365C24.7584 11.2889 24.3563 11.4842 23.9331 12.285L15.8444 27.5885C15.6122 28.0279 15.0356 28.9623 13.8483 29.3902C12.4118 29.9079 11.206 29.3266 10.5991 28.8576C10.0489 28.4325 9.71273 27.9219 9.5375 27.6266C9.36474 27.3357 9.22588 27.0412 9.11652 26.7792ZM10.4429 24.7505C10.4385 24.7587 10.4338 24.7678 10.4338 24.7678L10.4327 24.7699L10.4429 24.7505Z" fill="white"/></g>
+</svg>
+
+      <div className="transition-all duration-300 cursor-pointer m-8 md:gap-6 text-[#16191C]">
+        <h2 className="text-[24px] font-bold opacity-1 mb-4 group-hover:text-sefty-orange text-white ">Easy Configuration</h2>
+        <p className="font-mona-sans text-[16px] font-normal leading-normal text-left text-white group-hover:text-[#16191C]/70">
+        Euismod egestas suspendisse aliquet amet ultrices faucibus mauris sit odio.        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div className="relative group space-y-3">
+  <div className="cursor-pointer flex w-full group hover:bg-white transition-all duration-300 border-gradient hover:shadow-2xl rounded-xl">
+    <div className="ml-8 flex md:flex-row items-center  featuresvg2">
+    <svg width="60" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.3">
+<path d="M27.675 27.495C28.8755 26.4558 29.8385 25.1705 30.4985 23.7263C31.1584 22.2821 31.5 20.7128 31.5 19.125C31.5 16.1413 30.3147 13.2798 28.205 11.17C26.0952 9.06026 23.2337 7.875 20.25 7.875C17.2663 7.875 14.4048 9.06026 12.295 11.17C10.1853 13.2798 9 16.1413 9 19.125C8.99998 20.7128 9.34155 22.2821 10.0015 23.7263C10.6615 25.1705 11.6245 26.4558 12.825 27.495C9.67531 28.9212 7.00305 31.2244 5.12771 34.1292C3.25236 37.034 2.25331 40.4174 2.25 43.875C2.25 44.4717 2.48705 45.044 2.90901 45.466C3.33097 45.8879 3.90326 46.125 4.5 46.125C5.09674 46.125 5.66903 45.8879 6.09099 45.466C6.51295 45.044 6.75 44.4717 6.75 43.875C6.75 40.2946 8.17232 36.8608 10.7041 34.3291C13.2358 31.7973 16.6696 30.375 20.25 30.375C23.8304 30.375 27.2642 31.7973 29.7959 34.3291C32.3277 36.8608 33.75 40.2946 33.75 43.875C33.75 44.4717 33.9871 45.044 34.409 45.466C34.831 45.8879 35.4033 46.125 36 46.125C36.5967 46.125 37.169 45.8879 37.591 45.466C38.0129 45.044 38.25 44.4717 38.25 43.875C38.2467 40.4174 37.2476 37.034 35.3723 34.1292C33.497 31.2244 30.8247 28.9212 27.675 27.495ZM20.25 25.875C18.915 25.875 17.6099 25.4791 16.4999 24.7374C15.3899 23.9957 14.5247 22.9415 14.0138 21.7081C13.5029 20.4747 13.3692 19.1175 13.6297 17.8081C13.8902 16.4988 14.533 15.296 15.477 14.352C16.421 13.408 17.6238 12.7652 18.9331 12.5047C20.2425 12.2443 21.5997 12.3779 22.8331 12.8888C24.0665 13.3997 25.1207 14.2649 25.8624 15.3749C26.6041 16.4849 27 17.79 27 19.125C27 20.9152 26.2888 22.6321 25.023 23.898C23.7571 25.1638 22.0402 25.875 20.25 25.875ZM42.165 26.595C43.6049 24.9735 44.5455 22.9704 44.8736 20.8268C45.2016 18.6832 44.9031 16.4904 44.014 14.5125C43.1249 12.5346 41.683 10.8558 39.8621 9.6782C38.0411 8.50061 35.9186 7.87442 33.75 7.875C33.1533 7.875 32.581 8.11205 32.159 8.53401C31.7371 8.95597 31.5 9.52826 31.5 10.125C31.5 10.7217 31.7371 11.294 32.159 11.716C32.581 12.1379 33.1533 12.375 33.75 12.375C35.5402 12.375 37.2571 13.0862 38.523 14.352C39.7888 15.6179 40.5 17.3348 40.5 19.125C40.4968 20.3068 40.1834 21.467 39.5911 22.4897C38.9989 23.5124 38.1485 24.3616 37.125 24.9525C36.7914 25.1449 36.5128 25.4197 36.3158 25.7507C36.1188 26.0816 36.0101 26.4575 36 26.8425C35.9906 27.2245 36.0786 27.6025 36.2557 27.9411C36.4329 28.2796 36.6933 28.5675 37.0125 28.7775L37.89 29.3625L38.1825 29.52C40.8946 30.8064 43.1827 32.841 44.7772 35.3842C46.3717 37.9274 47.2062 40.8734 47.1825 43.875C47.1825 44.4717 47.4196 45.044 47.8415 45.466C48.2635 45.8879 48.8358 46.125 49.4325 46.125C50.0292 46.125 50.6015 45.8879 51.0235 45.466C51.4454 45.044 51.6825 44.4717 51.6825 43.875C51.7009 40.4222 50.8361 37.0221 49.1703 33.9976C47.5045 30.9732 45.093 28.425 42.165 26.595Z" fill="white"/>
+</g>
+</svg>
+
+
+      <div className="transition-all duration-300 cursor-pointer m-8 md:gap-6 text-[#16191C]">
+        <h2 className="text-[24px] font-bold opacity-1 mb-4 group-hover:text-sefty-orange text-white ">Sub Users</h2>
+        <p className="font-mona-sans text-[16px] font-normal leading-normal text-left text-white group-hover:text-[#16191C]/70">
+        Euismod egestas suspendisse aliquet amet ultrices faucibus mauris sit odio.        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div className="relative group space-y-3">
+  <div className="cursor-pointer flex w-full group hover:bg-white transition-all duration-300 border-gradient hover:shadow-2xl rounded-xl">
+    <div className="ml-8 flex md:flex-row items-center  featuresvg2">
+    <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.3" clip-path="url(#clip0_887_9381)">
+<path d="M14.4073 18H5.37804C5.06585 18.0003 4.75973 17.9138 4.49391 17.75C4.22808 17.5863 4.01303 17.3519 3.87279 17.073L0.180542 9.7605C0.0618305 9.52457 0 9.26412 0 9C0 8.73588 0.0618305 8.47544 0.180542 8.2395L3.87279 0.927001C4.01303 0.648079 4.22808 0.41366 4.49391 0.249953C4.75973 0.0862462 5.06585 -0.000296597 5.37804 7.63721e-07H14.4073C14.7053 -7.39063e-05 14.9981 0.0787921 15.2558 0.228577C15.5134 0.378362 15.7269 0.593722 15.8743 0.852751L20.0278 8.16525C20.3203 8.68275 20.3203 9.315 20.0278 9.8325L15.8743 17.145C15.7273 17.4046 15.5141 17.6205 15.2563 17.7708C14.9986 17.921 14.7056 18.0001 14.4073 18ZM6.41754 14.625H13.4263L16.619 9L13.424 3.375H6.41754L3.57579 9L6.41754 14.625ZM31.2823 36H22.253C21.9409 36.0003 21.6347 35.9138 21.3689 35.75C21.1031 35.5863 20.888 35.3519 20.7478 35.073L17.0555 27.7605C16.9368 27.5246 16.875 27.2641 16.875 27C16.875 26.7359 16.9368 26.4754 17.0555 26.2395L20.7478 18.927C20.888 18.6481 21.1031 18.4137 21.3689 18.25C21.6347 18.0862 21.9409 17.9997 22.253 18H31.2823C31.5803 17.9999 31.8731 18.0788 32.1308 18.2286C32.3884 18.3784 32.6019 18.5937 32.7493 18.8527L36.9028 26.1652C37.1953 26.6827 37.1953 27.315 36.9028 27.8325L32.7493 35.145C32.6023 35.4046 32.3891 35.6205 32.1313 35.7708C31.8736 35.921 31.5806 36.0001 31.2823 36ZM23.2925 32.625H30.3013L33.4963 27L30.3013 21.375H23.2925L20.4508 27L23.2925 32.625ZM48.1573 18H39.128C38.8159 18.0003 38.5097 17.9138 38.2439 17.75C37.9781 17.5863 37.763 17.3519 37.6228 17.073L33.9305 9.7605C33.8118 9.52457 33.75 9.26412 33.75 9C33.75 8.73588 33.8118 8.47544 33.9305 8.2395L37.6228 0.927001C37.763 0.648079 37.9781 0.41366 38.2439 0.249953C38.5097 0.0862462 38.8159 -0.000296597 39.128 7.63721e-07H48.1573C48.4553 -7.39063e-05 48.7481 0.0787921 49.0058 0.228577C49.2634 0.378362 49.4769 0.593722 49.6243 0.852751L53.7778 8.16525C54.0703 8.68275 54.0703 9.315 53.7778 9.8325L49.6243 17.145C49.4773 17.4046 49.2641 17.6205 49.0063 17.7708C48.7486 17.921 48.4556 18.0001 48.1573 18ZM40.1675 14.625H47.1763L50.3713 9L47.1763 3.375H40.1675L37.3258 9L40.1675 14.625ZM14.4073 54H5.37804C5.06585 54.0003 4.75973 53.9138 4.49391 53.75C4.22808 53.5863 4.01303 53.3519 3.87279 53.073L0.180542 45.7605C0.0618305 45.5246 0 45.2641 0 45C0 44.7359 0.0618305 44.4754 0.180542 44.2395L3.87279 36.927C4.01303 36.6481 4.22808 36.4137 4.49391 36.25C4.75973 36.0862 5.06585 35.9997 5.37804 36H14.4073C14.7053 35.9999 14.9981 36.0788 15.2558 36.2286C15.5134 36.3784 15.7269 36.5937 15.8743 36.8527L20.0278 44.1652C20.3203 44.6828 20.3203 45.315 20.0278 45.8325L15.8743 53.145C15.7273 53.4046 15.5141 53.6205 15.2563 53.7708C14.9986 53.921 14.7056 54.0001 14.4073 54ZM6.41754 50.625H13.4263L16.6213 45L13.4263 39.375H6.41754L3.57579 45L6.41754 50.625ZM48.1573 54H39.128C38.8159 54.0003 38.5097 53.9138 38.2439 53.75C37.9781 53.5863 37.763 53.3519 37.6228 53.073L33.9305 45.7605C33.8118 45.5246 33.75 45.2641 33.75 45C33.75 44.7359 33.8118 44.4754 33.9305 44.2395L37.6228 36.927C37.763 36.6481 37.9781 36.4137 38.2439 36.25C38.5097 36.0862 38.8159 35.9997 39.128 36H48.1573C48.4553 35.9999 48.7481 36.0788 49.0058 36.2286C49.2634 36.3784 49.4769 36.5937 49.6243 36.8527L53.7778 44.1652C54.0703 44.6828 54.0703 45.315 53.7778 45.8325L49.6243 53.145C49.4773 53.4046 49.2641 53.6205 49.0063 53.7708C48.7486 53.921 48.4556 54.0001 48.1573 54ZM40.1675 50.625H47.1763L50.3713 45L47.1763 39.375H40.1675L37.3258 45L40.1675 50.625Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_887_9381">
+<rect width="54" height="54" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+
+      <div className="transition-all duration-300 cursor-pointer m-8 md:gap-6 text-[#16191C]">
+        <h2 className="text-[24px] font-bold opacity-1 mb-4 group-hover:text-sefty-orange text-white ">Game Panel Demo</h2>
+        <p className="font-mona-sans text-[16px] font-normal leading-normal text-left text-white group-hover:text-[#16191C]/70">
+        Euismod egestas suspendisse aliquet amet ultrices faucibus mauris sit odio.        </p>
+      </div>
+    </div>
+  </div>
+</div>
+          </div>
+              <Image src="/gamingpng.svg" alt="" width={550} height={550} className="" />
             </div>
           </div>
         </div>
       </section>
+      <svg className="w-full h-full -translate-y-4"   width="1920" height="105" viewBox="0 0 1920 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1546.49 76.176L1921.89 36.2659L1921.89 0.790207L-1.88661 2.69078L-1.88661 37.533L379.638 76.1761L322.27 48.6191L647.54 87.579L584.046 59.0717L962.785 105L1341.52 58.1215L1277.47 87.8957L1603.86 48.3023L1546.49 76.176Z" fill="#FF7500"/>
+<path d="M1565.43 71.1086L1921.89 35.3162L1921.89 2.05775L-1.88661 2.05784L-1.88661 37.2168L357.359 70.7919L321.713 48.3029L619.135 80.9278L582.932 58.7555L961.671 93.5977L1342.08 57.8053L1305.32 80.6111L1603.86 47.9861L1565.43 71.1086Z" fill="#01131B"/>
+</svg>
 
-      {/* Awards and recognition  */}
-      <div className="w-full flex flex-col gap-10 md:gap-16 mx-auto pt-20 2xl:pt-36 max-w-[1350px] p-4">
-        <div className="flex flex-col 2xl:flex-row w-full justify-between items-center">
-          <h4 className="text-[42px] text-center text-black font-semibold font-mona-sans leading-relaxed">
-            Our <span className="pb-4 border-b-4 border-orange-500">Awards</span> & Recognition
-          </h4>
-          <button className="relative max-w-fit hidden 2xl:flex flex-row group items-center justify-center">
-            <div className="flex items-center gap-x-3">
-              <p className="text-[16px] font-bold text-orange-500">See All Awards & Recognition </p>
-              <BiChevronRight className="text-orange-500" />
-            </div>
-            <div className="bg-orange-500 h-0.5 absolute -bottom-1 left-0 w-0 group-hover:w-full transition-all duration-500" />
-          </button>
-        </div>
-
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-8 bg-[#ebebeb] p-5 md:p-10 rounded-3xl">
-          <Image src="/awards1.svg" width={250} height={250} alt="Client 1" />
-          <Image src="/awards2.svg" width={250} height={250} alt="Client 2" />
-          <Image src="/awards3.svg" width={250} height={250} alt="Client 3" />
-          <Image src="/awards4.svg" width={250} height={250} alt="Client 4" />
-        </div>
-        <button className="relative max-w-fit flex 22xl:hidden flex-row group items-center justify-center">
-          <div className="flex items-center gap-x-3 pb-3">
-            <p className="text-[16px] font-bold text-orange-500">See All Awards & Recognition </p>
-            <BiChevronRight className="text-orange-500" />
-          </div>
-          <div className="bg-orange-500 h-0.5 absolute -bottom-1 left-0 w-0 group-hover:w-full transition-all duration-500" />
-        </button>
-      </div>
-
-      {/* client testimonials section*/}
-      <Testimonials />
+</section> 
+      
+      <section className="text-white">
+        <Locationpage />
+      </section>
+ 
+  <section className="pt-40">
+    <ContactForm/>
+  </section>
 
       {/* frequently asked questions section */}
 <section className="pt-20 2xl:pt-36 pb-24 2xl:pb-40">
       <Faqs />
       </section>
       {/* Our featured case study section*/}
+<section className="pb-80">
+<svg className="w-full" viewBox="0 0 1920 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M353.058 22.6022L-4 58.5745L-4.00001 92.0001L1923 92.0004L1923 56.6648L1563.15 22.9207L1598.86 45.5228L1300.94 12.7338L1337.2 35.0176L957.826 0.000168171L576.778 35.9725L613.6 13.052L314.563 45.8409L353.058 22.6022Z" fill="#F5F5F5"/>
+</svg>
 
-      <section className="bg-[#F5F5F5] relative pt-20 pb-24">
+     <section className="bg-[#F5F5F5] relative pt-20 ">
        <div className="max-w-[1360px] flex flex-row mx-auto items-center justify-center p-4">
       <Image src="/microsoft/dotted.svg" alt="" width={100} height={100} className="ml-1 absolute right-0 top-20 opacity-50 2xl:visible sm:invisible" />
       <div>   <h1 className="text-[42px] font-semibold">
@@ -275,132 +306,14 @@ Premium Hardware</h1>
           </div>
           </div>
     </div>
+  </section><svg className="w-full" viewBox="0 0 1920 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1565.94 69.3979L1923 33.4255L1923 -9.91821e-05L-4 -0.000267646L-4 35.3354L355.848 69.0794L320.142 46.4773L618.063 79.2663L581.799 56.9825L961.174 91.9999L1342.22 56.0276L1305.4 78.948L1604.44 46.1591L1565.94 69.3979Z" fill="#F5F5F5"/>
+</svg>
   </section>
+ 
+  
 
-      {/* Hire a pro section */}
-      <section className="py-24 2xl:py-36 px-4">
-        <div className="max-w-[1360px] mx-auto item-center justify-center w-full">
-          <div className="bg-[rgb(249,239,228)] 2xl:gap-0 w-full rounded-3xl mx-auto flex flex-col py-8 p-4 sm:p-5 md:p-10  2xl:p-20">
-            <div className="flex gap-20 items-start justify-between">
-              <div className="space-y-5 w-full">
-                <div className="flex gap-x-5">
-                  <Image src="/hostbuddy.svg" alt="" width={150} height={100} />
-                  <h1 className="text-orange-500 text-2xl font-bold">[ Pro Services ]</h1>
-                </div>
-                <div className="flex flex-col gap-4">
-                  <h2 className="text-[42px] font-semibold max-w-md">Hire a Pro - We'll Do It For You</h2>
-                  <p className="leading-loose">
-                    Lorem ipsum dolor sit amet consectetur. Ornare et amet lobortis ornare. Ullamcorper accumsan donec eu condimentum diam a augue arcu.
-                  </p>
-                </div>
-                <div className="!mt-10 flex flex-col md:flex-row gap-5">
-                  <div className="ring-1 ring-[#16191C29] hover:ring-0 hover:bg-white p-10 transition-all duration-500 cursor-pointer rounded-3xl group space-y-3 2xl:max-w-[408px]">
-                    <Image src="/hirebox1.svg" className="image" alt="Web Design Icon" width={100} height={100} />
-                    <h2 className="text-black text-2xl leading-relaxed font-semibold">Web Design</h2>
-                    <p className="text-[16px] leading-[24px] text-[#16191C]/70">Laoreet scelerisque euismod egestas suspendisse.</p>
-                    <div className="bg-transparent p-4 w-16 ring-1 ring-[#16191C29] rounded-full group-hover:bg-orange-500 group-hover:text-white transition-all duration-300">
-                      <BsArrowRight size={30} />
-                    </div>
-                  </div>
-                  <div className="block 2xl:hidden ring-1 ring-[#16191C29] hover:ring-0 hover:bg-white p-10 transition-all duration-500 cursor-pointer rounded-3xl group space-y-3 22xl:max-w-[408px]">
-                    <Image src="/hirebox1.svg" className="image" alt="Web Design Icon" width={100} height={100} />
-                    <h2 className="text-black text-2xl leading-relaxed font-semibold">Web Design</h2>
-                    <p className="text-[16px] leading-[24px] text-[#16191C]/70">Laoreet scelerisque euismod egestas suspendisse.</p>
-                    <div className="bg-transparent p-4 w-16 ring-1 ring-[#16191C29] rounded-full group-hover:bg-orange-500 group-hover:text-white transition-all duration-300">
-                      <BsArrowRight size={30} />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="w-full hidden 2xl:flex justify-end">
-                <Image src="/video.svg" alt="" width={430} height={430} />
-              </div>
-            </div>
-            <div className="flex flex-col 2xl:flex-row mt-5 gap-5">
-              <div className="hidden 2xl:block ring-1 ring-[#16191C29] hover:ring-0 hover:bg-white p-10 transition-all duration-500 cursor-pointer rounded-3xl group space-y-3 2xl:max-w-[408px]">
-                <Image src="/hirebox1.svg" className="image" alt="Web Design Icon" width={100} height={100} />
-                <h2 className="text-black text-2xl leading-relaxed font-semibold">Web Design</h2>
-                <p className="text-[16px] leading-[24px] text-[#16191C]/70">Laoreet scelerisque euismod egestas suspendisse.</p>
-                <div className="bg-transparent p-4 w-16 ring-1 ring-[#16191C29] rounded-full group-hover:bg-orange-500 group-hover:text-white transition-all duration-300">
-                      <BsArrowRight size={30} />
-                    </div>
-              </div>
-              <div className="flex flex-col md:flex-row 2xl:-translate-y-20 gap-5">
-                <div className="ring-1 ring-[#16191C29] hover:ring-0 hover:bg-white p-10 transition-all duration-500 cursor-pointer rounded-3xl group space-y-3 2xl:max-w-[408px]">
-                  <Image src="/hirebox1.svg" className="image" alt="Web Design Icon" width={100} height={100} />
-                  <h2 className="text-black text-2xl leading-relaxed font-semibold">Web Design</h2>
-                  <p className="text-[16px] leading-[24px] text-[#16191C]/70">Laoreet scelerisque euismod egestas suspendisse.</p>
-                  <div className="bg-transparent p-4 w-16 ring-1 ring-[#16191C29] rounded-full group-hover:bg-orange-500 group-hover:text-white transition-all duration-300">
-                      <BsArrowRight size={30} />
-                    </div>
-                </div>
-                <div className="ring-1 ring-[#16191C29] hover:ring-0 hover:bg-white p-10 transition-all duration-500 cursor-pointer rounded-3xl group space-y-3 2xl:max-w-[408px]">
-                  <Image src="/hirebox1.svg" className="image" alt="Web Design Icon" width={100} height={100} />
-                  <h2 className="text-black text-2xl leading-relaxed font-semibold">Web Design</h2>
-                  <p className="text-[16px] leading-[24px] text-[#16191C]/70">Laoreet scelerisque euismod egestas suspendisse.</p>
-                  <div className="bg-transparent p-4 w-16 ring-1 ring-[#16191C29] rounded-full group-hover:bg-orange-500 group-hover:text-white transition-all duration-300">
-                      <BsArrowRight size={30} />
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div className="w-full flex 2xl:hidden justify-center mt-8">
-              <Image src="/video.svg" alt="" width={430} height={430} />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="pt-0"> 
-        <div className="max-w-[1360px] mx-auto p-4 pb-80">
-          <div className="flex  flex-col space-y-12  xl:items-stretch 2xl:items-stretch pa:items-center pa:justify-center">
-            <div className="flex flex-col md:flex-row gap-6 items-center justify-between">
-              <h2 className="w-full text-[42px] font-semibold">
-                Need Some <span className="pb-4 border-b-4 border-orange-500">Help?</span>
-              </h2>
-              <p className="w-full leading-relaxed">
-                Lorem ipsum dolor sit amet consectetur. Ornare et amet lobortis ornare. Ullamcorper accumsan donec eu condimentum diam a augue arcu.
-              </p>
-            </div>
-            <div className="space-y-5">
-              <div className="flex flex-col md:flex-row items-center gap-5">
-                <div className="w-full px-10 py-7 bg-[#F5F5F5] flex items-center rounded-2xl cursor-pointer gap-6 hover:shadow-lg transition-all duration-500">
-                  <Image src="/call.svg" width={40} height={40} alt="Call Icon" />
-                  <div className="bg-gray-500/10 w-[3px] h-20"></div>
-                  <div className="flex flex-col gap-2 w-full">
-                    <h2 className="text-2xl font-bold md:whitespace-nowrap">Sales Help</h2>
-                    <p className="text-lg leading-relaxed text-[#16191C]/70">24/7/365 Through the Chat Widget</p>{" "}
-                  </div>
-                </div>
-                <div className="w-full px-10 py-7 bg-[#F5F5F5] flex items-center rounded-2xl cursor-pointer gap-6 hover:shadow-lg transition-all duration-500">
-                  <Image src="/email.svg" width={40} height={40} alt="Call Icon" />
-                  <div className="bg-gray-500/10 w-[3px] h-20"></div>
-                  <div className="flex flex-col gap-2 w-full">
-                    <h2 className="text-2xl font-bold md:whitespace-nowrap">Support Chat</h2>
-                    <p className="text-lg leading-relaxed text-[#16191C]/70">24/7/365 Through the Chat Widget</p>{" "}
-                  </div>
-                </div>
-                <div className="w-full px-10 py-7 bg-[#F5F5F5] hidden 2xl:flex items-center rounded-2xl cursor-pointer gap-6 hover:shadow-lg transition-all duration-500">
-                  <Image src="/email.svg" width={40} height={40} alt="Call Icon" />
-                  <div className="bg-gray-500/10 w-[3px] h-20"></div>
-                  <div className="flex flex-col gap-2 w-full">
-                    <h2 className="text-2xl font-bold md:whitespace-nowrap">Support Email</h2>
-                    <p className="text-lg leading-relaxed text-[#16191C]/70">24/7/365 Through the Chat Widget</p>{" "}
-                  </div>
-                </div>
-              </div>
-              <div className="md:max-w-lg mx-auto w-full px-10 py-7 bg-[#F5F5F5] flex 2xl:hidden items-center rounded-2xl cursor-pointer gap-6 hover:shadow-lg transition-all duration-500">
-                <Image src="/message2.svg" width={40} height={40} alt="Call Icon" />
-                <div className="bg-gray-500/10 w-[3px] h-20"></div>
-                <div className="flex flex-col gap-2 w-full">
-                  <h2 className="text-2xl font-bold md:whitespace-nowrap">Support Email</h2>
-                  <p className="text-lg leading-relaxed text-[#16191C]/70">24/7/365 Through the Chat Widget</p>{" "}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    
     </main>
   );
 }
