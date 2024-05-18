@@ -69,7 +69,7 @@ interface Feature {
   description: string;
 }
 
-const Addsbar: React.FC = () => {
+const Addsbar = () => {
   const [currentItem, setCurrentItem] = useState<number>(0);
 
   const parentRef = useRef<HTMLDivElement>(null);

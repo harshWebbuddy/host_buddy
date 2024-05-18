@@ -30,7 +30,7 @@ const page = () => {
           <Features/>
         </section>
         <section className='pt-8'>
-          <Addsbar/>
+         <Addsbar/>
         </section>
        
    
