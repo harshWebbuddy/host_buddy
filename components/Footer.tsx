@@ -59,7 +59,7 @@ const Footer = () => (
               <Link href="/" className="text-white">
                 Login | Sign Up{" "}
               </Link>
-              <Link href="/" className="text-white">
+              <Link href="/footer/Contact" className="text-white">
                 Contact Us{" "}
               </Link>
             </div>
