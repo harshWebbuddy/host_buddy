@@ -95,3 +95,22 @@ const config: Config = {
   plugins: [],
 };
 export default config;
+// <div className="absolute bottom-0 2xl:bottom-2 z-[2] w-full h-full flex flex-col space-y-3 2xl:space-y-10 justify-center items-center text-white">
+//         <h4 className="text-orange-500 font-bold italic">Knowledge Base Things</h4>
+//         <h2 className="font-extrabold text-2xl sm:text-5xl 2xl:text-7xl capitalize !mt-5 text-center">Lorem ipsum dolor</h2>
+//         <h4 className="text-sm 2xl:text-[16px] text-center max-w-xl leading-8">Lorem ipsum dolor sit amet consectetur. Tempus hendrerit nunc pretium et facilisis facilisi a dis urna. Vel mattis proin id fringilla ut tempus.</h4>
+//         <div className="bg-white rounded-full p-1 w-full max-w-5xl mx-auto focus-within:ring-[3px] ring-white/80 transition-all duration-500">
+//           <form className="flex w-full">
+//             <input
+//               type="text"
+//               alt=""
+//               className="w-full flex-1 outline-none placeholder:text-[#B8B8B8] bg-transparent rounded-full px-5 text-black text-lg"
+//               placeholder="Enter a question here to search our knowledgebase for answers..."
+//             />
+//             <button className="bg-[#FF7500] h-[62px] rounded-full w-full flex-1 max-w-[182px] hover:bg-opacity-80 transition-all duration-300 text-lg">
+//               Search
+//             </button>
+//           </form>
+//         </div>
+      
+//       </div>

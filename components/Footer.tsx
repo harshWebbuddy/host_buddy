@@ -96,7 +96,7 @@ const Footer = () => (
               <Link href="/" className="text-white">
                 Tutorials{" "}
               </Link>
-              <Link href="/" className="text-white">
+              <Link href="/footer/knowledgebase" className="text-white">
                 Knowledge Base{" "}
               </Link>
               <Link href="/" className="text-white">

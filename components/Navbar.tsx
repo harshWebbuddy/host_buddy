@@ -65,7 +65,7 @@ const navLinks: NavLink[] = [
       { label: "SSL Certificates", href: "/pages/ssl" },
       { label: "Transfer Domain Name", href: "/pages/transfer" },
       { label: "Domain Name Search", href: "/pages/domain" },
-      //  { label: "Game Server", href: "/pages/gameserver" },
+       { label: "Game Server", href: "/pages/gameserver" },
 
       // { label: "Pricing", href: "#" },
       // { label: "Pages", href: "#" },
