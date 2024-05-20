@@ -5,7 +5,7 @@ import React from "react";
 const CardsComponent = () => {
   return (
     <section className="w-full bg-gradient-to-b from-[#292E34]/100 to-[#16191C]/100">
-    <div className="space-y-28 p-4 max-w-[1300px] mx-auto 2xl:py-20">
+    <div className="space-y-10 2xl:space-y-28 p-4 max-w-[1300px] mx-auto 2xl:py-20">
      
       <div className="w-full flex flex-col xl:flex-row-reverse space-y-16 items-center">
       <div className="w-full flex justify-center">
@@ -15,11 +15,11 @@ const CardsComponent = () => {
         </div>
         <div className="w-full space-y-6">
           <div className="w-full ">
-            <h2 className="text-[52px] leading-10 2xl:leading-tight font-bold text-white">Start Fast with the Built-In One-Click Installer</h2>
+            <h2 className="text-[42px] 2xl:text-[52px] leading-10 2xl:leading-tight font-bold text-white">Start Fast with the Built-In One-Click Installer</h2>
           </div>
           <ul className="w-full space-y-10">
             <li className="flex gap-4 items-start">
-              <p className="capitalize leading-6 2xl:leading-8 text-[18px] text-white font-light flex flex-col space-y-6">
+              <p className="capitalize leading-6 2xl:leading-8 text-[12px] 2xl:text-[18px] text-white font-light flex flex-col space-y-6">
               Select your preferred CMS application and go live instantly! Our advanced shared business hosting plans in India come with Softaculous, a robust software installer tool allowing you to install applications like WordPress, Joomla, Magento, and over 400 other apps with just a single click!</p>
             </li>
          
@@ -37,7 +37,7 @@ const CardsComponent = () => {
         </div>
         
       </div>
-      <div className="w-full flex flex-col xl:flex-row space-x-20 items-center">
+      <div className="w-full flex flex-col xl:flex-row space-y-20 items-center">
       <div className="w-full flex justify-center">
           <div className="relative">
             <Image src="/reseller/2.svg" width={600} height={500} alt="" className="rounded-2xl relative z-10" />
@@ -45,11 +45,11 @@ const CardsComponent = () => {
         </div>
           <div className="w-full space-y-5">
           <div className="w-full ">
-          <h2 className="text-[52px] leading-10 2xl:leading-tight font-bold text-white">Free Website Migration</h2>
+          <h2 className="text-[42px] 2xl:text-[52px] leading-10 2xl:leading-tight font-bold text-white">SFree Website Migration</h2>
           </div>
           <ul className="w-full space-y-10">
             <li className="flex gap-4 items-start">
-            <p className="capitalize leading-6 2xl:leading-8 text-[18px] text-white font-light flex flex-col space-y-6">
+            <p className="capitalize leading-6 2xl:leading-8 text-[12px] 2xl:text-[18px] text-white font-light flex flex-col space-y-6">
               Switching web hosts can be daunting, especially considering the importance of your website's data. At HostBuddy, we understand this concern, which is why we offer a hassle-free migration service at no extra cost. Our expert support team will guide you through the process, ensuring a seamless transition to our servers. Rest assured, we prioritize the safety and integrity of your data, ensuring your website remains intact but with improved hosting services.</p>
             </li>
             <div className="group w-52 h-[52px] text-white border-orange-500 border text-xl rounded-xl    ring-1 ring-[black] group-hover:ring-[#16191C] 

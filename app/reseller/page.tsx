@@ -2,18 +2,15 @@ import React from 'react'
 import HeroHosting from './Hero'
 import Ratingpanel from './Rating'
 import Plans from './Plans'
-import Plan2 from './plan2'
 import Unique from './unique'
 import CardsComponent from './CardsComponent'
 import Testimonials from './Testimonials'
-import { testimonials } from '../(landing)/components/constants/testimonials';
 import Faqs from './Faqs';
 import CaseStudy from './CaseStudy'
-import { caseStudies } from '../(landing)/components/constants/casestudies';
-import Features from './Features'
 import Uniquecpanel from './Uniquecpanel'
-import Adds from './Adds'
-import OptionSelector from './optionbox'
+import Uniqueone from './Uniqueone'
+import AddsResller from './Adds'
+import Useoption from './Useoption'
 
 const page = () => {
   return (
@@ -24,42 +21,38 @@ const page = () => {
         </section>
         {/* rating panel  */}
         <section>
-        <div className="space-y-32 ">
+        <div className="space-y-24 2xl:space-y-32 ">
           <Ratingpanel/>
           <Plans/>
         </div>
         </section>
 
-        {/* plan page */}
-        <div className='pt-36'>
-          <Plan2/>
-        </div>
+        <section className='py-72'>
+  <Useoption/>
+</section>
         {/* what make hostbuddy unique section */}
-        <section>
+        <section className=' 2xl:pt-36 bl:pt-0  sm:pt-96 lg:pt-80 pt-[700px]'>
           <Unique/>
+        </section>
+        <section className='pt-20 2xl:pt-40'>
+          <Uniqueone/>
         </section>
         {/* cardsection */}
         <section>
           <Uniquecpanel/>
         </section>
-        <section>
-          <Features/>
-        </section>
-        <section>
+      
+        <section className='pt-12 2xl:pt-24 space-y-10 2xl:space-y-20'>
         <CardsComponent/>
-       
-  <Adds/>
-</section>
-{/* <section>
-  <OptionSelector/>
-</section> */}
-        <section className='py-40'>
-       
+  <AddsResller/>     
+  </section>
+
+        <section className='py-10 2xl:py-24'>      
           <Testimonials/>
         </section>
 
         {/* Question Answers */}
-        <section>
+        <section className='pt-10 2xl:pt-20 pb-20 2xl:pb-40'>
 <Faqs/>
         </section>
         {/* caseStudies */}

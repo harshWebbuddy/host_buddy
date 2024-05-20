@@ -8,7 +8,7 @@ interface Feature {
   description: string;
 }
 
-const Adds: React.FC = () => {
+const AddsResller: React.FC = () => {
   const [currentItem, setCurrentItem] = useState<number>(0);
 
   const parentRef = useRef<HTMLDivElement>(null);
@@ -57,15 +57,14 @@ const Adds: React.FC = () => {
   };
 
   return (
-    <section className="bg-[#F9EFE4] relative">
-      <div className="p-4 w-full max-w-[1420px] mx-auto flex flex-col md:flex-row items-center justify-center py-20">
+    <section className=" relative">
+      <div className=" p-4 w-full max-w-[1420px] mx-auto flex flex-col md:flex-row items-center justify-center py-20">
         <div className="flex flex-col 2xl:flex-row mx-auto items-center justify-between">
-          <div className="w-full space-y-10">
-            <div className="space-y-3.5">
-              <h4 className="text-[42px] font-semibold font-mona-sans leading-normal">Why Choose Us?</h4>
-              <p className="text-[16px] pr-10 leading-loose font-mono-sans">
-                Running a business can be challenging, so to help we offer a FREE website builder with FREE stock images and FREE email with every domain name.
-              </p>
+          <div className="w-full space-y-16">
+            <div className="space-y-3.5 pr-20">
+              <h4 className="text-[52px] font-semibold font-mona-sans leading-normal">Customize With 
+Premium <span className="text-orange-500">Add-Ons</span></h4>
+              
             </div>
             <div ref={parentRef} className="w-full max-w-[700px] mx-auto mt-20 px-4 overflow-y-auto max-h-[500px] scroll-container ">
               <div className="flex flex-col gap-5 mt-4 ltr">
@@ -94,7 +93,7 @@ const Adds: React.FC = () => {
           </div>
           <div className="w-full flex justify-center">
             <div className="relative items-center justify-center mt-40">
-              <Image src="/plenk/choose.jpeg" width={497} height={301} alt="" className="rounded-2xl relative z-10" />
+              <Image src="/reseller/choose.svg" width={497} height={301} alt="" className="rounded-2xl relative z-10" />
             </div>
           </div>
         </div>
@@ -103,7 +102,7 @@ const Adds: React.FC = () => {
   );
 };
 
-export default Adds;
+export default AddsResller;
 
 export const features: Feature[] = [
   {

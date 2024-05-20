@@ -12,7 +12,7 @@ interface AccordionItemProps {
 }
 function AccordionItem({ title, children, isOpen, onClick }: AccordionItemProps) {
   return (
-    <div className="flex flex-col text-left bg-[#FFFFFF] py-4 px-5 xl:px-10 xl:py-8 rounded-2xl">
+    <div className="flex flex-col text-left bg-[#F5F5F5] py-4 px-5 xl:px-10 xl:py-8 rounded-2xl">
       <div onClick={onClick} className="cursor-pointer text-left flex flex-row items-center justify-between text-lg font-bold">
         {title}
         <span className="p-4 hover:bg-[#eee] rounded-full transition-all duration-500">{isOpen ? <BiMinus size={30} /> : <BiPlus size={30} />}</span>
@@ -28,10 +28,10 @@ const Faqs = () => {
   const [currentItem, setCurrentItem] = useState(0);
 
   return (
-    <div className="bg-[#F5F5F5] w-full  ">
-    <div className="w-full max-w-[1360px] mx-auto mt-20 p-4 pb-28 pt-20">
+    <div className="w-full max-w-[1360px] mx-auto  p-4">
       <div className="">
-        <h2 className="text-[42px] leading-normal font-mono-sans text-black font-semibold">
+        <h2 className="text-[42px] leading-normal
+         w-full  font-mono-sans text-black font-semibold">
           Your Web Hosting Questions <span className="pb-4 border-b-4 border-orange-500">Answered</span>{" "}
         </h2>
       </div>
@@ -52,7 +52,6 @@ const Faqs = () => {
           </AccordionItem>
         ))}
       </div>
-    </div>
     </div>
   );
 };

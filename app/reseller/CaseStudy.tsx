@@ -1,14 +1,13 @@
-import { caseStudies } from '@/app/(landing)/components/constants/casestudies'
-import { Panela, Panelb, Panelc } from '@/components/svgs'
 import Image from 'next/image'
 import React from 'react'
+import { BiChevronRight } from "react-icons/bi";
+import { caseStudies } from '../(landing)/components/constants/casestudies';
 
-const Unique = () => {
+const CaseStudy = () => {
   return (
-    <section className=" relative pt-40 pb-80">
-       <div className="max-w-[1360px] flex flex-row mx-auto items-center justify-center p-4">
-      <Image src="/microsoft/dotted.svg" alt="" width={100} height={100} className="ml-1 absolute right-0 top-20 opacity-50 2xl:visible sm:invisible" />
-      <div>   <h1 className="text-[42px] font-semibold">
+      <section className="bg-[#F5F5F5]  py-20 mb-72">
+        <div className="max-w-[1360px] mx-auto p-4">
+          <h1 className="text-[42px] font-semibold">
             Our Featured <span className="pb-4 border-b-4 border-orange-500">CaseStudy</span>
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-y-6 gap-x-4 mt-10">
@@ -26,12 +25,9 @@ const Unique = () => {
               </div>
             ))}
           </div>
-          </div>
-    </div>
-  </section>
-
+        </div>
+      </section>
   )
 }
 
-export default Unique
- 
+export default CaseStudy
