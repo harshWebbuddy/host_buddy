@@ -47,11 +47,11 @@ const page = () => {
         </section>
 
         {/* Question Answers */}
-        <section>
+        <section className='pt-12'>
 <Faqs/>
         </section>
         {/* caseStudies */}
-        <section>
+        <section className='pt-20'>
           <CaseStudy/>
         </section>
      </main>
