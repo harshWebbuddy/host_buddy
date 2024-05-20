@@ -41,7 +41,7 @@ const page = () => {
           <Adds/>
         </section>
         <section>
-          <CardsComponent/>
+          {/* <CardsComponent/> */}
       
           <Testimonials/>
         </section>

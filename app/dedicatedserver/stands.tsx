@@ -74,7 +74,7 @@ const Stands = () => {
         className="-ml-2 -mt-8 absolute opacity-0 2xl:opacity-100"
       />
 
-      <div className="w-full max-w-[1220px] mx-auto">
+      <div className="w-full max-w-[1220px] mx-auto space-y-20">
         <div className="mx-auto bl:flex flex-row justify-between">
           <h4 className="text-3xl md:text-4xl text-white font-semibold font-mona-sans leading-[63px]">
           What Makes HostBuddy Dedicated Server Stand Out?            <div className="w-40 h-1 bg-orange-500 mt-4 ml-3"></div>

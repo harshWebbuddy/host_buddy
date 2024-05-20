@@ -31,18 +31,18 @@ const page = () => {
         <Unique />
       </section>
 
-      <section>
+      <section className="pt-20">
         <Adds />
 
         <Testimonials />
       </section>
 
       {/* Question Answers */}
-      <section>
+      <section className="pt-20">
         <Faqs />
       </section>
       {/* caseStudies */}
-      <section>
+      <section className="pt-20 pb-20">
         <CaseStudy />
       </section>
     </main>

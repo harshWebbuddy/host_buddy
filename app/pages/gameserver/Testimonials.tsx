@@ -43,10 +43,10 @@ export default function Testimonials() {
   }, []);
   // bg-[#F9EFE4]
   return (
-    <div className="px-20">
+    <div className="">
    
-    <div className="p-4 relative   mx-auto flex flex-col  w-full items-center justify-center pt-10 2xl:pt-20 mt-20">
-    <svg  className="absolute bottom-0 z-[1]" xmlns="http://www.w3.org/2000/svg" width="1790" height={viewAll ? "4843" : "1943"} viewBox="0 0 1790 1643" fill="none">
+    <div className="p-4 relative bg-[#F9EFE4] 2xl:bg-[#FFFFFF] bl:bg-[#F9EFE4] lg:bg-[#F9EFE4] md:bg-[#F9EFE4] sm:bg-[#F9EFE4]  mx-auto flex flex-col  w-full items-center justify-center pt-10 2xl:pt-20 mt-20">
+    <svg  className="absolute bottom-0 z-[1] SM:HIDDEN bl:hidden lg:hidden md:hidden 2xl:flex xl:flex w-full"  xmlns="http://www.w3.org/2000/svg" width="1790" height={viewAll ? "4843" : "2043"} viewBox="0 0 1790 1643" fill="none">
   <path d="M0 195.876C0 176.541 13.8305 159.973 32.8549 156.519L887.855 1.29716C892.58 0.4394 897.42 0.439397 902.145 1.29716L1757.15 156.519C1776.17 159.973 1790 176.541 1790 195.876V1603C1790 1625.09 1772.09 1643 1750 1643H40C17.9086 1643 0 1625.09 0 1603V195.876Z" fill="#F9EFE4"/>
 </svg>
       <div className="max-w-[1360px] mx-auto z-[2] ">
