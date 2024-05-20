@@ -1,9 +1,9 @@
 "use client";
 
-import Locationpage from "../(landing)/components/Locationpage";
+import Locationpage from "../../(landing)/components/Locationpage";
 import Image from "next/image";
-import Faqs from "../(landing)/components/Faqs";
-import { caseStudies } from "../(landing)/components/constants/casestudies";
+import Faqs from "../../(landing)/components/Faqs";
+import { caseStudies } from "../../(landing)/components/constants/casestudies";
 import { useState } from "react";
 import ContactForm from "./Form";
 import Games from "./games";

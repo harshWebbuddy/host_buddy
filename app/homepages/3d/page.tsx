@@ -1,14 +1,14 @@
 "use client";
 
-import Locationpage from "../(landing)/components/Locationpage";
+import Locationpage from "../../(landing)/components/Locationpage";
 import Image from "next/image";
 import { BiChevronRight } from "react-icons/bi";
-import Testimonials from "../(landing)/components/Testimonials";
-import Faqs from "../(landing)/components/Faqs";
-import { caseStudies } from "../(landing)/components/constants/casestudies";
+import Testimonials from "../../(landing)/components/Testimonials";
+import Faqs from "../../(landing)/components/Faqs";
+import { caseStudies } from "../../(landing)/components/constants/casestudies";
 import { BsArrowRight } from "react-icons/bs";
-import Ratingpanel from "../(landing)/components/Rating";
-import Plans from "../(landing)/components/Plans";
+import Ratingpanel from "../../(landing)/components/Rating";
+import Plans from "../../(landing)/components/Plans";
 import Balancing from "./balancing";
 import Support from "./bandwidth";
 
