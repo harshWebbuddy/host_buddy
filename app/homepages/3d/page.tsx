@@ -91,7 +91,7 @@ Premium Hardware</h1>
 
 
       {/* What Makes HostBuddy Unique? */}
-      <section className=" relative">
+      <section className=" relative pt-20 pb-20">
         <div className="p-4 w-full max-w-[1300px] mx-auto flex flex-col md:flex-row items-center justify-center py-20">
           <Image src="/blackdot.svg" alt="" width={100} height={100} className="ml-1 absolute left-0 top-20 hidden 2xl:flex opacity-50" />
           <div className="flex flex-col 2xl:flex-row mx-auto items-center justify-between ">

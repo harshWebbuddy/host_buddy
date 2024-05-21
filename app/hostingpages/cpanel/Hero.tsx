@@ -12,8 +12,9 @@ const HeroHosting = () => {
             {/* <span className="text-white opacity-90 font-light">Welcome to </span> */}
             <span className="text-orange-500 font-bold">Top WordPress Hosting in India</span>
           </h2>
-          <h1 className="font-mono-sans font-medium text-[61px] leading-[84px] text-left 2xl:text-left ">WordPress Hosting:</h1>
-          <h1 className="font-mono-sans font-medium text-[61px] leading-[84px] text-left 2xl:text-left w-full">Secure & Feature</h1>
+          <h1 className="font-mono-sans font-medium text-[52px] leading-[84px] text-left 2xl:text-left ">Super Easy & Reliable 
+cPanel Hosting</h1>
+          {/* <h1 className="font-mono-sans font-medium text-[61px] leading-[84px] text-left 2xl:text-left w-full">Secure & Feature</h1> */}
 
 </div>
           <p className="font-mono-sans text-[18px] font-light leading-loose text-left 2xl:text-left text-[#EBEBEB]">
@@ -42,7 +43,7 @@ const HeroHosting = () => {
         </div>
 
         <div className="w-full item-center justify-center">
-          <Image src="/wordpress/hero.svg" alt="" width={500} height={500} className="item-center justify-center mx-auto" />
+          <Image src="/cpanel.svg" alt="" width={500} height={500} className="item-center justify-center mx-auto" />
         </div>
       </div>
     </div>

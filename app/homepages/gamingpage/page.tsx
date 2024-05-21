@@ -7,6 +7,7 @@ import { caseStudies } from "../../(landing)/components/constants/casestudies";
 import { useState } from "react";
 import ContactForm from "./Form";
 import Games from "./games";
+import Location21 from "./Location21";
 
 interface StarRatingProps {
   initialRating?: number;
@@ -266,7 +267,7 @@ export default function HomeMainPage() {
 </section> 
       
       <section className="text-white">
-        <Locationpage />
+        <Location21/>
       </section>
  
   <section className="pt-40">

@@ -8,7 +8,7 @@ const Table = () => {
     const [hoveredRow, setHoveredRow] = useState<number | null>(null);
   const [hoveredColumn, setHoveredColumn] = useState<number | null>(null);
   return (
-    <div className='flex flex-col space-y-20  mx-auto max-w-[1300px] pt-20 pb-20 '>
+    <div className='flex flex-col space-y-20  mx-auto max-w-[1300px] pt-36 pb-40 '>
         <div className="flex flex-col 2xl:flex-col gap-y-6 2xl:items-start  ">
     <h2 className="text-[42px] leading-[63px] font-semibold text-black w-full 2xl:max-w-full">
     <span className="pb-4 border-b-4 border-orange-500">Comparing</span>  VPS Hosting Providers 

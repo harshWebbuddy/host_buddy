@@ -27,11 +27,11 @@ const page = () => {
         </div>
         </section>
 
-        <section className='py-72'>
+        <section className='py-40 '>
   <Useoption/>
 </section>
         {/* what make hostbuddy unique section */}
-        <section className=' 2xl:pt-36 bl:pt-0  sm:pt-96 lg:pt-80 pt-[700px]'>
+        <section className=' 2xl:pt-72 bl:pt-0  sm:pt-96 lg:pt-80 pt-[700px]'>
           <Unique/>
         </section>
         <section className='pt-20 2xl:pt-40'>
@@ -56,7 +56,7 @@ const page = () => {
 <Faqs/>
         </section>
         {/* caseStudies */}
-        <section>
+        <section className='pb-96'>
           <CaseStudy/>
         </section>
      </main>

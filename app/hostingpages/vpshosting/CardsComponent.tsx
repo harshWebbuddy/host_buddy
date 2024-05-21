@@ -3,7 +3,7 @@
 
   const CardsComponent = () => {
     return (
-      <div className="background-design  space-y-20 p-4 max-w-[1300px] mx-auto pt-32 pb-20">
+      <div className="background-design  space-y-20 p-4 max-w-[1300px] mx-auto pt-40 pb-24">
     
         <div className=" background-design w-full flex flex-col xl:flex-row-reverse justify-between gap-72 items-center">
           <div className="w-full space-y-4">

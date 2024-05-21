@@ -14,11 +14,9 @@ const Balancing = () => {
               <div className=" ml-[1340px] 2xl:ml-[700px] pa:ml-[1300px] 2xl:mb-6">
                 <h2 className="heading font-semibold relative z-10 ">
                   Cloud Load Balancing
+                  
                 </h2>
-                <img
-                  src="./home3d/line.svg"
-                  className="ml-[230px] w-[210px] -mt-8 relative z-0"
-                />
+                
               </div>
               <div className="ml-[700px] text-[16px] leading-[24px] font-normal">
                 <p>

@@ -8,8 +8,8 @@ const Support = () => {
         <div className="flex flex-col 2xl:flex-row justify-between 2xl:space-x-80">
           <div className="mx-auto flex flex-col justify-between">
             <h4 className="text-[32px] md:text-4xl text-black font-semibold font-mona-sans leading-tight 2xl:leading-[63px]">
-              Cloud Load
-              <span className="pb-4 border-b-8 border-orange-500 font-semibold normal-case"> Balancing</span>
+              Cloud Load  Balancing
+              <div className="p-4 bg-orange-500 border-orange-300 font-semibold normal-case w-48 absolute opacity-80 -translate-y-10 translate-x-[200px]"></div>
             </h4>
             <p className="text-black text-[15px] mt-2 opacity-80 font-light leading-[26px] pt-5">
               Lorem ipsum dolor sit amet consectetur. In in vel lacus amet habitasse urna. Curabitur ut consectetur massa in sem arcu.

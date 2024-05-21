@@ -37,21 +37,21 @@ const page = () => {
         <section>
           <Features/>
         </section>
-        <section>
+        <section className='pt-10'>
           <CardsComponent/>
         </section>
 
         {/* testimonials */}
-        <section>
+        <section className='pt-10'>
           <Testimonials/>
         </section>
 
         {/* Question Answers */}
-        <section>
+        <section className='pt-20'>
 <Faqs/>
         </section>
         {/* caseStudies */}
-        <section>
+        <section className='pt-40 pb-96'>
           <CaseStudy/>
         </section>
      </main>

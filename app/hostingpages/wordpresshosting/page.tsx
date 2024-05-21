@@ -21,14 +21,14 @@ const page = () => {
         </section>
         {/* rating panel  */}
         <section>
-        <div className="space-y-32 ">
+        <div className="space-y-40 ">
           <Ratingpanel/>
           <Plans/>
         </div>
         </section>
 
         {/* plan page */}
-        <div className='pt-32 pb-32'>
+        <div className='pt-40 pb-40'>
           <Plan2/>
         </div>
         {/* what make hostbuddy unique section */}
@@ -40,7 +40,7 @@ const page = () => {
           <Features/>
         </section>
 
-        <section>
+        <section className='pt-10 space-y-20'>
           <CardsComponent/>
        
           <Testimonials/>
@@ -51,7 +51,7 @@ const page = () => {
 <Faqs/>
         </section>
         {/* caseStudies */}
-        <section className='pt-20'>
+        <section className='pt-40 pb-80'>
           <CaseStudy/>
         </section>
      </main>
