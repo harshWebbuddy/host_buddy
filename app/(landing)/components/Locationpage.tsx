@@ -964,14 +964,14 @@ const Location = () => {
       }, []);
   return (
     <div className='mx-auto'>
-    <div className=' mx-auto'>
-    <div className="w-full flex flex-col xl:flex-col justify-between items-center space-y-6">
-        <h1 className=" w-full font-mona-sans text-[42px] text-black font-bold leading-relaxed text-center ">
+    <div className=' mx-auto flex flex-col space-y-10'>
+    <div className="w-full max-w-[1350px] mx-auto flex flex-col xl:flex-row justify-between items-center space-y-6 2xl:space-x-10">
+        <h1 className=" w-full font-mona-sans text-[42px] text-white font-bold leading-relaxed text-left pr-20 ">
           Our Datacenters Are Located In <span className="text-orange-500 border-b-4 pb-4 border-orange-500">7 Regions</span>
         </h1>
         {/* Text */}
-        <p className="text-[16px] text-black leading-loose text-center xl:text-left ">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit sed, do eiusmod tempor incididunt lorem ipsum dolor sit amet
+        <p className="text-[16px] text-white leading-loose text-center xl:text-left ">
+        Lorem ipsum dolor sit amet consectetur. Vitae quis aliquet tincidunt suspendisse. Augue in malesuada amet dui sed felis nisl non interdum  Placerat enim tincidunt.
         </p>
       </div>
        
@@ -987,7 +987,7 @@ const Location = () => {
           className="w-full"
           style={{ cursor: `url('/cursormid.svg'), auto` }}>
           {paths.map((path, index) => (
-            <path key={index} d={path} className="fill-current text-gray-300 hover:text-orange-500" />
+            <path key={index} d={path} className="fill-current text-white hover:text-orange-500" />
           ))}
         </svg>
         <map name="map">

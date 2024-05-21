@@ -280,7 +280,7 @@ const Plans = () => {
         </div>
       </div>
     </div>
-  <img src="/designhome2.svg" className='right-72 absolute opacity-50 translate-y-[640px] overflow-hidden'/>
+  <img src="/designhome2.svg" className='right-72 absolute opacity-100 translate-y-[640px] overflow-hidden'/>
 
    
   </div>

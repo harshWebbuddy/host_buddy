@@ -174,7 +174,7 @@ const NavBar = () => {
                             <h2 className="block font-medium text-gray-800 hover:text-orange-500 text-xl">
                               {option.label}
                             </h2>
-                            <div className="border-t-2 border-gray-500 opacity-1 w-[100%] transition-transform duration-400 hover:scale-110 mt-2"></div>
+                            <div className="border-t-2 border-gray-100 opacity-1 w-[100%] transition-transform duration-400 hover:scale-110 mt-2"></div>
                           </div>
                         </Link>
                       ))}
