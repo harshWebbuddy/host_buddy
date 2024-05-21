@@ -33,7 +33,7 @@ const page = () => {
         <Uniquecpanel/>
         </section>
      
-    <section>
+    <section className='pt-20'>
       <CardsComponent/>
     </section>
 
