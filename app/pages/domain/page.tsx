@@ -27,13 +27,7 @@ const page = () => {
     
           <Unique/>
         </section>
-        {/* cardsection */}
        
-        
-        <section className='pt-40 pb-16'>
-        <Uniquecpanel/>
-        </section>
-     
     <section>
       <CardsComponent/>
     </section>

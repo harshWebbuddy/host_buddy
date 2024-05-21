@@ -4,7 +4,7 @@ import React from "react";
 
 const CardsComponent = () => {
   return (
-    <div className="space-y-28 p-4 max-w-[1300px] mx-auto pt-36 pb-20">
+    <div className="space-y-28 p-4 max-w-[1300px] mx-auto pt-40 pb-32">
      
       <div className="w-full flex flex-col xl:flex-row-reverse space-y-16 items-center">
       <div className="w-full flex justify-center">
@@ -13,7 +13,7 @@ const CardsComponent = () => {
             <Image src="/card3.svg" width={150} height={150} alt="" className="absolute -top-16 -left-16 z-[12]" />
           </div>
         </div>
-        <div className="w-full space-y-5">
+        <div className="w-full space-y-10 pr-10">
           <div className="w-full ">
             <h2 className="text-[52px] leading-10 font-bold">Free Privacy Protection</h2>
           </div>
@@ -26,9 +26,9 @@ const CardsComponent = () => {
             </li>
          
           </ul>
-          <button className="bg-white border-orange-500 border w-full items-center flex flex-row justify-center">
-              <h2 className="font-medium text-[16px]  leading-normal ">Domain Name Search</h2> <img src="/hosting/ArrowIcon.svg" className=""/>
-          </button>
+          <div className="bg-white border-orange-500 border  w-60 p-4 rounded-2xl items-start flex flex-row justify-start">
+              <h2 className="font-medium text-[16px] text-left leading-normal ">Domain Name Search</h2> <img src="/hosting/ArrowIcon.svg" className="mt-1 ml-4  "/>
+          </div>
         </div>
         
       </div>
@@ -49,10 +49,9 @@ const CardsComponent = () => {
               <p className="capitalize leading-6 text-[16px] font-light">
               Manage your website domain at Hostinger by quickly transferring it from your current registrar – it only takes a few clicks. </p>
             </li>
-             <button className="bg-white border-orange-500 border flex flex-row  items-center justify-center">
-              <h2 className="font-medium text-[16px]  leading-normal ">Get Started </h2> <img src="/hosting/ArrowIcon.svg" className="pl-4 -mt-0.5 items-center justify-center "/>
-
-          </button>
+            <div className="bg-white border-orange-500 border  w-60 p-4 rounded-2xl items-start flex flex-row justify-start">
+              <h2 className="font-medium text-[16px] text-left leading-normal ">Transfer Your Domain</h2> <img src="/hosting/ArrowIcon.svg" className="mt-1 ml-4  "/>
+          </div>
           </ul>
          
         </div>
@@ -61,14 +60,13 @@ const CardsComponent = () => {
       <div className="w-full flex flex-col xl:flex-row-reverse gap-16 items-center">
       <div className="w-full flex justify-center">
           <div className="relative">
-            <Image src="/cards1.jpg" width={500} height={500} alt="" className="rounded-2xl relative z-10" />
-            <Image src="/card1triangle.svg" width={70} height={70} alt="" className="absolute -top-10 -right-10" />
-            <Image src="/bigsquare.svg" alt="" width={300} height={302} className="absolute -left-10 -bottom-10" />
+            <Image src="/card12.svg" width={500} height={500} alt="" className="rounded-2xl relative z-10 p-6" />
+            <Image src="/bigsquare1.svg" alt="" width={700} height={302} className="absolute w-full -left-0 -bottom-0" />
           </div>
         </div>
          <div className="w-full space-y-4">
-          <div className="">
-           <h2 className="text-4xl leading-10 font-semibold">Register a Domain Name For Free</h2>
+          <div className="2xl:pr-40">
+           <h2 className="text-[42px] leading-[63px] font-semibold">Register a Domain Name For Free</h2>
           </div>
           <ul className="w-full space-y-4">
           
@@ -76,55 +74,14 @@ const CardsComponent = () => {
               <p className="capitalize leading-6 text-[16px] font-light">
               Lorem ipsum dolor sit amet consectetur. Amet eu non dignissim commodo convallis mauris. Dui est mauris dictum aliquet justo sodales nulla. At ac vel morbi vestibulum eget lectus faucibus diam.</p>
             </li>
-              <button className="bg-white border-orange-500 border flex flex-row  items-center justify-center">
-              <h2 className="font-medium text-[16px]  leading-normal ">Get Started </h2> <img src="/hosting/ArrowIcon.svg" className="pl-4 -mt-0.5  items-center justify-center "/>
-
-          </button>
+            <div className="bg-white border-orange-500 border  w-60 p-4 rounded-2xl items-start flex flex-row justify-start">
+              <h2 className="font-medium text-[16px] text-left leading-normal ">Domain Name Search</h2> <img src="/hosting/ArrowIcon.svg" className="mt-1 ml-4  "/>
+          </div>
           </ul>
         </div>
        
       </div>
-      <div className="w-full flex flex-col xl:flex-row gap-16 items-center">
-        <div className="w-full space-y-4">
-          <div className="">
-            <h2 className="text-3xl leading-relaxed font-semibold">Lorem ipsum dolor sit amet consectetur.</h2>
-          </div>
-          <ul className="w-full space-y-4">
-            <li className="flex gap-4 items-start">
-              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-              <p className="capitalize leading-loose">
-                Lorem ipsum dolor sit amet consectetur. Volutpat ut et urna gravida non <span className="font-bold"> justo nibh enim habitant sed ante. </span>
-              </p>
-            </li>
-            <li className="flex gap-4 items-start">
-              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-              <p className="capitalize leading-loose">
-                Lorem ipsum dolor sit amet consectetur. Ullamcorper mi tortor dolor <span className="font-bold"> nulla aliquam. Sed placerat.</span>
-              </p>
-            </li>
-            <li className="flex gap-4 items-start">
-              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-              <p className="capitalize leading-loose">
-                Lorem ipsum dolor sit <span className="font-bold"> amet consectetur. </span> Luctus aliquam ut volutpat ipsum fermentum quisque tortor.
-              </p>
-            </li>
-            <li className="flex gap-4 items-start">
-              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-              <p className="capitalize leading-loose">
-                Lorem ipsum dolor sit amet consectetur. Lorem faucibus <span className="font-bold"> dignissim nibh </span> vitae urna ultrices. Ultricies.
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div className="w-full flex justify-center">
-          <div className="relative">
-            <Image src="/cards1.jpg" width={500} height={500} alt="" className="rounded-2xl relative z-10" />
-            <Image src="/card1triangle.svg" width={70} height={70} alt="" className="absolute -top-10 -right-10" />
-            <Image src="/bigsquare.svg" alt="" width={300} height={302} className="absolute -left-10 -bottom-10" />
-          </div>
-        </div>
-      </div>
-     s
+  
     </div>
   );
 };
