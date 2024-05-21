@@ -338,7 +338,7 @@ export default function Features() {
               {" "}
               the Most Popula
             </span>
-            ar Domains 🔥
+            r Domains 🔥
           </h2>
         </div>
       

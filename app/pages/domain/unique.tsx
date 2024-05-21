@@ -174,7 +174,7 @@ export default function Features() {
 <div className="grid grid-cols-1 lg:grid-cols-2 bl:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 space-x-2 2xl:space-x-6   transition-all duration-500 h-full">
   {items.map((item, index) => (
                     <div key={index} className="group relative bg-transparent  hover:bg-[#F9EFE4] border rounded-2xl space-y-12 mb-32">
-                    <div className="absolute translate-x-28 -translate-y-20 featuresvg22  flex justify-center items-center rounded-xl transition-all duration-300 ">
+                    <div className="absolute translate-x-28 -translate-y-24 featuresvg122  flex justify-center items-center rounded-xl transition-all duration-300 ">
         {item.icon}
       </div>
       <div className=" rounded-2xl group space-y-2  cursor-pointer">
