@@ -7,6 +7,13 @@
 .svg-container {
   transition: filter 0.3s ease;
 }
+.border-rounded{
+  border-radius: 0px 0px 180px 100px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 140px), calc(100% - 100px) 100%, 0% 100%);
+}
+.border-roundedf{
+  border-radius: 100px 100px 0px 0px;
+}
 .hostbuddyback{
   background: linear-gradient(180deg, #292E34 0%, #16191C 100%);
 height: 450px;

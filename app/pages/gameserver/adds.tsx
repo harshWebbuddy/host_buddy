@@ -93,12 +93,14 @@ const AddsResller: React.FC = () => {
             </div>
           </div>
           <div className="w-full flex justify-center">
-            <div className="relative items-center justify-center mt-80">
+            <div className="relative items-center justify-center mt-40 2xl:mt-80">
               <Image src="/reseller/choose2.svg" width={497} height={301} alt="" className="rounded-2xl relative z-10" />
             </div>
           </div>
         </div>
+        <img src="/commondesign.svg" className="absolute mx-auto item-center justify-center translate-y-72"/>
       </div>
+     
     </section>
   );
 };

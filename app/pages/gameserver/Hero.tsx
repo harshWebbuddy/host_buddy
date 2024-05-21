@@ -3,8 +3,9 @@ import React from 'react';
 
 const HeroHosting = () => {
   return (
-    <section className="h-full min-h-[80vh] overflow-hidden relative bg-black flex items-center justify-center">
-    <img src="/home.jpg" width={1920} height={1080} alt="" className="w-full absolute inset-0 h-full opacity-30 object-cover bg-blend-color-dodge !z-[1]" />
+    <section>  
+        <section className="h-full min-h-[80vh] overflow-hidden relative bg-black border-rounded flex flex-col items-center justify-center">
+    <img src="/home.jpg" width={1920} height={1080} alt="" className="w-full absolute inset-0 h-full rounded opacity-30 object-cover bg-blend-color-dodge !z-[1]" />
     <div className="max-w-[1250px] mx-auto text-white px-4 pt-40 pb-10 2xl:py-40">
       <div className="h-full flex items-center relative !z-[2] flex-col 2xl:flex-row justify-center gap-20">
         <div className="relative w-full flex flex-col justify-center 2xl:justify-start space-y-5">
@@ -44,8 +45,19 @@ Solutions</h1>
           <Image src="/gameserver/hero.svg" alt="" width={666} height={666} className="item-center justify-center mx-auto" />
         </div>
       </div>
+      <svg className='2xl:flex hidden w-20 absolute mx-auto top-[1115px] inset-0 items-center justify-center opacity-100 ' viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="40" cy="40" r="40" fill="white"/>
+<path d="M59.999 39.9999C59.999 37.3734 59.4817 34.7727 58.4766 32.3462C57.4715 29.9197 55.9983 27.7149 54.1412 25.8577C52.284 24.0006 50.0792 22.5274 47.6527 21.5223C45.2262 20.5172 42.6255 19.9999 39.999 19.9999C37.3726 19.9999 34.7719 20.5172 32.3454 21.5223C29.9188 22.5274 27.7141 24.0006 25.8569 25.8577C23.9997 27.7149 22.5265 29.9197 21.5214 32.3462C20.5163 34.7727 19.999 37.3734 19.999 39.9999L39.999 39.9999H59.999Z" fill="#FF7500"/>
+</svg>
     </div>
+   
+
   </section>
+  
+
+</section>
+
+
       );
     };
 export default HeroHosting;

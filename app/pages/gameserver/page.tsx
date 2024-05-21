@@ -16,6 +16,7 @@ const page = () => {
 {/* hero page  */}
       <section>
         <HeroHosting/>
+       
         </section>
         {/* rating panel  */}
         <section>
@@ -26,32 +27,26 @@ const page = () => {
         </section>
 
         {/* plan page */}
-        <div className='pt-32 pb-0'>
-       
-        </div>
-        {/* what make hostbuddy unique section */}
-        <section>
-          <Unique/>
-        </section>
+    
         {/* cardsection */}
-        <section>
+        <section className='pt-40'>
           <Features/>
         </section>
-        <section>
+        <section className='pt-20'>
           <Adds/>
         </section>
-        <section>
+        <section className='pt-40 2xl:pt-60'> 
           {/* <CardsComponent/> */}
       
           <Testimonials/>
         </section>
 
         {/* Question Answers */}
-        <section>
+        <section className="pt-20">
 <Faqs/>
         </section>
         {/* caseStudies */}
-        <section>
+        <section className="pt-20">
           <CaseStudy/>
         </section>
      </main>
