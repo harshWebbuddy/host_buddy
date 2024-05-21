@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { BiChevronRight } from "react-icons/bi";
-import { caseStudies } from '../(landing)/components/constants/casestudies';
+import { caseStudies } from '../../(landing)/components/constants/casestudies';
 
 const CaseStudy = () => {
   return (

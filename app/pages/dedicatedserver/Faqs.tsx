@@ -2,7 +2,7 @@
 import { ReactNode, useState } from "react";
 import { Collapse } from "react-collapse";
 import { BiMinus, BiPlus } from "react-icons/bi";
-import { faqs } from "../(landing)/components/constants/faqs";
+import { faqs } from "../../(landing)/components/constants/faqs";
 
 interface AccordionItemProps {
   title: string;

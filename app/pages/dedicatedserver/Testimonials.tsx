@@ -4,7 +4,7 @@ import { Star } from "@/components/svgs";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { BiChevronRight } from "react-icons/bi";
-import { testimonials } from "../(landing)/components/constants/testimonials";
+import { testimonials } from "../../(landing)/components/constants/testimonials";
 export default function Testimonials() {
   const initializeColumns = () => {
     if (typeof window !== "undefined") {
