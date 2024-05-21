@@ -8,12 +8,12 @@ const Planpanel = () => {
     <div className="pt-8 pb-12 w-full max-w-[1360px] mx-auto flex flex-col xl:flex-row items-center justify-center">
       <div className="flex flex-col 2xl:flex-row mx-auto items-center justify-between ">
       <div className="w-full flex flex-col space-y-4">
-      <div className="flex w-full text-left justify-start pr-40" style={{  maxWidth: '900px' }}>
+      <div className="flex w-full text-left justify-start 2xl:pr-40" style={{  maxWidth: '900px' }}>
   <h4 className="text-[42px] text-black font-semibold capitalize font-mona-sans leading-[63px]">
     Transfer a Domain Name in {" "} <span className="text-orange-500"> 4 </span>Simple Steps:
   </h4>
 </div>
-          <div className="space-y-2 max-w-[1300px] justify-between space-x-10 flex flex-col  xl:flex-row  2xl:flex-row">
+          <div className="space-y-6 max-w-[1300px] justify-between space-x-auto 2xl:space-x-10 flex flex-col  xl:flex-row  2xl:flex-row">
          <div className='flex flex-col w-full'> 
            <div className="relative group space-y-3">
               <div className="cursor-pointer flex w-full group hover:bg-white transition-all duration-300 border-gradient hover:shadow-2xl rounded-xl">
