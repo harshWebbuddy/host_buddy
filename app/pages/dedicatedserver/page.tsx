@@ -15,6 +15,7 @@ const page = () => {
       <section>
         <HeroHosting />
       </section>
+      
       {/* rating panel  */}
       <section>
         <div className="space-y-32 ">
