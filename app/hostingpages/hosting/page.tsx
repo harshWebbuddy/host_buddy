@@ -4,13 +4,8 @@ import Ratingpanel from "@/components/Rating";
 import SharedHosting from "./sharedhosting";
 import Planhosting from "./planhosting";
 import Unique from "./unique";
-import Question from "../../home/question";
-import CaseStudy from "../../home/casestudy";
-import Clients from "../../home/clients";
 import Features from "./features";
 import Steps from "./steps";
-
-HostingPage;
 const page = () => {
   return (
     <div>
@@ -35,15 +30,7 @@ const page = () => {
        <div>
        <Steps/>
       </div>
-      <div>
-      <Clients/>
-    </div>
-      <div>
-      <Question/>
-      </div>
-      <div>
-      <CaseStudy/>
-      </div>
+   
     </div>
   );
 };

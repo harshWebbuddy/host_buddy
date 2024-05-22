@@ -3,6 +3,7 @@ import React from "react";
 
 const HeroHosting = () => {
   return (
+    <section>
     <section className="h-full min-h-[80vh] overflow-hidden relative bg-black flex items-center justify-center">
       <img
         src="/home.jpg"
@@ -11,7 +12,7 @@ const HeroHosting = () => {
         alt=""
         className="w-full absolute inset-0 h-full opacity-30 object-cover bg-blend-color-dodge !z-[1]"
       />
-      <div className="max-w-[1300px] mx-auto text-white  pl-10 pt-40 pb-10 2xl:py-40">
+      <div className="max-w-[1300px] mx-auto text-black  pl-10 pt-40 pb-10 2xl:py-40">
         <div className="h-full flex items-center relative !z-[2] flex-col 2xl:flex-row justify-center gap-20">
           <div className="relative w-full flex flex-col justify-center 2xl:justify-start space-y-5">
             <div className="relative w-full flex flex-col justify-center 2xl:justify-start space-y-0">
@@ -92,8 +93,22 @@ const HeroHosting = () => {
             />
           </div>
         </div>
+    
       </div>
+      
     </section>
+    <div className=" -translate-y-8 items-center justify-center mx-auto ">
+        <div className="bg-[#F9EFE4] rounded-full shadow-md shadow-orange-500  w-full flex flex-col 2xl:flex-row space-x-12 p-2 max-w-[833px] mx-auto  ">
+<div  className=" rounded-xl px-4 text-black  py-4 group-hover:text-orange-500">Free Domain Name</div>
+<div  className="py-4 px-4 text-[18px] font-normal leading-[26px] group-hover:text-orange-500">Online Store</div>
+
+<div className="py-4 px-4 text-[18px] font-normal leading-[26px] group-hover:text-orange-500">Portfolio</div>
+
+<div className="py-4 px-4 text-[18px] font-normal leading-[26px] group-hover:text-orange-500">Blog</div>
+<div className="py-4 px-4 text-[18px] font-normal leading-[26px] group-hover:text-orange-500 ">Other</div>
+       </div>
+      
+      </div></section>
   );
 };
 export default HeroHosting;

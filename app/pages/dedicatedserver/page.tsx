@@ -42,7 +42,7 @@ const page = () => {
         <Faqs />
       </section>
       {/* caseStudies */}
-      <section className="pt-20 pb-20">
+      <section className="pt-40 pb-80">
         <CaseStudy />
       </section>
     </main>
