@@ -390,17 +390,18 @@ const Plan2 = () => {
                   <IoIosArrowForward className="text-[#16191C] group-hover:text-orange-500 group-hover:translate-x-1 transition-all duration-300" />
                 </div>
               </div>
-            </div>   
-            <button className="group w-full h-[52px] text-white  text-xl rounded-xl bg-[#F9EFE4] group-hover:bg-[#FF7500] ring-1 ring-[black] group-hover:ring-[#16191C] 
+            </div>  
+            <a href="/footer/configurator">
+            <div className="group w-full h-[52px] text-white  text-xl rounded-xl bg-[#F9EFE4] group-hover:bg-[#FF7500] ring-1 ring-[black] group-hover:ring-[#16191C] 
             transition-all duration-300 hover:shadow-2xl ring-inset hover:ring-0 font-bold flex items-center justify-center ">
-              <h4 className="w-99 h-19 top-16 left-115 font-monasans font-bold text-base leading-[19.2px] text-black">Configure </h4>{" "}
+              <h4 className="w-99 h-19 top-16 left-115 font-monasans font-bold text-base leading-[19.2px] text-black">Configure </h4>
               <span className="ml-8 -mt-0.5 featuresvg3">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M5.13672 0.947266L5.69531 0.388672C5.94922 0.160156 6.33008 0.160156 6.55859 0.388672L11.5098 5.31445C11.7383 5.56836 11.7383 5.94922 11.5098 6.17773L6.55859 11.1289C6.33008 11.3574 5.94922 11.3574 5.69531 11.1289L5.13672 10.5703C4.9082 10.3164 4.9082 9.93555 5.13672 9.68164L8.20898 6.76172H0.921875C0.566406 6.76172 0.3125 6.50781 0.3125 6.15234V5.33984C0.3125 5.00977 0.566406 4.73047 0.921875 4.73047H8.20898L5.13672 1.83594C4.9082 1.58203 4.88281 1.20117 5.13672 0.947266Z" fill="#16191C"/>
 </svg>
 
               </span>
-            </button> 
+            </div> </a> 
           </div>    
         
          
