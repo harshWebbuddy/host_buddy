@@ -125,7 +125,7 @@ const RamOption2: React.FC<RamOptionProps> = ({ label }) => (
 2;
 const PageSecond = () => {
   return (
-    <section className="w-full bg-[#F5F5F5]">
+    <section className="w-full bg-[#F5F5F5] h-full">
       <div className=" mx-auto relative  z-[2]   pt-20" style={{ maxWidth: "1350px" }}>
         <div className="flex flex-col 2xl:flex-row justify-between mx-auto 2xl:space-x-10 2xl:space-y-0 space-y-10">
           {/* First Box */}
@@ -361,21 +361,26 @@ const PageSecond = () => {
                 </div>
                 <div className="text-[18px] ">
                   <div className="justify-between flex">
-                    <span>Setup Fees</span>
-                    <span className="font-bold">$0.00 USD</span>
+                  <span>Monthly</span>
+                    <span className="font-bold">$82.00 USD</span> 
                   </div>
                   <div className="line21"></div>
                 </div>
                 <div className="text-[18px] ">
                   <div className="justify-between flex">
-                    <span>Setup Fees</span>
-                    <span className="font-bold">$0.00 USD</span>
+                  <span>Total Amount</span>
+                    <span className="font-bold">$100.82 USD</span>
                   </div>
                   <div className="line21"></div>
                 </div>
                 </div>
               </div>
             </div>
+            <div className="px-36 pb-10">
+            <div className="group w-full h-[52px]  text-white  text-xl rounded-xl bg-orange-500 group-hover:bg-[#FF7500] transition-all duration-300 hover:shadow-2xl  font-bold flex items-center justify-center ">
+              <h4 className="w-99 h-19 top-16 left-115 font-monasans font-bold text-base leading-[19.2px] text-white">Continue</h4>
+        
+            </div></div>
           </div>
         </div>
       </div>
@@ -385,14 +390,14 @@ const PageSecond = () => {
             <div className="pt-20">
               <div className="flex flex-col md:flex-row items-center gap-5">
                 <div className="w-full px-10 py-7 bg-[#FFFFFF] flex flex-col items-start justify-start rounded-2xl cursor-pointer gap-6 hover:shadow-lg transition-all duration-500">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="26" height="26" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M9.99479 5.20832C9.18938 5.20832 8.53646 5.86124 8.53646 6.66666C8.53646 7.47207 9.18938 8.12499 9.99479 8.12499V5.20832ZM9.99479 8.12499C10.8002 8.12499 11.4531 7.47207 11.4531 6.66666C11.4531 5.86124 10.8002 5.20832 9.99479 5.20832V8.12499ZM16.4557 6.66666C16.4557 5.86124 15.8028 5.20832 14.9974 5.20832C14.192 5.20832 13.5391 5.86124 13.5391 6.66666H16.4557ZM13.5391 36.6667C13.5391 37.4721 14.192 38.125 14.9974 38.125C15.8028 38.125 16.4557 37.4721 16.4557 36.6667H13.5391ZM9.99479 8.12499H28.3281V5.20832H9.99479V8.12499ZM28.3281 8.12499C29.3637 8.12499 30.2031 8.96446 30.2031 9.99999H33.1198C33.1198 7.35363 30.9745 5.20832 28.3281 5.20832V8.12499ZM30.2031 9.99999V30H33.1198V9.99999H30.2031ZM30.2031 30C30.2031 31.0355 29.3637 31.875 28.3281 31.875V34.7917C30.9745 34.7917 33.1198 32.6464 33.1198 30H30.2031ZM28.3281 31.875H9.99479V34.7917H28.3281V31.875ZM9.99479 31.875C9.87973 31.875 9.78646 31.7817 9.78646 31.6667H6.86979C6.86979 33.3925 8.2689 34.7917 9.99479 34.7917V31.875ZM9.78646 31.6667V8.33332H6.86979V31.6667H9.78646ZM9.78646 8.33332C9.78646 8.21826 9.87973 8.12499 9.99479 8.12499V5.20832C8.2689 5.20832 6.86979 6.60743 6.86979 8.33332H9.78646ZM13.5391 6.66666V36.6667H16.4557V6.66666H13.5391Z" fill="#FF7500"/>
 <path d="M21.6641 13.3333H24.9974" stroke="#FF7500" stroke-width="2.91667" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M21.6641 20H24.9974" stroke="#FF7500" stroke-width="2.91667" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 
                   <div className="flex flex-col gap-2 w-full">
-                    <h2 className="text-2xl font-bold md:whitespace-nowrap">Knowledgebase</h2>
+                    <h2 className="text-2xl font-bold md:whitespace-nowrap">Knowledgebase </h2>
                     <p className="text-lg leading-relaxed text-[#16191C]/70">Lorem ipsum dolor sit amet</p>{" "}
                   </div>
                 </div>

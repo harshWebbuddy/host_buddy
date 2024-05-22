@@ -4,9 +4,9 @@ import PageSecond from './scondpage'
 
 const page = () => {
   return (
-    <div>  
+    <div className='bg-[#F5F5F5]'>  
 <div><HeroHosting/></div>
-    <div>
+    <div className='pb-80  '>
         <PageSecond/>
     </div>
     </div>
