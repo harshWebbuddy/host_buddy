@@ -4,7 +4,7 @@ import React from "react";
 const CardsComponent = () => {
   return (
     <div className="bg-black w-full py-20">
-      <div className="  space-y-24 p-4 max-w-[1350px] mx-auto ">
+      <div className="  space-y-32 p-4 max-w-[1350px] mx-auto ">
         <div className=" background-design w-full flex flex-col xl:flex-row-reverse justify-between gap-x-40 gap-y-20  items-center">
          
         <div className="w-full flex justify-center">

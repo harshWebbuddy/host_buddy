@@ -3,57 +3,88 @@ export const testimonials = [
     author: {
       
       image_url: "/features/promo1.svg",
-      names: "50% off Shared Hosting",
+      names: "Stronger brand identity good",
     },
     testimonial:
-      "Good news! Enjoy 50% off any of our Shared Hosting Plans, available only to first-year purchases",
+      "Lorem ipsum dolor sit amet consectetur. Interdum malesuada pharetra ut etiam scelerisque nisl id. Sit nunc est id habitant. Consequat eu augue consequat at nulla neque facilisis. Proin in blandit aliquet id euismod vel ac lorem luctus. Viverra.",
+      number: '01',
   },
  
      {
     author: {
       image_url: "/features/promo2.svg",
-      names: "TLDs For $0.77",
+      names: "“Not Secure.”  good Not good",
     },
     testimonial:
-      "TLDs available for just $0.77 with 10 email accounts with 5GB each and Premium Support 24/7/365.",
-
+      "Lorem ipsum dolor sit amet consectetur. Interdum malesuada pharetra ut etiam scelerisque nisl id. Sit nunc est id habitant. Consequat eu augue consequat at nulla neque facilisis. Proin in blandit aliquet id euismod vel ac lorem luctus. Viverra.",
+     number: '02',
   },
      {
     author: {
       image_url: "/features/promo3.svg",
-      names: "Wilcard SSL for 35% Off",
+      names: "Increased SEO ranking",
     },
     testimonial:
-      "Wildcard SSL only $57.2/yr instead of $88/yr! Suitable for small & medium-sized businesses.",
-    number: '03',
+    "Lorem ipsum dolor sit amet consectetur. Interdum malesuada pharetra ut etiam scelerisque nisl id. Sit nunc est id habitant. Consequat eu augue consequat at nulla neque facilisis. Proin in blandit aliquet id euismod vel ac lorem luctus. Viverra.",
+     number: '03',
 
   },
 
   {
     author: {
       image_url: "/features/promo2.svg",
-      names: "TLDs For $0.77",
+      names: "Compliance with regulation standards",
     },
     testimonial:
-    "TLDs available for just $0.77 with 10 email accounts with 5GB each and Premium Support 24/7/365.",
+    "Lorem ipsum dolor sit amet consectetur. Interdum malesuada pharetra ut etiam scelerisque nisl id. Sit nunc est id habitant. Consequat eu augue consequat at nulla neque facilisis. Proin in blandit aliquet id euismod vel ac lorem luctus. Viverra.",
+     number: '04',
+  },
+  {
+    author: {
+      image_url: "/features/promo3.svg",
+      names: "Customers will trust you",
+    },
+    testimonial:
+    "Lorem ipsum dolor sit amet consectetur. Interdum malesuada pharetra ut etiam scelerisque nisl id. Sit nunc est id habitant. Consequat eu augue consequat at nulla neque facilisis. Proin in blandit aliquet id euismod vel ac lorem luctus. Viverra.",
+     number: '05',
+  },  {
+    author: {
+      image_url: "/features/promo3.svg",
+      names: "Safe mobile & online payment systems",
+    },
+    testimonial:
+    "Lorem ipsum dolor sit amet consectetur. Interdum malesuada pharetra ut etiam scelerisque nisl id. Sit nunc est id habitant. Consequat eu augue consequat at nulla neque facilisis. Proin in blandit aliquet id euismod vel ac lorem luctus. Viverra.",
+     number: '06',
 
   },
   {
     author: {
       image_url: "/features/promo3.svg",
-      names: "This Month's Coupons",
+      names: "We empower entrepreneurs & ",
     },
     testimonial:
-      "Wildcard SSL only $57.2/yr instead of $88/yr! Suitable for small & medium-sized businesses.",
-    
-  },  {
+    "Lorem ipsum dolor sit amet consectetur. Interdum malesuada pharetra ut etiam scelerisque nisl id. Sit nunc est id habitant. Consequat eu augue consequat at nulla neque facilisis. Proin in blandit aliquet id euismod vel ac lorem luctus. Viverra.",
+     number: '07',
+
+  },
+  {
     author: {
       image_url: "/features/promo3.svg",
-      names: "Wilcard SSL for 35% Off",
+      names: "You’ll get exceptional customer service.",
     },
     testimonial:
-      "Wildcard SSL only $57.2/yr instead of $88/yr! Suitable for small & medium-sized businesses.",
-    number: '03',
+    "Lorem ipsum dolor sit amet consectetur. Interdum malesuada pharetra ut etiam scelerisque nisl id. Sit nunc est id habitant. Consequat eu augue consequat at nulla neque facilisis. Proin in blandit aliquet id euismod vel ac lorem luctus. Viverra.",
+     number: '08',
+
+  },
+  {
+    author: {
+      image_url: "/features/promo3.svg",
+      names: "We’re your Certificate Authority, literally",
+    },
+    testimonial:
+    "Lorem ipsum dolor sit amet consectetur. Interdum malesuada pharetra ut etiam scelerisque nisl id. Sit nunc est id habitant. Consequat eu augue consequat at nulla neque facilisis. Proin in blandit aliquet id euismod vel ac lorem luctus. Viverra.",
+     number: '09',
 
   },
 

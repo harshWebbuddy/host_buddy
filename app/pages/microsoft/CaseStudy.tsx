@@ -6,7 +6,7 @@ import React from 'react'
 const Unique = () => {
   return (
     <section className=" relative pt-40 pb-80">
-       <div className="max-w-[1360px] flex flex-row mx-auto items-center justify-center p-4">
+       <div className="max-w-[1360px]  flex flex-row mx-auto items-center justify-center p-4">
       <Image src="/microsoft/dotted.svg" alt="" width={100} height={100} className="ml-1 absolute right-0 top-20 opacity-50 2xl:visible sm:invisible" />
       <div>   <h1 className="text-[42px] font-semibold">
             Our Featured <span className="pb-4 border-b-4 border-orange-500">CaseStudy</span>

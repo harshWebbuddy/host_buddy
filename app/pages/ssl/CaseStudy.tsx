@@ -1,12 +1,12 @@
 import { caseStudies } from '@/app/(landing)/components/constants/casestudies'
+import { Panela, Panelb, Panelc } from '@/components/svgs'
 import Image from 'next/image'
 import React from 'react'
 
 const Unique = () => {
   return (
-    <section className='pt-36 pb-80'>  
-    <div className="bg-[#F5F5F5] relative  pt-20 pb-20">
-       <div className="max-w-[1360px] flex flex-row mx-auto items-center justify-center p-4">
+    <section className=" relative bg-[#F5F5F5] py-20 ">
+       <div className="max-w-[1360px]  flex flex-row mx-auto items-center justify-center p-4">
       <Image src="/microsoft/dotted.svg" alt="" width={100} height={100} className="ml-1 absolute right-0 top-20 opacity-50 2xl:visible sm:invisible" />
       <div>   <h1 className="text-[42px] font-semibold">
             Our Featured <span className="pb-4 border-b-4 border-orange-500">CaseStudy</span>
@@ -28,9 +28,10 @@ const Unique = () => {
           </div>
           </div>
     </div>
-  </div>
   </section>
+
   )
 }
 
 export default Unique
+ 

@@ -6,7 +6,7 @@ const Uniquecpanel = () => {
       <div className="p-4 w-full max-w-[1350px] mx-auto ">
         <div className="flex flex-col 2xl:flex-row mx-auto items-center ">
           <div className="w-full flex flex-col space-y-16">
-            <div className="pr-96">
+            <div className="2xl::pr-96">
               <h2 className="text-[47px]  capitalize leading-[63px]  font-semibold text-black w-full 2xl:max-w-full">
               5 steps to consider if you manually 
 install your <span className="pb-4 border-b-4 border-orange-500">SSL certificate</span>

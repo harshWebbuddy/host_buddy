@@ -1,12 +1,7 @@
 "use client";
 import Link from "next/link";
-import { FaArrowRight } from "react-icons/fa6";
-import { AiOutlineGlobal } from "react-icons/ai";
-import { SetStateAction, useEffect, useState } from "react";
+import {  useEffect, useState } from "react";
 import MobileSidebar from "../components/MobileSidebar";
-import { motion } from "framer-motion";
-import Logo from "./shared/Logo";
-import Image from "next/image";
 
 interface NavLink {
   href: string;

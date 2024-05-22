@@ -10,8 +10,8 @@ export default function Uniquepanelpage() {
         key={index}
         className="w-full max-w-[1350px] mx-auto bg-[#F5F5F5] rounded-3xl mb-10"
       >
-        <div className="flex flex-col 2xl:flex-row items-center p-2 gap-[85px]">
-          <div className="w-full 2xl:p-0 p-8 grid grid-cols-1 xl:grid-cols-5 2xl:grid-cols-5 gap-x-0 gap-y-10 items-center justify-center">
+        <div className="flex flex-col 2xl:flex-row items-center 2xl:p-2 2xl:gap-[85px]">
+          <div className="w-full 2xl:p-0 p-8  grid grid-cols-1 xl:grid-cols-5 2xl:grid-cols-5 gap-x-0 gap-y-10 items-center justify-center">
             <div className="flex flex-col items-center">
               <div className="space-y-1">
                 <Image
@@ -40,14 +40,14 @@ export default function Uniquepanelpage() {
                 stroke-dasharray="2 2"
               />
             </svg>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-start justify-start 2xl:items-center">
               <div className="space-y-2">
                 <Image
                   src="/review1.svg"
                   alt=""
                   width={600}
                   height={500}
-                  className="mt-2"
+                  className="mt-2 w-full"
                 />
               </div>
             </div>
@@ -114,7 +114,7 @@ export default function Uniquepanelpage() {
                     alt=""
                     width={300}
                     height={400}
-                    className="mt-2"
+                    className="mt-2 w-full"
                   />
                 </div>
               </div>

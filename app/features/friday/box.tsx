@@ -43,15 +43,15 @@ export default function Features() {
   return (
     
     <div className="p-4 relative mx-auto flex flex-col w-full items-center justify-center opacity-100">
-      <div className="max-w-[1360px] mx-auto">
+      <div className="max-w-[1350px] mx-auto">
        
-        <div className="flex flex-row gap-4 overflow-hidden transition-all duration-500 h-full ">
+        <div className="flex flex-row gap-4  transition-all duration-500 h-full ">
           {Array.from({ length: columns }, (_, columnIndex) => (
             <div key={columnIndex} className="flex flex-col w-full gap-8">
               {visibleTestimonials.map(
                 (testimonial, index) =>
                   index % columns === columnIndex && (
-                    <div>  <img src={testimonial.author.image2} className="rounded-2xl translate-y-6" /> 
+                    <div>  <Image src={testimonial.author.image2} alt=""  width={440} height={50} className="rounded-2xl translate-y-6" /> 
                       <div key={index} className="group relative border hover:bg-[#FFF3EA]  px-16 py-10 rounded-2xl space-y-5">
                 <div className="flex flex-col w-full">
                     <div className="flex justify-between flex-row absolute right-2 top-2">

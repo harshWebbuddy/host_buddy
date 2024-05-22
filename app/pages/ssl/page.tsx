@@ -47,7 +47,7 @@ const page = () => {
 <Faqs/>
         </section>
         {/* caseStudies */}
-        <section>
+        <section className='pt-40 pb-80'>
           <CaseStudy/>
         </section>
      </main>
