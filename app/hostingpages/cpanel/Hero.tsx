@@ -4,7 +4,7 @@ import React from 'react';
 const HeroHosting = () => {
   return (
     <section className="h-full min-h-[80vh] overflow-hidden relative bg-black flex items-center justify-center">
-    <img src="/home.jpg" width={1920} height={1080} alt="" className="w-full absolute inset-0 h-full opacity-30 object-cover bg-blend-color-dodge !z-[1]" />
+<div className="absolute inset-0 w-full h-full bg-cover bg-center opacity-30" style={{ backgroundImage: 'url(/home.jpg)' }}>
     <div className="max-w-[1300px] mx-auto text-white  px-10 pt-40 pb-10 2xl:py-40">
       <div className="h-full flex items-center relative !z-[2] flex-col 2xl:flex-row justify-center gap-20">
         <div className="relative w-full flex flex-col justify-start items-start 2xl:justify-start space-y-5">
@@ -46,6 +46,7 @@ cPanel Hosting</h1>
           <Image src="/cpanel.svg" alt="" width={500} height={500} className="item-center justify-center mx-auto" />
         </div>
       </div>
+    </div>
     </div>
   </section>
       );

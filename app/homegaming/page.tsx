@@ -1,18 +1,9 @@
 import React from "react";
-import GamingPage from "../homegaming/hero";
-import Question from "../home/question";
-import CaseStudy from "../home/casestudy";
-import Games from "./games";
-import Panel from "./panel";
-import GameForm from "./form";
-import Locationpage from "@/components/Locationpage";
+
 
 const page = () => {
   return (
     <div className="">
-      <div>
-        <GamingPage />
-      </div>
       {/* <div>
         <Games />
       </div>
