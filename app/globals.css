@@ -7,6 +7,27 @@
 .svg-container {
   transition: filter 0.3s ease;
 }
+.svg-container {
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+.line21 {
+  border-bottom: 1px solid #DBDBDB; /* Gray line */
+  margin-top: 8px; /* Adjust the space above the line as needed */
+}
+
+.hovered-svg {
+  display: none; /* Initially hide the hovered SVG */
+}
+
+.default-svg:hover {
+  display: none; /* Hide the default SVG when hovered */
+}
+
+.default-svg:hover + .hovered-svg {
+  display: inline-block; /* Show the hovered SVG when the default SVG is hovered */
+}
 
 .border-rounded{
   border-radius: 0px 0px 180px 100px;
