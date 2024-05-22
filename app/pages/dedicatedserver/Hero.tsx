@@ -97,7 +97,7 @@ const HeroHosting = () => {
       </div>
     </section>
     <div className="-translate-y-8 items-center justify-center mx-auto relative z-10 opacity-100">
-    <div className="bg-[#F9EFE4] rounded-full shadow-md shadow-orange-500 w-full py-4 flex flex-row p-2 grids-cols-2 flex-wrap sm:grids-cols-2 bl:grid-cols-4 lg:grid-cols-4  xl:grid-cols-4  2xl:grid-cols-4 items-center justify-around max-w-[936px] mx-auto" style={{ boxShadow: '0 -10px 15px -3px rgba(255,117, 0,0.7), 0 -4px 6px -2px rgba(255, 117, 0,)' }}>
+    <div className="bg-[#F9EFE4] rounded-full shadow-md  w-full py-4 flex flex-row p-2 grids-cols-2 flex-wrap sm:grids-cols-2 bl:grid-cols-4 lg:grid-cols-4  xl:grid-cols-4  2xl:grid-cols-4 items-center justify-around max-w-[936px] mx-auto" style={{ boxShadow: '0 -10px 15px -3px rgba(255,117, 0,1), 0 -4px 6px -2px rgba(255, 117, 0,1)' }}>
           <div className="relative group">
             <div className="rounded-xl px-4 text-[18px] text-black font-semibold py-2 hover:text-orange-500">
               Pricing
