@@ -1,121 +1,233 @@
-import React from 'react'
+"use client";
+import React, { ChangeEventHandler, useState } from "react";
+import { FaPlus } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 
-const box = () => {
+const box: React.FC = () => {
+  const [selectedFile, setSelectedFile] = useState<File | null>(null);
+
+  const handleFileChange: ChangeEventHandler<HTMLInputElement> = (event) => {
+    const file = event.target.files?.[0];
+    setSelectedFile(file || null); // Make sure to provide a value of type File | null
+  };
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    subject: "",
+    selectedDocument: "Select Document",
+    message: "",
+    agreeTerms: false,
+  });
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
+    >
+  ) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log(formData);
+    // You can add form submission logic here
+  };
+  const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData({
+      ...formData,
+      agreeTerms: e.target.checked,
+    });
+  };
   return (
-    <div className="mx-auto w-full max-w-[1300px] flex items-center justify-center  ">
-     
-    
+    <section className="w-full  px-4  ">
+      <div className="w-full max-w-[1250px] items-center justify-center mx-auto pt-16">
+        <form onSubmit={handleSubmit} className="w-full mt-10">
+          <div className="flex flex-col bl:flex-row mt-4 items-center justify-center w-full gap-6">
+            <div className="w-full h-[93px] flex flex-col">
+              <label
+                htmlFor="fullName"
+                className="text-[14px] font-semibold mb-1"
+              >
+                Full Name
+              </label>
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                value={formData.fullName}
+                onChange={handleChange}
+                className="border border-gray-300 rounded-xl w-full h-[56px] px-4"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+            <div className="w-full h-[93px] flex flex-col">
+              <label htmlFor="email" className="text-[14px] font-semibold mb-1">
+                Email Address
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                className="border border-gray-300 rounded-xl w-full h-[56px] px-4"
+                placeholder="Enter your email address"
+                required
+              />
+            </div>
+            <div className="w-full h-[93px] flex flex-col">
+              <label
+                htmlFor="confirmEmail"
+                className="text-[14px] font-semibold mb-1"
+              >
+                Subject
+              </label>
+              <input
+                type="email"
+                id="confirmEmail"
+                name="Add Subject Here..."
+                value={formData.email}
+                onChange={handleChange}
+                className="border border-gray-300 rounded-xl w-full h-[56px] px-4"
+                placeholder="Add Subject Here..."
+                required
+              />
+            </div>
+          </div>
+          <div className="flex flex-col bl:flex-row mt-4 items-center justify-center w-full gap-6">
+            <div className="w-full h-[93px] flex flex-col">
+              <label
+                htmlFor="subject"
+                className="text-[14px] font-semibold mb-1"
+              >
+                Department
+              </label>
+              <select
+                id="subject"
+                name="subject"
+                value={formData.subject}
+                onChange={handleChange}
+                className="border border-gray-300 rounded-xl w-full h-[56px] px-4"
+                required
+              >
+                <option value="">General Enquiries</option>
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Technical Support">Technical Support</option>
+                <option value="Sales Inquiry">Sales Inquiry</option>
+                {/* Add more options as needed */}
+              </select>
+            </div>
+            <div className="w-full h-[93px] flex flex-col">
+              <label
+                htmlFor="subject"
+                className="text-[14px] font-semibold mb-1"
+              >
+                Related Service
+              </label>
+              <select
+                id="subject"
+                name="None"
+                value={formData.subject}
+                onChange={handleChange}
+                className="border border-gray-300 rounded-xl w-full h-[56px] px-4"
+                required
+              >
+                <option value="">None</option>
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Technical Support">Technical Support</option>
+                <option value="Sales Inquiry">Sales Inquiry</option>
+                {/* Add more options as needed */}
+              </select>
+            </div>
+            <div className="w-full h-[93px] flex flex-col">
+              <label
+                htmlFor="subject"
+                className="text-[14px] font-semibold mb-1"
+              >
+                Priority
+              </label>
+              <select
+                id="subject"
+                name="subject"
+                value={formData.subject}
+                onChange={handleChange}
+                className="border border-gray-300 rounded-xl w-full h-[56px] px-4"
+                required
+              >
+                <option value="">Medium</option>
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Technical Support">Technical Support</option>
+                <option value="Sales Inquiry">Sales Inquiry</option>
+                {/* Add more options as needed */}
+              </select>
+            </div>
+          </div>
 
-        <form >
-  {/* First Section: Personal Information */}
- <div className='flex flex-col space-y-6'> 
-    <div className='flex flex-wrap 2xl:flex-row items-center justify-center mx-auto space-x-4'> 
-    <div className='flex flex-col space-y-2'>
-    <label htmlFor="firstName" className='text-[14px] font-semibold'>Name</label>
-    <input type="text" id="firstName" name="firstName" placeholder='Enter the Name'  
-     className="w-full pr-52 px-4 py-4  border rounded-xl" required />
-  </div>
-  <div className='flex flex-col space-y-2'>
-    <label htmlFor="lastName" className='text-[14px] font-semibold'>Email Address</label>
-    <input type="text" id="lastName" name="lastName" placeholder='Enter Email Address'        className="w-full pr-52 px-4 py-4  border rounded-xl" required />
-  </div>
-  <div className='flex flex-col space-y-2'>
-    <label htmlFor="firstName" className='text-[14px] font-semibold'>Subject</label>
-    <input type="text" id="firstName" name="firstName" placeholder='Add Subject Here...'  
-     className="w-full pr-52 px-4 py-4  border rounded-xl" required />
-  </div>
-  </div>
-  <div className='flex flex-wrap 2xl:flex-row items-center justify-center mx-auto space-x-4'> 
-  <div className='flex flex-col space-y-2'>
-      <label htmlFor="country" className='text-[14px] font-semibold'>Department</label>
-      <select id="country" name="country" required  className="w-full pr-64 px-4 py-[20px] border rounded-xl">
-        {/* You can populate options dynamically or hardcode them */}
-        <option value="">General Enquiries</option>
-        <option value="USA">United States</option>
-        <option value="Canada">Canada</option>
-      
-      </select>
-    </div>
-    <div className='flex flex-col space-y-2'>
-      <label htmlFor="country" className='text-[14px] font-semibold'>Related Service</label>
-      <select id="country" name="country" required  className="w-full pr-64 px-4 py-[20px] border rounded-xl">
-        {/* You can populate options dynamically or hardcode them */}
-        <option value="">None</option>
-        <option value="USA">United States</option>
-        <option value="Canada">Canada</option>
-      
-      </select>
-    </div>
-    <div className='flex flex-col space-y-2'>
-      <label htmlFor="country" className='text-[14px] font-semibold'>Priority</label>
-      <select id="country" name="country" required  className="w-full pr-64 px-4 py-[20px] border rounded-xl">
-        {/* You can populate options dynamically or hardcode them */}
-        <option value="">Medium</option>
-        <option value="USA">United States</option>
-        <option value="Canada">Canada</option>
-      
-      </select>
-    </div>
-  </div>
-  </div>
-<div className='items-start justify-start capitalize mx-auto pl-12 py-8 '>
-    <h2 className='text-[14px] text-orange-500 font-bold capitalize text-center 2xl:text-left'>BiILLING ADDRESS</h2>
-</div>
-<div className='flex flex-col space-y-6'> 
-<div className='flex flex-wrap 2xl:flex-row items-center justify-center mx-auto space-x-4'> 
+          <div className="mt-4 items-center justify-center ml-1 w-full">
+            <textarea
+              id="message"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              className="border border-gray-300 rounded-xl w-full min-h-[150px] max-h-[500px] text-left p-4"
+              placeholder="Message"
+              required
+            ></textarea>
+          </div>
+          <h2>Attachments</h2>
+          <div className="flex flex-col bl:flex-row mt-4 items-center justify-center w-full gap-32 relative">
+            <div className="relative flex items-center justify-center w-full h-[56px]">
+              <input
+                type="text"
+                id="uploadFile"
+                className="border border-dashed border-gray-300 rounded-xl w-full h-full px-4 pr-12" // Added border-dashed and pr-12 for padding on the right
+                placeholder="Allowed File Extensions: .jpg, .gif, .jpeg, .png"
+                value={selectedFile ? selectedFile.name : ""}
+                readOnly
+              />
+             
+              <div
+                className="absolute right-0 top-0 bottom-0 p-4 font-bold bg-orange-500 text-white rounded-xl cursor-pointer"
+              >
+               <h2>Choose file</h2>
+              </div>
+              
+            </div>
+            
+            <div className="w-48 h-[52px] text-white text-xl rounded-xl bg-[#FF7500] hover:text-white transition-all duration-300 font-bold flex items-center justify-center border-black border-2">
+              <span className="mr-6 -mt-0.5">
+                <FaPlus size={15} />
+              </span>
+              <h4 className="opacity-100 font-monasans font-bold text-[16px] leading-[19.2px] ">
+                Add More
+              </h4>
+            </div>
+          </div>
 
-    <div className='flex flex-col space-y-2'>
-    <label htmlFor="firstName" className='text-[14px] font-semibold'>Company Name (Optional)</label>
-    <input type="text" id="firstName" name="firstName" placeholder='Enter Company Name'  
-     className="w-full pr-52 px-4 py-4  border rounded-xl" required />
-  </div>
-  <div className='flex flex-col space-y-2'>
-    <label htmlFor="lastName" className='text-[14px] font-semibold'>Street Address</label>
-    <input type="text" id="lastName" name="lastName" placeholder='Enter Street Address'        className="w-full pr-52 px-4 py-4  border rounded-xl" required />
-  </div>
-  </div>
-  <div className='flex flex-wrap 2xl:flex-row items-center justify-center mx-auto space-x-4'> 
-  <div className='flex flex-col space-y-2'>
-    <label htmlFor="firstName" className='text-[14px] font-semibold'>Street Address 2</label>
-    <input type="email" id="email" name="email" placeholder='Enter Street Address 2'    className="w-full pr-52 px-4 py-4  border rounded-xl"  required />
-  </div>
-  <div className='flex flex-col space-y-2'>
-    <label htmlFor="lastName" className='text-[14px] font-semibold'>City</label>
-    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder='Enter City Name'    className="w-full pr-52 px-4 py-4  border rounded-xl" required />
-  </div>
-  </div>
-  </div>
-  <div className='flex flex-col space-y-6 pt-8'> 
-  <div className='flex flex-wrap 2xl:flex-row items-center justify-center mx-auto space-x-4'> 
-    <div className='flex flex-col space-y-2'>
-    <label htmlFor="firstName" className='text-[14px] font-semibold'>Date</label>
-    <input type="text" id="firstName" name="firstName" placeholder='Select Date'  
-     className="w-full pr-20 px-4 py-4  border rounded-xl" required />
-  </div>
-  <div className='flex flex-col space-y-2'>
-    <label htmlFor="lastName" className='text-[14px] font-semibold'>Post Code</label>
-    <input type="text" id="lastName" name="lastName" placeholder='Enter Post Code'        className="w-full pr-20 px-4 py-4  border rounded-xl" required />
-  </div>
-  <div className='flex flex-col space-y-2'>
-      <label htmlFor="country" className='text-[14px] font-semibold'>Country:</label>
-      <select id="country" name="country" required  className="w-full pr-20 px-4 py-[20px] border rounded-xl">
-        {/* You can populate options dynamically or hardcode them */}
-        <option value="">Select Country</option>
-        <option value="USA">United States</option>
-        <option value="Canada">Canada</option>
-      
-      </select>
-    </div>
-  </div>
- 
-  </div>
-
+          <div className="flex flex-col bl:flex-row 2xl:translate-x-[420px] justify-center items-center mt-16">
+            <div className="flex  flex-col bl:flex-row   2xl:space-x-8 ">
+              <div className="w-48 h-[52px] text-orange-500 text-xl rounded-xl border-orange-500 transition-all duration-300 font-bold flex items-center justify-center  border-2">
+                <h4 className="opacity-100 font-monasans font-bold text-[16px] leading-[19.2px] ">
+                  Cancel
+                </h4>
+              </div>
+              <div className="w-48 h-[52px] text-white text-xl rounded-xl bg-[#FF7500] hover:text-white transition-all duration-300 font-bold flex items-center justify-center border-black border-2">
+                <h4 className="opacity-100 font-monasans font-bold text-[16px] leading-[19.2px] ">
+                  Submit
+                </h4>
+                <span className="ml-6 -mt-0.5">
+                  <FaArrowRight size={15} />
+                </span>
+              </div>
+            </div>
+          </div>
         </form>
-    
-   
+      </div>
+    </section>
+  );
+};
 
-    </div>
-  )
-}
-
-export default box
+export default box;
