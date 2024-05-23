@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 const HeroHosting = () => {
     const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
