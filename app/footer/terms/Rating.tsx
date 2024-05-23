@@ -300,25 +300,28 @@ const AddsResller: React.FC = () => {
               ref={parentRef}
               className="w-full max-w-[700px] mx-auto mt-10 px-4 overflow-y-auto max-h-[500px] scroll-container "
             >
-              <div className="flex flex-col gap-5 mt-4 ltr">
-                {features.map((feature, index) => (
-                  //@ts-ignore
-                  <div
-                    key={index}
-                    ref={(el) => (featuresRef.current[index] = el)}
-                    className="flex flex-col text-left  pb-5 rounded-2xl"
-                  >
-                    <div
-                      onClick={() => handleToggle(index)}
-                      className={`cursor-pointer text-left flex hover:text-orange-500 flex-row items-center justify-between text-[16px] font-bold text-[#16191C]/50 ${
-                        currentItem === index ? "!text-black" : ""
-                      }`}
-                    >
-                      {feature.title}
-                    </div>
-                  </div>
-                ))}
-              </div>
+            <div className="flex flex-col gap-5 mt-4 ltr">
+  {features.map((feature, index) => (
+    <div
+      key={index}
+      ref={(el) => {
+        if (el) {
+          featuresRef.current[index] = el;
+        }
+      }}
+      className="flex flex-col text-left pb-5 rounded-2xl"
+    >
+      <div
+        onClick={() => handleToggle(index)}
+        className={`cursor-pointer text-left flex hover:text-orange-500 flex-row items-center justify-between text-[16px] font-bold text-[#16191C]/50 ${
+          currentItem === index ? "!text-black" : ""
+        }`}
+      >
+        {feature.title}
+      </div>
+    </div>
+  ))}
+</div>
             </div>
           </div>
         </div>

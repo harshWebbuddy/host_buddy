@@ -70,10 +70,10 @@ const navLinks: NavLink[] = [
     ],
   },
   {
-    href: "#",
-    label: "Pricing",
+    href: "/support",
+    label: "Support",
     options: [
-      { label: "Hosting", href: "/hosting" },
+      { label: "Support", href: "/support" },
     ],
   },
 ];
