@@ -12,14 +12,14 @@ const Adds = () => {
             <h4 className="text-5xl text-white font-semibold font-mona-sans leading-normal">
             Powerful Add-ons
             </h4>
-            <p className="text-[16px] text-white pr-10 leading-loose font-mono-sans">
+            <p className="text-[16px] text-white  2xl:pr-10 leading-loose font-mono-sans">
             Lorem ipsum dolor sit amet consectetur. Ornare et amet lobortis ornare. Ullamcorper accumsan donec eu condimentum diam a augue arcu.
             </p>
           </div>
-          <div className="space-y-2 2xl:max-w-xl pr-10">
+          <div className="space-y-2 2xl:max-w-xl max-w-6 pr-10">
           <div className="relative group space-y-3">
   <div className="cursor-pointer flex w-full group hover:bg-white transition-all duration-300 border-gradient hover:shadow-2xl rounded-xl">
-    <div className="ml-8 flex md:flex-row items-center  featuresvg2">
+    <div className="2xl:ml-8 flex 2xl:flex-row items-center  featuresvg2">
       <svg
         className="group transition-all duration-300"
         width="208"
@@ -52,7 +52,7 @@ const Adds = () => {
 
             <div className="relative group space-y-3">
               <div className="cursor-pointer flex w-full group hover:bg-white transition-all duration-300 border-gradient hover:shadow-2xl rounded-xl">
-                <div className="ml-8 flex md:flex-row items-center  featuresvg2">
+                <div className="2xl:ml-8 flex 2xl:flex-row items-center  featuresvg2">
                 <svg
                 className=''
           width="158"
@@ -71,18 +71,19 @@ const Adds = () => {
               fill="#FFFFFF"
             />
           </g>
-        </svg>                  <div className="transition-all duration-300 cursor-pointer m-8 md:gap-6 text-white">
-                    <h2 className="text-[24px] font-bold opacity-1 mb-4 group-hover:text-orange-500">Server Security Suite </h2>
-                    <p className="font-mona-sans text-[16px] font-normal leading-normal text-left text-white group-hover:text-[#16191C]/70">
-                    Enhancing security is paramount. Our server security suite add-on goes above and beyond to safeguard your web server and websites from cyber threats and hackers.
-                    </p>
-                  </div>
+        </svg>                  
+        <div className="transition-all duration-300 cursor-pointer m-8 md:gap-6 text-[#16191C]">
+        <h2 className="text-[24px] font-bold opacity-1 mb-4 group-hover:text-sefty-orange text-white ">Server Security Suite</h2>
+        <p className="font-mona-sans text-[16px] font-normal leading-normal text-left text-white group-hover:text-[#16191C]/70">
+        Enhancing security is paramount. Our server security suite add-on goes above and beyond to safeguard your web server and websites from cyber threats and hackers.
+        </p>
+      </div>
                 </div>
               </div>
               <div className="border-t-[3px] border-dashed border-[#dedede] w-full h-1 absolute -bottom-1 left-0 right-0 group-hover:opacity-0 transition duration-200" />
             </div>
             <div className="cursor-pointer flex w-full group hover:bg-white transition-all duration-300 border-gradient hover:shadow-2xl rounded-xl">
-              <div className="ml-8 flex md:flex-row items-center featuresvg2">
+              <div className="2xl:ml-8 flex md:flex-row items-center featuresvg2">
  <svg      className=''
           width="208"
           height="108"
@@ -110,7 +111,8 @@ const Adds = () => {
               fill="#FFFFFF"
             />
           </g>
-        </svg>                <div className="transition-all duration-300 cursor-pointer m-8 md:gap-6 text-[#16191C]">
+        </svg>                
+        <div className="transition-all duration-300 cursor-pointer m-8 md:gap-6 text-[#16191C]">
                   <h2 className="text-[24px] font-bold opacity-1 mb-4 group-hover:text-orange-500 text-white">Google Workspace</h2>
                   <p className="font-mona-sans text-[16px] font-normal leading-normal text-left text-white group-hover:text-[#16191C]/70">
                   An all-in-one solution for businesses to perform different tasks efficiently. Opt for the Google Workspace add-on and get professional Gmail at your domain. Additionally, Google Drive cloud storage, Calendar Meet, Google sheets, Google Docs, and more for your business.                  </p>

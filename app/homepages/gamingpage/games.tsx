@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import React, { useState } from "react";
 
 interface BoxProps {
@@ -13,7 +14,9 @@ const Box: React.FC<BoxProps> = ({ imageSrc }) => {
       className="group relative w-[300px] h-[400px] mx-auto rounded-2xl overflow-hidden"
       whileHover={{ animation: "shakeRotate 0.5s ease-in-out" }}
     >
-      <img
+      <Image
+      width={100}
+      height={100}
         src={imageSrc}
         className="w-full h-full object-cover"
         alt="Icon"
@@ -28,7 +31,7 @@ const Box: React.FC<BoxProps> = ({ imageSrc }) => {
             className="mt-4"
             whileHover={{ scale: 1.2 }}
           >
-            <img src="./homegaming/button.svg" alt="Button" />
+            <Image src="/homegaming/button.svg" alt="Button" width={100} height={100} />
           </motion.div>
         </div>
       </div>
@@ -38,9 +41,9 @@ const Box: React.FC<BoxProps> = ({ imageSrc }) => {
 const IndependentHoverBoxesVertical = () => {
   return (
     <div className="w-full grid lg:grid-cols-0 lg:flex-col flex-col bl:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-x-8 gap-y-10 items-center justify-center " >
-      <Box imageSrc="./homegaming/games1.png" />
-      <Box imageSrc="./homegaming/games3.png" />
-      <Box imageSrc="./homegaming/games2.png" />
+      <Box imageSrc="/homegaming/games1.png" />
+      <Box imageSrc="/homegaming/games3.png" />
+      <Box imageSrc="/homegaming/games2.png" />
     </div>
   );
 };

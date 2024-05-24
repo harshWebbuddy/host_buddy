@@ -3,9 +3,9 @@
 
   const CardsComponent = () => {
     return (
-      <div className="background-design  space-y-20 p-4 max-w-[1300px] mx-auto pt-40 pb-24">
+      <div className="background-design  space-y-20 p-4 max-w-[1300px] mx-auto pt-20 2xl:pt-40 pb-16 2xl:pb-24">
     
-        <div className=" background-design w-full flex flex-col xl:flex-row-reverse justify-between gap-72 items-center">
+        <div className=" background-design w-full flex flex-col xl:flex-row-reverse justify-between gap-20 2xl:gap-72 items-center">
           <div className="w-full space-y-4">
             <div className="">
               <h2 className="text-[42px] leading-[63px] font-semibold">Browser Terminal</h2>
@@ -26,7 +26,7 @@
             </div>
           </div>
         </div>
-        <div className=" background-design w-full flex flex-col xl:flex-row-reverse justify-between gap-0 items-center">
+        <div className=" background-design w-full flex flex-col xl:flex-row-reverse justify-between gap-20 items-center">
         <div className="w-full flex justify-center">
             <div className="relative">
               <Image src="/vpshosting/2.jpeg" width={500} height={500} alt="" className="rounded-2xl relative z-10" />

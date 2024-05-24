@@ -187,11 +187,11 @@ const Plans = () => {
                     />
                   </svg>
                 </div>
-                <div className="bg-[#994CFD]/10 shadow-solid-mycolor  rounded-2xl group  text-[#16191C] p-8 pt-10 transition-all duration-300 cursor-pointer">
+                <div className="bg-[#994CFD]/10 group group-hover:bg-[#994CFD] shadow-solid-mycolor  rounded-2xl group  text-[#16191C] p-8 pt-10 transition-all duration-300 cursor-pointer">
                   <h2 className="text-xl font-bold mt-4 opacity-1 mb-4">
                     Guaranteed Uptime
                   </h2>
-                  <p className="w-full opacity-70 font-mona-sans text-[16px] font-normal leading-normal text-left">
+                  <p className="w-full opacity-70 font-mona-sans text-[16px] group-hover:text-black/100 font-normal leading-normal text-left">
                     With us, you receive 99.95% guaranteed uptime that covers
                     the server’s availability and all network components in our
                     Tier 4 data centers. With the robust infrastructure and
@@ -230,11 +230,11 @@ const Plans = () => {
                     />
                   </svg>
                 </div>
-                <div className="bg-[#4DBFFF]/10 shadow-solid-mycolor2  rounded-2xl group  text-[#16191C] p-6 pt-12 transition-all duration-300 cursor-pointer">
+                <div className="bg-[#4DBFFF]/10 group-hover:bg-[#4DBFFF] group shadow-solid-mycolor2  rounded-2xl group  text-[#16191C] p-6 pt-12 transition-all duration-300 cursor-pointer">
                   <h2 className="text-xl font-bold mt-4 opacity-1 mb-4">
                     KVM Virtualization
                   </h2>
-                  <p className="w-full opacity-70 font-mona-sans text-[16px] font-normal leading-normal text-left">
+                  <p className="w-full opacity-70 font-mona-sans text-[16px] font-normal group-hover:text-black/100 leading-normal text-left">
                     HostBuddy leverages Kernel-based Virtual Machine (KVM)
                     virtualization technology. It allows a single physical
                     server to run multiple isolated virtual machines (VMs) where
@@ -286,11 +286,11 @@ const Plans = () => {
                     </defs>
                   </svg>
                 </div>
-                <div className="bg-[#14B441]/10 shadow-solid-mycolor3  rounded-2xl group  text-[#16191C] p-6 pt-12 transition-all duration-300 cursor-pointer">
+                <div className="bg-[#14B441]/10 group-hover:bg-[#14B441]  group  shadow-solid-mycolor3  rounded-2xl group  text-[#16191C] p-6 pt-12 transition-all duration-300 cursor-pointer">
                   <h2 className="text-xl font-bold mt-4 opacity-1 mb-4">
                     Unbeatable Pricing
                   </h2>
-                  <p className="w-full opacity-70 font-mona-sans text-[16px] font-normal leading-normal text-left">
+                  <p className="w-full opacity-70 font-mona-sans text-[16px] font-normal group-hover:text-black/100  leading-normal text-left">
                     Leveraging our extensive customer network, we negotiate
                     advantageous terms with vendors, leading to significant cost
                     efficiencies for clients through competitively priced VPS

@@ -40,8 +40,8 @@ const Plan2 = () => {
     </div>
     {/* cards */}
     <section className="mt-10">
-      <div className="flex flex-col bl:flex-row w-full justify-center gap-8 items-center">
-        <div className="mb-5 w-full transition-all  hover:bg-[#F9EFE4] hover:shadow-solid-orange1 bg-[#FFFFFF]/15 p-10 rounded-2xl group">
+      <div className="flex flex-col bl:flex-row w-full justify-center gap-8 items-center" >
+        <div className="mb-5 w-full transition-all  hover:bg-[#F9EFE4] hover:shadow-solid-orange1 bg-[#FFFFFF]/15 p-10 rounded-2xl group" >
           <div className="mb-5 w-full space-y-3 group">
             <h2 className="font-mona-sans font-bold text-2xl bl:text-3xl text-center gap-0  mx-auto group-hover:text-gray-900 text-white">IGNITE</h2>
             <p className="font-mona-sans text-sm font-normal leading-7 text-center  gap-0 opacity-45 text-white group-hover:text-[#16191C]/100 bottom-4 relative">From</p>
@@ -186,53 +186,7 @@ const Plan2 = () => {
           </div>
         </div>
       </div>
-      <div className="block sm:hidden lg:hidden bl:hidden mb-5 w-full bg-[#F9EFE4] p-10 rounded-2xl bl:max-w-[500px] mx-auto">
-        <div className="mb-5 w-full space-y-4">
-          <h2 className="font-mona-sans font-bold text-2xl bl:text-3xl text-center gap-0 text-gray-900 mx-auto ">IGNITE</h2>
-          <p className="font-mona-sans leading-7 w-full gap-0 text-sm text-center mx-auto text-[#16191C]/40">From</p>
-          <div className="font-bold text-6xl leading-9 text-center font-mono-sans-serif text-orange-500 mb-2">$29</div>
-          <p className="font-mona-sans text-base font-normal leading-21 text-center w-50 h-[17px] gap-0 opacity-45">/Month</p>
-        </div>
-        <div className="mt-12">
-          <button className="w-full h-[52px] text-black text-xl rounded-xl hover:bg-[#FF7500] ring-1 ring-[#16191C] hover:text-white transition-all duration-300 hover:shadow-2xl ring-inset hover:ring-0 font-bold flex items-center justify-center ">
-            <h4 className="w-99 h-19 top-16 left-115 font-monasans font-bold text-base leading-[19.2px]">Choose Plan</h4>{" "}
-            <span className="ml-2">
-              <FaArrowRight size={15} />
-            </span>
-          </button>
-          <div className="flex flex-col justify-center w-full mt-12">
-            <h3 className="text-xl font-bold mb-7 text-left">Major Features</h3>
-            <div className="flex flex-col gap-5">
-              <div className="flex w-full justify-between">
-                <p className="text-center text-black-700 text-lg">RAM:</p>
-                <p className="text-center text-black-700 text-lg font-bold">8GB</p>
-              </div>
-              <div className="flex w-full justify-between">
-                <p className="text-center text-black-700 text-lg">Processor</p>
-                <p className="text-center text-black-700 text-lg font-bold">1 Core</p>
-              </div>
-              <div className="flex w-full justify-between">
-                <p className="text-center text-black-700 text-lg">Storage</p>
-                <p className="text-center text-black-700 text-lg font-bold">25GB</p>
-              </div>
-              <div className="flex w-full justify-between">
-                <p className="text-center text-black-700 text-lg">Bandwidth</p>
-                <p className="text-center text-black-700 text-lg font-bold">1TB</p>
-              </div>
-              {/* Additional feature details here */}
-            </div>
-            <div className="relative max-w-fit mx-auto !mt-12 flex group items-center justify-center">
-              <div className="flex items-center gap-x-3 text-[#16191C]/60">
-                <p className="text-[16px] font-bold text-[#16191C]/60 group-hover:text-orange-500 transition-all duration-500">
-                  See All Features in Details{" "}
-                </p>
-                <IoIosArrowForward className="group-hover:text-orange-500 group-hover:translate-x-1 transition-all duration-300" />
-              </div>
-              <div className="bg-orange-500 h-[2px] absolute -bottom-2 left-0 w-0 group-hover:w-full transition-all duration-500" />
-            </div>
-          </div>
-        </div>
-      </div>
+     
     </section>
 
     <div className=" flex flex-col bl:flex-row gap-y-10 gap-x-16 mx-auto items-center justify-center py-20 bl:py-24">

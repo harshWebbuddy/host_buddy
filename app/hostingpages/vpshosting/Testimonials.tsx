@@ -44,7 +44,7 @@ export default function Testimonials() {
 
   return (
     
-    <div className="p-4 relative bg-[#F9EFE4] mx-auto flex flex-col  w-full items-center justify-center pt-10 2xl:pt-20 mt-20">
+    <div className="p-4 relative bg-[#F9EFE4]  mx-auto flex flex-col  w-full items-center justify-center pt-10 2xl:pt-20 mt-20">
       <div className="max-w-[1360px] mx-auto">
         <div className="flex flex-col 2xl:flex-row gap-y-10 2xl:items-center justify-between">
           <h2 className="text-[42px] leading-normal font-bold text-black w-full 2xl:max-w-xl ">
@@ -60,7 +60,7 @@ export default function Testimonials() {
               {visibleTestimonials.map(
                 (testimonial, index) =>
                   index % columns === columnIndex && (
-                    <div key={index} className="group relative bg-[#FFFFFF] px-8 py-10 rounded-2xl space-y-5">
+                    <div key={index} className="group relative bg-[#FFFFFF]  px-8 py-10 rounded-2xl space-y-5">
                       <Image src={testimonial.author.image_url} alt="download" width={100} height={100} className="select-none" draggable={false} />
                       <h1 className="font-bold text-2xl">{testimonial.author.names}</h1>
                       <p className="leading-relaxed text-lg">{testimonial.testimonial}</p>

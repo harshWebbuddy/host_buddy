@@ -1,4 +1,3 @@
-import { Panela, Panelb, Panelc } from '@/components/svgs'
 import Image from 'next/image'
 import React from 'react'
 
