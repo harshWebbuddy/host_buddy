@@ -53,7 +53,7 @@ const Footer = () => (
               <Link href="/" className="text-white">
                 Support
               </Link>
-              <Link href="/" className="text-white">
+              <Link href="/footer/blog" className="text-white">
                 Blog
               </Link>
               <Link href="/footer/login" className="text-white">
