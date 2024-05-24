@@ -49,13 +49,13 @@ const Plan2 = () => {
             <p className="font-mona-sans text-base font-normal leading-21 text-center w-50 h-[17px] gap-0 opacity-45  text-white group-hover:text-[#16191C]/100">/Month</p>
           </div>
           <div className="mt-12 group">
-            <button className="group w-full h-[52px] text-white  text-xl rounded-xl bg-[#FFFFFF]/15 group-hover:bg-[#FF7500] ring-1 ring-[#FFFFFF] group-hover:ring-[#16191C] 
+           <div className="group w-full h-[52px] text-white  text-xl rounded-xl bg-[#FFFFFF]/15 group-hover:bg-[#FF7500] ring-1 ring-[#FFFFFF] group-hover:ring-[#16191C] 
             transition-all duration-300 hover:shadow-2xl ring-inset hover:ring-0 font-bold flex items-center justify-center ">
               <h4 className="w-99 h-19 top-16 left-115 font-monasans font-bold text-base leading-[19.2px]">Choose Plan</h4>{" "}
               <span className="ml-2">
                 <FaArrowRight size={15} />
               </span>
-            </button>
+            </div>
             <div className="flex flex-col justify-center w-full mt-12 group">
               <h3 className="text-xl font-bold mb-7 text-left group-hover:text-black text-white">Major Features</h3>
               <div className="flex flex-col gap-5">
@@ -97,13 +97,13 @@ const Plan2 = () => {
             <p className="font-mona-sans text-base font-normal leading-21 text-center w-50 h-[17px] gap-0 opacity-45  text-white group-hover:text-[#16191C]/100">/Month</p>
           </div>
           <div className="mt-12 group">
-            <button className="group w-full h-[52px] text-white  text-xl rounded-xl bg-[#FFFFFF]/15 group-hover:bg-[#FF7500] ring-1 ring-[#FFFFFF] group-hover:ring-[#16191C] 
+           <div className="group w-full h-[52px] text-white  text-xl rounded-xl bg-[#FFFFFF]/15 group-hover:bg-[#FF7500] ring-1 ring-[#FFFFFF] group-hover:ring-[#16191C] 
             transition-all duration-300 hover:shadow-2xl ring-inset hover:ring-0 font-bold flex items-center justify-center ">
               <h4 className="w-99 h-19 top-16 left-115 font-monasans font-bold text-base leading-[19.2px]">Choose Plan</h4>{" "}
               <span className="ml-2">
                 <FaArrowRight size={15} />
               </span>
-            </button>
+            </div>
             <div className="flex flex-col justify-center w-full mt-12 group">
               <h3 className="text-xl font-bold mb-7 text-left group-hover:text-black text-white">Major Features</h3>
               <div className="flex flex-col gap-5">
@@ -145,13 +145,13 @@ const Plan2 = () => {
             <p className="font-mona-sans text-base font-normal leading-21 text-center w-50 h-[17px] gap-0 opacity-45  text-white group-hover:text-[#16191C]/100">/Month</p>
           </div>
           <div className="mt-12 group">
-            <button className="group w-full h-[52px] text-white  text-xl rounded-xl bg-[#FFFFFF]/15 group-hover:bg-[#FF7500] ring-1 ring-[#FFFFFF] group-hover:ring-[#16191C] 
+           <div className="group w-full h-[52px] text-white  text-xl rounded-xl bg-[#FFFFFF]/15 group-hover:bg-[#FF7500] ring-1 ring-[#FFFFFF] group-hover:ring-[#16191C] 
             transition-all duration-300 hover:shadow-2xl ring-inset hover:ring-0 font-bold flex items-center justify-center ">
               <h4 className="w-99 h-19 top-16 left-115 font-monasans font-bold text-base leading-[19.2px]">Choose Plan</h4>{" "}
               <span className="ml-2">
                 <FaArrowRight size={15} />
               </span>
-            </button>
+            </div>
             <div className="flex flex-col justify-center w-full mt-12 group">
               <h3 className="text-xl font-bold mb-7 text-left group-hover:text-black text-white">Major Features</h3>
               <div className="flex flex-col gap-5">

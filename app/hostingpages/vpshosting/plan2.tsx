@@ -5,7 +5,9 @@ import Switch from "@mui/material/Switch";
 const label = { inputProps: { "aria-label": "Switch demo" } };
 const Plan2 = () => {
   return (
-    <div className='bg-gradient-to-b from-[#292E34]  to-[#16191C] pt-20 '>    <div className="flex flex-col max-w-[1360px] mx-auto">
+ <div> 
+   <div className='bg-gradient-to-b from-[#292E34]  to-[#16191C] pt-20 '> 
+      <div className="flex flex-col max-w-[1300px] mx-auto">
     {/* heading */}
     <div className="flex flex-col bl:flex-row justify-between gap-y-6 gap-x-4 items-center mb-8">
       <div className="relative w-full">
@@ -29,7 +31,7 @@ const Plan2 = () => {
         <div>
           <h2 className="font-mona-sans text-base font-normal leading-[32px] tracking-[0.2px] text-right w-[52px] h-[32px] text-white">Yearly</h2>
         </div>
-        <div className="px-3 py-0.5 bg-orange-100 rounded-3xl">
+        <div className="px-3 py-0.5 bg-[#3C342D] rounded-3xl">
           <h4 className="text-orange-500 m-2 font-mona-sans font-bold text-xs leading-[15.6px] tracking-[1.625px] text-center w-[77px] h-[16px] top-[6px] left-[10px]">
             Save 25%
           </h4>
@@ -39,7 +41,7 @@ const Plan2 = () => {
     {/* cards */}
     <section className="mt-10">
       <div className="flex flex-col bl:flex-row w-full justify-center gap-8 items-center">
-        <div className="mb-5 w-full transition-all  hover:bg-[#F9EFE4] bg-[#FFFFFF]/15 p-10 rounded-2xl group">
+        <div className="mb-5 w-full transition-all  hover:bg-[#F9EFE4] hover:shadow-solid-orange1 bg-[#FFFFFF]/15 p-10 rounded-2xl group">
           <div className="mb-5 w-full space-y-3 group">
             <h2 className="font-mona-sans font-bold text-2xl bl:text-3xl text-center gap-0  mx-auto group-hover:text-gray-900 text-white">IGNITE</h2>
             <p className="font-mona-sans text-sm font-normal leading-7 text-center  gap-0 opacity-45 text-white group-hover:text-[#16191C]/100 bottom-4 relative">From</p>
@@ -47,13 +49,13 @@ const Plan2 = () => {
             <p className="font-mona-sans text-base font-normal leading-21 text-center w-50 h-[17px] gap-0 opacity-45  text-white group-hover:text-[#16191C]/100">/Month</p>
           </div>
           <div className="mt-12 group">
-            <button className="group w-full h-[52px] text-white  text-xl rounded-xl bg-[#FFFFFF]/15 group-hover:bg-[#FF7500] ring-1 ring-[#FFFFFF] group-hover:ring-[#16191C] 
+           <div className="group w-full h-[52px] text-white  text-xl rounded-xl bg-[#FFFFFF]/15 group-hover:bg-[#FF7500] ring-1 ring-[#FFFFFF] group-hover:ring-[#16191C] 
             transition-all duration-300 hover:shadow-2xl ring-inset hover:ring-0 font-bold flex items-center justify-center ">
               <h4 className="w-99 h-19 top-16 left-115 font-monasans font-bold text-base leading-[19.2px]">Choose Plan</h4>{" "}
               <span className="ml-2">
                 <FaArrowRight size={15} />
               </span>
-            </button>
+            </div>
             <div className="flex flex-col justify-center w-full mt-12 group">
               <h3 className="text-xl font-bold mb-7 text-left group-hover:text-black text-white">Major Features</h3>
               <div className="flex flex-col gap-5">
@@ -87,7 +89,7 @@ const Plan2 = () => {
             </div>
           </div>
         </div>
-        <div className="mb-5 w-full  hover:bg-[#F9EFE4] bg-[#FFFFFF]/15 p-10 rounded-2xl group">
+        <div className="mb-5 w-full  hover:bg-[#F9EFE4]   hover:shadow-solid-orange1 bg-[#FFFFFF]/15 p-10 rounded-2xl group">
           <div className="mb-5 w-full space-y-3 group">
             <h2 className="font-mona-sans font-bold text-2xl bl:text-3xl text-center gap-0  mx-auto group-hover:text-gray-900 text-white">ELITE</h2>
             <p className="font-mona-sans text-sm font-normal leading-7 text-center  gap-0 opacity-45 text-white group-hover:text-[#16191C]/100 bottom-4 relative">From</p>
@@ -95,7 +97,7 @@ const Plan2 = () => {
             <p className="font-mona-sans text-base font-normal leading-21 text-center w-50 h-[17px] gap-0 opacity-45  text-white group-hover:text-[#16191C]/100">/Month</p>
           </div>
           <div className="mt-12 group">
-          <div className="group w-full h-[52px] text-white  text-xl rounded-xl bg-[#FFFFFF]/15 group-hover:bg-[#FF7500] ring-1 ring-[#FFFFFF] group-hover:ring-[#16191C] 
+            <div className="group w-full h-[52px] text-white  text-xl rounded-xl bg-[#FFFFFF]/15 group-hover:bg-[#FF7500] ring-1 ring-[#FFFFFF] group-hover:ring-[#16191C] 
             transition-all duration-300 hover:shadow-2xl ring-inset hover:ring-0 font-bold flex items-center justify-center ">
               <h4 className="w-99 h-19 top-16 left-115 font-monasans font-bold text-base leading-[19.2px]">Choose Plan</h4>{" "}
               <span className="ml-2">
@@ -135,7 +137,7 @@ const Plan2 = () => {
             </div>
           </div>
         </div>
-        <div className="mb-5 w-full  hover:bg-[#F9EFE4] bg-[#FFFFFF]/15 p-10 rounded-2xl group">
+        <div className="mb-5 w-full  hover:bg-[#F9EFE4] hover:shadow-solid-orange1  bg-[#FFFFFF]/15 p-10 rounded-2xl group">
           <div className="mb-5 w-full space-y-3 group">
             <h2 className="font-mona-sans font-bold text-2xl bl:text-3xl text-center gap-0  mx-auto group-hover:text-gray-900 text-white">STELLER</h2>
             <p className="font-mona-sans text-sm font-normal leading-7 text-center  gap-0 opacity-45 text-white group-hover:text-[#16191C]/100 bottom-4 relative">From</p>
@@ -143,7 +145,7 @@ const Plan2 = () => {
             <p className="font-mona-sans text-base font-normal leading-21 text-center w-50 h-[17px] gap-0 opacity-45  text-white group-hover:text-[#16191C]/100">/Month</p>
           </div>
           <div className="mt-12 group">
-            <div className="group w-full h-[52px] text-white  text-xl rounded-xl bg-[#FFFFFF]/15 group-hover:bg-[#FF7500] ring-1 ring-[#FFFFFF] group-hover:ring-[#16191C] 
+           <div className="group w-full h-[52px] text-white  text-xl rounded-xl bg-[#FFFFFF]/15 group-hover:bg-[#FF7500] ring-1 ring-[#FFFFFF] group-hover:ring-[#16191C] 
             transition-all duration-300 hover:shadow-2xl ring-inset hover:ring-0 font-bold flex items-center justify-center ">
               <h4 className="w-99 h-19 top-16 left-115 font-monasans font-bold text-base leading-[19.2px]">Choose Plan</h4>{" "}
               <span className="ml-2">
@@ -192,13 +194,12 @@ const Plan2 = () => {
           <p className="font-mona-sans text-base font-normal leading-21 text-center w-50 h-[17px] gap-0 opacity-45">/Month</p>
         </div>
         <div className="mt-12">
-           <div className="group w-full h-[52px] text-white  text-xl rounded-xl bg-[#FFFFFF]/15 group-hover:bg-[#FF7500] ring-1 ring-[#FFFFFF] group-hover:ring-[#16191C] 
-            transition-all duration-300 hover:shadow-2xl ring-inset hover:ring-0 font-bold flex items-center justify-center ">
-              <h4 className="w-99 h-19 top-16 left-115 font-monasans font-bold text-base leading-[19.2px]">Choose Plan</h4>{" "}
-              <span className="ml-2">
-                <FaArrowRight size={15} />
-              </span>
-            </div>
+          <button className="w-full h-[52px] text-black text-xl rounded-xl hover:bg-[#FF7500] ring-1 ring-[#16191C] hover:text-white transition-all duration-300 hover:shadow-2xl ring-inset hover:ring-0 font-bold flex items-center justify-center ">
+            <h4 className="w-99 h-19 top-16 left-115 font-monasans font-bold text-base leading-[19.2px]">Choose Plan</h4>{" "}
+            <span className="ml-2">
+              <FaArrowRight size={15} />
+            </span>
+          </button>
           <div className="flex flex-col justify-center w-full mt-12">
             <h3 className="text-xl font-bold mb-7 text-left">Major Features</h3>
             <div className="flex flex-col gap-5">
@@ -271,9 +272,10 @@ const Plan2 = () => {
         </div>
       </div>
     </div>
+  <img src="/wordpress/design.svg" className='right-0 absolute opacity-100'/>
   </div>
   </div>
-
+  </div> 
   )
 }
 
