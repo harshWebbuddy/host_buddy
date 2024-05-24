@@ -47,7 +47,7 @@ const Footer = () => (
               <Link href="/" className="text-white">
                 Home
               </Link>
-              <Link href="/" className="text-white">
+              <Link href="/footer/about" className="text-white">
                 About Us
               </Link>
               <Link href="/" className="text-white">
