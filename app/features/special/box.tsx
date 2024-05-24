@@ -61,8 +61,8 @@ export default function Features() {
                   <p className="leading-6 text-[18px] opacity-50 pr-2 group-hover:text-black">{testimonial.testimonial}</p>
                   <h2 className="text-[16px] font-medium leading-[22px]">/1st year purchases only</h2>
                 <div className="pr-52">  <div className="bg-orange-500 rounded-lg p-2 ">
-                    <h2 className="text-white font-semibold text-[16px] leading-normal  mx-auto text-center">Buy Now</h2>
-                    </div>
+                  <a href="/footer/cart"> <h2 className="text-white font-semibold text-[16px] leading-normal  mx-auto text-center">Buy Now</h2>
+                  </a> </div>
                     </div>
                 </div>
                 
