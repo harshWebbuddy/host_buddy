@@ -61,9 +61,9 @@ export default function Features() {
               />
               <div className="group relative border bg-[#F5F5F5] z-[1] px-16 py-10  space-y-4 rounded-2xl flex flex-col justify-between h-full">
                 <div className="flex flex-col w-full">
-                  <h1 className="font-bold text-[24px] leading-[30px] capitalize pt-2">
+              <a href="/footer/blognew" >   <h1 className="font-bold text-[24px] leading-[30px] capitalize pt-2">
                     {testimonial.author.names}
-                  </h1>
+                  </h1></a>
                 </div>
                 <h2 className="text-[16px] font-medium leading-[22px]">
                   March 16, 2022 No Comments

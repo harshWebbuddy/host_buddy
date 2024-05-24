@@ -52,6 +52,11 @@
   margin-top: 8px; /* Adjust the space above the line as needed */
 }
 
+.line22 {
+  border-bottom: 1px dotted #DBDBDB; /* Gray line */
+  margin-top: 8px; /* Adjust the space above the line as needed */
+}
+
 .hovered-svg {
   display: none; /* Initially hide the hovered SVG */
 }
