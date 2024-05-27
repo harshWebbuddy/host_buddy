@@ -62,7 +62,7 @@ const Faqs = () => {
             key={index}
             initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: index * 0.8 }} // Adjust the delay time as needed
+            transition={{ delay: index * 1.2 }} // Adjust the delay time as needed
           >
             <AccordionItem
               key={index}
