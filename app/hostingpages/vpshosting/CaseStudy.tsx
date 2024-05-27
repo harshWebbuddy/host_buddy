@@ -1,14 +1,44 @@
-"use client"
+"use client";
 import { caseStudies } from '@/app/(landing)/components/constants/casestudies';
-import { Panela, Panelb, Panelc } from '@/components/svgs';
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
 const Unique = () => {
+  const elementsRef = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-slide-in');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1,
+    });
+
+    elementsRef.current.forEach((el) => {
+      if (el) {
+        observer.observe(el);
+      }
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
-    <section className="relative bg-[#F5F5F5] py-20 animate-slide-from-right">
+    <section className="relative bg-[#F5F5F5] py-20">
       <div className="max-w-[1360px] flex flex-row mx-auto items-center justify-center p-4">
-        <Image src="/microsoft/dotted.svg" alt="" width={100} height={100} className="ml-1 absolute right-0 top-20 opacity-50 2xl:visible sm:invisible" />
+        <Image
+          src="/microsoft/dotted.svg"
+          alt=""
+          width={100}
+          height={100}
+          className="ml-1 absolute right-0 top-20 opacity-50 2xl:visible sm:invisible"
+        />
         <div>
           <h1 className="text-[42px] font-semibold">
             Our Featured <span className="pb-4 border-b-4 border-orange-500">CaseStudy</span>
@@ -16,8 +46,11 @@ const Unique = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-y-6 gap-x-4 mt-10">
             {caseStudies.map((caseStudy, index) => (
               <div
-              
-                className="space-y-6 " // Always apply animation class
+                key={index}
+                ref={(el) => {
+                  elementsRef.current[index] = el;
+                }}
+                className="space-y-6 opacity-0 transition-opacity duration-500 ease-out transform translate-x-[-100px]" // Initial state
               >
                 <Image
                   src={caseStudy.image}

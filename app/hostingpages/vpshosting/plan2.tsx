@@ -7,89 +7,33 @@ import { FaArrowRight } from "react-icons/fa";
 import Switch from "@mui/material/Switch";import { useInView } from "react-intersection-observer";
 
 const label = { inputProps: { "aria-label": "Switch demo" } };
-const Plan2 = () => {    const [animationClass, setAnimationClass] = useState("");
-const [ref, inView] = useInView({
-    triggerOnce: false,
-    threshold: 0.1,
-});
+const Plan2 = () => {
+  const [animationClass, setAnimationClass] = useState("");
+  const [ref, inView] = useInView({
+      triggerOnce: false,
+      threshold: 0.1,
+  });
 
-useEffect(() => {
-    if (inView) {
-        setAnimationClass("slide-in");
-    }
-}, [inView]);
+  useEffect(() => {
+      if (inView) {
+          setAnimationClass("slide-in");
+      }
+  }, [inView]);
 
-const AnimatedHeading = ({ children }: { children: ReactNode }) => {
-    const [isAnimated, setIsAnimated] = useState(false);
 
-    useEffect(() => {
-        function handleScroll() {
-            // Trigger animation when scrolling from top to down
-            if (window.scrollY > 0) {
-                setIsAnimated(true);
-            }
-        }
 
-        window.addEventListener("scroll", handleScroll);
-
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
-
-    return (
-        <motion.h2
-            className="font-mona-sans font-semibold text-[42px] leading-relaxed w-full text-center bl:text-left"
-            initial={{ opacity: 0, x: isAnimated ? 0 : 50 }}
-            animate={{ opacity: 1, x: isAnimated ? 0 : 0 }}
-            transition={{ duration: 2 }}
-        >
-            {children}
-        </motion.h2>
-    );
-};
-
-const AnimatedParagraph = ({ children }: { children: ReactNode }) => {
-    const [isAnimated, setIsAnimated] = useState(false);
-
-    useEffect(() => {
-        function handleScroll() {
-            // Trigger animation when scrolling from top to down
-            if (window.scrollY > 0) {
-                setIsAnimated(true);
-            }
-        }
-
-        window.addEventListener("scroll", handleScroll);
-
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
-
-    return (
-        <motion.div
-            className="font-mono-sans text-[16px] font-light leading-[24px] text-center 2xl:text-left text-[#16191C]"
-            initial={{ opacity: 0, x: isAnimated ? 0 : -50 }}
-            animate={{ opacity: 1, x: isAnimated ? 0 : 0 }}
-            transition={{ duration: 2 }}
-        >
-            {children}
-        </motion.div>
-    );
-};
   return (
  <div> 
    <div className='bg-gradient-to-b from-[#292E34]  to-[#16191C] pt-20 '> 
       <div className="flex flex-col max-w-[1300px] mx-auto">
     {/* heading */}
     <div className="flex flex-col bl:flex-row justify-between gap-y-6 gap-x-4 items-center mb-8 " >
-    <AnimatedHeading> <div className="relative w-full">
+     <div className="relative w-full">
         <h2 className="font-mona-sans font-semibold text-[42px] leading-relaxed w-full text-center bl:text-left text-white">
           <span className="pb-4 border-b-4 border-orange-500 text-wite text-white">The Perfect </span>- Web Hosting Plan
         </h2>
-      </div></AnimatedHeading>
-     <AnimatedParagraph>
+      </div>
+    
        <div className="flex flex-wrap bl:flex-nowrap items-center gap-2 sm:gap-5">
         <h2 className="font-mona-sans text-xs bl:text-base font-normal text-white leading-[24px] bl:leading-[32px] tracking-[0.05em] bl:tracking-[0.2px] text-right w-54 bl:w-71 h-[32px]">
           Monthly
@@ -111,7 +55,7 @@ const AnimatedParagraph = ({ children }: { children: ReactNode }) => {
             Save 25%
           </h4>
         </div>
-      </div></AnimatedParagraph>
+      </div>
     </div>
     {/* cards */}
     <section className="mt-10" ref={ref}>
@@ -278,42 +222,43 @@ const AnimatedParagraph = ({ children }: { children: ReactNode }) => {
     </section>
 
     <div className="flex flex-col bl:flex-row gap-y-10 gap-x-16 mx-auto items-center justify-center py-20 bl:py-24">
-  <div className="flex flex-col item-center justify-center mx-auto slide-item">
-    <div>
-      <h2 className="text-orange-500 font-mona-sans font-extrabold text-7xl text-center">1.2M+</h2>
+    <div className="flex flex-col item-center justify-center mx-auto slide-item">
+        <div>
+            <h2 className="text-orange-500 font-mona-sans font-extrabold text-7xl text-center">1.2M+</h2>
+        </div>
+        <div className="item-center justify-center mt-6">
+            <p className="justify-center text-white font-mona-sans text-lg font-normal text-center leading-relaxed">
+                trusted by 1.2 <br />
+                millions users
+            </p>
+        </div>
     </div>
-    <div className="item-center justify-center mt-6">
-      <p className="justify-center text-white font-mona-sans text-lg font-normal text-center leading-relaxed">
-        trusted by 1.2 <br />
-        millions users
-      </p>
+    <div className="w-[172px] border-t border-gray-200 rotate-90"></div>
+    <div className="flex flex-col item-center justify-center mx-auto slide-item">
+        <div>
+            <h2 className="text-orange-500 font-mona-sans font-extrabold text-7xl text-center">1.5M+</h2>
+        </div>
+        <div className="item-center justify-center mt-6">
+            <p className="justify-center font-mona-sans text-lg font-normal text-center leading-relaxed text-white">
+                websites hosted in more <br />
+                than <strong className='text-orange-500 font-bold'>150 </strong>countries
+            </p>
+        </div>
     </div>
-  </div>
-  <div className="hidden bl:block w-[172px] border-t border-gray-200 transform rotate-90"></div>
-  <div className="flex flex-col item-center justify-center mx-auto slide-item">
-    <div>
-      <h2 className="text-orange-500 font-mona-sans font-extrabold text-7xl text-center">1.5M+</h2>
+    <div className="w-[172px] border-t border-gray-200 rotate-90"></div>
+    <div className="flex flex-col item-center justify-center mx-auto slide-item">
+        <div>
+            <h2 className="text-orange-500 font-mona-sans font-extrabold text-7xl text-center">96%</h2>
+        </div>
+        <div className="item-center justify-center mt-6">
+            <p className="justify-center text-white font-mona-sans text-lg font-normal text-center leading-relaxed">
+                customer support <br />
+                satisfaction score
+            </p>
+        </div>
     </div>
-    <div className="item-center justify-center mt-6">
-      <p className="justify-center font-mona-sans text-lg font-normal text-center leading-relaxed text-white">
-        websites hosted in more <br />
-        than <strong className='text-orange-500 font-bold'>150 </strong>countries
-      </p>
-    </div>
-  </div>
-  <div className="hidden bl:block w-[172px] border-t border-gray-200 transform rotate-90"></div>
-  <div className="flex flex-col item-center justify-center mx-auto slide-item">
-    <div>
-      <h2 className="text-orange-500 font-mona-sans font-extrabold text-7xl text-center">96%</h2>
-    </div>
-    <div className="item-center justify-center mt-6">
-      <p className="justify-center text-white font-mona-sans text-lg font-normal text-center leading-relaxed">
-        customer support <br />
-        satisfaction score
-      </p>
-    </div>
-  </div>
 </div>
+
 
   <img src="/wordpress/design.svg" className='right-0 absolute opacity-100'/>
   </div>

@@ -38,13 +38,13 @@ const Adds = () => {
     <div className="p-4 w-full max-w-[1420px] mx-auto flex flex-col md:flex-row items-center justify-center py-20">
       <div className="flex flex-col 2xl:flex-row mx-auto items-center justify-between ">
         <div className="w-full space-y-10 ">
-          <div className="space-y-5"> <AnimatedText>
+          <div className="space-y-5"> 
             <h4 className="text-5xl text-white font-semibold font-mona-sans leading-normal">
             Powerful Add-ons
             </h4>
             <p className="text-[16px] text-white  2xl:pr-10 leading-loose font-mono-sans">
             Lorem ipsum dolor sit amet consectetur. Ornare et amet lobortis ornare. Ullamcorper accumsan donec eu condimentum diam a augue arcu.
-            </p>    </AnimatedText>
+            </p>   
 
           </div>
           <div className="space-y-2 2xl:max-w-xl max-w-6 pr-10">

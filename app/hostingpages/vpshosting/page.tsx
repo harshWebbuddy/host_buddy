@@ -40,7 +40,7 @@ const page = () => {
           <Features/>
         </section>
         {/* <Table/> */}
-        <section className='animate-slide-from-left'>
+        <section className=''>
           <Adds/>
         </section>
         <section>
@@ -48,7 +48,7 @@ const page = () => {
         </section>
 
         {/* testimonials */}
-        <section className='animate-slide-from-right'>
+        <section className=''>
           <Testimonials/>
         </section>
 
