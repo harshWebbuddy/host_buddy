@@ -5,7 +5,6 @@ const Adds = () => {
   return (
     <section className="bg-[#292E34]/100 to bg-[#16191C] relative">
     <div className="p-4 w-full max-w-[1420px] mx-auto flex flex-col md:flex-row items-center justify-center py-20">
-      <Image src="/dotted.svg" alt="" width={100} height={100} className="ml-1 absolute left-0 top-20 opacity-50" />
       <div className="flex flex-col 2xl:flex-row mx-auto items-center justify-between ">
         <div className="w-full space-y-10 ">
           <div className="space-y-5">

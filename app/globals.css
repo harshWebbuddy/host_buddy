@@ -2,12 +2,126 @@
 @tailwind components;
 @tailwind utilities;
 /* styles.css */
+.slide-item {
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: opacity 3s ease-in-out, transform 2s ease-in-out;
+}
+.slide-item {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideIn 4s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.slide-item:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.slide-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-item:nth-child(1) {
+  transition-delay: 0.2s;
+}
+
+.slide-item:nth-child(2) {
+  transition-delay: 0.4s;
+}
+
+.slide-item:nth-child(3) {
+  transition-delay: 0.6s;
+}
 
 /* styles.css or a CSS module */
 .mb-5 {
   /* Define initial box shadow */
   box-shadow: none;
   transition: box-shadow 0.3s ease;
+}@keyframes slide-left {
+  from {
+    opacity: 0;
+    transform: translateX(-50px); /* Adjust the initial X position */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-left {
+  animation: slide-left 19s ease forwards;
+}
+
+@keyframes zoomOut {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1); /* Adjust the scale value as needed */
+  }
+}
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-from-left {
+  animation: slideFromLeft 2s ease-out;
+}
+
+.animate-zoom-out {
+  animation: zoomOut 2s alternate  ease-in-out;
+}
+@keyframes slide-from-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-from-right {
+  animation: slide-from-right 2s ease-in-out;
+}
+/* Define the animation */
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Apply the animation to elements with the .animate-from-left class */
+.animate-from-left {
+  animation: slideInFromLeft 8s ease-out;
 }
 
 .mb-5:hover {

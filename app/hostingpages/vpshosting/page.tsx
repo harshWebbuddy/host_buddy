@@ -39,7 +39,7 @@ const page = () => {
         <section>
           <Features/>
         </section>
-        <Table/>
+        {/* <Table/> */}
         <section>
           <Adds/>
         </section>
