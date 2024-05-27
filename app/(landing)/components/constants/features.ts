@@ -12,7 +12,7 @@ export const testimonials = [
  
      {
     author: {
-      image_url: "/hosting/feature4.svg",
+      image_url: "/hosting/feature1.svg",
       names: "Free Site Builder",
     },
     testimonial:

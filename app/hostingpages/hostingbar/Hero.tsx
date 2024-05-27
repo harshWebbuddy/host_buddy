@@ -1,13 +1,39 @@
+"use client"
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const HeroHosting = () => {
+   const [displayText, setDisplayText] = useState("");
+  const [imageVisible, setImageVisible] = useState(false);
+
+  useEffect(() => {
+    let index = 0;
+    const text = "";
+    const interval = setInterval(() => {
+      if (index <= text.length) {
+        setDisplayText(text.substring(0, index));
+        index++;
+      } else {
+        clearInterval(interval);
+      }
+    }, 15); // Adjust the typing speed here (milliseconds)
+
+    // Set imageVisible to true after a delay
+    const delay = setTimeout(() => {
+      setImageVisible(true);
+    }, 1000); // Adjust the delay time as needed
+
+    return () => {
+      clearInterval(interval);
+      clearTimeout(delay);
+    };
+  }, []);
   return (
     <section className="h-full min-h-[80vh] overflow-hidden relative bg-black flex items-center justify-center">
     <img src="/home.jpg" width={1920} height={1080} alt="" className="w-full absolute inset-0 h-full opacity-30 object-cover bg-blend-color-dodge !z-[1]" />
     <div className="max-w-[1250px] mx-auto text-white px-4 pt-40 pb-10 2xl:py-40">
       <div className="h-full flex items-center relative !z-[2] flex-col 2xl:flex-row justify-center gap-20">
-        <div className="relative w-full flex flex-col justify-center 2xl:justify-start space-y-5">
+      <div className="relative w-full flex flex-col justify-center 2xl:justify-start space-y-5 animate-left-to-right">
           <div className='relative w-full flex flex-col justify-center 2xl:justify-start space-y-0'><h2 className="font-mono-sans text-sm font-light italic leading-relaxed text-center 2xl:text-left">
             {/* <span className="text-white opacity-90 font-light">Welcome to </span> */}
             <span className="text-orange-500 font-bold">Shared Hosting</span>
@@ -42,7 +68,7 @@ Journey with Us</h1>
             </p>
         </div>
 
-        <div className="w-full item-center justify-center">
+        <div className="w-full item-center justify-center animate-slide-from-rightdirection">
           <Image src="/hosting/hosting1.svg" alt="" width={500} height={500} className="item-center justify-center mx-auto" />
         </div>
       </div>

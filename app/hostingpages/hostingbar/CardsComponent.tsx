@@ -1,12 +1,33 @@
+"use client"
 import { ArrowIcon } from "@/components/svgs";
-import Image from "next/image";
-import React from "react";
+import { useInView } from "react-intersection-observer";
 
+import Image from "next/image";
+import React, { useEffect, useState } from "react";
 const CardsComponent = () => {
+  const [slideReveal, setSlideReveal] = useState(false); // State for slide reveal animation
+  const [isVisible, setIsVisible] = useState(false);
+  const { ref, inView } = useInView({
+    threshold: 0.5 // Trigger animation when 50% of the element is visible
+  });
+
+  useEffect(() => {
+    if (inView) {
+      setIsVisible(true);
+    }
+  }, [inView]);
+  useEffect(() => {
+    // Triggering slide reveal animation after a short delay to allow rendering
+    const timeout = setTimeout(() => {
+      setSlideReveal(true);
+    }, 100);
+
+    return () => clearTimeout(timeout);
+  }, []);
+
   return (
     <div className="space-y-28 p-4 max-w-[1300px] mx-auto pt-36 pb-20">
-      <div className="w-full flex flex-col xl:flex-row gap-16 items-center">
-        <div className="w-full space-y-4 items-start">
+    <div className={`w-full flex flex-col xl:flex-row gap-16 items-center ${slideReveal ? "slide-reveal" : ""}`}>        <div className="w-full space-y-4 items-start">
           <div className="item-start pr-20">
             <h2 className="text-4xl leading-10 font-semibold">Advanced Features Included in Shared Hosting</h2>
           </div>
@@ -82,7 +103,7 @@ Outbound e-Mail Security
           </div>
         </div>
       </div>
-      <div className="w-full flex flex-col xl:flex-row-reverse gap-16 items-center">
+      <div className={`w-full flex flex-col xl:flex-row-reverse gap-16 items-center ${slideReveal ? "slide-reveal" : ""}`}>
         <div className="w-full space-y-5">
           <div className="">
             <h2 className="text-4xl leading-10 font-semibold">Server Located in India</h2>
@@ -92,8 +113,8 @@ Outbound e-Mail Security
               <p className="capitalize leading-6 text-[16px] font-light">
 Enhance Your Hosting Experience! Boost website load times to maximize server response, SEO rankings, and sales. Opt for a server closer to your audience, especially in India, for enhanced reliability and lightning-fast page loads.              </p>
             </li>
-           <div className="bg-white border-orange-500 border flex flex-row  items-center justify-center">
-              <h2 className="font-medium text-[16px]  leading-normal ">Get Started </h2> <img src="/hosting/ArrowIcon.svg" className="pl-4 -mt-0.5 "/>
+           <div className="bg-white border-orange-500 border flex flex-row w-52 rounded-xl p-3  items-center justify-center">
+              <h2 className="font-medium text-[20px]  leading-normal ">Get Started </h2> <img src="/hosting/ArrowIcon.svg" className="pl-4 -mt-0.5 "/>
           </div>
           </ul>
          
@@ -106,7 +127,7 @@ Enhance Your Hosting Experience! Boost website load times to maximize server res
           </div>
         </div>
       </div>
-      <div className="w-full flex flex-col xl:flex-row gap-14 items-center">
+      <div className={`w-full flex flex-col xl:flex-row gap-14 items-center ${slideReveal ? "slide-reveal" : ""}`}>
           <div className="w-full space-y-5">
           <div className="">
             <h2 className="text-4xl leading-10 font-semibold">Start Fast with the Built-In One-Click Installer</h2>
@@ -116,10 +137,9 @@ Enhance Your Hosting Experience! Boost website load times to maximize server res
               <p className="capitalize leading-6 text-[16px] font-light">
 Enhance Your Hosting Experience! Boost website load times to maximize server response, SEO rankings, and sales. Opt for a server closer to your audience, especially in India, for enhanced reliability and lightning-fast page loads.              </p>
             </li>
-             <button className="bg-white border-orange-500 border flex flex-row  items-center justify-center">
-              <h2 className="font-medium text-[16px]  leading-normal ">Get Started </h2> <img src="/hosting/ArrowIcon.svg" className="pl-4 -mt-0.5 items-center justify-center "/>
-
-          </button>
+            <div className="bg-white border-orange-500 border flex flex-row w-52 rounded-xl p-4  items-center justify-center">
+              <h2 className="font-medium text-[20px]  leading-normal ">Get Started </h2> <img src="/hosting/ArrowIcon.svg" className="pl-4 -mt-0.5 "/>
+          </div>
           </ul>
          
         </div>
@@ -131,7 +151,7 @@ Enhance Your Hosting Experience! Boost website load times to maximize server res
           </div>
         </div>
       </div>
-      <div className="w-full flex flex-col xl:flex-row-reverse gap-16 items-center">
+      <div className={`w-full flex flex-col xl:flex-row-reverse gap-16 items-center ${slideReveal ? "slide-reveal" : ""}`}>
         <div className="w-full space-y-4">
           <div className="">
            <h2 className="text-4xl leading-10 font-semibold">Free Website Migration</h2>
@@ -142,10 +162,9 @@ Enhance Your Hosting Experience! Boost website load times to maximize server res
               <p className="capitalize leading-6 text-[16px] font-light">
 Switching web hosts can be daunting, especially considering the importance of your website's data. At HostBuddy, we understand this concern, which is why we offer a hassle-free migration service at no extra cost. Our expert support team will guide you through the process, ensuring a seamless transition to our servers. Rest assured, we prioritize the safety and integrity of your data, ensuring your website remains intact but with improved hosting services.              </p>
             </li>
-              <button className="bg-white border-orange-500 border flex flex-row  items-center justify-center">
-              <h2 className="font-medium text-[16px]  leading-normal ">Get Started </h2> <img src="/hosting/ArrowIcon.svg" className="pl-4 -mt-0.5  items-center justify-center "/>
-
-          </button>
+            <div className="bg-white border-orange-500 border flex flex-row w-52 rounded-xl p-4  items-center justify-center">
+              <h2 className="font-medium text-[20px]  leading-normal ">Get Started </h2> <img src="/hosting/ArrowIcon.svg" className="pl-4 -mt-0.5 "/>
+          </div>
           </ul>
         </div>
         <div className="w-full flex justify-center">

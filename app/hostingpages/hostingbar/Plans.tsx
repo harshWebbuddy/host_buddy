@@ -21,7 +21,7 @@ const Plans = () => {
   return (
     <div className="flex flex-col max-w-[1300px] mx-auto">
       {/* heading */}
-      <div className="flex flex-col bl:flex-row justify-between gap-y-10 gap-x-30 items-center mb-8">
+      <div className="slide-reveal flex flex-col bl:flex-row justify-between gap-y-10 gap-x-30 items-center mb-8">
         <div className="relative w-full">
           <h2 className="font-mona-sans font-semibold text-[42px] leading-relaxed w-full text-center bl:text-left">
           The Premier Choice For
@@ -43,7 +43,7 @@ const Plans = () => {
         <div className="flex flex-col bl:flex-row w-full justify-center gap-8 items-center">
 
           
-        <div className="mb-5 w-full bg-white hover:bg-[#F9EFE4] px-10 py-10 rounded-2xl border group">
+        <div className="slide-reveal mb-5 w-full bg-white hover:bg-[#F9EFE4] px-10 py-10 rounded-2xl border group">
   <div className="mb-0 w-full space-y-6 items-center justify-center mx-auto">
     <span className="items-center justify-center mx-auto w-auto">
     <svg className="items-center featuresvg justify-center mx-auto px-32" viewBox="0 0 60 59" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -74,7 +74,7 @@ const Plans = () => {
   </div>
 </div>
 
-<div className="mb-5 w-full bg-white hover:bg-[#F9EFE4] px-10 py-10 rounded-2xl border group">
+<div className="slide-reveal mb-5 w-full bg-white hover:bg-[#F9EFE4] px-10 py-10 rounded-2xl border group">
   <div className="mb-0 w-full space-y-6 items-center justify-center mx-auto">
     <span className="items-center justify-center mx-auto w-auto">
     <svg className="items-center featuresvg justify-center mx-auto px-32" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -105,7 +105,7 @@ const Plans = () => {
     </div>
   </div>
 </div>
-<div className="mb-5 w-full bg-white hover:bg-[#F9EFE4] px-10 py-10 rounded-2xl border group">
+<div className="slide-reveal mb-5 w-full bg-white hover:bg-[#F9EFE4] px-10 py-10 rounded-2xl border group">
   <div className="mb-0 w-full space-y-6 items-center justify-center mx-auto">
     <span className="items-center justify-center mx-auto w-auto">
     <svg className="items-center featuresvg justify-center mx-auto px-32"  viewBox="0 0 58 61" fill="none" xmlns="http://www.w3.org/2000/svg">
