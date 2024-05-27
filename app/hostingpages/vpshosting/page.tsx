@@ -28,7 +28,7 @@ const page = () => {
         </section>
 
         {/* plan page */}
-        <div className='pt-48 pb-0'>
+        <div className='pt-44 pb-0'>
           <Plan2/>
         </div>
         {/* what make hostbuddy unique section */}
@@ -40,7 +40,7 @@ const page = () => {
           <Features/>
         </section>
         {/* <Table/> */}
-        <section>
+        <section className='animate-slide-from-left'>
           <Adds/>
         </section>
         <section>
@@ -48,7 +48,7 @@ const page = () => {
         </section>
 
         {/* testimonials */}
-        <section>
+        <section className='animate-slide-from-right'>
           <Testimonials/>
         </section>
 

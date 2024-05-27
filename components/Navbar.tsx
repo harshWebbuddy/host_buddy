@@ -78,7 +78,9 @@ const navLinks: NavLink[] = [
   },
 ];
 
-const NavBar = () => {
+const NavBar = () => {  
+ const [selectedItem, setSelectedItem] = useState<number | null>(null);
+
   const [isExpanded, setIsExpanded] = useState(false);
   const [optionsData, setOptionsData] = useState<Option[]>([]);
   const [showOptionsIndex, setShowOptionsIndex] = useState<number | null>(null);
@@ -94,6 +96,9 @@ const NavBar = () => {
     timer = setTimeout(() => {
       setShowOptionsIndex(null);
     }, 500); // Adjust this value as needed to persist for a longer time
+  };
+  const handleLabelSelect = (index: number) => {
+    setSelectedItem(index);
   };
 
   useEffect(() => {
@@ -185,13 +190,14 @@ const NavBar = () => {
    
   >
 
+
     English
   </div>
   <div
     className="text-white flex flex-row items-center justify-center bg-orange-500 hover:bg-orange-600 rounded-xl px-4 py-0 hover:scale-120"
   >
     Sign Up
- 
+  
 
   </div>
 </div>

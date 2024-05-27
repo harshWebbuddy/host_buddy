@@ -91,9 +91,24 @@
 .animate-slide-from-left {
   animation: slideFromLeft 2s ease-out;
 }
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.animate-slide-from-Right {
+  animation: slideFromRight 2s ease-out;
+}
+
 
 .animate-zoom-out {
-  animation: zoomOut 2s alternate  ease-in-out;
+  animation: zoomOut 1s alternate  ease-in-out;
 }
 @keyframes slide-from-right {
   from {

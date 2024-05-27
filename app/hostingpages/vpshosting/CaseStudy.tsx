@@ -6,7 +6,7 @@ import React from 'react';
 
 const Unique = () => {
   return (
-    <section className="relative bg-[#F5F5F5] py-20">
+    <section className="relative bg-[#F5F5F5] py-20 animate-slide-from-right">
       <div className="max-w-[1360px] flex flex-row mx-auto items-center justify-center p-4">
         <Image src="/microsoft/dotted.svg" alt="" width={100} height={100} className="ml-1 absolute right-0 top-20 opacity-50 2xl:visible sm:invisible" />
         <div>
@@ -16,9 +16,8 @@ const Unique = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-y-6 gap-x-4 mt-10">
             {caseStudies.map((caseStudy, index) => (
               <div
-                key={index}
-                className="space-y-6 animate-slide-left" // Always apply animation class
-                style={{ animationDelay: `${index * 0.2}s` }} // Adjust delay as needed
+              
+                className="space-y-6 " // Always apply animation class
               >
                 <Image
                   src={caseStudy.image}

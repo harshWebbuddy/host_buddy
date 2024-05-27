@@ -85,7 +85,7 @@ const Plans = () => {
       <section className="pt-10">
         <div className="w-full    px-0">
           <div className="w-full max-w-[1300px] mx-auto">
-            <div className="flex flex-col md:flex-row gap-x-8 gap-y-14 bl:items-center justify-center mx-auto mt-20 bl:mt-16">
+            <div className="flex flex-col md:flex-row gap-x-8 gap-y-14 bl:items-center justify-center animate-slide-from-left mx-auto mt-20 bl:mt-16">
               <div className="relative flex-1 w-full gap-10 group">
                 <div className="absolute -top-7 left-9 w-16 h-16 flex justify-center items-center rounded-xl transition-all duration-300  bg-[#994CFD]">
                   <svg
@@ -121,7 +121,7 @@ const Plans = () => {
                     />
                   </svg>
                 </div>
-                <div className="bg-[#994CFD]/10 group group-hover:bg-[#994CFD] shadow-solid-mycolor  rounded-2xl group  text-[#16191C] p-8 pt-10 transition-all duration-300 cursor-pointer">
+                <div className="bg-[#994CFD]/10 group  shadow-solid-mycolor  rounded-2xl group  text-[#16191C] p-8 pt-10 transition-all duration-300 cursor-pointer">
                   <h2 className="text-xl font-bold mt-4 opacity-1 mb-4">
                     Guaranteed Uptime
                   </h2>
@@ -164,7 +164,7 @@ const Plans = () => {
                     />
                   </svg>
                 </div>
-                <div className="bg-[#4DBFFF]/10 group-hover:bg-[#4DBFFF] group shadow-solid-mycolor2  rounded-2xl group  text-[#16191C] p-6 pt-12 transition-all duration-300 cursor-pointer">
+                <div className="bg-[#4DBFFF]/10  group shadow-solid-mycolor2  rounded-2xl group  text-[#16191C] p-6 pt-12 transition-all duration-300 cursor-pointer">
                   <h2 className="text-xl font-bold mt-4 opacity-1 mb-4">
                     KVM Virtualization
                   </h2>
@@ -220,7 +220,7 @@ const Plans = () => {
                     </defs>
                   </svg>
                 </div>
-                <div className="bg-[#14B441]/10 group-hover:bg-[#14B441]  group  shadow-solid-mycolor3  rounded-2xl group  text-[#16191C] p-6 pt-12 transition-all duration-300 cursor-pointer">
+                <div className="bg-[#14B441]/10   group  shadow-solid-mycolor3  rounded-2xl group  text-[#16191C] p-6 pt-12 transition-all duration-300 cursor-pointer">
                   <h2 className="text-xl font-bold mt-4 opacity-1 mb-4">
                     Unbeatable Pricing
                   </h2>

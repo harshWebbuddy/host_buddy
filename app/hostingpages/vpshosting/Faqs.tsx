@@ -45,7 +45,7 @@ const Faqs = () => {
   }, [inView]);
 
   return (
-    <div className="w-full max-w-[1360px] mx-auto mt-20 p-4" ref={ref}>
+    <div className="w-full max-w-[1360px] mx-auto mt-20 p-4 animate-slide-from-left" ref={ref}>
       <motion.div
         initial={{ x: -50, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
@@ -62,7 +62,7 @@ const Faqs = () => {
             key={index}
             initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: index * 1.2 }} // Adjust the delay time as needed
+            transition={{ delay: index *0.5 }} // Adjust the delay time as needed
           >
             <AccordionItem
               key={index}
