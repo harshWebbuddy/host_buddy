@@ -47,7 +47,7 @@ const Plans = () => {
   <div className="mb-0 w-full space-y-6 items-center justify-center mx-auto">
     <span className="items-center justify-center mx-auto w-auto">
     <svg className="items-center featuresvg justify-center mx-auto px-32" viewBox="0 0 60 59" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M37 54H5C3.67441 53.9984 2.40356 53.4711 1.46622 52.5338C0.528882 51.5964 0.00158786 50.3256 0 49V5C0.00158786 3.67441 0.528882 2.40356 1.46622 1.46622C2.40356 0.528882 3.67441 0.00158786 5 0H51C52.3256 0.00158786 53.5964 0.528882 54.5338 1.46622C55.4711 2.40356 55.9984 3.67441 56 5V37C56 37.2652 55.8946 37.5196 55.7071 37.7071C55.5196 37.8946 55.2652 38 55 38C54.7348 38 54.4804 37.8946 54.2929 37.7071C54.1054 37.5196 54 37.2652 54 37V5C54 4.20435 53.6839 3.44129 53.1213 2.87868C52.5587 2.31607 51.7957 2 51 2H5C4.20435 2 3.44129 2.31607 2.87868 2.87868C2.31607 3.44129 2 4.20435 2 5V49C2 49.7957 2.31607 50.5587 2.87868 51.1213C3.44129 51.6839 4.20435 52 5 52H37C37.2652 52 37.5196 52.1054 37.7071 52.2929C37.8946 52.4804 38 52.7348 38 53C38 53.2652 37.8946 53.5196 37.7071 53.7071C37.5196 53.8946 37.2652 54 37 54Z" fill="#FF7500"/>
+<path d="M37 54H5C3.67441 53.9984 2.40356 53.4711 1.46622 52.5338C0.528882 51.5964 0.00158786 50.3256 0 49V5C0.00158786 3.67441 0.528882 2.40356 1.46622 1.46622C2.40356 0.528882 3.67441 0.00158786 5 0H51C52.3256 0.00158786 53.5964 0.528882 54.5338 1.46622C55.4711 2.40356 55.9984 3.67441 56 5V37C56 37.2652 55.8946 37.5196 55.7071 37.7071C55.5196 37.8946 55.2652 38 55 38C54.7348 38 54.4804 37.8946 54.2929 37.7071C54.1054 37.5196 54 37.2652 54 37V5C54 4.20435 53.6839 3.44129 53.1213 2.87868C52.5587 2.31607 51.7957 2 51 2H5C4.20435 2 3.44129 2.31607 2.87868 2.87868C2.31607 3.44129 2 4.20435 2 5V49C2 49.7957 2.31607 50.5587 2.87868 51.1213C3.44129 51.6839 4.20435 52 5 52H37C37.2652 52 37.5196 52.1054 37.7071 52.2929C37.8946 52.4804 38 52.7348 38 53C38 53.2652 37.8946 53.5196 37.7071 53.7071C37.5196 53.8946 37.2652 54 37 54Z" fill=""/>
 <path d="M8 8C9.10457 8 10 7.10457 10 6C10 4.89543 9.10457 4 8 4C6.89543 4 6 4.89543 6 6C6 7.10457 6.89543 8 8 8Z" fill="#FF7500"/>
 <path d="M13 8C14.1046 8 15 7.10457 15 6C15 4.89543 14.1046 4 13 4C11.8954 4 11 4.89543 11 6C11 7.10457 11.8954 8 13 8Z" fill="#FF7500"/>
 <path d="M18 8C19.1046 8 20 7.10457 20 6C20 4.89543 19.1046 4 18 4C16.8954 4 16 4.89543 16 6C16 7.10457 16.8954 8 18 8Z" fill="#FF7500"/>
@@ -67,7 +67,7 @@ const Plans = () => {
   <div className="mt-20 ">
     <div className="w-full h-[52px] text-xl rounded-xl font-bold flex items-center justify-center group">
       <span className="ml-2 text-[#FFA030] text-lg font-semibold leading-6 opacity-0 group-hover:opacity-100">Learn more</span>
-      <span className="text-[#FFA030] -ml-28 group-hover:ml-2">
+      <span className="group-hover:text-[#FFA030] -ml-28 group-hover:ml-2">
         <FaArrowRight size={15} />
       </span>
     </div>
@@ -99,7 +99,7 @@ const Plans = () => {
   <div className="mt-20 ">
     <div className="w-full h-[52px] text-xl rounded-xl font-bold flex items-center justify-center group">
       <span className="ml-2 text-[#FFA030] text-lg font-semibold leading-6 opacity-0 group-hover:opacity-100">Learn more</span>
-      <span className="text-[#FFA030] -ml-28 group-hover:ml-2">
+      <span className="group-hover:text-[#FFA030] -ml-28 group-hover:ml-2">
         <FaArrowRight size={15} />
       </span>
     </div>
@@ -125,7 +125,7 @@ const Plans = () => {
   <div className="mt-20 ">
     <div className="w-full h-[52px] text-xl rounded-xl font-bold flex items-center justify-center group">
       <span className="ml-2 text-[#FFA030] text-lg font-semibold leading-6 opacity-0 group-hover:opacity-100">Learn more</span>
-      <span className="text-[#FFA030] -ml-28 group-hover:ml-2">
+      <span className="group-hover:text-[#FFA030] -ml-28 group-hover:ml-2">
         <FaArrowRight size={15} />
       </span>
     </div>

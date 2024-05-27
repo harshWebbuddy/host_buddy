@@ -224,7 +224,7 @@ const AnimatedParagraph = ({ children }: { children: ReactNode }) => {
         </div></div>
         <div className={`slide-item ${animationClass} w-full`}>
           <div  className="mb-5 w-full transition-all  hover:bg-[#F9EFE4]  bg-[#FFFFFF]/15 px-10 rounded-2xl group" >
-     
+      
           <div className="pt-10 lex flex-col w-full space-y-2 group">
             <h2 className="font-mona-sans font-bold text-2xl bl:text-3xl text-center gap-0  mx-auto group-hover:text-gray-900 text-white">IGNITE</h2>
             <p className="font-mona-sans text-sm font-normal leading-7 text-center  gap-0 opacity-45 text-white group-hover:text-[#16191C]/100 bottom-4 relative">From</p>

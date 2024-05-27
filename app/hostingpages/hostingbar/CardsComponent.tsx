@@ -92,9 +92,9 @@ Outbound e-Mail Security
               <p className="capitalize leading-6 text-[16px] font-light">
 Enhance Your Hosting Experience! Boost website load times to maximize server response, SEO rankings, and sales. Opt for a server closer to your audience, especially in India, for enhanced reliability and lightning-fast page loads.              </p>
             </li>
-           <button className="bg-white border-orange-500 border flex flex-row  items-center justify-center">
+           <div className="bg-white border-orange-500 border flex flex-row  items-center justify-center">
               <h2 className="font-medium text-[16px]  leading-normal ">Get Started </h2> <img src="/hosting/ArrowIcon.svg" className="pl-4 -mt-0.5 "/>
-          </button>
+          </div>
           </ul>
          
         </div>

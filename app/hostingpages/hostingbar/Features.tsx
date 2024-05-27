@@ -56,7 +56,7 @@ export default function Features() {
               {visibleTestimonials.map(
                 (testimonial, index) =>
                   index % columns === columnIndex && (
-                    <div key={index} className="group relative bg-[#FFF3EA] hover:bg-[#FFFFFF] px-8 py-10 rounded-2xl space-y-5">
+                    <div key={index} className="group relative bg-[#FFF3EA] hover:bg-[#FFFFFF]/100 px-8 py-10 rounded-2xl space-y-5">
                   <div className="flex flex-col gap-5 justify-between w-full">
                     <div className="flex justify-between flex-row">
                       <Image src={testimonial.author.image_url} alt="download" width={50} height={50} className="select-none" draggable={false} />
