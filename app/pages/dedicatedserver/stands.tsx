@@ -74,7 +74,7 @@ const Stands = () => {
         className="-ml-2 -mt-8 absolute opacity-0 2xl:opacity-100"
       />
 
-      <div className="w-full max-w-[1220px] mx-auto space-y-20">
+      <div className="slide-reveal w-full max-w-[1220px] mx-auto space-y-20">
         <div className="mx-auto bl:flex flex-row justify-between">
           <h4 className="text-3xl md:text-4xl text-white font-semibold font-mona-sans leading-[63px]">
           What Makes HostBuddy Dedicated Server Stand Out?            <div className="w-40 h-1 bg-orange-500 mt-4 ml-3"></div>
@@ -88,11 +88,11 @@ const Stands = () => {
               <div className="absolute -top-7 featuresvg3 left-9 w-16 h-16 flex justify-center items-center rounded-xl transition-all duration-300 bg-[#555555] group-hover:bg-orange-500">
                 {item.icon}
               </div>
-              <div className="border border-[#171717] shadow-solid-orange rounded-2xl group hover:bg-[#F9EFE4] text-[#FFFFFF] hover:text-[#16191C] p-6 md:p-8 transition-all duration-300 cursor-pointer">
+              <div className="border border-[#171717] shadow-solid-orange rounded-2xl group hover:bg-[#F9EFE4] text-[#FFFFFF] hover:text-[#16191C] px-10 py-10 transition-all duration-300 cursor-pointer">
                 <h2 className="text-xl font-bold mt-4 opacity-1 mb-4">
                   {item.title}
                 </h2>
-                <p className="w-full opacity-70 font-mona-sans text-xl font-normal leading-normal text-left">
+                <p className="w-full opacity-70 font-mona-sans text-[15px] font-normal leading-normal text-left">
                   {item.description}
                 </p>
               </div>

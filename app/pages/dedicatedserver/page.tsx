@@ -18,7 +18,7 @@ const page = () => {
       
       {/* rating panel  */}
       <section>
-        <div className="space-y-32 ">
+        <div className="">
           <Ratingpanel />
         </div>
       </section>
@@ -32,7 +32,7 @@ const page = () => {
         <Unique />
       </section>
 
-      <section className="pt-20">
+      <section className="pt-10">
         <Adds />
 
         <Testimonials />
