@@ -16,7 +16,7 @@ const Card = () => {
             <div className="card">
           <div className="text-[42px] font-semibold">
           <h2 className=''>Full <span className='text-orange-500'>HD Quality</span></h2>
-          <div className='flex flex-row'><h2>Streams</h2> <Image src="/ps/watch.svg" alt="watch" width={100} height={100} className='ml-4 watchcard'/></div> 
+          <div className='flex flex-row'><h2>Streams</h2> <Image src="/ps/watch.svg" alt="watch" width={60} height={100} className='ml-4 '/></div> 
             <p className='text-[16px] font-normal'>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             <a>All Specs</a></p>
          
