@@ -1,18 +1,16 @@
-"use client";
-import Image from "next/image";
-import React, { useState } from "react";
+import Image from 'next/image'
+import React from 'react'
 
 const Unique = () => {
   return (
-    <section className="bg-[#F9EFE4] relative">
-    <div className="p-4 w-full max-w-[1420px] mx-auto flex flex-col 2xl:flex-row bl:flex-row items-center justify-center py-20">
-      {/* <Image src="/dotted.svg" alt="" width={100} height={100} className="ml-1 absolute left-0 top-20 opacity-50" /> */}
-      <div className="flex flex-col 2xl:flex-row mx-auto items-center gap-x-2  ">
-      <div className="w-full flex justify-center">
-          <Image src="/ps/unique.svg" alt="" width={550} height={550} className="uniqueimage" />
-        </div> 
-        <div className="w-full flex flex-col space-y-8">
-          <div className="space-y-3.5">
+    <section className=" relative bg-[#F9EFE4] py-20">
+    <div className="p-4 w-full max-w-[1300px] mx-auto flex flex-col xl:flex-row items-center justify-center ">
+      <div className="flex flex-col 2xl:flex-row mx-auto items-center justify-between ">
+      <div className="w-full flex justify-center slide-reveal ">
+          <Image src="/ps/unique.svg" alt="" width={550} height={550} className="" />
+        </div>
+         <div className="w-full flex flex-col space-y-8 animate-slide-from-right">
+          <div className="space-y-3.5 ">
             <h4 className="text-[39px] text-black font-semibold font-mona-sans leading-normal">
               What Makes Host<span className="text-orange-500">Buddy </span>  Unique?
              
@@ -23,7 +21,7 @@ const Unique = () => {
             </p>
           </div>
           <div className="space-y-2 2xl:max-w-xl">
-            <div className="relative group space-y-3">
+            <div className="relative group space-y-3 slide-reveal">
               <div className="cursor-pointer flex w-full group hover:bg-white transition-all duration-300 border-gradient hover:shadow-2xl rounded-xl">
                 <div className="ml-8 flex xl:flex-row items-center featuresvg4">
                 <svg
@@ -55,7 +53,7 @@ const Unique = () => {
               </div>
               <div className="border-t-[3px] border-dashed border-[#dedede] w-full h-1 absolute -bottom-1 left-0 right-0 group-hover:opacity-0 transition duration-200" />
             </div>
-            <div className="relative group space-y-3">
+            <div className="relative group space-y-3 slide-reveal">
               <div className="cursor-pointer flex w-full group hover:bg-white transition-all duration-300 border-gradient hover:shadow-2xl rounded-xl">
                 <div className="ml-8 flex xl:flex-row items-center featuresvg4">
                 <svg
@@ -85,51 +83,30 @@ const Unique = () => {
               </div>
               <div className="border-t-[3px] border-dashed border-[#dedede] w-full h-1 absolute -bottom-1 left-0 right-0 group-hover:opacity-0 transition duration-200" />
             </div>
-            <div className="cursor-pointer flex w-full group hover:bg-white transition-all duration-300 border-gradient hover:shadow-2xl rounded-xl">
-              <div className="ml-8 flex xl:flex-row items-center featuresvg4">
-              <svg
-          width="58"
-          height="58"
-          viewBox="0 0 48 48"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g opacity="0.3">
-            <path
-              d="M18 3H3V45H18V3ZM45 3H30V18H45V3ZM45
-             30V45H30V30H45ZM0 3C0 2.20435 0.316071 
-             1.44129 0.87868 0.87868C1.44129 0.316071
-              2.20435 0 3 0L18 0C18.7956 0 19.5587 0.316071 
-              20.1213 0.87868C20.6839 1.44129 21 2.20435 21 
-              3V45C21 45.7957 20.6839 46.5587 20.1213 47.1213C19.5587 47.6839
-              18.7956 48 18 48H3C2.20435 48 1.44129 47.6839 0.87868 47.1213C0.316071
-               46.5587 0 45.7957 0 45V3ZM27 3C27 2.20435 27.3161 1.44129 27.8787 
-               0.87868C28.4413 0.316071 29.2044 0 30 0L45 0C45.7957 0 46.5587 0.316071 47.1213 0.87868C47.6839 1.44129 48 2.20435 
-               48 3V18C48 18.7956 47.6839 19.5587 47.1213 20.1213C46.5587 20.6839 45.7957 21 45 21H30C29.2044 21 28.4413 20.6839
-                27.8787 20.1213C27.3161 19.5587 27 18.7956 27 18V3ZM30 27C29.2044 27 28.4413 27.3161 27.8787 27.8787C27.3161
-                 28.4413 27 29.2044 27 30V45C27 45.7957 27.3161 46.5587 27.8787 47.1213C28.4413 47.6839 29.2044 48 30 48H45C45.7957
-                  48 46.5587 47.6839 47.1213 47.1213C47.6839 46.5587 48 45.7957 48 45V30C48 29.2044 47.6839 28.4413 
-                  47.1213 27.8787C46.5587 27.3161 
-              45.7957 27 45 27H30Z"
-              fill="#16191C"
-            />
-          </g>
-        </svg>                 <div className="transition-all duration-300 cursor-pointer m-8 xl:gap-6 text-[#16191C]">
-                  <h2 className="text-[24px] font-bold opacity-1 mb-4 group-hover:text-orange-500">99.95% Uptime </h2>
-                  <p className="font-mona-sans text-[16px] font-normal leading-normal text-left">
-                    Euismod egestas suspendisse aliquet amet ultrices faucibus mauris sit odio.
-                  </p>
+            <div className="relative group space-y-3 slide-reveal">
+              <div className="cursor-pointer flex w-full group hover:bg-white transition-all duration-300 border-gradient hover:shadow-2xl rounded-xl">
+                <div className="ml-8 flex xl:flex-row items-center featuresvg4">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"> <g opacity="0.3">
+<path d="M18 3H3V45H18V3ZM45 3H30V18H45V3ZM45 30V45H30V30H45ZM0 3C0 2.20435 0.316071 1.44129 0.87868 0.87868C1.44129 0.316071 2.20435 0 3 0L18 0C18.7956 0 19.5587 0.316071 20.1213 0.87868C20.6839 1.44129 21 2.20435 21 3V45C21 45.7957 20.6839 46.5587 20.1213 47.1213C19.5587 47.6839 18.7956 48 18 48H3C2.20435 48 1.44129 47.6839 0.87868 47.1213C0.316071 46.5587 0 45.7957 0 45V3ZM27 3C27 2.20435 27.3161 1.44129 27.8787 0.87868C28.4413 0.316071 29.2044 0 30 0L45 0C45.7957 0 46.5587 0.316071 47.1213 0.87868C47.6839 1.44129 48 2.20435 48 3V18C48 18.7956 47.6839 19.5587 47.1213 20.1213C46.5587 20.6839 45.7957 21 45 21H30C29.2044 21 28.4413 20.6839 27.8787 20.1213C27.3161 19.5587 27 18.7956 27 18V3ZM30 27C29.2044 27 28.4413 27.3161 27.8787 27.8787C27.3161 28.4413 27 29.2044 27 30V45C27 45.7957 27.3161 46.5587 27.8787 47.1213C28.4413 47.6839 29.2044 48 30 48H45C45.7957 48 46.5587 47.6839 47.1213 47.1213C47.6839 46.5587 48 45.7957 48 45V30C48 29.2044 47.6839 28.4413 47.1213 27.8787C46.5587 27.3161 45.7957 27 45 27H30Z" fill="#16191C"/>
+</g></svg>
+
+                  <div className="transition-all duration-300 cursor-pointer m-8 xl:gap-6 text-[#16191C]">
+                    <h2 className="text-[24px] font-bold opacity-1 mb-4 group-hover:text-orange-500">30-Day Money Back</h2>
+                    <p className="font-mona-sans text-[16px] font-normal leading-normal text-left">
+                    Euismod egestas suspendisse aliquet amet ultrices faucibus mauris sit odio.                    </p>
+                  </div>
                 </div>
               </div>
+              <div className="border-t-[3px] border-dashed border-[#dedede] w-full h-1 absolute -bottom-1 left-0 right-0 group-hover:opacity-0 transition duration-200" />
             </div>
           </div>
         </div>
-     
+       
       </div>
     </div>
   </section>
 
-  );
-};
+  )
+}
 
-export default Unique;
+export default Unique

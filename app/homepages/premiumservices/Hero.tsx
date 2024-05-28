@@ -2,9 +2,9 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <div className='bg-[#16191C] overflow-hidden mx-auto'>
-   <div className=' pcontent_img opacity-90 mx-auto'>
-      <div className=" pcontent mx-auto max-w-[1200px] flex z-[1] ">
+    <div className='bg-[#16191C]/100 overflow-hidden mx-auto'>
+  <div className='animate-fade-in  pcontent_img   bg-[#16191C]/100 opacity-90 mx-auto'>
+      <div className="slide-reveal pcontent mx-auto max-w-[1200px] flex z-[1] ">
         <div className='pbuddy z-[2]'>
            {/* 1//  */}
            <div className="w-[175px] h-[30px] mb-10">

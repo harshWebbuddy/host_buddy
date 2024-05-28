@@ -31,21 +31,21 @@ const ContactForm: React.FC = () => {
   };
   return (
     <section className="w-full  px-4 py-5  ">
-      <div className="w-full max-w-[1360px] items-center justify-center mx-auto">
+      <div className="slide-reveal w-full max-w-[1360px] items-center justify-center mx-auto">
         <div className="items-center justify-center mx-auto">
           <h2 className="font-mona-sans text-5xl font-semibold item text-center text-black mt-3">Full out the Contact Form</h2>
         </div>
         <p className="text-center my-5">We will help you to choose the best plan!</p>
         <form onSubmit={handleSubmit} className="w-full mt-10">
           <div className="flex flex-col bl:flex-row mt-4 items-center justify-center w-full gap-6">
-            <div className="w-full h-[53px]">
+            <div className="w-full h-[53px] ">
               <input
                 type="text"
                 id="fullName"
                 name="fullName"
                 value={formData.fullName}
                 onChange={handleChange}
-                className="border border-gray-300 rounded-xl w-full h-[56px] px-4"
+                className="bg-[#F5F5F5] border border-gray-300 rounded-xl w-full h-[56px] px-4"
                 placeholder="Full Name"
                 required
               />
@@ -57,7 +57,7 @@ const ContactForm: React.FC = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="border border-gray-300 rounded-xl w-full h-[56px] px-4"
+                className="border bg-[#F5F5F5] border-gray-300 rounded-xl w-full h-[56px] px-4"
                 placeholder="Email Address"
                 required
               />
@@ -71,7 +71,7 @@ const ContactForm: React.FC = () => {
                 name="subject"
                 value={formData.subject}
                 onChange={handleChange}
-                className="border border-gray-300 rounded-xl w-full h-[56px] px-4"
+                className="border bg-[#F5F5F5] border-gray-300 rounded-xl w-full h-[56px] px-4"
                 placeholder="Subject"
                 required
               />
@@ -82,7 +82,7 @@ const ContactForm: React.FC = () => {
     name="selectedDocument"
     value={formData.selectedDocument}
     onChange={handleChange}
-    className="border border-gray-300 rounded-xl w-full h-[56px] px-4 pr-8 text-left appearance-none"
+    className="border bg-[#F5F5F5] border-gray-300 rounded-xl w-full h-[56px] px-4 pr-8 text-left appearance-none"
     required
   >
     <option value="Select Document">Select Document</option>
@@ -105,7 +105,7 @@ const ContactForm: React.FC = () => {
               name="message"
               value={formData.message}
               onChange={handleChange}
-              className="border border-gray-300 rounded-xl w-full min-h-[150px] max-h-[500px] text-left p-4"
+              className="border bg-[#F5F5F5] border-gray-300 rounded-xl w-full min-h-[150px] max-h-[500px] text-left p-4"
               placeholder="Message"
               required></textarea>
           </div>
@@ -120,7 +120,7 @@ const ContactForm: React.FC = () => {
                 className="mr-4 h-6 w-6"
                 required
               />
-              <label htmlFor="agreeTerms">I have read and agree to the terms and conditions</label>
+              <label htmlFor="agreeTerms">I have read and agree to the terms and conditions </label><span className="ml-2 mr-2 leading-21 font-extrabold"> - HostBuddy</span>
             </div>
             <button type="submit" className="submith2 ">
               Submit Ticket

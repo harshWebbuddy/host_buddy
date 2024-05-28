@@ -10,7 +10,7 @@ const page = () => {
       <div>
         <Hero/>
       </div>
-      <div className='p_plan2 mx-auto'>
+      <div className='animate-fade-in p_plan2 mx-auto'>
     
     <div className='group'>
       <div className='plan2box bg-[#F9EFE4] group-hover:bg-[#16191C]'>
@@ -81,7 +81,11 @@ const page = () => {
 
 </div>
     </div></div>
-    <div className='group '>
+    <div className='group '><div className='group-hover:opacity-100 opacity-0 absolute -translate-y-4 translate-x-32'>
+          <div className='bg-orange-500 py-1 rounded-3xl border-white w-36  mx-auto item-center justify-center border-4'>
+            <h2 className='text-white items-center justify-center mx-auto text-center text-[16px] font-semibold '>Most Popular</h2>
+          </div>
+          </div>
       <div className='plan2box special bg-[#F9EFE4] group-hover:bg-[#16191C]'>
 <div className='.plan2boxinner mt-8'>
     <div className='plan2boxinner1 mx-auto'>

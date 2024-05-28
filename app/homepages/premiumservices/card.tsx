@@ -1,9 +1,10 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Card = () => {
   return (
     <div className='mx-auto gapping'>
-        <div className='wholecard1 mx-auto'>
+        <div className='slide-reveal wholecard1 mx-auto'>
             
            <div className='cardiv'>
            <img src="/ps/design2.2.svg" className='dottedcard'/> 
@@ -15,7 +16,7 @@ const Card = () => {
             <div className="card">
           <div className="cardinside">
             <h2 className='display'>Full <span>HD Quality</span>
-<a>Streams <img src="/ps/watch.svg" className='watchcard'/></a></h2>
+<a>Streams <Image src="/ps/watch.svg" alt="watch" width={100} height={100} className='watchcard'/></a></h2>
             <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             <a>All Specs</a></p>
          
@@ -28,7 +29,7 @@ const Card = () => {
         </div>
             
         </div>
-        <div className='wholecard1 mx-auto'>
+        <div className='slide-reveal wholecard1 mx-auto'>
             
         
            
