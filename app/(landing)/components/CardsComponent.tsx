@@ -3,7 +3,7 @@ import React from "react";
 
 const CardsComponent = () => {
   return (
-    <div className="space-y-32 2xl:space-y-10 p-4">
+    <div className="slide-reveal space-y-32 2xl:space-y-10 p-4">
       <div className="w-full flex flex-col xl:flex-row space-y-10 space-x-10 items-center">
         <div className="w-full space-y-7">
           <div className="pr-0 2xl:pr-4">

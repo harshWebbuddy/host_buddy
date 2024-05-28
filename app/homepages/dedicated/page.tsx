@@ -224,7 +224,7 @@ Premium Hardware</h1>
       </section>
 
       {/* Awards and recognition  */}
-      <div className="w-full flex flex-col gap-10 md:gap-16 mx-auto pt-20 2xl:pt-36 max-w-[1350px] p-4">
+      <div className="slide-reveal w-full flex flex-col gap-10 md:gap-16 mx-auto pt-20 2xl:pt-36 max-w-[1350px] p-4">
         <div className="flex flex-col 2xl:flex-row w-full justify-between items-center">
           <h4 className="text-[42px] text-center text-black font-semibold font-mona-sans leading-relaxed">
             Our <span className="pb-4 border-b-4 border-orange-500">Awards</span> & Recognition
@@ -263,7 +263,7 @@ Premium Hardware</h1>
       {/* Our featured case study section*/}
 
       
-        <section className="py-24 2xl:py-2 px-4">
+        <section className="py-24 2xl:py-2 px-4 slide-reveal">
         <div className="max-w-[1360px] mx-auto item-center justify-center w-full">
           <div className="bg-[rgb(249,239,228)] 2xl:gap-0 w-full rounded-3xl mx-auto flex flex-col py-8 p-4 sm:p-5 md:p-10  2xl:p-20">
             <div className="flex gap-20 items-start justify-between">
@@ -338,7 +338,7 @@ Premium Hardware</h1>
 
       {/* Hire a pro section */}
    
-      <section className="pt-40"> 
+      <section className="pt-40 slide-reveal"> 
         <div className="max-w-[1360px] mx-auto p-4 pb-80">
           <div className="flex  flex-col space-y-12  xl:items-stretch 2xl:items-stretch pa:items-center pa:justify-center">
             <div className="flex flex-col md:flex-row gap-6 items-center justify-between">
