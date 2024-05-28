@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { BiChevronRight } from "react-icons/bi";
 import { testimonials } from "../../(landing)/components/constants/testimonials";
+import { motion } from "framer-motion";
 export default function Testimonials() {
   const initializeColumns = () => {
     if (typeof window !== "undefined") {
@@ -42,6 +43,10 @@ export default function Testimonials() {
     };
   }, []);
 
+  const boxVariants = {
+    hidden: { opacity: 0, x: -50 },
+    visible: { opacity: 1, x: 0, transition: { duration: 2 } },
+  };
   return (
     
     <div className="p-4 relative bg-gradient-to-b from-[#292E34] to-[#16191C] mx-auto flex flex-col  w-full items-center justify-center pt-10 2xl:pt-20 mt-20">
@@ -56,7 +61,7 @@ export default function Testimonials() {
         </div>
         <div className={`flex flex-row gap-4 mt-16 overflow-hidden transition-all duration-500 ${viewAll ? "h-full pb-32" : "h-full max-h-screen"}`}>
           {Array.from({ length: columns }, (_, columnIndex) => (
-            <div key={columnIndex} className="flex flex-col w-full gap-4">
+            <motion.div key={columnIndex} className="flex flex-col w-full gap-4" variants={boxVariants} initial="hidden" animate="visible">
               {visibleTestimonials.map(
                 (testimonial, index) =>
                   index % columns === columnIndex && (
@@ -75,7 +80,7 @@ export default function Testimonials() {
                     </div>
                   )
               )}
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

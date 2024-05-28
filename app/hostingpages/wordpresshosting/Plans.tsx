@@ -12,7 +12,7 @@ const Plans = () => {
   return (
     <div className="flex flex-col max-w-[1300px] mx-auto">
       <div className="flex flex-col 2xl:flex-row justify-betweenitems-center ">
-        <div className="relative w-full flex flex-row ">
+        <div className="relative w-full flex flex-row slide-reveal">
           <h2 className="font-mona-sans font-semibold text-[42px] leading-[63px] w-full text-center bl:text-left">
           Experience the Ultimate in    <span className="pb-4 border-b-4 border-orange-500">WordPress Hosting </span>
           </h2>
@@ -23,7 +23,7 @@ const Plans = () => {
       {/* cards */}
       <section className="pt-14">
       
-       <div className="flex flex-col space-y-4">
+       <div className="flex flex-col space-y-4 slide-reveal">
         <div className="flex flex-col bl:flex-row w-full justify-center gap-0 items-center">
  <div className="relative top-0 bottom-0 group !z-[1]  w-full p-4">     
    <img src="/wordpress/rectbox.svg" className="absolute right-0 top-0  !z-[2] opacity-0 group-hover:opacity-100"/>

@@ -36,11 +36,11 @@ const page = () => {
           <Unique/>
         </section>
         {/* cardsection */}
-        <section>
+        <section className='pt-36'>
           <Features/>
         </section>
 
-        <section className='pt-10 space-y-20'>
+        <section className='pt-12 space-y-20'>
           <CardsComponent/>
        
           <Testimonials/>

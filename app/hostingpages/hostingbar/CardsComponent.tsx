@@ -156,7 +156,7 @@ Enhance Your Hosting Experience! Boost website load times to maximize server res
           <div className="">
            <h2 className="text-4xl leading-10 font-semibold">Free Website Migration</h2>
           </div>
-          <ul className="w-full space-y-4">
+          <ul className="w-full space-y-10">
           
             <li className="flex gap-4 items-start">
               <p className="capitalize leading-6 text-[16px] font-light">
