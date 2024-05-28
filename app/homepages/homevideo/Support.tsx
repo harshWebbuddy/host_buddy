@@ -59,7 +59,7 @@ const Support = () => {
     <div className="w-full hostbuddy  py-20 px-3">
                 <Image src="/greydotted.svg" alt="" width={122.7} height={111.55} className="-ml-2 -mt-8 absolute opacity-0 2xl:opacity-100" />
 
-      <div className="w-full max-w-[1350px] mx-auto">
+      <div className="w-full max-w-[1350px] mx-auto slide-reveal">
         <div className="mx-auto bl:flex flex-row justify-between">
           <h4 className="text-3xl md:text-4xl text-white font-semibold font-mona-sans leading-[63px]">
             Why Choose HostBuddy<div className="w-40 h-1 bg-orange-500 mt-4"></div>
