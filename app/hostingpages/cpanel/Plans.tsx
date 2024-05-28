@@ -55,7 +55,7 @@ const Support = () => {
     <div className="w-full    px-3">
 
       <div className="w-full max-w-[1220px] mx-auto">
-      <div className="flex flex-col bl:flex-row justify-between gap-y-10 gap-x-30 items-center  pb-16">
+      <div className="slide-reveal flex flex-col bl:flex-row justify-between gap-y-10 gap-x-30 items-center  pb-16">
         <div className="relative w-full">
           <h2 className="font-mona-sans font-semibold text-[42px] leading-relaxed w-full text-center bl:text-left">
           Out-of-the-Box cPanel
@@ -70,7 +70,7 @@ Hosting Experience
           </p>
         </div>
       </div>
-        <div className="flex flex-col md:flex-row gap-x-8 gap-y-14 bl:items-center justify-center mx-auto ">
+        <div className="slide-reveal flex flex-col md:flex-row gap-x-8 gap-y-14 bl:items-center justify-center mx-auto ">
   {items.map((item, index) => (
     <div key={index} className="relative flex-1 w-full gap-10 group">
       <div className="absolute -top-7 left-9 w-16 h-16 flex justify-center items-center rounded-xl transition-all duration-300 ">

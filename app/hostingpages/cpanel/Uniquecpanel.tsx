@@ -5,7 +5,7 @@ const Uniquecpanel = () => {
     <section className="relative bg-gradient-to-b from-[#FFFFFF]/100 to-[#FF7500]/70">
       <div className="p-4 w-full max-w-[1300px] mx-auto py-24">
         <div className="flex flex-col 2xl:flex-row mx-auto items-center ">
-          <div className="w-full flex flex-col space-y-20">
+          <div className="slide-reveal w-full flex flex-col space-y-20">
             <div>
               <h2 className="text-[42px] leading-[63px] font-semibold text-black w-full 2xl:max-w-full">
                 What Makes HostBuddy<span className="pb-4 border-b-4 border-orange-500"> Unique?</span>

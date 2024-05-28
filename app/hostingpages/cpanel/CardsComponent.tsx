@@ -5,7 +5,7 @@ const CardsComponent = () => {
   return (
     <div className="bg-[#F9EFE4]">
       <div className="  space-y-24 p-4 max-w-[1350px] mx-auto pt-20 pb-32">
-        <div className=" background-design w-full flex flex-col xl:flex-row-reverse justify-between gap-x-60 gap-y-20  items-center">
+        <div className="animate-slide-from-left background-design w-full flex flex-col xl:flex-row-reverse justify-between gap-x-60 gap-y-20  items-center">
          
           <div className="w-full flex justify-center">
             <div className="relative">
@@ -45,7 +45,7 @@ const CardsComponent = () => {
             </ul>
           </div>
         </div>
-        <div className=" background-design w-full flex flex-col xl:flex-row-reverse justify-between gap-y-20  items-center">
+        <div className="animate-slide-from-right background-design w-full flex flex-col xl:flex-row-reverse justify-between gap-y-20  items-center">
          
        
          <div className="w-full space-y-4">
@@ -83,7 +83,7 @@ const CardsComponent = () => {
            </div>
          </div> 
        </div>
-       <div className=" background-design w-full flex flex-col xl:flex-row-reverse justify-between gap-y-20  items-center">
+       <div className="a  nimate-slide-from-left background-design w-full flex flex-col xl:flex-row-reverse justify-between gap-y-20  items-center">
          
          <div className="w-full flex justify-center">
            <div className="relative">
