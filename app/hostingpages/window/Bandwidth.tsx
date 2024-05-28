@@ -6,7 +6,7 @@ const Support = () => {
     <div className="w-full hostbuddy  py-20 px-3">
 
       <div className="w-full max-w-[1220px] mx-auto flex flex-col 2xl:flex-row gap-y-10 justify-center items-center ">
-        <div className="mx-auto 2xl:flex flex-col justify-between">
+        <div className="slide-reveal mx-auto 2xl:flex flex-col justify-between">
           <h4 className="text-[42px] md:text-4xl text-white font-semibold font-mona-sans leading-[63px]">
           Unlimited Bandwidth<span className="text-orange-500 ">*</span>
 
@@ -17,7 +17,7 @@ const Support = () => {
           </p>
           {/* Orange line below "Why Choose HostBuddy" */}
         </div>
-            <div>
+            <div className="slide-reveal ">
 <img src="/plenk/bandwidth.svg" className="w-full"/>
     </div>
       </div>
