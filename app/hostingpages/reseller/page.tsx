@@ -31,7 +31,7 @@ const page = () => {
   <Useoption/>
 </section>
         {/* what make hostbuddy unique section */}
-        <section className=' 2xl:pt-72 bl:pt-0  sm:pt-96 lg:pt-80 pt-[700px]'>
+        <section className=' 2xl:pt-72 bl:pt-96  sm:pt-[800px] lg:pt-[700px] pt-[800px]'>
           <Unique/>
         </section>
         <section className='pt-20 2xl:pt-40'>
@@ -52,7 +52,7 @@ const page = () => {
         </section>
 
         {/* Question Answers */}
-        <section className='pt-10 2xl:pt-20 pb-20 2xl:pb-40'>
+        <section className='pt-10 pb-40'>
 <Faqs/>
         </section>
         {/* caseStudies */}
