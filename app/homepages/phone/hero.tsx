@@ -2,9 +2,9 @@ import React from 'react';
 
 const HomePage = () => {
   return (
-    <div className='bg-[#16191C] overflow-hidden'>
-   <div className='content_img opacity-90 mx-auto'>
-      <div className="content  mx-auto">
+    <div className='bg-[#16191C] animate-fade-in  h-[850px] overflow-hidden'>
+   <div className='content_img bg-[#16191C]  opacity-90 mx-auto'>
+      <div className="content slide-reveal  mx-auto">
         <div className='buddy'>
            {/* 1//  */}
            <div className="w-[175px] h-[30px] mb-10">
@@ -43,7 +43,7 @@ Numbers
                         Get Prices
                         </h2>             
                   </div>
-                  <div className="buddy_button2 flex flex-row gap-[10px] ">
+                  <div className="buddy_button2 flex flex-row gap-[10px] item-center justify-center pt-2">
                     <div className="">
                       <h2 className="font-mona-sans font-medium text-white  ">
                       VOIP Services
@@ -56,7 +56,7 @@ Numbers
                 </div>
         </div>
         <div className='buddy_img  '>
-      <img src="./phone/map.svg" className='buddy_img2 opacity-90 w-full h-full' />
+      <img src="/phone/map.svg" className='buddy_img2 opacity-90 w-full h-full' />
     </div>
       </div>
       </div>

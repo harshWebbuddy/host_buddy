@@ -18,7 +18,6 @@ export default function HomeMainPage() {
       {/* hero section */}
 
       <section className="h-full min-h-[80vh] overflow-hidden relative bg-black flex flex-col items-center justify-center">
-    <img src="/home.jpg" width={1920} height={1080} alt="" className="w-full absolute inset-0 h-full opacity-30 object-cover bg-blend-color-dodge !z-[1]" />
     <div className="max-w-[1300px] mx-auto text-white  px-10 pt-40 pb-10 2xl:py-40">
       <div className="h-full flex items-center relative !z-[2] flex-col 2xl:flex-row justify-center gap-20">
         <div className="relative w-full flex flex-col justify-start items-start 2xl:justify-start space-y-5">
@@ -34,19 +33,8 @@ Premium Hardware</h1>
           <p className="font-mono-sans text-[16px] font-light leading-loose text-left  text-[#EBEBEB]">
           By trusting us with your business and projects needs, we promise a 99.9% uptime on any services we provide, outside of any standard maintenance we may provide. </p>
           <div className="flex flex-wrap 2xl:flex-row space-y-4 justify-start space-x-6 !mt-10 ">
-            <div className="h-[56px]  flex item-center justify-center bg-orange-500 rounded-xl py-4 w-auto px-6  gap-x-3">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="6" cy="19" r="2" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-<circle cx="6" cy="19" r="2" stroke="white" stroke-opacity="0.2" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-<circle cx="17" cy="19" r="2" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-<circle cx="17" cy="19" r="2" stroke="white" stroke-opacity="0.2" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M17 17H6V3H4" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M17 17H6V3H4" stroke="white" stroke-opacity="0.2" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M6.06235 4.12722C5.58033 4.09279 5.16166 4.45563 5.12722 4.93765C5.09279 5.41967 5.45563 5.83834 5.93765 5.87278L6.06235 4.12722ZM11.9426 6.30178C12.4247 6.33621 12.8433 5.97337 12.8778 5.49135C12.9122 5.00933 12.5494 4.59066 12.0674 4.55622L11.9426 6.30178ZM20.0092 12.1261C20.0777 11.6477 19.7455 11.2044 19.2671 11.1358C18.7887 11.0673 18.3454 11.3995 18.2768 11.8779L20.0092 12.1261ZM19 13V13.875C19.4353 13.875 19.8044 13.555 19.8662 13.1241L19 13ZM6 12.125C5.51675 12.125 5.125 12.5167 5.125 13C5.125 13.4832 5.51675 13.875 6 13.875V12.125ZM5.93765 5.87278L11.9426 6.30178L12.0674 4.55622L6.06235 4.12722L5.93765 5.87278ZM18.2768 11.8779L18.1338 12.8759L19.8662 13.1241L20.0092 12.1261L18.2768 11.8779ZM19 12.125H6V13.875H19V12.125Z" fill="white"/>
-<path d="M6.06235 4.12722C5.58033 4.09279 5.16166 4.45563 5.12722 4.93765C5.09279 5.41967 5.45563 5.83834 5.93765 5.87278L6.06235 4.12722ZM11.9426 6.30178C12.4247 6.33621 12.8433 5.97337 12.8778 5.49135C12.9122 5.00933 12.5494 4.59066 12.0674 4.55622L11.9426 6.30178ZM20.0092 12.1261C20.0777 11.6477 19.7455 11.2044 19.2671 11.1358C18.7887 11.0673 18.3454 11.3995 18.2768 11.8779L20.0092 12.1261ZM19 13V13.875C19.4353 13.875 19.8044 13.555 19.8662 13.1241L19 13ZM6 12.125C5.51675 12.125 5.125 12.5167 5.125 13C5.125 13.4832 5.51675 13.875 6 13.875V12.125ZM5.93765 5.87278L11.9426 6.30178L12.0674 4.55622L6.06235 4.12722L5.93765 5.87278ZM18.2768 11.8779L18.1338 12.8759L19.8662 13.1241L20.0092 12.1261L18.2768 11.8779ZM19 12.125H6V13.875H19V12.125Z" fill="white" fill-opacity="0.2"/>
-<path d="M15 5.125C14.5168 5.125 14.125 5.51675 14.125 6C14.125 6.48325 14.5168 6.875 15 6.875V5.125ZM21 6.875C21.4832 6.875 21.875 6.48325 21.875 6C21.875 5.51675 21.4832 5.125 21 5.125V6.875ZM18.875 3C18.875 2.51675 18.4832 2.125 18 2.125C17.5168 2.125 17.125 2.51675 17.125 3H18.875ZM17.125 9C17.125 9.48325 17.5168 9.875 18 9.875C18.4832 9.875 18.875 9.48325 18.875 9H17.125ZM15 6.875H21V5.125H15V6.875ZM17.125 3V9H18.875V3H17.125Z" fill="white"/>
-<path d="M15 5.125C14.5168 5.125 14.125 5.51675 14.125 6C14.125 6.48325 14.5168 6.875 15 6.875V5.125ZM21 6.875C21.4832 6.875 21.875 6.48325 21.875 6C21.875 5.51675 21.4832 5.125 21 5.125V6.875ZM18.875 3C18.875 2.51675 18.4832 2.125 18 2.125C17.5168 2.125 17.125 2.51675 17.125 3H18.875ZM17.125 9C17.125 9.48325 17.5168 9.875 18 9.875C18.4832 9.875 18.875 9.48325 18.875 9H17.125ZM15 6.875H21V5.125H15V6.875ZM17.125 3V9H18.875V3H17.125Z" fill="white" fill-opacity="0.2"/>
-</svg>
+            <div className="h-[56px]  flex item-center justify-center bg-orange-500 rounded-xl py-4 w-48 px-6  gap-x-3">
+            
 
 
               <h2 className="font-mona-sans text-[18px] font-semibold leading-[21.6px] text-left">Get Prices</h2>
@@ -79,13 +67,13 @@ Premium Hardware</h1>
   </section>
 
       {/* rating and web hosting plans page */}
-      <section>
-        <div className="space-y-40">
+      <section className="overflow-hidden">
+        <div className="space-y-40 z-[1] overflow-hidden">
           <Ratingpanel />
           <Plans />
         </div>
       </section>
-<section>
+<section className="z-[2]">
   <Support/>
 </section>
 

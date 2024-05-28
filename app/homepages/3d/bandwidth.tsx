@@ -40,6 +40,12 @@ const Support = () => {
           
             </div>
           </div>
+          <div className="flex flex-col items-center">
+            <div className="space-y-1">
+              <Image src="/arrowv.svg" alt="" width={100} height={40} className="-mb-3" />
+          
+            </div>
+          </div>
          
           <div className="flex flex-col items-center">
           <div className="space-y-2">
