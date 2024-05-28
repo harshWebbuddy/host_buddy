@@ -2,74 +2,13 @@
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { Collapse } from "react-collapse";
-export const features: Feature[] = [
-    {
-      title: "Infrastructure & Technology Used",
-      description:
-        "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
-    },
-    {
-      title: "70+ free one-click installs",
-      description:
-        "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
-    },
-    {
-      title: " SSl Certificate",
-      description:
-        "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
-    },
-    {
-      title: "Support",
-      description:
-        "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
-    },
-    {
-      title: "Infrastructure & Technology Used",
-      description:
-        "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
-    },
-    {
-      title: "70+ free one-click installs",
-      description:
-        "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
-    },
-    {
-      title: " SSl Certificate",
-      description:
-        "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
-    },
-    {
-      title: "Support",
-      description:
-        "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
-    },
-    {
-      title: "Infrastructure & Technology Used",
-      description:
-        "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
-    },
-    {
-      title: "70+ free one-click installs",
-      description:
-        "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
-    },
-    {
-      title: " SSl Certificate",
-      description:
-        "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
-    },
-    {
-      title: "Support",
-      description:
-        "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
-    },
-  ];
+
 interface Feature {
   title: string;
   description: string;
 }
 
-const Addsbar = () => {
+const Adds: React.FC = () => {
   const [currentItem, setCurrentItem] = useState<number>(0);
 
   const parentRef = useRef<HTMLDivElement>(null);
@@ -121,7 +60,7 @@ const Addsbar = () => {
     <section className="bg-[#F9EFE4] relative">
       <div className="p-4 w-full max-w-[1420px] mx-auto flex flex-col md:flex-row items-center justify-center py-20">
         <div className="flex flex-col 2xl:flex-row mx-auto items-center justify-between">
-          <div className="w-full space-y-10">
+          <div className="slide-reveal w-full space-y-10">
             <div className="space-y-3.5">
               <h4 className="text-[42px] font-semibold font-mona-sans leading-normal">Why Choose Us?</h4>
               <p className="text-[16px] pr-10 leading-loose font-mono-sans">
@@ -153,7 +92,7 @@ const Addsbar = () => {
               </div>
             </div>
           </div>
-          <div className="w-full flex justify-center">
+          <div className="slide-reveal w-full flex justify-center">
             <div className="relative items-center justify-center mt-40">
               <Image src="/plenk/choose.jpeg" width={497} height={301} alt="" className="rounded-2xl relative z-10" />
             </div>
@@ -164,6 +103,67 @@ const Addsbar = () => {
   );
 };
 
-export default Addsbar;
+export default Adds;
 
-
+export const features: Feature[] = [
+  {
+    title: "Infrastructure & Technology Used",
+    description:
+      "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
+  },
+  {
+    title: "70+ free one-click installs",
+    description:
+      "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
+  },
+  {
+    title: " SSl Certificate",
+    description:
+      "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
+  },
+  {
+    title: "Support",
+    description:
+      "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
+  },
+  {
+    title: "Infrastructure & Technology Used",
+    description:
+      "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
+  },
+  {
+    title: "70+ free one-click installs",
+    description:
+      "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
+  },
+  {
+    title: " SSl Certificate",
+    description:
+      "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
+  },
+  {
+    title: "Support",
+    description:
+      "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
+  },
+  {
+    title: "Infrastructure & Technology Used",
+    description:
+      "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
+  },
+  {
+    title: "70+ free one-click installs",
+    description:
+      "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
+  },
+  {
+    title: " SSl Certificate",
+    description:
+      "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
+  },
+  {
+    title: "Support",
+    description:
+      "Our knowledgeable guides are here to help you with any questions, whether you’re a prospective customer with a small business or you’ve been working with us for years.",
+  },
+];

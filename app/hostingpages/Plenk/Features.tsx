@@ -45,14 +45,14 @@ export default function Features() {
     
     <div className="p-4 relative  mx-auto flex flex-col w-full items-center justify-center 2xl:pt-40">
       <div className="max-w-[1360px] mx-auto">
-        <div className="flex flex-col 2xl:flex-col gap-y-6 2xl:items-start ">
+        <div className="slide-reveal flex flex-col 2xl:flex-col gap-y-6 2xl:items-start ">
           <h2 className="text-[42px] leading-[63px] font-semibold capitalize text-black w-full 2xl:max-w-full">
           Our hosting give you more <span className="pb-4 border-b-4 border-orange-500">Feature</span>
           </h2>
           <p className="text-[16px] font-light leading-[24px]">
           Lorem ipsum dolor sit amet consectetur. Condimentum turpis eleifend justo odio. Magna sagittis elementum maecenas.          </p>
         </div>
-        <div className="flex flex-row gap-4 mt-16  transition-all duration-500 h-full pb-32">
+        <div className="slide-reveal flex flex-row gap-4 mt-16  transition-all duration-500 h-full pb-32">
           {Array.from({ length: columns }, (_, columnIndex) => (
             <div key={columnIndex} className="flex flex-col w-full gap-8">
               {visibleTestimonials.map(

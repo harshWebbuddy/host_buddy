@@ -39,11 +39,11 @@ const page = () => {
         </section>
 
      
-        <section>
+        <section className='pt-40'>
 <Faqs/>
         </section>
         {/* caseStudies */}
-        <section>
+        <section className='pb-60 pt-10'>
           <CaseStudy/>
         </section>
      </main>
