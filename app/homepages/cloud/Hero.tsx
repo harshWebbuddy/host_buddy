@@ -3,8 +3,8 @@ import React from 'react';
 const Hero = () => {
   return (
     <div className='bg-gray-900  overflow-hidden'>
-   <div className=' hostingcontent_img bg-gray-900 opacity-90 mx-auto'>
-      <div className="content  mx-auto">
+   <div className='animate-fade-in hostingcontent_img bg-gray-900 opacity-90 mx-auto'>
+      <div className="content slide-reveal  mx-auto">
         <div className='cloudbuddy'>
            {/* 1//  */}
            <div className="w-[175px] h-[30px] mb-10">
