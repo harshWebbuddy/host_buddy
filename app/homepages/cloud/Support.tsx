@@ -52,7 +52,7 @@ const Support = () => {
     // }
   ];
   return (
-    <div className="w-full cloudbuddybackground  py-20 px-3 bg-black"   >
+    <div className="slide-reveal w-full cloudbuddybackground  py-20 px-3 bg-black"   >
                       {/* <img src="/cloudhosting/2.png" alt=""  className="-mt-20 w-[1920px] ml-60
                        h-[525px]
                          absolute opacity-10 " /> */}

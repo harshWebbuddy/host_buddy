@@ -4,7 +4,7 @@ import React from 'react'
 function Help() {
   return (
     <div className=" mx-auto">
-          <div className="space-y-5 mx-auto helpwidth">
+          <div className="space-y-5 mx-auto helpwidth slide-reveal">
             <div className="flex flex-col bl:flex-row items-center gap-5">
               <div className="w-full px-10 py-7   hover:bg-white bg-[#F5F5F5] flex items-center rounded-2xl cursor-pointer gap-6 hover:shadow-lg transition-all duration-500">
                 <Image src="\phone-call-svgrepo-com.svg" width={40} height={40} alt="Call Icon" />

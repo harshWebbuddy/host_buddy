@@ -32,7 +32,7 @@ interface BoxProps {
             <p>{paragraph}</p>
             
           </div>
-          <button className="button">Go API</button>
+          <div className="button">Go API</div>
           
         </div>
        
@@ -57,7 +57,7 @@ interface BoxProps {
       );      
   return (
    <div className='mx-auto'>
-     <div className='cloudfeatures mx-auto'>
+     <div className='cloudfeatures mx-auto slide-reveal'>
        <div className='cloudheadings mx-auto'> 
        <div className='cloudfeatures1'>
             <h2>Top-Notch Features</h2>

@@ -2,8 +2,8 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <div className='bg-[#16191C] overflow-hidden'>
-   <div className=' hostingcontent_img opacity-90 mx-auto'>
+    <div className='bg-gray-900  overflow-hidden'>
+   <div className=' hostingcontent_img bg-gray-900 opacity-90 mx-auto'>
       <div className="content  mx-auto">
         <div className='cloudbuddy'>
            {/* 1//  */}

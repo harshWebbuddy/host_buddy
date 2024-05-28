@@ -73,7 +73,7 @@ const Support = () => {
     // }
   ];
   return (
-    <div className="w-full hostbuddy  py-20 px-3">
+    <div className="w-full hostbuddy  py-20 px-3 slide-reveal">
                 <Image src="/dotted.svg" alt="" width={122.7} height={111.55} className="-ml-2 -mt-8 absolute opacity-0 2xl:opacity-100" />
 
       <div className="w-full max-w-[1220px] mx-auto">

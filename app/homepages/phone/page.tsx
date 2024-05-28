@@ -10,8 +10,8 @@ const page = () => {
   return (
     <div>
         <div><CustomPage/></div>
-        <div className='pt-12 pb-32'><Rating/></div>   
-        <div><Plan/></div>
+        <div className=''><Rating/></div>   
+        <div className='pt-40'><Plan/></div>
         <div className='pt-12'><Support/></div>
         <div className='pt-52'><Location/></div>
        <div className='pt-52'>

@@ -11,8 +11,8 @@ const page = () => {
   return (
     <div>
     <div><Hero/></div>
-    <div className='pt-12 pb-32'><Rating/></div>   
-        <div><Plan/></div>
+    <div className=''><Rating/></div>   
+        <div className='pt-40'><Plan/></div>
     <div className='pt-10 '><Support/></div>
 <div className='pt-40'><Features/></div>
 <div className='pt-28'>

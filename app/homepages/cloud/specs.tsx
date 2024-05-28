@@ -2,7 +2,7 @@ import React from 'react'
 
 const Specs = () => {
   return (
-    <div className='wholespecs mx-auo'>
+    <div className='wholespecs mx-auto slide-reveal'>
     <div className='specs mx-auto'>
       <div className='specs12 mx-auto'>
         <div className='specs1'>
