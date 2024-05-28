@@ -29,7 +29,7 @@ const page = () => {
         
     <div className='pt-56'><Location/>
     </div>
-       <div className='pt-56'>
+       <div className='pt-60'>
         <ContactForm/>
        </div>
      </main>
