@@ -11,15 +11,24 @@ import { caseStudies } from "../../(landing)/components/constants/casestudies";
 import { BsArrowRight } from "react-icons/bs";
 import Ratingpanel from "../../(landing)/components/Rating";
 import Plans from "../../(landing)/components/Plans";
+import { useRef } from "react";
 
 export default function HomeMainPage() {
+  const videoRef = useRef<HTMLVideoElement>(null); // Provide explicit type assertion
+
+  const handleVideoEnded = () => {
+    if (videoRef.current) {
+      videoRef.current.play(); // Access the play method
+    }
+  };
+  
   return (
     <main className="overflow-hidden">
       {/* hero section */}
 
-      <section className="h-full min-h-[80vh] overflow-hidden relative bg-black flex items-center justify-center">
+      <section className="h-full min-h-[60vh] overflow-hidden relative bg-black flex items-center justify-center">
     <img src="/home.jpg" width={1920} height={1080} alt="" className="w-full absolute inset-0 h-full opacity-30 object-cover bg-blend-color-dodge !z-[1]" />
-    <div className="max-w-[1300px] mx-auto text-white  px-10 pt-40 pb-10 2xl:py-40">
+    <div className="max-w-[1300px] mx-auto text-white  px-10 pt-40 pb-10 2xl:py-36">
       <div className="h-full flex items-center relative !z-[2] flex-col 2xl:flex-row justify-center gap-20">
         <div className="relative w-full flex flex-col justify-start items-start 2xl:justify-start space-y-5">
           <div className='relative w-full flex flex-col justify-start items-start 2xl:justify-start space-y-0'>
@@ -253,33 +262,8 @@ Premium Hardware</h1>
       </section>
       {/* Our featured case study section*/}
 
-      <section className="bg-[#F5F5F5] relative pt-20 pb-24">
-       <div className="max-w-[1360px] flex flex-row mx-auto items-center justify-center p-4">
-      <Image src="/microsoft/dotted.svg" alt="" width={100} height={100} className="ml-1 absolute right-0 top-20 opacity-50 2xl:visible sm:invisible" />
-      <div>   <h1 className="text-[42px] font-semibold">
-            Our Featured <span className="pb-4 border-b-4 border-orange-500">CaseStudy</span>
-          </h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-y-6 gap-x-4 pt-20">
-            {caseStudies.map((caseStudy, index) => (
-              <div key={index} className="space-y-6">
-                <Image src={caseStudy.image} alt="" width={500} height={500} className="w-full h-[240px] object-cover rounded-xl" />
-                <h1 className="text-xl font-bold leading-relaxed">{caseStudy.title}</h1>
-                <div className="relative max-w-fit flex flex-row group items-center justify-center !mt-4">
-                  <div className="flex items-center gap-x-3 pb-2">
-                    <p className="text-[16px] font-bold text-orange-500">Read more</p>
-                    <img src="/orangearrow.svg" className=" w-[11px] text-orange-500" />
-                  </div>
-                  <div className="bg-orange-500 h-0.5 absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-500" />
-                </div>
-              </div>
-            ))}
-          </div>
-          </div>
-    </div>
-  </section>
-
-      {/* Hire a pro section */}
-      <section className="py-24 2xl:py-36 px-4">
+      
+        <section className="py-24 2xl:py-2 px-4">
         <div className="max-w-[1360px] mx-auto item-center justify-center w-full">
           <div className="bg-[rgb(249,239,228)] 2xl:gap-0 w-full rounded-3xl mx-auto flex flex-col py-8 p-4 sm:p-5 md:p-10  2xl:p-20">
             <div className="flex gap-20 items-start justify-between">
@@ -289,8 +273,8 @@ Premium Hardware</h1>
                   <h1 className="text-orange-500 text-2xl font-bold">[ Pro Services ]</h1>
                 </div>
                 <div className="flex flex-col gap-4">
-                  <h2 className="text-[42px] font-semibold max-w-md">Hire a Pro - We'll Do It For You</h2>
-                  <p className="leading-loose">
+                  <h2 className="text-[42px] font-bold max-w-md">Hire a Pro - We'll Do It For You</h2>
+                  <p className="leading-loose font-medium">
                     Lorem ipsum dolor sit amet consectetur. Ornare et amet lobortis ornare. Ullamcorper accumsan donec eu condimentum diam a augue arcu.
                   </p>
                 </div>
@@ -314,13 +298,13 @@ Premium Hardware</h1>
                 </div>
               </div>
               <div className="w-full hidden 2xl:flex justify-end">
-                <Image src="/video.svg" alt="" width={430} height={430} />
+                <Image src="/video.svg" alt="" width={450} height={630} />
               </div>
             </div>
             <div className="flex flex-col 2xl:flex-row mt-5 gap-5">
               <div className="hidden 2xl:block ring-1 ring-[#16191C29] hover:ring-0 hover:bg-white p-10 transition-all duration-500 cursor-pointer rounded-3xl group space-y-3 2xl:max-w-[408px]">
-                <Image src="/hirebox1.svg" className="image" alt="Web Design Icon" width={100} height={100} />
-                <h2 className="text-black text-2xl leading-relaxed font-semibold">Web Design</h2>
+                <Image src="/hirebox2.svg" className="image" alt="Web Design Icon" width={100} height={100} />
+                <h2 className="text-black text-2xl leading-relaxed font-semibold">Web Development</h2>
                 <p className="text-[16px] leading-[24px] text-[#16191C]/70">Laoreet scelerisque euismod egestas suspendisse.</p>
                 <div className="bg-transparent p-4 w-16 ring-1 ring-[#16191C29] rounded-full group-hover:bg-orange-500 group-hover:text-white transition-all duration-300">
                       <BsArrowRight size={30} />
@@ -328,16 +312,16 @@ Premium Hardware</h1>
               </div>
               <div className="flex flex-col md:flex-row 2xl:-translate-y-20 gap-5">
                 <div className="ring-1 ring-[#16191C29] hover:ring-0 hover:bg-white p-10 transition-all duration-500 cursor-pointer rounded-3xl group space-y-3 2xl:max-w-[408px]">
-                  <Image src="/hirebox1.svg" className="image" alt="Web Design Icon" width={100} height={100} />
-                  <h2 className="text-black text-2xl leading-relaxed font-semibold">Web Design</h2>
+                  <Image src="/hirebox3.svg" className="image" alt="Web Design Icon" width={100} height={100} />
+                  <h2 className="text-black text-2xl leading-relaxed font-semibold">Site Management</h2>
                   <p className="text-[16px] leading-[24px] text-[#16191C]/70">Laoreet scelerisque euismod egestas suspendisse.</p>
                   <div className="bg-transparent p-4 w-16 ring-1 ring-[#16191C29] rounded-full group-hover:bg-orange-500 group-hover:text-white transition-all duration-300">
                       <BsArrowRight size={30} />
                     </div>
                 </div>
                 <div className="ring-1 ring-[#16191C29] hover:ring-0 hover:bg-white p-10 transition-all duration-500 cursor-pointer rounded-3xl group space-y-3 2xl:max-w-[408px]">
-                  <Image src="/hirebox1.svg" className="image" alt="Web Design Icon" width={100} height={100} />
-                  <h2 className="text-black text-2xl leading-relaxed font-semibold">Web Design</h2>
+                  <Image src="/hirebox4.svg" className="image" alt="Web Design Icon" width={100} height={100} />
+                  <h2 className="text-black text-2xl leading-relaxed font-semibold">SEO Marketing</h2>
                   <p className="text-[16px] leading-[24px] text-[#16191C]/70">Laoreet scelerisque euismod egestas suspendisse.</p>
                   <div className="bg-transparent p-4 w-16 ring-1 ring-[#16191C29] rounded-full group-hover:bg-orange-500 group-hover:text-white transition-all duration-300">
                       <BsArrowRight size={30} />
@@ -352,7 +336,9 @@ Premium Hardware</h1>
         </div>
       </section>
 
-      <section className="pt-0"> 
+      {/* Hire a pro section */}
+   
+      <section className="pt-40"> 
         <div className="max-w-[1360px] mx-auto p-4 pb-80">
           <div className="flex  flex-col space-y-12  xl:items-stretch 2xl:items-stretch pa:items-center pa:justify-center">
             <div className="flex flex-col md:flex-row gap-6 items-center justify-between">
@@ -363,42 +349,43 @@ Premium Hardware</h1>
                 Lorem ipsum dolor sit amet consectetur. Ornare et amet lobortis ornare. Ullamcorper accumsan donec eu condimentum diam a augue arcu.
               </p>
             </div>
-            <div className="space-y-5">
-              <div className="flex flex-col md:flex-row items-center gap-5">
-                <div className="w-full px-10 py-7 bg-[#F5F5F5] flex items-center rounded-2xl cursor-pointer gap-6 hover:shadow-lg transition-all duration-500">
-                  <Image src="/call.svg" width={40} height={40} alt="Call Icon" />
-                  <div className="bg-gray-500/10 w-[3px] h-20"></div>
-                  <div className="flex flex-col gap-2 w-full">
-                    <h2 className="text-2xl font-bold md:whitespace-nowrap">Sales Help</h2>
-                    <p className="text-lg leading-relaxed text-[#16191C]/70">24/7/365 Through the Chat Widget</p>{" "}
-                  </div>
-                </div>
-                <div className="w-full px-10 py-7 bg-[#F5F5F5] flex items-center rounded-2xl cursor-pointer gap-6 hover:shadow-lg transition-all duration-500">
-                  <Image src="/email.svg" width={40} height={40} alt="Call Icon" />
-                  <div className="bg-gray-500/10 w-[3px] h-20"></div>
-                  <div className="flex flex-col gap-2 w-full">
-                    <h2 className="text-2xl font-bold md:whitespace-nowrap">Support Chat</h2>
-                    <p className="text-lg leading-relaxed text-[#16191C]/70">24/7/365 Through the Chat Widget</p>{" "}
-                  </div>
-                </div>
-                <div className="w-full px-10 py-7 bg-[#F5F5F5] hidden 2xl:flex items-center rounded-2xl cursor-pointer gap-6 hover:shadow-lg transition-all duration-500">
-                  <Image src="/email.svg" width={40} height={40} alt="Call Icon" />
-                  <div className="bg-gray-500/10 w-[3px] h-20"></div>
-                  <div className="flex flex-col gap-2 w-full">
-                    <h2 className="text-2xl font-bold md:whitespace-nowrap">Support Email</h2>
-                    <p className="text-lg leading-relaxed text-[#16191C]/70">24/7/365 Through the Chat Widget</p>{" "}
-                  </div>
-                </div>
-              </div>
-              <div className="md:max-w-lg mx-auto w-full px-10 py-7 bg-[#F5F5F5] flex 2xl:hidden items-center rounded-2xl cursor-pointer gap-6 hover:shadow-lg transition-all duration-500">
-                <Image src="/message2.svg" width={40} height={40} alt="Call Icon" />
-                <div className="bg-gray-500/10 w-[3px] h-20"></div>
-                <div className="flex flex-col gap-2 w-full">
-                  <h2 className="text-2xl font-bold md:whitespace-nowrap">Support Email</h2>
-                  <p className="text-lg leading-relaxed text-[#16191C]/70">24/7/365 Through the Chat Widget</p>{" "}
-                </div>
-              </div>
+      <section className="space-y-5">
+        <div className="flex flex-col bl:flex-row items-center gap-5">
+          <div className="w-full px-10 py-7 bg-[#F5F5F5] flex items-center rounded-2xl cursor-pointer gap-6 hover:shadow-lg transition-all duration-500">
+            <Image src="/s3.svg" width={40} height={40} alt="Call Icon" />
+            <div className="bg-gray-500/10 w-[3px] h-20"></div>
+            <div className="flex flex-col gap-2 w-full">
+              <h2 className="text-2xl font-bold bl:whitespace-nowrap">Sales Help</h2>
+              <p className="text-lg leading-relaxed text-[#16191C]/70">24/7/365 Through the Chat Widget</p>
             </div>
+          </div>
+          <div className="w-full px-10 py-7 bg-[#F5F5F5] flex items-center rounded-2xl cursor-pointer gap-6 hover:shadow-lg transition-all duration-500">
+            <Image src="/s1.svg" width={40} height={40} alt="Call Icon" />
+            <div className="bg-gray-500/10 w-[3px] h-20"></div>
+            <div className="flex flex-col gap-2 w-full">
+              <h2 className="text-2xl font-bold bl:whitespace-nowrap">Support Chat</h2>
+              <p className="text-lg leading-relaxed text-[#16191C]/70">24/7/365 Through the Chat Widget</p>
+            </div>
+          </div>
+          <div className="w-full px-10 py-7 bg-[#F5F5F5] hidden 2xl:flex items-center rounded-2xl cursor-pointer gap-6 hover:shadow-lg transition-all duration-500">
+            <Image src="/s2.svg" width={40} height={40} alt="Call Icon" />
+            <div className="bg-gray-500/10 w-[3px] h-20"></div>
+            <div className="flex flex-col gap-2 w-full">
+              <h2 className="text-2xl font-bold bl:whitespace-nowrap">Support Email</h2>
+              <p className="text-lg leading-relaxed text-[#16191C]/70">24/7/365 Through the Chat Widget</p>
+            </div>
+          </div>
+        </div>
+        <div className="bl:max-w-lg mx-auto w-full px-10 py-7 bg-white flex 2xl:hidden items-center rounded-2xl cursor-pointer gap-6 hover:shadow-lg transition-all duration-500">
+          <Image src="\phone-call-svgrepo-com.svg" width={40} height={40} alt="Call Icon" />
+          <div className="bg-gray-500/10 w-[3px] h-20"></div>
+          <div className="flex flex-col gap-2 w-full">
+            <h2 className="text-2xl font-bold bl:whitespace-nowrap">Support Email</h2>
+            <p className="text-lg leading-relaxed text-[#16191C]/70">24/7/365 Through the Chat Widget</p>
+          </div>
+        </div>
+      </section>
+           
           </div>
         </div>
       </section>

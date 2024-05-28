@@ -475,6 +475,8 @@ const Plan2 = () => {
         </div>
     </div>
 </div>
+<img src="/zigdesign.svg" className='right-60 absolute translate-y-[1650px] opacity-100'/>
+
   </div>
   )
 }
