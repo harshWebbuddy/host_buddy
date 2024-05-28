@@ -122,9 +122,9 @@ const ContactForm: React.FC = () => {
               />
               <label htmlFor="agreeTerms">I have read and agree to the terms and conditions </label><span className="ml-2 mr-2 leading-21 font-extrabold"> - HostBuddy</span>
             </div>
-            <button type="submit" className="submith2 ">
-              Submit Ticket
-            </button>
+            <div className="bg-white border-orange-500 border flex flex-row w-44 rounded-xl p-3  items-center justify-center">
+              <h2 className="font-medium text-[20px]  leading-normal ">Submit Ticket</h2> <img src="/hosting/ArrowIcon.svg" className="pl-4 -mt-0.5 "/>
+          </div>
           </div>
         </form>
         <div className=" pt-[80px] pb-[260px]">

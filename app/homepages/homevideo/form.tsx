@@ -77,19 +77,20 @@ const ContactForm: React.FC = () => {
               />
             </div>
             <div className="w-full relative">
-              <select
-                id="selectedDocument"
-                name="selectedDocument"
-                value={formData.selectedDocument}
-                onChange={handleChange}
-                className="border border-gray-300 rounded-xl w-full h-[56px] px-4 text-left appearance-none"
-                required>
-                <option value="Select Document">Select Document</option>
-                <option value="Document 1">Document 1</option>
-                <option value="Document 2">Document 2</option>
-                <option value="Document 3">Document 3</option>
-              </select>
-            </div>
+      <select
+        id="selectedDocument"
+        name="selectedDocument"
+        value={formData.selectedDocument}
+        onChange={handleChange}
+        className="custom-select border border-gray-300 rounded-xl w-full h-[56px] px-4 text-left"
+        required
+      >
+        <option value="Select Document">Select Document</option>
+        <option value="Document 1">Document 1</option>
+        <option value="Document 2">Document 2</option>
+        <option value="Document 3">Document 3</option>
+      </select>
+    </div>
           </div>
           <div className="mt-4 items-center justify-center ml-1 w-full">
             <textarea
@@ -112,18 +113,18 @@ const ContactForm: React.FC = () => {
                 className="mr-4 h-6 w-6"
                 required
               />
-              <label htmlFor="agreeTerms">I have read and agree to the terms and conditions</label>
+              <label htmlFor="agreeTerms">I have read and agree to the terms and conditions </label><span className="ml-2 mr-2 leading-21 font-extrabold"> - HostBuddy</span>
             </div>
-            <button type="submit" className="submith2 ">
-              Submit Ticket
-            </button>
+            <div className=" border-orange-500 border flex flex-row w-40 rounded-xl p-3  bg-orange-500 items-center justify-center">
+              <h2 className="font-medium text-[20px]  leading-normal text-white">Submit Ticket</h2> 
+          </div>
           </div>
         </form>
         <div className=" pt-[80px] pb-[260px]">
           <div className="space-y-5">
             <div className="flex flex-col bl:flex-row items-center gap-5">
               <div className="w-full px-10 py-7 bg-white flex items-center rounded-2xl cursor-pointer gap-6 hover:shadow-lg transition-all duration-500">
-                <Image src="\phone-call-svgrepo-com.svg" width={40} height={40} alt="Call Icon" />
+                <Image src="/s3.svg" width={40} height={40} alt="Call Icon" />
                 <div className="bg-gray-500/10 w-[3px] h-20"></div>
                 <div className="flex flex-col gap-2 w-full">
                   <h2 className="text-2xl font-bold bl:whitespace-nowrap">Sales Help</h2>
@@ -131,7 +132,7 @@ const ContactForm: React.FC = () => {
                 </div>
               </div>
               <div className="w-full px-10 py-7 bg-white flex items-center rounded-2xl cursor-pointer gap-6 hover:shadow-lg transition-all duration-500">
-                <Image src="\phone-call-svgrepo-com.svg" width={40} height={40} alt="Call Icon" />
+                <Image src="/s1.svg" width={40} height={40} alt="Call Icon" />
                 <div className="bg-gray-500/10 w-[3px] h-20"></div>
                 <div className="flex flex-col gap-2 w-full">
                   <h2 className="text-2xl font-bold bl:whitespace-nowrap">Support Chat</h2>
@@ -139,7 +140,7 @@ const ContactForm: React.FC = () => {
                 </div>
               </div>
               <div className="w-full px-10 py-7 bg-white hidden 2xl:flex items-center rounded-2xl cursor-pointer gap-6 hover:shadow-lg transition-all duration-500">
-                <Image src="\phone-call-svgrepo-com.svg" width={40} height={40} alt="Call Icon" />
+                <Image src="/s2.svg" width={40} height={40} alt="Call Icon" />
                 <div className="bg-gray-500/10 w-[3px] h-20"></div>
                 <div className="flex flex-col gap-2 w-full">
                   <h2 className="text-2xl font-bold bl:whitespace-nowrap">Support Email</h2>

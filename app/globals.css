@@ -1833,7 +1833,16 @@ gap:10px;
   position: absolute;
   z-index: 10;
   width:auto;
+}.custom-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-position: right 1.5rem center; /* Adjust this value to move the arrow left */
+  background-repeat: no-repeat;
+  background-image: url('/arrowd.svg');
+  padding-right: 2.5rem; /* Ensure text does not overlap the arrow */
 }
+
 .cloudbuddy{
 
     position: relative;    margin-top:150px;
