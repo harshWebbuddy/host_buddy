@@ -1,10 +1,25 @@
+"use client"
 import Image from 'next/image';
-import React from 'react';
+import React, { useRef } from 'react';
+const HeroHosting = () => {  
+  const videoRef = useRef<HTMLVideoElement>(null); // Provide explicit type assertion
 
-const HeroHosting = () => {
+  const handleVideoEnded = () => {
+    if (videoRef.current) {
+      videoRef.current.play(); // Access the play method
+    }
+  };
   return (
     <section className="h-full min-h-[80vh] overflow-hidden relative bg-black space-y-40 flex flex-col items-center justify-center">
-<video src="/video.mp4" width={1920} height={1080} className="w-full absolute inset-0 h-full opacity-30 object-cover bg-blend-color-dodge !z-[1]" autoPlay  />
+<video
+      ref={videoRef}
+      src="/video.mp4"
+      width={1920}
+      height={1080}
+      className="w-full absolute inset-0 h-full opacity-30 object-cover bg-blend-color-dodge !z-[1]"
+      autoPlay
+      onEnded={handleVideoEnded} // Call handleVideoEnded function when the video ends
+    />
     <div className="absolute bottom-0 2xl:bottom-2 z-[2] w-full h-full flex flex-col space-y-3 2xl:space-y-10 justify-center items-center text-white">
         <h4 className="text-orange-500 font-bold italic">Domain Name Search</h4>
         <h2 className="font-semibold 2xl:font-bold text-2xl sm:text-5xl 2xl:text-7xl capitalize !mt-5 text-center">Find Your Dream Domain Name</h2>
