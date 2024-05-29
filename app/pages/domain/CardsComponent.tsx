@@ -4,9 +4,9 @@ import React from "react";
 
 const CardsComponent = () => {
   return (
-    <div className="space-y-28 p-4 max-w-[1300px] mx-auto pt-40 pb-32">
+    <div className="space-y-40 p-4 max-w-[1300px] mx-auto pt-40 pb-32">
      
-      <div className="w-full flex flex-col xl:flex-row-reverse space-y-16 items-center">
+      <div className="slide-reveal w-full flex flex-col xl:flex-row-reverse space-y-16 items-center">
       <div className="w-full flex justify-center">
           <div className="relative">
             <Image src="/domain/card1.svg" width={500} height={500} alt="" className="rounded-2xl relative z-10" />
@@ -15,11 +15,11 @@ const CardsComponent = () => {
         </div>
         <div className="w-full space-y-10 pr-10">
           <div className="w-full ">
-            <h2 className="text-[52px] leading-10 font-bold">Free Privacy Protection</h2>
+            <h2 className="text-[52px] leading-10 font-semibold">Free Privacy Protection</h2>
           </div>
           <ul className="w-full space-y-10">
             <li className="flex gap-4 items-start">
-              <p className="capitalize leading-6 text-[18px] font-light flex flex-col space-y-6">
+              <p className="capitalize leading-6 text-[16px] font-light flex flex-col space-y-6">
               <span>Lorem ipsum dolor sit amet consectetur. Integer sed suspendisse imperdiet enim feugiat id tortor turpis ipsum. Nunc ultrices iaculis fermentum in.</span>
             <span>   Non enim libero mattis elementum ornare pellentesque dui consequat. Etiam aliquam orci massa enim nunc egestas facilisis</span>
             <span> tincidunt purus. Quis tellus posuere donec nisi pulvinar eget. Integer proin facilisi proin facilisis urna. Ac elit metus fermentum diam cras. Id ut in nulla pellentesque facilisis. Lacus penatibus augue justo nunc tellus. Volutpat aliquam volutpat arcu suspendisse nunc aliquam eu morbi in. Et neque sit dui velit. </span>    </p>
@@ -32,7 +32,7 @@ const CardsComponent = () => {
         </div>
         
       </div>
-      <div className="w-full flex flex-col xl:flex-row gap-14 items-center">
+      <div className="slide-reveal w-full flex flex-col xl:flex-row gap-14 items-center">
       <div className="w-full flex justify-center">
           <div className="relative">
             <Image src="/domain/card2.svg" width={500} height={500} alt="" className="rounded-2xl relative z-10" />
@@ -57,7 +57,7 @@ const CardsComponent = () => {
         </div>
       
       </div>
-      <div className="w-full flex flex-col xl:flex-row-reverse gap-16 items-center">
+      <div className="slide-reveal w-full flex flex-col xl:flex-row-reverse gap-16 items-center">
       <div className="w-full flex justify-center">
           <div className="relative">
             <Image src="/card12.svg" width={500} height={500} alt="" className="rounded-2xl relative z-10 p-6" />

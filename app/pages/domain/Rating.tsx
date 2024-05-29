@@ -27,7 +27,7 @@ const StarRating: React.FC<StarRatingProps> = ({ initialRating = 0, onChange, co
     </div>
   );
 };
-const Ratingpanel = () => {
+const     Ratingpanel = () => {
   const handleRatingChange = (newRating: number) => {
     console.log("New rating:", newRating);
     // Handle the rating change logic here

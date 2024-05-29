@@ -9,6 +9,7 @@ import Faqs from './Faqs';
 import CaseStudy from './CaseStudy'
 import Features from './Features'
 import Adds from './adds'
+import Location from '@/app/(landing)/components/Locationpage'
 
 const page = () => {
   return (
@@ -40,9 +41,11 @@ const page = () => {
       
           <Testimonials/>
         </section>
-
+{/* <section>
+  <Location/>
+</section> */}
         {/* Question Answers */}
-        <section className="pt-20">
+        <section className="pt-40">
 <Faqs/>
         </section>
         {/* caseStudies */}

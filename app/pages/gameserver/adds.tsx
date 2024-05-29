@@ -58,7 +58,7 @@ const AddsResller: React.FC = () => {
 
   return (
     <section className=" relative">
-      <div className=" p-4 w-full max-w-[1420px] mx-auto flex flex-col md:flex-row items-center justify-center py-20">
+      <div className=" slide-reveal p-4 w-full max-w-[1420px] mx-auto flex flex-col md:flex-row items-center justify-center py-20">
         <div className="flex flex-col 2xl:flex-row mx-auto items-center justify-between">
           <div className="w-full space-y-16">
             <div className="space-y-3.5 pr-20">

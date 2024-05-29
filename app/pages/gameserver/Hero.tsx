@@ -8,7 +8,7 @@ const HeroHosting = () => {
     <img src="/home.jpg" width={1920} height={1080} alt="" className="w-full absolute inset-0 h-full rounded opacity-30 object-cover bg-blend-color-dodge !z-[1]" />
     <div className="max-w-[1250px] mx-auto text-white px-4 pt-40 pb-10 2xl:py-40">
       <div className="h-full flex items-center relative !z-[2] flex-col 2xl:flex-row justify-center gap-20">
-        <div className="relative w-full flex flex-col justify-center 2xl:justify-start space-y-5">
+        <div className="animate-slide-from-left relative w-full flex flex-col justify-center 2xl:justify-start space-y-5">
           <div className='relative w-full flex flex-col justify-center 2xl:justify-start space-y-0'><h2 className="font-mono-sans text-sm font-light italic leading-relaxed text-center 2xl:text-left">
             {/* <span className="text-white opacity-90 font-light">Welcome to </span> */}
             <span className="text-orange-500 font-bold">Game Server</span>
@@ -41,8 +41,8 @@ Solutions</h1>
           </p>
         </div>
 
-        <div className="w-full item-center justify-center">
-          <Image src="/gameserver/hero.svg" alt="" width={666} height={666} className="item-center justify-center mx-auto" />
+        <div className="animate-slide-from-right w-full item-center justify-center">
+          <Image src="/game.gif" alt="" width={666} height={666} className="item-center justify-center mx-auto" />
         </div>
       </div>
       <svg className='2xl:flex hidden w-20 absolute mx-auto top-[1115px] inset-0 items-center justify-center opacity-100 ' viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">

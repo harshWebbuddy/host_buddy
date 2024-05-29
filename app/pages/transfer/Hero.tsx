@@ -50,8 +50,8 @@ const HeroHosting = () => {
           </h2>
         </div>
       </div>
-      <div>
-        <h2 className='text-[18px] font-medium leading-[26px] text-white opacity-100'>Looking for a new domain name?   <span className='ml-2 font-bold text-orange-500'>  Try domain checker</span></h2>
+      <div className='translate-y-0'>
+        <h2 className='text-[18px] font-medium leading-[26px] text-white opacity-100'>Looking for a new domain name?   <span className='ml-2 font-bold text-orange-500 underline'>  Try domain checker</span></h2>
       </div>
   </section>
       );

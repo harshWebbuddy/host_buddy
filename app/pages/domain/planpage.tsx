@@ -328,7 +328,7 @@ export default function Features() {
 
   return (
     <div className="p-4 relative  mx-auto flex flex-col w-full items-center justify-center ">
-      <div className="max-w-[1350px] mx-auto space-y-28">
+      <div className="slide-reveal max-w-[1350px] mx-auto space-y-28">
         <div className="flex flex-col 2xl:flex-col  space-y-8 2xl:items-center justify-between ">
           {" "}
           <h2 className="text-[42px] leading-normal font-bold text-black w-full capitalize  text-center ">
@@ -342,7 +342,7 @@ export default function Features() {
           </h2>
         </div>
       
-        <div className="grid grid-cols-1 lg:grid-cols-2 bl:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 space-x-2 2xl:space-x-6   transition-all duration-500 h-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-4 gap-6 h-full">
           {items.map((item, index) => (
             <div
               key={index}

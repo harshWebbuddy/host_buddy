@@ -163,7 +163,7 @@ export default function Features() {
     <section className="2xl:x-20">
    <div className=" 2xl:border-roundedf bg-gradient-to-b from-[#292E34] to-[#16191C]   w-full">
     
-    <div className="p-4 relative  mx-auto flex flex-col w-full items-center justify-center pt-20 pb-4 ">
+    <div className="slide-reveal p-4 relative  mx-auto flex flex-col w-full items-center justify-center pt-20 pb-4 ">
       <div className="max-w-[1300px] mx-auto space-y-40">
       <div className="flex flex-col 2xl:flex-col  space-y-8 2xl:items-center justify-between ">
           <h2 className="text-[42px] leading-normal font-bold text-white w-full capitalize  text-center ">
@@ -171,21 +171,28 @@ export default function Features() {
           </h2>
          
           </div>
-<div className="grid grid-cols-1 lg:grid-cols-2 bl:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 space-x-2 2xl:space-x-6   transition-all duration-500 h-full">
+       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-6 h-full">
   {items.map((item, index) => (
-                    <div key={index} className="group relative bg-transparent  hover:bg-[#F9EFE4] border rounded-2xl space-y-12 mb-32">
-                    <div className=" featuresvg122  flex absolute -top-24 left-28 items-center justify-center mx-auto transition-all duration-300 ">
+    <div
+      key={index}
+      className="group relative bg-transparent hover:bg-[#F9EFE4] border rounded-2xl space-y-12 mb-32 transition-all duration-300"
+    >
+      <div className="flex absolute -top-24 left-1/2 transform -translate-x-1/2 items-center justify-center mx-auto transition-all duration-300">
         {item.icon}
       </div>
-      <div className=" rounded-2xl group space-y-2  cursor-pointer">
-        <h2 className="font-semibold text-[24px] leading-8 text-white group-hover:text-black text-center">{item.title}</h2>
-        <p className="leading-6 text-[15px] px-8 opacity-50 text-white group-hover:text-black text-center pb-8">
+      <div className="space-y-2 cursor-pointer text-center p-4">
+        <h2 className="font-semibold text-[24px] leading-8 text-white group-hover:text-black transition-all duration-300">
+          {item.title}
+        </h2>
+        <p className="leading-6 text-[15px] px-8 opacity-50 text-white group-hover:text-black transition-all duration-300 pb-8">
           {item.description}
         </p>
       </div>
     </div>
   ))}
 </div>
+
+
       </div>
      
     </div>

@@ -115,7 +115,7 @@ export default function Features() {
 
   return (
     <section className="2xl:x-20">
-   <div className=" 2xl:border-roundedf bg-gradient-to-b from-[#292E34] to-[#16191C]   w-full">
+   <div className="slide-reveal  2xl:border-roundedf bg-gradient-to-b from-[#292E34] to-[#16191C]   w-full">
     
     <div className="p-4 relative  mx-auto flex flex-col w-full items-center justify-center py-20 ">
       <div className="max-w-[1300px] mx-auto space-y-20">
@@ -128,7 +128,7 @@ export default function Features() {
           Wordwide infrastructure,innovative cloud computing and specialist expertise     </p>
         </div>
       
-<div className="grid grid-cols-1 lg:grid-cols-2 bl:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 space-x-2 2xl:space-x-6   transition-all duration-500 h-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-6 h-full">
   {items.map((item, index) => (
                     <div key={index} className="group relative bg-transparent  hover:bg-[#FF7500] border rounded-2xl space-y-12 mb-12">
                     <div className="absolute translate-x-44 -translate-y-6 featuresvg20  flex justify-center items-center rounded-xl transition-all duration-300 ">
