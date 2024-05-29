@@ -34,7 +34,7 @@ const page = () => {
         </section>
        
         
-        <section className='pt-40 pb-[350px]'>
+        <section className='pt-40 pb-96'>
           <CardsComponent/>
         </section>
       
@@ -43,7 +43,7 @@ const page = () => {
         </section>
 
         {/* Question Answers */}
-        <section className='pt-12'>
+        <section className='pt-36'>
 <Faqs/>
         </section>
         {/* caseStudies */}

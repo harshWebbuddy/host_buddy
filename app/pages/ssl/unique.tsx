@@ -50,7 +50,7 @@ const Unique = () => {
   <div className='h-full rounded-[10px] w-auto relative'>
    <img src='/ssl/plus.png'/>
   </div></div>
-  <h4 className="text-[24px] text-white pr-20 font-semibold font-mona-sans leading-[36px]">
+  <h4 className="text-[32px] text-white capitalize pr-20 font-semibold font-mona-sans leading-[46px]">
     Every SSL Certificate plan includes:<span className="text-orange-500"></span>
   </h4>
 </div>

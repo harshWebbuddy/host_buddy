@@ -5,7 +5,7 @@ const Uniquecpanel = () => {
     <section className="relative b">
       <div className="p-4 w-full max-w-[1350px] mx-auto ">
         <div className="flex flex-col 2xl:flex-row mx-auto items-center ">
-          <div className="w-full flex flex-col space-y-16">
+          <div className="slide-reveal w-full flex flex-col space-y-16">
             <div className="2xl::pr-96">
               <h2 className="text-[47px]  capitalize leading-[63px]  font-semibold text-black w-full 2xl:max-w-full">
               5 steps to consider if you manually 
