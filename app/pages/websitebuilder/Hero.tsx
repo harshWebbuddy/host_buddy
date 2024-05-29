@@ -37,7 +37,7 @@ const HeroHosting = () => {
           <div className="relative w-full flex flex-col justify-center 2xl:justify-start space-y-5 animate-left-to-right">
             <div className='relative w-full flex flex-col justify-center 2xl:justify-start space-y-0'>
               <h2 className="font-mono-sans text-sm font-light italic leading-relaxed text-center 2xl:text-left">
-                <span className="text-orange-500 font-bold ">India VPS Hosting</span>
+                <span className="text-orange-500 font-bold ">Window Hosting</span>
               </h2>
               <h1 className="font-mono-sans font-semibold text-[62px] leading-[84px] text-center 2xl:text-left ">
               AI Website Builder -Go Live in 4 Clicks

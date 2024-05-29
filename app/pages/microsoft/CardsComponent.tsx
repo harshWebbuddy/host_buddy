@@ -4,8 +4,8 @@ import React from "react";
 const CardsComponent = () => {
   return (
     <div className="bg-black w-full py-20">
-      <div className="  space-y-32 p-4 max-w-[1350px] mx-auto ">
-        <div className=" background-design w-full flex flex-col xl:flex-row-reverse justify-between gap-x-40 gap-y-20  items-center">
+      <div className="  space-y-40 p-4 max-w-[1350px] mx-auto ">
+        <div className=" slide-reveal background-design w-full flex flex-col xl:flex-row-reverse justify-between gap-x-40 gap-y-20  items-center">
          
         <div className="w-full flex justify-center">
             <div className="relative">
@@ -34,7 +34,7 @@ const CardsComponent = () => {
         </div>
     
         </div>
-       <div className=" background-design w-full flex flex-col xl:flex-row-reverse justify-between gap-y-20 gap-x-60   items-center">
+       <div className="slide-reveal  background-design w-full flex flex-col xl:flex-row-reverse justify-between gap-y-20 gap-x-60   items-center">
          
           <div className="w-full space-y-4">
            <div className="w-full">
@@ -70,7 +70,7 @@ const CardsComponent = () => {
            </div>
          </div>
        </div>
-       <div className=" background-design w-full flex flex-col xl:flex-row-reverse justify-between gap-y-20 gap-x-60   items-center">
+       <div className=" slide-reveal background-design w-full flex flex-col xl:flex-row-reverse justify-between gap-y-20 gap-x-60   items-center">
          
        <div className="w-full flex justify-center">
             <div className="relative">
@@ -106,7 +106,7 @@ const CardsComponent = () => {
 </ul>
          </div>
        </div>
-       <div className=" background-design w-full flex flex-col xl:flex-row-reverse justify-between gap-y-20 gap-x-40   items-center">
+       <div className=" slide-reveal background-design w-full flex flex-col xl:flex-row-reverse justify-between gap-y-20 gap-x-40   items-center">
          
        <div className="w-full space-y-4">
            <div className="w-full">
