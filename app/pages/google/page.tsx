@@ -27,11 +27,11 @@ const page = () => {
       <section className="pt-32">
         <Partner />
       </section>
-      <section className="pt-12">
+      <section className="pt-">
         <Adds />
       </section>
       {/* cardsection */}
-      <section>
+      <section className="pt-40">
         <Features />
       </section>
 
@@ -40,11 +40,11 @@ const page = () => {
       </section>
 
       {/* Question Answers */}
-      <section>
+      <section className="pt-20">
         <Faqs />
       </section>
       {/* caseStudies */}
-      <section>
+      <section className="pb-56">
         <CaseStudy />
       </section>
     </main>

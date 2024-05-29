@@ -5,7 +5,7 @@ const Security = () => {
   return (
     <div className="">
       <div className="  space-y-24 p-4 max-w-[1350px] mx-auto  ">
-        <div className=" background-design w-full flex flex-col xl:flex-row-reverse justify-between space-x-20 space-y-20  items-center">
+        <div className=" slide-reveal background-design w-full flex flex-col xl:flex-row-reverse justify-between space-x-20 space-y-20  items-center">
          
       
        

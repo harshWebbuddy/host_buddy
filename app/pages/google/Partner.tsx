@@ -48,7 +48,7 @@ export default function Partner() {
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center center"
     }} className="background w-full relative">
-    <div className="p-4 relative mx-auto flex flex-col w-full items-center justify-center pt-10 2xl:pt-20 mt-20 ">
+    <div className="slide-reveal p-4 relative mx-auto flex flex-col w-full items-center justify-center pt-10 2xl:pt-20 mt-20 ">
       <div className="max-w-[1360px] mx-auto">
       <div className="flex flex-col 2xl:flex-row gap-y-10 2xl:items-center justify-between">
           <h2 className="text-[42px] leading-normal font-bold text-white w-full 2xl:max-w-xl ">
@@ -63,15 +63,15 @@ export default function Partner() {
               {visibleTestimonials.map(
                 (testimonial, index) =>
                   index % columns === columnIndex && (
-                    <div key={index} className="group relative bg-[#363E44]  px-12 py-10 rounded-2xl space-y-5">
-                  <div className="flex flex-col gap-5 justify-between w-full">
+                    <div key={index} className="relative hover:bg-[#ffffff] bg-[#363E44] group  px-12 py-10 rounded-2xl space-y-5">
+                  <div className="flex flex-col gap-5 justify-between group w-full">
                     <div className="flex justify-between flex-row items-center">
-                    <h1 className="font-bold text-[24px] leading-[36px] text-white pt-4">{testimonial.author.names}</h1>
+                    <h1 className="font-bold text-[24px] leading-[36px] group-hover:text-black text-white pt-4">{testimonial.author.names}</h1>
                       <Image src={testimonial.author.image_url} alt="download" width={70} height={52} className="w-[70px] h-[52px]" draggable={false} />
                     </div>
                    
                   </div>
-                  <p className="leading-6 text-[16px] text-[#FFFFFF]/50">{testimonial.testimonial}</p>
+                  <p className="leading-6 text-[16px] text-[#FFFFFF]/50 group-hover:text-black">{testimonial.testimonial}</p>
                 </div>
                   )
               )}
