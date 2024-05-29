@@ -4,7 +4,7 @@ const Uniquecpanel = () => {
   return (
     <section className="relative b">
       <div className="p-4 w-full max-w-[1300px] mx-auto ">
-        <div className="flex flex-col 2xl:flex-row mx-auto items-center ">
+        <div className="slide-reveal flex flex-col 2xl:flex-row mx-auto items-center ">
           <div className="w-full flex flex-col space-y-20">
             <div>
               <h2 className="text-[42px] leading-[63px] font-semibold text-black w-full 2xl:max-w-full">

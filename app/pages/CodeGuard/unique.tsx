@@ -53,7 +53,7 @@ const Unique = () => {
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center center"
     }} className="background w-full relative">
-    <div className="p-4 w-full max-w-[1300px] mx-auto flex flex-col xl:flex-row items-center justify-center py-24">
+    <div className="slide-reveal p-4 w-full max-w-[1300px] mx-auto flex flex-col xl:flex-row items-center justify-center py-24">
       <div className="flex flex-col 2xl:flex-col mx-auto items-center justify-between ">
      
       <div className="w-full flex flex-col space-y-8">
