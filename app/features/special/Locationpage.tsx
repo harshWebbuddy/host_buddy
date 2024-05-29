@@ -965,7 +965,7 @@ const Locationpage = () => {
 
   return (
     <section className="bg-gradient-to-b from-[#292E34] to-[#16191C] w-full ">
-    <div className="w-full flex flex-col max-w-[1350px] mx-auto space-y-10 py-20 p-4">
+    <div className="slide-reveal w-full flex flex-col max-w-[1350px] mx-auto space-y-10 py-20 p-4">
 
       {/* Headline */}
       <div className="w-full flex flex-col xl:flex-row justify-between items-center gap-10">

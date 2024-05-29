@@ -7,7 +7,7 @@ const HeroHosting = () => {
     <img src="/home.jpg" width={1920} height={1080} alt="" className="w-full absolute inset-0 h-full opacity-30 object-cover bg-blend-color-dodge !z-[1]" />
    
     <div className="max-w-[1300px] mx-auto text-white  px-10 pt-40 pb-10 ">
-      <div className="h-full flex items-center relative !z-[2] flex-col 2xl:flex-row justify-center gap-20">
+      <div className="slide-reveal h-full flex items-center relative !z-[2] flex-col 2xl:flex-row justify-center gap-20">
         
         <div className="relative w-full flex flex-col justify-start items-start 2xl:justify-start space-y-5 2xl:space-y-8">
           <div className='relative w-full flex flex-col justify-start items-start 2xl:justify-start space-y-0'>

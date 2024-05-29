@@ -42,7 +42,7 @@ const Support = () => {
 
 
   return (
-  <div className="w-full bg-[#F9EFE4]   px-3 pt-20">
+  <div className="animate-fade-in w-full bg-[#F9EFE4]   px-3 pt-20">
 
       <div className="w-full flex flex-col max-w-[1220px] mx-auto !z-[20]">
       <div className="flex flex-col bl:flex-row justify-between gap-y-10 gap-x-30 items-center  pb-16">

@@ -45,7 +45,7 @@ export default function Features() {
     <div className="p-4 relative mx-auto flex flex-col w-full items-center justify-center opacity-100">
       <div className="max-w-[1360px] mx-auto">
        
-        <div className="flex flex-row gap-4 pt-20 overflow-hidden transition-all duration-500 h-full pb-20">
+        <div className="slide-reveal flex flex-row gap-4 pt-20 overflow-hidden transition-all duration-500 h-full pb-20">
           {Array.from({ length: columns }, (_, columnIndex) => (
             <div key={columnIndex} className="flex flex-col w-full gap-8">
               {visibleTestimonials.map(

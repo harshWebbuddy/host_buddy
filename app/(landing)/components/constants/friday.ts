@@ -1,7 +1,7 @@
 export const testimonials = [
     {
       author: {
-        image2: "/features/1.jpeg",
+        image2: "/friday1.svg",
         image_url: "/features/promo1.svg",
         names: "50% off Shared Hosting",
       },
@@ -11,7 +11,7 @@ export const testimonials = [
    
        {
         author: {
-          image2: "/features/1.jpeg",
+          image2: "/friday2.svg",
           image_url: "/features/promo1.svg",
           names: "50% off Shared Hosting",
         },
@@ -21,7 +21,7 @@ export const testimonials = [
     },
        {
         author: {
-          image2: "/features/1.jpeg",
+          image2: "/friday3.svg",
           image_url: "/features/promo1.svg",
           names: "50% off Shared Hosting",
         },
@@ -33,7 +33,7 @@ export const testimonials = [
   
     {
       author: {
-        image2: "/features/1.jpeg",
+        image2: "/friday4.svg",
         image_url: "/features/promo1.svg",
         names: "50% off Shared Hosting",
       },
@@ -43,7 +43,7 @@ export const testimonials = [
     },
     {
       author: {
-        image2: "/features/1.jpeg",
+        image2: "/friday5.svg",
         image_url: "/features/promo1.svg",
         names: "50% off Shared Hosting",
       },
@@ -52,7 +52,7 @@ export const testimonials = [
       
     },  {
       author: {
-        image2: "/features/1.jpeg",
+        image2: "/friday6.svg",
         image_url: "/features/promo1.svg",
         names: "50% off Shared Hosting",
       },
@@ -61,17 +61,7 @@ export const testimonials = [
       number: '03',
   
     },
-    {
-      author: {
-        image2: "/features/1.jpeg",
-        image_url: "/features/promo1.svg",
-        names: "50% off Shared Hosting",
-      },
-      testimonial:
-        "Wildcard SSL only $57.2/yr instead of $88/yr! Suitable for small & medium-sized businesses.",
-      number: '03',
   
-    },
      
    
   ];

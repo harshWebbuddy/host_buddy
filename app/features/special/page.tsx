@@ -16,25 +16,25 @@ const page = () => {
       <section>
         <HeroHosting/>
         </section>
-        <section>
+        <section className=''>
   <Features/>
 </section>
 <section>
   <Support/>
 </section>
         <section>
-        <div className="pt-60 ">
+        <div className="pt-60 pb-20 ">
           <Plans/>
         </div>
         </section>
 
         {/* plan page */}
-        <div className='pt-32 '>
+        <div className='pt-28'>
           <Locationpage/>
         </div>
    
        
-        <div>
+        <div className='pt-20 pb-10'>
 <ContactForm/></div>
      </main>
   )

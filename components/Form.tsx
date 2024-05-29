@@ -34,8 +34,8 @@ const ContactForm: React.FC = () => {
     });
   };
   return (
-    <section className="w-full pt-32">
-      <div className="w-full bl:max-w-[1219px] bl:h-[882px] pa:max-w-[1200px]  py-20 bl:py-20 pa:py-20  items-center justify-center mx-auto">
+    <section className="w-full ">
+      <div className="slide-reveal w-full bl:max-w-[1219px] bl:h-[882px] pa:max-w-[1200px]  py-20 bl:py-20 pa:py-20  items-center justify-center mx-auto">
         <div className="items-center justify-center mx-auto">
           <h2 className="font-mona-sans text-5xl font-semibold item text-center text-black mt-3">
             Full out the Contact Form
@@ -140,12 +140,12 @@ const ContactForm: React.FC = () => {
               <h2 className="text-[16px] leading-[24px]">I have read and accept the terms of the privacy policy - <span className="font-extrabold">HostBuddy</span>
               </h2></label>
             </div>
-            <button
-              type="submit"
-              className="bg-orange-500 text-white px-2 py-3 mt-7 bl:mt-0 rounded-md hover:bg-orange-600 h-[48px] font-semibold"
+            <div
+             
+              className="bg-orange-500 text-white px-4 py-3 mt-7 bl:mt-0 rounded-md hover:bg-orange-600 h-[48px] font-semibold"
             >
               Submit Ticket
-            </button>
+            </div>
           </div>
         </form>
     

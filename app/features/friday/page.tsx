@@ -11,22 +11,22 @@ const page = () => {
       {/* hero page  */}
       <section>
         <HeroHosting />
-        <div className="flex flex-wrap max-w-[1300px] justify-between  mx-auto items-center  pt-20">
-          <img src="/features/2.svg" className="items-center justify-center pt-2"/>
-          <img src="/features/3.svg" className=""/>
+        <div className="sldie-reveal flex flex-wrap max-w-[1300px] justify-between  mx-auto items-center  pt-20">
+          <img src="/features/2.svg" className="items-center justify-center "/>
+          <img src="/arrow.gif" className="w-40"/>
 
-          <img src="/features/4.svg" className=""/>
+          <img src="/features/4.svg" className="pt-4"/>
 
         </div>
       </section>
-      <section className="pt-36">
+      <section className="pt-10">
         <Features />
       </section>
       <section className="pt-40">
         <Black/>
       </section>
       <section>
-        <div className="pt-40 ">
+        <div className="pt-40 pb-20 ">
           <Plans />
         </div>
       </section>
