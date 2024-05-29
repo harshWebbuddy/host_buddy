@@ -8,11 +8,11 @@ export default function Uniquepanelpage() {
     return Array.from({ length: 10 }, (_, index) => (
       <div
         key={index}
-        className="w-full max-w-[1350px] mx-auto bg-[#F5F5F5] rounded-3xl mb-10"
+        className="slide-reveal w-full max-w-[1350px] mx-auto bg-[#F5F5F5] rounded-3xl mb-10 "
       >
         <div className="flex flex-col 2xl:flex-row items-center 2xl:p-2 2xl:gap-[85px]">
           <div className="w-full 2xl:p-0 p-8  grid grid-cols-1 xl:grid-cols-5 2xl:grid-cols-5 gap-x-0 gap-y-10 items-center justify-center">
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col 2xl:pl-20 items-center">
               <div className="space-y-1">
                 <Image
                   src="/com.svg"
@@ -68,7 +68,7 @@ export default function Uniquepanelpage() {
                 stroke-dasharray="2 2"
               />
             </svg>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col 2xl:pr-24 items-center">
               <div className="space-y-2.5">
                 <Image src="/tick12.svg" alt="" width={30} height={40} />
               </div>
@@ -82,7 +82,7 @@ export default function Uniquepanelpage() {
   return (
     <div className="relative mx-auto flex flex-col w-full items-center justify-center">
       <div className="max-w-[1350px] mx-auto">
-        <div className="flex flex-col 2xl:flex-row gap-y-10 2xl:items-center justify-between">
+        <div className="slide-reveal flex flex-col 2xl:flex-row gap-y-10 2xl:items-center justify-between">
           <h2 className="text-[42px] leading-[63px] font-semibold text-black w-full 2xl:pr-60 capitalize">
             Check our transfer prices below
           </h2>
@@ -93,11 +93,11 @@ export default function Uniquepanelpage() {
             felis parturient.
           </p>
         </div>
-        <div className="w-full max-w-[1350px] mx-auto rounded-3xl mt-20">
+        <div className="slide-reveal w-full max-w-[1350px] mx-auto rounded-3xl mt-20">
           <div className="flex flex-col 2xl:flex-row items-center p-10 gap-[85px]">
             <div className="w-full grid grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-x-40 gap-y-10 items-center justify-center">
               <div className="flex flex-col items-center">
-                <div className="space-y-1">
+                <div className="space-y-1 2xl:flex xl:flex hidden ">
                   <Image
                     src="/domains.svg"
                     alt=""
@@ -107,7 +107,7 @@ export default function Uniquepanelpage() {
                   />
                 </div>
               </div>
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center 2xl:flex xl:flex hidden">
                 <div className="space-y-2">
                   <Image
                     src="/transfer.svg"
@@ -118,7 +118,7 @@ export default function Uniquepanelpage() {
                   />
                 </div>
               </div>
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center 2xl:flex xl:flex hidden">
                 <div className="space-y-2.5">
                   <Image src="/privacy.svg" alt="" width={200} height={40} />
                 </div>

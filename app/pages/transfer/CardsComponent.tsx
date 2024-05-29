@@ -5,7 +5,7 @@ const CardsComponent = () => {
   return (
     <div className="bg-[#F9EFE4]">
       <div className="  space-y-24 p-4 max-w-[1350px] mx-auto py-20">
-      <div className=" background-design w-full flex flex-col xl:flex-row-reverse justify-between gap-x-40 gap-y-20  items-center">
+      <div className=" slide-reveal background-design w-full flex flex-col xl:flex-row-reverse justify-between gap-x-40 gap-y-20  items-center">
          
       <div className="w-full flex justify-center">
            <div className="relative">
