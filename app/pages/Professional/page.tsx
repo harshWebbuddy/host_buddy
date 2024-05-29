@@ -31,19 +31,19 @@ const page = () => {
         <section className='pt-40 pb-28'>
           <CardsComponent/>
         </section>
-        {/* <section>
+        <section className='pt-20'>
           <Features/>
-        </section> */}
-        <section>
+        </section>
+        <section >
           <Testimonials/>
         </section>
 
         {/* Question Answers */}
-        <section>
+        <section className='pt-20'>
 <Faqs/>
         </section>
         {/* caseStudies */}
-        <section>
+        <section className='pb-60'>
           <CaseStudy/>
         </section>
      </main>
