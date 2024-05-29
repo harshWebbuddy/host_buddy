@@ -5,7 +5,7 @@ import React from 'react'
 const Unique2 = () => {
   return (
     <section className=" relative">
-    <div className="p-4 w-full max-w-[1350px] mx-auto flex flex-col xl:flex-row items-center justify-center ">
+    <div className="slide-reveal p-4 w-full max-w-[1350px] mx-auto flex flex-col xl:flex-row items-center justify-center ">
       <div className="w-full flex flex-col 2xl:flex-row mx-auto items-center space-x-36 space-y-20 justify-center">
       <div className="pt-20 space-y-6">
 <div className="relative group space-y-3">
