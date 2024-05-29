@@ -5,7 +5,7 @@ const CardsComponent = () => {
   return (
     <div className="">
       <div className="  space-y-24 p-4 max-w-[1350px] mx-auto ">
-        <div className=" background-design w-full flex flex-col xl:flex-row-reverse justify-between gap-x-40 gap-y-20  items-center">
+        <div className="slide-reveal  background-design w-full flex flex-col xl:flex-row-reverse justify-between gap-x-40 gap-y-20  items-center">
          
         <div className="w-full flex justify-center">
             <div className="relative">
@@ -41,7 +41,7 @@ const CardsComponent = () => {
         </div>
       
         </div>
-        <div className=" background-design w-full flex flex-col xl:flex-row-reverse justify-between gap-y-20 gap-x-60   items-center">
+        <div className="slide-reveal  background-design w-full flex flex-col xl:flex-row-reverse justify-between gap-y-20 gap-x-60   items-center">
         <div className="w-full space-y-4">
            <div className="w-full">
           
@@ -78,7 +78,7 @@ const CardsComponent = () => {
          </div>
        
        </div>
-       <div className=" background-design w-full flex flex-col xl:flex-row-reverse justify-between gap-y-20 gap-x-60   items-center">
+       <div className="slide-reveal  background-design w-full flex flex-col xl:flex-row-reverse justify-between gap-y-20 gap-x-60   items-center">
          
         
          <div className="w-full flex justify-center">
@@ -116,7 +116,7 @@ const CardsComponent = () => {
 </ul>
          </div>
        </div>
-       <div className=" background-design w-full flex flex-col xl:flex-row-reverse justify-between gap-y-20 gap-x-40   items-center">
+       <div className="slide-reveal  background-design w-full flex flex-col xl:flex-row-reverse justify-between gap-y-20 gap-x-40   items-center">
        <div className="w-full space-y-4">
            <div className="w-full">
           

@@ -71,7 +71,7 @@ const Unique = () => {
     <div className="p-4 w-full max-w-[1300px] mx-auto flex flex-col xl:flex-row items-center justify-center py-24">
       <div className="flex flex-col 2xl:flex-col mx-auto items-center justify-between ">
      
-        <div className="w-full flex flex-col space-y-8">
+        <div className="slide-reveal w-full flex flex-col space-y-8">
           <div className="space-y-3.5 flex flex-col 2xl:flex-row pr-4">
             <h4 className="text-[42px] text-white font-semibold font-mona-sans leading-normal">
             Every Professional<span className="text-orange-500"> Email plan</span>  includes:
@@ -80,7 +80,7 @@ const Unique = () => {
          
           </div>
         </div>
-        <div className="flex flex-col md:flex-row gap-x-8 gap-y-14 bl:items-center justify-center mx-auto mt-20 bl:mt-16">
+        <div className="slide-reveal flex flex-col md:flex-row gap-x-8 gap-y-14 bl:items-center justify-center mx-auto mt-20 bl:mt-16">
   {items.map((item, index) => (
     <div key={index} className="relative flex-1 w-full gap-10 group">
    
