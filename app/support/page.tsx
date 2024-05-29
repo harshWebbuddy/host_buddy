@@ -11,7 +11,7 @@ const page = () => {
         <HeroHosting />
      
       </section>
-      <section className="pt-36 pb-80">
+      <section className="pb-80">
         <Features />
       </section>
 

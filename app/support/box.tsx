@@ -42,7 +42,7 @@ const box: React.FC = () => {
   };
   return (
     <section className="w-full  px-4  ">
-      <div className="w-full max-w-[1250px] items-center justify-center mx-auto pt-16">
+      <div className="slide-reveal w-full max-w-[1250px] items-center justify-center mx-auto pt-16">
         <form onSubmit={handleSubmit} className="w-full mt-10">
           <div className="flex flex-col bl:flex-row mt-4 items-center justify-center w-full gap-6">
             <div className="w-full h-[93px] flex flex-col">
@@ -98,28 +98,33 @@ const box: React.FC = () => {
             </div>
           </div>
           <div className="flex flex-col bl:flex-row mt-4 items-center justify-center w-full gap-6">
-            <div className="w-full h-[93px] flex flex-col">
-              <label
-                htmlFor="subject"
-                className="text-[14px] font-semibold mb-1"
-              >
-                Department
-              </label>
-              <select
-                id="subject"
-                name="subject"
-                value={formData.subject}
-                onChange={handleChange}
-                className="border border-gray-300 rounded-xl w-full h-[56px] px-4"
-                required
-              >
-                <option value="">General Enquiries</option>
-                <option value="General Inquiry">General Inquiry</option>
-                <option value="Technical Support">Technical Support</option>
-                <option value="Sales Inquiry">Sales Inquiry</option>
-                {/* Add more options as needed */}
-              </select>
-            </div>
+          <div className="w-full h-[93px] flex flex-col">
+  <label
+    htmlFor="subject"
+    className="text-[14px] font-semibold mb-1"
+  >
+    Department
+  </label>
+  <select
+    id="subject"
+    name="subject"
+    value={formData.subject}
+    onChange={handleChange}
+    className="border border-gray-300 rounded-xl w-full h-[56px] px-4 bg-white "
+    style={{
+      background: 'url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNC42NjY54LjA0OTcgOEE1LjUwNyA1LjUwNyAwIDAxOC0uNzcyYy0xLjU2NCAwLTIuODk4LjYzNi00LjAzMiAxLjc2MkwwIDhMNC42NjYgNS4zMzR6IiBmaWxsPSIjMDAwIi8+PC9zdmc+) no-repeat right 0.75rem center',
+      marginRight: '20rem'
+    }}
+    required
+  >
+    <option value="">General Enquiries</option>
+    <option value="General Inquiry">General Inquiry</option>
+    <option value="Technical Support">Technical Support</option>
+    <option value="Sales Inquiry">Sales Inquiry</option>
+    {/* Add more options as needed */}
+  </select>
+</div>
+
             <div className="w-full h-[93px] flex flex-col">
               <label
                 htmlFor="subject"
