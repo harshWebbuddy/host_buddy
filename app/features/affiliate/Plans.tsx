@@ -6,7 +6,7 @@ const Planpanel = () => {
   return ( 
         <section className=" relative">
         <div className="p-4 w-full max-w-[1330px] mx-auto flex flex-col xl:flex-row items-center justify-center ">
-          <div className="flex flex-col space-x-4 space-y-12 2xl:flex-row mx-auto items-center justify-between ">
+          <div className="slide-reveal flex flex-col space-x-4 space-y-12 2xl:flex-row mx-auto items-center justify-between ">
             <div className="w-full flex flex-col space-y-12">
               <div className="space-y-3.5">
                 <h4 className="text-[39px] text-black font-semibold 2xl:font-bold font-mona-sans leading-normal">

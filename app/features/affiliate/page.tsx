@@ -27,15 +27,10 @@ const page = () => {
         <div className='pt-20 2xl:pt-40'>  
       <Support/>
         </div>
-        <section className='pt-20 2xl:pt-40'>
+        <section className='pt-20 2xl:pt-40 pb-80'>
   <CardsComponent/>
 </section>
-      <section>
-        <Faqs/>
-      </section>
-        <section className=''>
-          <CaseStudy/>
-        </section>
+     
      </main>
   )
 }

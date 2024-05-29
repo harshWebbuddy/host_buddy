@@ -22,13 +22,13 @@ const page = () => {
         </section>
 
         {/* plan page */}
-        <div className='pt-32 '>
+        <div className='pt-40 '>
           <Locationpage/>
         </div>
-      <section>
+      <section className='pt-16'>
         <Faqs/>
       </section>
-        <section className=''>
+        <section className='pb-80 pt-40'>
           <CaseStudy/>
         </section>
      </main>

@@ -10,7 +10,7 @@ const Plans = () => {
  
 
   return (
-    <div className="flex flex-col max-w-[1300px] mx-auto">
+    <div className="slide-reveal flex flex-col max-w-[1300px] mx-auto">
       <div className="flex flex-col 2xl:flex-row justify-betweenitems-center ">
         <div className="relative w-full flex flex-row ">
           <h2 className="font-mona-sans font-semibold text-[42px] leading-[63px] w-full text-center bl:text-left">

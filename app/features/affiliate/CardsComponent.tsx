@@ -6,7 +6,7 @@ const CardsComponent = () => {
   return (
     <div className="space-y-28 p-4 max-w-[1300px] mx-auto ">
      
-      <div className="w-full flex flex-col xl:flex-row-reverse space-x-2 space-y-16 items-center">
+      <div className="slide-reveal w-full flex flex-col xl:flex-row-reverse space-x-2 space-y-16 items-center">
       <div className="w-full flex justify-center">
           <div className="relative">
             <Image src="/features/card1.svg" width={500} height={500} alt="" className="rounded-2xl w-full  relative z-10" />
@@ -29,7 +29,7 @@ const CardsComponent = () => {
         </div>
         
       </div>
-      <div className="w-full flex flex-col xl:flex-row-reverse gap-x-32  space-y-16 items-center">
+      <div className="slide-reveal w-full flex flex-col xl:flex-row-reverse gap-x-32  space-y-16 items-center">
       <div className="w-full space-y-8">
           <div className="w-full ">
           <h2 className="text-[52px] leading-16 font-medium 2xl:font-bold">Affiliate Assets</h2>
@@ -53,7 +53,7 @@ const CardsComponent = () => {
        
       
       </div>
-      <div className="w-full flex flex-col xl:flex-row-reverse gap-16 items-center">
+      <div className="slide-reveal w-full flex flex-col xl:flex-row-reverse gap-16 items-center">
       <div className="w-full flex justify-center">
           <div className="relative">
             <Image src="/features/card4.svg" width={500} height={500} alt="" className="rounded-2xl  w-full relative z-10" />
