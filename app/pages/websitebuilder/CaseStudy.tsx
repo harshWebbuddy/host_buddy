@@ -30,7 +30,7 @@ const Unique = () => {
   }, []);
 
   return (
-    <section className="relative bg-[#F5F5F5] py-20">
+    <section className="relative py-20">
       <div className="max-w-[1360px] flex flex-row mx-auto items-center justify-center p-4">
         <Image
           src="/microsoft/dotted.svg"

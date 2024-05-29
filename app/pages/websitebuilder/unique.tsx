@@ -6,7 +6,7 @@ const Unique = () => {
   return (
     <section className=" relative bg-gradient-to-b from-[#292E34] to-[#16191C] pt-20 pb-20">
     <div className="p-4 w-full max-w-[1350px] mx-auto flex flex-col xl:flex-row items-center justify-center py-2">
-      <div className="flex flex-col 2xl:flex-row mx-auto justify-center 2xl:justify-between space-y-20 items-center 2xl:space-x-52">
+      <div className="slide-reveal flex flex-col 2xl:flex-row mx-auto justify-center 2xl:justify-between space-y-20 items-center 2xl:space-x-52">
         <div className="w-full flex  space-y-16 flex-col">
         <div className="flex flex-col  2xl:items-start ">
           <h2 className="text-[36px] leading-[63px] font-semibold text-white w-full ">

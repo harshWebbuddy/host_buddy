@@ -44,7 +44,7 @@ export default function Features() {
   return (
     
     <div className="p-4 relative bg-[#F9EFE4] mx-auto flex flex-col w-full items-center justify-center pt-10 2xl:pt-20 mt-20 `">
-      <div className="max-w-[1360px] mx-auto space-y-10">
+      <div className="slide-reveal max-w-[1360px] mx-auto space-y-10">
         <div className="flex flex-col 2xl:flex-col gap-y-0 2xl:items-center">
         <h4 className="text-[42px] text-black font-semibold font-mona-sans leading-normal">
         Build More Than a Website
