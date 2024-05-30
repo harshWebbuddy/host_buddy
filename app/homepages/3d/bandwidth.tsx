@@ -7,10 +7,13 @@ const Support = () => {
       <div className="w-full max-w-[1300px] mx-auto flex flex-col gap-y-16 justify-start items-start">
         <div className="flex flex-col 2xl:flex-row justify-between 2xl:space-x-80">
           <div className="mx-auto flex flex-col justify-between">
-            <h4 className="text-[32px] md:text-4xl text-black font-semibold font-mona-sans leading-tight 2xl:leading-[63px]">
+            <h4 className="text-[32px] relative z-[20] md:text-4xl text-black font-semibold font-mona-sans leading-tight 2xl:leading-[63px]">
               Cloud Load  Balancing
-              <div className="p-4 bg-orange-500 border-orange-300 font-semibold normal-case w-48 absolute opacity-80 -translate-y-10 translate-x-[200px]"></div>
-            </h4>
+
+            
+            </h4><svg className="absolute translate-x-[200px] translate-y-6 z-[10]" width="190" height="35" viewBox="0 0 220 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="1.5299e-06" y1="17.5" x2="220" y2="17.5" stroke="#FF7500" stroke-width="35"/>
+</svg>
             <p className="text-black text-[15px] mt-2 opacity-80 font-light leading-[26px] pt-5">
               Lorem ipsum dolor sit amet consectetur. In in vel lacus amet habitasse urna. Curabitur ut consectetur massa in sem arcu.
             </p>

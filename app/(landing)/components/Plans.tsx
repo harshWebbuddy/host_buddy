@@ -260,7 +260,7 @@ const Plan2 = () => {
 </div>
 
 
-  <img src="/design3d.svg" className='right-60 absolute translate-y-[500px] opacity-100 overflow-hidden '/>
+  {/* <img src="/design3d.svg" className='right-60 absolute translate-y-[500px] opacity-100 overflow-hidden '/> */}
 
   </div>
   </div>
