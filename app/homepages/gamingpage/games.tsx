@@ -40,7 +40,7 @@ const Box: React.FC<BoxProps> = ({ imageSrc }) => {
 };
 const IndependentHoverBoxesVertical = () => {
   return (
-    <div className="w-full grid lg:grid-cols-0 lg:flex-col flex-col bl:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-x-8 gap-y-10 items-center justify-center " >
+    <div className="w-full grid lg:grid-cols-0 lg:flex-col flex-col bl:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 xl:grid-cols-3 2xl:grid-cols-3 gap-x-8 gap-y-10 items-center justify-center " >
       <Box imageSrc="/homegaming/games1.png" />
       <Box imageSrc="/homegaming/games3.png" />
       <Box imageSrc="/homegaming/games2.png" />
@@ -49,7 +49,7 @@ const IndependentHoverBoxesVertical = () => {
 };
 const Games = () => {
   return (
-    <div className=" items-center justify-center mx-auto flex flex-col space-y-10 pt-72  2xl:pt-96">
+    <div className="slide-reveal  items-center justify-center mx-auto flex flex-col space-y-10 pt-32  2xl:pt-64">
        <div className="w-full flex flex-col justify-between items-center gap-2">
         <h1 className="w-full  text-black font-mona-sans text-[42px] font-bold leading-relaxed text-center ">
         Choose From Over 3 Different Games

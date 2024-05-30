@@ -42,7 +42,7 @@ const Ratingpanel = () => {
   };
   return (
       <div className="w-full max-w-[1300px] mx-auto bg-transparent rounded-3xl mt-20">
-        <div className="flex flex-col 2xl:flex-row items-center p-10  2xl:space-x-12">
+        <div className="flex flex-col 2xl:flex-row items-center p-10  2xl:space-x-48">
           <div className="w-full max-w-fit font-mona-sans font-semibold text-center bl:text-left">
             <h3 className="font-bold text-[20px] 2xl:text-[24px] leading-[63px] text-white">Customer Happiness</h3>
           </div>
@@ -109,10 +109,10 @@ export default function HomeMainPage() {
     <main className="overflow-hidden">
       {/* hero section */}
 
-      <section className="h-full 2xl:min-h-[80vh] overflow-hidden relative bg-black flex items-center justify-center">
+      <section className="h-full min-h-[140vh] 2xl:min-h-[80vh] overflow-hidden relative bg-black flex items-center justify-center">
     <img src="/home.jpg" width={1920} height={1080} alt="" className="w-full absolute inset-0 h-full opacity-30 object-cover bg-blend-color-dodge !z-[1]" />
-    <div className="max-w-[1300px] mx-auto text-white  px-10 pt-40 pb-10 2xl:py-40">
-      <div className="h-full flex items-center relative !z-[2] flex-col 2xl:flex-row justify-center space-y-10 ">
+    <div className="max-w-[1300px] mx-auto text-white  px-10  pb-10 2xl:py-40">
+      <div className="h-full flex items-center relative !z-[2] flex-col  xl:flex-row 2xl:flex-row justify-center space-y-10 ">
         <div className="relative w-full flex flex-col justify-start items-start 2xl:justify-start space-y-5">
           <div className='relative w-full flex flex-col justify-start items-start 2xl:justify-start space-y-0'>
           <h2 className="font-mono-sans text-[16px] font-light italic leading-relaxed text-center 2xl:text-left">
@@ -159,25 +159,25 @@ export default function HomeMainPage() {
         </div>
 
         <div className="w-full item-center justify-center">
-          <img src="/gaming2.png" alt="" width={256} height={500} className="item-center justify-center mx-auto" />
+          <img src="/gaming2.png" alt="" width={256} height={500} className="item-center xl:flex   2xl:flex hidden justify-center mx-auto" />
         </div>
       </div>
     </div>  
-    <div className="-bottom-10 2xl:-bottom-10 absolute z-[20]"><Ratingpanel/></div>
+    <div className="slide-reveal -bottom-0 2xl:-bottom-10 absolute !z-[20]"><Ratingpanel/></div>
 
 </section>
-  <img src="/fringe.svg" className="w-full absolute z-[10] -translate-y-2 2xl:-translate-y-4"/>    
+  <img src="/fringe.svg" className="w-full absolute !z-[10] -translate-y-0 2xl:flex hidden 2xl:-translate-y-40"/>    
 
 <section>
   <Games/>
 </section>
 
       {/* What Makes HostBuddy Unique? */}
-     <section className="pt-40 pb-40"><svg className="w-full h-full bottom-0 translate-y-2 "  height="165" viewBox="0 0 1920 165" fill="none" xmlns="http://www.w3.org/2000/svg">
+     <section className="slide-reveal pt-40 pb-40"><svg className="w-full h-full bottom-0 translate-y-2 "  height="165" viewBox="0 0 1920 165" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M373.511 45.5L-1.88672 108.5V164.5L1921.89 161.5V106.5L1540.36 45.5L1597.73 89L1272.46 27.5L1335.95 72.5L957.215 0L578.476 74L642.527 27L316.143 89.5L373.511 45.5Z" fill="#FF7500"/>
 <path d="M354.574 53.5L-1.88672 110V162.5H1921.89V107L1562.64 54L1598.29 89.5L1300.87 38L1337.07 73L958.329 18L577.919 74.5L614.679 38.5L316.143 90L354.574 53.5Z" fill="#01131B"/>
 </svg>
-      <section className="bg-[#01131B] relative ">
+      <section className="bg-[#01131B] relative z-[2] ">
         <div className="p-4 w-full max-w-[1300px] mx-auto flex flex-col md:flex-row items-center justify-center py-20">
           <Image src="/dotted.svg" alt="" width={100} height={100} className="ml-1 absolute left-0 top-20 hidden 2xl:flex opacity-50" />
           <div className="flex flex-col space-y-10 mx-auto items-center justify-center ">
@@ -259,7 +259,7 @@ export default function HomeMainPage() {
           </div>
         </div>
       </section>
-      <svg className="w-full h-full -translate-y-4"   width="1920" height="105" viewBox="0 0 1920 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg className="w-full h-full -translate-y-4 relative z-[1]"   width="1920" height="105" viewBox="0 0 1920 105" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M1546.49 76.176L1921.89 36.2659L1921.89 0.790207L-1.88661 2.69078L-1.88661 37.533L379.638 76.1761L322.27 48.6191L647.54 87.579L584.046 59.0717L962.785 105L1341.52 58.1215L1277.47 87.8957L1603.86 48.3023L1546.49 76.176Z" fill="#FF7500"/>
 <path d="M1565.43 71.1086L1921.89 35.3162L1921.89 2.05775L-1.88661 2.05784L-1.88661 37.2168L357.359 70.7919L321.713 48.3029L619.135 80.9278L582.932 58.7555L961.671 93.5977L1342.08 57.8053L1305.32 80.6111L1603.86 47.9861L1565.43 71.1086Z" fill="#01131B"/>
 </svg>
@@ -279,14 +279,14 @@ export default function HomeMainPage() {
       <Faqs />
       </section>
       {/* Our featured case study section*/}
-<section className="pb-80">
+<section className="pb-80 slide-reveal ">
 <svg className="w-full" viewBox="0 0 1920 92" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M353.058 22.6022L-4 58.5745L-4.00001 92.0001L1923 92.0004L1923 56.6648L1563.15 22.9207L1598.86 45.5228L1300.94 12.7338L1337.2 35.0176L957.826 0.000168171L576.778 35.9725L613.6 13.052L314.563 45.8409L353.058 22.6022Z" fill="#F5F5F5"/>
 </svg>
 
      <section className="bg-[#F5F5F5] relative pt-20 ">
        <div className="max-w-[1360px] flex flex-row mx-auto items-center justify-center p-4">
-      <Image src="/microsoft/dotted.svg" alt="" width={100} height={100} className="ml-1 absolute right-0 top-20 opacity-50 2xl:visible sm:invisible" />
+      <Image src="/microsoft/dotted.svg" alt="" width={100} height={100} className="2xl:flex hidden ml-1 absolute right-0 top-20 opacity-50 2xl:visible sm:invisible" />
       <div>   <h1 className="text-[42px] font-semibold">
             Our Featured <span className="pb-4 border-b-4 border-orange-500">CaseStudy</span>
           </h1>
