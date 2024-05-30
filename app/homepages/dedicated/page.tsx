@@ -229,13 +229,13 @@ Premium Hardware</h1>
           <h4 className="text-[42px] text-center text-black font-semibold font-mona-sans leading-relaxed">
             Our <span className="pb-4 border-b-4 border-orange-500">Awards</span> & Recognition
           </h4>
-          <button className="relative max-w-fit hidden 2xl:flex flex-row group items-center justify-center">
+          <div className="relative max-w-fit hidden 2xl:flex flex-row group items-center justify-center">
             <div className="flex items-center gap-x-3">
               <p className="text-[16px] font-bold text-orange-500">See All Awards & Recognition </p>
               <BiChevronRight className="text-orange-500" />
             </div>
             <div className="bg-orange-500 h-0.5 absolute -bottom-1 left-0 w-0 group-hover:w-full transition-all duration-500" />
-          </button>
+          </div>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-8 bg-[#ebebeb] p-5 md:p-10 rounded-3xl">

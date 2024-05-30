@@ -16,9 +16,9 @@ interface AccordionItemProps {
 function AccordionItem({ title, children, isOpen, onClick }: AccordionItemProps) {
   return (
     <div className="flex flex-col text-left bg-[#F5F5F5] py-4 px-5 xl:px-10 xl:py-8 rounded-2xl">
-      <div onClick={onClick} className="cursor-pointer text-left flex flex-row items-center justify-between text-lg font-bold">
+      <div onClick={onClick} className="cursor-pointer text-left flex flex-row items-center justify-between text-lg font-bold transition-all duration-1000">
         {title}
-        <span className="p-4 hover:bg-[#eee] rounded-full transition-all duration-500">{isOpen ? <BiMinus size={30} /> : <BiPlus size={30} />}</span>
+        <span className="p-4 hover:bg-[#eee] rounded-full">{isOpen ? <BiMinus size={30} /> : <BiPlus size={30} />}</span>
       </div>
       <Collapse isOpened={isOpen}>
         <p className="leading-loose pt-4">{children}</p>
@@ -26,6 +26,7 @@ function AccordionItem({ title, children, isOpen, onClick }: AccordionItemProps)
     </div>
   );
 }
+
 
 const Faqs = () => {
   const [isOpen, setIsOpen] = useState(false);

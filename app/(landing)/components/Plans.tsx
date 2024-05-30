@@ -5,6 +5,7 @@ import React from 'react'
 import { IoIosArrowForward } from "react-icons/io";
 import { FaArrowRight } from "react-icons/fa";
 import Switch from "@mui/material/Switch";import { useInView } from "react-intersection-observer";
+import { ChangeEvent } from "react";
 
 const label = { inputProps: { "aria-label": "Switch demo" } };
 const Plan2 = () => {
@@ -20,8 +21,22 @@ const Plan2 = () => {
       }
   }, [inView]);
 
+  const [isChecked, setIsChecked] = useState(false);
 
-
+  const toggleCheckbox = () => {
+    setIsChecked((prev) => !prev);
+  };
+  function changeCircleColor(event: ChangeEvent<HTMLInputElement>) {
+    const circle = document.getElementById('circle');
+    if (circle) { // Check if circle is not null
+      if (event.target.checked) {
+        circle.setAttribute('fill', '#FF7500');
+      } else {
+        circle.setAttribute('fill', 'white');
+      }
+    }
+  }
+  
   return (
  <div> 
    <div className=''> 
@@ -39,14 +54,15 @@ const Plan2 = () => {
           Monthly
         </h2>
         <div className="toggle-container">
-  <input type="checkbox" id="toggle" className="toggle-input"/>
+  <input type="checkbox" id="toggle" className="toggle-input" onChange={changeCircleColor}/>
   <label htmlFor="toggle" className="toggle-label">
     <svg className="toggle-svg" width="72" height="34" viewBox="0 0 72 34" fill="#16191C" xmlns="http://www.w3.org/2000/svg">
       <rect className="toggle-background" opacity="0.15" y="0.5" width="72" height="33" rx="16.5" fill="#16191C"/>
-      <circle className="toggle-circle" cx="17.5" cy="17" r="10.5" fill="white"/>
+      <circle id="circle" className="toggle-circle" cx="17.5" cy="17" r="10.5" fill="white"/>
     </svg>
   </label>
 </div>
+
         <div>
           <h2 className="font-mona-sans text-base font-medium leading-[32px] tracking-[0.2px] text-right w-[52px] h-[32px] ">Yearly</h2>
         </div>
