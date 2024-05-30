@@ -6,7 +6,7 @@ const CardsComponent = () => {
     <div className="">
     
       <div className="space-y-20  flex flex-col  max-w-[1300px] mx-auto ">
-        <div className=" p-2 w-full flex flex-col xl:flex-row-reverse justify-between gap-x-20 gap-y-20  items-center">
+        <div className="slide-reveal  p-2 w-full flex flex-col xl:flex-row-reverse justify-between gap-x-20 gap-y-20  items-center">
          
         <div className="w-full flex justify-center">
             <div className="">
@@ -40,7 +40,7 @@ With<span className="text-orange-500"> HostBuddy</span></h2>
         </div>
       
         </div>
-        <div className=" p-2 w-full flex flex-col xl:flex-row-reverse justify-between gap-x-0 gap-y-20 2xl:gap-y-0 items-center">
+        <div className="slide-reveal  p-2 w-full flex flex-col xl:flex-row-reverse justify-between gap-x-0 gap-y-20 2xl:gap-y-0 items-center">
          
        
           <div className="w-full space-y-4">

@@ -176,7 +176,7 @@ Premium Hardware</h1>
           </div>
         </div>
         <div className="w-full flex justify-center animate-slide-from-right">
-          <Image src="/lady.svg" alt="" width={550} height={550} className="" />
+          <Image src="/lady2.svg" alt="" width={550} height={550} className="" />
         </div>
       </div>
     </div>

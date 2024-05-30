@@ -11,7 +11,7 @@ const Support = () => {
               Cloud Load  Balancing
 
             
-            </h4><svg className="absolute translate-x-[200px] translate-y-6 z-[10]" width="190" height="35" viewBox="0 0 220 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            </h4><svg className="2xl:flex hidden absolute translate-x-[200px] translate-y-6 z-[10]" width="190" height="35" viewBox="0 0 220 35" fill="none" xmlns="http://www.w3.org/2000/svg">
 <line x1="1.5299e-06" y1="17.5" x2="220" y2="17.5" stroke="#FF7500" stroke-width="35"/>
 </svg>
             <p className="text-black text-[15px] mt-2 opacity-80 font-light leading-[26px] pt-5">
@@ -28,14 +28,19 @@ const Support = () => {
             />
           </svg>
         </div>
-        <div className="w-full grid grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 gap-x-0 gap-y-10 items-center justify-center">
+        <div className="w-full grid grid-cols-7 xl:grid-cols-7 2xl:grid-cols-7 gap-x-0 gap-y-10 items-center justify-center">
             <div className="flex flex-col items-center">
               <div className="space-y-2">
                 <Image src="/b1.svg" alt="" width={150} height={40} />
                
               </div>
           </div>
+          <div className="flex flex-col items-center">
+            <div className="space-y-1">
+              <Image src="/left1.gif" alt="" width={200} height={200} className="-mb-3" />
           
+            </div>
+          </div>
 
           <div className="flex flex-col items-center">
             <div className="space-y-1">
@@ -43,12 +48,12 @@ const Support = () => {
           
             </div>
           </div>
-          {/* <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center">
             <div className="space-y-1">
-              <Image src="/arrowv.svg" alt="" width={100} height={40} className="-mb-3" />
+              <Image src="/left1.gif" alt="" width={200} height={200} className="-mb-3" />
           
             </div>
-          </div> */}
+          </div>
          
           <div className="flex flex-col items-center">
           <div className="space-y-2">
@@ -57,10 +62,15 @@ const Support = () => {
               
             </div>
           </div>  
-         
+          <div className="flex flex-col items-center">
+            <div className="space-y-1">
+              <Image src="/left1.gif" alt="" width={200} height={200} className="-mb-3" />
+          
+            </div>
+          </div>
           <div className="flex flex-col items-center">
           <div className="space-y-2.5">
-              <Image src="/b4.svg" alt="" width={100} height={40} />
+              <Image src="/b4.svg" alt="" width={150} height={100} />
            
             </div>
           </div>

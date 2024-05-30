@@ -31,7 +31,7 @@ const ContactForm: React.FC = () => {
   };
   return (
     <section className="w-full   ">
-      <div className="w-full max-w-[1250px] items-center justify-center mx-auto ">
+      <div className="slide-reveal w-full max-w-[1250px] items-center justify-center mx-auto ">
         <div className="items-start justify-start space-y-6">
           <h2 className="font-mona-sans text-5xl font-semibold  text-black mt-3 text-left">Leave a Comment</h2>
           <p className="text-left">We will help you to choose the best plan!</p> </div>

@@ -332,7 +332,7 @@ const AddsResller: React.FC = () => {
 
 const PageSecond = () => {
   return (
-    <section className="w-full item-center justify-center mx-auto max-w-[1270px]">
+    <section className="slide-reveal w-full item-center justify-center mx-auto max-w-[1270px]">
             <div className="flex flex-col w-full  space-y-2">
               <h1 className="w-full font-mono-sans   font-semibold text-[12px] md:text-[22px] 2xl:text-[32px] leading-tight md:leading-[64px] 2xl:leading-[84px] text-left">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit.

@@ -28,7 +28,7 @@ const Faqs = () => {
   const [currentItem, setCurrentItem] = useState(0);
 
   return (
-    <div className="w-full max-w-[1360px] mx-auto mt-20 p-4">
+    <div className="slide-reveal w-full max-w-[1360px] mx-auto mt-20 p-4">
       <div className="">
         <h2 className="text-[42px] leading-normal font-mono-sans text-black font-semibold">
           Your Web Hosting Questions <span className="pb-4 border-b-4 border-orange-500">Answered</span>{" "}

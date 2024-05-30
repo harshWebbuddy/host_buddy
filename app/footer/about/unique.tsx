@@ -49,7 +49,7 @@ const Stands = () => {
   ];
   return (
     <div className="w-full">
-      <div className="w-full max-w-[1300px] mx-auto space-y-20">
+      <div className="slide-reveal w-full max-w-[1300px] mx-auto space-y-20">
         <div className="mx-auto bl:flex flex-row justify-between">
           <h2 className="text-3xl md:text-4xl 2xl:text-5xl 2xl:text-left text-center text-black font-semibold font-mona-sans leading-[63px]">
           <span className="pb-4 border-b-4 border-orange-500 font-semibold normal-case ">Our Strength</span>s        

@@ -5,7 +5,7 @@ const CardsComponent = () => {
   return (
     <div className="">
     
-      <div className="space-y-20  flex flex-col  max-w-[1300px] mx-auto ">
+      <div className="slide-reveal space-y-20  flex flex-col  max-w-[1300px] mx-auto ">
         <div className=" p-2 w-full flex flex-col xl:flex-row-reverse justify-between gap-x-20 gap-y-20  items-center">
          
         <div className="w-full flex justify-center">

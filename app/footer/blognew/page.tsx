@@ -17,7 +17,7 @@ const page = () => {
           <Ratingpanel/>
           <CardsComponent/>
         </div>
-       <section className='py-16'> <div className='w-full  flex flex-row p-6 justify-between rounded-2xl border max-w-[1250px] mx-auto'>
+       <section className='py-16'> <div className='slide-reveal w-full  flex flex-row p-6 justify-between rounded-2xl border max-w-[1250px] mx-auto'>
           <h2 className='text-[18px] text-[#16191C]/60'>
           Business,
 Technology,
