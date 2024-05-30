@@ -8,6 +8,8 @@ import { useState } from "react";
 import ContactForm from "./Form";
 import Games from "./games";
 import Location21 from "./Location21";
+import Panel from "./panel";
+import ImageSlider from "./ImageSlider";
 
 interface StarRatingProps {
   initialRating?: number;
@@ -105,6 +107,11 @@ const Ratingpanel = () => {
   );
 };
 export default function HomeMainPage() {
+  const images = [
+    '/homegaming/games1.png',
+    '/homegaming/games3.png',
+    '/homegaming/panel.svg',
+  ];
   return (
     <main className="overflow-hidden">
       {/* hero section */}
@@ -170,6 +177,7 @@ export default function HomeMainPage() {
 
 <section>
   <Games/>
+  {/* <Panel/> */}
 </section>
 
       {/* What Makes HostBuddy Unique? */}
@@ -192,7 +200,7 @@ export default function HomeMainPage() {
           By trusting us with your business and projects needs, we promise a 99.9% uptime on any services we provide, outside of any standard.
             </p>
         </div>
-            <div className="w-full flex flex-col 2xl:flex-row justify-center">
+            <div className="w-full flex flex-col space-y-10  2xl:flex-row justify-center">
             <div className="space-y-2 2xl:max-w-xl 2xl:pr-10">
           <div className="relative group space-y-3">
   <div className="cursor-pointer flex w-full group hover:bg-white transition-all duration-300 border-gradient hover:shadow-2xl rounded-xl">
@@ -227,7 +235,7 @@ export default function HomeMainPage() {
         <p className="font-mona-sans text-[16px] font-normal leading-normal text-left text-white group-hover:text-[#16191C]/70">
         Euismod egestas suspendisse aliquet amet ultrices faucibus mauris sit odio.        </p>
       </div>
-    </div>zzzzzzz
+    </div>
   </div>
 </div>
 <div className="relative group space-y-3">
@@ -254,7 +262,8 @@ export default function HomeMainPage() {
   </div>
 </div>
           </div>
-              <Image src="/gamingpng.svg" alt="" width={550} height={550} className="" />
+              {/* <Image src="/gamingpng.svg" alt="" width={550} height={550} className="" /> */}
+              <ImageSlider images={images} />
             </div>
           </div>
         </div>
