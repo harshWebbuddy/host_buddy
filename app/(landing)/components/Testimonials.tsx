@@ -110,11 +110,12 @@ export default function Testimonials() {
    
       <img src="/fog2.svg" className="absolute top-48 rotate-180   select-none" draggable={false} />
       <div className="w-full h-40 bg-gradient-to-b from-[#171B1E00] via-[#181B1E]/80 to-[#181B1E] absolute bottom-0 left-0 right-0 flex justify-center items-center">
-        <div className="relative z-[5] max-w-fit flex flex-row group mt-5" onClick={() => setViewAll(!viewAll)}>
+         <div className="relative z-[5] max-w-fit flex flex-row group mt-5" onClick={() => setViewAll(!viewAll)}>
           <div className="flex items-center gap-x-3 pb-2">
             <p className="text-[16px] font-bold text-orange-500">{viewAll ? "View Less" : "View All Testimonials"}</p>
             <BiChevronRight className="text-orange-500" size={20} />
           </div>
+          <div className="bg-orange-500 h-0.5 absolute -bottom-1 left-0 w-0 group-hover:w-full transition-all duration-500" />
         </div>
         <img src="/fog.svg" className="absolute bottom-0 select-none" draggable={false} />
       </div>
