@@ -233,7 +233,7 @@ const Plan2 = () => {
             </p>
         </div>
     </div>
-    <div className="w-[172px] border-t border-gray-200 rotate-90"></div>
+    <div className="w-[172px] border-t border-gray-200 rotate-90 2xl:flex hidden"></div>
     <div className="flex flex-col item-center justify-center mx-auto slide-item">
         <div>
             <h2 className="text-orange-500 font-mona-sans font-extrabold text-7xl text-center">1.5M+</h2>
@@ -245,7 +245,7 @@ const Plan2 = () => {
             </p>
         </div>
     </div>
-    <div className="w-[172px] border-t border-gray-200 rotate-90"></div>
+    <div className="w-[172px] border-t border-gray-200 rotate-90 2xl:flex hidden"></div>
     <div className="flex flex-col item-center justify-center mx-auto slide-item">
         <div>
             <h2 className="text-orange-500 font-mona-sans font-extrabold text-7xl text-center">96%</h2>
