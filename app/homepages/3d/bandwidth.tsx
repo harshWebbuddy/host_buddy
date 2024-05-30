@@ -5,7 +5,7 @@ const Support = () => {
   return (
     <div className="w-full bg-[#F9EFE4] py-20 px-3">
       <div className="w-full max-w-[1300px] mx-auto flex flex-col gap-y-16 justify-start items-start">
-        <div className="flex flex-col 2xl:flex-row justify-between 2xl:space-x-80">
+        <div className="slide-reveal flex flex-col 2xl:flex-row justify-between 2xl:space-x-80">
           <div className="mx-auto flex flex-col justify-between">
             <h4 className="text-[32px] relative z-[20] md:text-4xl text-black font-semibold font-mona-sans leading-tight 2xl:leading-[63px]">
               Cloud Load  Balancing
@@ -28,7 +28,7 @@ const Support = () => {
             />
           </svg>
         </div>
-        <div className="w-full grid grid-cols-7 xl:grid-cols-7 2xl:grid-cols-7 gap-x-0 gap-y-10 items-center justify-center">
+        <div className="slide reveal w-full grid grid-cols-7 xl:grid-cols-7 2xl:grid-cols-7 gap-x-0 gap-y-10 items-center justify-center">
             <div className="flex flex-col items-center">
               <div className="space-y-2">
                 <Image src="/b1.svg" alt="" width={150} height={40} />

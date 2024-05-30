@@ -18,7 +18,7 @@ export default function HomeMainPage() {
       {/* hero section */}
 
       <section className="h-full min-h-[80vh] overflow-hidden relative bg-black flex flex-col items-center justify-center">
-    <div className="max-w-[1300px] mx-auto text-white  px-10 pt-40 pb-10 2xl:py-40">
+    <div className="slide-reveal max-w-[1300px] mx-auto text-white  px-10 pt-40 pb-10 2xl:py-40">
       <div className="h-full flex items-center relative !z-[2] flex-col 2xl:flex-row justify-center gap-20">
         <div className="relative w-full flex flex-col justify-start items-start 2xl:justify-start space-y-5">
           <div className='relative w-full flex flex-col justify-start items-start 2xl:justify-start space-y-0'>
@@ -176,7 +176,7 @@ Premium Hardware</h1>
           </div>
         </div>
         <div className="w-full flex justify-center animate-slide-from-right">
-          <Image src="/lady2.svg" alt="" width={550} height={550} className="" />
+          <Image src="/lady3.png" alt="" width={550} height={550} className="" />
         </div>
       </div>
     </div>
@@ -193,8 +193,7 @@ Premium Hardware</h1>
 
 
       <section className="relative pt-40 pb-72">
-       <div className="max-w-[1360px] flex flex-row mx-auto items-center justify-center p-4">
-      <Image src="/microsoft/dotted.svg" alt="" width={100} height={100} className="ml-1 absolute right-0 top-20 opacity-50 2xl:visible sm:invisible" />
+       <div className="slide-reveal max-w-[1360px] flex flex-row mx-auto items-center justify-center p-4">
       <div>   <h1 className="text-[42px] font-semibold">
             Our Featured <span className="pb-4 border-b-4 border-orange-500">CaseStudy</span>
           </h1>
