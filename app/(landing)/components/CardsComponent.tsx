@@ -1,7 +1,22 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const CardsComponent = () => {
+  const [translateX, setTranslateX] = useState(0);
+  const [direction, setDirection] = useState(1);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // Toggle direction when reaching boundaries
+      if (translateX >= 10 || translateX <= -10) {
+        setDirection((prevDirection) => -prevDirection);
+      }
+      // Update translateX based on direction
+      setTranslateX((prevTranslateX) => prevTranslateX + direction);
+    }, 100); // Adjust animation speed here
+
+    return () => clearInterval(interval);
+  }, [translateX, direction]);
   return (
     <div className="slide-reveal space-y-32 2xl:space-y-10 p-4">
       <div className="w-full flex flex-col xl:flex-row space-y-10 space-x-10 items-center">
@@ -37,18 +52,22 @@ const CardsComponent = () => {
           </ul>
         </div>
         <div className="w-full flex justify-center">
-          <div className="relative">
-            <Image src="/cards1.jpg" width={500} height={500} alt="" className="rounded-2xl relative z-10" />
-            <Image src="/card1triangle.svg" width={70} height={70} alt="" className="absolute -top-10 -right-10" />
-            <Image src="/bigsquare.svg" alt="" width={300} height={302} className="absolute -left-10 -bottom-10" />
-          </div>
+        <div className="relative">
+      <Image src="/cards1.jpg" width={500} height={500} alt="" className="rounded-2xl relative z-10" />
+      <div style={{ transform: `translateX(${translateX}px)` }}>
+        <Image src="/card1triangle.svg" width={70} height={70} alt="" className="absolute -top-96 -right-10" />
+      </div>
+      <Image src="/bigsquare.svg" alt="" width={300} height={302} className="absolute -left-10 -bottom-10" />
+    </div>
         </div>
       </div>
       <div className="w-full flex flex-col xl:flex-row space-y-10 space-x-16 items-center">
       <div className="w-full flex justify-center">
           <div className="relative">
             <Image src="/cards2.jpg" width={500} height={500} alt="" className="rounded-2xl relative z-10" />
-            <Image src="/cards2triangle.svg" width={100} height={100} alt="" className="absolute -top-10 -left-10" />
+            <div style={{ transform: `translateX(${translateX}px)` }}>
+   <Image src="/cards2triangle.svg" width={100} height={100} alt="" className="absolute -top-96 -left-14" />
+   </div>
             <Image src="/bigsquare.svg" alt="" width={300} height={302} className="absolute -right-10 -bottom-10" />
           </div>
         </div>
@@ -119,8 +138,9 @@ const CardsComponent = () => {
         </div>
         <div className="w-full flex justify-center">
           <div className="relative">
-            <Image src="/card-3.png" width={500} height={500} alt="" className="rounded-2xl relative z-10" />
-            <Image src="/card3.svg" width={150} height={150} alt="" className="absolute -top-10 -left-10 z-[12]" />
+            <Image src="/card-3.png" width={500} height={500} alt="" className="rounded-2xl relative z-[10]" />
+            <div style={{ transform: `translateX(${translateX}px)` }} className="!z-[20] relative">
+ <Image src="/card3.svg" width={150} height={150} alt="" className="z-[10] absolute -top-[450px] -left-12 " /></div>
             <Image src="/bigsquare.svg" alt="" width={300} height={302} className="absolute -left-10 -bottom-10" />
           </div>
         </div>
@@ -129,7 +149,8 @@ const CardsComponent = () => {
       <div className="w-full flex justify-center">
           <div className="relative">
             <Image src="/cards-4.png" width={500} height={500} alt="" className="rounded-2xl relative z-10" />
-            <Image src="/cards4.svg" width={200} height={200} alt="" className="absolute -top-10 -left-20" />
+            <div style={{ transform: `translateX(${translateX}px)` }} className="!z-[1] relative">
+ <Image src="/cards4.svg" width={200} height={200} alt="" className="absolute -top-[400px] -left-20" /></div>
             <Image src="/bigsquare.svg" alt="" width={300} height={302} className="absolute -right-10 -bottom-10" />
           </div>
         </div>

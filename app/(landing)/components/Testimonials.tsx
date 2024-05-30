@@ -2,9 +2,10 @@
 
 import { Star } from "@/components/svgs";
 import Image from "next/image";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import { BiChevronRight } from "react-icons/bi";
-import { testimonials as initialTestimonials } from "./constants/testimonials";
+import { testimonials } from "../../(landing)/components/constants/testimonials";
+import { motion } from "framer-motion";
 
 export default function Testimonials() {
   const initializeColumns = () => {
@@ -22,22 +23,7 @@ export default function Testimonials() {
 
   const [columns, setColumns] = useState(initializeColumns() || 3);
   const [viewAll, setViewAll] = useState(false);
-  const [visibleTestimonials, setVisibleTestimonials] = useState(initialTestimonials.slice(0, 9));
-  const containerRef = useRef<HTMLDivElement | null>(null);
-
-  const loadMoreTestimonials = () => {
-    const moreTestimonials = initialTestimonials.slice(visibleTestimonials.length, visibleTestimonials.length + 9);
-    setVisibleTestimonials((prev) => [...prev, ...moreTestimonials]);
-  };
-
-  const handleScroll = () => {
-    if (containerRef.current) {
-      const { scrollTop, clientHeight, scrollHeight } = containerRef.current;
-      if (scrollTop + clientHeight >= scrollHeight - 10) { // Load more when near the bottom
-        loadMoreTestimonials();
-      }
-    }
-  };
+  const visibleTestimonials = viewAll ? testimonials : testimonials.slice(0, 9);
 
   useEffect(() => {
     const resizeListener = () => {
@@ -53,64 +39,62 @@ export default function Testimonials() {
     };
 
     window.addEventListener("resize", resizeListener);
-    if (containerRef.current) {
-      containerRef.current.addEventListener("scroll", handleScroll);
-    }
-
     return () => {
       window.removeEventListener("resize", resizeListener);
-      if (containerRef.current) {
-        containerRef.current.removeEventListener("scroll", handleScroll);
-      }
     };
   }, []);
 
-  useEffect(() => {
-    setVisibleTestimonials(viewAll ? initialTestimonials : initialTestimonials.slice(0, 9));
-  }, [viewAll]);
+  const boxVariants = {
+    hidden: { opacity: 0, x: -50 },
+    visible: { opacity: 1, x: 0, transition: { duration: 2 } },
+  };
 
   return (
     <div className="p-4 relative bg-gradient-to-b from-[#292E34] to-[#16191C] mx-auto flex flex-col w-full items-center justify-center pt-10 2xl:pt-20 mt-20">
       <div className="max-w-[1360px] mx-auto">
-        <div className="flex slide-reveal flex-col 2xl:flex-row gap-y-10 2xl:items-center justify-between">
-          <h2 className="text-[42px] leading-normal font-bold text-white w-full 2xl:max-w-xl ">
+        <div className="flex flex-col 2xl:flex-row gap-y-10 2xl:items-center justify-between">
+          <h2 className="text-[42px] leading-normal font-bold text-white w-full 2xl:max-w-xl">
             Featured Client <span className="pb-4 border-b-4 border-orange-500">Testimonials </span> 👏
           </h2>
           <p className="w-full text-white text-[16px] leading-loose max-w-3xl">
             Lorem ipsum dolor sit amet consectetur. Ornare et amet lobortis ornare. Ullamcorper accumsan donec eu condimentum diam a augue arcu.
           </p>
         </div>
-        
-        <div ref={containerRef} className={`scrollbar-hide flex slide-reveal flex-row gap-4 mt-16 overflow-auto max-h-screen transition-all duration-500 ${viewAll ? "pb-32" : ""}`}>
-          {Array.from({ length: columns }, (_, columnIndex) => (
-            <div key={columnIndex} className="flex flex-col w-full gap-4">
-              {visibleTestimonials.map(
-                (testimonial, index) =>
-                  index % columns === columnIndex && (
-                    
-                    <div key={index} className="group relative bg-[#F9EFE4] px-8 py-10 rounded-2xl space-y-5">
-                      <Image src={testimonial.author.image_url} alt="download" width={100} height={100} className="select-none" draggable={false} />
-                      <h1 className="font-bold text-2xl">{testimonial.author.names}</h1>
-                      <p className="leading-relaxed text-lg">{testimonial.testimonial}</p>
-                      <div className="space-y-3">
-                        <div className="flex gap-x-1">
-                          {[...Array(5)].map((_, index) => (
-                            <Star key={index} className={index < testimonial.rating ? "text-yellow-500" : "text-gray-300"} />
-                          ))}
-                        </div>
-                        <p>{testimonial.date}</p>
-                      </div>
-                    </div>
-                  )
-              )}
-            </div>
-          ))}
+        <div className={`flex flex-col gap-4 mt-16 overflow-hidden testimonial-scroll-container ${viewAll ? "view-all" : ""}`}>
+          <div className="testimonial-scrolling-content">
+            {[...Array(2)].map((_, idx) => (
+              <div key={idx} className="testimonial-row-wrapper flex flex-row gap-4">
+                {Array.from({ length: columns }, (_, columnIndex) => (
+                  <motion.div key={columnIndex} className="flex flex-col w-full gap-4" variants={boxVariants} initial="hidden" animate="visible">
+                    {visibleTestimonials.map(
+                      (testimonial, index) =>
+                        index % columns === columnIndex && (
+                          <div key={index} className="group relative bg-[#F9EFE4] px-8 py-10 rounded-2xl space-y-5">
+                            <Image src={testimonial.author.image_url} alt="download" width={100} height={100} className="select-none" draggable={false} />
+                            <h1 className="font-bold text-2xl">{testimonial.author.names}</h1>
+                            <p className="leading-relaxed text-lg">{testimonial.testimonial}</p>
+                            <div className="space-y-3">
+                              <div className="flex gap-x-1">
+                                {[...Array(5)].map((_, index) => (
+                                  <Star key={index} className={index < testimonial.rating ? "text-yellow-500" : "text-gray-300"} />
+                                ))}
+                              </div>
+                              <p>{testimonial.date}</p>
+                            </div>
+                          </div>
+                        )
+                    )}
+                  </motion.div>
+                ))}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-   
       <img src="/fog2.svg" className="absolute top-48 rotate-180   select-none" draggable={false} />
+
       <div className="w-full h-40 bg-gradient-to-b from-[#171B1E00] via-[#181B1E]/80 to-[#181B1E] absolute bottom-0 left-0 right-0 flex justify-center items-center">
-         <div className="relative z-[5] max-w-fit flex flex-row group mt-5" onClick={() => setViewAll(!viewAll)}>
+        <div className="relative z-[5] max-w-fit flex flex-row group mt-5" onClick={() => setViewAll(!viewAll)}>
           <div className="flex items-center gap-x-3 pb-2">
             <p className="text-[16px] font-bold text-orange-500">{viewAll ? "View Less" : "View All Testimonials"}</p>
             <BiChevronRight className="text-orange-500" size={20} />
@@ -119,6 +103,43 @@ export default function Testimonials() {
         </div>
         <img src="/fog.svg" className="absolute bottom-0 select-none" draggable={false} />
       </div>
+      <style jsx>{`
+        @keyframes scrollUp {
+          0% {
+            transform: translateY(0%);
+          }
+          100% {
+            transform: translateY(-50%);
+          }
+        }
+
+        .testimonial-scroll-container {
+          height: 1200px; /* Adjust the height for initial state */
+          position: relative;
+          overflow: hidden;
+          transition: height 0.5s ease-in-out;
+        }
+
+        .testimonial-scroll-container.view-all {
+          height: 1600px; /* Height for 'View All' state */
+        }
+
+        .testimonial-scrolling-content {
+          animation: scrollUp 20s linear infinite;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .testimonial-scroll-container.view-all .testimonial-scrolling-content {
+          animation: scrollUp 10s linear infinite; /* Faster animation when viewing all */
+        }
+
+        .testimonial-row-wrapper {
+          display: flex;
+          flex-direction: row;
+          gap: 16px; /* Adjust the gap between columns if needed */
+        }
+      `}</style>
     </div>
   );
 }
