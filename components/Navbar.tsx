@@ -155,7 +155,7 @@ const NavBar = () => {
                 >
                   <Link href={link.href}>
                     <div className={`flex flex-col gap-[10px] items-center cursor-pointer`} style={{ position: 'relative' }}>
-                      <h1 className="whitespace-nowrap hover:text-orange-500 font-mono-sans text-xl  hover:font-bold">
+                      <h1 className="whitespace-nowrap hover:text-orange-500 font-mono-sans  hover:font-bold">
                         {link.label}
                       </h1>
                       {/* Underline effect */}
@@ -171,7 +171,7 @@ const NavBar = () => {
                       {optionsData.map((option, optionIndex) => (
                         <Link key={optionIndex} href={option.href}>
                           <div className="flex flex-col pt-4 pb-2">
-                            <h2 className="block font-medium text-gray-800 hover:text-orange-500 text-xl">
+                            <h2 className="block font-medium text-gray-800 hover:text-orange-500 ">
                               {option.label}
                             </h2>
                             <div className="border-t-2 border-gray-100 opacity-1 w-[100%] transition-transform duration-400 hover:scale-110 mt-2"></div>
