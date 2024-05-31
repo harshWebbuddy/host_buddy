@@ -347,9 +347,9 @@ const PageSecond = () => {
               <AddsResller />
             </div>
           </div>
-          <div className="w-full bg-white rounded-3xl flex flex-col space-y-10">
+          <div className="w-full bg-white rounded-3xl flex flex-col space-y-4 md:space-y-6 2xl:space-y-10">
             <div className="flex flex-col w-full  space-y-4">
-              <h1 className="w-full font-mono-sans   font-semibold text-[32px] md:text-[42px] 2xl:text-[52px] leading-tight md:leading-[64px] 2xl:leading-[84px] text-left">
+              <h1 className="w-full font-mono-sans   font-semibold text-[32px] md:text-[42px] 2xl:text-[52px]  leading-[24px] md:leading-[64px] 2xl:leading-[84px] text-left">
                 Terms and Conditions
               </h1>
               <p className="text-[6px] md:text-[10px] 2xl:text-[18px]">
