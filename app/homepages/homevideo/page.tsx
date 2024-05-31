@@ -6,10 +6,12 @@ import Plan2 from './plan2'
 import Support from './Support'
 import Location from './Location'
 import ContactForm from './form'
+import { NavBar } from '@/components'
 
 const page = () => {
   return (
     <main className="overflow-hidden">
+      <NavBar className="text-white" />
 {/* hero page  */}
       <section>
         <HeroHosting/>

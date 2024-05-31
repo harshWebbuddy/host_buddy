@@ -11,12 +11,12 @@ import Ratingpanel from "../../(landing)/components/Rating";
 import Plans from "../../(landing)/components/Plans";
 import Balancing from "./balancing";
 import Support from "./bandwidth";
+import { NavBar } from "@/components";
 
 export default function HomeMainPage() {
   return (
     <main className="overflow-hidden">
       {/* hero section */}
-
       <section className="h-full min-h-[80vh] overflow-hidden relative bg-black flex flex-col items-center justify-center">
     <div className="slide-reveal max-w-[1300px] mx-auto text-white  px-10 pt-40 pb-10 2xl:py-40">
       <div className="h-full flex items-center relative !z-[2] flex-col 2xl:flex-row justify-center gap-20">

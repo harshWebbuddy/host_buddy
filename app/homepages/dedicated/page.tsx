@@ -3,17 +3,17 @@
 import Locationpage from "../../(landing)/components/Locationpage";
 import CardsComponent from "../../(landing)/components/CardsComponent";
 import Image from "next/image";
-import { Panela, Panelb, Panelc } from "@/components/svgs";
 import { BiChevronRight } from "react-icons/bi";
 import Testimonials from "../../(landing)/components/Testimonials";
 import Faqs from "../../(landing)/components/Faqs";
-import { caseStudies } from "../../(landing)/components/constants/casestudies";
 import { BsArrowRight } from "react-icons/bs";
 import Ratingpanel from "../../(landing)/components/Rating";
 import Plans from "../../(landing)/components/Plans";
 import { useRef } from "react";
+import { NavBar } from "@/components";
 
 export default function HomeMainPage() {
+ 
   const videoRef = useRef<HTMLVideoElement>(null); // Provide explicit type assertion
 
   const handleVideoEnded = () => {
@@ -25,6 +25,7 @@ export default function HomeMainPage() {
   return (
     <main className="overflow-hidden">
       {/* hero section */}
+      <NavBar className="text-white" />
 
       <section className="h-full min-h-[60vh] overflow-hidden relative bg-black flex items-center justify-center">
     <img src="/home.jpg" width={1920} height={1080} alt="" className="w-full absolute inset-0 h-full opacity-30 object-cover bg-blend-color-dodge !z-[1]" />
