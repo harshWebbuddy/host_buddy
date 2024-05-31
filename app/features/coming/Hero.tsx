@@ -7,7 +7,7 @@ const HeroHosting = () => {
     
     <div className="max-w-[1300px] py-60 mx-auto text-white ">
         
-      <Image src="/features/empty.svg" width={500} height={500} alt=''/>
+      <Image src="/coming.svg" width={800} height={800} alt=''/>
 
 
             

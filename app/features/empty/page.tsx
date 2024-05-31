@@ -7,9 +7,11 @@ import Locationpage from './Locationpage'
 import Faqs from './Faqs'
 import Support from './plan2'
 import CardsComponent from './CardsComponent'
+import RootLayout from '@/app/layout'
+
 
 const page = () => {
-  return (
+  return (    <RootLayout showFooter={false}>
     <main className="overflow-hidden">
 {/* hero page  */}
       <section>
@@ -17,7 +19,7 @@ const page = () => {
         </section>
         {/* rating panel  */}
       
-     </main>
+     </main></RootLayout>
   )
 }
 

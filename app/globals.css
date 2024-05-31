@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 /* styles.css */
+@keyframes shakeRotate {
+  0% { transform: rotate(0deg) translate(0, 0); }
+  25% { transform: rotate(5deg) translate(5px, 5px); }
+  50% { transform: rotate(-5deg) translate(-5px, -5px); }
+  75% { transform: rotate(5deg) translate(5px, 5px); }
+  100% { transform: rotate(0deg) translate(0, 0); }
+}
+
+.shakeRotate {
+  animation: shakeRotate 1s infinite;
+}
 
 /* styles.module.css */
 @keyframes moveFro {
