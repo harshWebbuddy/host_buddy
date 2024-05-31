@@ -155,7 +155,7 @@ const NavBar = () => {
                 >
                   <Link href={link.href}>
                     <div className={`flex flex-col gap-[10px] items-center cursor-pointer`} style={{ position: 'relative' }}>
-                      <h1 className="whitespace-nowrap hover:text-orange-500 font-mono-sans text-xl leading-[24px] hover:font-bold">
+                      <h1 className="whitespace-nowrap hover:text-orange-500 font-mono-sans text-xl  hover:font-bold">
                         {link.label}
                       </h1>
                       {/* Underline effect */}
