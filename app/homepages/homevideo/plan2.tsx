@@ -29,8 +29,8 @@ const Plan2 = () => {
     {/* heading */}
     <div className="slide-reveal flex flex-col bl:flex-row justify-between gap-y-6 gap-x-4 items-center mb-8 " >
     <div className="relative w-full">
-        <h2 className="text-black font-mona-sans font-semibold text-[32px] 2xl:text-[42px] capitalize leading-relaxed w-full text-center bl:text-left">
-        <span className="pb-4 border-b-2 2xl:border-b-4 border-orange-500 text-wite text-black">The Perfe</span>ct - Web Hosting Plan
+        <h2 className="text-black font-mona-sans font-semibold text-[22px] 2xl:text-[42px] capitalize leading-relaxed w-full text-center bl:text-left">
+        <span className="pb-2 2xl:pb-4 border-b-4 border-orange-500 text-wite text-black">The Perfe</span>ct - Web Hosting Plan
         </h2>
       </div>
     
@@ -58,7 +58,7 @@ const Plan2 = () => {
       </div>
     </div>
     {/* cards */}
-    <section className="mt-10" ref={ref}>
+    <section className="mt-10 px-4 2xl:px-0" ref={ref}>
       <div className="flex flex-col bl:flex-row w-full justify-center gap-8 items-center" >
       <div className={`slide-item ${animationClass} w-full`}>
           <div  className="mb-5 w-full transition-all  bg-[#F9EFE4]  hover:bg-[#16191C] px-10 rounded-2xl group" >
@@ -221,10 +221,10 @@ const Plan2 = () => {
      
     </section>
     
-    <div className="flex flex-col bl:flex-row gap-y-10 gap-x-16 mx-auto items-center justify-center py-20 bl:py-24">
+    <div className="flex flex-col bl:flex-row gap-y-10 gap-x-16 mx-auto items-center justify-center py-10 2xl:py-20 bl:py-24">
     <div className="flex flex-col item-center justify-center mx-auto slide-item">
         <div>
-            <h2 className="text-orange-500 font-mona-sans font-extrabold text-7xl text-center">1.2M+</h2>
+            <h2 className="text-orange-500 font-mona-sans font-extrabold text-6xl 2xl:text-7xl text-center">1.2M+</h2>
         </div>
         <div className="item-center justify-center mt-6">
             <p className="justify-center  text-black font-mona-sans text-lg font-normal text-center leading-relaxed">
@@ -236,10 +236,10 @@ const Plan2 = () => {
     <div className="2xl:flex hidden w-[172px] border-t border-gray-200 rotate-90"></div>
     <div className="flex flex-col item-center justify-center mx-auto slide-item">
         <div>
-            <h2 className="text-orange-500 font-mona-sans font-extrabold text-7xl text-center">1.5M+</h2>
+            <h2 className="text-orange-500 font-mona-sans font-extrabold text-6xl 2xl:text-7xl text-center">1.5M+</h2>
         </div>
         <div className="item-center justify-center mt-6">
-            <p className="justify-center font-mona-sans text-lg font-normal text-center leading-relaxed  text-black">
+            <p className="justify-center font-mona-sans text-md 2xl:text-lg font-normal text-center leading-relaxed  text-black">
                 websites hosted in more <br />
                 than <strong className=' font-bold'>150 </strong>countries
             </p>
@@ -248,7 +248,7 @@ const Plan2 = () => {
     <div className="2xl:flex hidden w-[172px] border-t border-gray-200 rotate-90"></div>
     <div className="flex flex-col item-center justify-center mx-auto slide-item">
         <div>
-            <h2 className="text-orange-500 font-mona-sans font-extrabold text-7xl text-center">96%</h2>
+            <h2 className="text-orange-500 font-mona-sans font-extrabold text-6xl 2xl:text-7xl text-center">96%</h2>
         </div>
         <div className="item-center justify-center mt-6">
             <p className="justify-center text-black font-mona-sans text-lg font-normal text-center leading-relaxed">

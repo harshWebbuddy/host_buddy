@@ -378,7 +378,7 @@ Premium Hardware</h1>
           </div>
         </div>
         <div className="bl:max-w-lg mx-auto w-full px-10 py-7 bg-[#F5F5F5] flex 2xl:hidden items-center rounded-2xl cursor-pointer gap-6 hover:shadow-lg transition-all duration-500">
-          <Image src="\phone-call-svgrepo-com.svg" width={40} height={40} alt="Call Icon" />
+          <Image src="/s4.svg" width={40} height={40} alt="Call Icon" />
           <div className="bg-gray-500/10 w-[3px] h-20"></div>
           <div className="flex flex-col gap-2 w-full">
             <h2 className="text-2xl font-bold bl:whitespace-nowrap">Support Email</h2>

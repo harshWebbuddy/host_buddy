@@ -29,7 +29,7 @@ const HeroHosting = () => {
             <input
               type="text"
               alt=""
-              className="w-full flex-1 outline-none placeholder:text-[#B8B8B8] bg-transparent rounded-full px-5 text-black text-lg"
+              className="w-full flex-1 outline-none placeholder:text-[#B8B8B8] bg-transparent rounded-full 2xl:px-5 text-black text-md 2xl:text-lg"
               placeholder="Find your dream domain"
             />
             <div className="bg-[#FF7500] h-[62px] rounded-full w-full flex-1 mx-auto items-center justify-center max-w-[182px] hover:bg-opacity-80 transition-all duration-300 text-lg">
