@@ -6,6 +6,24 @@
 .toggle-input:checked + .toggle-label .toggle-background {
   fill: #ff7500 !important;/* Change this to your desired background color */
 }
+@keyframes slideInFromTopLeft {
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+
+.animate-triangle2 {
+  animation: slideInFromTopLeft 2s ease-in-out infinite;
+}
 
 @keyframes shakeRotate {
   0% { transform: rotate(0deg) translate(0, 0); }
@@ -13,6 +31,28 @@
   50% { transform: rotate(-5deg) translate(-5px, -5px); }
   75% { transform: rotate(5deg) translate(5px, 5px); }
   100% { transform: rotate(0deg) translate(0, 0); }
+}
+@keyframes slideInFromTopRight {
+  0% {
+    transform: translate(50%, -50%);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(50%, -50%);
+    opacity: 0;
+  }
+}
+
+.animate-triangle2 {
+  animation: slideInFromTopRight 3s ease-in-out infinite;
+}
+
+.animate-triangle {
+  animation: moveInOut 1s infinite;
 }
 
 .shakeRotate {
@@ -22,10 +62,10 @@
 /* styles.module.css */
 @keyframes moveFro {
   0%, 100% {
-    transform: translateX(-100px);
+    transform: translateX(-0px);
   }
   50% {
-    transform: translateX(100px);
+    transform: translateX(0px);
   }
 }
 

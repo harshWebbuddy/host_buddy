@@ -58,7 +58,7 @@ Premium Hardware</h1>
         </div>
       </div>
     </div>
-    <svg  className="opacity-100" width="90" height="10" viewBox="0 0 90 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg  className="opacity-100 2xl:flex hidden" width="90" height="10" viewBox="0 0 90 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="50" height="10" rx="5" fill="#FF7550"/>
 <rect x="60" width="10" height="10" rx="5" fill="#D9D9D9"/>
 <rect x="80" width="10" height="10" rx="5" fill="#D9D9D9"/>
@@ -68,7 +68,7 @@ Premium Hardware</h1>
 
       {/* rating and web hosting plans page */}
       <section className="overflow-hidden">
-        <div className="space-y-40 z-[1] overflow-hidden">
+        <div className="space-y-20 2xl:space-y-40 z-[1] overflow-hidden">
           <Ratingpanel />
           <Plans />
         </div>
@@ -79,13 +79,13 @@ Premium Hardware</h1>
 
 
       {/* What Makes HostBuddy Unique? */}
-      <section className=" relative py-40">
+      <section className=" relative py-20 2xl:py-40">
     <div className="p-4 w-full max-w-[1300px] mx-auto flex flex-col xl:flex-row items-center justify-center ">
       <Image src="/dotted.svg" alt="" width={100} height={100} className="ml-1 2xl:flex hidden absolute left-0 top-20 opacity-50 2xl:visible sm:invisible" />
       <div className="flex flex-col 2xl:flex-row mx-auto items-center gap-x-6 justify-between ">
         <div className="w-full flex flex-col space-y-8">
           <div className="space-y-3.5 slide-reveal">
-            <h4 className="text-[39px] text-black font-semibold font-mona-sans leading-normal">
+          <h4 className="text-[29px] 2xl:text-[39px] text-black font-semibold font-mona-sans leading-normal">
               What Makes Host<span className="text-orange-500">Buddy </span>  Unique?
              
             </h4>
@@ -119,8 +119,8 @@ Premium Hardware</h1>
           </g>
         </svg>         
                  <div className="transition-all duration-300 cursor-pointer m-8 xl:gap-6 text-[#16191C]">
-                    <h2 className="text-[24px] font-bold opacity-1 mb-4 group-hover:text-orange-500">24/7 & 365 Days Support </h2>
-                    <p className="font-mona-sans text-[16px] font-normal leading-normal text-left">
+                 <h2 className="text-[20px] 2xl:text-[20px] 2xl: font-bold opacity-1 mb-4 group-hover:text-orange-500">24/7 & 365 Days Support </h2>
+                    <p className="font-mona-sans text-[14px] 2xl:text-[16px] font-normal leading-normal text-left">
                     Euismod egestas suspendisse aliquet amet ultrices faucibus mauris sit odio.                    </p>
                   </div>
                 </div>
@@ -149,8 +149,8 @@ Premium Hardware</h1>
           </g>
         </svg>
                   <div className="transition-all duration-300 cursor-pointer m-8 xl:gap-6 text-[#16191C]">
-                    <h2 className="text-[24px] font-bold opacity-1 mb-4 group-hover:text-orange-500">30-Day Money Back</h2>
-                    <p className="font-mona-sans text-[16px] font-normal leading-normal text-left">
+                  <h2 className="text-[20px] 2xl: font-bold opacity-1 mb-4 group-hover:text-orange-500">30-Day Money Back</h2>
+                    <p className="font-mona-sans text-[14px] 2xl:text-[16px] font-normal leading-normal text-left">
                     Euismod egestas suspendisse aliquet amet ultrices faucibus mauris sit odio.                    </p>
                   </div>
                 </div>
@@ -165,9 +165,10 @@ Premium Hardware</h1>
 </g></svg>
 
                   <div className="transition-all duration-300 cursor-pointer m-8 xl:gap-6 text-[#16191C]">
-                    <h2 className="text-[24px] font-bold opacity-1 mb-4 group-hover:text-orange-500">30-Day Money Back</h2>
-                    <p className="font-mona-sans text-[16px] font-normal leading-normal text-left">
-                    Euismod egestas suspendisse aliquet amet ultrices faucibus mauris sit odio.                    </p>
+                  <h2 className="text-[20px] 2xl: font-bold opacity-1 mb-4 group-hover:text-orange-500">99.95% Uptime </h2>
+                  <p className="font-mona-sans text-[14px] 2xl:text-[16px] font-normal leading-normal text-left">
+                    Euismod egestas suspendisse aliquet amet ultrices faucibus mauris sit odio.
+                  </p>
                   </div>
                 </div>
               </div>
@@ -192,19 +193,19 @@ Premium Hardware</h1>
      
 
 
-      <section className="relative pt-40 pb-72">
+      <section className="relative pt-20 2xl:pt-40 pb-60 2xl:pb-72">
        <div className="slide-reveal max-w-[1360px] flex flex-row mx-auto items-center justify-center p-4">
-      <div>   <h1 className="text-[42px] font-semibold">
+      <div>   <h1 className="text-[22px] 2xl:text-[42px] font-semibold">
             Our Featured <span className="pb-4 border-b-4 border-orange-500">CaseStudy</span>
           </h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-y-6 gap-x-4 pt-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-y-6 gap-x-4 pt-10 2xl:pt-20">
             {caseStudies.map((caseStudy, index) => (
               <div key={index} className="space-y-6">
                 <Image src={caseStudy.image} alt="" width={500} height={500} className="w-full h-[240px] object-cover rounded-xl" />
-                <h1 className="text-xl font-bold leading-relaxed">{caseStudy.title}</h1>
+                <h1 className="text-md 2xl:text-xl font-bold leading-relaxed">{caseStudy.title}</h1>
                 <div className="relative max-w-fit flex flex-row group items-center justify-center !mt-4">
                   <div className="flex items-center gap-x-3 pb-2">
-                    <p className="text-[16px] font-bold text-orange-500">Read more</p>
+                    <p className="text-[14px] 2xl:text-[16px] font-bold text-orange-500">Read more</p>
                     <img src="/orangearrow.svg" className=" w-[11px] text-orange-500" />
                   </div>
                   <div className="bg-orange-500 h-0.5 absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-500" />
