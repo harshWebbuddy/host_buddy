@@ -85,7 +85,7 @@ Premium Hardware</h1>
 
       {/* rating and web hosting plans page */}
       <section>
-        <div className="space-y-40">
+        <div className="space-y-20 2xl:space-y-40">
           <Ratingpanel />
           <Plans />
         </div>
@@ -95,7 +95,7 @@ Premium Hardware</h1>
       <section className="text-white bg-gradient-to-b from-[#292E34] to-[#16191C] pt-14 pb-20">
         <Locationpage />
       </section>
-      <section className="max-w-[1350px] mx-auto my-20">
+      <section className="max-w-[1350px] mx-auto my-10 2xl:my-20">
         <CardsComponent />
       </section>
 
@@ -103,7 +103,7 @@ Premium Hardware</h1>
       <section className="bg-[#F9EFE4] relative">
         <div className="p-4 w-full max-w-[1300px] mx-auto flex flex-col md:flex-row items-center justify-center py-20">
           <Image src="/dotted.svg" alt="" width={100} height={100} className="ml-1 absolute left-0 top-20 hidden 2xl:flex opacity-50" />
-          <div className="flex flex-col 2xl:flex-row mx-auto items-center justify-between ">
+          <div className="flex flex-col 2xl:flex-row space-y-10 mx-auto items-center justify-between ">
           <div className="w-full flex flex-col space-y-8">
           <div className="space-y-3.5">
             <h4 className="text-[39px] text-black font-semibold font-mona-sans leading-normal">
@@ -264,7 +264,7 @@ Premium Hardware</h1>
       {/* Our featured case study section*/}
 
       
-        <section className="py-24 2xl:py-2 px-4 slide-reveal">
+        <section className="py-2 px-4 slide-reveal">
         <div className="max-w-[1360px] mx-auto item-center justify-center w-full">
           <div className="bg-[rgb(249,239,228)] 2xl:gap-0 w-full rounded-3xl mx-auto flex flex-col py-8 p-4 sm:p-5 md:p-10  2xl:p-20">
             <div className="flex gap-20 items-start justify-between">
@@ -330,7 +330,7 @@ Premium Hardware</h1>
                 </div>
               </div>
             </div>
-            <div className="w-full flex 2xl:hidden justify-center mt-8">
+            <div className="w-full flex 2xl:hidden justify-center mt-8 xl:hidden">
               <Image src="/video.svg" alt="" width={430} height={430} />
             </div>
           </div>
@@ -339,7 +339,7 @@ Premium Hardware</h1>
 
       {/* Hire a pro section */}
    
-      <section className="pt-40 slide-reveal"> 
+      <section className="pt-20 2xl:pt-40 slide-reveal"> 
         <div className="max-w-[1360px] mx-auto p-4 pb-80">
           <div className="flex  flex-col space-y-12  xl:items-stretch 2xl:items-stretch pa:items-center pa:justify-center">
             <div className="flex flex-col md:flex-row gap-6 items-center justify-between">
@@ -350,7 +350,7 @@ Premium Hardware</h1>
                 Lorem ipsum dolor sit amet consectetur. Ornare et amet lobortis ornare. Ullamcorper accumsan donec eu condimentum diam a augue arcu.
               </p>
             </div>
-      <section className="space-y-5">
+            <section className="space-y-5">
         <div className="flex flex-col bl:flex-row items-center gap-5">
           <div className="w-full px-10 py-7 bg-[#F5F5F5] flex items-center rounded-2xl cursor-pointer gap-6 hover:shadow-lg transition-all duration-500">
             <Image src="/s3.svg" width={40} height={40} alt="Call Icon" />
@@ -377,7 +377,7 @@ Premium Hardware</h1>
             </div>
           </div>
         </div>
-        <div className="bl:max-w-lg mx-auto w-full px-10 py-7 bg-white flex 2xl:hidden items-center rounded-2xl cursor-pointer gap-6 hover:shadow-lg transition-all duration-500">
+        <div className="bl:max-w-lg mx-auto w-full px-10 py-7 bg-[#F5F5F5] flex 2xl:hidden items-center rounded-2xl cursor-pointer gap-6 hover:shadow-lg transition-all duration-500">
           <Image src="\phone-call-svgrepo-com.svg" width={40} height={40} alt="Call Icon" />
           <div className="bg-gray-500/10 w-[3px] h-20"></div>
           <div className="flex flex-col gap-2 w-full">

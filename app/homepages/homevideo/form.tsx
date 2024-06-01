@@ -103,7 +103,7 @@ const ContactForm: React.FC = () => {
           required
         ></textarea>
       </div>
-      <div className="flex flex-col bl:flex-row justify-center items-center bl:justify-between mt-4">
+      <div className="flex flex-col bl:flex-row justify-center space-y-8 items-center bl:justify-between mt-4">
         <div className="font-mona-sans text-base font-normal leading-24 tracking-tighter flex flex-row items-center text-left ml-3">
           <input
             type="checkbox"

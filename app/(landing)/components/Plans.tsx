@@ -43,12 +43,11 @@ const Plan2 = () => {
       <div className="flex flex-col max-w-[1300px] mx-auto">
     {/* heading */}
     <div className="slide-reveal flex flex-col bl:flex-row justify-between gap-y-6 gap-x-4 items-center mb-8 " >
-     <div className="relative w-full">
-        <h2 className="text-black font-mona-sans font-semibold text-[42px] capitalize leading-relaxed w-full text-center bl:text-left">
-        <span className="pb-4 border-b-4 border-orange-500 text-wite text-black">The Perfe</span>ct - Web Hosting Plan
+    <div className="relative w-full">
+        <h2 className="text-black font-mona-sans font-semibold text-[32px] 2xl:text-[42px] capitalize leading-relaxed w-full text-center bl:text-left">
+        <span className="pb-2 2xl:pb-4 border-b-4 border-orange-500 text-wite text-black">The Perfe</span>ct - Web Hosting Plan
         </h2>
       </div>
-    
       <div className="flex flex-wrap bl:flex-nowrap items-center gap-2 sm:gap-5">
         <h2 className="font-mona-sans text-[19px] bl:text-base font-medium leading-[24px] bl:leading-[32px] tracking-[0.05em] bl:tracking-[0.2px] text-right w-54 bl:w-71 h-[32px]">
           Monthly

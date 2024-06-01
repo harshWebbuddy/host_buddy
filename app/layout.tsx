@@ -6,7 +6,7 @@ export const metadata = {
   description: "WEBBUDDY",
 };
 
-export default function RootLayout({ children, showFooter = false }: { children: React.ReactNode, showFooter?: boolean }) {
+export default function RootLayout({ children, showFooter = true }: { children: React.ReactNode, showFooter?: boolean }) {
   return (
     <html lang='en'>
       <body className='relative justify-center items-center mx-auto'>

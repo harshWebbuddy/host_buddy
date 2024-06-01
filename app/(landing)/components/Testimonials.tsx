@@ -128,6 +128,7 @@ export default function Testimonials() {
           animation: scrollUp 20s linear infinite;
           display: flex;
           flex-direction: column;
+          gap:2px;
         }
 
         .testimonial-scroll-container.view-all .testimonial-scrolling-content {

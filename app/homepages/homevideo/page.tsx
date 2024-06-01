@@ -17,8 +17,8 @@ const page = () => {
         <HeroHosting/>
         </section>
         {/* rating panel  */}
-        <section className='space-y-40'>
-        <div className="space-y-32 ">
+        <section className='space-y-20 2xl:space-y-40'>
+        <div className="space-y-20 2xl:space-y-32 ">
           <Ratingpanel/>
          
       <Plan2/>
@@ -29,9 +29,9 @@ const page = () => {
       <Support/>
     </section>
         
-    <div className='pt-56'><Location/>
+    <div className='pt-20 2xl:pt-56'><Location/>
     </div>
-       <div className='pt-60'>
+       <div className='pt-20 2xl:pt-60'>
         <ContactForm/>
        </div>
      </main>

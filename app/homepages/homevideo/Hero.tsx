@@ -20,7 +20,7 @@ const HeroHosting = () => {
       autoPlay
       onEnded={handleVideoEnded} // Call handleVideoEnded function when the video ends
     />
-    <div className="slide-reveal absolute bottom-0 2xl:bottom-2 z-[2] w-full h-full flex flex-col space-y-3 2xl:space-y-10 justify-center items-center text-white">
+    <div className="slide-reveal absolute bottom-0 2xl:bottom-2 z-[2] w-full h-full flex flex-col space-y-6 2xl:space-y-10 justify-center items-center text-white">
         <h4 className="text-orange-500 font-bold italic">Domain Name Search</h4>
         <h2 className="font-semibold 2xl:font-bold text-2xl sm:text-5xl 2xl:text-7xl capitalize !mt-5 text-center">Find Your Dream Domain Name</h2>
         <h4 className="text-sm 2xl:text-lg text-center">Use our domain checker tool to find the perfect name for your online project.</h4>
@@ -37,7 +37,7 @@ const HeroHosting = () => {
             </div>
           </form>
         </div>
-        <div className="w-full flex flex-col md:flex-row mx-auto max-w-5xl justify-center items-center gap-6">
+        <div className="2xl:flex hidden w-full flex flex-col md:flex-row mx-auto max-w-5xl justify-center items-center gap-6">
           <h2 className="font-bold text-base sm:text-xl space-x-1">
             <span> .com </span>
             <span className="text-white/40 font-bold text-lg line-through"> $25.00 </span>
