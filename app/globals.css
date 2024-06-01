@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 
+.toggle-input:checked + .toggle-label .toggle-background {
+  fill: #ff7500 !important;/* Change this to your desired background color */
+}
 
 @keyframes shakeRotate {
   0% { transform: rotate(0deg) translate(0, 0); }

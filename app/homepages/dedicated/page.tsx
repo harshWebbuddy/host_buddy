@@ -271,7 +271,7 @@ Premium Hardware</h1>
               <div className="space-y-5 w-full">
                 <div className="flex gap-x-5">
                   <Image src="/hostbuddy.svg" alt="" width={150} height={100} />
-                  <h1 className="text-orange-500 text-xl 2xl:text-2xl font-bold">[Pro Services]</h1>
+                  <h1 className="text-orange-500 text-md 2xl:text-2xl font-bold">[Pro Services]</h1>
                 </div>
                 <div className="flex flex-col gap-4">
                   <h2 className="text-[22px] 2xl:text-[42px] font-bold max-w-md">Hire a Pro - We'll Do It For You</h2>

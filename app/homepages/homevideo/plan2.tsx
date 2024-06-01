@@ -5,7 +5,7 @@ import React from 'react'
 import { IoIosArrowForward } from "react-icons/io";
 import { FaArrowRight } from "react-icons/fa";
 import Switch from "@mui/material/Switch";import { useInView } from "react-intersection-observer";
-
+import { ChangeEvent } from "react";
 const label = { inputProps: { "aria-label": "Switch demo" } };
 const Plan2 = () => {
   const [animationClass, setAnimationClass] = useState("");
@@ -20,8 +20,6 @@ const Plan2 = () => {
       }
   }, [inView]);
 
-
-
   return (
  <div> 
    <div className=''> 
@@ -34,24 +32,25 @@ const Plan2 = () => {
         </h2>
       </div>
     
-      <div className="flex flex-wrap bl:flex-nowrap items-center gap-2 sm:gap-5">
-        <h2 className="font-mona-sans text-[19px] bl:text-base font-medium leading-[24px] bl:leading-[32px] tracking-[0.05em] bl:tracking-[0.2px] text-right w-54 bl:w-71 h-[32px]">
+      <div className="flex flex-wrap bl:flex-nowrap items-center gap-2 sm:gap-5 ">
+        <h2 className="font-mona-sans text-[12px] 2xl:text-[19px] bl:text-base font-medium leading-[24px] bl:leading-[32px] tracking-[0.05em] bl:tracking-[0.2px] text-center 2xl:text-right w-54 bl:w-71 2xl:h-[32px]">
           Monthly
         </h2>
         <div className="toggle-container">
   <input type="checkbox" id="toggle" className="toggle-input"/>
   <label htmlFor="toggle" className="toggle-label">
-    <svg className="toggle-svg" width="72" height="34" viewBox="0 0 72 34" fill="#16191C" xmlns="http://www.w3.org/2000/svg">
+    <svg className="toggle-svg w-8 2xl:w-16" viewBox="0 0 72 34" fill="#16191C" xmlns="http://www.w3.org/2000/svg">
       <rect className="toggle-background" opacity="0.15" y="0.5" width="72" height="33" rx="16.5" fill="#16191C"/>
       <circle className="toggle-circle" cx="17.5" cy="17" r="10.5" fill="white"/>
     </svg>
   </label>
 </div>
+
         <div>
-          <h2 className="font-mona-sans text-base font-medium leading-[32px] tracking-[0.2px] text-right w-[52px] h-[32px] ">Yearly</h2>
+          <h2 className="font-mona-sans  text-[12px] 2xl:text-[19px] font-medium leading-[32px] tracking-[0.2px] text-center 2xl:text-right w-[52px] h-[32px] ">Yearly</h2>
         </div>
-        <div className="px-3 py-0.5 bg-orange-100 rounded-3xl">
-          <h4 className="text-orange-500 m-2 font-mona-sans font-bold text-xs leading-[15.6px] tracking-[1.625px] text-center w-[77px] h-[16px] top-[6px] left-[10px]">
+        <div className="px-3 py-1 2xl:py-0.5 bg-orange-100 rounded-3xl">
+          <h4 className="text-orange-500 2xl:m-2  text-[8px] 2xl:text-[12px] font-mona-sans font-bold  leading-[15.6px] tracking-[1.625px] text-center w-[57px] xl:w-[77px] h-[16px] top-[6px] left-[10px]">
             Save 25%
           </h4>
         </div>

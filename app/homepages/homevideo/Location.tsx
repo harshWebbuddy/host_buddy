@@ -966,7 +966,7 @@ const Location = () => {
       return (
         <div className="mx-auto flex flex-col space-y-8">
           <div className="w-full max-w-[1350px] mx-auto flex flex-col  justify-between items-center space-y-6 2xl:space-x-10">
-        <h1 className=" w-full font-mona-sans text-[22px] 2xl:text-[42px] text-black  font-bold leading-relaxed text-center 2xl:pr-20 ">
+        <h1 className=" w-full font-mona-sans text-[px] 2xl:text-[42px] text-black  font-bold leading-relaxed text-center 2xl:pr-20 ">
           Our Datacenters Are Located In <span className="text-orange-500 border-b-4 pb-4 border-orange-500">7 Regions</span>
         </h1>
         {/* Text */}
@@ -975,7 +975,7 @@ const Location = () => {
         </p>
       </div>
     
-          <div className="w-full flex flex-col max-w-[1350px] mx-auto space-y-10 p-4">
+          <div className="w-full flex flex-col max-w-[1350px] mx-auto  p-4">
             <div className="mx-auto w-full items-center justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

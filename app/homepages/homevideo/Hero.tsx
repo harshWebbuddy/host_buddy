@@ -20,7 +20,7 @@ const HeroHosting = () => {
       autoPlay
       onEnded={handleVideoEnded} // Call handleVideoEnded function when the video ends
     />
-    <div className="slide-reveal absolute bottom-0 2xl:bottom-2 z-[2] w-full h-full flex flex-col space-y-6 2xl:space-y-10 justify-center items-center text-white">
+    <div className="p-2 slide-reveal absolute bottom-0 2xl:bottom-2 z-[2] w-full h-full flex flex-col space-y-6 2xl:space-y-10 justify-center items-center text-white">
         <h4 className="text-orange-500 font-bold italic">Domain Name Search</h4>
         <h2 className="font-semibold 2xl:font-bold text-2xl sm:text-5xl 2xl:text-7xl capitalize !mt-5 text-center">Find Your Dream Domain Name</h2>
         <h4 className="text-sm 2xl:text-lg text-center">Use our domain checker tool to find the perfect name for your online project.</h4>
@@ -32,8 +32,8 @@ const HeroHosting = () => {
               className="w-full flex-1 outline-none placeholder:text-[#B8B8B8] bg-transparent rounded-full 2xl:px-5 text-black text-sm 2xl:text-lg"
               placeholder="Find your dream domain"
             />
-            <div className="bg-[#FF7500] h-[62px] rounded-full  w-full flex-1 mx-auto items-center justify-center max-w-[140px] 2xl:max-w-[182px] hover:bg-opacity-80 transition-all duration-300 text-lg">
-             <h2 className='text-center items-center justify-center mx-auto pt-4 2xl:text-[24px] font-bold'>Search</h2> 
+            <div className="bg-[#FF7500] h-[32px] 2xl:h-[62px] rounded-full  w-full flex-1 mx-auto items-center justify-center max-w-[140px] 2xl:max-w-[182px] hover:bg-opacity-80 transition-all duration-300 text-lg">
+             <h2 className='text-center items-center justify-center mx-auto pt-1 2xl:pt-4 text-[14px] 2xl:text-[24px] font-semibold 2xl:font-bold'>Search</h2> 
             </div>
           </div>
         </div>

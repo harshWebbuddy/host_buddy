@@ -53,14 +53,15 @@ const Plan2 = () => {
           Monthly
         </h2>
         <div className="toggle-container">
-  <input type="checkbox" id="toggle" className="toggle-input" onChange={changeCircleColor}/>
+  <input type="checkbox" id="toggle" className="toggle-input"/>
   <label htmlFor="toggle" className="toggle-label">
-    <svg className="toggle-svg" width="72" height="34" viewBox="0 0 72 34" fill="#16191C" xmlns="http://www.w3.org/2000/svg">
+    <svg className="toggle-svg w-8 2xl:w-16" viewBox="0 0 72 34" fill="#16191C" xmlns="http://www.w3.org/2000/svg">
       <rect className="toggle-background" opacity="0.15" y="0.5" width="72" height="33" rx="16.5" fill="#16191C"/>
-      <circle id="circle" className="toggle-circle" cx="17.5" cy="17" r="10.5" fill="white"/>
+      <circle className="toggle-circle" cx="17.5" cy="17" r="10.5" fill="white"/>
     </svg>
   </label>
 </div>
+
 
         <div>
           <h2 className="font-mona-sans text-base font-medium leading-[32px] tracking-[0.2px] text-right w-[52px] h-[32px] ">Yearly</h2>

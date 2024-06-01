@@ -14,8 +14,8 @@ const FooterBox = () => {
         </p>
         <form>
           <div className="p-1 rounded-xl flex items-center w-full bg-white">
-            <input className="h-[56px] text-[14px] outline-none flex-1 w-full bg-transparent px-2 2xl:px-4 text-black" placeholder="Your email address" />
-            <div className="flex gap-x-3 items-center text-[#FF7500] bg-gradient-to-b from-[#292E34] to-[#16191C] px-6 h-[56px] rounded-xl">
+            <input className="h-[26px] text-[14px] outline-none flex-1 w-full bg-transparent px-0 2xl:px-4 text-black" placeholder="Your email address" />
+            <div className="flex gap-x-1 2xl:gap-x-3 w-36 2xl:w-40 items-center text-[#FF7500] bg-gradient-to-b from-[#292E34] to-[#16191C] px-6 h-[46px]  2xl:h-[56px] rounded-xl">
               Subscribe <FaArrowRight />
             </div>
           </div>
