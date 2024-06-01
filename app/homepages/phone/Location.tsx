@@ -962,39 +962,39 @@ const Location = () => {
         const extractedPaths = Array.from(pathElements).map((path) => path.getAttribute("d"));
         setPaths(extractedPaths.filter((path) => path !== null) as string[]);
       }, []);
-  return (
-    <div className='mx-auto'>
-    <div className='overalllocation mx-auto'>
-        <div className='location mx-auto'>
-<h2>Our Datacenters Are Located In <span>7 Regions</span></h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed, do eiusmod tempor incididunt lorem ipsum dolor sit amet</p>
-        </div>
-       
-        <div className="w-full flex flex-col max-w-[1350px] mx-auto space-y-10 p-4">
-      {/* Headline */}
-     
-      <div className="mx-auto w-full items-center justify-center ">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 2000 857"
-          width="1112px"
-          height="470px"
-          className="w-full"
-          style={{ cursor: `url('/cursormid.svg'), auto` }}>
-          {paths.map((path, index) => (
-            <path key={index} d={path} className="fill-current text-gray-300 hover:text-orange-500" />
-          ))}
-        </svg>
-        <map name="map">
-          {/* Define your map areas here */}
-          <area shape="circle" coords="50,50,50" href="#" className="custom-cursor" />
-        </map>
+    
+      return (
+        <div className="mx-auto flex flex-col space-y-8">
+          <div className="w-full max-w-[1350px] mx-auto flex flex-col  justify-between items-center space-y-6 2xl:space-x-10">
+        <h1 className=" w-full font-mona-sans text-[px] 2xl:text-[42px] text-black  font-bold leading-relaxed text-center 2xl:pr-20 ">
+          Our Datacenters Are Located In <span className="text-orange-500 border-b-4 pb-4 border-orange-500">7 Regions</span>
+        </h1>
+        {/* Text */}
+        <p className="text-[16px] text-black leading-loose text-center xl:text-left ">
+        Lorem ipsum dolor sit amet consectetur. Vitae quis aliquet tincidunt suspendisse. Augue in malesuada amet dui sed felis nisl non interdum  Placerat enim tincidunt.
+        </p>
       </div>
-    </div>
-        
-    </div>
-    </div>
-  )
-}
-
-export default Location
+    
+          <div className="w-full flex flex-col max-w-[1350px] mx-auto  p-4">
+            <div className="mx-auto w-full items-center justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 2000 857"
+                width="100%"
+                height="auto"
+                className="w-full h-auto"
+                style={{ cursor: `url('/cursormid.svg'), auto` }}>
+                {paths.map((path, index) => (
+                  <path key={index} d={path} className="fill-current text-gray-300 hover:text-orange-500" />
+                ))}
+                <circle cx="997.9" cy="189.1" r="20" className="fill-current text-gray-300 hover:text-orange-500"></circle>
+                <circle cx="673.5" cy="724.1" r="20" className="fill-current text-gray-300 hover:text-orange-500"></circle>
+                <circle cx="1798.2" cy="719.3" r="20" className="fill-current text-gray-300 hover:text-orange-500"></circle>
+              </svg>
+            </div>
+          </div>
+        </div>
+      );
+    };
+    
+    export default Location;

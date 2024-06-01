@@ -28,37 +28,38 @@ const Plan2 = () => {
       <div className="flex flex-col max-w-[1300px] mx-auto">
     {/* heading */}
     <div className="slide-reveal flex flex-col bl:flex-row justify-between gap-y-6 gap-x-4 items-center mb-8 " >
-     <div className="relative w-full">
-        <h2 className="text-black font-mona-sans font-semibold text-[42px] capitalize leading-relaxed w-full text-center bl:text-left">
-        <span className="pb-4 border-b-4 border-orange-500 text-wite text-black">The Perfe</span>ct - Web Hosting Plan
+    <div className="relative w-full">
+        <h2 className="text-black font-mona-sans font-semibold text-[22px] 2xl:text-[42px] capitalize leading-relaxed w-full text-center bl:text-left">
+        <span className="pb-2 2xl:pb-4 border-b-4 border-orange-500 text-wite text-black">The Perfe</span>ct - Web Hosting Plan
         </h2>
       </div>
     
-      <div className="flex flex-wrap bl:flex-nowrap items-center gap-2 sm:gap-5">
-        <h2 className="font-mona-sans text-[19px] bl:text-base font-medium leading-[24px] bl:leading-[32px] tracking-[0.05em] bl:tracking-[0.2px] text-right w-54 bl:w-71 h-[32px]">
+      <div className="flex flex-wrap bl:flex-nowrap items-center gap-2 sm:gap-5 ">
+        <h2 className="font-mona-sans text-[12px] 2xl:text-[19px] bl:text-base font-medium leading-[24px] bl:leading-[32px] tracking-[0.05em] bl:tracking-[0.2px] text-center 2xl:text-right w-54 bl:w-71 2xl:h-[32px]">
           Monthly
         </h2>
         <div className="toggle-container">
   <input type="checkbox" id="toggle" className="toggle-input"/>
   <label htmlFor="toggle" className="toggle-label">
-    <svg className="toggle-svg" width="72" height="34" viewBox="0 0 72 34" fill="#16191C" xmlns="http://www.w3.org/2000/svg">
+    <svg className="toggle-svg w-8 2xl:w-16" viewBox="0 0 72 34" fill="#16191C" xmlns="http://www.w3.org/2000/svg">
       <rect className="toggle-background" opacity="0.15" y="0.5" width="72" height="33" rx="16.5" fill="#16191C"/>
       <circle className="toggle-circle" cx="17.5" cy="17" r="10.5" fill="white"/>
     </svg>
   </label>
 </div>
+
         <div>
-          <h2 className="font-mona-sans text-base font-medium leading-[32px] tracking-[0.2px] text-right w-[52px] h-[32px] ">Yearly</h2>
+          <h2 className="font-mona-sans  text-[12px] 2xl:text-[19px] font-medium leading-[32px] tracking-[0.2px] text-center 2xl:text-right w-[52px] h-[32px] ">Yearly</h2>
         </div>
-        <div className="px-3 py-0.5 bg-orange-100 rounded-3xl">
-          <h4 className="text-orange-500 m-2 font-mona-sans font-bold text-xs leading-[15.6px] tracking-[1.625px] text-center w-[77px] h-[16px] top-[6px] left-[10px]">
+        <div className="px-3 py-1 2xl:py-0.5 bg-orange-100 rounded-3xl">
+          <h4 className="text-orange-500 2xl:m-2  text-[8px] 2xl:text-[12px] font-mona-sans font-bold  leading-[15.6px] tracking-[1.625px] text-center w-[57px] xl:w-[77px] h-[16px] top-[6px] left-[10px]">
             Save 25%
           </h4>
         </div>
       </div>
     </div>
     {/* cards */}
-    <section className="mt-10" ref={ref}>
+    <section className="mt-10 px-4 2xl:px-0" ref={ref}>
       <div className="flex flex-col bl:flex-row w-full justify-center gap-8 items-center" >
       <div className={`slide-item ${animationClass} w-full`}>
           <div  className="mb-5 w-full transition-all  bg-[#F9EFE4]  hover:bg-[#16191C] px-10 rounded-2xl group" >
@@ -221,10 +222,10 @@ const Plan2 = () => {
      
     </section>
     
-    <div className="flex flex-col bl:flex-row gap-y-10 gap-x-16 mx-auto items-center justify-center py-20 bl:py-24">
+    <div className="flex flex-col bl:flex-row gap-y-10 gap-x-16 mx-auto items-center justify-center py-10 2xl:py-20 bl:py-24">
     <div className="flex flex-col item-center justify-center mx-auto slide-item">
         <div>
-            <h2 className="text-orange-500 font-mona-sans font-extrabold text-7xl text-center">1.2M+</h2>
+            <h2 className="text-orange-500 font-mona-sans font-extrabold text-6xl 2xl:text-7xl text-center">1.2M+</h2>
         </div>
         <div className="item-center justify-center mt-6">
             <p className="justify-center  text-black font-mona-sans text-lg font-normal text-center leading-relaxed">
@@ -233,22 +234,22 @@ const Plan2 = () => {
             </p>
         </div>
     </div>
-    <div className="w-[172px] border-t border-gray-200 rotate-90"></div>
+    <div className="2xl:flex hidden w-[172px] border-t border-gray-200 rotate-90"></div>
     <div className="flex flex-col item-center justify-center mx-auto slide-item">
         <div>
-            <h2 className="text-orange-500 font-mona-sans font-extrabold text-7xl text-center">1.5M+</h2>
+            <h2 className="text-orange-500 font-mona-sans font-extrabold text-6xl 2xl:text-7xl text-center">1.5M+</h2>
         </div>
         <div className="item-center justify-center mt-6">
-            <p className="justify-center font-mona-sans text-lg font-normal text-center leading-relaxed  text-black">
+            <p className="justify-center font-mona-sans text-md 2xl:text-lg font-normal text-center leading-relaxed  text-black">
                 websites hosted in more <br />
                 than <strong className=' font-bold'>150 </strong>countries
             </p>
         </div>
     </div>
-    <div className="w-[172px] border-t border-gray-200 rotate-90"></div>
+    <div className="2xl:flex hidden w-[172px] border-t border-gray-200 rotate-90"></div>
     <div className="flex flex-col item-center justify-center mx-auto slide-item">
         <div>
-            <h2 className="text-orange-500 font-mona-sans font-extrabold text-7xl text-center">96%</h2>
+            <h2 className="text-orange-500 font-mona-sans font-extrabold text-6xl 2xl:text-7xl text-center">96%</h2>
         </div>
         <div className="item-center justify-center mt-6">
             <p className="justify-center text-black font-mona-sans text-lg font-normal text-center leading-relaxed">

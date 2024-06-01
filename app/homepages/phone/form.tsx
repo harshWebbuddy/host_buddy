@@ -33,7 +33,7 @@ const ContactForm: React.FC = () => {
 <section className="w-full bg-[#f5f5f5] px-4 py-5 ">
   <div className="slide-reveal w-full max-w-[1250px] items-center justify-center mx-auto pt-16">
     <div className="items-center justify-center mx-auto">
-      <h2 className="font-mona-sans text-5xl font-semibold item text-center text-black mt-3">Fill out the Contact Form</h2>
+      <h2 className="font-mona-sans text-3xl 2xl:text-5xl font-semibold item text-center text-black mt-3">Fill out the Contact Form</h2>
     </div>
     <p className="text-center my-5">We will help you to choose the best plan!</p>
     <form onSubmit={handleSubmit} className="w-full mt-10">
@@ -103,7 +103,7 @@ const ContactForm: React.FC = () => {
           required
         ></textarea>
       </div>
-      <div className="flex flex-col bl:flex-row justify-center items-center bl:justify-between mt-4">
+      <div className="flex flex-col bl:flex-row justify-center space-y-8 items-center bl:justify-between mt-4">
         <div className="font-mona-sans text-base font-normal leading-24 tracking-tighter flex flex-row items-center text-left ml-3">
           <input
             type="checkbox"
@@ -114,11 +114,11 @@ const ContactForm: React.FC = () => {
             className="mr-4 h-6 w-6"
             required
           />
-          <label htmlFor="agreeTerms">I have read and agree to the terms and conditions </label>
-          <span className="ml-2 mr-2 leading-21 font-extrabold"> - HostBuddy</span>
+          <label htmlFor="text-sm 2xl:text-md">I have read and agree to the terms and conditions  <span className="ml-2 mr-2 leading-21 font-extrabold"> - HostBuddy</span></label>
+         
         </div>
-        <div className="border-orange-500 border flex flex-row w-40 rounded-xl p-3 bg-orange-500 items-center justify-center">
-          <h2 className="font-medium text-[20px] leading-normal text-white">Submit Ticket</h2> 
+        <div className="border-orange-500 border flex flex-row w-32 2xl:w-40 rounded-xl p-3 bg-orange-500 items-center justify-center">
+          <h2 className="font-medium text-[14px] 2xl:text-[20px] leading-normal text-white">Submit Ticket</h2> 
         </div>
       </div>
     </form>
@@ -129,33 +129,33 @@ const ContactForm: React.FC = () => {
             <Image src="/s3.svg" width={40} height={40} alt="Call Icon" />
             <div className="bg-gray-500/10 w-[3px] h-20"></div>
             <div className="flex flex-col gap-2 w-full">
-              <h2 className="text-2xl font-bold bl:whitespace-nowrap">Sales Help</h2>
-              <p className="text-lg leading-relaxed text-[#16191C]/70">24/7/365 Through the Chat Widget</p>
+              <h2 className="text-md 2xl:text-2xl font-bold bl:whitespace-nowrap">Sales Help</h2>
+              <p className="text-md 2xl:text-lg leading-relaxed text-[#16191C]/70">24/7/365 Through the Chat Widget</p>
             </div>
           </div>
           <div className="w-full px-10 py-7 bg-white flex items-center rounded-2xl cursor-pointer gap-6 hover:shadow-lg transition-all duration-500">
             <Image src="/s1.svg" width={40} height={40} alt="Call Icon" />
             <div className="bg-gray-500/10 w-[3px] h-20"></div>
             <div className="flex flex-col gap-2 w-full">
-              <h2 className="text-2xl font-bold bl:whitespace-nowrap">Support Chat</h2>
-              <p className="text-lg leading-relaxed text-[#16191C]/70">24/7/365 Through the Chat Widget</p>
+              <h2 className="text-md 2xl:text-2xl font-bold bl:whitespace-nowrap">Support Chat</h2>
+              <p className="text-md 2xl:text-lg leading-relaxed text-[#16191C]/70">24/7/365 Through the Chat Widget</p>
             </div>
           </div>
           <div className="w-full px-10 py-7 bg-white hidden 2xl:flex items-center rounded-2xl cursor-pointer gap-6 hover:shadow-lg transition-all duration-500">
             <Image src="/s2.svg" width={40} height={40} alt="Call Icon" />
             <div className="bg-gray-500/10 w-[3px] h-20"></div>
             <div className="flex flex-col gap-2 w-full">
-              <h2 className="text-2xl font-bold bl:whitespace-nowrap">Support Email</h2>
-              <p className="text-lg leading-relaxed text-[#16191C]/70">24/7/365 Through the Chat Widget</p>
+              <h2 className="text-lg 2xl:text-2xl font-bold bl:whitespace-nowrap">Support Email</h2>
+              <p className="text-md 2xl:text-lg leading-relaxed text-[#16191C]/70">24/7/365 Through the Chat Widget</p>
             </div>
           </div>
         </div>
         <div className="bl:max-w-lg mx-auto w-full px-10 py-7 bg-white flex 2xl:hidden items-center rounded-2xl cursor-pointer gap-6 hover:shadow-lg transition-all duration-500">
-          <Image src="\phone-call-svgrepo-com.svg" width={40} height={40} alt="Call Icon" />
+          <Image src="/s4.svg" width={40} height={40} alt="Call Icon" />
           <div className="bg-gray-500/10 w-[3px] h-20"></div>
           <div className="flex flex-col gap-2 w-full">
-            <h2 className="text-2xl font-bold bl:whitespace-nowrap">Support Email</h2>
-            <p className="text-lg leading-relaxed text-[#16191C]/70">24/7/365 Through the Chat Widget</p>
+            <h2 className="text-lg 2xl:text-2xl font-bold bl:whitespace-nowrap">Support Email</h2>
+            <p className="text-md 2xl:text-lg leading-relaxed text-[#16191C]/70">24/7/365 Through the Chat Widget</p>
           </div>
         </div>
       </div>
