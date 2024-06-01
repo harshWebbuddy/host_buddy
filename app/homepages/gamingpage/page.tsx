@@ -47,7 +47,7 @@ const Ratingpanel = () => {
       <div className="w-full max-w-[1300px] mx-auto bg-transparent rounded-3xl mt-20">
         <div className="flex flex-col 2xl:flex-row items-center p-10  2xl:space-x-48">
           <div className="w-full max-w-fit font-mona-sans font-semibold text-center bl:text-left">
-            <h3 className="font-bold text-[20px] 2xl:text-[24px] leading-[63px] text-white">Customer Happiness</h3>
+            <h3 className="font-bold text-[18px] 2xl:text-[24px] leading-[63px] text-white">Customer Happiness</h3>
           </div>
           <div className="w-full grid grid-cols-7 xl:grid-cols-7 2xl:grid-cols-7 gap-x-0 gap-y-10 items-center justify-center">
             <div className="flex flex-col items-center">
@@ -118,7 +118,7 @@ export default function HomeMainPage() {
     <main className="overflow-hidden">
       {/* hero section */}
       <NavBar  className="text-white" />
-      <section className="h-full min-h-[90vh] 2xl:min-h-[80vh] overflow-hidden relative bg-black flex items-center justify-center">
+      <section className="h-full min-h-[150vh] 2xl:min-h-[80vh] overflow-hidden relative bg-black flex items-center justify-center">
     <img src="/home.jpg" width={1920} height={1080} alt="" className="w-full absolute inset-0 h-full opacity-30 object-cover bg-blend-color-dodge !z-[1]" />
     <div className="max-w-[1300px] mx-auto text-white  px-10  pb-10 2xl:py-40">
       <div className="h-full flex items-center relative !z-[2] flex-col  xl:flex-row 2xl:flex-row justify-center space-y-10 ">
@@ -171,7 +171,7 @@ sit amet</h1>
         </div>
       </div>
     </div>  
-    <div className="slide-reveal -bottom-8 2xl:-bottom-10 absolute !z-[20]"><Ratingpanel/></div>
+    <div className="slide-reveal -bottom-4 2xl:-bottom-10 absolute !z-[20]"><Ratingpanel/></div>
 
 </section>
   <img src="/fringe.svg" className="w-full absolute !z-[10] -translate-y-0 2xl:flex hidden 2xl:-translate-y-40"/>    
@@ -298,7 +298,7 @@ sit amet</h1>
        <div className="max-w-[1360px] flex flex-row mx-auto items-center justify-center p-4">
       <Image src="/microsoft/dotted.svg" alt="" width={100} height={100} className="2xl:flex hidden ml-1 absolute right-0 top-20 opacity-50 2xl:visible sm:invisible" />
       <div>   <h1 className="text-[22px] 2xl:text-[42px] font-semibold">
-            Our Featured <span className="pb-4 border-b-4 border-orange-500">CaseStudy</span>
+            Our Featured   <span className="pb-2 2xl:pb-4 border-b-4 border-orange-500 text-wite text-black">CaseStudy</span>
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-y-6 gap-x-4 pt-10 2xl:pt-20">
             {caseStudies.map((caseStudy, index) => (
