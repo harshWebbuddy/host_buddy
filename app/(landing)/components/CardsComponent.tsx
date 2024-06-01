@@ -22,7 +22,7 @@ const CardsComponent = () => {
       <div className="w-full flex flex-col xl:flex-row  space-y-10 2xl:space-x-10 items-center">
         <div className="w-full space-y-7">
           <div className="pr-0 2xl:pr-4">
-            <h2 className="text-4xl 2xl:text-5xl leading-[43px] 2xl:leading-[63px] font-semibold capitalize">Lorem ipsum dolor sit amet consectetur.</h2>
+            <h2 className="text-3xl 2xl:text-5xl leading-[43px] 2xl:leading-[63px] font-semibold capitalize">Lorem ipsum dolor sit amet consectetur.</h2>
           </div>
           <ul className="w-full space-y-7 2xl:pr-36 text-[17px]">
             <li className="flex gap-4 items-start">
@@ -73,7 +73,7 @@ const CardsComponent = () => {
         </div>
       <div className="w-full space-y-7">
           <div className="pr-0 2xl:pr-4">
-            <h2 className="text-4xl 2xl:text-5xl leading-[43px] 2xl:leading-[63px] font-semibold capitalize">Lorem ipsum dolor sit amet consectetur.</h2>
+            <h2 className="text-3xl 2xl:text-5xl leading-[43px] 2xl:leading-[63px] font-semibold capitalize">Lorem ipsum dolor sit amet consectetur.</h2>
           </div>
           <ul className="w-full space-y-7 2xl:pr-36 text-[17px]">
             <li className="flex gap-4 items-start">
@@ -115,7 +115,7 @@ const CardsComponent = () => {
       <div className="w-full flex flex-col xl:flex-row space-y-10 2xl:space-x-16 items-center">
       <div className="w-full space-y-7">
           <div className="pr-0 2xl:pr-4">
-            <h2 className="text-4xl 2xl:text-5xl leading-[43px] 2xl:leading-[63px] font-semibold capitalize">Lorem ipsum dolor sit amet consectetur.</h2>
+            <h2 className="text-3xl 2xl:text-5xl leading-[43px] 2xl:leading-[63px] font-semibold capitalize">Lorem ipsum dolor sit amet consectetur.</h2>
           </div>
           <ul className="w-full space-y-7 2xl:pr-36 text-[17px]">
             <li className="flex gap-4 items-start">
@@ -164,7 +164,7 @@ const CardsComponent = () => {
         </div>
       <div className="w-full space-y-7">
           <div className="pr-0 2xl:pr-4">
-            <h2 className="text-4xl 2xl:text-5xl leading-[43px] 2xl:leading-[63px] font-semibold capitalize">Lorem ipsum dolor sit amet consectetur.</h2>
+            <h2 className="text-3xl 2xl:text-5xl leading-[43px] 2xl:leading-[63px] font-semibold capitalize">Lorem ipsum dolor sit amet consectetur.</h2>
           </div>
           <ul className="w-full space-y-7 2xl:pr-36 text-[17px]">
             <li className="flex gap-4 items-start">
