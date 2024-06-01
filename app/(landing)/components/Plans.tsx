@@ -48,8 +48,9 @@ const Plan2 = () => {
         <span className="pb-2 2xl:pb-4 border-b-4 border-orange-500 text-wite text-black">The Perfe</span>ct - Web Hosting Plan
         </h2>
       </div>
-      <div className="flex flex-wrap bl:flex-nowrap items-center gap-2 sm:gap-5">
-        <h2 className="font-mona-sans text-[19px] bl:text-base font-medium leading-[24px] bl:leading-[32px] tracking-[0.05em] bl:tracking-[0.2px] text-right w-54 bl:w-71 h-[32px]">
+    
+      <div className="flex flex-wrap bl:flex-nowrap items-center gap-2 sm:gap-5 ">
+        <h2 className="font-mona-sans text-[12px] 2xl:text-[19px] bl:text-base font-medium leading-[24px] bl:leading-[32px] tracking-[0.05em] bl:tracking-[0.2px] text-center 2xl:text-right w-54 bl:w-71 2xl:h-[32px]">
           Monthly
         </h2>
         <div className="toggle-container">
@@ -62,12 +63,11 @@ const Plan2 = () => {
   </label>
 </div>
 
-
         <div>
-          <h2 className="font-mona-sans text-base font-medium leading-[32px] tracking-[0.2px] text-right w-[52px] h-[32px] ">Yearly</h2>
+          <h2 className="font-mona-sans  text-[12px] 2xl:text-[19px] font-medium leading-[32px] tracking-[0.2px] text-center 2xl:text-right w-[52px] h-[32px] ">Yearly</h2>
         </div>
-        <div className="px-3 py-0.5 bg-orange-100 rounded-3xl">
-          <h4 className="text-orange-500 m-2 font-mona-sans font-bold text-xs leading-[15.6px] tracking-[1.625px] text-center w-[77px] h-[16px] top-[6px] left-[10px]">
+        <div className="px-3 py-1 2xl:py-0.5 bg-orange-100 rounded-3xl">
+          <h4 className="text-orange-500 2xl:m-2  text-[8px] 2xl:text-[12px] font-mona-sans font-bold  leading-[15.6px] tracking-[1.625px] text-center w-[57px] xl:w-[77px] h-[16px] top-[6px] left-[10px]">
             Save 25%
           </h4>
         </div>
