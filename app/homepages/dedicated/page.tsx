@@ -10,10 +10,10 @@ import { BsArrowRight } from "react-icons/bs";
 import Ratingpanel from "../../(landing)/components/Rating";
 import Plans from "../../(landing)/components/Plans";
 import { useRef } from "react";
-import { NavBar } from "@/components";
+import Navbar from "@/components/Navbar";
 
 export default function HomeMainPage() {
- 
+
   const videoRef = useRef<HTMLVideoElement>(null); // Provide explicit type assertion
 
   const handleVideoEnded = () => {
@@ -25,7 +25,7 @@ export default function HomeMainPage() {
   return (
     <main className="overflow-hidden">
       {/* hero section */}
-      <NavBar className="text-white" />
+      <Navbar className="text-white"/>
 
       <section className="h-full min-h-[60vh] overflow-hidden relative bg-black flex items-center justify-center">
     <img src="/home.jpg" width={1920} height={1080} alt="" className="w-full absolute inset-0 h-full opacity-30 object-cover bg-blend-color-dodge !z-[1]" />
@@ -44,7 +44,7 @@ Premium Hardware</h1>
 </div>
           <p className="font-mono-sans text-[16px] font-light leading-loose text-left  text-[#EBEBEB]">
           By trusting us with your business and projects needs, we promise a <span className="text-orange-500 ml-0.5">99.9%</span> uptime on any services we provide, outside of any standard maintenance we may provide. </p>
-          <div className="flex flex-wrap 2xl:flex-row space-y-4 justify-start space-x-6 !mt-10 ">
+          <div className="flex flex-wrap 2xl:flex-row space-y-8 justify-start 2xl:space-x-6 !mt-10 ">
             <div className="h-[56px]  flex item-center justify-center bg-orange-500 rounded-xl py-4 w-auto px-6  gap-x-3">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="6" cy="19" r="2" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
