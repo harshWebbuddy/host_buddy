@@ -29,9 +29,9 @@ const page = () => {
       <Support/>
     </section>
         
-    <div className='pt-20 2xl:pt-56'><Location/>
+    <div className='pt-20 2xl:pt-40'><Location/>
     </div>
-       <div className='pt-20 2xl:pt-60'>
+       <div className='pt-20 2xl:pt-44'>
         <ContactForm/>
        </div>
      </main>
