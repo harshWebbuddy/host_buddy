@@ -967,7 +967,7 @@ const Location = () => {
     <div className=' mx-auto flex flex-col space-y-5 2xl:space-y-10'>
     <div className="w-full max-w-[1350px] mx-auto flex flex-col xl:flex-row justify-between items-center space-y-6 2xl:space-x-10">
         <h1 className=" w-full font-mona-sans text-[16px] 2xl:text-[42px] text-white font-bold leading-relaxed text-center 2xl:text-left 2xl:pr-20 ">
-          Our Datacenters Are Located In <span className="text-orange-500 border-b-4 pb-4 border-orange-500">7 Regions</span>
+          Our Datacenters Are Located In  <span className="pb-2 2xl:pb-4 border-b-4 border-orange-500 text-wite ">7 Regions</span>
         </h1>
         {/* Text */}
         <p className="text-[16px] text-white leading-loose text-center xl:text-left ">

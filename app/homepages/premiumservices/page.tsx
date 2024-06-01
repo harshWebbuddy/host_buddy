@@ -3,10 +3,12 @@ import Hero from './Hero'
 import ContactForm from './form'
 import Unique from './unique'
 import Card from './card'
+import { NavBar } from '@/components'
 
 const page = () => {
   return (
     <div>
+      <NavBar className='text-white'/>
       <div>
         <Hero/>
       </div>

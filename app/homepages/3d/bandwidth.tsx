@@ -3,8 +3,8 @@ import React from "react";
 
 const Support = () => {
   return (
-    <div className="w-full bg-[#F9EFE4] py-20 px-3">
-      <div className="w-full max-w-[1300px] mx-auto flex flex-col gap-y-16 justify-start items-start">
+    <div className="w-full bg-[#F9EFE4] py-10 2xl:py-20 px-3">
+      <div className="w-full max-w-[1300px] mx-auto flex flex-col gap-y-10 2xl:gap-y-16 justify-start items-start">
         <div className="slide-reveal flex flex-col 2xl:flex-row justify-between 2xl:space-x-80">
           <div className="mx-auto flex flex-col justify-between">
             <h4 className="text-[32px] relative z-[20] md:text-4xl text-black font-semibold font-mona-sans leading-tight 2xl:leading-[63px]">

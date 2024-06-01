@@ -197,7 +197,7 @@ Premium Hardware</h1>
       <section className="relative pt-20 2xl:pt-40 pb-60 2xl:pb-72">
        <div className="slide-reveal max-w-[1360px] flex flex-row mx-auto items-center justify-center p-4">
       <div>   <h1 className="text-[22px] 2xl:text-[42px] font-semibold">
-            Our Featured <span className="pb-4 border-b-4 border-orange-500">CaseStudy</span>
+            Our Featured  <span className="pb-2 2xl:pb-4 border-b-4 border-orange-500 text-wite text-black">CaseStudy</span>
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-y-6 gap-x-4 pt-10 2xl:pt-20">
             {caseStudies.map((caseStudy, index) => (
