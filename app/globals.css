@@ -1396,7 +1396,47 @@ background-color: #F9EFE4;
   }
   
 
-  
+   .cloudfeatures2 p{
+    font-family: Mona Sans;
+font-size: 10px;
+width:fit-content;
+font-weight: 400;
+line-height: 24px;
+/* text-align: left; */
+
+  }.cloudorangeline{
+    display: flex;/* Transition duration */
+/* text-align: right; */
+position: relative;
+width:135px;
+left:0px;
+   }
+   .cloudorangeline:hover{
+     transform: scale(1.1); /* Scale on hover */
+    
+   } .cloudfeatures1{
+    display: flex;
+    flex-direction: column;
+ /* align-items: center; */
+ justify-content: center;
+ width:fit-content;
+
+ }
+ .cloudheadings{
+  display: flex;
+  flex-direction: column;
+  gap:35px;
+  position: relative;
+  left:-15px;
+  text-align: left;
+ }
+ .cloudfeatures1 h2{
+  font-family: Mona Sans;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 63px;
+  text-align: left;
+ }
   .imagenoption{
     margin-top: 40px;
   display: flex;
@@ -7810,109 +7850,7 @@ justify-content: space-between;
     gap: 20px;
   }
   
-  .box {
-position: relative;
-    width:auto;
-    height: 86px;
-    gap: 8px;
-    left:0px;
-    /* background-color: #ffffff; */
-    transition: all 0.3s ease;
-    position: relative;
-  }
   
-  .box:hover {
-    margin-left:0;
-    width: auto;
-    height: 231px;
-    padding: 32px 34px 32px 36px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    border-radius: 20px; /* Adjust the border-radius value to match the curvature */
-  border: 1px solid transparent; /* Set border to transparent */
-  border-image-source: linear-gradient(95.27deg, #fe7602 1.2%, rgba(254, 118, 2, 0) 100%);
-  border-image-slice: 1;
-  border-style: solid;
-    box-shadow: 
-      0px 2.31px 7.51px 0px rgba(0, 0, 0, 0.03),
-      0px 5.73px 14.32px 0px rgba(0, 0, 0, 0.04),
-      0px 11.09px 20.91px 0px rgba(0, 0, 0, 0.05),
-      0px 20.16px 28.5px 0px rgba(0, 0, 0, 0.06),
-      0px 37.89px 40.85px 0px rgba(0, 0, 0, 0.07),
-      0px 89px 80px 0px rgba(0, 0, 0, 0.1);
-  }
-  
-  .boxinside {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    width:400px;
-  }
-  
-  .boxinside h2 {
-    font-family: Mona Sans;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 30px;
-    text-align: left;
-    width:auto;
-  }
-  
-  .boxinside p {
-    font-family: Mona Sans;
-    opacity: 70%;
-    width:auto;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 24px;
-    text-align: left;
-  }
-
-  .box:hover .boxinside h2 {
-    color: #ff7500;
-  }
-  
-  .box:hover .boxinside p {
-    opacity: 100%;
-  }
-  .box:hover .boxinside h2 {
-    color: #ff7500;
-  }
-  
-  .box:hover .separateline {
-    opacity:0%;
-  }
-  .separateline{
-    width:auto;
-    position: relative;
-    right:0px;
-    padding:10px 0px;
-    opacity: 100%;
-  }
-  
-  .button {
-    display: none;
-    width: 99.84px;
-    height: 42px;
-    border-radius: 10px;
-    justify-content: center;
-    text-align: center;
-    transform: translateX(-4%);
-    background-color: #ff7500;
-    color: white;
-    font-family: Mona Sans;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 21.6px;
-    text-align: center;
-  }
-  
-  .box:hover .button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   
   .imagenoption{
     margin-top: 80px;
@@ -7965,7 +7903,7 @@ left:230px;
  }
  .cloudfeatures{
   padding:0px 30px;
-  width: auto;
+  width: fit-content;
 height: 663px;
 gap: 40px;
 align-items: center;
@@ -8585,7 +8523,119 @@ padding:0px 20px;
   } .imagencontent{
     width: fit-content;
   }
-  .boxinside{width: fit-content;}
+  .box {
+    position: relative;
+        width:300px;
+        height: 86px;
+        gap: 8px;
+        left:-50px;
+        /* background-color: #ffffff; */
+        transition: all 0.3s ease;
+        position: relative;
+      }
+      
+      .box:hover {
+        margin-left:0;
+        width: 310px;
+        height: 181px;
+        padding: 22px 0px 0px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        border-radius: 20px; /* Adjust the border-radius value to match the curvature */
+      border: 1px solid transparent; /* Set border to transparent */
+      border-image-source: linear-gradient(95.27deg, #fe7602 1.2%, rgba(254, 118, 2, 0) 100%);
+      border-image-slice: 1;
+      border-style: solid;
+        box-shadow: 
+          0px 2.31px 7.51px 0px rgba(0, 0, 0, 0.03),
+          0px 5.73px 14.32px 0px rgba(0, 0, 0, 0.04),
+          0px 11.09px 20.91px 0px rgba(0, 0, 0, 0.05),
+          0px 20.16px 28.5px 0px rgba(0, 0, 0, 0.06),
+          0px 37.89px 40.85px 0px rgba(0, 0, 0, 0.07),
+          0px 89px 80px 0px rgba(0, 0, 0, 0.1);
+      }
+      
+      .boxinside {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width:300px;
+      }
+      
+      .boxinside h2 {
+        font-family: Mona Sans;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        text-align: left;
+        width:auto;
+      }
+      
+      .boxinside p {
+        font-family: Mona Sans;
+        opacity: 70%;
+        width:fit-content;
+        font-size: 10px;
+        font-weight: 300;
+        line-height: 14px;
+        text-align: left;
+      }
+    
+      .box:hover .boxinside h2 {
+        color: #ff7500;
+      }
+      
+      .box:hover .boxinside p {
+        opacity: 100%;
+      }
+      .box:hover .boxinside h2 {
+        color: #ff7500;
+      }
+      
+      .box:hover .separateline {
+        opacity:0%;
+      }
+      .separateline{
+        width:300px;
+        overflow: hidden;
+        position: relative;
+        right:40px;
+        padding:10px 0px;
+        opacity: 100%;
+      }
+      
+      .button {
+        display: none;
+        width: 99.84px;
+        height: 42px;
+        border-radius: 10px;
+        justify-content: center;
+        text-align: center;
+        transform: translateX(-4%);
+        background-color: #ff7500;
+        color: white;
+        font-family: Mona Sans;
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 21.6px;
+        text-align: center;
+      }
+      
+      .box:hover .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .imagenoption{
+        margin-top: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    
+     }
   .uniquebox{
     width: fit-content;
   }
@@ -8965,8 +9015,8 @@ justify-content: space-between;
     width:200px;
    position: relative;}
   .box-container {
-    overflow:hidden;
-  width:fit-content;
+   
+  width:auto;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -9014,7 +9064,7 @@ position: relative;
   
   .boxinside h2 {
     font-family: Mona Sans;
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 700;
     line-height: 20px;
     text-align: left;
@@ -9025,7 +9075,7 @@ position: relative;
     font-family: Mona Sans;
     opacity: 70%;
     width:fit-content;
-    font-size: 10px;
+    font-size: 8px;
     font-weight: 300;
     line-height: 14px;
     text-align: left;
@@ -9090,7 +9140,7 @@ position: relative;
  }
   .cloudfeatures2 p{
     font-family: Mona Sans;
-font-size: 16px;
+font-size: 10px;
 width:fit-content;
 font-weight: 400;
 line-height: 24px;
@@ -9117,21 +9167,21 @@ left:0px;
  .cloudheadings{
   display: flex;
   flex-direction: column;
-  gap:35px;
+  gap:25px;
   position: relative;
   left:-15px;
   text-align: left;
  }
  .cloudfeatures1 h2{
   font-family: Mona Sans;
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 600;
   line-height: 63px;
   text-align: left;
  }
  .cloudfeatures{
   padding:0px 50px;
-  width: auto;
+  width: fit-content;
 height: 663px;
 gap: 40px;
 align-items: center;
@@ -10027,7 +10077,7 @@ position: relative;
   
   .boxinside h2 {
     font-family: Mona Sans;
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 700;
     line-height: 20px;
     text-align: left;
@@ -10101,7 +10151,7 @@ position: relative;
  }
   .cloudfeatures2 p{
     font-family: Mona Sans;
-font-size: 16px;
+font-size: 10px;
 width:fit-content;
 font-weight: 400;
 line-height: 24px;
@@ -10128,14 +10178,14 @@ left:0px;
  .cloudheadings{
   display: flex;
   flex-direction: column;
-  gap:35px;
+  gap:20px;
   position: relative;
   left:15px;
   text-align: left;
  }
  .cloudfeatures1 h2{
   font-family: Mona Sans;
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 600;
   line-height: 63px;
   text-align: left;
@@ -10145,7 +10195,7 @@ left:0px;
   margin-bottom: 0px;
   width: auto;
 height:auto;
-gap: 40px;
+gap:0px;
 align-items: center;
 text-align: center;
 justify-content: center;
@@ -10167,7 +10217,7 @@ opacity: 0px;
   }
   .cloudbuddy3 p {
     text-align: start;
-    font-size: 8px;
+    font-size: 12px;
     line-height: 26px;
   } .cloudbuddy2 {
     margin-top: -30px;

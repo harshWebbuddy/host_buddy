@@ -4,12 +4,12 @@ const Specs = () => {
   return (
     <div className='wholespecs mx-auto slide-reveal'>
     <div className='specs mx-auto'>
-      <div className='flex flex-row mx-auto items-center justify-center translate-x-80'>
-        <div className='text-[48px] px-0 capitalize font-semibold'>
-         <h2 className='w-[700px]'>Lorem ipsum <span className='text-orange-500'>dolor sit </span></h2> 
+      <div className='flex flex-col xl:flex-row 2xl:flex-row mx-auto items-center justify-center 2xl:translate-x-80'>
+        <div className='text-[22px] 2xl:text-[48px] px-0 capitalize font-semibold'>
+         <h2 className='w-full 2xl:w-[700px]'>Lorem ipsum <span className='text-orange-500'>dolor sit </span></h2> 
          <h2 className='w-[700px]'> amet consectetur.</h2>     
         </div>
-        <div className='text-[16px]'>
+        <div className='text-[14px] 2xl:text-[16px]'>
 <p>  Lorem ipsum dolor sit amet consectetur. Ornare et amet lobortis ornare. Ullamcorper accumsan donec eu condimentum diam a augue arcu. Erat nibh nisl lacinia egestas mauris facilisi aliquam sit mauris.    </p>
         </div>
        

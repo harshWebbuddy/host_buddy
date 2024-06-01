@@ -26,7 +26,8 @@ interface BoxProps {
   }
   
   const Box: React.FC<BoxProps> = ({ heading, paragraph }) => (
-    <div>  <div className="box">
+    <div>  
+      <div className="box">
           <div className="boxinside">
             <h2>{heading}</h2>
             <p>{paragraph}</p>

@@ -39,48 +39,31 @@ const Support = () => {
         title: "Support 24x7x365",
         description: "Maximize your site loading speed, response times and core web vital score. We offer 100% SSD NVMe storage, HTTP/2 & Litespeed server as a standard."
       },
-      // {
-    // {
-    //   icon: <FaIcon2 size={26} />, // Replace FaIcon2 with the desired icon component
-    //   title: "Second Title",
-    //   description: "Second Description"
-    // },
-    // {
-    //   icon: <FaIcon3 size={26} />, // Replace FaIcon3 with the desired icon component
-    //   title: "Third Title",
-    //   description: "Third Description"
-    // }
+   
   ];
   return (
-    <div className="slide-reveal w-full cloudbuddybackground  py-20 px-3 bg-black"   >
-                      {/* <img src="/cloudhosting/2.png" alt=""  className="-mt-20 w-[1920px] ml-60
-                       h-[525px]
-                         absolute opacity-10 " /> */}
+    <div className="w-full hostbuddy  py-20 px-3">
+                <Image src="/greydotted.svg" alt="" width={122.7} height={111.55} className="-ml-2 -mt-8 absolute opacity-0 2xl:opacity-100" />
 
-
-                <Image src="/dotted.svg" alt="" width={122.7} height={111.55} className="-ml-2 -mt-8 absolute opacity-0 2xl:opacity-100" />
-                {/* <Image src="/cloudhosting/2.png" alt="" width={122.7} height={111.55} className="-ml-2 -mt-8 absolute opacity-0 2xl:opacity-100" /> */}
-
-      <div className="w-full max-w-[1220px] mx-auto sm:p-10 xl:p-0 2xl:p-0">
+      <div className="w-full max-w-[1350px] mx-auto slide-reveal">
         <div className="mx-auto bl:flex flex-row justify-between">
-          <h4 className="text-3xl md:text-4xl text-white font-semibold font-mona-sans leading-[63px]">
-            Why Choose HostBuddy
-            <div className="w-40 h-1 bg-orange-500 mt-4 ml-3"></div>
+          <h4 className="text-2xl md:text-4xl text-white font-semibold font-mona-sans leading-[63px]">
+            Why Choose HostBuddy<div className="w-32 2xl:w-40 h-1 bg-orange-500 mt-0 2xl:mt-4"></div>
           </h4>
-          <p className="text-white text-base md:text-xl mt-2 opacity-80 font-light leading-7 max-w-2xl">
+          <p className="text-white text-sm md:text-xl mt-2 opacity-80 font-light leading-7 max-w-2xl">
             Lorem ipsum dolor sit amet consectetur. Sit placerat pellentesque lacus elementum bibendum. Vitae tortor scelerisque maecenas amet sit.
           </p>
           {/* Orange line below "Why Choose HostBuddy" */}
         </div>
-        <div className="flex flex-col md:flex-row gap-x-8 gap-y-14 bl:items-center justify-center mx-auto mt-20 bl:mt-16">
+        <div className="flex flex-col md:flex-row gap-x-10 gap-y-14 bl:items-center justify-center mx-auto pt-20">
   {items.map((item, index) => (
     <div key={index} className="relative flex-1 w-full gap-10 group">
-      <div className="absolute -top-7 left-9 w-16 h-16 flex justify-center items-center rounded-xl transition-all duration-300 bg-white group-hover:bg-orange-500">
+      <div className="absolute -top-7 featuresvg3 left-9 w-16 h-16 flex justify-center items-center rounded-xl transition-all duration-300 bg-white group-hover:bg-orange-500">
         {item.icon}
       </div>
-      <div className="bg-[#3C3C3C] shadow-solid-orange rounded-2xl group hover:bg-[#F9EFE4] text-[#FFFFFF] hover:text-[#16191C] p-6 md:p-8 transition-all duration-300 cursor-pointer">
-        <h2 className="text-xl font-bold mt-4 opacity-1 mb-4">{item.title}</h2>
-        <p className="w-full opacity-70 font-mona-sans text-xl font-normal leading-normal text-left">
+      <div className="bg-[#3C3C3C] shadow-solid-orange rounded-2xl group hover:bg-[#F9EFE4] text-[#FFFFFF] hover:text-[#16191C] px-10 py-12 transition-all duration-300 cursor-pointer">
+        <h2 className="text-xl font-bold mt-4 opacity-1 mb-8">{item.title}</h2>
+        <p className="w-full opacity-70 font-mona-sans text-[16px] font-normal leading-normal text-left">
           {item.description}
         </p>
       </div>
