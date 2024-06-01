@@ -48,7 +48,7 @@ const Support = () => {
       <div className="w-full max-w-[1350px] mx-auto slide-reveal">
         <div className="mx-auto bl:flex flex-row justify-between">
           <h4 className="text-2xl md:text-4xl text-white font-semibold font-mona-sans leading-[63px]">
-            Why Choose HostBuddy<div className="w-32 2xl:w-40 h-1 bg-orange-500 mt-0 2xl:mt-4"></div>
+            Why Choose HostBuddy  <span className="pb-2 2xl:pb-4 border-b-4 border-orange-500 text-wite text-black"></span>
           </h4>
           <p className="text-white text-sm md:text-xl mt-2 opacity-80 font-light leading-7 max-w-2xl">
             Lorem ipsum dolor sit amet consectetur. Sit placerat pellentesque lacus elementum bibendum. Vitae tortor scelerisque maecenas amet sit.

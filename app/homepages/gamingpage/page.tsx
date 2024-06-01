@@ -118,7 +118,7 @@ export default function HomeMainPage() {
     <main className="overflow-hidden">
       {/* hero section */}
       <NavBar  className="text-white" />
-      <section className="h-full min-h-[150vh] 2xl:min-h-[80vh] overflow-hidden relative bg-black flex items-center justify-center">
+      <section className="h-full min-h-[140vh] 2xl:min-h-[80vh] overflow-hidden relative bg-black flex items-center justify-center">
     <img src="/home.jpg" width={1920} height={1080} alt="" className="w-full absolute inset-0 h-full opacity-30 object-cover bg-blend-color-dodge !z-[1]" />
     <div className="max-w-[1300px] mx-auto text-white  px-10  pb-10 2xl:py-40">
       <div className="h-full flex items-center relative !z-[2] flex-col  xl:flex-row 2xl:flex-row justify-center space-y-10 ">
