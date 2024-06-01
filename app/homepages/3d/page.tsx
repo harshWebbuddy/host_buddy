@@ -16,6 +16,7 @@ import { NavBar } from "@/components";
 export default function HomeMainPage() {
   return (
     <main className="overflow-hidden">
+      <NavBar className="text-white"/>
       {/* hero section */}
       <section className="h-full min-h-[80vh] overflow-hidden relative bg-black flex flex-col items-center justify-center">
     <div className="slide-reveal max-w-[1300px] mx-auto text-white  px-10 pt-40 pb-10 2xl:py-40">

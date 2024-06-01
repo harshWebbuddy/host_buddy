@@ -1,287 +1,100 @@
 "use client";
-import { useEffect, useState } from "react";
-import { motion } from "framer-motion";import { ReactNode } from 'react';
-import React from 'react'
-import { IoIosArrowForward } from "react-icons/io";
-import { FaArrowRight } from "react-icons/fa";
-import Switch from "@mui/material/Switch";import { useInView } from "react-intersection-observer";
-import { ChangeEvent } from "react";
-
-const label = { inputProps: { "aria-label": "Switch demo" } };
-const Plan2 = () => {
-  const [animationClass, setAnimationClass] = useState("");
-  const [ref, inView] = useInView({
-      triggerOnce: false,
-      threshold: 0.1,
-  });
-
-  useEffect(() => {
-      if (inView) {
-          setAnimationClass("slide-in");
-      }
-  }, [inView]);
-
-  const [isChecked, setIsChecked] = useState(false);
-
-  const toggleCheckbox = () => {
-    setIsChecked((prev) => !prev);
-  };
-  function changeCircleColor(event: ChangeEvent<HTMLInputElement>) {
-    const circle = document.getElementById('circle');
-    if (circle) { // Check if circle is not null
-      if (event.target.checked) {
-        circle.setAttribute('fill', '#FF7500');
-      } else {
-        circle.setAttribute('fill', 'white');
-      }
-    }
-  }
-  
-  return (
- <div> 
-   <div className=''> 
-      <div className="flex flex-col max-w-[1300px] mx-auto">
-    {/* heading */}
-    <div className="slide-reveal flex flex-col bl:flex-row justify-between gap-y-6 gap-x-4 items-center mb-8 " >
-    <div className="relative w-full">
-        <h2 className="text-black font-mona-sans font-semibold text-[22px] 2xl:text-[42px] capitalize leading-relaxed w-full text-center bl:text-left">
-        <span className="pb-2 2xl:pb-4 border-b-4 border-orange-500 text-wite text-black">The Perfe</span>ct - Web Hosting Plan
-        </h2>
-      </div>
-    
-      <div className="flex flex-wrap bl:flex-nowrap items-center gap-2 sm:gap-5 ">
-        <h2 className="font-mona-sans text-[12px] 2xl:text-[19px] bl:text-base font-medium leading-[24px] bl:leading-[32px] tracking-[0.05em] bl:tracking-[0.2px] text-center 2xl:text-right w-54 bl:w-71 2xl:h-[32px]">
-          Monthly
-        </h2>
-        <div className="toggle-container">
-  <input type="checkbox" id="toggle" className="toggle-input"/>
-  <label htmlFor="toggle" className="toggle-label">
-    <svg className="toggle-svg w-8 2xl:w-16" viewBox="0 0 72 34" fill="#16191C" xmlns="http://www.w3.org/2000/svg">
-      <rect className="toggle-background" opacity="0.15" y="0.5" width="72" height="33" rx="16.5" fill="#16191C"/>
-      <circle className="toggle-circle" cx="17.5" cy="17" r="10.5" fill="white"/>
-    </svg>
-  </label>
-</div>
-
-        <div>
-          <h2 className="font-mona-sans  text-[12px] 2xl:text-[19px] font-medium leading-[32px] tracking-[0.2px] text-center 2xl:text-right w-[52px] h-[32px] ">Yearly</h2>
-        </div>
-        <div className="px-3 py-1 2xl:py-0.5 bg-orange-100 rounded-3xl">
-          <h4 className="text-orange-500 2xl:m-2  text-[8px] 2xl:text-[12px] font-mona-sans font-bold  leading-[15.6px] tracking-[1.625px] text-center w-[57px] xl:w-[77px] h-[16px] top-[6px] left-[10px]">
-            Save 25%
-          </h4>
-        </div>
-      </div>
-    </div>
-    {/* cards */}
-    <section className="mt-10 px-4 2xl:px-0" ref={ref}>
-      <div className="flex flex-col bl:flex-row w-full justify-center gap-8 items-center" >
-      <div className={`slide-item ${animationClass} w-full`}>
-          <div  className="mb-5 w-full transition-all  bg-[#F9EFE4]  hover:bg-[#16191C] px-10 rounded-2xl group" >
-      
-          <div className="pt-10 lex flex-col w-full space-y-2 group">
-            <h2 className="font-mona-sans font-bold text-2xl bl:text-3xl text-center gap-0  mx-auto text-gray-900 group-hover:text-white">IGNITE</h2>
-            <p className="font-mona-sans text-sm font-normal leading-7 text-center  gap-0 opacity-45 group-hover:text-white text-[#16191C]/100 bottom-4 relative">From</p>
-            <div className="font-bold text-6xl leading-9 text-center font-mono-sans-serif text-orange-500 mb-2">$29</div>
-            <p className="font-mona-sans text-base font-normal leading-21 text-center w-50 h-[17px] gap-0 opacity-45  group-hover:text-white text-[#16191C]/100">/Month</p>
-          </div>
-          
-          <div className="mt-12 group">
-           <div className="group w-full h-[52px] group-hover:text-white text-black  text-xl rounded-xl  group-hover:bg-[#FF7500] ring-1 group-hover:ring-[#FFFFFF] ring-[#16191C] 
-            transition-all duration-300 hover:shadow-2xl ring-inset hover:ring-0 font-bold flex items-center justify-center ">
-              <h4 className="w-99 h-19 top-16 left-115 font-monasans font-bold text-base leading-[19.2px]">Choose Plan</h4>{" "}
-              <span className="ml-2">
-                <FaArrowRight size={15} />
-              </span>
-            </div>
-            <div className="flex flex-col justify-center w-full mt-12 group">
-              <h3 className="text-xl font-bold mb-7 text-left text-black group-hover:text-white">Major Features</h3>
-              <div className="flex flex-col gap-3">
-                <div className="flex w-full justify-between">
-                  <p className="text-center text-black-700 text-lg  text-black group-hover:text-white">RAM:</p>
-                  <p className="text-center text-black-700 text-lg font-bold  text-black group-hover:text-white">8GB</p>
-                </div>
-                <div className="flex w-full justify-between">
-                  <p className="text-center text-black-700 text-lg  text-black group-hover:text-white">Processor</p>
-                  <p className="text-center text-black-700 text-lg font-bold  text-black group-hover:text-white">1 Core</p>
-                </div>
-                <div className="flex w-full justify-between">
-                  <p className="text-center text-black-700 text-lg  text-black group-hover:text-white">Storage</p>
-                  <p className="text-center text-black-700 text-lg font-bold  text-black group-hover:text-white">25GB</p>
-                </div>
-                <div className="flex w-full justify-between">
-                  <p className="text-center text-black-700 text-lg  text-black group-hover:text-white">Bandwidth</p>
-                  <p className="text-center text-black-700 text-lg font-bold  text-black group-hover:text-white">1TB</p>
-                </div>
-                {/* Additional feature details here */}
-              </div>
-              <div className="relative max-w-fit mx-auto py-6 flex group items-center justify-center">
-                <div className="flex items-center gap-x-3 ">
-                  <p className="text-[16px] font-bold text-[#16191C]/60 group-hover:text-orange-500 transition-all duration-500">
-                    See All Features in Details{" "}
-                  </p>
-                  <IoIosArrowForward className="text-[#16191C]/60 group-hover:text-orange-500 group-hover:translate-x-1 transition-all duration-300" />
-                </div>
-                <div className="bg-orange-500 h-[2px] absolute bottom-5 left-0 w-0 group-hover:w-full transition-all duration-500" />
-              </div>
-            </div>
-          </div>
-        </div></div>
-        <div className={`slide-item ${animationClass} w-full`}>
-          <div  className="mb-5 w-full transition-all  bg-[#F9EFE4] hover:bg-[#16191C] px-10 rounded-2xl group" >
-         <div className='group-hover:opacity-100 opacity-0 absolute -translate-y-4 translate-x-24'>
-          <div className='bg-orange-500 py-1 rounded-3xl border-white w-36  mx-auto item-center justify-center border-4'>
-            <h2 className='text-white items-center justify-center mx-auto text-center text-[16px] font-semibold '>Most Popular</h2>
-          </div>
-          </div>
-          <div className="pt-10 lex flex-col w-full space-y-2 group">
-            <h2 className="font-mona-sans font-bold text-2xl bl:text-3xl text-center gap-0  mx-auto text-gray-900 group-hover:text-white">IGNITE</h2>
-            <p className="font-mona-sans text-sm font-normal leading-7 text-center  gap-0 opacity-45 group-hover:text-white text-[#16191C]/100 bottom-4 relative">From</p>
-            <div className="font-bold text-6xl leading-9 text-center font-mono-sans-serif text-orange-500 mb-2">$29</div>
-            <p className="font-mona-sans text-base font-normal leading-21 text-center w-50 h-[17px] gap-0 opacity-45  group-hover:text-white text-[#16191C]/100">/Month</p>
-          </div>
-          
-          <div className="mt-12 group">
-           <div className="group w-full h-[52px] group-hover:text-white text-black  text-xl rounded-xl  group-hover:bg-[#FF7500] ring-1 group-hover:ring-[#FFFFFF] ring-[#16191C] 
-            transition-all duration-300 hover:shadow-2xl ring-inset hover:ring-0 font-bold flex items-center justify-center ">
-              <h4 className="w-99 h-19 top-16 left-115 font-monasans font-bold text-base leading-[19.2px]">Choose Plan</h4>{" "}
-              <span className="ml-2">
-                <FaArrowRight size={15} />
-              </span>
-            </div>
-            <div className="flex flex-col justify-center w-full mt-12 group">
-              <h3 className="text-xl font-bold mb-7 text-left text-black group-hover:text-white">Major Features</h3>
-              <div className="flex flex-col gap-3">
-                <div className="flex w-full justify-between">
-                  <p className="text-center text-black-700 text-lg  text-black group-hover:text-white">RAM:</p>
-                  <p className="text-center text-black-700 text-lg font-bold  text-black group-hover:text-white">8GB</p>
-                </div>
-                <div className="flex w-full justify-between">
-                  <p className="text-center text-black-700 text-lg  text-black group-hover:text-white">Processor</p>
-                  <p className="text-center text-black-700 text-lg font-bold  text-black group-hover:text-white">1 Core</p>
-                </div>
-                <div className="flex w-full justify-between">
-                  <p className="text-center text-black-700 text-lg  text-black group-hover:text-white">Storage</p>
-                  <p className="text-center text-black-700 text-lg font-bold  text-black group-hover:text-white">25GB</p>
-                </div>
-                <div className="flex w-full justify-between">
-                  <p className="text-center text-black-700 text-lg  text-black group-hover:text-white">Bandwidth</p>
-                  <p className="text-center text-black-700 text-lg font-bold  text-black group-hover:text-white">1TB</p>
-                </div>
-                {/* Additional feature details here */}
-              </div>
-              <div className="relative max-w-fit mx-auto py-6 flex group items-center justify-center">
-                <div className="flex items-center gap-x-3 text-[#16191C]/60">
-                  <p className="text-[16px] font-bold text-[#16191C]/60 group-hover:text-orange-500 transition-all duration-500">
-                    See All Features in Details{" "}
-                  </p>
-                  <IoIosArrowForward className="text-[#16191C]/60 group-hover:text-orange-500 group-hover:translate-x-1 transition-all duration-300" />
-                </div>
-                <div className="bg-orange-500 h-[2px] absolute bottom-5 left-0 w-0 group-hover:w-full transition-all duration-500" />
-              </div>
-            </div>
-          </div>
-        </div></div>
-        <div className={`slide-item ${animationClass} w-full`}>
-          <div  className="mb-5 w-full transition-all  bg-[#F9EFE4]  hover:bg-[#16191C] px-10 rounded-2xl group" >
-      
-          <div className="pt-10 lex flex-col w-full space-y-2 group">
-            <h2 className="font-mona-sans font-bold text-2xl bl:text-3xl text-center gap-0  mx-auto text-gray-900 group-hover:text-white">IGNITE</h2>
-            <p className="font-mona-sans text-sm font-normal leading-7 text-center  gap-0 opacity-45 group-hover:text-white text-[#16191C]/100 bottom-4 relative">From</p>
-            <div className="font-bold text-6xl leading-9 text-center font-mono-sans-serif text-orange-500 mb-2">$29</div>
-            <p className="font-mona-sans text-base font-normal leading-21 text-center w-50 h-[17px] gap-0 opacity-45  group-hover:text-white text-[#16191C]/100">/Month</p>
-          </div>
-          
-          <div className="mt-12 group">
-           <div className="group w-full h-[52px] group-hover:text-white text-black  text-xl rounded-xl  group-hover:bg-[#FF7500] ring-1 group-hover:ring-[#FFFFFF] ring-[#16191C] 
-            transition-all duration-300 hover:shadow-2xl ring-inset hover:ring-0 font-bold flex items-center justify-center ">
-              <h4 className="w-99 h-19 top-16 left-115 font-monasans font-bold text-base leading-[19.2px]">Choose Plan</h4>{" "}
-              <span className="ml-2">
-                <FaArrowRight size={15} />
-              </span>
-            </div>
-            <div className="flex flex-col justify-center w-full mt-12 group">
-              <h3 className="text-xl font-bold mb-7 text-left text-black group-hover:text-white">Major Features</h3>
-              <div className="flex flex-col gap-3">
-                <div className="flex w-full justify-between">
-                  <p className="text-center text-black-700 text-lg  text-black group-hover:text-white">RAM:</p>
-                  <p className="text-center text-black-700 text-lg font-bold  text-black group-hover:text-white">8GB</p>
-                </div>
-                <div className="flex w-full justify-between">
-                  <p className="text-center text-black-700 text-lg  text-black group-hover:text-white">Processor</p>
-                  <p className="text-center text-black-700 text-lg font-bold  text-black group-hover:text-white">1 Core</p>
-                </div>
-                <div className="flex w-full justify-between">
-                  <p className="text-center text-black-700 text-lg  text-black group-hover:text-white">Storage</p>
-                  <p className="text-center text-black-700 text-lg font-bold  text-black group-hover:text-white">25GB</p>
-                </div>
-                <div className="flex w-full justify-between">
-                  <p className="text-center text-black-700 text-lg  text-black group-hover:text-white">Bandwidth</p>
-                  <p className="text-center text-black-700 text-lg font-bold  text-black group-hover:text-white">1TB</p>
-                </div>
-                {/* Additional feature details here */}
-              </div>
-              <div className="relative max-w-fit mx-auto py-6 flex group items-center justify-center">
-                <div className="flex items-center gap-x-3 text-[#16191C]/60">
-                  <p className="text-[16px] font-bold text-[#16191C]/60 group-hover:text-orange-500 transition-all duration-500">
-                    See All Features in Details{" "}
-                  </p>
-                  <IoIosArrowForward className="text-[#16191C]/60 group-hover:text-orange-500 group-hover:translate-x-1 transition-all duration-300" />
-                </div>
-                <div className="bg-orange-500 h-[2px] absolute bottom-5 left-0 w-0 group-hover:w-full transition-all duration-500" />
-              </div>
-            </div>
-          </div>
-        </div></div>
-      </div>
-     
-    </section>
-    
-    <div className="flex flex-col bl:flex-row gap-y-10 gap-x-16 mx-auto items-center justify-center py-10 2xl:py-20 bl:py-24">
-    <div className="flex flex-col item-center justify-center mx-auto slide-item">
-        <div>
-            <h2 className="text-orange-500 font-mona-sans font-extrabold text-6xl 2xl:text-7xl text-center">1.2M+</h2>
-        </div>
-        <div className="item-center justify-center mt-6">
-            <p className="justify-center  text-black font-mona-sans text-lg font-normal text-center leading-relaxed">
-                trusted by 1.2 <br />
-                millions users
-            </p>
-        </div>
-    </div>
-    <div className="2xl:flex hidden w-[172px] border-t border-gray-200 rotate-90"></div>
-    <div className="flex flex-col item-center justify-center mx-auto slide-item">
-        <div>
-            <h2 className="text-orange-500 font-mona-sans font-extrabold text-6xl 2xl:text-7xl text-center">1.5M+</h2>
-        </div>
-        <div className="item-center justify-center mt-6">
-            <p className="justify-center font-mona-sans text-md 2xl:text-lg font-normal text-center leading-relaxed  text-black">
-                websites hosted in more <br />
-                than <strong className=' font-bold'>150 </strong>countries
-            </p>
-        </div>
-    </div>
-    <div className="2xl:flex hidden w-[172px] border-t border-gray-200 rotate-90"></div>
-    <div className="flex flex-col item-center justify-center mx-auto slide-item">
-        <div>
-            <h2 className="text-orange-500 font-mona-sans font-extrabold text-6xl 2xl:text-7xl text-center">96%</h2>
-        </div>
-        <div className="item-center justify-center mt-6">
-            <p className="justify-center text-black font-mona-sans text-lg font-normal text-center leading-relaxed">
-                customer support <br />
-                satisfaction score
-            </p>
-        </div>
-    </div>
-</div>
-
-
-  {/* <img src="/design3d.svg" className='right-60 absolute translate-y-[500px] opacity-100 overflow-hidden '/> */}
-
-  </div>
-  </div>
-  </div> 
-  )
+import Image from "next/image";
+import React, { useState } from "react";
+interface StarRatingProps {
+  initialRating?: number;
+  onChange?: (rating: number) => void;
+  color?: string;
 }
+const StarRating: React.FC<StarRatingProps> = ({ initialRating = 0, onChange, color }) => {
+  const [rating, setRating] = useState(initialRating);
+  const handleStarClick = (newRating: number) => {
+    setRating(newRating);
+    if (onChange) {
+      onChange(newRating);
+    }
+  };
+  return (
+    <div className="flex items-center">
+      {[1, 2, 3, 4, 5].map((index) => (
+        <button
+          key={index}
+          className={`text-4xl ${index <= rating ? `${color ?? "text-yellow-500"}` : "text-gray-300"} focus:outline-none`}
+          onClick={() => handleStarClick(index)}>
+          ★
+        </button>
+      ))}
+    </div>
+  );
+};
+const Ratingpanel = () => {
+  const handleRatingChange = (newRating: number) => {
+    console.log("New rating:", newRating);
+    // Handle the rating change logic here
+  };
+  return (
+      <div className="w-full max-w-[1300px] mx-auto bg-[#F5F5F5]  rounded-3xl mt-14 animate-slide-from-left">
+        <div className="flex flex-col 2xl:flex-row items-center p-10 gap-[10px] 2xl:gap-[85px]">
+          <div className="w-full max-w-fit font-mona-sans font-semibold text-center bl:text-left">
+            <h3 className="font-bold text-[24px] leading-[63px]">Customer Happiness</h3>
+          </div>
+          <div className="w-full grid grid-cols-7 xl:grid-cols-7 2xl:grid-cols-7 gap-x-0 gap-y-10 items-center justify-center">
+            <div className="flex flex-col items-center">
+              <div className="space-y-2">
+                <Image src="/trustpilot.svg" alt="" width={150} height={40} />
+                <Image src="/trustpilot-reviews.svg" alt="" width={180} height={40} />
+                <h2 className="px-0  text-[11px] ">
+                  <span className="font-mona-sans font-extrabold leading-normal text-left">4.9/5 | 9010</span> reviews
+                </h2>
+              </div>
+          </div>
+          <svg className="w-full h-16 pt-2 " width="1" height="57" viewBox="0 0 1 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="0.5" y1="0.63501" x2="0.499998" y2="56.635" stroke="#C8C8C8" stroke-dasharray="2 2"/>
+</svg>
 
-export default Plan2
+          <div className="flex flex-col items-center">
+            <div className="space-y-1">
+              <Image src="/google1.svg" alt="" width={100} height={40} className="-mb-3" />
+             <img src="/hosting/rating1.svg" className="w-auto h-[28px]"/> 
+            {/* <StarRating initialRating={3.5} onChange={handleRatingChange} /> */}
+            <h2 className="px-0  text-[11px] ">
+                <span className="font-mona-sans font-extrabold leading-relaxed text-left">4.9/5 | 9010</span> reviews
+              </h2>
+            </div>
+          </div>
+          <svg className="w-full h-16 pt-2 " width="1" height="57" viewBox="0 0 1 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="0.5" y1="0.63501" x2="0.499998" y2="56.635" stroke="#C8C8C8" stroke-dasharray="2 2"/>
+</svg>
+          <div className="flex flex-col items-center">
+          <div className="space-y-0 2xl:space-y-2">
+              <Image src="/hostadvice.svg" alt="" width={160} height={80} className="mt-2"/>
+              <img src="/hosting/rating1.svg" className="w-auto h-[28px]"/> 
+
+              {/* <StarRating initialRating={3.5} onChange={handleRatingChange} /> */}
+              <h2 className="px-0  text-[11px] ">
+                <span className="font-mona-sans font-extrabold leading-relaxed text-left">4.9/5 | 9010</span> reviews
+              </h2>
+            </div>
+          </div>  
+          {/* <div className="border-t-[3px] border-dashed border-[#dedede] w-14 h-1 relative  group-hover:opacity-0 transition rotate-90 duration-200" /> */}
+          <svg className="w-full h-16 pt-2 " width="1" height="57" viewBox="0 0 1 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="0.5" y1="0.63501" x2="0.499998" y2="56.635" stroke="#C8C8C8" stroke-dasharray="2 2"/>
+</svg>
+          <div className="flex flex-col items-center">
+          <div className="space-y-0 2xl:space-y-2.5">
+              <Image src="/serchen.svg" alt="" width={100} height={40} />
+              <img src="/hosting/rating2.svg" className="w-auto h-[22px] 2xl:h-[28px]"/> 
+
+              {/* <StarRating initialRating={4} onChange={handleRatingChange} color="!text-[#73CF11]" /> */}
+              <h2 className="px-0  text-[11px] ">
+                <span className="font-mona-sans font-extrabold leading-relaxed text-left">4.9/5 | 9010</span> reviews
+              </h2>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+export default Ratingpanel;

@@ -965,11 +965,11 @@ const Locationpage = () => {
 
   return (
     <section className=" w-full ">
-    <div className="slide-reveal w-full flex flex-col max-w-[1350px] mx-auto space-y-10 py-20 p-4">
+    <div className="slide-reveal w-full flex flex-col max-w-[1350px] mx-auto space-y-10 py-0 2xl:py-20 p-4">
 
       {/* Headline */}
       <div className="w-full flex flex-col justify-between items-center gap-2">
-        <h1 className="mb-4 w-full xl:max-w-[1000px] text-black font-mona-sans text-[42px] font-bold leading-relaxed text-center ">
+        <h1 className="mb-4 w-full xl:max-w-[1000px] text-black font-mona-sans text-[15px] xl:text-[32px] 2xl:text-[42px] font-bold leading-relaxed text-center ">
           Our Datacenters Are Located In <span className="text-orange-500">7 Regions</span>
         </h1>
         {/* Text */}
@@ -981,8 +981,7 @@ const Locationpage = () => {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 2000 857"
-          width="1600px"
-          height="670px"
+        
           className="w-full"
           style={{ cursor: `url('/cursormid.svg'), auto` }}>
           {paths.map((path, index) => (

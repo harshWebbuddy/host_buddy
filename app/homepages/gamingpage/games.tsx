@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 
 interface BoxProps {
   imageSrc: string;
@@ -43,19 +43,19 @@ const Box: React.FC<BoxProps> = ({ imageSrc, width, height }) => {
 
 const IndependentHoverBoxesVertical = () => {
   return (
-    <div className="w-full grid lg:grid-cols-0 lg:flex-col flex-col bl:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 xl:grid-cols-3 2xl:grid-cols-3 2xl:gap-x-10 gap-y-10 items-center justify-center">
-      <Box imageSrc="/homegaming/games1.png" width={400} height={450} />
-      <Box imageSrc="/homegaming/games3.png" width={460} height={450} />
-      <Box imageSrc="/homegaming/games2.png" width={300} height={450} />
+    <div className="w-full grid gap-y-10 items-center justify-center sm:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 2xl:gap-x-6">
+      <Box imageSrc="/homegaming/games1.png" width={280} height={350} />
+      <Box imageSrc="/homegaming/games3.png" width={330} height={350} />
+      <Box imageSrc="/homegaming/games2.png" width={260} height={350} />
     </div>
   );
 };
 
 const Games = () => {
   return (
-    <div className="slide-reveal items-center justify-center mx-auto flex flex-col space-y-10 pt-32 2xl:pt-64">
+    <div className="slide-reveal items-center justify-center mx-auto flex flex-col space-y-10 pt-20 2xl:pt-60">
       <div className="w-full flex flex-col justify-between items-center gap-2">
-        <h1 className="w-full text-black font-mona-sans text-[42px] font-bold leading-relaxed text-center">
+        <h1 className="w-full text-black font-mona-sans text-[22px] 2xl:text-[42px] font-bold leading-relaxed text-center">
           Choose From Over 3 Different Games
         </h1>
         <p className="text-[16px] text-black leading-loose text-center">

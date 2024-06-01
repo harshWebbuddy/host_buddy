@@ -41,9 +41,8 @@ const ContactForm: React.FC = () => {
     <section className="slide-reveal w-full  bg-[#F9EFE4]">
       <div className="w-full py-20 max-w-[1000px] items-center justify-center mx-auto">
         <div className="items-center justify-center mx-auto">
-          <h2 className="font-mona-sans text-5xl font-semibold item text-center text-black mt-3">
-            Full out the Contact Form
-          </h2>
+        <h2 className="font-mona-sans text-3xl 2xl:text-5xl font-semibold item text-center text-black mt-3">Fill out the Contact Form</h2>
+
         </div>
         <p className="text-center my-5">
           We will help you to choose the best plan!
@@ -115,7 +114,7 @@ const ContactForm: React.FC = () => {
           required
         ></textarea>
       </div>
-      <div className="flex flex-col bl:flex-row justify-center items-center bl:justify-between mt-4">
+      <div className="flex flex-col bl:flex-row space-y-6  justify-center items-center bl:justify-between mt-4">
         <div className="font-mona-sans text-base font-normal leading-24 tracking-tighter flex flex-row items-center text-left ml-3">
           <input
             type="checkbox"
@@ -126,11 +125,11 @@ const ContactForm: React.FC = () => {
             className="mr-4 h-6 w-6"
             required
           />
-          <label htmlFor="agreeTerms">I have read and agree to the terms and conditions </label>
-          <span className="ml-2 mr-2 leading-28 font-extrabold text-orange-500"> - HostBuddy</span>
+          <label htmlFor="agreeTerms">I have read and agree to the terms and conditions <span className="ml-2 mr-2 leading-28 font-extrabold text-orange-500"> - HostBuddy</span></label>
+         
         </div>
-        <div className="border-orange-500 border flex flex-row w-40 rounded-xl p-3 bg-orange-500 items-center justify-center">
-          <h2 className="font-medium text-[20px] leading-normal text-white">Submit Ticket</h2> 
+        <div className="border-orange-500 border flex flex-row w-32 2xl:w-40 rounded-xl p-3 bg-orange-500 items-center justify-center">
+          <h2 className="font-medium text-[14px] 2xl:text-[20px] leading-normal text-white">Submit Ticket</h2> 
         </div>
       </div>
     </form>

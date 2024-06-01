@@ -54,7 +54,7 @@ const Ratingpanel = () => {
               <div className="space-y-2">
                 <Image src="/trustpilotwhite.svg" alt="" width={150} height={40} />
                 <Image src="/trustpilot-reviews.svg" alt="" width={180} height={40} />
-                <h2 className="px-0  text-[11px]  text-white">
+                <h2 className="px-0  text-[11px] text-white ">
                   <span className="font-mona-sans font-extrabold leading-normal text-left">4.9/5 | 9010</span> reviews
                 </h2>
               </div>
@@ -68,8 +68,8 @@ const Ratingpanel = () => {
               <Image src="/google1.svg" alt="" width={100} height={40} className="-mb-3" />
              <img src="/hosting/rating1.svg" className="w-auto h-[28px]"/> 
             {/* <StarRating initialRating={3.5} onChange={handleRatingChange} /> */}
-            <h2 className="px-0  text-[11px]  text-white">
-                <span className="font-mona-sans font-extrabold leading-relaxed text-left">4.9/5 | 9010</span> reviews
+            <h2 className="px-0  text-[11px] text-white ">
+                <span className="font-mona-sans font-extrabold leading-relaxed text-left ">4.9/5 | 9010</span> reviews
               </h2>
             </div>
           </div>
@@ -77,12 +77,12 @@ const Ratingpanel = () => {
 <line x1="0.5" y1="0.63501" x2="0.499998" y2="56.635" stroke="#C8C8C8" stroke-dasharray="2 2"/>
 </svg>
           <div className="flex flex-col items-center">
-          <div className="space-y-2">
-              <Image src="/hostwhite.svg" alt="" width={120} height={40} className="mt-2"/>
+          <div className="space-y-0 2xl:space-y-2">
+              <Image src="/hostwhite.svg" alt="" width={160} height={80} className="mt-2"/>
               <img src="/hosting/rating1.svg" className="w-auto h-[28px]"/> 
 
               {/* <StarRating initialRating={3.5} onChange={handleRatingChange} /> */}
-              <h2 className="px-0  text-[11px]  text-white">
+              <h2 className="px-0  text-[11px] text-white ">
                 <span className="font-mona-sans font-extrabold leading-relaxed text-left">4.9/5 | 9010</span> reviews
               </h2>
             </div>
@@ -92,14 +92,15 @@ const Ratingpanel = () => {
 <line x1="0.5" y1="0.63501" x2="0.499998" y2="56.635" stroke="#C8C8C8" stroke-dasharray="2 2"/>
 </svg>
           <div className="flex flex-col items-center">
-          <div className="space-y-2.5">
+          <div className="space-y-0 2xl:space-y-2.5">
               <Image src="/serchenwhite.svg" alt="" width={100} height={40} />
-              <img src="/hosting/rating2.svg" className="w-auto h-[28px]"/> 
+              <img src="/hosting/rating2.svg" className="w-auto h-[22px] 2xl:h-[28px]"/> 
 
               {/* <StarRating initialRating={4} onChange={handleRatingChange} color="!text-[#73CF11]" /> */}
-              <h2 className="px-0  text-[11px]  text-white">
-                <span className="font-mona-sans font-extrabold leading-relaxed text-left">4.9/5 | 9010 </span> reviews
+              <h2 className="px-0  text-[11px] text-white ">
+                <span className="font-mona-sans font-extrabold leading-relaxed text-left">4.9/5 | 9010</span> reviews
               </h2>
+  
             </div>
           </div>
         </div>
@@ -117,7 +118,7 @@ export default function HomeMainPage() {
     <main className="overflow-hidden">
       {/* hero section */}
       <NavBar />
-      <section className="h-full min-h-[140vh] 2xl:min-h-[80vh] overflow-hidden relative bg-black flex items-center justify-center">
+      <section className="h-full min-h-[90vh] 2xl:min-h-[80vh] overflow-hidden relative bg-black flex items-center justify-center">
     <img src="/home.jpg" width={1920} height={1080} alt="" className="w-full absolute inset-0 h-full opacity-30 object-cover bg-blend-color-dodge !z-[1]" />
     <div className="max-w-[1300px] mx-auto text-white  px-10  pb-10 2xl:py-40">
       <div className="h-full flex items-center relative !z-[2] flex-col  xl:flex-row 2xl:flex-row justify-center space-y-10 ">
@@ -127,14 +128,13 @@ export default function HomeMainPage() {
         <span className="text-white opacity-90 font-light">Welcome to </span>
         <span className="text-orange-500 font-bold">HostBuddy</span>
       </h2>
-          <h1 className="font-mono-sans font-medium 2xl:font-semibold text-[50px] 2xl:text-[60px]
-           leading-[60px] 2xl:leading-[84px] text-left 2xl:text-left ">Lorem ipsum dolor
-           sit amet</h1>
+      <h1 className="font-mono-sans font-medium text-[50px] 2xl:text-[60px] leading-[60px] 2xl:leading-[84px] text-left 2xl:text-left ">Lorem ipsum dolor
+sit amet</h1>
 
 </div>
           <p className="font-mono-sans text-[16px] font-light leading-loose text-left  text-[#EBEBEB]">
           By trusting us with your business and projects needs, we promise a <span className="text-orange-500 ml-0.5">99.9%</span> uptime on any services we provide, outside of any standard maintenance we may provide. </p>
-          <div className="flex flex-wrap 2xl:flex-row space-y-4 justify-start space-x-6 !mt-10 ">
+          <div className="flex flex-wrap 2xl:flex-row space-y-4 justify-start space-y-6 2xl:space-x-6 !mt-10 ">
             <div className="h-[56px]  flex item-center justify-center bg-orange-500 rounded-xl py-4 w-auto px-6  gap-x-3">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="6" cy="19" r="2" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
@@ -171,7 +171,7 @@ export default function HomeMainPage() {
         </div>
       </div>
     </div>  
-    <div className="slide-reveal -bottom-0 2xl:-bottom-10 absolute !z-[20]"><Ratingpanel/></div>
+    <div className="slide-reveal -bottom-8 2xl:-bottom-10 absolute !z-[20]"><Ratingpanel/></div>
 
 </section>
   <img src="/fringe.svg" className="w-full absolute !z-[10] -translate-y-0 2xl:flex hidden 2xl:-translate-y-40"/>    
@@ -182,7 +182,7 @@ export default function HomeMainPage() {
 </section>
 
       {/* What Makes HostBuddy Unique? */}
-     <section className="slide-reveal pt-40 pb-40"><svg className="w-full h-full bottom-0 translate-y-2 "  height="165" viewBox="0 0 1920 165" fill="none" xmlns="http://www.w3.org/2000/svg">
+     <section className="slide-reveal 2xl:pt-40 pt-20 pb-20  2xl:pb-40"><svg className="w-full h-full bottom-0 translate-y-2 "  height="165" viewBox="0 0 1920 165" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M373.511 45.5L-1.88672 108.5V164.5L1921.89 161.5V106.5L1540.36 45.5L1597.73 89L1272.46 27.5L1335.95 72.5L957.215 0L578.476 74L642.527 27L316.143 89.5L373.511 45.5Z" fill="#FF7500"/>
 <path d="M354.574 53.5L-1.88672 110V162.5H1921.89V107L1562.64 54L1598.29 89.5L1300.87 38L1337.07 73L958.329 18L577.919 74.5L614.679 38.5L316.143 90L354.574 53.5Z" fill="#01131B"/>
 </svg>
@@ -191,13 +191,13 @@ export default function HomeMainPage() {
           <Image src="/dotted.svg" alt="" width={100} height={100} className="ml-1 absolute left-0 top-20 hidden 2xl:flex opacity-50" />
           <div className="flex flex-col space-y-10 mx-auto items-center justify-center ">
           <div className="w-full flex flex-col 2xl:flex-row 2xl:space-x-8 space-y-4 mx-auto items-start justify-start 2xl:px-20">
-          <div className="w-full">
-            <h4 className="text-[42px]  text-white font-semibold font-mona-sans leading-normal">
-            Amazing Games 
+          <div className="w-full ">
+            <h4 className="text-[22px] 2xl:text-[42px] gap-2  text-white flex flex-row 2xl:flex-col xl:flex-col font-semibold font-mona-sans leading-normal">
+            Amazing Games < span className="text-orange-500 text-[22px] 2xl:text-[42px]    font-semibold font-mona-sans leading-normal"> Control Panel </span>
             </h4>
-<span className="text-orange-500 text-[42px]   font-semibold font-mona-sans leading-normal">Control Panel </span>
+
           </div>
-          <p className="text-[16px] text-white leading-loose font-mono-sans">
+          <p className="text-[14px] 2xl:text-[16px] text-white leading-loose font-mono-sans">
           By trusting us with your business and projects needs, we promise a 99.9% uptime on any services we provide, outside of any standard.
             </p>
         </div>
@@ -213,8 +213,8 @@ export default function HomeMainPage() {
 </svg>
 
       <div className="transition-all duration-300 cursor-pointer m-8 md:gap-6 text-[#16191C]">
-        <h2 className="text-[24px] font-bold opacity-1 mb-4 group-hover:text-sefty-orange text-white ">Easy Configuration</h2>
-        <p className="font-mona-sans text-[16px] font-normal leading-normal text-left text-white group-hover:text-[#16191C]/70">
+        <h2 className="text-[22px] 2xl:text-[24px] font-bold opacity-1 mb-4 group-hover:text-sefty-orange text-white ">Easy Configuration</h2>
+        <p className="font-mona-sans  text-[14px] 2xl:text-[16px] font-normal leading-normal text-left text-white group-hover:text-[#16191C]/70">
         Euismod egestas suspendisse aliquet amet ultrices faucibus mauris sit odio.        </p>
       </div>
     </div>
@@ -232,8 +232,8 @@ export default function HomeMainPage() {
 
 
       <div className="transition-all duration-300 cursor-pointer m-8 md:gap-6 text-[#16191C]">
-        <h2 className="text-[24px] font-bold opacity-1 mb-4 group-hover:text-sefty-orange text-white ">Sub Users</h2>
-        <p className="font-mona-sans text-[16px] font-normal leading-normal text-left text-white group-hover:text-[#16191C]/70">
+        <h2 className="text-[22px] 2xl:text-[24px] font-bold opacity-1 mb-4 group-hover:text-sefty-orange text-white ">Sub Users</h2>
+        <p className="font-mona-sans  text-[14px] 2xl:text-[16px]  font-normal leading-normal text-left text-white group-hover:text-[#16191C]/70">
         Euismod egestas suspendisse aliquet amet ultrices faucibus mauris sit odio.        </p>
       </div>
     </div>
@@ -255,8 +255,8 @@ export default function HomeMainPage() {
 
 
       <div className="transition-all duration-300 cursor-pointer m-8 md:gap-6 text-[#16191C]">
-        <h2 className="text-[24px] font-bold opacity-1 mb-4 group-hover:text-sefty-orange text-white ">Game Panel Demo</h2>
-        <p className="font-mona-sans text-[16px] font-normal leading-normal text-left text-white group-hover:text-[#16191C]/70">
+        <h2 className="text-[22px] 2xl:text-[24px] font-bold opacity-1 mb-4 group-hover:text-sefty-orange text-white ">Game Panel Demo</h2>
+        <p className="font-mona-sans  text-[14px] 2xl:text-[16px]  font-normal leading-normal text-left text-white group-hover:text-[#16191C]/70">
         Euismod egestas suspendisse aliquet amet ultrices faucibus mauris sit odio.        </p>
       </div>
     </div>
@@ -280,7 +280,7 @@ export default function HomeMainPage() {
         <Location21/>
       </section>
  
-  <section className="pt-40">
+  <section className="pt-20 2xl:pt-40">
     <ContactForm/>
   </section>
 
@@ -297,17 +297,17 @@ export default function HomeMainPage() {
      <section className="bg-[#F5F5F5] relative pt-20 ">
        <div className="max-w-[1360px] flex flex-row mx-auto items-center justify-center p-4">
       <Image src="/microsoft/dotted.svg" alt="" width={100} height={100} className="2xl:flex hidden ml-1 absolute right-0 top-20 opacity-50 2xl:visible sm:invisible" />
-      <div>   <h1 className="text-[42px] font-semibold">
+      <div>   <h1 className="text-[22px] 2xl:text-[42px] font-semibold">
             Our Featured <span className="pb-4 border-b-4 border-orange-500">CaseStudy</span>
           </h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-y-6 gap-x-4 pt-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-y-6 gap-x-4 pt-10 2xl:pt-20">
             {caseStudies.map((caseStudy, index) => (
               <div key={index} className="space-y-6">
                 <Image src={caseStudy.image} alt="" width={500} height={500} className="w-full h-[240px] object-cover rounded-xl" />
-                <h1 className="text-xl font-bold leading-relaxed">{caseStudy.title}</h1>
+                <h1 className="text-md 2xl:text-xl font-bold leading-relaxed">{caseStudy.title}</h1>
                 <div className="relative max-w-fit flex flex-row group items-center justify-center !mt-4">
                   <div className="flex items-center gap-x-3 pb-2">
-                    <p className="text-[16px] font-bold text-orange-500">Read more</p>
+                    <p className="text-[14px] 2xl:text-[16px] font-bold text-orange-500">Read more</p>
                     <img src="/orangearrow.svg" className=" w-[11px] text-orange-500" />
                   </div>
                   <div className="bg-orange-500 h-0.5 absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-500" />
