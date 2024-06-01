@@ -34,7 +34,7 @@ const Ratingpanel = () => {
   };
   return (
       <div className="w-full max-w-[1300px] mx-auto bg-[#F5F5F5]  rounded-3xl mt-14 animate-slide-from-left">
-        <div className="flex flex-col 2xl:flex-row items-center p-10 gap-[85px]">
+        <div className="flex flex-col 2xl:flex-row items-center p-10 gap-[10px] 2xl:gap-[85px]">
           <div className="w-full max-w-fit font-mona-sans font-semibold text-center bl:text-left">
             <h3 className="font-bold text-[24px] leading-[63px]">Customer Happiness</h3>
           </div>
@@ -66,8 +66,8 @@ const Ratingpanel = () => {
 <line x1="0.5" y1="0.63501" x2="0.499998" y2="56.635" stroke="#C8C8C8" stroke-dasharray="2 2"/>
 </svg>
           <div className="flex flex-col items-center">
-          <div className="space-y-2">
-              <Image src="/hostadvice.svg" alt="" width={120} height={40} className="mt-2"/>
+          <div className="space-y-0 2xl:space-y-2">
+              <Image src="/hostadvice.svg" alt="" width={160} height={80} className="mt-2"/>
               <img src="/hosting/rating1.svg" className="w-auto h-[28px]"/> 
 
               {/* <StarRating initialRating={3.5} onChange={handleRatingChange} /> */}
@@ -81,14 +81,15 @@ const Ratingpanel = () => {
 <line x1="0.5" y1="0.63501" x2="0.499998" y2="56.635" stroke="#C8C8C8" stroke-dasharray="2 2"/>
 </svg>
           <div className="flex flex-col items-center">
-          <div className="space-y-2.5">
+          <div className="space-y-0 2xl:space-y-2.5">
               <Image src="/serchen.svg" alt="" width={100} height={40} />
-              <img src="/hosting/rating2.svg" className="w-auto h-[28px]"/> 
+              <img src="/hosting/rating2.svg" className="w-auto h-[22px] 2xl:h-[28px]"/> 
 
               {/* <StarRating initialRating={4} onChange={handleRatingChange} color="!text-[#73CF11]" /> */}
               <h2 className="px-0  text-[11px] ">
-                <span className="font-mona-sans font-extrabold leading-relaxed text-left">4.9/5 | 9010 </span> reviews
+                <span className="font-mona-sans font-extrabold leading-relaxed text-left">4.9/5 | 9010</span> reviews
               </h2>
+  
             </div>
           </div>
         </div>
