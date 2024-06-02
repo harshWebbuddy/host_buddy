@@ -32,8 +32,8 @@ const Plan2 = () => {
         </h2>
       </div>
     
-      <div className="flex flex-wrap bl:flex-nowrap items-center gap-2 sm:gap-5 ">
-        <h2 className="font-mona-sans text-[14px] 2xl:text-[19px] bl:text-base font-medium leading-[24px] bl:leading-[32px] tracking-[0.05em] bl:tracking-[0.2px] text-center 2xl:text-right w-54 bl:w-71 2xl:h-[32px]">
+      <div className="flex flex-wrap bl:flex-nowrap items-center gap-2 2xl:gap-5 ">
+        <h2 className="font-mona-sans text-[15px] 2xl:text-[19px] bl:text-base font-medium leading-[24px] bl:leading-[32px] tracking-[0.05em] bl:tracking-[0.2px] text-center 2xl:text-right w-54 bl:w-71 2xl:h-[32px]">
           Monthly
         </h2>
         <div className="toggle-container">
