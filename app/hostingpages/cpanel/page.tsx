@@ -12,24 +12,26 @@ import CaseStudy from './CaseStudy'
 import { caseStudies } from '../../(landing)/components/constants/casestudies';
 import Features from './Features'
 import Uniquecpanel from './Uniquecpanel'
+import { NavBar } from '@/components'
 
 const page = () => {
   return (
     <main className="overflow-hidden">
+      <NavBar className='text-white'/>
 {/* hero page  */}
       <section>
         <HeroHosting/>
         </section>
         {/* rating panel  */}
         <section>
-        <div className="space-y-10 2xl:space-y-32 ">
+        <div className="space-y-20 2xl:space-y-32 ">
           <Ratingpanel/>
           <Plans/>
         </div>
         </section>
 
         {/* plan page */}
-        <div className='pt-16 2xl:pt-44'>
+        <div className='pt-20 2xl:pt-44'>
           <Plan2/>
         </div>
         {/* what make hostbuddy unique section */}

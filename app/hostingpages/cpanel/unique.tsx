@@ -6,7 +6,7 @@ import Timeline from './timeline';
 
 const Unique = () => {
   return (
-    <section className=" relative pt-14 2xl:pt-36 2xl:pb-16">
+    <section className=" relative pt-16 2xl:pt-36 2xl:pb-16">
     <div className="p-4 w-full max-w-[1300px] mx-auto flex flex-col xl:flex-row items-center justify-center py-2">
       <Image src="/dotted.svg" alt="" width={100} height={100} className="2xl:flex hidden ml-1 absolute left-0 top-20 opacity-50 2xl:visible sm:invisible" />
       <div className="flex flex-col space-y-12 2xl:flex-row mx-auto items-center justify-between ">
