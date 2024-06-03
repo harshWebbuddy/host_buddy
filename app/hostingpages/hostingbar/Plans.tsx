@@ -21,25 +21,24 @@ const Plans = () => {
   return (
     <div className="flex flex-col max-w-[1300px] mx-auto">
       {/* heading */}
-      <div className="slide-reveal flex flex-col bl:flex-row justify-between gap-y-10 gap-x-30 items-center mb-8">
+      <div className="slide-reveal p-4 flex flex-col bl:flex-row justify-between gap-y-10 gap-x-30 items-center mb-8">
         <div className="relative w-full">
-          <h2 className="font-mona-sans font-semibold text-[42px] leading-relaxed w-full text-center bl:text-left">
+          <h2 className="font-mona-sans font-semibold text-[26px] xl:text-[32px] 2xl:text-[42px] leading-relaxed w-full text-left">
           The Premier Choice For
-  {/* <span className="pb-4 border-b-4 border-orange-500">Shared </span>Hosting  */}
           </h2>
-          <h2 className="font-mona-sans font-semibold text-[42px] leading-relaxed w-full text-center bl:text-left">
+          <h2 className="font-mona-sans font-semibold text-[26px] xl:text-[32px] 2xl:text-[42px] leading-relaxed w-full text-left">
   <span className="pb-4 border-b-4 border-orange-500">Shared </span>Hosting 
           </h2>
         </div>
         <div className="flex flex-wrap bl:flex-nowrap items-center gap-2 sm:gap-5">
         
-          <p className="font-mono-sans text-[16px] font-light leading-[24px] text-center 2xl:text-left text-[#16191C]">
+          <p className="font-mono-sans text-[14px] 2xl:text-[16px] font-light leading-[24px] text-left text-[#16191C]">
           Our mission is to accelerate business growth with unparalleled performance, support, and security, surpassing industry-leading hosting providers.
           </p>
         </div>
       </div>
       {/* cards */}
-      <section className="pt-10">
+      <section className="pt-10 px-2">
         <div className="flex flex-col bl:flex-row w-full justify-center gap-8 items-center">
 
           
@@ -135,43 +134,7 @@ const Plans = () => {
     
       </section>
 
-      {/* <div className=" flex flex-col bl:flex-row gap-y-10 mx-auto items-center justify-center py-20 bl:py-24">
-        <div className="flex flex-col item-center justify-center mx-auto ">
-          <div>
-            <h2 className=" text-orange-500 font-mona-sans font-extrabold text-7xl text-center">1.2M+</h2>
-          </div>
-          <div className="item-center justify-center mt-6">
-            <p className="justify-center font-mona-sans text-lg font-normal text-center leading-relaxed">
-              trusted by 1.2 <br />
-              millions users
-            </p>
-          </div>
-        </div>
-        <div className="hidden bl:block w-[172px]  border-t border-gray-200 transform rotate-90"></div>
-        <div className="flex flex-col item-center justify-center mx-auto ">
-          <div>
-            <h2 className=" text-orange-500 font-mona-sans font-extrabold text-7xl text-center">1.5M+</h2>
-          </div>
-          <div className="item-center justify-center mt-6">
-            <p className="justify-center font-mona-sans text-lg font-normal text-center leading-relaxed">
-              websites hosted in more <br />
-              than <strong>150 </strong>countries
-            </p>
-          </div>
-        </div>
-        <div className="hidden bl:block w-[172px]  border-t border-gray-200 transform rotate-90"></div>
-        <div className="flex flex-col item-center justify-center mx-auto ">
-          <div>
-            <h2 className=" text-orange-500 font-mona-sans font-extrabold text-7xl text-center">96%</h2>
-          </div>
-          <div className="item-center justify-center mt-6">
-            <p className="justify-center font-mona-sans text-lg font-normal text-center leading-relaxed">
-              customer support <br />
-              satisfaction score
-            </p>
-          </div>
-        </div>
-      </div> */}
+     
     </div>
   );
 };

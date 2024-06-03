@@ -28,10 +28,10 @@ const CardsComponent = () => {
   return (
     <div className="space-y-28 p-4 max-w-[1300px] mx-auto pt-36 pb-20">
     <div className={`w-full flex flex-col xl:flex-row gap-16 items-center ${slideReveal ? "slide-reveal" : ""}`}>        <div className="w-full space-y-4 items-start">
-          <div className="item-start pr-20">
-            <h2 className="text-4xl leading-10 font-semibold">Advanced Features Included in Shared Hosting</h2>
+          <div className="item-start 2xl:pr-20">
+            <h2 className="text-3xl 2xl:text-4xl leading-10 font-semibold">Advanced Features Included in Shared Hosting</h2>
           </div>
-        <div className="flex flex-row  items-center">
+        <div className="flex flex-col 2xl:flex-row  items-center">
           <ul className="w-full space-y-4">
             <li className="flex gap-4 items-start">
               <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
@@ -106,15 +106,15 @@ Outbound e-Mail Security
       <div className={`w-full flex flex-col xl:flex-row-reverse gap-16 items-center ${slideReveal ? "slide-reveal" : ""}`}>
         <div className="w-full space-y-5">
           <div className="">
-            <h2 className="text-4xl leading-10 font-semibold">Server Located in India</h2>
+          <h2 className="text-3xl 2xl:text-4xl leading-10 font-semibold">Server Located in India</h2>
           </div>
           <ul className="w-full space-y-10">
             <li className="flex gap-4 items-start">
-              <p className="capitalize leading-6 text-[16px] font-light">
+              <p className="capitalize leading-6 text-[12px] 2xl:text-[16px] font-light">
 Enhance Your Hosting Experience! Boost website load times to maximize server response, SEO rankings, and sales. Opt for a server closer to your audience, especially in India, for enhanced reliability and lightning-fast page loads.              </p>
             </li>
-           <div className="bg-white border-orange-500 border flex flex-row w-52 rounded-xl p-3  items-center justify-center">
-              <h2 className="font-medium text-[20px]  leading-normal ">Get Started </h2> <img src="/hosting/ArrowIcon.svg" className="pl-4 -mt-0.5 "/>
+           <div className="bg-white border-orange-500 border flex flex-row 2xl:w-52 rounded-xl p-3  items-center justify-center">
+              <h2 className="font-medium text-[16px] 2xl:text-[20px]  leading-normal ">Get Started </h2> <img src="/hosting/ArrowIcon.svg" className="pl-4 -mt-0.5 "/>
           </div>
           </ul>
          
@@ -130,15 +130,15 @@ Enhance Your Hosting Experience! Boost website load times to maximize server res
       <div className={`w-full flex flex-col xl:flex-row gap-14 items-center ${slideReveal ? "slide-reveal" : ""}`}>
           <div className="w-full space-y-5">
           <div className="">
-            <h2 className="text-4xl leading-10 font-semibold">Start Fast with the Built-In One-Click Installer</h2>
+          <h2 className="text-3xl 2xl:text-4xl leading-10 font-semibold">Start Fast with the Built-In One-Click Installer</h2>
           </div>
           <ul className="w-full space-y-10">
             <li className="flex gap-4 items-start">
-              <p className="capitalize leading-6 text-[16px] font-light">
+            <p className="capitalize leading-6 text-[12px] 2xl:text-[16px] font-light">
 Enhance Your Hosting Experience! Boost website load times to maximize server response, SEO rankings, and sales. Opt for a server closer to your audience, especially in India, for enhanced reliability and lightning-fast page loads.              </p>
             </li>
-            <div className="bg-white border-orange-500 border flex flex-row w-52 rounded-xl p-4  items-center justify-center">
-              <h2 className="font-medium text-[20px]  leading-normal ">Get Started </h2> <img src="/hosting/ArrowIcon.svg" className="pl-4 -mt-0.5 "/>
+            <div className="bg-white border-orange-500 border flex flex-row 2xl:w-52 rounded-xl p-3  items-center justify-center">
+              <h2 className="font-medium text-[16px] 2xl:text-[20px]  leading-normal ">Get Started </h2> <img src="/hosting/ArrowIcon.svg" className="pl-4 -mt-0.5 "/>
           </div>
           </ul>
          
@@ -154,16 +154,16 @@ Enhance Your Hosting Experience! Boost website load times to maximize server res
       <div className={`w-full flex flex-col xl:flex-row-reverse gap-16 items-center ${slideReveal ? "slide-reveal" : ""}`}>
         <div className="w-full space-y-4">
           <div className="">
-           <h2 className="text-4xl leading-10 font-semibold">Free Website Migration</h2>
+          <h2 className="text-3xl 2xl:text-4xl leading-10 font-semibold">Free Website Migration</h2>
           </div>
           <ul className="w-full space-y-10">
           
             <li className="flex gap-4 items-start">
-              <p className="capitalize leading-6 text-[16px] font-light">
+            <p className="capitalize leading-6 text-[12px] 2xl:text-[16px] font-light">
 Switching web hosts can be daunting, especially considering the importance of your website's data. At HostBuddy, we understand this concern, which is why we offer a hassle-free migration service at no extra cost. Our expert support team will guide you through the process, ensuring a seamless transition to our servers. Rest assured, we prioritize the safety and integrity of your data, ensuring your website remains intact but with improved hosting services.              </p>
             </li>
-            <div className="bg-white border-orange-500 border flex flex-row w-52 rounded-xl p-4  items-center justify-center">
-              <h2 className="font-medium text-[20px]  leading-normal ">Get Started </h2> <img src="/hosting/ArrowIcon.svg" className="pl-4 -mt-0.5 "/>
+            <div className="bg-white border-orange-500 border flex flex-row 2xl:w-52 rounded-xl p-3  items-center justify-center">
+              <h2 className="font-medium text-[16px] 2xl:text-[20px]  leading-normal ">Get Started </h2> <img src="/hosting/ArrowIcon.svg" className="pl-4 -mt-0.5 "/>
           </div>
           </ul>
         </div>

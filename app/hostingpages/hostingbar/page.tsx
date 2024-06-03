@@ -9,49 +9,51 @@ import Testimonials from './Testimonials'
 import Faqs from './Faqs';
 import CaseStudy from './CaseStudy'
 import Features from './Features'
+import { NavBar } from '@/components'
 
 const page = () => {
   return (
     <main className="overflow-hidden">
+      <NavBar className='text-white'/>
 {/* hero page  */}
       <section>
         <HeroHosting/>
         </section>
         {/* rating panel  */}
         <section>
-        <div className="space-y-32 ">
+        <div className="space-y-20 2xl:space-y-32 ">
           <Ratingpanel/>
           <Plans/>
         </div>
         </section>
 
         {/* plan page */}
-        <section className='pt-40'>
+        <section className='pt-20 2xl:pt-40'>
           <Plan2/>
         </section>
         {/* what make hostbuddy unique section */}
-        <section className='pt-40 pb-40'>
+        <section className='pt-20 2xl:pt-40 pb-20 2xl:pb-40'>
           <Unique/>
         </section>
         {/* cardsection */}
         <section>
           <Features/>
         </section>
-        <section className='pt-10'>
+        <section className='2xl:pt-10'>
           <CardsComponent/>
         </section>
 
         {/* testimonials */}
-        <section className='pt-10'>
+        <section className='2xl:pt-10'>
           <Testimonials/>
         </section>
 
         {/* Question Answers */}
-        <section className='pt-16'>
+        <section className=' 2xl:pt-16'>
 <Faqs/>
         </section>
         {/* caseStudies */}
-        <section className='pt-40 pb-96'>
+        <section className='pt-20 2xl:pt-40 pb-40 2xl:pb-96'>
           <CaseStudy/>
         </section>
      </main>

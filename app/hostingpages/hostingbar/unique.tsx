@@ -5,11 +5,11 @@ const Unique = () => {
   return (
     <section className=" relative">
     <div className="p-4 w-full max-w-[1300px] mx-auto flex flex-col xl:flex-row items-center justify-center ">
-      <Image src="/dotted.svg" alt="" width={100} height={100} className="ml-1 absolute left-0 top-20 opacity-50 2xl:visible sm:invisible" />
+      <Image src="/dotted.svg" alt="" width={100} height={100} className="ml-1 absolute left-0 top-20 opacity-50 2xl:flex hidden" />
       <div className="flex flex-col 2xl:flex-row mx-auto items-center justify-between ">
         <div className="w-full flex flex-col space-y-8">
           <div className="space-y-3.5 slide-reveal">
-            <h4 className="text-[39px] text-black font-semibold font-mona-sans leading-normal">
+          <h4 className="text-[29px] 2xl:text-[39px] text-black font-semibold font-mona-sans leading-normal">
               What Makes Host<span className="text-orange-500">Buddy </span>  Unique?
              
             </h4>
@@ -43,8 +43,8 @@ const Unique = () => {
           </g>
         </svg>         
                  <div className="transition-all duration-300 cursor-pointer m-8 xl:gap-6 text-[#16191C]">
-                    <h2 className="text-[24px] font-bold opacity-1 mb-4 group-hover:text-orange-500">24/7 & 365 Days Support </h2>
-                    <p className="font-mona-sans text-[16px] font-normal leading-normal text-left">
+                 <h2 className="text-[20px] 2xl:text-[20px] 2xl: font-bold opacity-1 mb-4 group-hover:text-orange-500">24/7 & 365 Days Support </h2>
+                 <p className="font-mona-sans text-[14px] 2xl:text-[16px] font-normal leading-normal text-left">
                     Euismod egestas suspendisse aliquet amet ultrices faucibus mauris sit odio.                    </p>
                   </div>
                 </div>
@@ -73,8 +73,8 @@ const Unique = () => {
           </g>
         </svg>
                   <div className="transition-all duration-300 cursor-pointer m-8 xl:gap-6 text-[#16191C]">
-                    <h2 className="text-[24px] font-bold opacity-1 mb-4 group-hover:text-orange-500">30-Day Money Back</h2>
-                    <p className="font-mona-sans text-[16px] font-normal leading-normal text-left">
+                  <h2 className="text-[20px] 2xl:text-[20px] 2xl: font-bold opacity-1 mb-4 group-hover:text-orange-500">30-Day Money Back</h2>
+                  <p className="font-mona-sans text-[14px] 2xl:text-[16px] font-normal leading-normal text-left">
                     Euismod egestas suspendisse aliquet amet ultrices faucibus mauris sit odio.                    </p>
                   </div>
                 </div>
@@ -89,8 +89,8 @@ const Unique = () => {
 </g></svg>
 
                   <div className="transition-all duration-300 cursor-pointer m-8 xl:gap-6 text-[#16191C]">
-                    <h2 className="text-[24px] font-bold opacity-1 mb-4 group-hover:text-orange-500">30-Day Money Back</h2>
-                    <p className="font-mona-sans text-[16px] font-normal leading-normal text-left">
+                  <h2 className="text-[20px] 2xl:text-[20px] 2xl: font-bold opacity-1 mb-4 group-hover:text-orange-500">30-Day Money Back</h2>
+                  <p className="font-mona-sans text-[14px] 2xl:text-[16px] font-normal leading-normal text-left">
                     Euismod egestas suspendisse aliquet amet ultrices faucibus mauris sit odio.                    </p>
                   </div>
                 </div>
