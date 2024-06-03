@@ -41,14 +41,14 @@ export default function Features() {
 
   return (
     
-    <div className="p-4 relative  mx-auto flex flex-col w-full items-center justify-center pt-10 2xl:pt-40 opacity-80">
+    <div className="p-4 relative  mx-auto flex flex-col w-full items-center justify-center pt-14 2xl:pt-40 opacity-80">
       <div className="max-w-[1360px] mx-auto">
         <div className="slide-reveal flex flex-col 2xl:flex-row gap-y-10 2xl:items-center justify-between">
-          <h2 className="text-[42px] leading-[63px] font-semibold text-black w-full 2xl:max-w-full">
+          <h2 className="text-[22px] xl:text-[32px] 2xl:text-[42px] leading-[43px] 2xl:leading-[63px] font-semibold text-black w-full 2xl:max-w-full">
           <span className="text-orange-500 capitalize">c</span>Panel Hosting Packed with Ultimat<span className="pb-4 border-b-4 border-orange-500">e Feature</span>s
           </h2>
         </div>
-        <div className="slide-reveal flex flex-row gap-4 mt-16 overflow-hidden transition-all duration-500 h-full pb-32">
+        <div className="slide-reveal flex flex-row gap-4 mt-8 2xl:mt-16 overflow-hidden transition-all duration-500 h-full pb-20  2xl:pb-32">
           {Array.from({ length: columns }, (_, columnIndex) => (
             <div key={columnIndex} className="flex flex-col w-full gap-4">
               {visibleTestimonials.map(
@@ -58,11 +58,11 @@ export default function Features() {
                   <div className="flex flex-col gap-5 justify-between w-full">
                     <div className="flex justify-between flex-row">
                       <Image src={testimonial.author.image_url} alt="download" width={50} height={50} className="select-none" draggable={false} />
-                      <h1 className="font-light text-[14.45px] opacity-70 pl-2">{testimonial.number}</h1>
+                      <h1 className="font-light text-[12px] 2xl:text-[14.45px] opacity-70 pl-2">{testimonial.number}</h1>
                     </div>
-                    <h1 className="font-semibold text-[24px] leading-8">{testimonial.author.names}</h1>
+                    <h1 className="font-semibold text-[20px] 2xl:text-[24px] leading-8">{testimonial.author.names}</h1>
                   </div>
-                  <p className="leading-6 text-[16px] opacity-50">{testimonial.testimonial}</p>
+                  <p className="leading-6 text-[14px] 2xl:text-[16px] opacity-50">{testimonial.testimonial}</p>
                 </div>
                   )
               )}

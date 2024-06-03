@@ -8,10 +8,12 @@ import CaseStudy from './CaseStudy'
 import Features from './Features'
 import Adds from './Adds'
 import Bandwidth from './Bandwidth'
+import { NavBar } from '@/components'
 
 const page = () => {
   return (
-    <main className="overflow-hidden">
+    <main className="overflow-hidden">      <NavBar className='text-white'/>
+
 {/* hero page  */}
       <section>
         <HeroHosting/>

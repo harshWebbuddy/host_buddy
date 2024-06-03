@@ -55,9 +55,9 @@ const Support = () => {
     <div className="w-full    px-3">
 
       <div className="w-full max-w-[1220px] mx-auto">
-      <div className="slide-reveal flex flex-col bl:flex-row justify-between gap-y-10 gap-x-30 items-center  pb-16">
+      <div className="slide-reveal flex flex-col bl:flex-row justify-between gap-y-2 2xl:gap-y-10 gap-x-30 items-center  pb-16">
         <div className="relative w-full">
-          <h2 className="font-mona-sans font-semibold text-[42px] leading-relaxed w-full text-center bl:text-left">
+          <h2 className="font-mona-sans font-semibold  text-[22px] xl:text-[32px] 2xl:text-[42px] leading-[43px] 2xl:leading-[63px] w-full text-left">
           Out-of-the-Box cPanel
 Hosting Experience
   {/* <span className="pb-4 border-b-4 border-orange-500">Shared </span>Hosting  */}
@@ -65,7 +65,7 @@ Hosting Experience
       
         </div>
         <div className="flex flex-wrap bl:flex-nowrap items-center gap-2 sm:gap-5">
-          <p className="font-mono-sans text-[16px] font-light leading-[24px] text-center 2xl:text-left text-[#16191C]">
+          <p className="font-mono-sans text-[12px] 2xl:ext-[16px] font-light leading-[24px] text-left text-[#16191C]">
           Lorem ipsum dolor sit amet consectetur. Sit placerat pellentesque lacus elementum bibendum. Vitae tortor scelerisque maecenas amet sit quam justo diam. Molestie amet est et donec iaculis ut. 
           </p>
         </div>
@@ -76,9 +76,9 @@ Hosting Experience
       <div className="absolute -top-7 left-9 w-16 h-16 flex justify-center items-center rounded-xl transition-all duration-300 ">
         {item.icon}
       </div>
-      <div className="  rounded-2xl group bg-[#F9EFE4] text-[#16191C] p-4 pl-8 pt-10 transition-all duration-300 cursor-pointer">
-        <h2 className="text-[18px] font-bold mt-4 leading-[26px] opacity-1 mb-4">{item.title}</h2>
-        <p className="w-full opacity-70 font-mona-sans text-[16px] font-normal leading-normal text-left">
+      <div className="  rounded-2xl group bg-[#F9EFE4] text-[#16191C] p-4 pl-8 pt-8 2xl:pt-10 transition-all duration-300 cursor-pointer">
+        <h2 className="text-[16px] 2xl:text-[18px] font-bold mt-4 leading-[26px] opacity-1 mb-4">{item.title}</h2>
+        <p className="w-full opacity-70 font-mona-sans text-[14px] 2xl:text-[16px] font-normal leading-normal text-left">
           {item.description}
         </p>
       </div>
