@@ -64,7 +64,7 @@ const Plans = () => {
     <div className="font-bold text-lg leading-[26px] text-center font-mono-sans-serif text-[#16191C] mb-2 px-102xl:px-20">Fastest Website Loading Speed</div>
     <p className="font-mona-sans text-base font-normal leading-21 text-center h-[17px] opacity-70 px-10">Lorem ipsum dolor sit amet consectetur. Velit morbi eleifend tellus pharetra porttitor sagittis.</p>
   </div>
-  <div className="mt-20 ">
+  <div className="mt-40 2xl:mt-20 ">
     <div className="w-full h-[52px] text-xl rounded-xl font-bold flex items-center justify-center group">
       <span className="ml-2 text-[#FFA030] text-lg font-semibold leading-6 opacity-0 group-hover:opacity-100">Learn more</span>
       <span className="group-hover:text-[#FFA030] -ml-28 group-hover:ml-2">
@@ -96,7 +96,7 @@ const Plans = () => {
     <div className="font-bold text-lg leading-[26px] text-center font-mono-sans-serif text-[#16191C] mb-2 px-102xl:px-20">Fastest Website Loading Speed</div>
     <p className="font-mona-sans text-base font-normal leading-21 text-center h-[17px] opacity-70 px-10">Lorem ipsum dolor sit amet consectetur. Velit morbi eleifend tellus pharetra porttitor sagittis.</p>
   </div>
-  <div className="mt-20 ">
+  <div className="mt-40 2xl:mt-20 ">
     <div className="w-full h-[52px] text-xl rounded-xl font-bold flex items-center justify-center group">
       <span className="ml-2 text-[#FFA030] text-lg font-semibold leading-6 opacity-0 group-hover:opacity-100">Learn more</span>
       <span className="group-hover:text-[#FFA030] -ml-28 group-hover:ml-2">
@@ -122,7 +122,7 @@ const Plans = () => {
     <div className="font-bold text-lg leading-[26px] text-center font-mono-sans-serif text-[#16191C] mb-2 px-102xl:px-20">Fastest Website Loading Speed</div>
     <p className="font-mona-sans text-base font-normal leading-21 text-center h-[17px]  opacity-70 px-10">Lorem ipsum dolor sit amet consectetur. Velit morbi eleifend tellus pharetra porttitor sagittis.</p>
   </div>
-  <div className="mt-20 ">
+  <div className="mt-40 2xl:mt-20 ">
     <div className="w-full h-[52px] text-xl rounded-xl font-bold flex items-center justify-center group">
       <span className="ml-2 text-[#FFA030] text-lg font-semibold leading-6 opacity-0 group-hover:opacity-100">Learn more</span>
       <span className="group-hover:text-[#FFA030] -ml-28 group-hover:ml-2">

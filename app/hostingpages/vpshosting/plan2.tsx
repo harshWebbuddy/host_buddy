@@ -26,6 +26,8 @@ const Plan2 = () => {
  <div> 
    <div className='bg-gradient-to-b from-[#292E34]  to-[#16191C] pt-20 '> 
       <div className="flex flex-col max-w-[1300px] mx-auto">
+      <img src="/wordpress/design.svg" className='right-0 absolute opacity-100'/>
+
     {/* heading */}
     <div className="slide-reveal flex flex-col bl:flex-row justify-between gap-y-6 gap-x-4 items-center mb-8 " >
     <div className="relative w-full">
@@ -59,7 +61,7 @@ const Plan2 = () => {
       </div>
     </div>
     {/* cards */}
-    <section className="mt-10 p-4  2xl:p-0" ref={ref}>
+    <section className="mt-10" ref={ref}>
       <div className="flex flex-col bl:flex-row w-full justify-center gap-8 items-center" >
       <div className={`slide-item ${animationClass} w-full`}>
           <div  className="mb-5 w-full transition-all  hover:bg-[#F9EFE4]  bg-[#FFFFFF]/15 px-10 rounded-2xl group" >
@@ -249,7 +251,7 @@ const Plan2 = () => {
     <div className="w-[172px] border-t border-gray-200 rotate-90 2xl:flex hidden"></div>
     <div className="flex flex-col item-center justify-center mx-auto slide-item">
         <div>
-            <h2 className="text-orange-500 font-mona-sans font-extrabold text-6xl 2xl:text-7xl text-center">96%</h2>
+            <h2 className="text-orange-500 font-mona-sans font-extrabold text-6xl 2xl:text-7xl text-center">96</h2>
         </div>
         <div className="item-center justify-center mt-6">
         <p className="justify-center text-white font-mona-sans text-lg font-normal text-center leading-relaxed">
@@ -261,7 +263,6 @@ const Plan2 = () => {
 </div>
 
 
-  <img src="/wordpress/design.svg" className='right-0 absolute opacity-100'/>
   </div>
   </div>
   </div> 

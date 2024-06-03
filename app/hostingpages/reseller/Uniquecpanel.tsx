@@ -103,7 +103,7 @@ export default function Features() {
       
       , // Replace FaIcon2 with the desired icon component
       title: "Web Host Manager (WHM)",
-      description: "Lorem ipsum dolor sit amet consectetur. Gravida scelerisque ullamcorper libero sed justo amet. Quam et amet aliquam nibh. Purus malesuada congue dictum sem. Morbi quam commodo suspendisse eu vitae lectus euismod. Nulla lobortis tellus et sit in."
+      description: "Lorem ipsum dolor sit amet consescelerisque ullamcorper libero sed justo amet. Quam et amet aliquam nibh. Purus malesuada congue dictum sem. Morbi quam commodo suspendisse eu vitae lectus euismod. Nulla lobortis tellus et sit in."
     },
     {
       icon: <svg width="102" height="102" viewBox="0 0 102 102" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -339,14 +339,19 @@ export default function Features() {
           <p className="w-full text-black text-[14px] 2xl:text-[16px] leading-loose ">
           Looking to streamline billing, termination, and daily operations for your web hosting business?          </p>
         </div>
-<div className="grid grid-cols-1 lg:grid-cols-2 bl:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 space-x-2 2xl:space-x-6   transition-all duration-500 h-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-14 2xl:gap-14 transition-all duration-500 h-full">
   {items.map((item, index) => (
-                    <div key={index} className="slide-reveal group relative bg-[#F5F5F5]  hover:bg-[#F9EFE4] border py-10 px-10 pr-16 rounded-2xl space-y-5 mb-20">
-                    <div className="absolute -top-14 featuresvg20 left-9  flex justify-center items-center rounded-xl transition-all duration-300 ">
+    <div
+      key={index}
+      className="slide-reveal group relative bg-[#F5F5F5] hover:bg-[#F9EFE4] border py-10 px-10 pr-16 rounded-2xl space-y-5 h-[300px]" // Fixed height for uniformity
+    >
+      <div className="absolute -top-14 left-9 flex justify-center items-center rounded-xl transition-all duration-300">
         {item.icon}
       </div>
-      <div className=" rounded-2xl group space-y-4  cursor-pointer">
-        <h2 className="font-semibold text-[20px] 2xl:text-[24px] leading-8">{item.title}</h2>
+      <div className="rounded-2xl group space-y-4 cursor-pointer">
+        <h2 className="font-semibold text-[20px] 2xl:text-[24px] leading-8">
+          {item.title}
+        </h2>
         <p className="leading-6 text-[12px] 2xl:text-[15px] opacity-50">
           {item.description}
         </p>
@@ -354,6 +359,7 @@ export default function Features() {
     </div>
   ))}
 </div>
+
       </div>
      
     </div>

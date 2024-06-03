@@ -158,8 +158,8 @@ const Adds = () => {
         <div className="w-full flex justify-center">
           <div className="relative items-center justify-center mt-40 ">
             <Image src="/vpshosting/3.jpeg" width={500} height={1529} alt="" className="rounded-2xl relative z-10  cropped-ofp" />
-            <Image src="/vpshosting/triangle.svg" width={70} height={70} alt="" className="2xl:Flex hidden absolute -rotate-15 top-0 -right-10" />
-            <Image src="/vpshosting/box.svg" alt="" width={300} height={302} className="2xl:Flex hidden absolute -left-20 -bottom-10" />
+            <Image src="/vpshosting/triangle.svg" width={70} height={70} alt="" className="2xl:flex hidden absolute -rotate-15 top-0 -right-10" />
+            <Image src="/vpshosting/box.svg" alt="" width={300} height={302} className="2xl:flex hidden absolute -left-20 -bottom-10" />
           </div>
         </div>   
         </div>

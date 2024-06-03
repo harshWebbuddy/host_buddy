@@ -222,7 +222,6 @@ const Plan2 = () => {
      
     </section>
 
-  <img src="/wordpress/design.svg" className='right-0 absolute opacity-100'/>
   </div>
   </div>
   </div> 

@@ -14,7 +14,7 @@ const OptionSelector = () => {
         return <div className="">
             <div className="bg-[#FFFFFF] rounded-2xl">
             <div className="flex sm:flex-col flex-col 2xl:flex-row md:flex-row bl:flex-row lg:flex-row xl:flex-row grids-cols-2 2xl:grid-cols-3 space-x-4 w-full ">        
-          <ul className="w-full space-y-2  text-[10px] 2xl:text-[15px] p-4">
+          <ul className="w-full space-y-2  text-[10px] 2xl:text-[15px] p-4 pl-8">
             <li className="flex gap-4 items-start">
               <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
               <p className="capitalize leading-loose">
@@ -82,7 +82,7 @@ const OptionSelector = () => {
               </p>
             </li>
           </ul>
-          <svg className="2xl:flex hidden w-1 mt-2" height="510px" viewBox="0 0 1 613" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg className="2xl:flex hidden w-1 mt-2 -translate-x-0" height="510px" viewBox="0 0 1 613" fill="none" xmlns="http://www.w3.org/2000/svg">
 <line x1="0.5" y1="2.18555e-08" x2="0.499973" y2="613" stroke="#E9E9E9"/>
 </svg>
 
@@ -120,9 +120,9 @@ const OptionSelector = () => {
         </div>;
       case "Control Panel Features":
         return <div className="option-content">
-            <div className="bg-[#FFFFFF] rounded-2xl">
-            <div className="flex flex-row grid-cols-3 space-x-4 w-full ">        
-          <ul className="w-full space-y-2  text-[15px] p-4">
+             <div className="bg-[#FFFFFF] rounded-2xl">
+            <div className="flex sm:flex-col flex-col 2xl:flex-row md:flex-row bl:flex-row lg:flex-row xl:flex-row grids-cols-2 2xl:grid-cols-3 space-x-4 w-full ">        
+          <ul className="w-full space-y-2  text-[10px] 2xl:text-[15px] p-4 pl-8">
             <li className="flex gap-4 items-start">
               <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
               <p className="capitalize leading-loose">
@@ -190,8 +190,11 @@ const OptionSelector = () => {
               </p>
             </li>
           </ul>
-        
-          <ul className="w-full space-y-2   text-[15px] p-4">
+          <svg className="2xl:flex hidden w-1 mt-2 -translate-x-0" height="510px" viewBox="0 0 1 613" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="0.5" y1="2.18555e-08" x2="0.499973" y2="613" stroke="#E9E9E9"/>
+</svg>
+
+          <ul className="w-full space-y-2   text-[10px] 2xl:text-[15px] p-4">
             <li className="flex gap-4 items-start">
               <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
               <p className="capitalize leading-loose">
@@ -225,219 +228,117 @@ const OptionSelector = () => {
         </div>;
       case "Server Features":
         return <div className="option-content">
-        <div className="bg-[#FFFFFF] rounded-2xl">
-        <div className="flex flex-row grid-cols-3 space-x-4 w-full ">        
-      <ul className="w-full space-y-2  text-[15px] p-4">
-        <li className="flex gap-4 items-start">
-          <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-          <p className="capitalize leading-loose">
-          Custom Branding              </p>
-        </li>
-        <li className="flex gap-4 items-start">
-          <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-          <p className="capitalize leading-loose">
-          Unlimited Addon Domains
-          </p>
-        </li>
-        <li className="flex gap-4 items-start">
-          <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-          <p className="capitalize leading-loose">
-          Custom Branding              </p>
-        </li>
-        <li className="flex gap-4 items-start">
-          <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-          <p className="capitalize leading-loose">
-          Unlimited Addon Domains
-          </p>
-        </li>
-        <li className="flex gap-4 items-start">
-          <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-          <p className="capitalize leading-loose">
-          Custom Branding              </p>
-        </li>
-        <li className="flex gap-4 items-start">
-          <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-          <p className="capitalize leading-loose">
-          Unlimited Addon Domains
-          </p>
-        </li>
-        <li className="flex gap-4 items-start">
-          <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-          <p className="capitalize leading-loose">
-          Custom Branding              </p>
-        </li>
-        <li className="flex gap-4 items-start">
-          <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-          <p className="capitalize leading-loose">
-          Unlimited Addon Domains
-          </p>
-        </li>
-        <li className="flex gap-4 items-start">
-          <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-          <p className="capitalize leading-loose">
-          Custom Branding              </p>
-        </li>
-        <li className="flex gap-4 items-start">
-          <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-          <p className="capitalize leading-loose">
-          Unlimited Addon Domains
-          </p>
-        </li>
-        <li className="flex gap-4 items-start">
-          <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-          <p className="capitalize leading-loose">
-          Custom Branding              </p>
-        </li>
-        <li className="flex gap-4 items-start">
-          <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-          <p className="capitalize leading-loose">
-          Unlimited Addon Domains
-          </p>
-        </li>
-      </ul>
-    
-      <ul className="w-full space-y-2   text-[15px] p-4">
-        <li className="flex gap-4 items-start">
-          <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-          <p className="capitalize leading-loose">
-          Custom Branding              </p>
-        </li>
-        <li className="flex gap-4 items-start">
-          <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-          <p className="capitalize leading-loose">
-          Unlimited Addon Domains
-          </p>
-        </li>
-        <li className="flex gap-4 items-start">
-          <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-          <p className="capitalize leading-loose">
-          Custom Branding              </p>
-        </li>
-        <li className="flex gap-4 items-start">
-          <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-          <p className="capitalize leading-loose">
-          Unlimited Addon Domains
-          </p>
-        </li>
+         <div className="bg-[#FFFFFF] rounded-2xl">
+            <div className="flex sm:flex-col flex-col 2xl:flex-row md:flex-row bl:flex-row lg:flex-row xl:flex-row grids-cols-2 2xl:grid-cols-3 space-x-4 w-full ">        
+          <ul className="w-full space-y-2  text-[10px] 2xl:text-[15px] p-4 pl-8">
+            <li className="flex gap-4 items-start">
+              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
+              <p className="capitalize leading-loose">
+              Custom Branding              </p>
+            </li>
+            <li className="flex gap-4 items-start">
+              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
+              <p className="capitalize leading-loose">
+              Unlimited Addon Domains
+              </p>
+            </li>
+            <li className="flex gap-4 items-start">
+              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
+              <p className="capitalize leading-loose">
+              Custom Branding              </p>
+            </li>
+            <li className="flex gap-4 items-start">
+              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
+              <p className="capitalize leading-loose">
+              Unlimited Addon Domains
+              </p>
+            </li>
+            <li className="flex gap-4 items-start">
+              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
+              <p className="capitalize leading-loose">
+              Custom Branding              </p>
+            </li>
+            <li className="flex gap-4 items-start">
+              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
+              <p className="capitalize leading-loose">
+              Unlimited Addon Domains
+              </p>
+            </li>
+            <li className="flex gap-4 items-start">
+              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
+              <p className="capitalize leading-loose">
+              Custom Branding              </p>
+            </li>
+            <li className="flex gap-4 items-start">
+              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
+              <p className="capitalize leading-loose">
+              Unlimited Addon Domains
+              </p>
+            </li>
+            <li className="flex gap-4 items-start">
+              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
+              <p className="capitalize leading-loose">
+              Custom Branding              </p>
+            </li>
+            <li className="flex gap-4 items-start">
+              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
+              <p className="capitalize leading-loose">
+              Unlimited Addon Domains
+              </p>
+            </li>
+            <li className="flex gap-4 items-start">
+              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
+              <p className="capitalize leading-loose">
+              Custom Branding              </p>
+            </li>
+            <li className="flex gap-4 items-start">
+              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
+              <p className="capitalize leading-loose">
+              Unlimited Addon Domains
+              </p>
+            </li>
+          </ul>
+          <svg className="2xl:flex hidden w-1 mt-2 -translate-x-0" height="510px" viewBox="0 0 1 613" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="0.5" y1="2.18555e-08" x2="0.499973" y2="613" stroke="#E9E9E9"/>
+</svg>
+
+          <ul className="w-full space-y-2   text-[10px] 2xl:text-[15px] p-4">
+            <li className="flex gap-4 items-start">
+              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
+              <p className="capitalize leading-loose">
+              Custom Branding              </p>
+            </li>
+            <li className="flex gap-4 items-start">
+              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
+              <p className="capitalize leading-loose">
+              Unlimited Addon Domains
+              </p>
+            </li>
+            <li className="flex gap-4 items-start">
+              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
+              <p className="capitalize leading-loose">
+              Custom Branding              </p>
+            </li>
+            <li className="flex gap-4 items-start">
+              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
+              <p className="capitalize leading-loose">
+              Unlimited Addon Domains
+              </p>
+            </li>
 
 
-      
-      </ul>
-    </div>
-
-
+          
+          </ul>
         </div>
+
+
+            </div>
     </div>;
         case "Security":
           return <div className="option-content">
           <div className="bg-[#FFFFFF] rounded-2xl">
-          <div className="flex flex-row grid-cols-3 space-x-4 w-full ">        
-        <ul className="w-full space-y-2  text-[15px] p-4">
-          <li className="flex gap-4 items-start">
-            <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-            <p className="capitalize leading-loose">
-            Custom Branding              </p>
-          </li>
-          <li className="flex gap-4 items-start">
-            <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-            <p className="capitalize leading-loose">
-            Unlimited Addon Domains
-            </p>
-          </li>
-          <li className="flex gap-4 items-start">
-            <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-            <p className="capitalize leading-loose">
-            Custom Branding              </p>
-          </li>
-          <li className="flex gap-4 items-start">
-            <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-            <p className="capitalize leading-loose">
-            Unlimited Addon Domains
-            </p>
-          </li>
-          <li className="flex gap-4 items-start">
-            <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-            <p className="capitalize leading-loose">
-            Custom Branding              </p>
-          </li>
-          <li className="flex gap-4 items-start">
-            <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-            <p className="capitalize leading-loose">
-            Unlimited Addon Domains
-            </p>
-          </li>
-          <li className="flex gap-4 items-start">
-            <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-            <p className="capitalize leading-loose">
-            Custom Branding              </p>
-          </li>
-          <li className="flex gap-4 items-start">
-            <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-            <p className="capitalize leading-loose">
-            Unlimited Addon Domains
-            </p>
-          </li>
-          <li className="flex gap-4 items-start">
-            <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-            <p className="capitalize leading-loose">
-            Custom Branding              </p>
-          </li>
-          <li className="flex gap-4 items-start">
-            <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-            <p className="capitalize leading-loose">
-            Unlimited Addon Domains
-            </p>
-          </li>
-          <li className="flex gap-4 items-start">
-            <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-            <p className="capitalize leading-loose">
-            Custom Branding              </p>
-          </li>
-          <li className="flex gap-4 items-start">
-            <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-            <p className="capitalize leading-loose">
-            Unlimited Addon Domains
-            </p>
-          </li>
-        </ul>
-      
-        <ul className="w-full space-y-2   text-[15px] p-4">
-          <li className="flex gap-4 items-start">
-            <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-            <p className="capitalize leading-loose">
-            Custom Branding              </p>
-          </li>
-          <li className="flex gap-4 items-start">
-            <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-            <p className="capitalize leading-loose">
-            Unlimited Addon Domains
-            </p>
-          </li>
-          <li className="flex gap-4 items-start">
-            <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-            <p className="capitalize leading-loose">
-            Custom Branding              </p>
-          </li>
-          <li className="flex gap-4 items-start">
-            <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-            <p className="capitalize leading-loose">
-            Unlimited Addon Domains
-            </p>
-          </li>
-  
-  
-        
-        </ul>
-      </div>
-  
-  
-          </div>
-      </div>;
-          case "Email":
-            return <div className="option-content">
-            <div className="bg-[#FFFFFF] rounded-2xl">
-            <div className="flex flex-row grid-cols-3 space-x-4 w-full ">        
-          <ul className="w-full space-y-2  text-[15px] p-4">
+            <div className="flex sm:flex-col flex-col 2xl:flex-row md:flex-row bl:flex-row lg:flex-row xl:flex-row grids-cols-2 2xl:grid-cols-3 space-x-4 w-full ">        
+          <ul className="w-full space-y-2  text-[10px] 2xl:text-[15px] p-4 pl-8">
             <li className="flex gap-4 items-start">
               <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
               <p className="capitalize leading-loose">
@@ -505,8 +406,11 @@ const OptionSelector = () => {
               </p>
             </li>
           </ul>
-        
-          <ul className="w-full space-y-2   text-[15px] p-4">
+          <svg className="2xl:flex hidden w-1 mt-2 -translate-x-0" height="510px" viewBox="0 0 1 613" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="0.5" y1="2.18555e-08" x2="0.499973" y2="613" stroke="#E9E9E9"/>
+</svg>
+
+          <ul className="w-full space-y-2   text-[10px] 2xl:text-[15px] p-4">
             <li className="flex gap-4 items-start">
               <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
               <p className="capitalize leading-loose">
@@ -529,13 +433,121 @@ const OptionSelector = () => {
               Unlimited Addon Domains
               </p>
             </li>
-    
-    
+
+
           
           </ul>
         </div>
-    
-    
+
+
+            </div>
+      </div>;
+          case "Email":
+            return <div className="option-content">
+       <div className="bg-[#FFFFFF] rounded-2xl">
+            <div className="flex sm:flex-col flex-col 2xl:flex-row md:flex-row bl:flex-row lg:flex-row xl:flex-row grids-cols-2 2xl:grid-cols-3 space-x-4 w-full ">        
+          <ul className="w-full space-y-2  text-[10px] 2xl:text-[15px] p-4 pl-8">
+            <li className="flex gap-4 items-start">
+              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
+              <p className="capitalize leading-loose">
+              Custom Branding              </p>
+            </li>
+            <li className="flex gap-4 items-start">
+              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
+              <p className="capitalize leading-loose">
+              Unlimited Addon Domains
+              </p>
+            </li>
+            <li className="flex gap-4 items-start">
+              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
+              <p className="capitalize leading-loose">
+              Custom Branding              </p>
+            </li>
+            <li className="flex gap-4 items-start">
+              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
+              <p className="capitalize leading-loose">
+              Unlimited Addon Domains
+              </p>
+            </li>
+            <li className="flex gap-4 items-start">
+              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
+              <p className="capitalize leading-loose">
+              Custom Branding              </p>
+            </li>
+            <li className="flex gap-4 items-start">
+              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
+              <p className="capitalize leading-loose">
+              Unlimited Addon Domains
+              </p>
+            </li>
+            <li className="flex gap-4 items-start">
+              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
+              <p className="capitalize leading-loose">
+              Custom Branding              </p>
+            </li>
+            <li className="flex gap-4 items-start">
+              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
+              <p className="capitalize leading-loose">
+              Unlimited Addon Domains
+              </p>
+            </li>
+            <li className="flex gap-4 items-start">
+              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
+              <p className="capitalize leading-loose">
+              Custom Branding              </p>
+            </li>
+            <li className="flex gap-4 items-start">
+              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
+              <p className="capitalize leading-loose">
+              Unlimited Addon Domains
+              </p>
+            </li>
+            <li className="flex gap-4 items-start">
+              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
+              <p className="capitalize leading-loose">
+              Custom Branding              </p>
+            </li>
+            <li className="flex gap-4 items-start">
+              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
+              <p className="capitalize leading-loose">
+              Unlimited Addon Domains
+              </p>
+            </li>
+          </ul>
+          <svg className="2xl:flex hidden w-1 mt-2 -translate-x-0" height="510px" viewBox="0 0 1 613" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="0.5" y1="2.18555e-08" x2="0.499973" y2="613" stroke="#E9E9E9"/>
+</svg>
+
+          <ul className="w-full space-y-2   text-[10px] 2xl:text-[15px] p-4">
+            <li className="flex gap-4 items-start">
+              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
+              <p className="capitalize leading-loose">
+              Custom Branding              </p>
+            </li>
+            <li className="flex gap-4 items-start">
+              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
+              <p className="capitalize leading-loose">
+              Unlimited Addon Domains
+              </p>
+            </li>
+            <li className="flex gap-4 items-start">
+              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
+              <p className="capitalize leading-loose">
+              Custom Branding              </p>
+            </li>
+            <li className="flex gap-4 items-start">
+              <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
+              <p className="capitalize leading-loose">
+              Unlimited Addon Domains
+              </p>
+            </li>
+
+
+          
+          </ul>
+        </div>
+
+
             </div>
         </div>;
       default:
