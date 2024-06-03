@@ -51,12 +51,12 @@ const Faqs = () => {
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <h2 className="text-[42px] leading-normal font-mono-sans text-black font-semibold">
+        <h2 className="text-[22px] 2xl:text-[42px] leading-normal font-mono-sans text-black font-semibold">
           Your Web Hosting Questions{" "}
-          <span className="pb-4 border-b-4 border-orange-500">Answered</span>{" "}
+          <span className="pb-2 2xl:pb-4 border-b-4 border-orange-500 text-wite text-black">Answered</span>{" "}
         </h2>
       </motion.div>
-      <div className="flex flex-col gap-5 mt-20">
+      <div className="flex flex-col gap-5 mt-10 2xl:mt-20">
         {faqs.map((faq, index) => (
           <motion.div
             key={index}
