@@ -11,10 +11,12 @@ import Uniquecpanel from './Uniquecpanel'
 import Uniqueone from './Uniqueone'
 import AddsResller from './Adds'
 import Useoption from './Useoption'
+import { NavBar } from '@/components'
 
 const page = () => {
   return (
     <main className="overflow-hidden">
+      <NavBar className='text-white'/>
 {/* hero page  */}
       <section>
         <HeroHosting/>
@@ -52,11 +54,11 @@ const page = () => {
         </section>
 
         {/* Question Answers */}
-        <section className='pt-10 pb-40'>
+        <section className='2xl:pt-10 pb-20 2xl:pb-40'>
 <Faqs/>
         </section>
         {/* caseStudies */}
-        <section className='pb-96'>
+        <section className='pb-40 2xl:pb-96'>
           <CaseStudy/>
         </section>
      </main>

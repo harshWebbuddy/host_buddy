@@ -546,7 +546,7 @@ const OptionSelector = () => {
   return (
     <div className="flex 2xl:grid-cols-2  xl:grid-cols-2 bl:grid-cols-2 lg:grid-cols-2 sm:grid-cols-1  max-w-[1300px] bg-[#F9EFE4] mx-auto p-4 border rounded-2xl overflow-hidden ">
       <div className="w-full 2xl:w-1/2 p-4  bg-white rounded-2xl  ">
-        <ul className="space-y-0 w-full">
+        <ul className="space-y-0 w-full text-sm 2xl:text-md">
           {options.map((option, index) => (
             <li
               key={index}
@@ -561,7 +561,7 @@ const OptionSelector = () => {
         </ul>
       </div>
       <div className="w-full p-4">
-        <div className="text-xl">
+        <div className="text-xs 2xl:text-xl">
           {renderContent(selectedOption)}
         </div>
       </div>

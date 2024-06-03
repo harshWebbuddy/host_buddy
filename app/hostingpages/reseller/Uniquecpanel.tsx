@@ -332,11 +332,11 @@ export default function Features() {
     <div className="p-4 relative  mx-auto flex flex-col w-full items-center justify-center 2xl:pt-40">
       <div className="max-w-[1360px] mx-auto space-y-28">
       <div className="slide-reveal flex flex-col 2xl:flex-row 2xl:space-x-10 space-y-10 2xl:space-y-0 2xl:items-center justify-between ">
-          <h2 className="text-[42px] leading-normal font-bold text-black w-full  ">
+          <h2 className="text-[22px] xl:text-[32px] 2xl:text-[42px] leading-normal font-bold text-black w-full  ">
           Why Choose HostBuddy
  <span className="pb-4 border-b-4 border-orange-500"> {" "}Reseller Hos</span>ting?
           </h2>
-          <p className="w-full text-black text-[16px] leading-loose ">
+          <p className="w-full text-black text-[14px] 2xl:text-[16px] leading-loose ">
           Looking to streamline billing, termination, and daily operations for your web hosting business?          </p>
         </div>
 <div className="grid grid-cols-1 lg:grid-cols-2 bl:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 space-x-2 2xl:space-x-6   transition-all duration-500 h-full">
@@ -346,8 +346,8 @@ export default function Features() {
         {item.icon}
       </div>
       <div className=" rounded-2xl group space-y-4  cursor-pointer">
-        <h2 className="font-semibold text-[24px] leading-8">{item.title}</h2>
-        <p className="leading-6 text-[15px] opacity-50">
+        <h2 className="font-semibold text-[20px] 2xl:text-[24px] leading-8">{item.title}</h2>
+        <p className="leading-6 text-[12px] 2xl:text-[15px] opacity-50">
           {item.description}
         </p>
       </div>

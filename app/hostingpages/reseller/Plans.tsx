@@ -22,21 +22,21 @@ const Support = () => {
     <div className="w-full    px-3">
 
       <div className="w-full max-w-[1310px] mx-auto">
-      <div className="flex flex-col bl:flex-row justify-between gap-y-10 gap-x-20 items-center slide-reveal pb-16">
+      <div className="flex flex-col bl:flex-row justify-between gap-y-4 2xl:gap-y-10 gap-x-20 items-center slide-reveal pb-16">
         <div className="relative w-full">
-        <h2 className="font-mona-sans   text-[52px] leading-relaxed w-full text-center bl:text-left  font-semibold">
-        Select Your <span className="pb-4 border-b-4 border-orange-500 font-semibold normal-case ">  Reseller </span>
+        <h2 className="text-black font-mona-sans font-semibold text-[22px] 2xl:text-[42px] capitalize leading-relaxed w-full text-left">
+        Select Your <span className="pb-1 2xl:pb-4 border-b-4 border-orange-500 font-semibold normal-case ">  Reseller </span>
          Hosting Package
 
         </h2>
       
         </div>
         <div className="flex flex-wrap bl:flex-nowrap items-center gap-2 sm:gap-5">
-          <p className="font-mono-sans text-[14px] font-light leading-[24px] text-center 2xl:text-left text-[#16191C]">
+          <p className="font-mono-sans text-[12px] 2xl:text-[14px] font-light leading-[24px] text-left text-[#16191C]">
           Perfect for agencies and freelancers, our flexible and best-value reseller hosting plans is all you need to run your web hosting company and make huge profits!          </p>
         </div>
       </div>
-      <section className="mt-10" ref={ref}>
+      <section className="2xl:mt-10" ref={ref}>
       <div className="flex flex-col bl:flex-row w-full justify-center gap-8 items-center" >
       <div className={`slide-item ${animationClass} w-full`}>
           <div  className="mb-5 w-full transition-all  bg-[#F9EFE4]  hover:bg-[#16191C] px-10 rounded-2xl group" >

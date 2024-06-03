@@ -15,7 +15,8 @@ const CardsComponent = () => {
         </div>
         <div className="w-full space-y-6">
           <div className="w-full ">
-            <h2 className="text-[42px] 2xl:text-[52px] leading-10 2xl:leading-tight font-semibold text-white">Start Fast with the Built-In One-Click Installer</h2>
+            <h2 className="text-[22px] xl:text-[42px] 2xl:text-[52px] 
+            leading-8 xl:leading-10 2xl:leading-tight font-semibold text-white">Start Fast with the Built-In One-Click Installer</h2>
           </div>
           <ul className="w-full space-y-10">
             <li className="flex gap-4 items-start">
@@ -24,9 +25,9 @@ const CardsComponent = () => {
             </li>
          
           </ul>
-          <div className="group w-52 h-[52px] text-white border-orange-500 border text-xl rounded-xl    ring-1 ring-[black] group-hover:ring-[#16191C] 
+          <div className="group 2xl:w-52 h-[52px] text-white border-orange-500 border text-xl rounded-xl    ring-1 ring-[black] group-hover:ring-[#16191C] 
             transition-all duration-300 hover:shadow-2xl ring-inset hover:ring-0 font-semibold flex items-center justify-center ">
-              <h4 className="w-99 h-19 top-16 left-115 font-monasans font-semibold text-base leading-[19.2px] text-white">Get Started</h4>{" "}
+              <h4 className="w-99 h-19 top-16 left-115 font-monasans font-semibold text-sm 2xl:text-base leading-[19.2px] text-white">Get Started</h4>{" "}
               <span className="ml-4 -mt-0.5 ">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M5.13672 0.947266L5.69531 0.388672C5.94922 0.160156 6.33008 0.160156 6.55859 0.388672L11.5098 5.31445C11.7383 5.56836 11.7383 5.94922 11.5098 6.17773L6.55859 11.1289C6.33008 11.3574 5.94922 11.3574 5.69531 11.1289L5.13672 10.5703C4.9082 10.3164 4.9082 9.93555 5.13672 9.68164L8.20898 6.76172H0.921875C0.566406 6.76172 0.3125 6.50781 0.3125 6.15234V5.33984C0.3125 5.00977 0.566406 4.73047 0.921875 4.73047H8.20898L5.13672 1.83594C4.9082 1.58203 4.88281 1.20117 5.13672 0.947266Z" fill="#FFFFFF"/>
@@ -45,16 +46,17 @@ const CardsComponent = () => {
         </div>
           <div className="w-full space-y-5">
           <div className="w-full ">
-          <h2 className="text-[42px] 2xl:text-[52px] leading-10 2xl:leading-tight font-semibold text-white">SFree Website Migration</h2>
+          <h2 className="text-[22px] xl:text-[42px] 2xl:text-[52px] 
+            leading-8 xl:leading-10 2xl:leading-tight font-semibold text-white">SFree Website Migration</h2>
           </div>
           <ul className="w-full space-y-10">
             <li className="flex gap-4 items-start">
             <p className="capitalize leading-6 2xl:leading-8 text-[12px] 2xl:text-[18px] text-white font-normal flex flex-col space-y-6">
               Switching web hosts can be daunting, especially considering the importance of your website's data. At HostBuddy, we understand this concern, which is why we offer a hassle-free migration service at no extra cost. Our expert support team will guide you through the process, ensuring a seamless transition to our servers. Rest assured, we prioritize the safety and integrity of your data, ensuring your website remains intact but with improved hosting services.</p>
             </li>
-            <div className="group w-52 h-[52px] text-white border-orange-500 border text-xl rounded-xl    ring-1 ring-[black] group-hover:ring-[#16191C] 
+            <div className="group 2xl:w-52 h-[52px] text-white border-orange-500 border text-xl rounded-xl    ring-1 ring-[black] group-hover:ring-[#16191C] 
             transition-all duration-300 hover:shadow-2xl ring-inset hover:ring-0 font-semibold flex items-center justify-center ">
-              <h4 className="w-99 h-19 top-16 left-115 font-monasans font-semibold text-base leading-[19.2px] text-white">Get Started</h4>{" "}
+              <h4 className="w-99 h-19 top-16 left-115 font-monasans font-semibold text-sm 2xl:text-base leading-[19.2px] text-white">Get Started</h4>{" "}
               <span className="ml-4 -mt-0.5 ">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M5.13672 0.947266L5.69531 0.388672C5.94922 0.160156 6.33008 0.160156 6.55859 0.388672L11.5098 5.31445C11.7383 5.56836 11.7383 5.94922 11.5098 6.17773L6.55859 11.1289C6.33008 11.3574 5.94922 11.3574 5.69531 11.1289L5.13672 10.5703C4.9082 10.3164 4.9082 9.93555 5.13672 9.68164L8.20898 6.76172H0.921875C0.566406 6.76172 0.3125 6.50781 0.3125 6.15234V5.33984C0.3125 5.00977 0.566406 4.73047 0.921875 4.73047H8.20898L5.13672 1.83594C4.9082 1.58203 4.88281 1.20117 5.13672 0.947266Z" fill="#FFFFFF"/>

@@ -53,10 +53,10 @@ export default function Testimonials() {
     <div className="p-4 relative bg-[#F9EFE4] mx-auto flex flex-col w-full items-center justify-center pt-10 2xl:pt-20 mt-20">
       <div className="max-w-[1360px] mx-auto">
         <div className="flex flex-col 2xl:flex-row gap-y-10 2xl:items-center justify-between">
-          <h2 className="text-[42px] leading-normal font-bold text-black w-full 2xl:max-w-xl ">
-            Featured Client <span className="pb-4 border-b-4 border-orange-500">Testimonials </span> 👏
+          <h2 className="text-[20px] 2xl:text-[42px] leading-normal font-bold text-black w-full 2xl:max-w-xl">
+            Featured Client <span className="pb-4 border-b-4 border-orange-500">Testimonials</span>👏
           </h2>
-          <p className="w-full text-black text-[16px] leading-loose max-w-3xl">
+          <p className="w-full text-black text-[14px] 2xl:text-[16px] leading-loose max-w-3xl">
             Lorem ipsum dolor sit amet consectetur. Ornare et amet lobortis ornare. Ullamcorper accumsan donec eu condimentum diam a augue arcu.
           </p>
         </div>
