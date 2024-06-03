@@ -38,11 +38,11 @@ const Adds = () => {
     <div className="p-4 w-full max-w-[1420px] mx-auto flex flex-col md:flex-row items-center justify-center py-20">
       <div className="flex flex-col 2xl:flex-row mx-auto items-center justify-between ">
         <div className="w-full space-y-10 ">
-          <div className="space-y-5"> 
-            <h4 className="text-5xl text-white font-semibold font-mona-sans leading-normal">
+          <div className="space-y-4 2xl:space-y-5"> 
+            <h4 className="text-3xl 2xl:text-5xl text-white font-semibold font-mona-sans leading-normal">
             Powerful Add-ons
             </h4>
-            <p className="text-[16px] text-white  2xl:pr-10 leading-loose font-mono-sans">
+            <p className="text-[14px] 2xl:text-[16px] text-white  2xl:pr-10 leading-loose font-mono-sans">
             Lorem ipsum dolor sit amet consectetur. Ornare et amet lobortis ornare. Ullamcorper accumsan donec eu condimentum diam a augue arcu.
             </p>   
 
@@ -113,9 +113,10 @@ const Adds = () => {
               </div>
               <div className="border-t-[3px] border-dashed border-[#dedede] w-full h-1 absolute -bottom-1 left-0 right-0 group-hover:opacity-0 transition duration-200" />
             </div>
-            <div className="cursor-pointer flex w-full group hover:bg-white transition-all duration-300 border-gradient hover:shadow-2xl rounded-xl">
-              <div className="2xl:ml-8 flex md:flex-row items-center featuresvg2">
- <svg      className=''
+            <div className="relative group space-y-3">
+              <div className="cursor-pointer flex w-full group hover:bg-white transition-all duration-300 border-gradient hover:shadow-2xl rounded-xl">
+                <div className="2xl:ml-8 flex 2xl:flex-row items-center  featuresvg2">
+                <svg      className=''
           width="208"
           height="108"
           viewBox="0 0 48 48"
@@ -144,19 +145,21 @@ const Adds = () => {
           </g>
         </svg>                
         <div className="transition-all duration-300 cursor-pointer m-8 md:gap-6 text-[#16191C]">
-                  <h2 className="text-[24px] font-bold opacity-1 mb-4 group-hover:text-orange-500 text-white">Google Workspace</h2>
+        <h2 className="text-[24px] font-bold opacity-1 mb-4 group-hover:text-orange-500 text-white">Google Workspace</h2>
                   <p className="font-mona-sans text-[16px] font-normal leading-normal text-left text-white group-hover:text-[#16191C]/70">
                   An all-in-one solution for businesses to perform different tasks efficiently. Opt for the Google Workspace add-on and get professional Gmail at your domain. Additionally, Google Drive cloud storage, Calendar Meet, Google sheets, Google Docs, and more for your business.                  </p>
+      </div>
                 </div>
               </div>
+              <div className="border-t-[3px] border-dashed border-[#dedede] w-full h-1 absolute -bottom-1 left-0 right-0 group-hover:opacity-0 transition duration-200" />
             </div>
           </div>
         </div>
         <div className="w-full flex justify-center">
           <div className="relative items-center justify-center mt-40 ">
             <Image src="/vpshosting/3.jpeg" width={500} height={1529} alt="" className="rounded-2xl relative z-10  cropped-ofp" />
-            <Image src="/vpshosting/triangle.svg" width={70} height={70} alt="" className="absolute -rotate-15 top-0 -right-10" />
-            <Image src="/vpshosting/box.svg" alt="" width={300} height={302} className="absolute -left-20 -bottom-10" />
+            <Image src="/vpshosting/triangle.svg" width={70} height={70} alt="" className="2xl:Flex hidden absolute -rotate-15 top-0 -right-10" />
+            <Image src="/vpshosting/box.svg" alt="" width={300} height={302} className="2xl:Flex hidden absolute -left-20 -bottom-10" />
           </div>
         </div>   
         </div>

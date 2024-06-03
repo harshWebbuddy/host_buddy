@@ -51,15 +51,15 @@ export default function Features() {
   return (
     <div className="p-4 relative bg-[#F9EFE4] mx-auto flex flex-col w-full items-center justify-center pt-10 2xl:pt-20 mt-20">
       <div className="max-w-[1360px] mx-auto">
-        <div className="flex flex-col gap-y-6">
-          <h2 className="text-[42px] leading-[63px] font-semibold text-black w-full">
-            Experience <span className="pb-4 border-b-4 border-orange-500">Feature</span>-Rich VPS Hosting
+        <div className="flex flex-col gap-y-2 2xl:gap-y-6">
+          <h2 className="text-[22px] xl:text-[32px] 2xl:text-[42px] leading-[40px] 2xl:leading-[63px] font-semibold text-black w-full">
+            Experience <span className="pb-1 2xl:pb-4 border-b-4 border-orange-500">Feature</span>-Rich VPS Hosting
           </h2>
-          <p className="text-[16px] font-light leading-[24px]">
+          <p className="text-[14px] 2xl:text-[16px] font-light leading-[24px]">
             Our <span className="font-bold">VPS plans </span> come fully loaded with all the latest features. Enjoy full control, customization, high-performance and more.
           </p>
         </div>
-        <div className="flex flex-row gap-4 mt-12 overflow-hidden h-full pb-32">
+        <div className="flex flex-row gap-4 mt-6 2xl:mt-12 overflow-hidden h-full pb-32">
           {Array.from({ length: columns }, (_, columnIndex) => (
             <motion.div key={columnIndex} className="flex flex-col w-full gap-4" variants={boxVariants} initial="hidden" animate="visible">
               {visibleTestimonials.map(
@@ -71,8 +71,8 @@ export default function Features() {
                           <Image src={testimonial.author.image_url} alt="download" width={79} height={79} className="select-none" draggable={false} />
                         </div>
                         <div>
-                          <h1 className="font-semibold text-[18px] leading-8">{testimonial.author.names}</h1>
-                          <p className="leading-6 text-[16px] opacity-50">{testimonial.testimonial}</p>
+                          <h1 className="font-semibold text-[16px] 2xl:text-[18px] leading-8">{testimonial.author.names}</h1>
+                          <p className="leading-6 text-[14px] 2xl:text-[16px] opacity-50">{testimonial.testimonial}</p>
                         </div>
                       </div>
                     </div>

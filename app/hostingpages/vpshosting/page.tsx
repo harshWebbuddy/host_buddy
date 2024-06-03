@@ -11,24 +11,26 @@ import CaseStudy from './CaseStudy'
 import Features from './Features'
 import Adds from './adds'
 import Table from './Table'
+import { NavBar } from '@/components'
 
 const page = () => {
   return (
     <main className="overflow-hidden">
+      <NavBar className='text-white'/>
 {/* hero page  */}
       <section>
         <HeroHosting/>
         </section>
         {/* rating panel  */}
         <section>
-        <div className="space-y-32 ">
+        <div className="space-y-10 2xl:space-y-32 ">
           <Ratingpanel/>
           <Plans/>
         </div>
         </section>
 
         {/* plan page */}
-        <div className='pt-44 pb-0'>
+        <div className='pt-20 2xl:pt-44 pb-0'>
           <Plan2/>
         </div>
         {/* what make hostbuddy unique section */}
@@ -53,11 +55,11 @@ const page = () => {
         </section>
 
         {/* Question Answers */}
-        <section className='pt-20 '>
+        <section className='2xl:pt-20 '>
 <Faqs/>
         </section>
         {/* caseStudies */}
-        <section className='pt-52 pb-96'>
+        <section className='pt-20 2xl:pt-52 pb-40 2xl:pb-96'>
           <CaseStudy/>
         </section>
      </main>

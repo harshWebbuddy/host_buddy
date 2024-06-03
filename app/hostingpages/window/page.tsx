@@ -18,7 +18,7 @@ const page = () => {
         </section>
         {/* rating panel  */}
         <section>
-        <div className="space-y-32 ">
+        <div className="space-y-20 2xl:space-y-32 ">
           <Ratingpanel/>
           <Plan2/>
         </div>
@@ -50,4 +50,4 @@ const page = () => {
   )
 }
 
-export default page
+export default page;

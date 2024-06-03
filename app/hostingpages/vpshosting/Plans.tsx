@@ -24,7 +24,7 @@ const Plans = () => {
   
     return (
       <motion.h2
-        className="font-mona-sans font-semibold text-[42px] leading-relaxed w-full text-center bl:text-left"
+        className="font-mona-sans font-semibold text-[22px] xl:text-[32px] 2xl:text-[42px] leading-normal leading-relaxed w-full text-left"
         initial={{ opacity: 0, x: isAnimated ? 0 : 50 }}
         animate={{ opacity: 1, x: isAnimated ? 0 : 0 }}
         transition={{ duration: 2 }}
@@ -54,7 +54,7 @@ const Plans = () => {
   
     return (
       <motion.p
-        className="font-mono-sans text-[16px] font-light leading-[24px] text-center 2xl:text-left text-[#16191C]"
+        className="font-mono-sans text-[14px] 2xl:text-[16px] font-light leading-[24px] text-left text-[#16191C]"
         initial={{ opacity: 0, x: isAnimated ? 0 : -50 }}
         animate={{ opacity: 1, x: isAnimated ? 0 : 0 }}
         transition={{ duration: 2 }}
@@ -66,7 +66,7 @@ const Plans = () => {
   
   return (
     <div className="flex flex-col max-w-[1300px] mx-auto">
-      <div className="flex flex-col bl:flex-row justify-between gap-y-10 gap-x-30 items-center animate-left-to-right">
+      <div className="flex flex-col p-4 bl:flex-row justify-between gap-y-10 gap-x-30 items-center animate-left-to-right">
         <div className="relative w-full">
           <AnimatedHeading>Revolutionizing VPS</AnimatedHeading>
           <AnimatedHeading>
@@ -83,7 +83,7 @@ const Plans = () => {
         </div>
       </div>
       {/* cards */}
-      <section className="pt-10">
+      <section className="2xl:pt-10 px-4" >
         <div className="w-full px-0">
           <div className="w-full max-w-[1300px] mx-auto">
             <div className="flex flex-col md:flex-row gap-x-8 gap-y-14 bl:items-center justify-center animate-left-to-right mx-auto mt-20 bl:mt-16">
