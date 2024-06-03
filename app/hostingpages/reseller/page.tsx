@@ -49,7 +49,7 @@ const page = () => {
   <AddsResller/>     
   </section>
 
-        <section className='py-10 2xl:py-24'>      
+        <section className=' 2xl:py-10'>      
           <Testimonials/>
         </section>
 

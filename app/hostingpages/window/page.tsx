@@ -23,13 +23,13 @@ const page = () => {
           <Plan2/>
         </div>
         </section>   
-          <section className='pt-32'><Bandwidth/></section>
+          <section className='pt-20 2xl:pb-0 pb-20 2xl:pt-32'><Bandwidth/></section>
      
         {/* cardsection */}
         <section>
           <Features/>
         </section>
-        <section className='pt-8'>
+        <section className='2xl:pt-8'>
           <Adds/>
         </section>
        
@@ -39,11 +39,11 @@ const page = () => {
         </section>
 
      
-        <section className='pb-20 pt-40'>
+        <section className='pb-0 2xl:pb-10 pt-20 2xl:pt-40'>
 <Faqs/>
         </section>
         {/* caseStudies */}
-        <section className='pb-60'>
+        <section className='pb-40 2xl:pb-60'>
           <CaseStudy/>
         </section>
      </main>

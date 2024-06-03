@@ -29,36 +29,37 @@ const Plan2 = () => {
     {/* heading */}
     <div className="slide-reveal flex flex-col bl:flex-row justify-between gap-y-6 gap-x-4 items-center mb-8 " >
      <div className="relative w-full">
-        <h2 className="text-black font-mona-sans font-semibold text-[42px] capitalize leading-relaxed w-full text-center bl:text-left">
+     <h2 className="text-black font-mona-sans font-semibold text-[22px] 2xl:text-[42px] capitalize leading-relaxed w-full text-center 2xl:text-left">
         Simple & tr<span className="pb-4 border-b-4 border-orange-500 text-wite text-black">ansparent pr</span>icing  
         </h2>
       </div>
     
-      <div className="flex flex-wrap bl:flex-nowrap items-center gap-2 sm:gap-5">
-        <h2 className="font-mona-sans text-[19px] bl:text-base font-medium leading-[24px] bl:leading-[32px] tracking-[0.05em] bl:tracking-[0.2px] text-right w-54 bl:w-71 h-[32px]">
+      <div className="flex flex-wrap bl:flex-nowrap items-center gap-2 2xl:gap-5 ">
+        <h2 className="font-mona-sans text-[15px] 2xl:text-[19px] bl:text-base font-medium leading-[24px] bl:leading-[32px] tracking-[0.05em] bl:tracking-[0.2px] text-center 2xl:text-right w-54 bl:w-71 2xl:h-[32px]">
           Monthly
         </h2>
         <div className="toggle-container">
   <input type="checkbox" id="toggle" className="toggle-input"/>
   <label htmlFor="toggle" className="toggle-label">
-    <svg className="toggle-svg" width="72" height="34" viewBox="0 0 72 34" fill="#16191C" xmlns="http://www.w3.org/2000/svg">
+    <svg className="toggle-svg w-12 2xl:w-16" viewBox="0 0 72 34" fill="#16191C" xmlns="http://www.w3.org/2000/svg">
       <rect className="toggle-background" opacity="0.15" y="0.5" width="72" height="33" rx="16.5" fill="#16191C"/>
       <circle className="toggle-circle" cx="17.5" cy="17" r="10.5" fill="white"/>
     </svg>
   </label>
 </div>
+
         <div>
-          <h2 className="font-mona-sans text-base font-medium leading-[32px] tracking-[0.2px] text-right w-[52px] h-[32px] ">Yearly</h2>
+          <h2 className="font-mona-sans  text-[16px] 2xl:text-[19px] font-medium leading-[32px] tracking-[0.2px] text-center 2xl:text-right w-[52px] h-[32px] ">Yearly</h2>
         </div>
-        <div className="px-3 py-0.5 bg-orange-100 rounded-3xl">
-          <h4 className="text-orange-500 m-2 font-mona-sans font-bold text-xs leading-[15.6px] tracking-[1.625px] text-center w-[77px] h-[16px] top-[6px] left-[10px]">
+        <div className="px-3 py-1 2xl:py-0.5 bg-orange-100 rounded-3xl">
+          <h4 className="text-orange-500 2xl:m-2  text-[9px] 2xl:text-[12px] font-mona-sans font-bold  leading-[15.6px] tracking-[1.625px] text-center w-[57px] xl:w-[77px] h-[16px] top-[6px] left-[10px]">
             Save 25%
           </h4>
         </div>
       </div>
     </div>
     {/* cards */}
-    <section className="mt-10" ref={ref}>
+    <section className="mt-10 px-4 2xl:px-0" ref={ref}>
       <div className="flex flex-col bl:flex-row w-full justify-center gap-8 items-center" >
       <div className={`slide-item ${animationClass} w-full`}>
           <div  className="mb-5 w-full transition-all  bg-[#F9EFE4]  hover:bg-[#16191C] px-10 rounded-2xl group" >
@@ -71,7 +72,7 @@ const Plan2 = () => {
           </div>
           
           <div className="mt-12 group">
-           <div className="group w-full h-[52px] group-hover:text-white text-black  text-xl rounded-xl  group-hover:bg-[#FF7500] ring-1 group-hover:ring-[#FFFFFF] ring-[#16191C] 
+           <div className="group cursor-pointer w-full h-[52px] group-hover:text-white text-black  text-xl rounded-xl  group-hover:bg-[#FF7500] ring-1 group-hover:ring-[#FFFFFF] ring-[#16191C] 
             transition-all duration-300 hover:shadow-2xl ring-inset hover:ring-0 font-bold flex items-center justify-center ">
               <h4 className="w-99 h-19 top-16 left-115 font-monasans font-bold text-base leading-[19.2px]">Choose Plan</h4>{" "}
               <span className="ml-2">
@@ -126,7 +127,7 @@ const Plan2 = () => {
           </div>
           
           <div className="mt-12 group">
-           <div className="group w-full h-[52px] group-hover:text-white text-black  text-xl rounded-xl  group-hover:bg-[#FF7500] ring-1 group-hover:ring-[#FFFFFF] ring-[#16191C] 
+           <div className="group cursor-pointer w-full h-[52px] group-hover:text-white text-black  text-xl rounded-xl  group-hover:bg-[#FF7500] ring-1 group-hover:ring-[#FFFFFF] ring-[#16191C] 
             transition-all duration-300 hover:shadow-2xl ring-inset hover:ring-0 font-bold flex items-center justify-center ">
               <h4 className="w-99 h-19 top-16 left-115 font-monasans font-bold text-base leading-[19.2px]">Choose Plan</h4>{" "}
               <span className="ml-2">
@@ -177,7 +178,7 @@ const Plan2 = () => {
           </div>
           
           <div className="mt-12 group">
-           <div className="group w-full h-[52px] group-hover:text-white text-black  text-xl rounded-xl  group-hover:bg-[#FF7500] ring-1 group-hover:ring-[#FFFFFF] ring-[#16191C] 
+           <div className="group cursor-pointer w-full h-[52px] group-hover:text-white text-black  text-xl rounded-xl  group-hover:bg-[#FF7500] ring-1 group-hover:ring-[#FFFFFF] ring-[#16191C] 
             transition-all duration-300 hover:shadow-2xl ring-inset hover:ring-0 font-bold flex items-center justify-center ">
               <h4 className="w-99 h-19 top-16 left-115 font-monasans font-bold text-base leading-[19.2px]">Choose Plan</h4>{" "}
               <span className="ml-2">

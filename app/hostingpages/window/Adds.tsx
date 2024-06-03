@@ -62,8 +62,8 @@ const Adds: React.FC = () => {
         <div className="flex flex-col 2xl:flex-row mx-auto items-center justify-between">
           <div className="slide-reveal w-full space-y-10">
             <div className="space-y-3.5">
-              <h4 className="text-[42px] font-semibold font-mona-sans leading-normal">Why Choose Us?</h4>
-              <p className="text-[16px] pr-10 leading-loose font-mono-sans">
+              <h4 className="text-[22px] xl:text-[32px] 2xl:text-[42px] font-semibold font-mona-sans leading-normal">Why Choose Us?</h4>
+              <p className="text-[14px] 2xl:text-[16px] pr-10 leading-loose font-mono-sans">
                 Running a business can be challenging, so to help we offer a FREE website builder with FREE stock images and FREE email with every domain name.
               </p>
             </div>
@@ -74,7 +74,7 @@ const Adds: React.FC = () => {
                   <div key={index} ref={(el) => (featuresRef.current[index] = el)} className="flex flex-col text-left px-5 pb-5 rounded-2xl">
                     <div
                       onClick={() => handleToggle(index)}
-                      className={`cursor-pointer text-left flex flex-row items-center justify-between text-[26px] font-bold text-[#16191C]/50 ${
+                      className={`cursor-pointer text-left flex flex-row items-center justify-between text-[20px] 2xl:text-[26px] font-bold text-[#16191C]/50 ${
                         currentItem === index ? "!text-black" : ""
                       }`}>
                       {feature.title}
@@ -93,7 +93,7 @@ const Adds: React.FC = () => {
             </div>
           </div>
           <div className="slide-reveal w-full flex justify-center">
-            <div className="relative items-center justify-center mt-40">
+            <div className="relative items-center justify-center mt-20 2xl:mt-40">
               <Image src="/1.jpeg" width={497} height={301} alt="" className="rounded-2xl relative z-10" />
             </div>
           </div>
