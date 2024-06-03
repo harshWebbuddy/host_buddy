@@ -811,6 +811,7 @@ border-radius: 20px;
     width: 531px;
 height: 378px;
 position: relative;
+z-index:20;
 bottom:30px;
 right:4px;
 border-radius: 20px;
@@ -918,10 +919,13 @@ right: 420.5px; z-index: -1;
   /* 2nd card above */
     .cardiv{
   position: relative;
+  
   bottom: 72.5px;
   align-items: center;
   justify-content: center;
  }.dottedcard{
+  position: relative;
+  z-index: 10;
   width: 25.01px;
 height: 87px;
 
@@ -6619,6 +6623,7 @@ height: 608px;
         bottom:800px;
       }
       .cardimage1{
+        z-index: 1;
         width: 631px;
     height: 378px;
     position: relative;
@@ -8576,7 +8581,7 @@ padding:0px 20px;
         font-family: Mona Sans;
         opacity: 70%;
         width:fit-content;
-        font-size: 10px;
+        font-size: 20px;
         font-weight: 300;
         line-height: 14px;
         text-align: left;
@@ -8689,7 +8694,7 @@ text-transform:capitalize;}.cardiv2{
     align-items: center;
     justify-content: center;
    } .gapping{
-  gap:570px;
+  gap:500px;
  } .cardiv{
     position: relative;
     bottom: 72.5px;
@@ -9140,7 +9145,7 @@ position: relative;
  }
   .cloudfeatures2 p{
     font-family: Mona Sans;
-font-size: 10px;
+font-size: 15px;
 width:fit-content;
 font-weight: 400;
 line-height: 24px;
@@ -9174,7 +9179,7 @@ left:0px;
  }
  .cloudfeatures1 h2{
   font-family: Mona Sans;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 63px;
   text-align: left;
@@ -9183,7 +9188,7 @@ left:0px;
   padding:0px 50px;
   width: fit-content;
 height: 663px;
-gap: 40px;
+gap: 0px;
 align-items: center;
 text-align: center;
 justify-content: center;
@@ -9856,7 +9861,7 @@ width:fit-content;
       }.wholecard1{
       display: flex;
       flex-direction: column;
-      gap:10px;
+      gap:0px;
       position: relative;
       top:750px;
     }
@@ -10077,7 +10082,7 @@ position: relative;
   
   .boxinside h2 {
     font-family: Mona Sans;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
     line-height: 20px;
     text-align: left;
@@ -10088,7 +10093,7 @@ position: relative;
     font-family: Mona Sans;
     opacity: 70%;
     width:fit-content;
-    font-size: 6px;
+    font-size: 10px;
     font-weight: 300;
     line-height: 14px;
     text-align: left;
@@ -10187,7 +10192,7 @@ left:0px;
   font-family: Mona Sans;
   font-size: 22px;
   font-weight: 600;
-  line-height: 63px;
+  line-height: 33px;
   text-align: left;
  }
  .cloudfeatures{
