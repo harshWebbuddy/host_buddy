@@ -38,10 +38,10 @@ const HeroHosting = () => {
           <div className='relative w-full flex flex-col justify-start space-y-0'><h2 className="font-mono-sans text-sm font-light italic leading-relaxed text-left">
                 <span className="text-orange-500 font-bold ">CPanel Hosting</span>
               </h2>
-              <h1 className="font-mono-sans font-semibold xl:text-[52px]  text-[32px] 2xl:text-[62px] leading-[43px] 2xl:leading-[84px]  2xl:text-left"> 
+              <h1 className="font-mono-sans font-semibold xl:text-[52px]  text-[32px] 2xl:text-[54px] leading-[43px] 2xl:leading-[84px]  2xl:text-left"> 
               Super Easy & Reliable 
               </h1>
-              <h1 className="font-mono-sans font-semibold xl:text-[52px]  text-[32px] 2xl:text-[62px] leading-[43px] 2xl:leading-[84px]  2xl:text-left"> 
+              <h1 className="font-mono-sans font-semibold xl:text-[52px]  text-[32px] 2xl:text-[54px] leading-[43px] 2xl:leading-[84px]  2xl:text-left"> 
               cPanel Hosting              </h1>
             </div>
             <p className="font-mono-sans text-[14px] 2xl:text-[18px] font-light leading-loose text-left text-[#EBEBEB]">

@@ -38,9 +38,9 @@ const HeroHosting = () => {
           <div className='relative w-full flex flex-col justify-start space-y-0'><h2 className="font-mono-sans text-sm font-light italic leading-relaxed text-left">
               <span className="text-orange-500 font-bold text-left">RESELLER HOSTING</span>
               </h2>
-              <h1 className="font-mono-sans font-semibold xl:text-[52px]  text-[32px] 2xl:text-[62px] leading-[43px] 2xl:leading-[84px]  2xl:text-left">              Begin Your Own Web
+              <h1 className="font-mono-sans font-semibold xl:text-[52px]  text-[32px] 2xl:text-[54px] leading-[43px] 2xl:leading-[84px]  2xl:text-left">              Begin Your Own Web
               </h1>
-              <h1 className="font-mono-sans font-semibold xl:text-[52px]  text-[32px] 2xl:text-[62px] leading-[43px] 2xl:leading-[84px]  2xl:text-left">
+              <h1 className="font-mono-sans font-semibold xl:text-[52px]  text-[32px] 2xl:text-[54px] leading-[43px] 2xl:leading-[84px]  2xl:text-left">
               Hosting Enterprise
               </h1>
             </div>
