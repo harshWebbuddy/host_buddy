@@ -21,7 +21,7 @@ const Card = () => {
             <a>All Specs</a></p>
          
           </div>
-          <div className="bg-white border-orange-500 border flex flex-row w-44 rounded-xl p-3  items-center justify-center">
+          <div className="bg-white cursor-pointer border-orange-500 border flex flex-row w-44 rounded-xl p-3  items-center justify-center">
               <h2 className="font-medium text-[12px] 2xl:text-[20px]  leading-normal ">All Specs</h2> <img src="/hosting/ArrowIcon.svg" className="pl-4 -mt-0.5 "/>
           </div>
           
@@ -45,7 +45,7 @@ const Card = () => {
            <div>
             <img src="/ps/card1.svg"/>
            </div>
-           <div className="bg-white border-orange-500 border flex flex-row w-44 rounded-xl p-3  items-center justify-center">
+           <div className="bg-white  cursor-pointer border-orange-500 border flex flex-row w-44 rounded-xl p-3  items-center justify-center">
            <h2 className="font-medium text-[12px] 2xl:text-[20px]  leading-normal ">Devices</h2> <img src="/hosting/ArrowIcon.svg" className="pl-4 -mt-0.5 "/>
           </div>
            

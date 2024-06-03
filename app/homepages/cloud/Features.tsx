@@ -6,7 +6,7 @@ const Features = () => {
         {
           id: 1,
           heading: 'Reseller API Automation',
-          paragraph: 'But I must explain to you how all this mistaken idea of denouncing pleasureand praising pain was born ',
+          paragraph: 'But I must explain to you  idea of denouncing pleasureand praising pain was born ',
         },
         {
           id: 2,

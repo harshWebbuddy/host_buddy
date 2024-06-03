@@ -135,7 +135,7 @@ sit amet</h1>
           <p className="font-mono-sans text-[16px] font-light leading-loose text-left  text-[#EBEBEB]">
           By trusting us with your business and projects needs, we promise a <span className="text-orange-500 ml-0.5">99.9%</span> uptime on any services we provide, outside of any standard maintenance we may provide. </p>
           <div className="flex flex-wrap 2xl:flex-row space-y-4 justify-start space-y-6 2xl:space-x-6 !mt-10 ">
-            <div className="h-[56px]  flex item-center justify-center bg-orange-500 rounded-xl py-4 w-auto px-6  gap-x-3">
+            <div className="h-[56px]  cursor-pointer flex item-center justify-center bg-orange-500 rounded-xl py-4 w-auto px-6  gap-x-3">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="6" cy="19" r="2" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
 <circle cx="6" cy="19" r="2" stroke="white" stroke-opacity="0.2" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
@@ -152,7 +152,7 @@ sit amet</h1>
 
               <h2 className="font-mona-sans text-[18px] font-semibold leading-[21.6px] text-left">Order Now</h2>
             </div>
-            <div className="h-full  flex item-center justify-center  rounded-xl py-0 w-auto px-0  gap-x-3">
+            <div className="h-full cursor-pointer  flex item-center justify-center  rounded-xl py-0 w-auto px-0  gap-x-3">
             <h2 className="font-mona-sans text-[18px] font-semibold leading-[21.6px] text-left">Hosting Overview</h2>
             <svg className="mt-0.5" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M6.9349 1.10156L7.67969 0.35677C8.01823 0.0520828 8.52604 0.0520828 8.83073 0.35677L15.4323 6.92448C15.737 7.26302 15.737 7.77083 15.4323 8.07552L8.83073 14.6771C8.52604 14.9818 8.01823 14.9818 7.67969 14.6771L6.9349 13.9323C6.63021 13.5937 6.63021 13.0859 6.9349 12.7474L11.0313 8.85417H1.3151C0.841146 8.85417 0.502604 8.51562 0.502604 8.04167V6.95833C0.502604 6.51823 0.841146 6.14583 1.3151 6.14583H11.0313L6.9349 2.28646C6.63021 1.94792 6.59635 1.4401 6.9349 1.10156Z" fill="white"/>
@@ -300,14 +300,14 @@ sit amet</h1>
       <div>   <h1 className="text-[22px] 2xl:text-[42px] font-semibold">
             Our Featured   <span className="pb-2 2xl:pb-4 border-b-4 border-orange-500 text-wite text-black">CaseStudy</span>
           </h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-y-6 gap-x-4 pt-10 2xl:pt-20">
+               <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-y-6 gap-x-4 pt-10 2xl:pt-20">
             {caseStudies.map((caseStudy, index) => (
               <div key={index} className="space-y-6">
                 <Image src={caseStudy.image} alt="" width={500} height={500} className="w-full h-[240px] object-cover rounded-xl" />
                 <h1 className="text-md 2xl:text-xl font-bold leading-relaxed">{caseStudy.title}</h1>
                 <div className="relative max-w-fit flex flex-row group items-center justify-center !mt-4">
                   <div className="flex items-center gap-x-3 pb-2">
-                    <p className="text-[14px] 2xl:text-[16px] font-bold text-orange-500">Read more</p>
+                    <p className="text-[14px] 2xl:text-[16px] font-bold text-orange-500 cursor-pointer">Read more</p>
                     <img src="/orangearrow.svg" className=" w-[11px] text-orange-500" />
                   </div>
                   <div className="bg-orange-500 h-0.5 absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-500" />

@@ -72,7 +72,7 @@ const Plan2 = () => {
           </div>
           
           <div className="mt-12 group">
-           <div className="group w-full h-[52px] group-hover:text-white text-black  text-xl rounded-xl  group-hover:bg-[#FF7500] ring-1 group-hover:ring-[#FFFFFF] ring-[#16191C] 
+          <div className="cursor-pointer group w-full h-[52px] group-hover:text-white text-black  text-xl rounded-xl  group-hover:bg-[#FF7500] ring-1 group-hover:ring-[#FFFFFF] ring-[#16191C] 
             transition-all duration-300 hover:shadow-2xl ring-inset hover:ring-0 font-bold flex items-center justify-center ">
               <h4 className="w-99 h-19 top-16 left-115 font-monasans font-bold text-base leading-[19.2px]">Choose Plan</h4>{" "}
               <span className="ml-2">
@@ -114,7 +114,7 @@ const Plan2 = () => {
         </div></div>
         <div className={`slide-item ${animationClass} w-full`}>
           <div  className="mb-5 w-full transition-all  bg-[#F9EFE4] hover:bg-[#16191C] px-10 rounded-2xl group" >
-         <div className='group-hover:opacity-100 opacity-0 absolute -translate-y-4 translate-x-24'>
+         <div className='group-hover:opacity-100 opacity-0 absolute -translate-y-4 translate-x-24 2xl:flex hidden'>
           <div className='bg-orange-500 py-1 rounded-3xl border-white w-36  mx-auto item-center justify-center border-4'>
             <h2 className='text-white items-center justify-center mx-auto text-center text-[16px] font-semibold '>Most Popular</h2>
           </div>
@@ -178,7 +178,7 @@ const Plan2 = () => {
           </div>
           
           <div className="mt-12 group">
-           <div className="group w-full h-[52px] group-hover:text-white text-black  text-xl rounded-xl  group-hover:bg-[#FF7500] ring-1 group-hover:ring-[#FFFFFF] ring-[#16191C] 
+          <div className="cursor-pointer group w-full h-[52px] group-hover:text-white text-black  text-xl rounded-xl  group-hover:bg-[#FF7500] ring-1 group-hover:ring-[#FFFFFF] ring-[#16191C] 
             transition-all duration-300 hover:shadow-2xl ring-inset hover:ring-0 font-bold flex items-center justify-center ">
               <h4 className="w-99 h-19 top-16 left-115 font-monasans font-bold text-base leading-[19.2px]">Choose Plan</h4>{" "}
               <span className="ml-2">

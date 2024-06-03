@@ -31,12 +31,12 @@ Services
                 </div>
                 {/* 4 */}
                 <div className="buddybutton">
-                  <div className="buddy_button1 bg-orange-500 text-white rounded-xl">                                 
+                  <div className="buddy_button1 bg-orange-500 text-white rounded-xl cursor-pointer">                                 
                         <h1 className="font-mona-sans font-semibold  ">
                         Subscribe Now
                         </h1>             
                   </div>
-                  <div className="cloudbuddy_button2 flex flex-row gap-[10px] ">
+                  <div className="cloudbuddy_button2  cursor-pointer flex flex-row gap-[10px] ">
                     <div className="">
                       <h2 className="font-mona-sans font-medium text-white  ">
                       Contact Us

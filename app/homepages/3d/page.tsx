@@ -59,7 +59,7 @@ Premium Hardware</h1>
         </div>
       </div>
     </div>
-    <svg  className="opacity-100 2xl:flex hidden" width="90" height="10" viewBox="0 0 90 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg  className="opacity-100 hidden" width="90" height="10" viewBox="0 0 90 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="50" height="10" rx="5" fill="#FF7550"/>
 <rect x="60" width="10" height="10" rx="5" fill="#D9D9D9"/>
 <rect x="80" width="10" height="10" rx="5" fill="#D9D9D9"/>
@@ -206,7 +206,7 @@ Premium Hardware</h1>
                 <h1 className="text-md 2xl:text-xl font-bold leading-relaxed">{caseStudy.title}</h1>
                 <div className="relative max-w-fit flex flex-row group items-center justify-center !mt-4">
                   <div className="flex items-center gap-x-3 pb-2">
-                    <p className="text-[14px] 2xl:text-[16px] font-bold text-orange-500">Read more</p>
+                    <p className="text-[14px] 2xl:text-[16px] font-bold text-orange-500 cursor-pointer">Read more</p>
                     <img src="/orangearrow.svg" className=" w-[11px] text-orange-500" />
                   </div>
                   <div className="bg-orange-500 h-0.5 absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-500" />

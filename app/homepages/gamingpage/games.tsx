@@ -33,7 +33,7 @@ const Box: React.FC<BoxProps> = ({ imageSrc, width, height }) => {
             className="mt-4"
             whileHover={{ scale: 1.2 }}
           >
-            <Image src="/homegaming/button.svg" alt="Button" width={50} height={50} />
+            <Image src="/homegaming/button.svg" alt="Button" width={120} height={100} />
           </motion.div>
         </div>
       </div>
@@ -46,7 +46,7 @@ const IndependentHoverBoxesVertical = () => {
     <div className="w-full grid gap-y-10 items-center justify-center sm:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 2xl:gap-x-6">
       <Box imageSrc="/homegaming/games1.png" width={280} height={350} />
       <Box imageSrc="/homegaming/games3.png" width={330} height={350} />
-      <Box imageSrc="/homegaming/games2.png" width={260} height={350} />
+      <Box imageSrc="/homegaming/games2.png" width={280} height={350} />
     </div>
   );
 };

@@ -117,7 +117,7 @@ const ContactForm: React.FC = () => {
           <label htmlFor="text-sm 2xl:text-md">I have read and agree to the terms and conditions  <span className="ml-2 mr-2 leading-21 font-extrabold"> - HostBuddy</span></label>
          
         </div>
-        <div className="border-orange-500 border flex flex-row w-32 2xl:w-40 rounded-xl p-3 bg-orange-500 items-center justify-center">
+        <div className="cursor-pointer border-orange-500 border flex flex-row w-32 2xl:w-40 rounded-xl p-3 bg-orange-500 items-center justify-center">
           <h2 className="font-medium text-[14px] 2xl:text-[20px] leading-normal text-white">Submit Ticket</h2> 
         </div>
       </div>

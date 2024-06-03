@@ -1323,7 +1323,7 @@ background-color: #F9EFE4;
     padding: 32px 34px 32px 36px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 40px;
     border-radius: 20px; /* Adjust the border-radius value to match the curvature */
   border: 1px solid transparent; /* Set border to transparent */
   border-image-source: linear-gradient(95.27deg, #fe7602 1.2%, rgba(254, 118, 2, 0) 100%);
@@ -8694,7 +8694,7 @@ text-transform:capitalize;}.cardiv2{
     align-items: center;
     justify-content: center;
    } .gapping{
-  gap:500px;
+  gap:450px;
  } .cardiv{
     position: relative;
     bottom: 72.5px;
@@ -9736,7 +9736,7 @@ padding:0px 20px;
     position: relative;
     bottom:0px;
     padding-bottom:1350px;
-    top:2400px;
+    top:2300px;
   }.footerposition{
   position: relative;
   top:1100px;
