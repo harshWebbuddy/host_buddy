@@ -73,14 +73,14 @@ const Unique = () => {
      
         <div className="slide-reveal w-full flex flex-col space-y-8">
           <div className="space-y-3.5 flex flex-col 2xl:flex-row pr-4">
-            <h4 className="text-[42px] text-white font-semibold font-mona-sans leading-normal">
+            <h4 className="text-[24px] xl:text-[32px] 2xl:text-[42px] text-white font-semibold font-mona-sans leading-normal">
             Every Professional<span className="text-orange-500"> Email plan</span>  includes:
              
             </h4>
          
           </div>
         </div>
-        <div className="slide-reveal flex flex-col md:flex-row gap-x-8 gap-y-14 bl:items-center justify-center mx-auto mt-20 bl:mt-16">
+        <div className="slide-reveal flex flex-col md:flex-row gap-x-8 gap-y-14 bl:items-center justify-center mx-auto 2xl:mt-20 mt-10">
   {items.map((item, index) => (
     <div key={index} className="relative flex-1 w-full gap-10 group">
    
@@ -93,8 +93,8 @@ const Unique = () => {
 <line x1="1" y1="3.03065e-08" x2="0.999993" y2="104" stroke="#FF7500" stroke-width="2"/>
 </svg>
 <div className='p-6 md:p-8'>
-  <h2 className="text-xl font-bold mt-4 opacity-1 mb-2">{item.title}</h2>
-        <p className="w-full opacity-70 font-mona-sans text-[16px] font-normal leading-[24px] text-left">
+  <h2 className="text-xs 2xl:text-xl  font-bold mt-4 opacity-1 mb-2">{item.title}</h2>
+        <p className="w-full opacity-70 font-mona-sans text-[14px] 2xl:text-[16px] font-normal leading-[24px] text-left">
           {item.description}
         </p>
 </div>

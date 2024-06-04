@@ -62,7 +62,7 @@ const AddsResller: React.FC = () => {
         <div className="flex flex-col 2xl:flex-row mx-auto items-center justify-between">
           <div className="slide-reveal w-full space-y-16">
             <div className="space-y-3.5 ">
-              <h4 className="text-[52px] font-semibold capitalize font-mona-sans leading-normal">Why choose Host 
+              <h4 className="text-[26px] xl:text-[42px] 2xl:text-[52px] font-semibold capitalize font-mona-sans leading-normal">Why choose Host 
  <span className="text-orange-500">Buddy</span> for
 professional email?</h4>
               
@@ -74,7 +74,7 @@ professional email?</h4>
                   <div key={index} ref={(el) => (featuresRef.current[index] = el)} className="flex flex-col text-left px-5 pb-5 rounded-2xl">
                     <div
                       onClick={() => handleToggle(index)}
-                      className={`cursor-pointer text-left flex flex-row items-center justify-between text-[26px] font-bold text-[#16191C]/50 ${
+                      className={`cursor-pointer text-left flex flex-row items-center justify-between text-[20px] 2xl:text-[26px] font-bold text-[#16191C]/50 ${
                         currentItem === index ? "!text-black" : ""
                       }`}>
                       {feature.title}
