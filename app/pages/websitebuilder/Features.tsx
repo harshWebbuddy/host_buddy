@@ -43,13 +43,13 @@ export default function Features() {
 
   return (
     
-    <div className="p-4 relative bg-[#F9EFE4] mx-auto flex flex-col w-full items-center justify-center pt-10 2xl:pt-20 mt-20 `">
+    <div className="p-4 relative bg-[#F9EFE4] mx-auto flex flex-col w-full items-center justify-center pt-10 2xl:pt-20 2xl:mt-20 `">
       <div className="slide-reveal max-w-[1360px] mx-auto space-y-10">
         <div className="flex flex-col 2xl:flex-col gap-y-0 2xl:items-center">
-        <h4 className="text-[42px] text-black font-semibold font-mona-sans leading-normal">
+        <h4 className="text-[22px] xl:text-[32px] 2xl:text-[42px] text-black font-semibold font-mona-sans leading-normal">
         Build More Than a Website
              </h4>
-             <h4 className="text-[42px] text-black font-semibold font-mona-sans leading-normal">
+             <h4 className="text-[22px] xl:text-[32px] 2xl:text-[42px] text-black font-semibold font-mona-sans leading-normal">
        
 <span className="text-orange-500 capitalize"> Build Your Brand </span> 
              </h4>
@@ -57,13 +57,13 @@ export default function Features() {
         </div>
    <div className="space-y-8">
         <div className="bg-white rounded-2xl  w-full flex flex-col 2xl:flex-row space-x-12 p-2 max-w-[833px] mx-auto  ">
-<div  className="bg-orange-500 rounded-xl px-4 text-white  py-4">Free Domain Name</div>
-<div  className="py-4 px-4 text-[18px] font-normal leading-[26px]">Online Store</div>
+<div  className="bg-orange-500 text-center  text-[14px] 2xl:text-[18px]  rounded-xl px-4 text-white  py-4">Free Domain Name</div>
+<div  className="py-4 px-4 text-[14px] 2xl:text-[18px] font-normal leading-[26px]">Online Store</div>
 
-<div className="py-4 px-4 text-[18px] font-normal leading-[26px]">Portfolio</div>
+<div className="py-4 px-4 text-[14px] 2xl:text-[18px] font-normal leading-[26px]">Portfolio</div>
 
-<div className="py-4 px-4 text-[18px] font-normal leading-[26px]">Blog</div>
-<div className="py-4 px-4 text-[18px] font-normal leading-[26px] ">Other</div>
+<div className="py-4 px-4 text-[14px] 2xl:text-[18px] font-normal leading-[26px]">Blog</div>
+<div className="py-4 px-4 text-[14px] 2xl:text-[18px] font-normal leading-[26px] ">Other</div>
        </div>
         <div className="flex flex-col 2xl:flex-row gap-4  transition-all duration-500 pb-20 ">
     <img src="/websitebuilder/brand1.svg"/>

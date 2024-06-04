@@ -4,13 +4,13 @@ import React from 'react'
 
 const Unique = () => {
   return (
-    <section className=" relative bg-gradient-to-b from-[#292E34] to-[#16191C] pt-20 pb-20">
+    <section className=" relative bg-gradient-to-b from-[#292E34] to-[#16191C] 2xl:pt-20 pt-10  pb-10 2xl:pb-20">
     <div className="p-4 w-full max-w-[1350px] mx-auto flex flex-col xl:flex-row items-center justify-center py-2">
       <div className="slide-reveal flex flex-col 2xl:flex-row mx-auto justify-center 2xl:justify-between space-y-20 items-center 2xl:space-x-52">
-        <div className="w-full flex  space-y-16 flex-col">
+        <div className="w-full flex space-y-6 2xl:space-y-16 flex-col">
         <div className="flex flex-col  2xl:items-start ">
-          <h2 className="text-[36px] leading-[63px] font-semibold text-white w-full ">
-        <span className="pb-4 border-b-4 border-orange-500">Started by</span> AI, Completed by You
+          <h2 className="text-[24px] 2xl:text-[36px] leading-[43px] 2xl:leading-[63px] font-semibold text-white w-full ">
+        <span className="pb-1 2xl:pb-4 border-b-4 border-orange-500">Started by</span> AI, Completed by You
           </h2>
           
         </div>
@@ -18,18 +18,18 @@ const Unique = () => {
           <ul className="w-full space-y-4">
             <li className="flex gap-4 items-start">
               <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-1" />
-              <p className="capitalize leading-7 text-lg text-white ">
+              <p className="capitalize leading-6 2xl:leading-7 text-xs 2xl:text-lg text-white ">
               Answer three simple questions, and AI will create your website.           </p>
             </li>
             <li className="flex gap-4 items-start">
               <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-1" />
-              <p className="capitalize leading-7 text-lg text-white ">
+              <p className="capitalize leading-6 2xl:leading-7 text-xs 2xl:text-lg text-white ">
               Generate SEO-friendly content, including unique copy 
 and relevant images          </p>
             </li>
             <li className="flex gap-4 items-start">
               <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-1" />
-              <p className="capitalize leading-7 text-lg text-white ">
+              <p className="capitalize leading-6 2xl:leading-7 text-xs 2xl:text-lg text-white ">
               Customize your site further with the drag-and-drop editor.         </p>
             </li>
           </ul>
