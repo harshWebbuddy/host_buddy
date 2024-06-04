@@ -60,20 +60,20 @@ const AddsResller: React.FC = () => {
     <section className=" relative">
       <div className=" p-4 w-full max-w-[1420px] mx-auto flex flex-col md:flex-row items-center justify-center py-20">
         <div className="flex flex-col 2xl:flex-row mx-auto items-center justify-between">
-          <div className="slide-reveal w-full space-y-16">
-            <div className="space-y-3.5 pr-20">
-              <h4 className="text-[52px] font-semibold font-mona-sans leading-normal">Customize With 
+          <div className="slide-reveal w-full space-y-8  2xl:space-y-16">
+            <div className="space-y-3.5 2xl:pr-20">
+              <h4 className="text-[32px] xl:text-[42px] 2xl:text-[52px] font-semibold font-mona-sans leading-normal">Customize With 
 Premium <span className="text-orange-500">Add-Ons</span></h4>
               
             </div>
-            <div ref={parentRef} className="w-full max-w-[700px] mx-auto mt-20 px-4 overflow-y-auto max-h-[500px] scroll-container ">
+            <div ref={parentRef} className="w-full max-w-[700px] mx-auto 2xl:mt-20 px-4 overflow-y-auto max-h-[500px] scroll-container ">
               <div className="flex flex-col gap-5 mt-4 ltr">
                 {features.map((feature, index) => (
                   //@ts-ignore
                   <div key={index} ref={(el) => (featuresRef.current[index] = el)} className="flex flex-col text-left px-5 pb-5 rounded-2xl">
                     <div
                       onClick={() => handleToggle(index)}
-                      className={`cursor-pointer text-left flex flex-row items-center justify-between text-[26px] font-bold text-[#16191C]/50 ${
+                      className={`cursor-pointer text-left flex flex-row items-center justify-between text-[22px] 2xl:text-[26px] font-bold text-[#16191C]/50 ${
                         currentItem === index ? "!text-black" : ""
                       }`}>
                       {feature.title}

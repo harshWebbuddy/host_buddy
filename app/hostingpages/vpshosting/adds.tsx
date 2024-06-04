@@ -166,7 +166,7 @@ const Adds = () => {
       </div>
 
   </section>
-  )
+  ) 
 }
 
 export default Adds;

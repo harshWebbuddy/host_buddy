@@ -57,15 +57,7 @@ const HostingPage = () => {
                     </div>
                   </div>
                 </div>
-                {/* <div className="w-[160px] h-[20px]  flex flex-row item-center justify-center ml-8 py-3.5">
-                
-            <div className="w-[134px] h-[12px] item-center justify-center mx-auto">
-                <h2 className="font-mona-sans text-[15px] font-semibold leading-[19.2px] text-left">Hosting Overview</h2>  
-            </div>
-            <div className="item-center justify-center mx-auto py-0.5">
-    <img src="/arrow.svg" width="16px" height="20px"/>
-            </div>
-            </div> */}
+               
               </div>
               <div className="w-[216.41px] h-[26px] mt-8 md:mt-6 flex flex-row gap-1  ">
                 <div className="item-center justify-center mt-1">
