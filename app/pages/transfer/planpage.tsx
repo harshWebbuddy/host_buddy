@@ -5,11 +5,11 @@ import React from 'react'
 const Planpanel = () => {
   return (
     <section className=" relative">
-    <div className="pt-8 pb-12 w-full max-w-[1360px] mx-auto flex flex-col xl:flex-row items-center justify-center">
+    <div className="pt-8 pb-12 w-full max-w-[1400px] mx-auto flex flex-col xl:flex-row items-center justify-center">
       <div className="flex flex-col 2xl:flex-row mx-auto items-center justify-between ">
-      <div className="slide-reveal w-full flex flex-col space-y-4">
+      <div className="slide-reveal p-4 2xl:p-0 w-full flex flex-col space-y-4">
       <div className="flex w-full text-left justify-start 2xl:pr-60" style={{  maxWidth: '820px' }}>
-  <h4 className="text-[42px] text-black font-semibold capitalize font-mona-sans leading-[63px]">
+  <h4 className="text-[26px] xl:text-[32px] 2xl:text-[42px] text-black font-semibold capitalize font-mona-sans leading-normal">
     Transfer a Domain Name in {" "} <span className="text-orange-500"> 4 </span>Simple Steps:
   </h4>
 </div>

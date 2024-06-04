@@ -78,7 +78,7 @@ const Unique = () => {
      
 <div className='pt-8'>
   <h2 className="text-xl font-bold mt-4 opacity-1 mb-2">{item.title}</h2>
-        <p className="w-full opacity-70 font-mona-sans text-[14px] font-normal leading-[24px] text-left">
+        <p className="w-full opacity-70 font-mona-sans text-[16px] font-normal leading-[24px] text-left">
           {item.description}
         </p>
 </div>
