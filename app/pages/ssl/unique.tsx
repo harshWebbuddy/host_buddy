@@ -40,7 +40,7 @@ const Unique = () => {
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center center"
-    }} className="background w-full relative pt-20 pb-20">
+    }} className="background w-full relative pt-10 2xl:pt-20 pb-10 2xl:pb-20">
     <div className="p-4 w-full max-w-[1350px] mx-auto flex flex-col xl:flex-row items-center justify-center ">
       <div className="flex flex-col 2xl:flex-row mx-auto items-center space-y-10 ">
      
@@ -50,13 +50,13 @@ const Unique = () => {
   <div className='h-full rounded-[10px] w-auto relative'>
    <img src='/ssl/plus.png'/>
   </div></div>
-  <h4 className="text-[32px] text-white capitalize pr-20 font-semibold font-mona-sans leading-[46px]">
+  <h4 className="text-[32px] text-white capitalize 2xl:pr-20 font-semibold font-mona-sans leading-[46px]">
     Every SSL Certificate plan includes:<span className="text-orange-500"></span>
   </h4>
 </div>
 
         </div>
-        <div className="flex flex-wrap justify-center gap-x-8 gap-y-14 items-center mx-auto ">
+        <div className="flex flex-wrap justify-center gap-x-8 gap-y-8 2xl:gap-y-14 items-center mx-auto ">
   {items.map((item, index) => (
     <div key={index} className="relative w-full lg:w-1/3 bl:w-1/4 xl:w-1/4 2xl:w-1/4  group"> 
       <div className="absolute -top-6 -left-6 w-16 h-16 flex justify-center items-center">

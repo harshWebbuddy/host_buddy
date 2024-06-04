@@ -41,14 +41,14 @@ export default function Features() {
 
   return (
     
-    <div className=" relative bg-gradient-to-b from-[#FFFFFF]/70 to-[#FF7500]/70 mx-auto flex flex-col w-full items-center justify-center pt-10 2xl:pt-20 mt-20 opacity-100">
+    <div className=" relative bg-gradient-to-b from-[#FFFFFF]/70 to-[#FF7500]/70 mx-auto flex flex-col w-full items-center justify-center pt-10 2xl:pt-20 2xl:mt-20 opacity-100">
       <div className="slide-reveal max-w-[1360px] mx-auto">
         <div className="flex flex-col 2xl:flex-row gap-y-10 2xl:items-center justify-between">
-          <h2 className="text-[42px] capitalize leading-[63px] font-semibold text-black w-full 2xl:max-w-full">
-          reasons to get a HostBuddy <span className="pb-4 border-b-4 border-orange-500">SSL Certificate</span>
+          <h2 className="text-[26px] xl:text-[32px] 2xl:text-[42px] capitalize leading-normal font-semibold text-black w-full 2xl:max-w-full">
+          reasons to get a HostBuddy <span className="pb-1 2xl:pb-4 border-b-4 border-orange-500">SSL Certificate</span>
           </h2>
         </div>
-        <div className="flex flex-row gap-4 mt-16 overflow-hidden transition-all duration-500 h-full pb-32">
+        <div className="flex flex-row gap-4 mt-10  2xl:p-0 2xl:mt-16 overflow-hidden transition-all duration-500 h-full 2xl:pb-32">
           {Array.from({ length: columns }, (_, columnIndex) => (
             <div key={columnIndex} className="flex flex-col w-full gap-4">
               {visibleTestimonials.map(

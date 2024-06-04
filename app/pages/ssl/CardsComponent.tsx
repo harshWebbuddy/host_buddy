@@ -5,10 +5,10 @@ const CardsComponent = () => {
   return (
     <div className="">
     
-      <div className="space-y-96 p-4 max-w-[1350px] mx-auto ">
+      <div className="space-y-10 2xl:space-y-96 p-4 max-w-[1350px] mx-auto ">
         <div className="slide-reveal  background-design w-full flex flex-col xl:flex-row-reverse justify-between gap-x-0 gap-y-20  items-center">
          
-        <div className="w-full flex justify-center">
+        <div className="w-full  hidden 2xl:flex justify-center">
             <div className="">
               <Image
                 src="/ssl/card1.svg"
@@ -25,11 +25,11 @@ const CardsComponent = () => {
           <div className="w-full space-y-4">
           <div className="">
             
-       <h2 className="text-[42px] leading-[63px] font-semibold">     First, the <span className="text-orange-500">SSL agreement</span></h2>
+       <h2 className="text-[26px] xl:text-[32px] 2xl:text-[42px] leading-normal font-semibold">     First, the <span className="text-orange-500">SSL agreement</span></h2>
           </div>
           <ul className="w-full space-y-4">
             <li className="flex gap-4 items-start">
-              <p className="capitalize text-[15px] leading-loose">
+              <p className="capitalize text-[14px] 2xl:text-[15px] leading-loose">
               When a visitor enters an SSL-protected website, your SSL certificate automatically creates a secure, encrypted connection with their browser. Your site is most secure when SSL is deployed on all pages and subdomains        </p>
             </li>
 
@@ -43,18 +43,18 @@ const CardsComponent = () => {
        
           <div className="w-full space-y-4">
           <div className="">
-       <h2 className="text-[42px] leading-[63px] capitalize font-semibold">   Now you're <span className="text-orange-500">good to go</span></h2>
+          <h2 className="text-[26px] xl:text-[32px] 2xl:text-[42px] leading-normal font-semibold">    Now you're <span className="text-orange-500">good to go</span></h2>
           </div>
           <ul className="w-full space-y-4">
             <li className="flex gap-4 items-start">
-              <p className="capitalize text-[15px] leading-loose">
+            <p className="capitalize text-[14px] 2xl:text-[15px] leading-loose">
               When a visitor enters an SSL-protected website, your SSL certificate automatically creates a secure, encrypted connection with their browser. Your site is most secure when SSL is deployed on all pages and subdomains        </p>
             </li>
 
          
           </ul>
         </div>
-        <div className="w-full flex justify-center">
+        <div className="2xl:flex hidden w-full  justify-center">
             <div className="">
               <Image
                 src="/ssl/card2.svg"
@@ -70,7 +70,7 @@ const CardsComponent = () => {
         </div>
         <div className=" slide-reveal background-design w-full flex flex-col xl:flex-row-reverse justify-between gap-x-0 gap-y-20  items-center">
          
-        <div className="w-full flex justify-center">
+        <div className="w-full  2xl:flex hidden justify-center">
             <div className="">
               <Image
                 src="/ssl/card3.svg"
@@ -86,11 +86,11 @@ const CardsComponent = () => {
           
           <div className="w-full space-y-4">
           <div className="">
-       <h2 className="text-[42px] leading-[63px] font-semibold capitalize">  The  <span className="text-orange-500">padlock</span> icon appears</h2>
+          <h2 className="text-[26px] xl:text-[32px] 2xl:text-[42px] leading-normal font-semibold">    The  <span className="text-orange-500">padlock</span> icon appears</h2>
           </div>
           <ul className="w-full space-y-4">
             <li className="flex gap-4 items-start">
-              <p className="capitalize text-[15px] leading-loose">
+            <p className="capitalize text-[14px] 2xl:text-[15px] leading-loose">
               When a visitor enters an SSL-protected website, your SSL certificate automatically creates a secure, encrypted connection with their browser. Your site is most secure when SSL is deployed on all pages and subdomains        </p>
             </li>
 
