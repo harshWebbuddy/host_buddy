@@ -8,11 +8,13 @@ import Faqs from './Faqs'
 import Support from './plan2'
 import CardsComponent from './CardsComponent'
 import RootLayout from '@/app/layout'
+import { NavBar } from '@/components'
 
 
 const page = () => {
   return (    <RootLayout showFooter={false}>
     <main className="overflow-hidden">
+      <NavBar className='text-black'/>
 {/* hero page  */}
       <section>
         <HeroHosting/>
