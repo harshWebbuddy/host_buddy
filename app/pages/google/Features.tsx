@@ -54,7 +54,7 @@ export default function Features() {
     <div className="p-4 relative bg-gradient-to-b from-[#FFFFFF] to-[#FF7500] mx-auto flex flex-col w-full items-center justify-center opacity-70">
       <div className="max-w-[1360px] mx-auto">
         <div className="flex flex-col 2xl:flex-row gap-y-10 2xl:items-center justify-between slide-reveal">
-          <h2 className="text-[42px] leading-[63px] font-semibold text-black w-full 2xl:max-w-full">
+          <h2 className="text-[24px] xl:text-[32px] 2xl:text-[42px] leading-[40px] 2xl:leading-[63px] font-semibold text-black w-full 2xl:max-w-full">
             Experience Exceptional Shared Hosting{" "}
             <span className="pb-4 border-b-4 border-orange-500">Features </span>
           </h2>
@@ -83,15 +83,15 @@ export default function Features() {
                     draggable={false}
                     style={{ width: '70px', height: '70px' }} // Set fixed size for all images
                   />
-                  <h1 className="font-light text-[14.45px] opacity-70 pl-2">
+                  <h1 className="font-light text-[12px] 2xl:text-[14.45px] opacity-70 pl-2">
                     {testimonial.number}
                   </h1>
                 </div>
-                <h1 className="font-semibold text-[24px] leading-8">
+                <h1 className="font-semibold text-[20px] 2xl:text-[24px] leading-8">
                   {testimonial.author.names}
                 </h1>
               </div>
-              <p className="leading-6 text-[16px] opacity-50">
+              <p className="leading-6 text-[14px] 2xl:text-[16px] opacity-50">
                 {testimonial.testimonial}
               </p>
             </div>

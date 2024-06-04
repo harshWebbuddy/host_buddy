@@ -63,7 +63,7 @@ const CardsComponent = () => {
            </div>
            <ul className="w-full space-y-4">
   <li className="flex gap-4 items-start">
-    <p className="capitalize text-white leading-loose text-[13px] 2xl:text-[14px]">
+    <p className="capitalize text-white leading-loose text-[14px] 2xl:text-[14px]">
     Microsoft 365 gives you valuable, secure collaboration tools like Word, Excel, PowerPoint, and Teams to help you do your best work. When new app versions come out, they’re automatically delivered to you..  </p>
   </li>
  
@@ -118,7 +118,7 @@ const CardsComponent = () => {
            </div>
            <ul className="w-full space-y-4">
   <li className="flex gap-4 items-start">
-    <p className="capitalize text-white text-[13px] 2xl:text-[14px] leading-loose">
+    <p className="capitalize text-white text-[14px] 2xl:text-[14px] leading-loose">
     Professional Email works with Outlook, Apple Mail and other top programs to keep all your devices — from your laptop to your smartphone and tablet — up to date and in sync. Your latest emails, contacts, and appointments are at your fingertips, wherever you are.    </p>
   </li>
   
@@ -148,7 +148,7 @@ const CardsComponent = () => {
        <div className="w-full space-y-4">
            <div className="w-full">
           
-           <h4 className="text-[26px] xl:text-[32px] 2xl:text-[42px] leading-[43px] 2xl:leading-[63px] text-white capitalize font-semibold font-mona-sans leading-normal">
+           <h4 className="text-[26px] xl:text-[32px] 2xl:text-[42px] leading-[43px] 2xl:leading-[63px] text-white capitalize font-semibold font-mona-sans ">
              Keep all your <span className="text-orange-500 capitalize">  files safe  </span>in the cloud
              </h4>
            </div>

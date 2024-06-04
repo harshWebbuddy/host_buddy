@@ -8,30 +8,32 @@ import CaseStudy from "./CaseStudy";
 import Features from "./Features";
 import Adds from "./Security";
 import Partner from "./Partner";
+import { NavBar } from "@/components";
 
 const page = () => {
   return (
     <main className="overflow-hidden">
+      <NavBar className="text-white"/>
       {/* hero page  */}
       <section>
         <HeroHosting />
       </section>
       {/* rating panel  */}
       <section>
-        <div className="space-y-32 ">
+        <div className="space-y-16 2xl:space-y-32 ">
           <Ratingpanel />
           <Plan2 />
         </div>
       </section>
 
-      <section className="pt-32">
+      <section className="pt-16 2xl:pt-32">
         <Partner />
       </section>
-      <section className="pt-">
+      <section className="pt-10 2xl:pt-20">
         <Adds />
       </section>
       {/* cardsection */}
-      <section className="pt-40">
+      <section className="pt-10 2xl:pt-40">
         <Features />
       </section>
 
@@ -44,7 +46,7 @@ const page = () => {
         <Faqs />
       </section>
       {/* caseStudies */}
-      <section className="pb-56">
+      <section className="pb-40 2xl:pb-56">
         <CaseStudy />
       </section>
     </main>

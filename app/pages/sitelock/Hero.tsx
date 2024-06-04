@@ -43,7 +43,7 @@ const HeroHosting = () => {
 Protector
               </h1>
             </div>
-            <p className="font-mono-sans text-[16px] font-light leading-loose text-left  text-[#EBEBEB]">            Lorem ipsum dolor sit amet consectetur. Lacus viverra a sed morbi a ornare risus imperdiet. Ut aliquam pellentesque at amet eros ut. Amet mauris id aliquam in.</p>
+            <p className="font-mono-sans text-[14px] font-light leading-loose text-left  text-[#EBEBEB]">            Lorem ipsum dolor sit amet consectetur. Lacus viverra a sed morbi a ornare risus imperdiet. Ut aliquam pellentesque at amet eros ut. Amet mauris id aliquam in.</p>
             <div className="flex flex-row justify-start !mt-4 2xl:!mt-10 ">
             <div className="h-[56px]  flex item-center justify-center bg-orange-500 rounded-xl py-4 w-auto px-6  gap-x-3">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

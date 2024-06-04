@@ -42,7 +42,7 @@ useEffect(() => {
                 <h1 className="font-mono-sans font-medium  text-[30px] xl:text-[51px] 2xl:text-[61px] leading-[54px] 2xl:leading-[84px] text-left 2xl:text-left ">                Server Exclusively Yours
                 </h1>
               </div>
-              <p className="font-mono-sans text-[16px] font-light leading-loose text-left  text-[#EBEBEB]">
+              <p className="font-mono-sans text-[14px] font-light leading-loose text-left  text-[#EBEBEB]">
                 Leverage VPS Power for Ultimate Control, Enhanced Security, and Lightning-Fast Speed. Elevate Your Hosting Experience Now!
               </p>
               <div className="flex flex-row justify-start !mt-4 2xl:!mt-10 ">

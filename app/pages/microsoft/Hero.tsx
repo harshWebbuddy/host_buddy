@@ -38,12 +38,12 @@ const HeroHosting = () => {
           <div className='relative w-full flex flex-col justify-start space-y-0'><h2 className="font-mono-sans text-sm font-light italic leading-relaxed text-left">
                 <span className="text-orange-500 font-bold ">Microsoft 365</span>
               </h2>
-              <h1 className="font-mono-sans font-medium  text-[37px] xl:text-[51px] 2xl:text-[61px] leading-[54px] 2xl:leading-[84px] text-left 2xl:text-left ">
+              <h1 className="font-mono-sans font-medium  text-[37px] xl:text-[51px] 2xl:text-[51px] leading-[54px] 2xl:leading-[84px] text-left 2xl:text-left ">
               Collaborate, innovate 
 with Microsoft 365
               </h1>
             </div>
-            <p className="font-mono-sans text-[16px] font-light leading-loose text-left  text-[#EBEBEB]">
+            <p className="font-mono-sans text-[14px] font-light leading-loose text-left  text-[#EBEBEB]">
             Earn your customers' trust with a professional email address that matches your business name. </p>
             <div className="flex flex-row justify-start !mt-4 2xl:!mt-10 ">
             <div className="h-[56px]  flex item-center justify-center bg-orange-500 rounded-xl py-4 w-auto px-6  gap-x-3">

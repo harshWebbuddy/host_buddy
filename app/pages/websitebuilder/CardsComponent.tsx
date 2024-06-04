@@ -102,7 +102,7 @@ schemes and fonts.
            <ul className="w-full space-y-4">
   <li className="flex gap-4 items-start">
     <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-    <p className="capitalize  text-xs 2xl:text-lgleading-loose">
+    <p className="capitalize  text-xs 2xl:text-lg leading-loose">
     Set up an eCommerce site using a template or AI - as you prefer.    </p>
   </li>
   <li className="flex gap-4 items-start">
@@ -121,7 +121,7 @@ schemes and fonts.
          </div>
        </div>
        <div className=" slide-reveal background-design w-full flex flex-col xl:flex-row-reverse justify-between gap-x-40 gap-y-6 2xl:gap-y-20  items-center">
-       <div className="w-full flex justify-center">
+       <div className="w-full 2xl:hidden  flex justify-center">
            <div className="2xl:hidden flex relative">
              <Image
                src="/websitebuilder/card2.jpeg"
@@ -156,7 +156,7 @@ via live chat or email.  </p>
   </li>
   <li className="flex gap-4 items-start">
     <Image src="/tick1.svg" alt="tick" width={20} height={20} className="mt-3" />
-    <p className="capitalize  text-xs 2xl:text-lgleading-loose">
+    <p className="capitalize  text-xs 2xl:text-lg leading-loose">
     No delays - we'll respond in less than 3 minutes.
     </p>
   </li>

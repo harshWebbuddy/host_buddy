@@ -31,7 +31,7 @@ const Plan2 = () => {
     {/* heading */}
     <div className="slide-reveal flex flex-col bl:flex-row justify-between gap-y-6 gap-x-4 items-center mb-8 " >
     <div className="relative w-full">
-        <h2 className="text-white font-mona-sans font-semibold text-[22px] 2xl:text-[42px] capitalize leading-relaxed w-full text-center bl:text-left">
+    <h2 className="text-black font-mona-sans font-semibold text-[22px] 2xl:text-[42px] capitalize leading-relaxed w-full text-center 2xl:text-left">
         <span className="pb-2 2xl:pb-4 border-b-4 border-orange-500 text-wite text-white">The Perfe</span>ct - Web Hosting Plan
         </h2>
       </div>

@@ -4,7 +4,6 @@ import Ratingpanel from './Rating'
 import Plans from './Plans'
 import Plan2 from './plan2'
 import Unique from './unique'
-import CardsComponent from './CardsComponent'
 import Testimonials from './Testimonials'
 import Faqs from './Faqs';
 import CaseStudy from './CaseStudy'

@@ -35,7 +35,7 @@ const Unique = () => {
       
                  <div className="transition-all duration-300 cursor-pointer  xl:gap-6 text-[#16191C]">
                     <h2 className="text-[20px] 2xl:text-[24px] font-bold opacity-1 mb-2 2xl:mb-4 text-white">HostBuddy Scans Daily </h2>
-                    <p className="font-mona-sans text-white text-[12px] 2xl:text-[16px] font-normal leading-normal text-left">
+                    <p className="font-mona-sans text-white text-[14px] 2xl:text-[16px] font-normal leading-normal text-left">
                     Microsoft 365 gives you valuable, secure collaboration tools like Word, Excel, PowerPoint, and Teams to help you do your best work.                  </p>
                   </div>
                 </div>
@@ -49,7 +49,7 @@ const Unique = () => {
 </svg>
                   <div className="transition-all duration-300 cursor-pointer xl:gap-6 text-[#16191C]">
                   <h2 className="text-[20px] 2xl:text-[24px] font-bold opacity-1 mb-2 2xl:mb-4 text-white">HostBuddy Scans Daily </h2>
-                  <p className="font-mona-sans text-white text-[12px] 2xl:text-[16px] font-normal leading-normal text-left">
+                  <p className="font-mona-sans text-white text-[14px] 2xl:text-[16px] font-normal leading-normal text-left">
                     Microsoft 365 gives you valuable, secure collaboration tools like Word, Excel, PowerPoint, and Teams to help you do your best work.                    </p>
                   </div>
                 </div>
@@ -66,7 +66,7 @@ const Unique = () => {
       
                  <div className="transition-all duration-300 cursor-pointer  xl:gap-6 text-[#16191C]">
                  <h2 className="text-[20px] 2xl:text-[24px] font-bold opacity-1 mb-2 2xl:mb-4 text-white">HostBuddy Scans Daily </h2>
-                 <p className="font-mona-sans text-white text-[12px] 2xl:text-[16px] font-normal leading-normal text-left">
+                 <p className="font-mona-sans text-white text-[14px] 2xl:text-[16px] font-normal leading-normal text-left">
                     Microsoft 365 gives you valuable, secure collaboration tools like Word, Excel, PowerPoint, and Teams to help you do your best work.                  </p>
                   </div>
                 </div>
