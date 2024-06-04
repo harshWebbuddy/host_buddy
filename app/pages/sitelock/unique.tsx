@@ -9,12 +9,12 @@ const Unique = () => {
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center center"
     }} className="background w-full relative">
-    <div className="slide-reveal p-4 w-full max-w-[1300px] mx-auto flex flex-col xl:flex-row items-center justify-center py-24">
+    <div className="slide-reveal p-4 w-full max-w-[1300px] mx-auto flex flex-col xl:flex-row items-center justify-center py-14  2xl:py-24">
       <div className="flex flex-col 2xl:flex-col mx-auto items-center justify-between ">
      
         <div className="w-full flex flex-col space-y-8">
           <div className="space-y-3.5 flex flex-col 2xl:flex-row pr-4">
-            <h4 className="text-[42px] text-white font-semibold font-mona-sans leading-normal">
+            <h4 className="text-[26px] xl:text-[32px] 2xl:text-[42px] text-white font-semibold font-mona-sans leading-normal">
             How does <span className="text-orange-500">HostBuddy </span> Security Works
              
             </h4>
@@ -34,8 +34,8 @@ const Unique = () => {
 
       
                  <div className="transition-all duration-300 cursor-pointer  xl:gap-6 text-[#16191C]">
-                    <h2 className="text-[24px] font-bold opacity-1 mb-4 text-white">HostBuddy Scans Daily </h2>
-                    <p className="font-mona-sans text-white text-[16px] font-normal leading-normal text-left">
+                    <h2 className="text-[20px] 2xl:text-[24px] font-bold opacity-1 mb-2 2xl:mb-4 text-white">HostBuddy Scans Daily </h2>
+                    <p className="font-mona-sans text-white text-[12px] 2xl:text-[16px] font-normal leading-normal text-left">
                     Microsoft 365 gives you valuable, secure collaboration tools like Word, Excel, PowerPoint, and Teams to help you do your best work.                  </p>
                   </div>
                 </div>
@@ -48,8 +48,8 @@ const Unique = () => {
 <path opacity="0.05" d="M0.203125 73V71.1C0.203125 66.9 0.836458 63.2333 2.10313 60.1C3.43646 56.9 5.16979 54.0667 7.30312 51.6C9.43646 49.1333 11.7698 46.9 14.3031 44.9C16.9031 42.9 19.4698 41.0333 22.0031 39.3C24.6031 37.5667 26.9698 35.8333 29.1031 34.1C31.2365 32.3 32.9365 30.4333 34.2031 28.5C35.5365 26.5 36.2031 24.3 36.2031 21.9C36.2031 19.5667 35.7031 17.5667 34.7031 15.9C33.7698 14.2333 32.4365 12.9667 30.7031 12.1C28.9698 11.2333 26.9031 10.8 24.5031 10.8C22.1031 10.8 19.9698 11.3 18.1031 12.3C16.2365 13.3 14.8031 14.8 13.8031 16.8C12.8698 18.7333 12.5031 21.0667 12.7031 23.8H0.403125C0.269792 19 1.20312 14.8333 3.20312 11.3C5.26979 7.7 8.20313 4.93333 12.0031 3C15.8031 0.999998 20.2365 0 25.3031 0C30.1031 0 34.2698 0.866664 37.8031 2.59999C41.4031 4.33333 44.1698 6.79999 46.1031 9.99999C48.1031 13.1333 49.1031 16.8667 49.1031 21.2C49.1031 24.3333 48.5698 27.1333 47.5031 29.6C46.5031 32.0667 45.1365 34.3333 43.4031 36.4C41.6698 38.4 39.7031 40.2667 37.5031 42C35.3698 43.7333 33.1698 45.4 30.9031 47C28.7031 48.5333 26.5698 50.1 24.5031 51.7C22.5031 53.2333 20.7365 54.8333 19.2031 56.5C17.6698 58.1667 16.5698 60 15.9031 62H49.9031V73H0.203125Z" fill="white"/>
 </svg>
                   <div className="transition-all duration-300 cursor-pointer xl:gap-6 text-[#16191C]">
-                    <h2 className="text-[24px] font-bold opacity-1 mb-4  text-white ">HostBuddy Identifies Threats</h2>
-                    <p className="font-mona-sans text-[16px] font-normal leading-normal text-left text-white ">
+                  <h2 className="text-[20px] 2xl:text-[24px] font-bold opacity-1 mb-2 2xl:mb-4 text-white">HostBuddy Scans Daily </h2>
+                  <p className="font-mona-sans text-white text-[12px] 2xl:text-[16px] font-normal leading-normal text-left">
                     Microsoft 365 gives you valuable, secure collaboration tools like Word, Excel, PowerPoint, and Teams to help you do your best work.                    </p>
                   </div>
                 </div>
@@ -65,8 +65,8 @@ const Unique = () => {
 
       
                  <div className="transition-all duration-300 cursor-pointer  xl:gap-6 text-[#16191C]">
-                    <h2 className="text-[22px] font-bold opacity-1 mb-4 text-white">HostBuddy Instantly Notifies and Fixes </h2>
-                    <p className="font-mona-sans text-white text-[16px] font-normal leading-normal text-left">
+                 <h2 className="text-[20px] 2xl:text-[24px] font-bold opacity-1 mb-2 2xl:mb-4 text-white">HostBuddy Scans Daily </h2>
+                 <p className="font-mona-sans text-white text-[12px] 2xl:text-[16px] font-normal leading-normal text-left">
                     Microsoft 365 gives you valuable, secure collaboration tools like Word, Excel, PowerPoint, and Teams to help you do your best work.                  </p>
                   </div>
                 </div>
