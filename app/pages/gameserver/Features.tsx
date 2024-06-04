@@ -117,12 +117,12 @@ export default function Features() {
     <section className="2xl:x-20">
    <div className="slide-reveal  2xl:border-roundedf bg-gradient-to-b from-[#292E34] to-[#16191C]   w-full">
     
-    <div className="p-4 relative  mx-auto flex flex-col w-full items-center justify-center py-20 ">
+    <div className="p-4 relative  mx-auto flex flex-col w-full items-center justify-center py-10 2xl:py-20 ">
       <div className="max-w-[1300px] mx-auto space-y-20">
       <div className="flex flex-col 2xl:flex-col  space-y-8 2xl:items-center justify-between ">
-          <h2 className="text-[42px] leading-normal font-bold text-white w-full capitalize  text-center ">
+          <h2 className="text-[32px] 2xl:text-[42px] leading-normal font-bold text-white w-full capitalize  text-center ">
           Our hosting give you more
- <span className="pb-4 border-b-4 border-orange-500"> {" "} feature</span>
+ <span className="pb-1 2xl:pb-4 border-b-4 border-orange-500"> {" "} feature</span>
           </h2>
           <p className="w-full text-[16px] leading-loose text-white text-center ">
           Wordwide infrastructure,innovative cloud computing and specialist expertise     </p>
@@ -131,7 +131,7 @@ export default function Features() {
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-6 h-full">
   {items.map((item, index) => (
                     <div key={index} className="group relative bg-transparent  hover:bg-[#FF7500] border rounded-2xl space-y-12 mb-12">
-                    <div className="absolute translate-x-44 -translate-y-6 featuresvg20  flex justify-center items-center rounded-xl transition-all duration-300 ">
+                    <div className="2xl:flex hidden absolute translate-x-44 -translate-y-6 featuresvg20  flex justify-center items-center rounded-xl transition-all duration-300 ">
         {item.icon}
       </div>
       <div className=" rounded-2xl group space-y-2  cursor-pointer">

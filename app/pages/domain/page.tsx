@@ -9,17 +9,19 @@ import Uniquecpanel from './unique2'
 import Uniquepanel from './unique2'
 import Planpanel from './planpage'
 import Testimonials from './Testimonials'
+import { NavBar } from '@/components'
 
 const page = () => {
   return (
     <main className="overflow-hidden">
+      <NavBar className='text-white'/>
 {/* hero page  */}
       <section>
         <HeroHosting/>
         </section>
         {/* rating panel  */}
-        <section className='space-y-40'>
-        <div className="space-y-32 ">
+        <section className='space-y-4 2xl:space-y-40'>
+        <div className="space-y-16 2xl:space-y-32 ">
           <Ratingpanel/>
          
         <Planpanel/> 
@@ -35,11 +37,11 @@ const page = () => {
   <Testimonials/>
 </section>
         {/* Question Answers */}
-        <section className=' pt-40'>
+        <section className=' 2xl:pt-16'>
 <Faqs/>
         </section>
         {/* caseStudies */}
-        <section className='pb-80 pt-40'>
+        <section className='2xl:pb-80 pb-40 pt-20 2xl:pt-40'>
           <CaseStudy/>
         </section>
      </main>

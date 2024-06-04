@@ -10,10 +10,12 @@ import CaseStudy from './CaseStudy'
 import Features from './Features'
 import Adds from './adds'
 import Location from '@/app/(landing)/components/Locationpage'
+import { NavBar } from '@/components'
 
 const page = () => {
   return (
     <main className="overflow-hidden">
+      <NavBar className='text-white'/>
 {/* hero page  */}
       <section>
         <HeroHosting/>
@@ -21,7 +23,7 @@ const page = () => {
         </section>
         {/* rating panel  */}
         <section>
-        <div className="space-y-32 ">
+        <div className="space-y-16 2xl:space-y-32 ">
           <Ratingpanel/>
           <Plan2/>
         </div>
@@ -30,14 +32,13 @@ const page = () => {
         {/* plan page */}
     
         {/* cardsection */}
-        <section className='pt-40'>
+        <section className='pt-20 2xl:pt-40'>
           <Features/>
         </section>
-        <section className='pt-20'>
+        <section className='2xl:pt-20'>
           <Adds/>
         </section>
         <section className='pt-40 2xl:pt-96'> 
-          {/* <CardsComponent/> */}
       
           <Testimonials/>
         </section>
@@ -45,11 +46,11 @@ const page = () => {
   <Location/>
 </section> */}
         {/* Question Answers */}
-        <section className="pt-40">
+        <section className="2xl:pt-40">
 <Faqs/>
         </section>
         {/* caseStudies */}
-        <section className="pt-40 pb-80">
+        <section className="pt-20 2xl:pt-40 pb-40 2xl:pb-80">
           <CaseStudy/>
         </section>
      </main>

@@ -61,9 +61,9 @@ const AddsResller: React.FC = () => {
       <div className=" slide-reveal p-4 w-full max-w-[1420px] mx-auto flex flex-col md:flex-row items-center justify-center py-20">
         <div className="flex flex-col 2xl:flex-row mx-auto items-center justify-between">
           <div className="w-full space-y-16">
-            <div className="space-y-3.5 pr-20">
-              <h4 className="text-[52px] font-semibold font-mona-sans leading-normal">Why Choose Us?</h4>
-              <p className="text-[16px]  pr-10 leading-loose font-mono-sans">
+            <div className="space-y-3.5 2xl:pr-20">
+              <h4 className="xl:text-[42px] text-[32px] 2xl:text-[52px] font-semibold font-mona-sans leading-normal">Why Choose Us?</h4>
+              <p className="text-[14px] 2xl:text-[16px]  pr-10 leading-loose font-mono-sans">
             Running a business can be challenging, so to help we offer a FREE website builderwith FREE stock images and FREE email with every domain name.
             </p>
             </div>
@@ -74,7 +74,7 @@ const AddsResller: React.FC = () => {
                   <div key={index} ref={(el) => (featuresRef.current[index] = el)} className="flex flex-col text-left px-5 pb-5 rounded-2xl">
                     <div
                       onClick={() => handleToggle(index)}
-                      className={`cursor-pointer text-left flex flex-row items-center justify-between text-[26px] font-bold text-[#16191C]/50 ${
+                      className={`cursor-pointer text-left flex flex-row items-center justify-between text-[24px] 2xl:text-[26px] font-bold text-[#16191C]/50 ${
                         currentItem === index ? "!text-black" : ""
                       }`}>
                       {feature.title}

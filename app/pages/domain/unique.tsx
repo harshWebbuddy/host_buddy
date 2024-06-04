@@ -166,8 +166,8 @@ export default function Features() {
     <div className="slide-reveal p-4 relative  mx-auto flex flex-col w-full items-center justify-center pt-20 pb-4 ">
       <div className="max-w-[1300px] mx-auto space-y-40">
       <div className="flex flex-col 2xl:flex-col  space-y-8 2xl:items-center justify-between ">
-          <h2 className="text-[42px] leading-normal font-bold text-white w-full capitalize  text-center ">
-          6 Things To Re<span className="pb-4 border-b-4 border-orange-500">member Before Yo</span>u Buy Domains
+          <h2 className="text-[32px] 2xl:text-[42px] leading-normal font-bold text-white w-full capitalize  text-center ">
+          6 Things To Re<span className="pb-1 2xl:pb-4 border-b-4 border-orange-500">member Before Yo</span>u Buy Domains
           </h2>
          
           </div>

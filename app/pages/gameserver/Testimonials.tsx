@@ -50,11 +50,11 @@ export default function Testimonials() {
   <path d="M0 195.876C0 176.541 13.8305 159.973 32.8549 156.519L887.855 1.29716C892.58 0.4394 897.42 0.439397 902.145 1.29716L1757.15 156.519C1776.17 159.973 1790 176.541 1790 195.876V1603C1790 1625.09 1772.09 1643 1750 1643H40C17.9086 1643 0 1625.09 0 1603V195.876Z" fill="#F9EFE4"/>
 </svg>
       <div className="max-w-[1360px] mx-auto z-[2] ">
-        <div className="flex flex-col 2xl:flex-row gap-y-10 2xl:items-center justify-between">
-          <h2 className="text-[42px] leading-normal font-bold text-black w-full 2xl:max-w-xl ">
-            Featured Client <span className="pb-4 border-b-4 border-orange-500">Testimonials </span> 👏
+      <div className="flex flex-col 2xl:flex-row gap-y-10 2xl:items-center justify-between">
+          <h2 className="text-[20px] 2xl:text-[42px] leading-normal font-bold text-black w-full 2xl:max-w-xl">
+            Featured Client <span className="pb-4 border-b-4 border-orange-500">Testimonials</span>👏
           </h2>
-          <p className="w-full text-black text-[16px] leading-loose max-w-3xl">
+          <p className="w-full text-black text-[14px] 2xl:text-[16px] leading-loose max-w-3xl">
             Lorem ipsum dolor sit amet consectetur. Ornare et amet lobortis ornare. Ullamcorper accumsan donec eu condimentum diam a augue arcu.
           </p>
         </div>
