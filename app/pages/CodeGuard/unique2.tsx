@@ -5,20 +5,20 @@ const Uniquecpanel = () => {
     <section className="relative b">
       <div className="p-4 w-full max-w-[1300px] mx-auto ">
         <div className="slide-reveal flex flex-col 2xl:flex-row mx-auto items-center ">
-          <div className="w-full flex flex-col space-y-20">
+          <div className="w-full flex flex-col space-y-10 2xl:space-y-20">
             <div>
-              <h2 className="text-[42px] leading-[63px] font-semibold text-black w-full 2xl:max-w-full">
-              How HostBuddy<span className="pb-4 border-b-4 border-orange-500">  Works</span>
+              <h2 className="text-[24px] xl:text-[32px] 2xl:text-[42px] leading-normal font-semibold text-black w-full 2xl:max-w-full">
+              How HostBuddy<span className="pb-1 2xl:pb-4 border-b-4 border-orange-500">  Works</span>
               </h2>
             </div>
-            <div className="w-full flex flex-col xl:flex-row justify-start gap-20 xl:gap-10 2xl:gap-20">
+            <div className="w-full flex flex-col xl:flex-row justify-start gap-12 xl:gap-10 2xl:gap-20">
               <Image src="/google/uniqueorangepic.jpeg" alt="" width={600} height={582} className="rounded-3xl object-cover h-[700px]" />
               <div className="w-full">
                 <div className="flex">
-                  <Image draggable={false} src="/line-svg.svg" alt="" width={7} height={404} className="h-[700px] object-cover select-none" />
+                  <Image draggable={false} src="/line-svg.svg" alt="" width={7} height={404} className="2xl:flex hidden h-[700px] object-cover select-none" />
                   <div className="space-y-4 flex flex-col justify-between">
                     <div className="flex items-start mt-20 gap-1 min-[400px]:gap-4">
-                      <Image draggable={false} src="/mini-line-svg.svg" alt="" width={50} height={40} className="-translate-x-[6px] select-none" />
+                      <Image draggable={false} src="/mini-line-svg.svg" alt="" width={50} height={40} className="2xl:flex hidden -translate-x-[6px] select-none" />
                      
                       <div className="space-y-0 -translate-y-[85px]">
                       <div className="flex flex-row justify-between items-center"><svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -31,7 +31,7 @@ const Uniquecpanel = () => {
 
                             
                             </div>
-                        <h1 className="text-3xl font-semibold">Connect Your Website</h1>
+                        <h1 className="text-2xl 2xl:text-3xl font-semibold">Connect Your Website</h1>
                         <p className="leading-loose pt-4">
                           Lorem ipsum dolor sit amet consectetur. Lobortis ultrices nec tincidunt eget tempor tempus risus enim. Fames rhoncus sed mattis elit
                           consectetur. Elit congue convallis quisque amet sit.
@@ -39,7 +39,7 @@ const Uniquecpanel = () => {
                       </div>
                     </div>
                     <div className="flex items-start mt-20 gap-1 min-[400px]:gap-4">
-                      <Image draggable={false} src="/mini-line-svg.svg" alt="" width={50} height={40} className="-translate-x-[6px] select-none" />
+                      <Image draggable={false} src="/mini-line-svg.svg" alt="" width={50} height={40} className="2xl:flex hidden -translate-x-[6px] select-none" />
                       <div className="space-y-0 -translate-y-[85px]">
                       <div className="flex flex-row justify-between items-center"><svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M8.07812 12.9466C8.07812 20.0797 13.8686 25.8932 20.9913 25.8932C28.1073 25.8932 33.9053 20.0797 33.9053 12.9466C33.9053 5.80509 28.1073 0 20.9913 0C13.8686 0 8.07812 5.80509 8.07812 12.9466ZM28.7997 16.661C27.3741 19.6671 24.3072 21.6099 20.9888 21.6099C16.9846 21.6099 13.617 18.8628 12.6397 15.1517L12.4414 15.4323C12.2789 15.6629 12.0215 15.7856 11.7607 15.7856C11.5941 15.7856 11.4266 15.7364 11.28 15.6328C10.905 15.3655 10.8159 14.8443 11.0808 14.4684L12.4972 12.4621C12.5105 12.4429 12.5322 12.4329 12.5472 12.4145C12.5839 12.3702 12.6247 12.3344 12.6688 12.2984C12.7097 12.2667 12.7488 12.2383 12.7947 12.214C12.8438 12.1881 12.8946 12.1706 12.9496 12.1556C12.9796 12.1464 13.0063 12.1264 13.0379 12.1214C13.0613 12.1172 13.0846 12.1247 13.1088 12.1222C13.1321 12.1214 13.1529 12.1088 13.1779 12.1088C13.2087 12.1088 13.2354 12.123 13.2662 12.1264C13.3229 12.1322 13.377 12.1422 13.432 12.1597C13.4845 12.1773 13.5311 12.199 13.5786 12.2258C13.6045 12.2408 13.6353 12.245 13.6603 12.2625L15.6632 13.69C16.0381 13.9581 16.1265 14.4793 15.859 14.8552C15.5932 15.231 15.0725 15.3212 14.6976 15.0523L14.251 14.7341C15.0425 17.7251 17.7586 19.9394 20.9888 19.9394C23.6682 19.9394 26.1435 18.3708 27.2941 15.9435C27.4916 15.5276 27.989 15.3521 28.4039 15.5476C28.8196 15.7456 28.9963 16.2442 28.7997 16.661ZM29.337 10.7357L29.5353 10.455C29.8011 10.0783 30.3218 9.9889 30.6967 10.2554C31.0725 10.5218 31.1616 11.043 30.8959 11.4197L29.4795 13.426C29.4662 13.4444 29.4445 13.4553 29.4295 13.4736C29.3929 13.5171 29.3529 13.553 29.3079 13.5889C29.2679 13.6206 29.2279 13.6499 29.1829 13.6741C29.1329 13.7 29.0821 13.7176 29.0279 13.7325C28.9971 13.7418 28.9704 13.7609 28.9388 13.7668C28.8921 13.7752 28.8455 13.7793 28.7997 13.7793C28.6988 13.7793 28.6005 13.7559 28.5063 13.7201C28.4764 13.7083 28.4506 13.6925 28.4214 13.6783C28.3864 13.6591 28.3489 13.6482 28.3164 13.6248L26.3135 12.1974C25.9386 11.9301 25.8511 11.4089 26.1177 11.033C26.3835 10.6572 26.9042 10.5677 27.2791 10.835L27.7257 11.1533C26.9342 8.16222 24.2181 5.94875 20.9888 5.94875C18.2135 5.94875 15.7016 7.59675 14.5909 10.146C14.4068 10.5694 13.9144 10.7632 13.4937 10.577C13.0721 10.3924 12.8796 9.89953 13.0638 9.4769C14.4401 6.31877 17.5511 4.27823 20.9888 4.27823C24.9921 4.27823 28.3597 7.02541 29.337 10.7357Z" fill="#FF7500"/>
@@ -52,7 +52,7 @@ const Uniquecpanel = () => {
 
                             
                             </div>
-                        <h1 className="text-3xl font-semibold">Get Regular Backup</h1>
+                        <h1 className="text-2xl 2xl:text-3xl font-semibold">Get Regular Backup</h1>
                         <p className="leading-loose pt-4">
                           Lorem ipsum dolor sit amet consectetur. Lobortis ultrices nec tincidunt eget tempor tempus risus enim. Fames rhoncus sed mattis elit
                           consectetur. Elit congue convallis quisque amet sit.
@@ -60,7 +60,7 @@ const Uniquecpanel = () => {
                       </div>
                     </div>
                     <div className="flex items-start mt-10 gap-1 min-[400px]:gap-4">
-                      <Image draggable={false} src="/mini-line-svg.svg" alt="" width={50} height={40} className="-translate-x-[6px] select-none" />
+                      <Image draggable={false} src="/mini-line-svg.svg" alt="" width={50} height={40} className="2xl:flex hidden -translate-x-[6px] select-none" />
                       <div className="space-y-0 -translate-y-[85px]">
                       <div className="flex flex-row justify-between items-center"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M20.0006 5.71423C16.2404 5.71423 13.0457 8.15111 11.8934 11.526C8.41399 12.0024 5.71484 14.9632 5.71484 18.5714C5.71484 22.5097 8.91936 25.7142 12.8577 25.7142H27.1434C31.0818 25.7142 34.2863 22.5097 34.2863 18.5714C34.2863 14.9632 31.5871 12.0024 28.1077 11.526C26.9554 8.15111 23.7608 5.71423 20.0006 5.71423ZM31.4291 18.5714C31.4291 20.9347 29.5067 22.8571 27.1434 22.8571H12.8577C10.4944 22.8571 8.57199 20.9347 8.57199 18.5714C8.57199 16.6931 9.79417 15.1108 11.4791 14.5333C11.6003 15.1999 12.1566 15.7142 12.8577 15.7142C13.6466 15.7142 14.2863 15.0753 14.2863 14.2857C14.2863 11.1342 16.8497 8.57138 20.0006 8.57138C23.1514 8.57138 25.7148 11.1342 25.7148 14.2857C25.7148 15.0753 26.3545 15.7142 27.1434 15.7142C27.8445 15.7142 28.4009 15.1999 28.522 14.5333C30.2069 15.1108 31.4291 16.6931 31.4291 18.5714Z" fill="#FF7500"/>
@@ -78,7 +78,7 @@ const Uniquecpanel = () => {
 
                             
                             </div>
-                        <h1 className="text-3xl font-semibold">Automatic Backup </h1>
+                        <h1 className="text-2xl 2xl:text-3xl font-semibold">Automatic Backup </h1>
                         <p className="leading-loose pt-4">
                           Lorem ipsum dolor sit amet consectetur. Lobortis ultrices nec tincidunt eget tempor tempus risus enim. Fames rhoncus sed mattis elit
                           consectetur. Elit congue convallis quisque amet sit.

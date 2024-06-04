@@ -30,7 +30,7 @@ const Plan2 = () => {
     <div className="slide-reveal flex flex-col bl:flex-row justify-between gap-y-6 gap-x-4 items-center mb-8 " >
      <div className="relative w-full 2xl:pr-64">
      <h2 className="text-black font-mona-sans font-semibold text-[22px] 2xl:text-[42px] capitalize leading-relaxed w-full text-center bl:text-left">
-        Find the Perfect Website   <span className="pb-4 border-b-4 border-orange-500 text-wite text-black"> Builder Plan</span> for You
+        Find the Perfect Website   <span className="pb-1 2xl:pb-4 border-b-4 border-orange-500 text-wite text-black"> Builder Plan</span> for You
         </h2>
       </div>
     
