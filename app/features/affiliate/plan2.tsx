@@ -68,7 +68,7 @@ const Support = () => {
       <div className="slide-reveal w-full max-w-[1220px] mx-auto">
       <div className="flex flex-col bl:flex-row justify-between gap-y-10 gap-x-30 items-center  pb-16">
         <div className="relative w-full items-center justify-center">
-          <h2 className=" capitalize font-mona-sans text-white font-semibold 2xl:fomt-bold text-[42px] leading-relaxed w-full 2xl:text-center ">
+          <h2 className=" capitalize font-mona-sans text-white font-semibold 2xl:fomt-bold text-[32px] 2xl:text-[42px] leading-relaxed w-full 2xl:text-center ">
           Join the Program in <span className="text-orange-500">Four Easy Steps</span>
   {/* <span className="pb-4 border-b-4 border-orange-500">Shared </span>Hosting  */}
           </h2>

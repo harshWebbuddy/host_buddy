@@ -7,10 +7,10 @@ const Planpanel = () => {
         <section className=" relative">
         <div className="p-4 w-full max-w-[1330px] mx-auto flex flex-col xl:flex-row items-center justify-center ">
           <div className="slide-reveal flex flex-col space-x-4 space-y-12 2xl:flex-row mx-auto items-center justify-between ">
-            <div className="w-full flex flex-col space-y-12">
+            <div className="w-full flex flex-col space-y-4 2xl:space-y-12">
               <div className="space-y-3.5">
-                <h4 className="text-[39px] text-black font-semibold 2xl:font-bold font-mona-sans leading-normal">
-                User-First     <span className="pb-4 border-b-4 border-orange-500">Affiliate Marketing</span>
+                <h4 className="text-[24px] xl:text-[32px] 2xl:text-[42px] text-black font-semibold 2xl:font-bold font-mona-sans leading-normal">
+                User-First     <span className="pb-1 2xl:pb-4 border-b-4 border-orange-500">Affiliate Marketing</span>
                  
                 </h4>
               
@@ -25,7 +25,7 @@ const Planpanel = () => {
 </svg>
    
                      <div className="transition-all duration-300 cursor-pointer  xl:gap-6 text-[#16191C]">
-                        <h2 className="text-[24px] font-bold opacity-1 mb-4 group-hover:text-orange-500">Your Very Own Manager</h2>
+                        <h2 className="text-[24px] font-bold opacity-1 2xl:mb-4 group-hover:text-orange-500">Your Very Own Manager</h2>
                         <p className="font-mona-sans text-[16px] font-normal leading-normal text-left">
                         Meet your personal affiliate account manager. A marketing professional who will consult and answer questions, helping you towards success.                    </p>
                       </div>
@@ -41,7 +41,7 @@ const Planpanel = () => {
 </svg>
    
                      <div className="transition-all duration-300 cursor-pointer  xl:gap-6 text-[#16191C]">
-                        <h2 className="text-[24px] font-bold opacity-1 mb-4 group-hover:text-orange-500">High Conversion Rate</h2>
+                        <h2 className="text-[24px] font-bold opacity-1  2xl:mb-4 group-hover:text-orange-500">High Conversion Rate</h2>
                         <p className="font-mona-sans text-[16px] font-normal leading-normal text-left">
                         Our brand & effective promo materials mean the traffic you send to Hostinger will convert.  </p>
                       </div>
@@ -57,7 +57,7 @@ const Planpanel = () => {
 </svg>
    
                      <div className="transition-all duration-300 cursor-pointer  xl:gap-6 text-[#16191C]">
-                        <h2 className="text-[24px] font-bold opacity-1 mb-4 group-hover:text-orange-500">A Special Affiliate Program</h2>
+                        <h2 className="text-[24px] font-bold opacity-1  2xl:mb-4 group-hover:text-orange-500">A Special Affiliate Program</h2>
                         <p className="font-mona-sans text-[16px] font-normal leading-normal text-left">
                         Earn, grow, and expand with WebBuddy's Affiliate Program. Everything you need to start promoting is a click away. </p>
                       </div>
@@ -73,7 +73,7 @@ const Planpanel = () => {
 </svg>
    
                      <div className="transition-all duration-300 cursor-pointer  xl:gap-6 text-[#16191C]">
-                        <h2 className="text-[24px] font-bold opacity-1 mb-4 group-hover:text-orange-500">Easy to Start and Maintain</h2>
+                        <h2 className="text-[24px] font-bold opacity-1  2xl:mb-4 group-hover:text-orange-500">Easy to Start and Maintain</h2>
                         <p className="font-mona-sans text-[16px] font-normal leading-normal text-left">
                         Professionally designed banner packages, seasonal e-books, and more assets to increase conversions.  </p>
                       </div>
