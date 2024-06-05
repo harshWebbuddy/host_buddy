@@ -45,9 +45,9 @@ const RatingPanel = () => {
 
   return (
     <div className=" w-full max-w-[1300px] mx-auto bg-[#F5F5F5] rounded-3xl ">
-      <div className="flex flex-col items-center p-6 gap-[10px]">
-        <div className="w-full max-w-fit font-mona-sans font-semibold text-center mb-4">
-          <h3 className="font-bold text-[24px] leading-[63px]">Customer Happiness</h3>
+      <div className="flex flex-col items-center p-2 gap-[10px]">
+        <div className="w-full max-w-fit font-mona-sans font-semibold text-center mb-2">
+          <h3 className="font-bold text-[22px] leading-[63px]">Customer Happiness</h3>
         </div>
         <div className="slider-container relative">
           <div className="slider-track" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
