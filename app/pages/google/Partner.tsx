@@ -1,9 +1,7 @@
 "use client";
 import { testimonials } from "@/app/(landing)/components/constants/google";
-import { Star } from "@/components/svgs";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { BiChevronRight } from "react-icons/bi";
 export default function Partner() {
   const initializeColumns = () => {
     if (typeof window !== "undefined") {

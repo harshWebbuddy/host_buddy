@@ -5,11 +5,13 @@ import Plans from './Plans'
 import CaseStudy from './CaseStudy'
 import Locationpage from './Locationpage'
 import Faqs from './Faqs'
+import { NavBar } from '@/components'
 
 const page = () => {
   return (
     <main className="overflow-hidden">
 {/* hero page  */}
+<NavBar className='text-white'/>
       <section>
         <HeroHosting/>
         </section>
