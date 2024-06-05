@@ -13,15 +13,15 @@ const Plans = () => {
     <div className="slide-reveal flex flex-col max-w-[1300px] mx-auto">
       <div className="flex flex-col 2xl:flex-row justify-betweenitems-center ">
         <div className="relative w-full flex flex-row ">
-          <h2 className="font-mona-sans font-semibold text-[42px] leading-[63px] w-full text-center bl:text-left">
-           <span className="pb-4 border-b-4 border-orange-500"> Multiple Payment  </span> Types
+          <h2 className="font-mona-sans font-semibold text-[28px] xl:text-[32px] 2xl:text-[42px] leading-normal w-full text-center bl:text-left">
+           <span className="pb-1 2xl:pb-4 border-b-4 border-orange-500"> Multiple Payment  </span> Types
           </h2>
          
         </div>
        
       </div>
       {/* cards */}
-      <section className="pt-14">
+      <section className="pt-6 2xl:pt-14">
       
        <div className="flex flex-col space-y-4">
         <div className="flex flex-col bl:flex-row w-full justify-center gap-0 items-center">

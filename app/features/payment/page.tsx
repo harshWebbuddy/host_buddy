@@ -17,20 +17,20 @@ const page = () => {
         </section>
         {/* rating panel  */}
         <section>
-        <div className="space-y-32 ">
+        <div className="space-y-16 2xl:space-y-32 ">
           <Ratingpanel/>
           <Plans/>
         </div>
         </section>
 
-        {/* plan page */}
-        <div className='pt-40 '>
-          <Locationpage/>
-        </div>
-      <section className='pt-16'>
+   <div className='pt-20 2xl:pt-40'>
+        <section className="text-white bg-gradient-to-b from-[#292E34] to-[#16191C] pt-20 pb-20">
+<Locationpage/>
+    </section></div>
+      <section className='2xl:pt-16'>
         <Faqs/>
       </section>
-        <section className='pb-80 pt-40'>
+        <section className='pb-40 2xl:pb-80 pt-20 2xl:pt-40'>
           <CaseStudy/>
         </section>
      </main>
