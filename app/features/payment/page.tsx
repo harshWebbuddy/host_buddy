@@ -17,13 +17,12 @@ const page = () => {
         </section>
         {/* rating panel  */}
         <section>
-        <div className="space-y-16 2xl:space-y-32 ">
-          <Ratingpanel/>
+        <div className="pt-20 2xl:pt-44">
           <Plans/>
         </div>
         </section>
 
-   <div className='pt-20 2xl:pt-40'>
+   <div className='pt-20 2xl:pt-0'>
         <section className="text-white bg-gradient-to-b from-[#292E34] to-[#16191C] pt-20 pb-20">
 <Locationpage/>
     </section></div>

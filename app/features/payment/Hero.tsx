@@ -36,6 +36,7 @@ const HeroHosting = () => {
         </div>
       </div>
     </div>
+    
   </section>
       );
     };
