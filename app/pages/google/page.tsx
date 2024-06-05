@@ -9,6 +9,8 @@ import Features from "./Features";
 import Adds from "./Security";
 import Partner from "./Partner";
 import { NavBar } from "@/components";
+import RatingPanel from "./Rating";
+import Ratingpanel2 from "./Ratingpanel";
 
 const page = () => {
   return (
@@ -20,8 +22,9 @@ const page = () => {
       </section>
       {/* rating panel  */}
       <section>
-        <div className="space-y-16 2xl:space-y-32 ">
-          <Ratingpanel />
+        <div className="space-y-10 2xl:space-y-32 ">
+        <div className="2xl:flex xl:flex bl:flex lg:flex md:flex hidden"><Ratingpanel2/></div> 
+        <div className="p-4 2xl:hidden xl:hidden bl:hidden lg:hidden md:hidden flex"> <Ratingpanel /></div> 
           <Plan2 />
         </div>
       </section>

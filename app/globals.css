@@ -2,6 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+.slider-container {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  background-color: #F5F5F5;
+  border-radius: 24px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+
+@media (max-width: 768px) {
+  .slider-item {
+    min-width: 100%; /* Show 1 item at a time on mobile */
+  }
+}
 
 .toggle-input:checked + .toggle-label .toggle-background {
   fill: #ff7500 !important;/* Change this to your desired background color */
