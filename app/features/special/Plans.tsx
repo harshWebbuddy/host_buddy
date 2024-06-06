@@ -58,7 +58,7 @@ const Plans = () => {
             <p className="font-mona-sans text-base font-normal leading-6 opacity-70 text-left">Get assistance through 24/7 phone and chat access to our in-house experts, ready to address your technical issues. Acting as an extension to your business, we're here for you from start to beyond.</p>
           </div>
         </div>
-        {/* <img src="/wordpress/rectbox.svg" className="absolute bottom-0 left-0 !z-[2] opacity-0 group-hover:opacity-100"/> */}
+        <img src="/wordpress/rectbox.svg" className="absolute bottom-0 left-0 !z-[2] opacity-0 group-hover:opacity-100"/>
       </div>
     </div>
   </div>
