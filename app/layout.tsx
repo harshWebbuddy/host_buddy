@@ -12,7 +12,7 @@ export default function RootLayout({ children, showFooter = true }: { children: 
       <body className='relative justify-center items-center mx-auto'>
         <NavBar />
         {children}
-        {showFooter && <Footer />}
+        <Footer showFooter={showFooter}/>
       </body>
     </html>
   );

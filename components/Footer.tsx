@@ -7,8 +7,14 @@ import Link from "next/link";
 import FooterBox from "./FooterBox";
 import Logo from "./shared/Logo";
 
-const Footer = () => (
-  <div className="w-full h-full bg-gradient-to-b from-[#292E34] to-[#16191C] border-gray-100 px-4">
+const Footer = ({ showFooter = true }: {  showFooter?: boolean }) => {
+
+  if(!showFooter){
+
+    console.log(showFooter)
+    return <></> 
+  }
+  return (<div className="w-full h-full bg-gradient-to-b from-[#292E34] to-[#16191C] border-gray-100 px-4">
     <footer>
       <div className="max-w-[1420px] mx-auto -translate-y-40">
         <FooterBox />
@@ -138,6 +144,7 @@ const Footer = () => (
       </div>
     </footer>
   </div>
-);
+  );
+};
 
 export default Footer;
