@@ -3,11 +3,11 @@ import React from 'react';
 
 const HeroHosting = () => {
   return (
-    <section className="h-full min-h-[100vh] 2xl:min-h-[10vh] overflow-hidden relative bg-black flex items-center justify-center">
+    <section className="h-full  2xl:min-h-[40vh] overflow-hidden relative bg-black flex items-center justify-center">
     <img src="/home.jpg" width={1920} height={1080} alt="" className="w-full absolute inset-0 h-full opacity-30 object-cover bg-blend-color-dodge !z-[1]" />
    
-    <div className="max-w-[1300px] mx-auto text-white  px-10 pt-0">
-      <div className="h-full flex items-center relative !z-[2] flex-col 2xl:flex-row justify-center gap-0">
+    <div className="max-w-[1100px] xl:max-w-[1350px] 2xl:max-w-[1300px]  mx-auto text-white  px-10 pt-20 2xl:pt-0">
+      <div className="h-full flex items-center relative !z-[2] flex-col xl:flex-row md:flex-row bl:flex-row lg:flex-row 2xl:flex-row justify-center gap-0">
         
         <div className="animate-slide-from-left relative w-full flex flex-col justify-start items-start 2xl:justify-start space-y-0 2xl:space-y-2">
           <div className='relative w-full flex flex-col justify-start items-start 2xl:justify-start space-y-0'>

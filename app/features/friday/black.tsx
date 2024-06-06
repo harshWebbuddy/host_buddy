@@ -12,7 +12,7 @@ const Black = () => {
   },
   {
     
-    title: "Website speed",
+    title: "Website speed Redhot",
     description:
       "Lorem ipsum dolor sit amet consectetur. Amet enim faucibus libero viverra lacus. Viverra bibendum euismod quis ultrices ut non. Ut pulvinar vitae in cursus mauris netus.",
   },

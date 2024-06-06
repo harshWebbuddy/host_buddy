@@ -6,7 +6,7 @@ export const testimonials = [
         names: "50% off Shared Hosting",
       },
       testimonial:
-        "Good news! Enjoy 50% off any of our Shared Hosting Plans, available only to",
+        "Good news! Enjoy 50% off any our rest Support of our Shared Hosting Plans, available only to buy hdrfg",
     },
    
        {
@@ -26,7 +26,7 @@ export const testimonials = [
           names: "50% off Shared Hosting",
         },
       testimonial:
-        "Wildcard SSL only $57.2/yr instead of $88/yr! Suitable for small & medium-sized businesses.",
+        "Wildcard SSL only $57.2/yr instead of $88/yr! Suitable for small & medium-sized businesses maning.",
       number: '03',
   
     },
@@ -38,7 +38,7 @@ export const testimonials = [
         names: "50% off Shared Hosting",
       },
       testimonial:
-      "TLDs available for just $0.77 with 10 email accounts with 5GB each and Premium Support 24/7/365.",
+      "TLDs available for just $0.77 rtyui iop with 10 email accounts  Premium Support 24/7/365.",
   
     },
     {
