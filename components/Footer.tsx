@@ -10,8 +10,6 @@ import Logo from "./shared/Logo";
 const Footer = ({ showFooter = true }: {  showFooter?: boolean }) => {
 
   if(!showFooter){
-
-    console.log(showFooter)
     return <></> 
   }
   return (<div className="w-full h-full bg-gradient-to-b from-[#292E34] to-[#16191C] border-gray-100 px-4">

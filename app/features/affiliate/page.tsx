@@ -20,8 +20,8 @@ const page = () => {
         {/* rating panel  */}
         <section>
         <div className="space-y-10 2xl:space-y-32 ">
-        <div className="2xl:flex xl:flex bl:flex lg:flex md:flex hidden"><Ratingpanel2/></div> 
-        <div className="p-4 2xl:hidden xl:hidden bl:hidden lg:hidden md:hidden flex"> <Ratingpanel /></div> 
+        <div className="2xl:flex xl:flex bl:flex lg:flex md:flex hidden p-4 2xl:p-0"><Ratingpanel2/></div> 
+        <div className="p-4 2xl:hidden xl:hidden bl:hidden lg:hidden md:hidden flex  2xl:p-0"> <Ratingpanel /></div> 
           <Plans />
         </div>
       </section>
@@ -30,7 +30,7 @@ const page = () => {
         <div className='pt-16 2xl:pt-40'>  
       <Support/>
         </div>
-        <section className='pt-0 2xl:pt-40 pb-56 2xl:pb-80'>
+        <section className='pt-0 2xl:pt-40 pb-36'>
   <CardsComponent/>
 </section>
      

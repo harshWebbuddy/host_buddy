@@ -4,9 +4,9 @@ import React from 'react';
 const HeroHosting = () => {
   return (
     <section className="h-full relative flex items-center justify-center">
-      <div className="max-w-[1300px] mx-auto text-white">  
+      <div className="max-w-[1300px] mx-auto text-white items-center justify-center flex flex-col">  
         <div className="shakeRotate">
-          <Image src="/12.gif" width={800} height={800} alt="404" />
+          <Image src="/12.gif" width={800} height={800} alt="404" className='w-96'/>
         </div>
         <div className="space-y-4 2xl:space-y-8 flex flex-col text-black mx-auto items-center justify-center">
           <h2 className="text-[24px] 2xl:text-[30px] font-semibold leading-[30px]">There's NOTHING Here...</h2>

@@ -3,11 +3,11 @@ import React from 'react';
 
 const HeroHosting = () => {
   return (
-    <section className="h-full min-h-[80vh] overflow-hidden relative bg-black flex items-center justify-center">
+    <section className="h-full 2xl:min-h-[80vh] overflow-hidden relative bg-black flex items-center justify-center">
     <img src="/home.jpg" width={1920} height={1080} alt="" className="w-full absolute inset-0 h-full opacity-30 object-cover bg-blend-color-dodge !z-[1]" />
    
-    <div className="max-w-[1250px] mx-auto text-white px-4 pt-40 pb-10 2xl:py-40">
-      <div className="h-full flex items-center relative !z-[2] flex-col 2xl:flex-row justify-center gap-20">
+    <div className="max-w-[800px] xl:max-w-[1250px] 2xl:max-w-[1250px] mx-auto text-white px-4 pt-20 2xl:pt-40 pb-10   2xl:py-40">
+      <div className="h-full flex items-center relative !z-[2] flex-col md:flex-row bl:flex-row lg:flex-row xl:flex=row 2xl:flex-row justify-center gap-20">
         <div className="animate-slide-from-left relative w-full flex flex-col justify-start items-start 2xl:justify-start space-y-5 2xl:space-y-8">
           <div className='relative w-full flex flex-col justify-start items-start 2xl:justify-start space-y-0'>
           <svg className='2xl:flex hidden absolute -top-20 2xl:-top-32' width="217" height="24" viewBox="0 0 217 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,7 +26,7 @@ Program</h1>
 </div>
 <p className="font-mono-sans text-[14px] 2xl:text-[18px] font-light leading-loose text-left text-[#EBEBEB]">
           Earn at least <span className='text-orange-500 font-semibold'>60%</span> from every sale. Promote a trusted service loved by millions. Join an affiliate program that values your partnership..</p>
-          <div className="cursor-pointer flex flex-row justify-start !mt-4 2xl:!mt-10">
+          <div className="cursor-pointer   flex flex-row justify-start !mt-4 2xl:!mt-10">
 
               <div className="h-[56px] flex item-center justify-center bg-orange-500 rounded-xl py-4 w-auto px-6 gap-x-3 transition-transform duration-300 ">
               <h2 className="font-mona-sans text-[18px] font-semibold leading-[21.6px] text-left">Access Affiliate platform</h2>

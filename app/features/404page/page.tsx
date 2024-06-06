@@ -7,7 +7,7 @@ import HeroHosting from './Hero'
 const page = () => {
   return (    
   <RootLayout  showFooter={false}>
-    <main className="overflow-hidden">
+    <main className="">
       <section>
         <HeroHosting/>
         </section>      

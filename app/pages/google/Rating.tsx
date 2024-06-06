@@ -13,12 +13,12 @@ const RatingPanel = () => {
     },
     {
       src: "/google1.svg",
-      reviewsSrc: "/hosting/rating1.svg",
+      reviewsSrc: "/googlerating.svg",
       text: "4.9/5 | 9010 reviews"
     },
     {
       src: "/hostadvice.svg",
-      reviewsSrc: "/hosting/rating1.svg",
+      reviewsSrc: "/googlerating.svg",
       text: "4.9/5 | 9010 reviews"
     },
     {
