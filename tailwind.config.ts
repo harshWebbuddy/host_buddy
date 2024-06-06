@@ -49,7 +49,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
-  
+     
       fontFamily: {
         'mono-sans': ['Mona Sans', 'sans-serif'],
       },
@@ -57,6 +57,8 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+          'custom-gradient': 'linear-gradient(180deg, #292E34 0%, #16191C 100%)',
+
       },
       colors: {
         customBackground: '#F9EFE4',

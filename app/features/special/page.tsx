@@ -8,33 +8,35 @@ import Faqs from './Faqs'
 import ContactForm from '@/components/Form'
 import Features from './box'
 import Support from './plan2'
+import { NavBar } from '@/components'
 
 const page = () => {
   return (
-    <main className="overflow-hidden">
+    <main className="">
+      <NavBar className='text-white'/>
 {/* hero page  */}
       <section>
         <HeroHosting/>
         </section>
-        <section className=''>
+        <section className='pt-10 pb-10 2xl:pt-0 2xl:pb-0 '>
   <Features/>
 </section>
 <section>
   <Support/>
 </section>
         <section>
-        <div className="pt-60 pb-20 ">
+        <div className="pt-40 2xl:pt-60 pb-20 ">
           <Plans/>
         </div>
         </section>
 
         {/* plan page */}
-        <div className='pt-28'>
+        <div className='2xl:pt-28'>
           <Locationpage/>
         </div>
    
        
-        <div className='pt-20 pb-10'>
+        <div className=' 2xl:pt-20 pb-60 2xl:pb-80'>
 <ContactForm/></div>
      </main>
   )

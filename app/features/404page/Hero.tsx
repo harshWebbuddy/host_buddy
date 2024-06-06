@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import React from 'react';
-import { FaArrowRight } from 'react-icons/fa';
 
 const HeroHosting = () => {
   return (

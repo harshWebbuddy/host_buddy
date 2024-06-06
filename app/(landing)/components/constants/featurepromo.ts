@@ -14,7 +14,7 @@ export const testimonials = [
         names: "TLDs For $0.77",
       },
       testimonial:
-        "TLDs available for just $0.77 with 10 email accounts with 5GB each and Premium Support 24/7/365.",
+        "Good news! Enjoy 50% off any of our Shared Hosting Plans, available only to first-year purchases",
   
     },
        {
@@ -34,7 +34,7 @@ export const testimonials = [
         names: "TLDs For $0.77",
       },
       testimonial:
-      "TLDs available for just $0.77 with 10 email accounts with 5GB each and Premium Support 24/7/365.",
+      "Wildcard SSL only $57.2/yr instead of $88/yr! Suitable for small & medium-sized businesses.",
 
     },
     {

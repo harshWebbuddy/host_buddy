@@ -9,79 +9,62 @@ const Plans = () => {
   return (
     <div className="flex flex-col max-w-[1300px] mx-auto">
       <div className="flex flex-col 2xl:flex-row justify-betweenitems-center ">
-        <div className="relative w-full flex flex-col space-y-10 ">
-          <h2 className="font-mona-sans font-semibold 2xl:font-bold text-[42px] leading-[63px] w-full text-center bl:text-left">
-           Multiple <span className="pb-4 border-b-4 border-orange-500">Payment  Types </span>
+        <div className="p-2 2xl:p-0 relative w-full flex flex-col space-y-10 ">
+          <h2 className="font-mona-sans font-semibold 2xl:font-bold text-[42px] leading-[63px] w-full text-left">
+           Multiple <span className="pb-1 2xl:pb-4 border-b-4 border-orange-500">Payment  Types </span>
           </h2>
-         <p className="text-[18px] font-normal 2xl:font-medium">Different customers like to pay in different ways, and Antler lets you embrace them all. From international payment card providers like Visa and American Express to digital wallets and platforms like PayPal and WeChat Pay, we make it simple for you to complete transactions with ease.</p>
+         <p className="text-[16px] 2xl:text-[18px] font-normal 2xl:font-medium">Different customers like to pay in different ways, and Antler lets you embrace them all. From international payment card providers like Visa and American Express to digital wallets and platforms like PayPal and WeChat Pay, we make it simple for you to complete transactions with ease.</p>
         </div>
        
       </div>
       {/* cards */}
       <section className="pt-14">
-      
-       <div className="flex flex-col space-y-4">
-        <div className="flex flex-col bl:flex-row w-full justify-center gap-0 items-center">
- <div className="relative top-0 bottom-0 group !z-[1]  w-full p-4">     
-   <img src="/wordpress/rectbox.svg" className="absolute right-0 top-0  !z-[2] opacity-0 group-hover:opacity-100"/>
-
-        <div className=" w-full bg-white pl-16 pr-10 py-10 items-center justify-center rounded-2xl border group relative  !z-[3] group-hover:shadow-2xl ">
-  <div className=" w-full space-y-4 items-start justify-start mx-auto ">
-    <span className="items-start featuresvg6 justify-start bg-orange-500 mx-auto w-auto">
-    <Image src="/features/visa1.svg" width={200} height={200} alt=""/>
-
-
-
-
-    </span>
-    <h2 className="font-bold text-[18px] leading-[26px] text-left font-mono-sans-serif text-[#16191C] pt-4 ">Visa</h2>
-    <p className="font-mona-sans text-base font-normal leading-21  opacity-70 text-left">Drastically improve your core web vitals with faster page loads. SSD NVMes, server-level caching, CDN & GZIP/Brotli included with our WordPress hosting. Further, making Google and site visitors happy.</p>
-  </div>
- 
-</div>
-<img src="/wordpress/rectbox.svg" className="absolute bottom-0 left-0 !z-[2] opacity-0 group-hover:opacity-100"/>
-
-</div>
-<div className="relative top-0 bottom-0 group !z-[1]  w-full p-4">     
-   <img src="/wordpress/rectbox.svg" className="absolute right-0 top-0  !z-[2] opacity-0 group-hover:opacity-100"/>
-
-        <div className=" w-full bg-white pl-16 pr-10 py-10 items-center justify-center rounded-2xl border group relative  !z-[3] group-hover:shadow-2xl ">
-  <div className=" w-full space-y-4 items-start justify-start mx-auto ">
-    <span className="items-start featuresvg5 justify-start bg-orange-500 mx-auto w-auto">
-    
-    <Image src="/features/master1.svg" width={300} height={200} alt=""/>
-
-    </span>
-    <h2 className="font-bold text-[18px] leading-[26px] text-left font-mono-sans-serif text-[#16191C] pt-4 ">Mastercard</h2>
-    <p className="font-mona-sans text-base font-normal leading-21  opacity-70 text-left">Everything you need for the best WordPress hosting experience! We offer a free Let's Encrypt SSL certificate, a domain name, and a professional email to make you look more trustworthy and boost credibility.</p>
-  </div>
- 
-</div>
-<img src="/wordpress/rectbox.svg" className="absolute bottom-0 left-0 !z-[2] opacity-0 group-hover:opacity-100"/>
-
-</div>
-<div className="relative top-0 bottom-0 group !z-[1]  w-full p-4">     
-   <img src="/wordpress/rectbox.svg" className="absolute right-0 top-0  !z-[2] opacity-0 group-hover:opacity-100"/>
-
-        <div className=" w-full bg-white pl-16 pr-10 py-6 items-center justify-center rounded-2xl border group relative  !z-[3] group-hover:shadow-2xl ">
-  <div className=" w-full space-y-4 items-start justify-start mx-auto ">
-    <span className="items-start featuresvg5 justify-start bg-orange-500 mx-auto w-auto">
-    <Image src="/features/american.svg" width={272} height={20} alt=""/>
-    </span>
-    <h2 className="font-bold text-[18px] leading-[26px] text-left font-mono-sans-serif text-[#16191C] pt-4 ">American Express</h2>
-    <p className="font-mona-sans text-base font-normal leading-21  opacity-70 text-left">Get assistance through 24/7 phone and chat access to our in-house experts, ready to address your technical issues. Acting as an extension to your business, were here for you from start to beyond.</p>
-  </div>
- 
-</div>
-<img src="/wordpress/rectbox.svg" className="absolute bottom-0 left-0 !z-[2] opacity-0 group-hover:opacity-100"/>
-
-</div>
+  <div className="flex flex-col space-y-4">
+    <div className="flex flex-col bl:flex-row w-full justify-center gap-4 items-center">
+      <div className="relative top-0 bottom-0 group !z-[1] w-full p-4">
+        <img src="/wordpress/rectbox.svg" className="absolute right-0 top-0 !z-[2] opacity-0 group-hover:opacity-100"/>
+        <div className="w-full bg-white p-6 md:pl-16 md:pr-10 py-10 items-center justify-center rounded-2xl border group relative !z-[3] group-hover:shadow-2xl">
+          <div className="w-full space-y-4 items-start justify-start mx-auto">
+            <span className="items-start featuresvg6 justify-start bg-orange-500 mx-auto w-auto">
+              <Image src="/features/visa1.svg" width={200} height={200} alt=""/>
+            </span>
+            <h2 className="font-bold text-[18px] md:text-[20px] leading-[26px] text-left font-mono-sans-serif text-[#16191C] pt-4">Visa</h2>
+            <p className="font-mona-sans text-base font-normal leading-6 opacity-70 text-left">Drastically improve your core web vitals with faster page loads. SSD NVMes, server-level caching, CDN & GZIP/Brotli included with our WordPress hosting. Further, making Google and site visitors happy.</p>
+          </div>
         </div>
-       
-       
+        <img src="/wordpress/rectbox.svg" className="absolute bottom-0 left-0 !z-[2] opacity-0 group-hover:opacity-100"/>
+      </div>
+      <div className="relative top-0 bottom-0 group !z-[1] w-full p-4">
+        <img src="/wordpress/rectbox.svg" className="absolute right-0 top-0 !z-[2] opacity-0 group-hover:opacity-100"/>
+        <div className="w-full bg-white p-6 md:pl-16 md:pr-10 py-10 items-center justify-center rounded-2xl border group relative !z-[3] group-hover:shadow-2xl">
+          <div className="w-full space-y-4 items-start justify-start mx-auto">
+            <span className="items-start featuresvg5 justify-start bg-orange-500 mx-auto w-auto">
+              <Image src="/features/master1.svg" width={300} height={200} alt=""/>
+            </span>
+            <h2 className="font-bold text-[18px] md:text-[20px] leading-[26px] text-left font-mono-sans-serif text-[#16191C] pt-4">Mastercard</h2>
+            <p className="font-mona-sans text-base font-normal leading-6 opacity-70 text-left">Everything you need for the best WordPress hosting experience! We offer a free Let's Encrypt SSL certificate, a domain name, and a professional email to make you look more trustworthy and boost credibility.</p>
+          </div>
         </div>
-      </section>
-      <svg className="absolute left-40 translate-y-72" width="1920" height="922" viewBox="0 0 1920 922" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <img src="/wordpress/rectbox.svg" className="absolute bottom-0 left-0 !z-[2] opacity-0 group-hover:opacity-100"/>
+      </div>
+      <div className="relative top-0 bottom-0 group !z-[1] w-full p-4">
+        <img src="/wordpress/rectbox.svg" className="absolute right-0 top-0 !z-[2] opacity-0 group-hover:opacity-100"/>
+        <div className="w-full bg-white p-6 md:pl-16 md:pr-10 py-10 items-center justify-center rounded-2xl border group relative !z-[3] group-hover:shadow-2xl">
+          <div className="w-full space-y-4 items-start justify-start mx-auto">
+            <span className="items-start featuresvg5 justify-start bg-orange-500 mx-auto w-auto">
+              <Image src="/features/american.svg" width={272} height={20} alt=""/>
+            </span>
+            <h2 className="font-bold text-[18px] md:text-[20px] leading-[26px] text-left font-mono-sans-serif text-[#16191C] pt-4">American Express</h2>
+            <p className="font-mona-sans text-base font-normal leading-6 opacity-70 text-left">Get assistance through 24/7 phone and chat access to our in-house experts, ready to address your technical issues. Acting as an extension to your business, we're here for you from start to beyond.</p>
+          </div>
+        </div>
+        {/* <img src="/wordpress/rectbox.svg" className="absolute bottom-0 left-0 !z-[2] opacity-0 group-hover:opacity-100"/> */}
+      </div>
+    </div>
+  </div>
+</section>
+
+      <svg className="2xl:flex hidden absolute left-40 translate-y-20" viewBox="0 0 1920 922" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g opacity="0.3">
 <path d="M-122.342 2.84256C-127.806 191.498 -64.0469 381.415 54.413 529.315C88.1161 571.392 127.823 611.328 178.492 630.473C324.902 685.784 484.519 574.081 609.715 511.322C760.799 435.592 910.264 356.056 1067.28 292.716C1155.42 257.155 1258.72 227.521 1342.47 272.367C1427.27 317.785 1457.9 420.336 1491.61 509.776C1530.88 613.996 1585.78 714.719 1667.74 790.8C1749.71 866.88 1861.55 916.062 1973.42 906.083C2061.03 898.266 2141.53 855.873 2215.22 808.324C2408.83 683.382 2574.48 516.235 2696.99 322.204" stroke="#83848C" stroke-opacity="0.2" stroke-width="0.692997" stroke-miterlimit="10"/>
 <path d="M-127.277 10.9085C-132.11 177.644 -75.9949 341.998 26.368 483.998C35.874 497.186 45.6697 510.164 55.9082 522.801C89.5695 564.311 128.94 603.742 178.885 623.015C323.331 678.817 480.427 573.066 605.406 512.64C716.208 459.066 826.295 402.366 940.146 351.315C979.645 333.529 1019.47 316.434 1059.78 300.36C1147.21 265.5 1249.28 236.267 1332.44 279.085C1416.64 322.443 1448.4 421.07 1483.15 507.053C1523.65 607.24 1579.28 704.106 1661.14 777.311C1689.64 802.798 1721.66 825.151 1755.97 843.059C1820.16 876.586 1892.41 894.575 1964.65 888.413C2051.43 881.012 2131.32 840.386 2204.5 795.061C2352.65 703.365 2484.21 588.54 2593.42 455.456C2626 415.747 2656.59 374.421 2685.02 331.586" stroke="#83848C" stroke-opacity="0.2" stroke-width="0.692997" stroke-miterlimit="10"/>
