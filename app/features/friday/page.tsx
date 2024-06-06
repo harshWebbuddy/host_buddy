@@ -4,14 +4,16 @@ import Plans from "./Plans";
 import Faqs from "./Faqs";
 import Features from "./box";
 import Black from "./black";
+import { NavBar } from "@/components";
 
 const page = () => {
   return (
     <main className="overflow-hidden">
       {/* hero page  */}
+      <NavBar className="text-white"/>
       <section>
         <HeroHosting />
-        <div className="sldie-reveal flex flex-wrap max-w-[1300px] justify-between  mx-auto items-center  pt-20">
+        <div className="sldie-reveal flex flex-wrap max-w-[1300px] justify-between  mx-auto items-center  pt-16 2xl:pt-20">
           <img src="/features/2.svg" className="items-center justify-center "/>
           <img src="/arrow.gif" className="w-40"/>
 
@@ -19,19 +21,19 @@ const page = () => {
 
         </div>
       </section>
-      <section className="pt-10">
+      <section className="2xl:pt-10">
         <Features />
       </section>
-      <section className="pt-40">
+      <section className="pt-16 2xl:pt-40">
         <Black/>
       </section>
       <section>
-        <div className="pt-40 pb-20 ">
+        <div className="pt-16 2xl:pt-40  2xl:pb-20 ">
           <Plans />
         </div>
       </section>
 
-      <div className="pt-24">
+      <div className="pt-16 2xl:pt-24">
         <Faqs />
       </div>
     </main>
