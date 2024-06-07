@@ -18,7 +18,7 @@ const Support = () => {
           {/* Orange line below "Why Choose HostBuddy" */}
         </div>
             <div className="slide-reveal ">
-<img src="/plenk/bandwidth.svg" className="w-full"/>
+<img src="/plenk/bandwidth.svg" className="w-full" alt=""/>
     </div>
       </div>
     </div>

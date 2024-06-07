@@ -1,17 +1,16 @@
 import React from 'react'
 import HeroHosting from './Hero'
 import Ratingpanel from './Rating'
-import Plans from './Plans'
 import Plan2 from './plan2'
 import Unique from './unique'
 import CardsComponent from './CardsComponent'
 import Testimonials from './Testimonials'
-import { testimonials } from '../../(landing)/components/constants/testimonials';
 import Faqs from './Faqs';
 import CaseStudy from './CaseStudy'
-import { caseStudies } from '../../(landing)/components/constants/casestudies';
 import Features from './Features'
 import { NavBar } from '@/components'
+import Ratingpanel2 from './Ratingpanel'
+import Plans from './Plans'
 
 const page = () => {
   return (
@@ -23,12 +22,12 @@ const page = () => {
         </section>
         {/* rating panel  */}
         <section>
-        <div className="space-y-10 2xl:space-y-40 ">
-          <Ratingpanel/>
-          <Plans/>
+        <div className="space-y-10 2xl:space-y-32 ">
+        <div className="2xl:flex xl:flex bl:flex lg:flex md:flex hidden"><Ratingpanel2/></div> 
+        <div className="p-4 2xl:hidden xl:hidden bl:hidden lg:hidden md:hidden flex"> <Ratingpanel /></div> 
+          <Plans />
         </div>
-        </section>
-
+      </section>
         {/* plan page */}
         <div className='pt-20 2xl:pt-40 pb-20 2xl:pb-40'>
           <Plan2/>

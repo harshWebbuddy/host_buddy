@@ -63,7 +63,7 @@ const Unique = () => {
                 <div className="relative max-w-fit flex flex-row group items-center justify-center !mt-4">
                   <div className="flex items-center gap-x-3 pb-2">
                     <p className="text-[12px] cursor-pointer 2xl:text-[16px] font-bold text-orange-500">Read more</p>
-                    <img src="/orangearrow.svg" className="w-[11px] text-orange-500" />
+                    <img src="/orangearrow.svg" className="w-[11px] text-orange-500"  alt="readmore"/>
                   </div>
                   <div className="bg-orange-500 h-0.5 absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-500" />
                 </div>

@@ -53,7 +53,7 @@ export const testimonials = [
   },   {
     author: {
       image_url: "/hosting/feature4.svg",
-      names: "SSD NVMe Storage",
+      names: "1-Click Installer",
     },
     testimonial:
       "Guided by the project manager, we start to identify, shape and validate your product idea, in order to have a perfect alignment from the requirements perspective.",
@@ -64,7 +64,7 @@ export const testimonials = [
     {
     author: {
       image_url: "/hosting/feature7.svg",
-      names: "Secure Email Accounts",
+      names: "Instant Account Setup",
     },
     testimonial:
       "Guided by the project manager, we start to identify, shape and validate your product idea, in order to have a perfect alignment from the requirements perspective.",
@@ -84,7 +84,7 @@ export const testimonials = [
     {
     author: {
       image_url: "/hosting/feature9.svg",
-      names: "Control Panel",
+      names: "Malware Scan & Removal",
     },
     testimonial:
       "Guided by the project manager, we start to identify, shape and validate your product idea, in order to have a perfect alignment from the requirements perspective.",

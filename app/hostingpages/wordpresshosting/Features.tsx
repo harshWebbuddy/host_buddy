@@ -7,7 +7,7 @@ export default function Features() {
     if (typeof window !== "undefined") {
       if (window.innerWidth > 1024) {
         return 3;
-      } else if (window.innerWidth > 640 && window.innerWidth < 1024) {
+      } else if (window.innerWidth > 640 && window.innerWidth <= 1024) {
         return 2;
       } else {
         return 1;
@@ -16,9 +16,9 @@ export default function Features() {
     return 3; // Default value for server-side rendering
   };
 
-  const [columns, setColumns] = useState(initializeColumns() || 3);
+  const [columns, setColumns] = useState(initializeColumns);
   const [viewAll, setViewAll] = useState(false);
-  const [slideReveal, setSlideReveal] = useState(false); // State for slide reveal animation
+  const [slideReveal, setSlideReveal] = useState(false);
 
   const visibleTestimonials = viewAll ? testimonials : testimonials.slice(0, 9);
 
@@ -27,7 +27,7 @@ export default function Features() {
       if (typeof window !== "undefined") {
         if (window.innerWidth > 1024) {
           setColumns(3);
-        } else if (window.innerWidth > 640 && window.innerWidth < 1024) {
+        } else if (window.innerWidth > 640 && window.innerWidth <= 1024) {
           setColumns(2);
         } else {
           setColumns(1);
@@ -54,52 +54,52 @@ export default function Features() {
     <div className="p-4 relative bg-gradient-to-b from-[#FFFFFF] to-[#FF7500] mx-auto flex flex-col w-full items-center justify-center opacity-70">
       <div className="max-w-[1360px] mx-auto">
         <div className="flex flex-col 2xl:flex-row gap-y-10 2xl:items-center justify-between slide-reveal">
-        <h2 className="text-[26px] xl:text-[32px] 2xl:text-[42px] leading[43px] 2xl:leading-[63px] font-semibold text-black w-full 2xl:max-w-full">
+          <h2 className="text-[26px] xl:text-[32px] 2xl:text-[42px] leading-[43px] 2xl:leading-[63px] font-semibold text-black w-full 2xl:max-w-full">
             Experience Exceptional Shared Hosting{" "}
-            <span className="pb-4 border-b-4 border-orange-500">Features </span>
+            <span className="pb-4 border-b-4 border-orange-500">Features</span>
           </h2>
         </div>
         <div className="flex flex-row gap-4 mt-16 overflow-hidden transition-all duration-500 h-full pb-32">
-  {Array.from({ length: columns }, (_, columnIndex) => (
-    <div
-      key={columnIndex}
-      className={`flex flex-col w-full gap-4 ${slideReveal ? "slide-reveal" : ""}`}
-    >
-      {visibleTestimonials.map(
-        (testimonial, index) =>
-          index % columns === columnIndex && (
+          {Array.from({ length: columns }, (_, columnIndex) => (
             <div
-              key={index}
-              className="group relative bg-[#FFF3EA] hover:bg-[#FFFFFF]/100 px-8 py-10 rounded-2xl space-y-5 h-[250px]" // Fixed height for testimonials
+              key={columnIndex}
+              className={`flex flex-col w-full gap-4 ${
+                slideReveal ? "slide-reveal" : ""
+              }`}
             >
-              <div className="flex flex-col gap-5 justify-between w-full h-full">
-                <div className="flex justify-between flex-row">
-                  <img
-                    src={testimonial.author.image_url}
-                    alt="download"
-                    width={70}
-                    height={50}
-                    className="select-none"
-                    draggable={false}
-                  />
-                  <h1 className="font-light text-[12px] 2xl:text-[14.45px] opacity-70 pl-2">
-                    {testimonial.number}
-                  </h1>
-                </div>
-                <h1 className="font-semibold text-[22px] 2xl:text-[24px] leading-8">
-                  {testimonial.author.names}
-                </h1>
-                <p className="leading-6 text-[14px] 2xl:text-[16px] opacity-50 overflow-hidden overflow-ellipsis">
-                  {testimonial.testimonial}
-                </p>
-              </div>
+              {visibleTestimonials
+                .filter((_, index) => index % columns === columnIndex)
+                .map((testimonial, index) => (
+                  <div
+                    key={index}
+                    className="group relative bg-[#FFF3EA] hover:bg-[#FFFFFF]/100 px-8 py-8 rounded-2xl space-y-5 h-[250px]"
+                  >
+                    <div className="flex flex-col gap-2 justify-between w-full h-full">
+                      <div className="flex justify-between items-center flex-row">
+                        <img
+                          src={testimonial.author.image_url}
+                          alt="download"
+                          width={40}
+                          height={20}
+                          className="select-none"
+                          draggable={false}
+                        />
+                        <h1 className="font-light text-[12px] 2xl:text-[14.45px] opacity-70 pl-2">
+                          {testimonial.number}
+                        </h1>
+                      </div>
+                      <h1 className="font-semibold text-[22px] 2xl:text-[24px] leading-8">
+                        {testimonial.author.names}
+                      </h1>
+                      <p className="leading-6 text-[14px] 2xl:text-[16px] pr-20 opacity-50 overflow-hidden overflow-ellipsis">
+                        {testimonial.testimonial}
+                      </p>
+                    </div>
+                  </div>
+                ))}
             </div>
-          )
-      )}
-    </div>
-  ))}
-</div>
-
+          ))}
+        </div>
       </div>
     </div>
   );
