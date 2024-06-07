@@ -6,7 +6,7 @@ const Unique2 = () => {
   return (
     <section className=" relative">
     <div className="slide-reveal p-4 w-full max-w-[1350px] mx-auto flex flex-col xl:flex-row items-center justify-center ">
-      <div className="w-full flex flex-col 2xl:flex-row mx-auto items-center 2xl:space-x-36 space-y-10 2xl:space-y-20 justify-center">
+      <div className="w-full flex flex-col-reverse 2xl:flex-row mx-auto gap-10   items-center 2xl:space-x-36  2xl:space-y-20 justify-center">
       <div className="2xl:pt-20 space-y-6">
 <div className="relative group space-y-3">
   <div className="cursor-pointer flex w-full group ">

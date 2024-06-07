@@ -82,7 +82,7 @@ export default function Uniquepanelpage() {
   return (
     <div className="relative mx-auto flex flex-col w-full items-center justify-center">
       <div className="max-w-[1350px] mx-auto">
-        <div className="slide-reveal flex flex-col 2xl:flex-row gap-y-4 2xl:gap-y-10 2xl:items-center justify-between">
+        <div className="p-4 slide-reveal flex flex-col 2xl:flex-row gap-y-4 2xl:gap-y-10 2xl:items-center justify-between">
           <h2 className="text-[32px] 2xl:text-[42px] leading-normal font-semibold text-black w-full 2xl:pr-60 capitalize">
             Check our transfer prices below
           </h2>
@@ -93,7 +93,7 @@ export default function Uniquepanelpage() {
             felis parturient.
           </p>
         </div>
-        <div className="slide-reveal w-full max-w-[1350px] mx-auto rounded-3xl 2xl:mt-20">
+        <div className="px-20 slide-reveal w-full max-w-[1350px] mx-auto rounded-3xl 2xl:mt-20">
           <div className="flex flex-col 2xl:flex-row items-center p-10 gap-[85px]">
             <div className="w-full grid grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-x-40 gap-y-10 items-center justify-center">
               <div className="flex flex-col items-center">

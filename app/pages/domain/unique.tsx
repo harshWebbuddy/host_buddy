@@ -177,7 +177,7 @@ export default function Features() {
       key={index}
       className="group relative bg-transparent hover:bg-[#F9EFE4] border rounded-2xl space-y-12 mb-32 transition-all duration-300"
     >
-      <div className="flex absolute -top-24 left-1/2 transform -translate-x-1/2 items-center justify-center mx-auto transition-all duration-300">
+      <div className="flex absolute hovertext-orange-500-top-24 left-1/2 transform -translate-x-1/2 items-center justify-center mx-auto transition-all duration-300">
         {item.icon}
       </div>
       <div className="space-y-2 cursor-pointer text-center p-4">

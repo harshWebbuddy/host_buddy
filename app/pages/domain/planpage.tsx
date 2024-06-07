@@ -329,7 +329,7 @@ export default function Features() {
   return (
     <div className=" relative  mx-auto flex flex-col w-full items-center justify-center ">
       <div className="slide-reveal max-w-[1350px] mx-auto space-y-16 2xl:space-y-28">
-        <div className="flex flex-col 2xl:flex-col  space-y-8 2xl:items-center justify-between ">
+        <div className="flex flex-col  p-2 2xl:p-0 2xl:flex-col  space-y-8 2xl:items-center justify-between ">
           <h2 className="text-[32px] 2xl:text-[42px] leading-normal font-bold text-black w-full capitalize  text-center ">
             Choose From <span className="pb-1 2xl:pb-4 border-b-4 border-orange-500"> the Most Popula</span>r Domains 🔥
           </h2>
@@ -341,7 +341,9 @@ export default function Features() {
               key={index}
               className="group relative bg-[#F5F5F5] pb-10 hover:bg-gradient-to-b from-[#292E34] to-[#16191C]/100 border  px-10  rounded-2xl  space-y-8 mb-20"
             >
-              <div className="flex flex-row space-x-40 featuresvg20 ">
+              <div className="flex flex-row space-x-40 
+              featuresvg20
+               ">
               <div className="absolute top-0 featuresvg122 left-0  flex justify-center items-center rounded-xl transition-all duration-300 ">
                 {item.icon}
               </div>

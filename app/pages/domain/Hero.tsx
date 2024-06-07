@@ -3,7 +3,7 @@ import React from 'react';
 
 const HeroHosting = () => {
   return (
-    <section className="animate-fade-in h-full min-h-[80vh] overflow-hidden relative bg-black space-y-40 flex flex-col items-center justify-center">
+    <section className="animate-fade-in h-full min-h-[60vh] overflow-hidden relative bg-black space-y-40 flex flex-col items-center justify-center">
     <img src="/home.jpg" width={1920} height={1080} alt="" className="w-full absolute inset-0 h-full opacity-30 object-cover bg-blend-color-dodge !z-[1]" />
     <div className="slide-reveal relative z-[2] w-full h-full flex flex-col space-y-10 justify-center items-center text-white">
     <h4 className="text-orange-500 font-bold italic">Domain Name Search</h4>
@@ -48,7 +48,7 @@ const HeroHosting = () => {
           </h2>
         </div>
       </div>
-      <div className='translate-y-0'>
+      <div className='2xl:flex hidden translate-y-0'>
         <h2 className='text-[18px] font-medium leading-[26px] text-white opacity-100'>Already bought a domain?  <span className='ml-2 font-bold text-orange-500 underline'> Transfer it </span></h2>
       </div>
   </section>

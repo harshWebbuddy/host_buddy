@@ -8,8 +8,8 @@ const Plan2 = () => {
     <div className="flex flex-col max-w-[1300px] mx-auto">
     {/* heading */}
     <div className="flex flex-col bl:flex-row justify-between gap-y-16 gap-x-4 items-center mb-8">
-      <div className="relative w-full ">
-        <h2 className="font-mona-sans  capitalize text-[42px] leading-relaxed w-full text-center bl:text-left  font-semibold">
+      <div className="relative w-full">
+        <h2 className="font-mona-sans   capitalize text-[42px] leading-relaxed w-full text-center bl:text-left  font-semibold">
         Select Your <span className="pb-4 border-b-4 border-orange-500 font-semibold normal-case ">CodeGuard P</span>lan
         </h2>
       </div>

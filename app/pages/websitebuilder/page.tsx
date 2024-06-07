@@ -9,6 +9,7 @@ import Faqs from './Faqs';
 import CaseStudy from './CaseStudy'
 import Features from './Features'
 import Navbar from '@/components/Navbar'
+import Ratingpanel2 from '../dedicatedserver/Ratingpanel'
 
 const page = () => {
   return (
@@ -19,14 +20,13 @@ const page = () => {
         <HeroHosting/>
         </section>
         {/* rating panel  */}
-        <section className='space-y-20 2xl:space-y-40'>
-        <div className="space-y-16 2xl:space-y-32 ">
-          <Ratingpanel/>
-          <Plan2/>
+        <section>
+        <div className="space-y-10 2xl:space-y-32 ">
+        <div className="2xl:flex xl:flex bl:flex lg:flex md:flex hidden"><Ratingpanel2/></div> 
+        <div className="p-4 2xl:hidden xl:hidden bl:hidden lg:hidden md:hidden flex"> <Ratingpanel /></div> 
+          <Plan2 />
         </div>
-    
-          <Unique/>
-        </section>
+      </section>
         {/* cardsection */}
        
         

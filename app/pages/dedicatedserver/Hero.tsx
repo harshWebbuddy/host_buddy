@@ -31,15 +31,15 @@ useEffect(() => {
     <section className=''>
       <section className="min-h-[20vh] overflow-hidden relative bg-black flex items-center justify-center">
         <img src="/home.jpg" width={1920} height={1080} alt="" className="w-full absolute inset-0 h-full opacity-30 object-cover bg-blend-color-dodge !z-[1]" />
-        <div className="max-w-[1250px] mx-auto text-white px-4 pt-40 pb-10 2xl:py-40">
-      <div className="h-full flex items-center relative !z-[2] flex-col 2xl:flex-row justify-center gap-20">
+        <div className="max-w-[800px] xl:max-w-[1250px] 2xl:max-w-[1250px] mx-auto text-white px-4 pt-20 2xl:pt-40 pb-10   2xl:py-40">
+        <div className="h-full flex items-center relative !z-[2] flex-col md:flex-row bl:flex-row lg:flex-row xl:flex=row 2xl:flex-row justify-center gap-20">
       <div className="relative w-full flex flex-col justify-start space-y-2 2xl:space-y-5 animate-left-to-right">
           <div className='relative w-full flex flex-col justify-start space-y-0'><h2 className="font-mono-sans text-sm font-light italic leading-relaxed text-left">
                   <span className="text-orange-500 font-bold ">India VPS Hosting</span>
                 </h2>
-                <h1 className="font-mono-sans font-medium  text-[30px] xl:text-[51px] 2xl:text-[61px] leading-[54px] 2xl:leading-[84px] text-left 2xl:text-left ">                Powerful Dedicated
+                <h1 className="font-mono-sans font-medium  text-[30px] xl:text-[46px] 2xl:text-[61px] leading-[54px] 2xl:leading-[84px] text-left 2xl:text-left ">                Powerful Dedicated
                 </h1>
-                <h1 className="font-mono-sans font-medium  text-[30px] xl:text-[51px] 2xl:text-[61px] leading-[54px] 2xl:leading-[84px] text-left 2xl:text-left ">                Server Exclusively Yours
+                <h1 className="font-mono-sans font-medium  text-[30px] xl:text-[46px] 2xl:text-[61px] leading-[54px] 2xl:leading-[84px] text-left 2xl:text-left ">                Server Exclusively Yours
                 </h1>
               </div>
               <p className="font-mono-sans text-[14px] font-light leading-loose text-left  text-[#EBEBEB]">
@@ -68,32 +68,36 @@ useEffect(() => {
         </div>
       </section>
       <div className="-translate-y-8 items-center justify-center mx-auto relative z-10 opacity-100">
-    <div className="bg-[#F9EFE4] rounded-full shadow-md  w-full py-4 flex flex-row p-2 grids-cols-2 flex-wrap sm:grids-cols-2 bl:grid-cols-4 lg:grid-cols-4  xl:grid-cols-4  2xl:grid-cols-4 items-center justify-around max-w-[936px] mx-auto" style={{ boxShadow: '0 -10px 15px -3px rgba(255,117, 0,1), 0 -4px 6px -2px rgba(255, 117, 0,1)' }}>
-          <div className="relative group">
-            <div className="rounded-xl px-4 text-[18px] text-black font-semibold py-2 hover:text-orange-500">
-              Pricing
-            </div>
-            <span className="absolute bottom-0 left-28 w-16 h-1 bg-orange-500 transform  opacity-0 group-hover:opacity-100  transition-transform duration-300"></span>
-          </div>
-          <div className="relative group">
-          <div className="py-2 px-4 text-[18px] font-semibold leading-[26px] hover:text-orange-500">
-              Features
-            </div>
-            <span className="absolute bottom-0 left-28 w-16 h-1 bg-orange-500 transform  opacity-0 group-hover:opacity-100  transition-transform duration-300"></span>
-          </div>
-          <div className="relative group">
-            <div className="py-2 px-4 text-[18px] font-semibold leading-[26px] hover:text-orange-500">
-              Add-Ons
-            </div>
-            <span className="absolute bottom-0 left-28 w-16 h-1 bg-orange-500 transform  opacity-0 group-hover:opacity-100  transition-transform duration-300"></span>
-          </div>
-          <div className="relative group">
-          <div className="py-2 px-4 text-[18px] font-semibold leading-[26px] hover:text-orange-500">
-              Testimonials
-            </div>
-            <span className="absolute bottom-0 left-28 w-16 h-1 bg-orange-500 transform  opacity-0 group-hover:opacity-100  transition-transform duration-300"></span>
-          </div>
-        </div>
+      <div
+  className="bg-[#F9EFE4] rounded-full shadow-md w-full py-4 p-2 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 items-center justify-items-center max-w-[936px] mx-auto"
+  style={{ boxShadow: '0 -10px 15px -3px rgba(255,117, 0,1), 0 -4px 6px -2px rgba(255, 117, 0,1)' }}
+>
+  <div className="relative group text-center w-full">
+    <div className="rounded-xl px-4 text-[18px] text-black font-semibold py-2 hover:text-orange-500">
+      Pricing
+    </div>
+            <span className="absolute bottom-0 left-44 w-16 h-1 bg-orange-500 transform  opacity-0 group-hover:opacity-100  transition-transform duration-300"></span>
+  </div>
+  <div className="relative group text-center w-full">
+    <div className="py-2 px-4 text-[18px] font-semibold leading-[26px] hover:text-orange-500">
+      Features
+    </div>
+            <span className="absolute bottom-0 left-44 w-16 h-1 bg-orange-500 transform  opacity-0 group-hover:opacity-100  transition-transform duration-300"></span>
+  </div>
+  <div className="relative group text-center w-full">
+    <div className="py-2 px-4 text-[18px] font-semibold leading-[26px] hover:text-orange-500">
+      Add-Ons
+    </div>
+            <span className="absolute bottom-0 left-44 w-16 h-1 bg-orange-500 transform  opacity-0 group-hover:opacity-100  transition-transform duration-300"></span>
+  </div>
+  <div className="relative group text-center w-full">
+    <div className="py-2 px-4 text-[18px] font-semibold leading-[26px] hover:text-orange-500">
+      Testimonials
+    </div>
+            <span className="absolute bottom-0 left-44 w-16 h-1 bg-orange-500 transform  opacity-0 group-hover:opacity-100  transition-transform duration-300"></span>
+  </div>
+</div>
+
       </div>
 
    </section>

@@ -11,6 +11,7 @@ import Features from './Features'
 import Unique2 from '../sitelock/unique2'
 import Uniquecpanel from './unique2'
 import { NavBar } from '@/components'
+import Ratingpanel2 from '../dedicatedserver/Ratingpanel'
 
 const page = () => {
   return (
@@ -21,14 +22,15 @@ const page = () => {
         <HeroHosting/>
         </section>
         {/* rating panel  */}
-        <section className='space-y-20 2xl:space-y-40'>
-        <div className="space-y-16 2xl:space-y-32 ">
-          <Ratingpanel/>
-          <Plan2/>
-        </div>
-    
-          <Unique/>
-        </section>
+        <section>
+        <div className="space-y-10 2xl:space-y-32 ">
+        <div className="2xl:flex xl:flex bl:flex lg:flex md:flex hidden"><Ratingpanel2/></div> 
+        <div className="p-4 2xl:hidden xl:hidden bl:hidden lg:hidden md:hidden flex"> <Ratingpanel /></div> 
+          <Plan2 />
+        </div> 
+        <Unique/>
+      </section>
+         
         {/* cardsection */}
        
         

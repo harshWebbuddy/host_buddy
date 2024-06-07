@@ -109,7 +109,7 @@ const Plan2 = () => {
         <div className={`slide-item ${animationClass} w-full`}>
           <div  className="mb-5 w-full transition-all  bg-[#F9EFE4] hover:bg-[#16191C] px-10 rounded-2xl group" >
          <div className='group-hover:opacity-100 opacity-0 absolute -translate-y-4 translate-x-24 2xl:flex hidden'>
-          <div className='bg-orange-500 py-1 rounded-3xl border-white w-36  mx-auto item-center justify-center border-4'>
+          <div className='bg-orange-500  2xl:flex hidden py-1 rounded-3xl border-white w-36  mx-auto item-center justify-center border-4'>
             <h2 className='text-white items-center justify-center mx-auto text-center text-[16px] font-semibold '>Most Popular</h2>
           </div>
           </div>
@@ -268,9 +268,7 @@ const Plan2 = () => {
         <div className={`slide-item ${animationClass} w-full`}>
           <div  className="mb-5 w-full transition-all  bg-[#F9EFE4] hover:bg-[#16191C] px-10 rounded-2xl group" >
          <div className='group-hover:opacity-100 opacity-0 absolute -translate-y-4 translate-x-24 2xl:flex hidden'>
-          <div className='bg-orange-500 py-1 rounded-3xl border-white w-36  mx-auto item-center justify-center border-4'>
-            <h2 className='text-white items-center justify-center mx-auto text-center text-[16px] font-semibold '>Most Popular</h2>
-          </div>
+        
           </div>
           <div className="pt-10 lex flex-col w-full space-y-2 group">
             <h2 className="font-mona-sans font-bold text-2xl bl:text-3xl text-center gap-0  mx-auto text-gray-900 group-hover:text-white">DS4</h2>

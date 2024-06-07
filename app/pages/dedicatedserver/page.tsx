@@ -8,6 +8,7 @@ import Faqs from "./Faqs";
 import CaseStudy from "./CaseStudy";
 import Adds from "./unique";
 import { NavBar } from "@/components";
+import Ratingpanel2 from "./Ratingpanel";
 
 const page = () => {
   return (
@@ -20,15 +21,12 @@ const page = () => {
       
       {/* rating panel  */}
       <section>
-        <div className="">
-          <Ratingpanel />
+        <div className="space-y-10 2xl:space-y-32 ">
+        <div className="2xl:flex xl:flex bl:flex lg:flex md:flex hidden"><Ratingpanel2/></div> 
+        <div className="p-4 2xl:hidden xl:hidden bl:hidden lg:hidden md:hidden flex"> <Ratingpanel /></div> 
+          <Plan2 />
         </div>
       </section>
-
-      {/* plan page */}
-      <div className="pt-16 2xl:pt-32 ">
-        <Plan2 />
-      </div>
       {/* what make hostbuddy unique section */}
       <section className="pt-16">
         <Unique />

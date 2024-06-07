@@ -106,7 +106,7 @@ export const testimonials = [
     
         {
           author: {
-            image_url: "/google/11.svg",
+            image_url: "/google/10.svg",
             names: "Groups",
           },
           testimonial:
@@ -116,7 +116,7 @@ export const testimonials = [
         },
         {
           author: {
-            image_url: "/google/12.svg",
+            image_url: "/google/10.svg",
             names: "Outlook Email Client",
           },
           testimonial:
