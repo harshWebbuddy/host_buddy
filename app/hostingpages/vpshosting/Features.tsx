@@ -53,13 +53,13 @@ export default function Features() {
       <div className="max-w-[1360px] mx-auto">
         <div className="flex flex-col gap-y-2 2xl:gap-y-6">
           <h2 className="text-[22px] xl:text-[32px] 2xl:text-[42px] leading-[40px] 2xl:leading-[63px] font-semibold text-black w-full">
-            Experience <span className="pb-1 2xl:pb-4 border-b-4 border-orange-500">Feature</span>-Rich VPS Hosting
+            Experience <span className="pb-1 2xl:pb-2 border-b-4 border-orange-500">Feature</span>-Rich VPS Hosting
           </h2>
           <p className="text-[14px] 2xl:text-[16px] font-light leading-[24px]">
             Our <span className="font-bold">VPS plans </span> come fully loaded with all the latest features. Enjoy full control, customization, high-performance and more.
           </p>
         </div>
-        <div className="flex flex-row gap-4 mt-6 2xl:mt-12 overflow-hidden h-full pb-32">
+        <div className="flex flex-row gap-4 mt-6 2xl:mt-12 overflow-hidden h-full pb-16 2xl:pb-32">
           {Array.from({ length: columns }, (_, columnIndex) => (
             <motion.div key={columnIndex} className="flex flex-col w-full gap-4" variants={boxVariants} initial="hidden" animate="visible">
               {visibleTestimonials.map(

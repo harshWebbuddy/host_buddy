@@ -101,7 +101,7 @@ export default function Testimonials() {
           </div>
           <div className="bg-orange-500 h-0.5 absolute -bottom-1 left-0 w-0 group-hover:w-full transition-all duration-500" />
         </div>
-        <img src="/vpshosting/fog.svg" className="absolute bottom-0 select-none" />
+        <img src="/vpshosting/fog.svg" alt="fog" className="absolute bottom-0 select-none" />
       </div>
       <style jsx>{`
         @keyframes scrollUp {
