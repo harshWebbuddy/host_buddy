@@ -93,7 +93,7 @@ const Adds: React.FC = () => {
             </div>
           </div>
           <div className="slide-reveal w-full flex justify-center">
-            <div className="relative items-center justify-center mt-40">
+            <div className="relative items-center justify-center mt-16 2xl:mt-40">
               <Image src="/plenk/choose.jpeg" width={497} height={301} alt="" className="rounded-2xl relative z-10" />
             </div>
           </div>

@@ -28,13 +28,13 @@ const Plan2 = () => {
       <div className="flex flex-col max-w-[1300px] mx-auto">
     {/* heading */}
     <div className="slide-reveal flex flex-col bl:flex-row justify-between gap-y-6 gap-x-4 items-center mb-8 " >
-     <div className="relative w-full">
-     <h2 className="text-black font-mona-sans font-semibold text-[22px] 2xl:text-[42px] capitalize leading-relaxed w-full text-center 2xl:text-left">
-        Simple & tr<span className="pb-4 border-b-4 border-orange-500 text-wite text-black">ansparent pr</span>icing  
+    <div className="relative w-full">
+        <h2 className="text-black font-mona-sans font-semibold text-[22px] 2xl:text-[42px]  leading-relaxed w-full text-center bl:text-left">
+        Simple & Tr<span className="pb-1 2xl:pb-4 border-b-4 border-orange-500 text-wite text-black">ansparent Pr</span>icing  
         </h2>
       </div>
     
-      <div className="flex flex-wrap bl:flex-nowrap items-center gap-2 2xl:gap-5 ">
+      <div className="text-black flex flex-wrap bl:flex-nowrap items-center gap-2 2xl:gap-5 ">
         <h2 className="font-mona-sans text-[15px] 2xl:text-[19px] bl:text-base font-medium leading-[24px] bl:leading-[32px] tracking-[0.05em] bl:tracking-[0.2px] text-center 2xl:text-right w-54 bl:w-71 2xl:h-[32px]">
           Monthly
         </h2>
@@ -47,7 +47,6 @@ const Plan2 = () => {
     </svg>
   </label>
 </div>
-
         <div>
           <h2 className="font-mona-sans  text-[16px] 2xl:text-[19px] font-medium leading-[32px] tracking-[0.2px] text-center 2xl:text-right w-[52px] h-[32px] ">Yearly</h2>
         </div>
