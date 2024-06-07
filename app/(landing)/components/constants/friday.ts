@@ -26,7 +26,7 @@ export const testimonials = [
           names: "50% off Shared Hosting",
         },
       testimonial:
-        "Wildcard SSL only $57.2/yr instead of $88/yr! Suitable for small & medium-sized businesses maning.",
+      "TLDs available f accounts with 5GB each and Premium Support 24/7/365.",
       number: '03',
   
     },

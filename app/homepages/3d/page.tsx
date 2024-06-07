@@ -2,17 +2,12 @@
 
 import Locationpage from "../../(landing)/components/Locationpage";
 import Image from "next/image";
-import { BiChevronRight } from "react-icons/bi";
-import Testimonials from "../../(landing)/components/Testimonials";
-import Faqs from "../../(landing)/components/Faqs";
 import { caseStudies } from "../../(landing)/components/constants/casestudies";
-import { BsArrowRight } from "react-icons/bs";
 import Ratingpanel from "../../(landing)/components/Rating";
 import Plans from "../../(landing)/components/Plans";
-import Balancing from "./balancing";
 import Support from "./bandwidth";
 import { NavBar } from "@/components";
-
+import Ratingpanel2 from "./Ratingpanel";
 export default function HomeMainPage() {
   return (
     <main className="overflow-hidden">
@@ -68,9 +63,10 @@ Premium Hardware</h1>
   </section>
 
       {/* rating and web hosting plans page */}
-      <section className="overflow-hidden">
-        <div className="space-y-20 2xl:space-y-40 z-[1] overflow-hidden">
-          <Ratingpanel />
+      <section>
+        <div className="space-y-10 2xl:space-y-32 ">
+        <div className="2xl:flex xl:flex bl:flex lg:flex md:flex hidden"><Ratingpanel2/></div> 
+        <div className="p-4 2xl:hidden xl:hidden bl:hidden lg:hidden md:hidden flex"> <Ratingpanel /></div> 
           <Plans />
         </div>
       </section>

@@ -8717,71 +8717,71 @@ font-size: 26px;
 font-weight: 600;
 line-height: 33px;
 text-align: left;
-text-transform:capitalize;}.cardiv2{
-        
+text-transform:capitalize;}
+.cardiv2{
+        top:500px;
+  position: relative;
+  bottom: 50px;
+  align-items: center;
+  justify-content: center;
+ } .gapping{
+gap:450px;
+} .cardiv{
+  position: relative;
+  bottom: 72.5px;
+  align-items: center;
+  justify-content: center;
+ }.dottedcard{
+  width: 25.01px;
+height: 87px;
+opacity: 0;
+
+ }.cardbuttonallspecs2{
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: var(--Secondary, #16191C);
+font-family: "Mona Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  display: flex;
+  flex-direction: row;
+  width: 147px;
+height: 51px;
+padding: 16px 30px 16px 30px;
+gap: 10px;
+border-radius: 10px ;
+border: 1px solid #FF7500;
+
+ }.wholecard1{top:600px;  padding:0px 40px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width:fit-content;
+  gap:0px;
+  height: 378px;
+ } .watchcard{
+    width: 62px;
+height: 64px;
+top: 1518px;
+left: 1257px;
+gap: 0px;
+opacity: 0px;
+
+  }.card{
     position: relative;
-    bottom: 350px;
-    align-items: center;
-    justify-content: center;
-   } .gapping{
-  gap:450px;
- } .cardiv{
-    position: relative;
-    bottom: 72.5px;
-    align-items: center;
-    justify-content: center;
-   }.dottedcard{
-    width: 25.01px;
-  height: 87px;
-  opacity: 0;
-  
-   }.cardbuttonallspecs2{
+    bottom:60px;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    color: var(--Secondary, #16191C);
-  font-family: "Mona Sans";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-    display: flex;
-    flex-direction: row;
-    width: 147px;
-  height: 51px;
-  padding: 16px 30px 16px 30px;
-  gap: 10px;
-  border-radius: 10px ;
-  border: 1px solid #FF7500;
-  
-   }.wholecard1{
-    padding:0px 40px;
-    align-items: center;
+    width: fit-content;
     display: flex;
     flex-direction: column;
-    width:fit-content;
-    gap:0px;
-    height: 378px;
-   } .watchcard{
-      width: 62px;
-  height: 64px;
-  top: 1518px;
-  left: 1257px;
-  gap: 0px;
-  opacity: 0px;
-  
-    }.card{
-      position: relative;
-      bottom:60px;
-      justify-content: center;
-      align-items: center;
-      width: fit-content;
-      display: flex;
-      flex-direction: column;
-  height: 150px;
-  gap: 15px;
-  
-    }
+height: 150px;
+gap: 15px;
+
+  }
     .card2{
       position: relative;
       bottom:60px;
@@ -9099,7 +9099,7 @@ position: relative;
   
   .boxinside h2 {
     font-family: Mona Sans;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 20px;
     text-align: left;
@@ -9110,7 +9110,7 @@ position: relative;
     font-family: Mona Sans;
     opacity: 70%;
     width:fit-content;
-    font-size: 8px;
+    font-size: 12px;
     font-weight: 300;
     line-height: 14px;
     text-align: left;
@@ -9769,7 +9769,7 @@ padding:0px 20px;
     top:2300px;
   }.footerposition{
   position: relative;
-  top:1100px;
+  top:1000px;
   padding-bottom: 1100px;
 
  } .cardiv2{
@@ -9788,7 +9788,7 @@ padding:0px 20px;
     justify-content: center;
    }.cardiv{
     position: relative;
-    bottom: 72.5px;
+    bottom: .5px;
     align-items: center;
     justify-content: center;
    }.dottedcard{
@@ -9814,11 +9814,12 @@ padding:0px 20px;
   border: 1px solid #FF7500;
   
    }.wholecard1{
+    top:400px;
     padding:0px 40px;
     align-items: center;
     justify-content: space-between;
     width:auto;
-    height: 378px;
+    height:28px;
    } .watchcard{
       width: 62px;
   height: 64px;
@@ -10072,7 +10073,7 @@ justify-content: space-between;
   
   .box {
 position: relative;
-    width:100px;
+    width:200px;
     height: 86px;
     gap: 2px;
     left:-30px;
@@ -10083,7 +10084,7 @@ position: relative;
   
   .box:hover {
     margin-left:0;
-    width: 150px;
+    width: 200px;
     height: 181px;
     padding: 22px 0px 0px 16px;
     display: flex;
@@ -10112,7 +10113,7 @@ position: relative;
   
   .boxinside h2 {
     font-family: Mona Sans;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 20px;
     text-align: left;
@@ -10123,7 +10124,7 @@ position: relative;
     font-family: Mona Sans;
     opacity: 70%;
     width:fit-content;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 300;
     line-height: 14px;
     text-align: left;
@@ -10174,7 +10175,7 @@ position: relative;
   }
   
   .imagenoption{
-  padding:60px 90px;
+  padding:0px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10228,7 +10229,7 @@ left:0px;
  .cloudfeatures{
   padding:0px 50px;
   margin-bottom: 0px;
-  width: auto;
+  width: fit-content;
 height:auto;
 gap:0px;
 align-items: center;

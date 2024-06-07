@@ -16,7 +16,7 @@ const page = () => {
     
     <div className='group'>
       <div className='plan2box bg-[#F9EFE4] group-hover:bg-[#16191C]'>
-<div className='.plan2boxinner mt-8'>
+<div className='.plan2boxinner 2xl:mt-8'>
     <div className='plan2boxinner1 mx-auto'>
       <div className=''>  <div>
             <h2 className='ignite font-mono-sans mx-auto text-black group-hover:text-white'>Ignite</h2>
@@ -83,13 +83,15 @@ const page = () => {
 
 </div>
     </div></div>
-    <div className='group '><div className='group-hover:opacity-100 opacity-0 absolute -translate-y-4 translate-x-32'>
-          <div className='bg-orange-500 py-1 rounded-3xl border-white w-36  mx-auto item-center justify-center border-4'>
+    <div className='group '
+    >
+      <div className='group-hover:opacity-100 opacity-0 absolute -translate-y-4 translate-x-32'>
+          <div className='bg-orange-500 2xl:flex hidden  py-1 rounded-3xl border-white w-36  mx-auto item-center justify-center border-4'>
             <h2 className='text-white items-center justify-center mx-auto text-center text-[16px] font-semibold '>Most Popular</h2>
           </div>
           </div>
       <div className='plan2box special bg-[#F9EFE4] group-hover:bg-[#16191C]'>
-<div className='.plan2boxinner mt-8'>
+<div className='.plan2boxinner 2xl:mt-8'>
     <div className='plan2boxinner1 mx-auto'>
       <div className=''>  <div>
             <h2 className='ignite font-mono-sans mx-auto text-black group-hover:text-white'>ELITE</h2>
@@ -229,7 +231,7 @@ const page = () => {
     
     
 </div>
-<div>
+<div className='2xl:flex hidden '>
   <Card/>
 </div>
 <div className='uniqueposition '><Unique/></div>

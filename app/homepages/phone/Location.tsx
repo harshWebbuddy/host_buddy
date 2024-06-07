@@ -965,7 +965,7 @@ const Location = () => {
     
       return (
         <div className="mx-auto flex flex-col space-y-8">
-          <div className="w-full max-w-[1350px] mx-auto flex flex-col  justify-between items-center space-y-6 2xl:space-x-10">
+          <div className="w-full p-4 2xl:p-0 max-w-[1350px] mx-auto flex flex-col  justify-between items-center space-y-6 2xl:space-x-10">
         <h1 className=" w-full font-mona-sans text-[px] 2xl:text-[42px] text-black  font-bold leading-relaxed text-center 2xl:pr-20 ">
           Our Datacenters Are Located In   <span className="pb-2 2xl:pb-4 border-b-4 border-orange-500 text-wite text-black">7 Regions</span>
         </h1>

@@ -39,7 +39,7 @@ const ContactForm: React.FC = () => {
 </svg>
 
     <section className="slide-reveal w-full  bg-[#F9EFE4]">
-      <div className="w-full py-20 max-w-[1000px] items-center justify-center mx-auto">
+      <div className="w-full  p-4 2xl:p-0 py-20 max-w-[1000px] items-center justify-center mx-auto">
         <div className="items-center justify-center mx-auto">
         <h2 className="font-mona-sans text-3xl 2xl:text-5xl font-semibold item text-center text-black mt-3">Fill out the Contact Form</h2>
 

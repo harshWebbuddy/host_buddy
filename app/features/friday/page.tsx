@@ -14,10 +14,10 @@ const page = () => {
       <section>
         <HeroHosting />
         <div className="slide-reveal flex xl:flex-row lg:flex-col flex-col md:flex-col bl:flex-row 2xl:flex-row max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1300px] justify-between  mx-auto items-center  pt-16 2xl:pt-20">
-          <img src="/features/2.svg" className="items-center justify-center "/>
-          <img src="/arrow.gif" className="w-40"/>
+          <img src="/features/2.svg" alt="go" className="items-center justify-center "/>
+          <img src="/arrow.gif" alt="go" className="w-40"/>
 
-          <img src="/features/4.svg" className="pt-4"/>
+          <img src="/features/4.svg" alt="go" className="pt-4"/>
 
         </div>
       </section>

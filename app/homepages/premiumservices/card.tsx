@@ -6,7 +6,7 @@ const Card = () => {
     <div className='mx-auto gapping '>
         <div className='slide-reveal wholecard1 mx-auto'>
             
-           <div className='cardiv'>
+           <div className='2xl:flex hidden cardiv'>
            <img src="/ps/design2.2.svg" className='dottedcard'/> 
               <img src="/ps/2.svg" className='cardimage1'/> 
              
@@ -26,7 +26,12 @@ const Card = () => {
           </div>
           
         </div>
-            
+        <div className='2xl:hidden flex cardiv'>
+           <img src="/ps/design2.2.svg" className='dottedcard'/> 
+              <img src="/ps/2.svg" className='cardimage1'/> 
+             
+ 
+            </div>
         </div>
         <div className='slide-reveal wholecard1 mx-auto'>
             
@@ -53,6 +58,7 @@ const Card = () => {
          <div className='cardiv2'>
             <img src="/ps/design2.1.svg" className='dottedcard2'/> 
                <img src="/ps/3.svg" className='cardimage2'/> 
+        
               
   
              </div>

@@ -11,35 +11,27 @@ import Ratingpanel from "../../(landing)/components/Rating";
 import Plans from "../../(landing)/components/Plans";
 import { useRef } from "react";
 import Navbar from "@/components/Navbar";
+import Ratingpanel2 from "./Ratingpanel";
 
 export default function HomeMainPage() {
-
-  const videoRef = useRef<HTMLVideoElement>(null); // Provide explicit type assertion
-
-  const handleVideoEnded = () => {
-    if (videoRef.current) {
-      videoRef.current.play(); // Access the play method
-    }
-  };
-  
   return (
     <main className="overflow-hidden">
       {/* hero section */}
       <Navbar className="text-white"/>
 
-      <section className="h-full min-h-[60vh] overflow-hidden relative bg-black flex items-center justify-center">
+      <section className="h-full 2xl:min-h-[60vh] overflow-hidden relative bg-black flex items-center justify-center">
     <img src="/home.jpg" width={1920} height={1080} alt="" className="w-full absolute inset-0 h-full opacity-30 object-cover bg-blend-color-dodge !z-[1]" />
-    <div className="max-w-[1300px] mx-auto text-white  px-10 pt-40 pb-10 2xl:py-36">
-      <div className="h-full flex items-center relative !z-[2] flex-col 2xl:flex-row justify-center gap-20">
+    <div className="max-w-[800px] xl:max-w-[1250px] 2xl:max-w-[1250px] mx-auto text-white px-4 pt-20 2xl:pt-40 pb-10   2xl:py-40">
+    <div className="h-full flex items-center relative !z-[2] flex-col md:flex-row bl:flex-row lg:flex-row xl:flex=row 2xl:flex-row justify-center gap-20">
         <div className="relative w-full flex flex-col justify-start items-start 2xl:justify-start space-y-5">
           <div className='relative w-full flex flex-col justify-start items-start 2xl:justify-start space-y-0'>
           <h2 className="font-mono-sans text-[16px] font-light italic leading-relaxed text-center 2xl:text-left">
         <span className="text-white opacity-90 font-light">Welcome to </span>
         <span className="text-orange-500 font-bold">HostBuddy</span>
       </h2>
-          <h1 className="font-mono-sans font-medium 2xl:font-semibold text-[50px] 2xl:text-[60px]
-           leading-[60px] 2xl:leading-[84px] text-left 2xl:text-left ">Dedicated with
-Premium Hardware</h1>
+          <h1 className="font-mono-sans font-medium 2xl:font-semibold text-[36px] xl:text-[50px] 2xl:text-[60px]
+           leading-normal text-left 2xl:text-left ">Dedicated Servers
+High Performance</h1>
 
 </div>
           <p className="font-mono-sans text-[16px] font-light leading-loose text-left  text-[#EBEBEB]">
@@ -85,8 +77,9 @@ Premium Hardware</h1>
 
       {/* rating and web hosting plans page */}
       <section>
-        <div className="space-y-20 2xl:space-y-40">
-          <Ratingpanel />
+        <div className="space-y-10 2xl:space-y-32 ">
+        <div className="2xl:flex xl:flex bl:flex lg:flex md:flex hidden"><Ratingpanel2/></div> 
+        <div className="p-4 2xl:hidden xl:hidden bl:hidden lg:hidden md:hidden flex"> <Ratingpanel /></div> 
           <Plans />
         </div>
       </section>

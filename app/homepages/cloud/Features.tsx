@@ -77,7 +77,7 @@ interface BoxProps {
 </div>
 <div className='image'>
 
-<img src="/cloudhosting/feature.svg" className='w-auto h-auto'/>
+<img src="/cloudhosting/feature.svg" alt="" className='2xl:flex xl:flex lg:flex sm:flex bl:flex md:flex hidden w-auto h-auto'/>
 
 </div>
          </div>

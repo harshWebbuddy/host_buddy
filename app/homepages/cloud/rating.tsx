@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useState, useEffect } from "react";
 // import './slider.css';
 
-const RatingPanel = () => {
+const RatingPanel3 = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const ratings = [
     {
@@ -71,4 +71,4 @@ const RatingPanel = () => {
   );
 };
 
-export default RatingPanel;
+export default RatingPanel3;

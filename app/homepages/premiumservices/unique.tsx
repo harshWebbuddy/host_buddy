@@ -5,8 +5,8 @@ const Unique = () => {
   return (
     <section className=" relative bg-[#F9EFE4] py-20">
     <div className="p-4 w-full max-w-[1300px] mx-auto flex flex-col xl:flex-row items-center justify-center ">
-      <div className="flex flex-col 2xl:flex-row mx-auto items-center justify-between ">
-      <div className="w-full flex justify-center slide-reveal ">
+      <div className="flex flex-col 2xl:flex-row mx-auto  gap-10 items-center justify-between ">
+      <div className="w-full 2xl:flex hidden  justify-center slide-reveal ">
           <Image src="/ps/unique.svg" alt="" width={550} height={550} className="" />
         </div>
          <div className="w-full flex flex-col space-y-8 animate-slide-from-right">
@@ -101,7 +101,9 @@ const Unique = () => {
             </div>
           </div>
         </div>
-       
+        <div className="w-full flex  2xl:hidden justify-center slide-reveal ">
+          <Image src="/ps/unique.svg" alt="" width={550} height={550} className="" />
+        </div>
       </div>
     </div>
   </section>
