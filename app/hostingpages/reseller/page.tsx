@@ -12,6 +12,7 @@ import Uniqueone from './Uniqueone'
 import AddsResller from './Adds'
 import Useoption from './Useoption'
 import { NavBar } from '@/components'
+import Ratingpanel2 from './Ratingpanel'
 
 const page = () => {
   return (
@@ -23,17 +24,18 @@ const page = () => {
         </section>
         {/* rating panel  */}
         <section>
-        <div className="space-y-24 2xl:space-y-32 ">
-          <Ratingpanel/>
-          <Plans/>
+        <div className="space-y-10 2xl:space-y-32 ">
+        <div className="2xl:flex xl:flex bl:flex lg:flex md:flex hidden"><Ratingpanel2/></div> 
+        <div className="p-4 2xl:hidden xl:hidden bl:hidden lg:hidden md:hidden flex"> <Ratingpanel /></div> 
+          <Plans />
         </div>
-        </section>
+      </section>
 
         <section className='py-40 '>
   <Useoption/>
 </section>
         {/* what make hostbuddy unique section */}
-        <section className=' 2xl:pt-72 bl:pt-96  sm:pt-[800px] lg:pt-[700px] pt-[800px]'>
+        <section className=' 2xl:pt-72 bl:pt-32 xl:pt-40 sm:pt-[800px] lg:pt-[400px] pt-[800px]'>
           <Unique/>
         </section>
         <section className='pt-20 2xl:pt-40'>

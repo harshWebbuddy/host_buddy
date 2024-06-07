@@ -58,7 +58,7 @@ const AddsResller: React.FC = () => {
 
   return (
     <section className=" relative">
-      <div className=" p-4 w-full max-w-[1420px] mx-auto flex flex-col md:flex-row items-center justify-center py-20">
+      <div className=" p-4 w-full max-w-[1420px] mx-auto flex flex-col md:flex-row items-center justify-center 2xl:py-20">
         <div className="flex flex-col 2xl:flex-row mx-auto items-center justify-between">
           <div className="slide-reveal w-full space-y-16">
             <div className="space-y-3.5 pr-20">
@@ -92,7 +92,7 @@ Premium <span className="text-orange-500">Add-Ons</span></h4>
             </div>
           </div>
           <div className="slide-reveal w-full flex justify-center">
-            <div className="relative items-center justify-center mt-40">
+            <div className="relative items-center justify-center mt-16  2xl:mt-40">
               <Image src="/reseller/choose.svg" width={497} height={301} alt="" className="rounded-2xl relative z-10" />
             </div>
           </div>

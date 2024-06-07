@@ -24,7 +24,7 @@ const Support = () => {
       <div className="w-full max-w-[1310px] mx-auto">
       <div className="flex flex-col bl:flex-row justify-between gap-y-4 2xl:gap-y-10 gap-x-20 items-center slide-reveal pb-16">
         <div className="relative w-full">
-        <h2 className="text-black font-mona-sans font-semibold text-[22px] 2xl:text-[42px] capitalize leading-relaxed w-full text-left">
+        <h2 className="text-black font-mona-sans font-semibold text-[22px] 2xl:text-[52px] capitalize leading-normal w-full text-left">
         Select Your <span className="pb-1 2xl:pb-4 border-b-4 border-orange-500 font-semibold normal-case ">  Reseller </span>
          Hosting Package
 
@@ -32,118 +32,172 @@ const Support = () => {
       
         </div>
         <div className="flex flex-wrap bl:flex-nowrap items-center gap-2 sm:gap-5">
-          <p className="font-mono-sans text-[12px] 2xl:text-[14px] font-light leading-[24px] text-left text-[#16191C]">
+          <p className="font-mono-sans text-[12px] 2xl:text-[15px] font-light leading-[24px] text-left text-[#16191C]">
           Perfect for agencies and freelancers, our flexible and best-value reseller hosting plans is all you need to run your web hosting company and make huge profits!          </p>
         </div>
       </div>
-      <section className="2xl:pt-10 px-4" >
-        <div className="w-full px-0">
-          <div className="w-full max-w-[1300px] mx-auto">
-            <div className="flex flex-col md:flex-row gap-x-8 gap-y-14 bl:items-center justify-center animate-left-to-right mx-auto mt-20 bl:mt-16">
-              <div className="relative flex-1 w-full gap-10 group">
-                <div className="absolute -top-7 left-9 w-16 h-16 flex justify-center items-center rounded-xl transition-all duration-300  bg-[#994CFD]">
-                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M35.4375 21H21.3593C23.5474 19.0743 24.9375 16.262 24.9375 13.125C24.9375 7.33539 20.2271 2.625 14.4375 2.625C8.64789 2.625 3.9375 7.33539 3.9375 13.125C3.9375 16.262 5.32763 19.0743 7.51571 21H6.5625C4.39124 21 2.625 22.7662 2.625 24.9375V35.4375C2.625 37.6088 4.39124 39.375 6.5625 39.375H35.4375C37.6088 39.375 39.375 37.6088 39.375 35.4375V24.9375C39.375 22.7662 37.6088 21 35.4375 21ZM6.68106 14.4375H7.875C8.59982 14.4375 9.1875 13.8498 9.1875 13.125C9.1875 12.4002 8.59982 11.8125 7.875 11.8125H6.68106C7.23798 8.51411 9.84663 5.91218 13.1482 5.36496C13.2094 6.03314 13.7535 6.5625 14.4375 6.5625C15.1215 6.5625 15.6656 6.03314 15.7268 5.36496C19.0361 5.91346 21.649 8.52636 22.1975 11.8357C21.5294 11.8969 21 12.441 21 13.125C21 13.809 21.5294 14.3531 22.1975 14.4143C21.649 17.7236 19.0361 20.3365 15.7268 20.885C15.6656 20.2169 15.1215 19.6875 14.4375 19.6875C13.7535 19.6875 13.2094 20.2169 13.1482 20.885C9.84663 20.3378 7.23798 17.7359 6.68106 14.4375ZM5.25 24.9375C5.25 24.214 5.83896 23.625 6.5625 23.625H35.4375C36.161 23.625 36.75 24.214 36.75 24.9375V28.875H5.25V24.9375ZM36.75 35.4375C36.75 36.161 36.161 36.75 35.4375 36.75H6.5625C5.83896 36.75 5.25 36.161 5.25 35.4375V31.5H36.75V35.4375Z" fill="white"/>
-<path d="M34.1282 24.9375H34.1154C33.3923 24.9375 32.8125 25.5252 32.8125 26.25C32.8125 26.9748 33.4051 27.5625 34.1282 27.5625C34.8519 27.5625 35.4375 26.9748 35.4375 26.25C35.4375 25.5252 34.8519 24.9375 34.1282 24.9375ZM30.1907 24.9375H30.1779C29.4548 24.9375 28.875 25.5252 28.875 26.25C28.875 26.9748 29.4676 27.5625 30.1907 27.5625C30.9144 27.5625 31.5 26.9748 31.5 26.25C31.5 25.5252 30.9144 24.9375 30.1907 24.9375ZM26.2532 24.9375H26.2405C25.5174 24.9375 24.9375 25.5252 24.9375 26.25C24.9375 26.9748 25.5301 27.5625 26.2532 27.5625C26.9769 27.5625 27.5625 26.9748 27.5625 26.25C27.5625 25.5252 26.9769 24.9375 26.2532 24.9375ZM34.1282 35.4375C34.8519 35.4375 35.4375 34.8498 35.4375 34.125C35.4375 33.4002 34.8519 32.8125 34.1282 32.8125H34.1154C33.3923 32.8125 32.8125 33.4002 32.8125 34.125C32.8125 34.8498 33.4051 35.4375 34.1282 35.4375ZM30.1907 35.4375C30.9144 35.4375 31.5 34.8498 31.5 34.125C31.5 33.4002 30.9144 32.8125 30.1907 32.8125H30.1779C29.4548 32.8125 28.875 33.4002 28.875 34.125C28.875 34.8498 29.4676 35.4375 30.1907 35.4375ZM26.2532 35.4375C26.9769 35.4375 27.5625 34.8498 27.5625 34.125C27.5625 33.4002 26.9769 32.8125 26.2532 32.8125H26.2405C25.5174 32.8125 24.9375 33.4002 24.9375 34.125C24.9375 34.8498 25.5301 35.4375 26.2532 35.4375ZM11.8125 14.4375H14.4375C14.7855 14.4375 15.1194 14.2991 15.3655 14.053L17.9905 11.428C18.5032 10.9153 18.5032 10.0847 17.9905 9.57202C17.4778 9.05933 16.6472 9.05933 16.1345 9.57202L13.894 11.8125H11.8125C11.0877 11.8125 10.5 12.4002 10.5 13.125C10.5 13.8498 11.0877 14.4375 11.8125 14.4375ZM29.803 8.80298L32.8125 5.79346L35.822 8.80298C36.0784 9.05933 36.4142 9.1875 36.75 9.1875C37.0858 9.1875 37.4216 9.05933 37.678 8.80298C38.1907 8.29028 38.1907 7.45972 37.678 6.94702L33.7405 3.00952C33.2278 2.49683 32.3972 2.49683 31.8845 3.00952L27.947 6.94702C27.4343 7.45972 27.4343 8.29028 27.947 8.80298C28.4597 9.31567 29.2903 9.31567 29.803 8.80298Z" fill="white"/>
-<path d="M29.803 14.053L32.8125 11.0435L35.822 14.053C36.0784 14.3093 36.4142 14.4375 36.75 14.4375C37.0858 14.4375 37.4216 14.3093 37.678 14.053C38.1907 13.5403 38.1907 12.7097 37.678 12.197L33.7405 8.25952C33.2278 7.74683 32.3972 7.74683 31.8845 8.25952L27.947 12.197C27.4343 12.7097 27.4343 13.5403 27.947 14.053C28.4597 14.5657 29.2903 14.5657 29.803 14.053Z" fill="white"/>
-<path d="M29.803 19.303L32.8125 16.2935L35.822 19.303C36.0784 19.5593 36.4142 19.6875 36.75 19.6875C37.0858 19.6875 37.4216 19.5593 37.678 19.303C38.1907 18.7903 38.1907 17.9597 37.678 17.447L33.7405 13.5095C33.2278 12.9968 32.3972 12.9968 31.8845 13.5095L27.947 17.447C27.4343 17.9597 27.4343 18.7903 27.947 19.303C28.4597 19.8157 29.2903 19.8157 29.803 19.303Z" fill="white"/>
-</svg>
-
+      <section className=" px-4 2xl:px-0" ref={ref}>
+      <div className="flex flex-col bl:flex-row w-full justify-center gap-8 items-center" >
+      <div className={`slide-item ${animationClass} w-full`}>
+          <div  className="mb-5 w-full transition-all  bg-[#F9EFE4]  hover:bg-[#16191C] px-10 rounded-2xl group" >
+      
+          <div className="pt-10 lex flex-col w-full space-y-2 group">
+            <h2 className="font-mona-sans font-bold text-2xl bl:text-3xl text-center gap-0  mx-auto text-gray-900 group-hover:text-white">IGNITE</h2>
+            <p className="font-mona-sans text-sm font-normal leading-7 text-center  gap-0 opacity-45 group-hover:text-white text-[#16191C]/100 bottom-4 relative">From</p>
+            <div className="font-bold text-6xl leading-9 text-center font-mono-sans-serif text-orange-500 mb-2">$29</div>
+            <p className="font-mona-sans text-base font-normal leading-21 text-center w-50 h-[17px] gap-0 opacity-45  group-hover:text-white text-[#16191C]/100">/Month</p>
+          </div>
+          
+          <div className="mt-12 group">
+           <div className="group cursor-pointer w-full h-[52px] group-hover:text-white text-black  text-xl rounded-xl  group-hover:bg-[#FF7500] ring-1 group-hover:ring-[#FFFFFF] ring-[#16191C] 
+            transition-all duration-300 hover:shadow-2xl ring-inset hover:ring-0 font-bold flex items-center justify-center ">
+              <h4 className="w-99 h-19 top-16 left-115 font-monasans font-bold text-base leading-[19.2px]">Choose Plan</h4>{" "}
+              <span className="ml-2">
+                <FaArrowRight size={15} />
+              </span>
+            </div>
+            <div className="flex flex-col justify-center w-full mt-12 group">
+              <h3 className="text-xl font-bold mb-7 text-left text-black group-hover:text-white">Major Features</h3>
+              <div className="flex flex-col gap-3">
+                <div className="flex w-full justify-between">
+                  <p className="text-center text-black-700 text-lg  text-black group-hover:text-white">RAM:</p>
+                  <p className="text-center text-black-700 text-lg font-bold  text-black group-hover:text-white">8GB</p>
                 </div>
-                <div className="bg-[#994CFD]/10 group  shadow-solid-mycolor  rounded-2xl group  text-[#16191C] p-8 pt-10 transition-all duration-300 cursor-pointer">
-                  <h2 className="text-xl font-bold mt-4 opacity-1 mb-4">
-                    Guaranteed Uptime
-                  </h2>
-                  <p className="w-full opacity-70 font-mona-sans text-[16px] group-hover:text-black/100 font-normal leading-normal text-left">
-                    With us, you receive 99.95% guaranteed uptime that covers
-                    the server’s availability and all network components in our
-                    Tier 4 data centers. With the robust infrastructure and
-                    high-speed connectivity, your websites and applications.
-                  </p>
+                <div className="flex w-full justify-between">
+                  <p className="text-center text-black-700 text-lg  text-black group-hover:text-white">Processor</p>
+                  <p className="text-center text-black-700 text-lg font-bold  text-black group-hover:text-white">1 Core</p>
                 </div>
+                <div className="flex w-full justify-between">
+                  <p className="text-center text-black-700 text-lg  text-black group-hover:text-white">Storage</p>
+                  <p className="text-center text-black-700 text-lg font-bold  text-black group-hover:text-white">25GB</p>
+                </div>
+                <div className="flex w-full justify-between">
+                  <p className="text-center text-black-700 text-lg  text-black group-hover:text-white">Bandwidth</p>
+                  <p className="text-center text-black-700 text-lg font-bold  text-black group-hover:text-white">1TB</p>
+                </div>
+                {/* Additional feature details here */}
               </div>
-              <div className="relative flex-1 w-full gap-10 group">
-                <div className="absolute -top-7 left-9 w-16 h-16 flex justify-center items-center rounded-xl transition-all duration-300  bg-[#4DBFFF]">
-               <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M30.3952 7.10683C30.4958 7.00914 30.5757 6.89227 30.6303 6.76314C30.6848 6.63402 30.713 6.49526 30.713 6.35507C30.713 6.21488 30.6848 6.07612 30.6303 5.947C30.5757 5.81787 30.4958 5.701 30.3952 5.6033C30.0035 5.21154 29.2941 5.21154 28.9023 5.6033C28.4788 6.02683 28.5073 6.71083 28.9023 7.10683C29.3152 7.4986 29.9463 7.53142 30.3952 7.10683ZM26.1599 7.10683C26.2605 7.00914 26.3404 6.89227 26.395 6.76314C26.4495 6.63402 26.4777 6.49526 26.4777 6.35507C26.4777 6.21488 26.4495 6.07612 26.395 5.947C26.3404 5.81787 26.2605 5.701 26.1599 5.6033C25.7682 5.21154 25.0588 5.21154 24.667 5.6033C24.2435 6.02683 24.2721 6.71083 24.667 7.10683C25.0799 7.4986 25.711 7.53142 26.1599 7.10683ZM6.3557 7.41178H15.8851C16.1659 7.41178 16.4352 7.30022 16.6338 7.10165C16.8324 6.90308 16.9439 6.63377 16.9439 6.35295C16.9439 6.07213 16.8324 5.80282 16.6338 5.60425C16.4352 5.40568 16.1659 5.29413 15.8851 5.29413H6.3557C6.07488 5.29413 5.80557 5.40568 5.607 5.60425C5.40843 5.80282 5.29688 6.07213 5.29688 6.35295C5.29688 6.63377 5.40843 6.90308 5.607 7.10165C5.80557 7.30022 6.07488 7.41178 6.3557 7.41178ZM28.9012 18.3092C28.7046 18.51 28.5945 18.7799 28.5945 19.061C28.5945 19.342 28.7046 19.6119 28.9012 19.8127C29.0005 19.911 29.1182 19.9887 29.2476 20.0414C29.377 20.0941 29.5155 20.1207 29.6552 20.1197C29.7949 20.1188 29.933 20.0902 30.0617 20.0357C30.1903 19.9812 30.3069 19.9018 30.4048 19.8021C30.5027 19.7038 30.5802 19.5869 30.6328 19.4584C30.6853 19.3299 30.7119 19.1923 30.7109 19.0534C30.7099 18.9146 30.6814 18.7774 30.627 18.6496C30.5727 18.5219 30.4935 18.4062 30.3942 18.3092C30.0024 17.9174 29.3046 17.9174 28.9012 18.3092Z" fill="white"/>
-<path d="M29.6468 13.7647H6.35377C4.95002 13.7661 3.60414 14.3243 2.61144 15.3168C1.61873 16.3093 1.06028 17.6551 1.05859 19.0588C1.05859 21.978 3.43354 24.353 6.35377 24.353H16.942V32.8235H8.47036C8.18954 32.8235 7.92023 32.9351 7.72166 33.1337C7.52309 33.3322 7.41154 33.6016 7.41154 33.8824C7.41154 34.1632 7.52309 34.4325 7.72166 34.6311C7.92023 34.8296 8.18954 34.9412 8.47036 34.9412H27.5292C27.81 34.9412 28.0793 34.8296 28.2779 34.6311C28.4765 34.4325 28.588 34.1632 28.588 33.8824C28.588 33.6016 28.4765 33.3322 28.2779 33.1337C28.0793 32.9351 27.81 32.8235 27.5292 32.8235H19.0586V24.353H29.6468C32.566 24.353 34.9409 21.978 34.9409 19.0588C34.9409 16.1397 32.566 13.7647 29.6468 13.7647ZM29.6468 22.2353H6.35377C4.60142 22.2353 3.17624 20.8101 3.17624 19.0588C3.17624 17.3075 4.60142 15.8824 6.35377 15.8824H29.6468C31.3981 15.8824 32.8233 17.3075 32.8233 19.0588C32.8233 20.8101 31.3981 22.2353 29.6468 22.2353ZM6.35377 11.6471H29.6468C32.566 11.6471 34.9409 9.27213 34.9409 6.35296C34.9409 3.43378 32.566 1.05884 29.6468 1.05884H6.35377C4.94983 1.06024 3.6038 1.61857 2.61106 2.61131C1.61833 3.60404 1.06 4.95008 1.05859 6.35401C1.06056 7.75759 1.61914 9.10308 2.61181 10.0954C3.60448 11.0876 4.9502 11.6457 6.35377 11.6471ZM6.35377 3.17649H29.6468C31.3981 3.17649 32.8233 4.60166 32.8233 6.35401C32.8233 8.10637 31.3981 9.53049 29.6468 9.53049H6.35377C4.60142 9.52943 3.17624 8.10425 3.17624 6.35296C3.17624 4.60166 4.60142 3.17649 6.35377 3.17649Z" fill="white"/>
-<path d="M24.6659 18.3092C24.4693 18.51 24.3592 18.7799 24.3592 19.0609C24.3592 19.342 24.4693 19.6119 24.6659 19.8127C25.1053 20.2299 25.7565 20.2151 26.1589 19.8127C26.2594 19.715 26.3393 19.5981 26.3939 19.469C26.4485 19.3399 26.4766 19.2011 26.4766 19.0609C26.4766 18.9208 26.4485 18.782 26.3939 18.6529C26.3393 18.5237 26.2594 18.4069 26.1589 18.3092C25.7671 17.9174 25.0693 17.9174 24.6659 18.3092ZM15.8851 18H6.3557C6.07488 18 5.80557 18.1116 5.607 18.3101C5.40843 18.5087 5.29688 18.778 5.29688 19.0588C5.29688 19.3396 5.40843 19.609 5.607 19.8075C5.80557 20.0061 6.07488 20.1176 6.3557 20.1176H15.8851C16.1659 20.1176 16.4352 20.0061 16.6338 19.8075C16.8324 19.609 16.9439 19.3396 16.9439 19.0588C16.9439 18.778 16.8324 18.5087 16.6338 18.3101C16.4352 18.1116 16.1659 18 15.8851 18Z" fill="white"/>
-</svg>
-
-                </div>
-                <div className="bg-[#4DBFFF]/10  group shadow-solid-mycolor2  rounded-2xl group  text-[#16191C] p-6 pt-12 transition-all duration-300 cursor-pointer">
-                  <h2 className="text-xl font-bold mt-4 opacity-1 mb-4">
-                    KVM Virtualization
-                  </h2>
-                  <p className="w-full opacity-70 font-mona-sans text-[16px] font-normal group-hover:text-black/100 leading-normal text-left">
-                    HostBuddy leverages Kernel-based Virtual Machine (KVM)
-                    virtualization technology. It allows a single physical
-                    server to run multiple isolated virtual machines (VMs) where
-                    each VM acts like a dedicated server with its own resources
-                    like CPU.{" "}
+              <div className="relative max-w-fit mx-auto py-6 flex group items-center justify-center">
+                <div className="flex items-center gap-x-3 ">
+                  <p className="text-[16px] font-bold text-[#16191C]/60 group-hover:text-orange-500 transition-all duration-500">
+                    See All Features in Details{" "}
                   </p>
+                  <IoIosArrowForward className="text-[#16191C]/60 group-hover:text-orange-500 group-hover:translate-x-1 transition-all duration-300" />
                 </div>
-              </div>
-              <div className="relative flex-1 w-full gap-10">
-                <div className="absolute -top-7 left-9 w-16 h-16 flex justify-center items-center rounded-xl transition-all duration-300  bg-[#14B441]">
-              <svg
-                    width="63"
-                    height="63"
-                    viewBox="0 0 63 63"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect
-                      x="0.6875"
-                      y="0.894714"
-                      width="62.0702"
-                      height="62.0702"
-                      rx="8.80136"
-                      fill="#14B441"
-                    />
-                    <g clip-path="url(#clip0_0_1)">
-                      <path
-                        d="M27.7935 27.1644C31.8043 27.1644 35.0557 23.913 35.0557 19.9022C35.0557 15.8914 31.8043 12.64 27.7935 12.64C23.7827 12.64 20.5312 15.8914 20.5312 19.9022C20.5312 23.913 23.7827 27.1644 27.7935 27.1644Z"
-                        fill="white"
-                      />
-                      <path
-                        d="M34.7647 35.0527L35.7664 34.9692L36.5594 34.3014C36.8515 34.051 37.1854 33.8423 37.5193 33.6754C36.309 30.9625 33.5961 29.126 30.5075 29.126H25.0818C21.2002 29.126 17.903 32.0476 17.4439 35.9291L16.6926 42.1897C16.6092 43.0244 17.11 43.7757 17.903 43.9426C21.0333 44.6104 24.3305 44.986 27.7946 44.986C28.1703 44.986 28.5459 44.986 28.9215 44.986C28.5876 43.6087 28.9215 42.1479 29.8815 41.021L30.5493 40.2698L30.6328 39.2264C30.7997 36.9726 32.5526 35.2614 34.7647 35.0527Z"
-                        fill="white"
-                      />
-                      <path
-                        d="M47.3268 42.4818L46.659 41.6888C46.3668 41.3132 46.1581 40.8958 46.1164 40.4367L46.0329 39.3933C45.9494 38.3082 45.073 37.4317 43.9878 37.3482L42.9444 37.2647C42.4853 37.223 42.0262 37.056 41.6923 36.7222L40.8993 36.0544C40.0645 35.3448 38.8542 35.3448 38.0194 36.0544L37.2264 36.7222C36.8508 37.0143 36.4334 37.223 35.9743 37.2647L34.9309 37.3482C33.8458 37.4317 32.9693 38.3082 32.8858 39.3933L32.8023 40.4367C32.7606 40.8958 32.5937 41.3549 32.2598 41.6888L31.6337 42.4818C30.9242 43.3166 30.9242 44.5269 31.6337 45.3617L32.3015 46.1547C32.5937 46.5303 32.8023 46.9477 32.8441 47.4068L32.9275 48.4502C33.011 49.5354 33.8875 50.4118 34.9727 50.4953L36.0161 50.5788C36.4752 50.6205 36.9343 50.7875 37.2682 51.1214L38.0612 51.7892C38.8959 52.4987 40.1063 52.4987 40.941 51.7892L41.734 51.1214C42.1097 50.8292 42.527 50.6205 42.9861 50.5788L44.0295 50.4953C45.1147 50.4118 45.9912 49.5354 46.0747 48.4502L46.1581 47.4068C46.1999 46.9477 46.3668 46.4886 46.7007 46.1547L47.3685 45.3617C48.0363 44.5269 48.0363 43.3166 47.3268 42.4818ZM40.0645 47.3233V48.1998C40.0645 48.2833 39.9811 48.3667 39.8976 48.3667H39.0629C38.9794 48.3667 38.8959 48.2833 38.8959 48.1998V47.365C38.0194 47.3233 37.3517 46.6555 37.2682 45.779C37.2682 45.6956 37.3517 45.6121 37.4351 45.6121H38.2699C38.3533 45.6121 38.3951 45.6538 38.4368 45.7373C38.4786 45.9877 38.729 46.1964 39.0211 46.1964H39.7724C40.1898 46.1964 40.6071 45.8625 40.6489 45.4452C40.6906 44.9443 40.315 44.5269 39.8141 44.5269H39.2716C38.2281 44.5269 37.2682 43.7757 37.1847 42.7323C37.0595 41.6471 37.8525 40.6872 38.8959 40.5619V39.7272C38.8959 39.6437 38.9794 39.5603 39.0629 39.5603H39.8976C39.9811 39.5603 40.0645 39.6437 40.0645 39.7272V40.5619C40.941 40.6037 41.6088 41.2715 41.6923 42.1479C41.6923 42.2314 41.6088 42.3149 41.5253 42.3149H40.6906C40.6071 42.3149 40.5654 42.2732 40.5237 42.1897C40.4819 41.9393 40.2315 41.7306 39.9393 41.7306H39.1881C38.729 41.7306 38.3533 42.0645 38.3116 42.4818C38.2699 42.9827 38.6455 43.4 39.1463 43.4H39.7724C40.941 43.4 41.901 44.4017 41.7758 45.6121C41.6923 46.4468 40.941 47.1564 40.0645 47.3233Z"
-                        fill="white"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_0_1">
-                        <rect
-                          width="41.7368"
-                          height="41.7368"
-                          fill="white"
-                          transform="translate(11.3906 11.5965)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </div>
-                <div className="bg-[#14B441]/10   group  shadow-solid-mycolor3  rounded-2xl group  text-[#16191C] p-6 pt-12 transition-all duration-300 cursor-pointer">
-                  <h2 className="text-xl font-bold mt-4 opacity-1 mb-4">
-                    Unbeatable Pricing
-                  </h2>
-                  <p className="w-full opacity-70 font-mona-sans text-[16px] font-normal group-hover:text-black/100  leading-normal text-left">
-                    Leveraging our extensive customer network, we negotiate
-                    advantageous terms with vendors, leading to significant cost
-                    efficiencies for clients through competitively priced VPS
-                    hosting. Experience enhanced value and performance with our
-                    tailored solutions.{" "}
-                  </p>
-                </div>
+                <div className="bg-orange-500 h-[2px] absolute bottom-5 left-0 w-0 group-hover:w-full transition-all duration-500" />
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </div></div>
+        <div className={`slide-item ${animationClass} w-full`}>
+          <div  className="mb-5 w-full transition-all  bg-[#F9EFE4] hover:bg-[#16191C] px-10 rounded-2xl group" >
+         <div className='group-hover:opacity-100 opacity-0 absolute -translate-y-4 translate-x-24 2xl:flex hidden'>
+          <div className='bg-orange-500 py-1 rounded-3xl border-white w-36  mx-auto item-center justify-center border-4'>
+            <h2 className='text-white items-center justify-center mx-auto text-center text-[16px] font-semibold '>Most Popular</h2>
+          </div>
+          </div>
+          <div className="pt-10 lex flex-col w-full space-y-2 group">
+            <h2 className="font-mona-sans font-bold text-2xl bl:text-3xl text-center gap-0  mx-auto text-gray-900 group-hover:text-white">IGNITE</h2>
+            <p className="font-mona-sans text-sm font-normal leading-7 text-center  gap-0 opacity-45 group-hover:text-white text-[#16191C]/100 bottom-4 relative">From</p>
+            <div className="font-bold text-6xl leading-9 text-center font-mono-sans-serif text-orange-500 mb-2">$29</div>
+            <p className="font-mona-sans text-base font-normal leading-21 text-center w-50 h-[17px] gap-0 opacity-45  group-hover:text-white text-[#16191C]/100">/Month</p>
+          </div>
+          
+          <div className="mt-12 group">
+           <div className="group cursor-pointer w-full h-[52px] group-hover:text-white text-black  text-xl rounded-xl  group-hover:bg-[#FF7500] ring-1 group-hover:ring-[#FFFFFF] ring-[#16191C] 
+            transition-all duration-300 hover:shadow-2xl ring-inset hover:ring-0 font-bold flex items-center justify-center ">
+              <h4 className="w-99 h-19 top-16 left-115 font-monasans font-bold text-base leading-[19.2px]">Choose Plan</h4>{" "}
+              <span className="ml-2">
+                <FaArrowRight size={15} />
+              </span>
+            </div>
+            <div className="flex flex-col justify-center w-full mt-12 group">
+              <h3 className="text-xl font-bold mb-7 text-left text-black group-hover:text-white">Major Features</h3>
+              <div className="flex flex-col gap-3">
+                <div className="flex w-full justify-between">
+                  <p className="text-center text-black-700 text-lg  text-black group-hover:text-white">RAM:</p>
+                  <p className="text-center text-black-700 text-lg font-bold  text-black group-hover:text-white">8GB</p>
+                </div>
+                <div className="flex w-full justify-between">
+                  <p className="text-center text-black-700 text-lg  text-black group-hover:text-white">Processor</p>
+                  <p className="text-center text-black-700 text-lg font-bold  text-black group-hover:text-white">1 Core</p>
+                </div>
+                <div className="flex w-full justify-between">
+                  <p className="text-center text-black-700 text-lg  text-black group-hover:text-white">Storage</p>
+                  <p className="text-center text-black-700 text-lg font-bold  text-black group-hover:text-white">25GB</p>
+                </div>
+                <div className="flex w-full justify-between">
+                  <p className="text-center text-black-700 text-lg  text-black group-hover:text-white">Bandwidth</p>
+                  <p className="text-center text-black-700 text-lg font-bold  text-black group-hover:text-white">1TB</p>
+                </div>
+                {/* Additional feature details here */}
+              </div>
+              <div className="relative max-w-fit mx-auto py-6 flex group items-center justify-center">
+                <div className="flex items-center gap-x-3 text-[#16191C]/60">
+                  <p className="text-[16px] font-bold text-[#16191C]/60 group-hover:text-orange-500 transition-all duration-500">
+                    See All Features in Details{" "}
+                  </p>
+                  <IoIosArrowForward className="text-[#16191C]/60 group-hover:text-orange-500 group-hover:translate-x-1 transition-all duration-300" />
+                </div>
+                <div className="bg-orange-500 h-[2px] absolute bottom-5 left-0 w-0 group-hover:w-full transition-all duration-500" />
+              </div>
+            </div>
+          </div>
+        </div></div>
+        <div className={`slide-item ${animationClass} w-full`}>
+          <div  className="mb-5 w-full transition-all  bg-[#F9EFE4]  hover:bg-[#16191C] px-10 rounded-2xl group" >
+      
+          <div className="pt-10 lex flex-col w-full space-y-2 group">
+            <h2 className="font-mona-sans font-bold text-2xl bl:text-3xl text-center gap-0  mx-auto text-gray-900 group-hover:text-white">IGNITE</h2>
+            <p className="font-mona-sans text-sm font-normal leading-7 text-center  gap-0 opacity-45 group-hover:text-white text-[#16191C]/100 bottom-4 relative">From</p>
+            <div className="font-bold text-6xl leading-9 text-center font-mono-sans-serif text-orange-500 mb-2">$29</div>
+            <p className="font-mona-sans text-base font-normal leading-21 text-center w-50 h-[17px] gap-0 opacity-45  group-hover:text-white text-[#16191C]/100">/Month</p>
+          </div>
+          
+          <div className="mt-12 group">
+           <div className="group cursor-pointer w-full h-[52px] group-hover:text-white text-black  text-xl rounded-xl  group-hover:bg-[#FF7500] ring-1 group-hover:ring-[#FFFFFF] ring-[#16191C] 
+            transition-all duration-300 hover:shadow-2xl ring-inset hover:ring-0 font-bold flex items-center justify-center ">
+              <h4 className="w-99 h-19 top-16 left-115 font-monasans font-bold text-base leading-[19.2px]">Choose Plan</h4>{" "}
+              <span className="ml-2">
+                <FaArrowRight size={15} />
+              </span>
+            </div>
+            <div className="flex flex-col justify-center w-full mt-12 group">
+              <h3 className="text-xl font-bold mb-7 text-left text-black group-hover:text-white">Major Features</h3>
+              <div className="flex flex-col gap-3">
+                <div className="flex w-full justify-between">
+                  <p className="text-center text-black-700 text-lg  text-black group-hover:text-white">RAM:</p>
+                  <p className="text-center text-black-700 text-lg font-bold  text-black group-hover:text-white">8GB</p>
+                </div>
+                <div className="flex w-full justify-between">
+                  <p className="text-center text-black-700 text-lg  text-black group-hover:text-white">Processor</p>
+                  <p className="text-center text-black-700 text-lg font-bold  text-black group-hover:text-white">1 Core</p>
+                </div>
+                <div className="flex w-full justify-between">
+                  <p className="text-center text-black-700 text-lg  text-black group-hover:text-white">Storage</p>
+                  <p className="text-center text-black-700 text-lg font-bold  text-black group-hover:text-white">25GB</p>
+                </div>
+                <div className="flex w-full justify-between">
+                  <p className="text-center text-black-700 text-lg  text-black group-hover:text-white">Bandwidth</p>
+                  <p className="text-center text-black-700 text-lg font-bold  text-black group-hover:text-white">1TB</p>
+                </div>
+                {/* Additional feature details here */}
+              </div>
+              <div className="relative max-w-fit mx-auto py-6 flex group items-center justify-center">
+                <div className="flex items-center gap-x-3 text-[#16191C]/60">
+                  <p className="text-[16px] font-bold text-[#16191C]/60 group-hover:text-orange-500 transition-all duration-500">
+                    See All Features in Details{" "}
+                  </p>
+                  <IoIosArrowForward className="text-[#16191C]/60 group-hover:text-orange-500 group-hover:translate-x-1 transition-all duration-300" />
+                </div>
+                <div className="bg-orange-500 h-[2px] absolute bottom-5 left-0 w-0 group-hover:w-full transition-all duration-500" />
+              </div>
+            </div>
+          </div>
+        </div></div>
+      </div>
+     
+    </section>
       </div>
     </div>
   );

@@ -91,7 +91,7 @@ export default function Testimonials() {
           </div>
         </div>
       </div>
-      <img src="/fog2.svg" className="absolute top-48 rotate-180   select-none" draggable={false} />
+      <img src="/fog2.svg" className="2xl:flex hidden absolute top-48 rotate-180   select-none" draggable={false} />
 
       <div className="w-full h-40 bg-gradient-to-b from-[#171B1E00] via-[#181B1E]/80 to-[#181B1E] absolute bottom-0 left-0 right-0 flex justify-center items-center">
         <div className="relative z-[5] max-w-fit flex flex-row group mt-5" onClick={() => setViewAll(!viewAll)}>

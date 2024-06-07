@@ -113,7 +113,7 @@ Outbound e-Mail Security
               <p className="capitalize leading-6 text-[12px] 2xl:text-[16px] font-light">
 Enhance Your Hosting Experience! Boost website load times to maximize server response, SEO rankings, and sales. Opt for a server closer to your audience, especially in India, for enhanced reliability and lightning-fast page loads.              </p>
             </li>
-           <div className="bg-white border-orange-500 border flex flex-row 2xl:w-52 rounded-xl p-3  items-center justify-center">
+            <div className="bg-white hover:bg-orange-500  border-orange-500 border flex flex-row w-52 rounded-xl p-3  items-center justify-center">
               <h2 className="font-medium text-[16px] 2xl:text-[20px]  leading-normal ">Get Started </h2> <img src="/hosting/ArrowIcon.svg" className="pl-4 -mt-0.5 "/>
           </div>
           </ul>
@@ -137,7 +137,7 @@ Enhance Your Hosting Experience! Boost website load times to maximize server res
             <p className="capitalize leading-6 text-[12px] 2xl:text-[16px] font-light">
 Enhance Your Hosting Experience! Boost website load times to maximize server response, SEO rankings, and sales. Opt for a server closer to your audience, especially in India, for enhanced reliability and lightning-fast page loads.              </p>
             </li>
-            <div className="bg-white border-orange-500 border flex flex-row 2xl:w-52 rounded-xl p-3  items-center justify-center">
+            <div className="bg-white hover:bg-orange-500  border-orange-500 border flex flex-row w-52 rounded-xl p-3  items-center justify-center">
               <h2 className="font-medium text-[16px] 2xl:text-[20px]  leading-normal ">Get Started </h2> <img src="/hosting/ArrowIcon.svg" className="pl-4 -mt-0.5 "/>
           </div>
           </ul>
@@ -162,7 +162,7 @@ Enhance Your Hosting Experience! Boost website load times to maximize server res
             <p className="capitalize leading-6 text-[12px] 2xl:text-[16px] font-light">
 Switching web hosts can be daunting, especially considering the importance of your website's data. At HostBuddy, we understand this concern, which is why we offer a hassle-free migration service at no extra cost. Our expert support team will guide you through the process, ensuring a seamless transition to our servers. Rest assured, we prioritize the safety and integrity of your data, ensuring your website remains intact but with improved hosting services.              </p>
             </li>
-            <div className="bg-white border-orange-500 border flex flex-row 2xl:w-52 rounded-xl p-3  items-center justify-center">
+            <div className="bg-white hover:bg-orange-500  border-orange-500 border flex flex-row w-52 rounded-xl p-3  items-center justify-center">
               <h2 className="font-medium text-[16px] 2xl:text-[20px]  leading-normal ">Get Started </h2> <img src="/hosting/ArrowIcon.svg" className="pl-4 -mt-0.5 "/>
           </div>
           </ul>

@@ -3,19 +3,19 @@ import React from 'react'
 const Uniqueone = () => {
   return (
     <section className="bg-[#F9EFE4]  w-full  relative">
-    <div className="py-20 w-full max-w-[1300px] mx-auto flex flex-col xl:flex-row items-center justify-center ">
+    <div className="py-10 2xl:py-20 w-full max-w-[1300px] mx-auto flex flex-col xl:flex-row items-center justify-center ">
       <div className="flex flex-col 2xl:flex-row mx-auto items-center justify-between ">
-      <div className="w-full flex flex-col space-y-8">
+      <div className="w-full flex flex-col 2xl:space-y-8">
   <div className="space-y-10 p-4 2xl:p-0 slide-reveal">
     <h4 className="text-[22px] xl:text-[42px] 2xl:text-[52px] text-black font-semibold 2xl:pr-96 font-mona-sans leading-normal">
       Obtain the Premier Web Hosting
-      <span className="pb-4 border-b-4 border-orange-500 font-semibold normal-case"> Billing Automation </span> Solution
+      <span className="pb-1 2xl:pb-4 border-b-4 border-orange-500 font-semibold normal-case"> Billing Automation </span> Solution
     </h4>
     <p className="text-[12px] 2xl:text-[16px] leading-loose font-mono-sans 2xl:pr-40">
       Looking to streamline billing, termination, and daily operations for your web hosting business? We've teamed up with the top automated billing platform, WHMCS, to simplify your operations. Access WHMCS, the comprehensive billing solution, at the best rates with our Linux Reseller hosting plan. Just place your order, and we'll take care of the installation for you.
     </p>
   </div>
-  <div className="slide-reveal grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-x-8 gap-y-8 transition-all duration-500 h-full">
+  <div className="slide-reveal grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-x-8 gap-y-8 transition-all duration-500 h-full p-4 2xl:p-0">
     {["Starter", "Plus", "Professional", "Business"].map((plan, index) => (
       <div key={index} className="relative group space-y-3">
         <div className="cursor-pointer flex w-full group bg-white transition-all duration-300 border-gradient hover:shadow-2xl rounded-xl "> {/* Fixed height for uniformity */}

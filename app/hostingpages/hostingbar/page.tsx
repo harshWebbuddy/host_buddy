@@ -10,7 +10,7 @@ import Faqs from './Faqs';
 import CaseStudy from './CaseStudy'
 import Features from './Features'
 import { NavBar } from '@/components'
-
+import Ratingpanel2 from './Ratingpanel'
 const page = () => {
   return (
     <main className="overflow-hidden">
@@ -21,12 +21,12 @@ const page = () => {
         </section>
         {/* rating panel  */}
         <section>
-        <div className="space-y-20 2xl:space-y-32 ">
-          <Ratingpanel/>
-          <Plans/>
+        <div className="space-y-10 2xl:space-y-32 ">
+        <div className="2xl:flex xl:flex bl:flex lg:flex md:flex hidden"><Ratingpanel2/></div> 
+        <div className="p-4 2xl:hidden xl:hidden bl:hidden lg:hidden md:hidden flex"> <Ratingpanel /></div> 
+          <Plans />
         </div>
-        </section>
-
+      </section>
         {/* plan page */}
         <section className='pt-20 2xl:pt-40'>
           <Plan2/>

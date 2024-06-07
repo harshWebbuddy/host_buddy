@@ -30,17 +30,17 @@ const HeroHosting = () => {
   }, []);
 
   return (
-    <section className="h-full min-h-[80vh] overflow-hidden relative bg-black flex items-center justify-center">
+    <section className="h-full 2xl:min-h-[80vh] overflow-hidden relative bg-black flex items-center justify-center">
       <img src="/home.jpg" width={1920} height={1080} alt="" className="w-full absolute inset-0 h-full opacity-30 object-cover bg-blend-color-dodge !z-[1]" />
-      <div className="max-w-[1250px] mx-auto text-white px-4 pt-40 pb-10 2xl:py-40">
-      <div className="h-full flex items-center relative !z-[2] flex-col 2xl:flex-row justify-center gap-20">
+      <div className="max-w-[800px] xl:max-w-[1250px] 2xl:max-w-[1250px] mx-auto text-white px-4 pt-20 2xl:pt-40 pb-10   2xl:py-40">
+      <div className="h-full flex items-center relative !z-[2] flex-col md:flex-row bl:flex-row lg:flex-row xl:flex=row 2xl:flex-row justify-center gap-20">
       <div className="relative w-full flex flex-col justify-start space-y-5 animate-left-to-right">
           <div className='relative w-full flex flex-col justify-start space-y-0'><h2 className="font-mono-sans text-sm font-light italic leading-relaxed text-left">
               <span className="text-orange-500 font-bold text-left">RESELLER HOSTING</span>
               </h2>
-              <h1 className="font-mono-sans font-semibold xl:text-[52px]  text-[32px] 2xl:text-[54px] leading-[43px] 2xl:leading-[84px]  2xl:text-left">              Begin Your Own Web
+              <h1 className="font-mono-sans font-semibold xl:text-[52px]  text-[32px] 2xl:text-[54px] leading-normal  2xl:text-left">              Begin Your Own Web
               </h1>
-              <h1 className="font-mono-sans font-semibold xl:text-[52px]  text-[32px] 2xl:text-[54px] leading-[43px] 2xl:leading-[84px]  2xl:text-left">
+              <h1 className="font-mono-sans font-semibold xl:text-[52px]  text-[32px] 2xl:text-[54px] leading-normal  2xl:text-left">
               Hosting Enterprise
               </h1>
             </div>

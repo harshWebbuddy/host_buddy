@@ -8,7 +8,7 @@ const CardsComponent = () => {
     <div className="space-y-10 2xl:space-y-28 p-4 max-w-[1300px] mx-auto 2xl:py-20">
      
       <div className="slide-reveal w-full flex flex-col xl:flex-row-reverse space-y-16 2xl:space-x-12 items-center">
-      <div className="w-full flex justify-center">
+      <div className="w-full hidden 2xl:flex justify-center">
           <div className="relative">
             <Image src="/reseller/1.svg" width={500} height={500} alt="" className="rounded-2xl relative z-10" />
           </div>
@@ -25,7 +25,7 @@ const CardsComponent = () => {
             </li>
          
           </ul>
-          <div className="group 2xl:w-52 h-[52px] text-white border-orange-500 border text-xl rounded-xl    ring-1 ring-[black] group-hover:ring-[#16191C] 
+          <div className="group hover:bg-orange-500 w-52 h-[52px] text-white border-orange-500 border text-xl rounded-xl    ring-1 ring-[black] group-hover:ring-[#16191C] 
             transition-all duration-300 hover:shadow-2xl ring-inset hover:ring-0 font-semibold flex items-center justify-center ">
               <h4 className="w-99 h-19 top-16 left-115 font-monasans font-semibold text-sm 2xl:text-base leading-[19.2px] text-white">Get Started</h4>{" "}
               <span className="ml-4 -mt-0.5 ">
@@ -36,10 +36,14 @@ const CardsComponent = () => {
               </span>
             </div>
         </div>
-        
+        <div className="w-full 2xl:hidden flex justify-center">
+          <div className="relative">
+            <Image src="/reseller/1.svg" width={500} height={500} alt="" className="rounded-2xl relative z-10" />
+          </div>
+        </div>
       </div>
       <div className="slide-reveal w-full flex flex-col xl:flex-row space-y-20 2xl:space-x-10 items-center">
-      <div className="w-full flex justify-center">
+      <div className="w-full hidden 2xl:flex justify-center">
           <div className="relative">
             <Image src="/reseller/2.svg" width={600} height={500} alt="" className="rounded-2xl relative z-10" />
           </div>
@@ -54,7 +58,7 @@ const CardsComponent = () => {
             <p className="capitalize leading-6 2xl:leading-8 text-[12px] 2xl:text-[18px] text-white font-normal flex flex-col space-y-6">
               Switching web hosts can be daunting, especially considering the importance of your website's data. At HostBuddy, we understand this concern, which is why we offer a hassle-free migration service at no extra cost. Our expert support team will guide you through the process, ensuring a seamless transition to our servers. Rest assured, we prioritize the safety and integrity of your data, ensuring your website remains intact but with improved hosting services.</p>
             </li>
-            <div className="group 2xl:w-52 h-[52px] text-white border-orange-500 border text-xl rounded-xl    ring-1 ring-[black] group-hover:ring-[#16191C] 
+            <div className="group w-52 hover:bg-orange-500 h-[52px] text-white border-orange-500 border text-xl rounded-xl    ring-1 ring-[black] group-hover:ring-[#16191C] 
             transition-all duration-300 hover:shadow-2xl ring-inset hover:ring-0 font-semibold flex items-center justify-center ">
               <h4 className="w-99 h-19 top-16 left-115 font-monasans font-semibold text-sm 2xl:text-base leading-[19.2px] text-white">Get Started</h4>{" "}
               <span className="ml-4 -mt-0.5 ">
@@ -67,7 +71,11 @@ const CardsComponent = () => {
           </ul>
          
         </div>
-      
+        <div className="w-full 2xl:hidden flex justify-center">
+          <div className="relative">
+            <Image src="/reseller/2.svg" width={600} height={500} alt="" className="rounded-2xl relative z-10" />
+          </div>
+        </div>
       </div>
    
      
