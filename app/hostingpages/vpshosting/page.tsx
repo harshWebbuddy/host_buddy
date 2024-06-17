@@ -55,7 +55,9 @@ const page = () => {
         <section className=''>
           <Testimonials/>
         </section>
-
+<section>
+  <Table/>
+</section>
         {/* Question Answers */}
         <section className='2xl:pt-20 '>
 <Faqs/>
