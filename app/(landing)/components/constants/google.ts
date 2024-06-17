@@ -106,8 +106,8 @@ export const testimonials = [
     
         {
           author: {
-            image_url: "/14.png",
-            names: "Groups",
+            image_url: "/20.svg",
+            names: " Groups ",
           },
           testimonial:
             "Get a professional business email with Google-powered search. Custom email addresses with up to 30GB of storage, offline support, and much more.",
@@ -117,7 +117,7 @@ export const testimonials = [
         {
           author: {
             image_url: "/13.png",
-            names: "Outlook Email Client",
+            names: "Outlook",
           },
           testimonial:
             "Send/ receive emails from another mail client with G Suite Sync s from another mail client. The G Suite admin can enable the setting from the admin console.",

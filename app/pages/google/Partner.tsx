@@ -59,8 +59,8 @@ export default function Partner() {
   {visibleTestimonials.map((testimonial, index) => (
     <div key={index} className="flex flex-col justify-between min-h-[200px] relative hover:bg-[#ffffff] bg-[#363E44] group px-12 py-10 rounded-2xl space-y-5">
       <div className="flex flex-col gap-5 justify-between group w-full flex-1">
-        <div className="flex justify-between flex-row items-center">
-          <h1 className="font-bold text-[22px] 2xl:text-[24px] leading-[36px] group-hover:text-black text-white pt-4">{testimonial.author.names}</h1>
+        <div className="flex justify-between bl:flex-row xl:flex-row 2xl:flex-row items-center">
+          <h1 className="font-bold text-[32px] 2xl:text-[24px] leading-[36px] group-hover:text-black text-white pt-4">{testimonial.author.names}</h1>
           <Image src={testimonial.author.image_url} alt="download" width={70} height={52} className="w-[70px] h-[52px]" draggable={false} />
         </div>
       </div>

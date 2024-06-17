@@ -30,7 +30,7 @@ const Support = () => {
     ),
     title: "Track your performance",
     description:
-      "Access one of the best affiliate control panels in the industry. Easily track and optimize your campaigns.",
+      "Access one of the best affiliate control panels in the industry. Easily track and optimize your campaign  .",
   },
   // {
   {
@@ -66,9 +66,9 @@ const Support = () => {
     <div className="w-full bg-gradient-to-b from-[#292E34] to-[#16191C]   px-3 py-20">
 
       <div className="slide-reveal w-full max-w-[1220px] mx-auto">
-      <div className="flex flex-col bl:flex-row justify-between gap-y-10 gap-x-30 items-center  pb-16">
+      <div className="flex flex-col 2xl:flex-row justify-between gap-y-10 gap-x-30 items-center  pb-16">
         <div className="relative w-full items-center justify-center">
-          <h2 className=" capitalize font-mona-sans text-white font-semibold 2xl:fomt-bold text-[32px] 2xl:text-[42px] leading-relaxed w-full 2xl:text-center ">
+          <h2 className=" capitalize font-mona-sans text-white font-semibold 2xl:fomt-bold text-[32px] 2xl:text-[42px] leading-relaxed w-full text-center ">
           Join the Program in <span className="text-orange-500">Four Easy Steps</span>
   {/* <span className="pb-4 border-b-4 border-orange-500">Shared </span>Hosting  */}
           </h2>
@@ -76,21 +76,25 @@ const Support = () => {
         </div>
       
       </div>
-        <div className="flex flex-col md:flex-row gap-x-8 gap-y-14 bl:items-center justify-center mx-auto ">
+      <div className="flex flex-col  bl:flex-row  md:flex-row xl:flex-row gap-x-8 gap-y-14  items-center xl:items-stretch bl:items-stretch md:items-stretch 2xl:items-stretch justify-center mx-auto">
   {items.map((item, index) => (
-    <div key={index} className="relative flex-1 w-full gap-10 group">
-      <div className="absolute -top-7 left-9 w-16 h-16 flex justify-center items-center rounded-xl transition-all duration-300 ">
+    <div key={index} className="relative flex-1 w-full max-w-[300px]">
+      <div className="absolute -top-7 left-9 w-16 h-16 flex justify-center items-center rounded-xl transition-all duration-300">
         {item.icon}
       </div>
-      <div className="  rounded-2xl group hover:bg-[#F9EFE4] bg-transparent border text-[#16191C] p-4 pl-8 pt-10 transition-all duration-300 cursor-pointer">
+      <div className="rounded-2xl group hover:bg-[#F9EFE4] bg-transparent border text-[#16191C] p-4 pl-8 pt-10 transition-all duration-300 cursor-pointer h-full flex flex-col">
         <h2 className="text-[18px] font-bold mt-4 leading-[26px] opacity-1 mb-4 text-white group-hover:text-black">{item.title}</h2>
-        <p className="w-full opacity-70 font-mona-sans text-[16px] font-normal leading-normal text-left text-white group-hover:text-black">
+        <p className="w-full opacity-70 font-mona-sans text-[16px] font-normal leading-normal text-left text-white group-hover:text-black flex-grow">
           {item.description}
         </p>
       </div>
     </div>
   ))}
 </div>
+
+
+
+
       </div>
     </div>
   );

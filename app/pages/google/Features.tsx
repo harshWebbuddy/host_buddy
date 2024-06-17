@@ -81,7 +81,7 @@ export default function Features() {
                     alt="download"
                     className="select-none object-cover"
                     draggable={false}
-                    style={{ width: '70px', height: '70px' }} // Set fixed size for all images
+                    style={{ width: '90px', height: '70px' }} // Set fixed size for all images
                   />
                   <h1 className="font-light text-[12px] 2xl:text-[14.45px] opacity-70 pl-2">
                     {testimonial.number}
