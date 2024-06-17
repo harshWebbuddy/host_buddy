@@ -40,7 +40,7 @@ const Plans = () => {
         <div className="w-full bg-white p-6 md:pl-16 md:pr-10 py-10 items-center justify-center rounded-2xl border group relative !z-[3] group-hover:shadow-2xl h-full">
           <div className="w-full space-y-4 items-start justify-start mx-auto">
             <span className="items-start featuresvg5 justify-start bg-orange-500 mx-auto w-auto">
-              <Image src="/features/master1.svg" width={200} height={200} alt="" />
+            <Image src="/features/visa1.svg" width={200} height={200} alt="" />
             </span>
             <h2 className="font-bold text-[18px] md:text-[20px] leading-[26px] text-left font-mono-sans-serif text-[#16191C] pt-4">Mastercard</h2>
             <p className="font-mona-sans text-base font-normal leading-6 opacity-70 text-left">Everything you need for the best WordPress hosting experience! We offer a free Let's Encrypt SSL certificate, a domain name, and a professional email to make you look more trustworthy and boost credibility.</p>

@@ -65,14 +65,14 @@ export default function Features() {
               {visibleTestimonials.map(
                 (testimonial, index) =>
                   index % columns === columnIndex && (
-                    <div key={index} className="group relative bg-[#FFFFFF] px-6 py-10 rounded-2xl space-y-5">
-                      <div className="flex flex-row gap-x-0 px-6">
+                    <div key={index} className="group relative bg-[#FFFFFF] px-6 py-6 rounded-2xl space-y-5">
+                      <div className="flex flex-row ">
                         <div className="w-full h-full">
                           <Image src={testimonial.author.image_url} alt="download" width={79} height={79} className="select-none" draggable={false} />
                         </div>
                         <div>
-                          <h1 className="font-semibold text-[16px] 2xl:text-[18px] leading-8">{testimonial.author.names}</h1>
-                          <p className="leading-6 text-[14px] 2xl:text-[16px] opacity-50">{testimonial.testimonial}</p>
+                          <h1 className="font-bold text-[16px] 2xl:text-[18px] leading-8">{testimonial.author.names}</h1>
+                          <p className="leading-6 text-[14px] 2xl:text-[15px] text-black font-medium opacity-50">{testimonial.testimonial}</p>
                         </div>
                       </div>
                     </div>

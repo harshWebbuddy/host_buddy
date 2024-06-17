@@ -26,7 +26,7 @@ const CardsComponent = () => {
   }, []);
 
   return (
-    <div className="space-y-28 p-4 max-w-[1300px] mx-auto pt-36 pb-20">
+    <div className="space-y-28 p-4 max-w-[1300px] mx-auto pt-20 2xl:pt-32 pb-20">
     <div className={`w-full flex flex-col xl:flex-row gap-16 items-center ${slideReveal ? "slide-reveal" : ""}`}>        <div className="w-full space-y-4 items-start">
           <div className="item-start 2xl:pr-20">
             <h2 className="text-3xl 2xl:text-4xl leading-10 font-semibold">Advanced Features Included in Shared Hosting</h2>

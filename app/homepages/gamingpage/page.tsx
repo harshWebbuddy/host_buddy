@@ -195,7 +195,7 @@ sit amet</h1>
           <div className="flex flex-col space-y-10 mx-auto items-center justify-center ">
           <div className="w-full flex flex-col 2xl:flex-row 2xl:space-x-8 space-y-4 mx-auto items-start justify-start 2xl:px-20">
           <div className="w-full ">
-            <h4 className="text-[22px] 2xl:text-[42px] gap-2  text-white flex flex-row 2xl:flex-col xl:flex-col font-semibold font-mona-sans leading-normal">
+            <h4 className="text-[22px] 2xl:text-[42px] gap-2  text-white flex flex-col md:flex-row lg:flex-row bl:flex-row 2xl:flex-row xl:flex-row font-semibold font-mona-sans leading-normal">
             Amazing Games < span className="text-orange-500 text-[22px] 2xl:text-[42px]    font-semibold font-mona-sans leading-normal"> Control Panel </span>
             </h4>
 

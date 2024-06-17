@@ -61,7 +61,7 @@ const Plan2 = () => {
       </div>
     </div>
     {/* cards */}
-    <section className="mt-10" ref={ref}>
+    <section className="p-4 2xl:p-0 mt-10" ref={ref}>
       <div className="flex flex-col bl:flex-row w-full justify-center gap-8 items-center" >
       <div className={`slide-item ${animationClass} w-full`}>
           <div  className="mb-5 w-full transition-all  hover:bg-[#F9EFE4]  bg-[#FFFFFF]/15 px-10 rounded-2xl group" >

@@ -43,6 +43,9 @@ const page = () => {
         <section>
           <Features/>
         </section>
+        <section className='pb-40'>
+  <Table/>
+</section>
         {/* <Table/> */}
         <section className=''>
           <Adds/>
@@ -55,9 +58,7 @@ const page = () => {
         <section className=''>
           <Testimonials/>
         </section>
-<section>
-  <Table/>
-</section>
+
         {/* Question Answers */}
         <section className='2xl:pt-20 '>
 <Faqs/>

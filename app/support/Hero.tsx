@@ -28,9 +28,7 @@ const HeroHosting = () => {
 </div>
           <p className="font-mono-sans text-[11px] 2xl:text-[16px] font-light leading-loose text-left 2xl:text-left text-[#EBEBEB]">
           Lorem ipsum dolor sit amet consectetur. Morbi neque ultricies at faucibus nibh. Lorem donec quam malesuada ultrices id enim etiam suspendisse nunc. Arcu volutpat purus vitae dictum dapibus mi est. Et aliquet in et hendrerit. Velit sagittis urna vitae lectus cras. Enim augue ullamcorper quis.</p>
-          <div className="flex flex-row justify-start 2xl:justify-start !mt-10 ">
          
-          </div>
        
         </div>
 

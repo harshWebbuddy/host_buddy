@@ -59,7 +59,7 @@ export default function Features() {
             <span className="pb-4 border-b-4 border-orange-500">Features </span>
           </h2>
         </div>
-        <div className="flex flex-row gap-4 mt-16 overflow-hidden transition-all duration-500 h-full pb-32">
+        <div className="flex flex-row gap-4 mt-16 overflow-hidden transition-all duration-500 h-full pb-10">
           {Array.from({ length: columns }, (_, columnIndex) => (
             <div
               key={columnIndex}

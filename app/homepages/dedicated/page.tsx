@@ -36,7 +36,7 @@ High Performance</h1>
 </div>
           <p className="font-mono-sans text-[16px] font-light leading-loose text-left  text-[#EBEBEB]">
           By trusting us with your business and projects needs, we promise a <span className="text-orange-500 ml-0.5">99.9%</span> uptime on any services we provide, outside of any standard maintenance we may provide. </p>
-          <div className="flex flex-wrap 2xl:flex-row space-y-8 justify-start 2xl:space-x-6 !mt-10 ">
+          <div className="flex flex-wrap 2xl:flex-row 2xl:space-y-4 space-y-8 justify-start 2xl:space-x-6 !mt-10 ">
             <div className="h-[56px]  flex item-center justify-center bg-orange-500 rounded-xl py-4 w-auto px-6  gap-x-3">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="6" cy="19" r="2" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
