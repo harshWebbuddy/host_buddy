@@ -192,7 +192,7 @@ const NavBar: React.FC<Props> = ({ className }) => {
               ))}
             </ul>
           </div>
-          <div className="hidden 2xl:flex xl:flex justify-end space-x-4 w-full">
+          <div className="hidden 2xl:flex xl:flex bl:flex  justify-end space-x-4 w-full">
             <div
               className={`${className} flex flex-row items-center justify-center bg-transparent border border-${className} rounded-xl px-4 py-2 outline-none cursor-pointer hover:scale-120`}
             ><svg className="mr-2" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">

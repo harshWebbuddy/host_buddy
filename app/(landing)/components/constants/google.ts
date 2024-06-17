@@ -106,7 +106,7 @@ export const testimonials = [
     
         {
           author: {
-            image_url: "/google/11.svg",
+            image_url: "/14.png",
             names: "Groups",
           },
           testimonial:

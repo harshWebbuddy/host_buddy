@@ -27,9 +27,11 @@ const Plan2 = () => {
    <div className=''> 
       <div className="flex flex-col max-w-[1300px] mx-auto">
     {/* heading */}
-    <div className="slide-reveal flex flex-col bl:flex-row justify-between gap-y-6 gap-x-4 items-center mb-8 " >
-     <div className="relative w-full ">
-     <h2 className="text-black font-mona-sans font-semibold text-[22px] 2xl:text-[42px] capitalize leading-relaxed w-full text-center 2xl:text-left">        Select Your Google  <span className="pb-1 2xl:pb-4 border-b-4 border-orange-500 text-wite text-black">Suite Edition </span>
+   
+    <div className="slide-reveal flex flex-col bl:flex-row justify-between gap-y-6  items-center mb-8 " >
+    <div className="relative w-full">
+        <h2 className="text-black font-mona-sans font-semibold text-[22px] 2xl:text-[42px] capitalize leading-relaxed w-full text-center bl:text-left">
+        Select Your Google    <span className="pb-2 2xl:pb-4 border-b-4 border-orange-500 text-wite text-black">Suite Edition</span>
         </h2>
       </div>
     
@@ -57,6 +59,8 @@ const Plan2 = () => {
         </div>
       </div>
     </div>
+    
+
     {/* cards */}
     <section className="2xl:mt-10 p-4 2xl:p-0" ref={ref}>
       <div className="flex flex-col bl:flex-row w-full justify-center gap-8 items-center" >

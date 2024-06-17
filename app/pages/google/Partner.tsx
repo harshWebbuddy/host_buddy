@@ -55,26 +55,21 @@ export default function Partner() {
           <p className="w-full font-normal text-white 2text-[14px] xl:text-[16px]2 2xl:pr-16 2xl:pt-16 leading-loose max-w-3xl">
           Unlock your team's full potential with the expertise of our Top Google Workspace Premier Partner.          </p>
         </div>
-        <div className="flex flex-row gap-4 mt-8 2xl:mt-16 overflow-hidden transition-all duration-500 h-full pb-10 2xl:pb-32">
-  {Array.from({ length: columns }, (_, columnIndex) => (
-    <div key={columnIndex} className="flex flex-col w-full gap-4">
-      {visibleTestimonials.map(
-        (testimonial, index) =>
-          index % columns === columnIndex && (
-            <div key={index} className="flex flex-col flex-grow min-h-[200px] relative hover:bg-[#ffffff] bg-[#363E44] group px-12 py-10 rounded-2xl space-y-5">
-              <div className="flex flex-col gap-5 justify-between group w-full">
-                <div className="flex justify-between flex-row items-center">
-                  <h1 className="font-bold text-[22px] 2xl:text-[24px] leading-[36px] group-hover:text-black text-white pt-4">{testimonial.author.names}</h1>
-                  <Image src={testimonial.author.image_url} alt="download" width={70} height={52} className="w-[70px] h-[52px]" draggable={false} />
-                </div>
-              </div>
-              <p className="leading-6 text-[14px] 2xl:text-[16px] text-[#FFFFFF]/50 group-hover:text-black">{testimonial.testimonial}</p>
-            </div>
-          )
-      )}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 mt-8 2xl:mt-16 overflow-hidden transition-all duration-500 h-full pb-10 2xl:pb-32">
+  {visibleTestimonials.map((testimonial, index) => (
+    <div key={index} className="flex flex-col justify-between min-h-[200px] relative hover:bg-[#ffffff] bg-[#363E44] group px-12 py-10 rounded-2xl space-y-5">
+      <div className="flex flex-col gap-5 justify-between group w-full flex-1">
+        <div className="flex justify-between flex-row items-center">
+          <h1 className="font-bold text-[22px] 2xl:text-[24px] leading-[36px] group-hover:text-black text-white pt-4">{testimonial.author.names}</h1>
+          <Image src={testimonial.author.image_url} alt="download" width={70} height={52} className="w-[70px] h-[52px]" draggable={false} />
+        </div>
+      </div>
+      <p className="leading-6 text-[14px] 2xl:text-[16px] text-[#FFFFFF]/50 group-hover:text-black">{testimonial.testimonial}</p>
     </div>
   ))}
 </div>
+
+
   
       </div>
      
