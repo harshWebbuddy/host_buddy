@@ -768,9 +768,17 @@ svg/* .group:hover   path {
   stroke:#FF7500;
   fill: black;
 }
-.group:hover .featuresvg122 svg path{
+.group:hover .svg124 path{
+  /* stroke:#FF7500; */
+  fill: gray;
+}
+.group:hover .featuresvg122 svg path {
   stroke:white;
   fill: #FF7500;
+}
+.group:hover .featuresvg123 svg path {
+  stroke:white;
+  fill:#ff7500;
 }
 /* top-[100px]   md:top-[50px] left-[23px] md:left-[50px] xl:left-[80px] 2xl:left-[350px] w-full h-[757px] xl:w-[1220px] 2xl:w-[1220px] flex flex-col 2xl:flex-row justify-between items-center@media screen and (max-width: 1920px) { */
 .welcome {

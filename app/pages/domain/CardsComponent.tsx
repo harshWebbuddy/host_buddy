@@ -4,7 +4,7 @@ import React from "react";
 
 const CardsComponent = () => {
   return (
-    <div className="space-y-16 2xl:space-y-40 p-4 max-w-[1300px] mx-auto pt-20 2xl:pt-40 pb-20 2xl:pb-32">
+    <div className="space-y-16 2xl:space-y-40 p-4 max-w-[1300px] mx-auto pt-10 2xl:pt-40 pb-20 2xl:pb-32">
      
       <div className="slide-reveal w-full flex flex-col-reverse gap-10  xl:flex-row-reverse space-y-10 2xl:space-y-16 items-center">
       <div className="w-full flex justify-center">
