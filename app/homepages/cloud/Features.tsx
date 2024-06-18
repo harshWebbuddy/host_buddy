@@ -27,13 +27,13 @@ interface BoxProps {
   
   const Box: React.FC<BoxProps> = ({ heading, paragraph }) => (
     <div>  
-      <div className="box">
-          <div className="boxinside">
+      <div className="">
+          <div className="">
             <h2>{heading}</h2>
             <p>{paragraph}</p>
             
           </div>
-          <div className="button">Go API</div>
+          <div className="">Go API</div>
           
         </div>
        
@@ -41,12 +41,12 @@ interface BoxProps {
       );
       
       const Boxes = () => (
-        <div className="box-container">
+        <div className="">
         {boxesData.map((box, index) => (
           <React.Fragment key={box.id}>
             <Box heading={box.heading} paragraph={box.paragraph} />
             {index !== boxesData.length - 1 && ( // Check if it's not the last box
-              <div className='separateline'>
+              <div className=''>
                 <svg width="497" height="1" viewBox="0 0 497 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <line y1="0.5" x2="497" y2="0.5" stroke="#16191C" strokeOpacity="0.2" strokeDasharray="4 4"/>
                 </svg>
@@ -58,24 +58,24 @@ interface BoxProps {
       );      
   return (
    <div className='mx-auto'>
-     <div className='cloudfeatures mx-auto slide-reveal'>
-       <div className='cloudheadings mx-auto'> 
-       <div className='cloudfeatures1'>
+     <div className=' mx-auto slide-reveal'>
+       <div className=' mx-auto'> 
+       <div className=''>
             <h2>Top-Notch Features</h2>
-            <div className="cloudorangeline"><svg width="177" height="4" viewBox="0 0 177 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div className=""><svg width="177" height="4" viewBox="0 0 177 4" fill="none" xmlns="http://www.w3.org/2000/svg">
 <line y1="2" x2="177" y2="2" stroke="#FF7500" stroke-width="4"/>
 </svg>
 </div>
         </div>
-        <div className='cloudfeatures2'>
+        <div className=''>
 <p>Lorem ipsum dolor sit amet consectetur. Ornare et amet lobortis ornare. Ullamcorper accumsan donec eu condimentum diam a augue arcu. Erat nibh nisl lacinia egestas mauris facilisi aliquam sit mauris. </p>
         </div>
         </div>
-        <div className='imagenoption'>
-<div className="option">
+        <div className=''>
+<div className="">
 <Boxes/>
 </div>
-<div className='image'>
+<div className=''>
 
 <img src="/cloudhosting/feature.svg" alt="" className='2xl:flex xl:flex lg:flex sm:flex bl:flex md:flex hidden w-auto h-auto'/>
 

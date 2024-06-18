@@ -9,6 +9,7 @@ import Help from './Help'
 import { NavBar } from '@/components'
 import RatingPanel3 from './rating'
 import Ratingpanel2 from './Ratingpanel'
+import Unique from './unique'
 
 const page = () => {
   return (
@@ -23,8 +24,11 @@ const page = () => {
         </div>
       </section>
     <div className='pt-10 '><Support/></div>
-<div className='pt-20 2xl:pt-40'><Features/></div>
-<div className='pt-10 2xl:pt-28'>
+    <div className='2xl:pt-10'>
+      <Unique/>
+    </div>
+{/* <div className='pt-20 2xl:pt-40'><Features/></div> */}
+<div className='pt-4 2xl:pt-20'>
   <Specs/>
 </div>
 <div className='2xl:pt-28 p-4 2xl:p-0 2xl:pb-20'>
