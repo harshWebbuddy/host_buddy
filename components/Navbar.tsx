@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import MobileSidebar from "../components/MobileSidebar";
+import { usePathname } from "next/navigation";
 interface NavLink {
   href: string;
   label: string;
@@ -83,6 +84,16 @@ const navLinks = [
 ];
 
 const NavBar: React.FC<Props> = ({ className }) => {
+  const pathname = usePathname();
+const isActiveLink = (href: string, options?: { label: string; href: string }[]) => {
+   if (pathname.startsWith(href)) {
+      return true;
+    }
+    if (options) {
+      return options.some((option) => pathname === option.href);
+    }
+    return false;
+ };
   const [selectedItem, setSelectedItem] = useState<number | null>(null);
 
   const [isExpanded, setIsExpanded] = useState(false);
@@ -155,19 +166,17 @@ const NavBar: React.FC<Props> = ({ className }) => {
           <div className="hidden bl:flex justify-center w-full">
             <ul className="flex gap-x-10">
               {navLinks.map((link, index) => (
-                <div
-                  key={index}
-                  className="relative group"
-                  onMouseEnter={() => handleMouseEnter(index, link.options)}
-                  onMouseLeave={handleMouseLeave}
-                >
+                <div key={index} className="relative group" onMouseEnter={() => handleMouseEnter(index, link.options || [])} onMouseLeave={handleMouseLeave}>
                   <Link href={link.href}>
-                    <div className={`flex flex-col gap-[10px] items-center cursor-pointer ${className}`} style={{ position: 'relative' }}>
-                      <h1 className="whitespace-nowrap hover:text-orange-500 font-mono-sans hover:font-bold">
-                        {link.label}
-                      </h1>
+                  <div
+                      className={`flex flex-col gap-[10px] items-center cursor-pointer ${isActiveLink(link.href, link.options) ? "text-orange-500" : ""}`}
+                      style={{ position: "relative" }}>
+                      <h1 className="whitespace-nowrap font-mono-sans text-[16px] leading-[24px] transition-all duration-300">{link.label}</h1>
                       {/* Underline effect */}
-                      <div className="absolute w-8 bg-red-500 -bottom-2 h-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300 mr-4"></div>
+                      <div
+                        className={`absolute left-0 w-0 bg-red-500 -bottom-2 h-1 group-hover:w-8 transition-all duration-300 mr-4 ${
+                          isActiveLink(link.href, link.options) ? "w-8" : ""
+                        }`}></div>
                     </div>
                   </Link>
                   {showOptionsIndex === index && (

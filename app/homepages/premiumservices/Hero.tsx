@@ -30,7 +30,7 @@ const HeroHosting = () => {
   }, []);
 
   return (
-    <section className="h-full min-h-[50vh] overflow-hidden relative bg-black flex items-center justify-center">
+    <section className="h-full min-h-[80vh] overflow-hidden relative bg-black flex items-center justify-center">
       <img src="/premium.png" width={1920} height={1080} alt="" className="w-full absolute inset-0 h-full opacity-100 object-cover !z-[1]" />
       <div className="max-w-[800px] xl:max-w-[1250px] 2xl:max-w-[1250px] mx-auto text-white px-4 pt-20 2xl:pt-40 pb-10   2xl:py-40">
       <div className="h-full flex items-center relative !z-[2] flex-col md:flex-row bl:flex-row lg:flex-row xl:flex=row 2xl:flex-row justify-center gap-20">
@@ -45,7 +45,7 @@ const HeroHosting = () => {
             <p className="font-mono-sans text-[10px] 2xl:text-[16px] font-light leading-loose text-left  text-[#EBEBEB]">
             By trusting us with your business and projects needs, we promise a 99.9% uptime on any services we provide, outside of any standard maintenance we may provide. </p>
             <div className="flex flex-wrap 2xl:flex-row 2xl:space-y-4 space-y-4 justify-start space-x-2  2xl:space-x-6 !mt-10 ">
-            <div className="2xl:h-[56px]  flex item-center justify-center bg-orange-500 rounded-xl py-4  px-6 2xl:px-12  gap-x-3">
+            <div className="2xl:h-[56px]  flex item-center justify-center bg-orange-500 rounded-xl py-4  px-6 2xl:px-10  gap-x-3">
           
 
 
