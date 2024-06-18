@@ -5,7 +5,7 @@ const Card = () => {
   return (
     <div className='mx-auto flex flex-col space-y-20 2xl:space-y-32 '>
 
-        <div className='p-4  2xl:p-0 slide-reveal relative z-[20]  flex flex-col  xl:flex-row 2xl:flex-row gap-y-20 2xl:gap-y-0  gap-x-80 mx-auto'>
+        <div className='p-4  2xl:p-0  relative z-[20]  flex flex-col  xl:flex-row 2xl:flex-row gap-y-20 2xl:gap-y-0  gap-x-80 mx-auto'>
             
            <div className='2xl:flex hidden  z-[20]'>
            <img src="/ps/design2.2.svg" className='relative -translate-y-40'/> 
@@ -37,7 +37,7 @@ const Card = () => {
             </div>
         </div>        
 
-        <div className='p-4 2xl:p-0 slide-reveal  relative z-[20] flex flex-col  xl:flex-row 2xl:flex-row gap-y-20 2xl:gap-y-0  gap-x-40 mx-auto'>
+        <div className='p-4 2xl:p-0  relative z-[20] flex flex-col  xl:flex-row 2xl:flex-row gap-y-20 2xl:gap-y-0  gap-x-40 mx-auto'>
             
         
            

@@ -15,12 +15,12 @@ const page = () => {
       </div>
       <section className='-translate-y-[150px] 2xl:-translate-y-[200px] 2xl:left-10 relative z-[20]'>  <Plan2/></section>
 
-<div className='mx-auto item-center -translate-y-24 2xl:-translate-y-48 justify-center'>
+<div className='mx-auto item-center -translate-y-24 2xl:-translate-y-10 justify-center'>
   <Card/>
 
 </div>
 
-<div className='pb-0  2xl:pb-40'><Unique/></div>
+<div className='pb-0 pt-0 2xl:pt-40  2xl:pb-40'><Unique/></div>
 
     <div className='pb-10'>
 <ContactForm/></div>
