@@ -9,7 +9,6 @@ import Faqs from "../../(landing)/components/Faqs";
 import { BsArrowRight } from "react-icons/bs";
 import Ratingpanel from "../../(landing)/components/Rating";
 import Plans from "../../(landing)/components/Plans";
-import { useRef } from "react";
 import Navbar from "@/components/Navbar";
 import Ratingpanel2 from "./Ratingpanel";
 
