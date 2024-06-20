@@ -1,4 +1,5 @@
-import React from 'react'
+"use client"
+import React, { useEffect } from 'react'
 import HeroHosting from './Hero'
 import Ratingpanel from './Rating'
 import Plans from './Plans'
@@ -12,6 +13,18 @@ import Features from './Features'
 import { NavBar } from '@/components'
 import Ratingpanel2 from './Ratingpanel'
 const page = () => {
+  useEffect(() => {
+    document.title = "webbuddy12";
+
+    const metaDescription = document.createElement('meta');
+    metaDescription.name = 'description';
+    metaDescription.content = 'WEBBUDDY';
+    document.head.appendChild(metaDescription);
+
+    return () => {
+      document.head.removeChild(metaDescription);
+    };
+  }, []);
   return (
     <main className="overflow-hidden">
       <NavBar className='text-white'/>
